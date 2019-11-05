@@ -1,0 +1,151 @@
+{% extends "dlf-base.html" %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    "classes": "govuk-width-container",
+    "tag": {
+      "text": "prototype"
+    },
+    "html": 'This is a prototype. Please provide feedback to the Digital Land team.'
+  }) }}
+
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "https://digital-land.github.io/"
+      },
+      {
+        "text": "Organisations",
+        "href": "https://digital-land.github.io/organisations"
+      },
+      {
+        "text": organisation["name"]
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-full">
+  <span class="govuk-caption-xl">Organisation</span>
+  <h1 class="govuk-heading-xl">{{organisation["name"]}}</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body-l">
+{% if organisation["start-date"] or organisation["end-date"] %}
+  This organisation was
+  {% if organisation["start-date"] %} established on the <time datetime="{{ organisation["start-date"] }}">{{ organisation["start-date-text"] }}</time>{% endif -%}
+  {% if organisation["start-date"] and organisation["end-date"] %} and was {% endif -%}
+  {% if organisation["end-date"] %} dissolved on the <time datetime="{{ organisation["end-date"] }}">{{ organisation["end-date-text"] }}</time>{% endif -%}
+  .
+{% endif %}
+    </p>
+
+<dl class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Organisation
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <a href="https://{{organisation["prefix"]}}.register.gov.uk/record/{{organisation["id"]}}">{{organisation["organisation"]}}</a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Website
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <a href="{{organisation["website"]}}">{{organisation["website"]}}</a>
+    </dd>
+  </div>
+
+{% if organisation["statistical-geography"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Statistical geography
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <a href="http://statistics.data.gov.uk/id/statistical-geography/{{organisation["statistical-geography"]}}">{{organisation["statistical-geography"]}}</a>
+    </dd>
+  </div>
+{% endif %}
+
+{% if organisation["toid"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+     TOID
+    </dt>
+    <dd class="govuk-summary-list__value">
+    <a href="http://data.ordnancesurvey.co.uk/id/{{organisation["toid"]}}">{{organisation["toid"]}}</a>
+    </dd>
+  </div>
+{% endif %}
+
+{% if organisation["wikidata"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+     Wikidata
+    </dt>
+    <dd class="govuk-summary-list__value">
+    <a href="https://wikidata.org/wiki/{{organisation["wikidata"]}}">{{organisation["wikidata"]}}</a>
+    </dd>
+  </div>
+{% endif %}
+
+{% if organisation["esd-inventories"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+     ESD Inventories
+    </dt>
+    <dd class="govuk-summary-list__value">
+    <a href="https://inventories.opendata.esd.org.uk/{{organisation["esd-inventories"]}}">{{organisation["esd-inventories"]}}</a>
+    </dd>
+  </div>
+{% endif %}
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      data.gov.uk
+    </dt>
+    <dd class="govuk-summary-list__value">
+        <a href="https://data.gov.uk/search?filters%5Bpublisher%5D={{organisation["name"]}}">datasets</a>
+    </dd>
+  </div>
+
+{% if organisation["opendatacommunities"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Open Data Communities URI
+    </dt>
+    <dd class="govuk-summary-list__value">
+    <p><a href="{{organisation["opendatacommunities"]}}">{{organisation["opendatacommunities"]}}</a></p>
+    <input class="govuk-input copy-and-paste" type="text" value="{{organisation["opendatacommunities"]}}" readonly>
+    <!-- see huffduffer.com for how @adactio does this beautifully -->
+    <p></p>
+    </dd>
+  </div>
+{% endif %}
+
+</dl>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block bodyEnd %}
+{{ super() }}
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-127566551-1', 'auto');
+ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+{% endblock %}

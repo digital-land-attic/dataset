@@ -1,0 +1,68 @@
+{% extends "dlf-base.html" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-full">
+  	<h1 class="govuk-heading-xl">
+          Organisations
+  	</h1>
+
+    <p class="govuk-body">Contents</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="#datasets">Datasets</a></li>
+      <li><a href="#download">Download the data</a></h2>
+    </ul>
+	</div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+<div class="govuk-grid-row org-count">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m org-count__name" id="{{dataset}}">{{datasets[dataset]}}</h2>
+    <div class="org-count__wrapper">
+      <p class="govuk-visually-hidden">There are
+        <span class="js-accessible-department-count">{{ datasets|length }}</span>
+        datasets
+      </p>
+      <span class="govuk-body govuk-!-font-weight-bold govuk-!-font-size-80 js-department-count" aria-hidden="true">{{ datasets|length }}</span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <ul class="govuk-list">
+    {% for dataset in datasets %}
+      <li>
+        <a href="{{dataset}}/" class="govuk-link govuk-body-l">{{datasets[dataset]["name"]}}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l" id="download">Download the data</h2>
+    <p class="govuk-body">You can download the data on this page as:</p>
+    <ul class="govuk-list">
+      <li><a href="{{download_url}}">CSV</a></li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block bodyEnd %}
+{{ super() }}
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-127566551-1', 'auto');
+ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+{% endblock %}
