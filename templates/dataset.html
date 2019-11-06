@@ -1,58 +1,41 @@
 {% extends "dlf-base.html" %}
 
+
 {% block content %}
 <div class="govuk-grid-row">
 	<div class="govuk-grid-column-full">
-  	<h1 class="govuk-heading-xl">
-          Organisations
-  	</h1>
+     <span class="govuk-caption-xl">Dataset</span>
+     <h1 class="govuk-heading-xl">{{datasets[dataset]["name"]}}</h1>
 
     <p class="govuk-body">Contents</p>
     <ul class="govuk-list govuk-list--bullet">
-    {% for tag in tags -%}
-      <li><a href="#{{tag}}">{{tags[tag]["plural"]}}</a></li>
-    {%- endfor %}
-      <li><a href="#download">Download the data</a></h2>
+      <li><a href="#organisations">Organisations</a></li>
+      <li><a href="#download">Download the data</a>
     </ul>
 	</div>
 </div>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-{% for tag in tags %}
-<div class="govuk-grid-row org-count">
-  <div class="govuk-grid-column-one-third">
-    <h2 class="govuk-heading-m org-count__name" id="{{tag}}">{{tags[tag]["plural"]}}</h2>
-    <div class="org-count__wrapper">
-      <p class="govuk-visually-hidden">There are
-        <span class="js-accessible-department-count">{{ tags[tag]["organisations"]|length }}</span>
-        {{tags[tag]["plural"]}}
-      </p>
-      <span class="govuk-body govuk-!-font-weight-bold govuk-!-font-size-80 js-department-count" aria-hidden="true">{{ tags[tag]["organisations"]|length }}</span>
-    </div>
-  </div>
-
+<div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l" id="organisations">Organisations</h2>
     <ul class="govuk-list">
-    {% for organisation in tags[tag]["organisations"] %}
+    {% for organisation in index["dataset"][dataset]["organisation"] %}
       <li>
-        <a href="{{organisation["path"]}}/" class="govuk-link govuk-body-l">{{organisation["name"]}}</a>
+        <a href="{{organisations[organisation]["path"]}}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>
       </li>
     {% endfor %}
     </ul>
   </div>
 </div>
-{% endfor %}
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l" id="download">Download the data</h2>
-    <p class="govuk-body">You can download the data on this page as:</p>
-    <ul class="govuk-list">
-      <li><a href="organisation.csv">CSV</a></li>
-    </ul>
+    <p class="govuk-body">You can download the data on this page from the <a href="{{datasets[dataset]["documentation_url"]}}">GitHub project</a>.</p>
   </div>
 </div>
 
