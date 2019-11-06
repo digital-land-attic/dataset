@@ -22,15 +22,12 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l" id="log">Log</h2>
-    <ul class="govuk-list">
     {% for o in index["dataset"][dataset]["organisation"][organisation["organisation"]]["log"] %}
         {% for d,v in o.items() %}
-            <dl class="govuk-summary-list">
 
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">{{d}}</dd>
-  </div>
+    <h2 class="govuk-heading-1" id="{{d}}">{{d}}</h2>
+    <dl class="govuk-summary-list">
+
 {% if index["log"][d][v]["url"] %}  
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">URL</dt>
@@ -41,6 +38,12 @@
     <dt class="govuk-summary-list__key">Headers</dt>
     <dd class="govuk-summary-list__value"><a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/{{d}}/{{v}}.json">{{v}}</a></dd>
   </div>
+{% if index["log"][d][v]["resource"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Resource</dt>
+    <dd class="govuk-summary-list__value"><a href="/resource/{{ index["log"][d][v]["resource"] }}">{{ index["log"][d][v]["resource"] }}</a></dd>
+  </div>
+{% endif %}
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Date-time</dt>
     <dd class="govuk-summary-list__value">{{ index["log"][d][v]["datetime"] }}</dd>
@@ -63,16 +66,10 @@
     <dd class="govuk-summary-list__value">{{ index["log"][d][v]["exception"] }}</dd>
   </div>
 {% endif %}
-{% if index["log"][d][v]["resource"] %}  
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/{{ index["log"][d][v]["resource"] }}">{{ index["log"][d][v]["resource"] }}</a></dd>
-  </div>
-{% endif %}
 
+</dl>
         {% endfor %}
     {% endfor %}
-    </ul>
   </div>
 </div>
 
@@ -81,7 +78,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-l" id="download">Download the data</h2>
+    <h2 class="govuk-heading-2" id="download">Download the data</h2>
     <p class="govuk-body">You can download the data on this page from the <a href="{{datasets[dataset]["documentation-url"]}}">GitHub project</a>.</p>
   </div>
 </div>
