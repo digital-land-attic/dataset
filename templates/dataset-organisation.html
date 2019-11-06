@@ -8,22 +8,13 @@
 
   <span class="govuk-caption-xl">Organisation</span>
   <h1 class="govuk-heading-xl">{{organisation["name"]}}</h1>
-  </div>
-</div>
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-<div class="govuk-grid-row">
-	<div class="govuk-grid-column-full">
-     <span class="govuk-caption-xl">Dataset</span>
-     <h1 class="govuk-heading-xl">{{datasets[dataset]["name"]}}</h1>
-
     <p class="govuk-body">Contents</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li><a href="#organisations">Organisations</a></li>
+      <li><a href="#log">Log</a></li>
       <li><a href="#download">Download the data</a>
     </ul>
-	</div>
+
+  </div>
 </div>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
@@ -34,7 +25,15 @@
     <ul class="govuk-list">
     {% for o in index["dataset"][dataset]["organisation"][organisation["organisation"]]["log"] %}
         {% for d,v in o.items() %}
-          <li>{{d}} <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/{{d}}/{{v}}.json">{{v}}</a></li>
+          <li>
+            {{d}}
+            <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/{{d}}/{{v}}.json">{{v}}</a>
+            <a href="index["url"][{{v}}]">{{ index["url"][v]}}"</a>
+            {{ index["log"][d][v]["datetime"] }}
+            {{ index["log"][d][v]["elapsed"] }}
+            {{ index["log"][d][v]["status"] }}
+            <a href="/resource/{{index["log"][d][v]["resource"]}}">{{ index["log"][d][v]["resource"] }}</a>
+            </li>
         {% endfor %}
     {% endfor %}
     </ul>
@@ -47,7 +46,7 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l" id="download">Download the data</h2>
-    <p class="govuk-body">You can download the data on this page from the <a href="{{datasets[dataset]["documentation_url"]}}">GitHub project</a>.</p>
+    <p class="govuk-body">You can download the data on this page from the <a href="{{datasets[dataset]["documentation-url"]}}">GitHub project</a>.</p>
   </div>
 </div>
 {% endblock %}
