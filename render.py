@@ -56,12 +56,14 @@ for o in csv.DictReader(get(dataset_csv).splitlines()):
 for dataset in index["dataset"]:
     for organisation in index["dataset"][dataset]["organisation"]:
         o = organisations[organisation]
-        o["path"] = "docs/" + dataset + "/" + "/".join(o["path-segments"])
+        o["path"] = "/".join(o["path-segments"])
 
-        if o["path"] and not os.path.exists(o["path"]):
-            os.makedirs(o["path"])
+        p = "docs/" + dataset + "/" + o["path"]
 
-        with open(o["path"] + "/" + "index.html", "w") as f:
+        if p and not os.path.exists(p):
+            os.makedirs(p)
+
+        with open(p + "/" + "index.html", "w") as f:
             f.write(
                 dataset_organisation_template.render(
                     organisations=organisations,
