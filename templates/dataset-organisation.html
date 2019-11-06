@@ -25,15 +25,51 @@
     <ul class="govuk-list">
     {% for o in index["dataset"][dataset]["organisation"][organisation["organisation"]]["log"] %}
         {% for d,v in o.items() %}
-          <li>
-            {{d}}
-            <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/{{d}}/{{v}}.json">{{v}}</a>
-            <a href="index["url"][{{v}}]">{{ index["url"][v]}}"</a>
-            {{ index["log"][d][v]["datetime"] }}
-            {{ index["log"][d][v]["elapsed"] }}
-            {{ index["log"][d][v]["status"] }}
-            <a href="/resource/{{index["log"][d][v]["resource"]}}">{{ index["log"][d][v]["resource"] }}</a>
-            </li>
+            <dl class="govuk-summary-list">
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date</dt>
+    <dd class="govuk-summary-list__value">{{d}}</dd>
+  </div>
+{% if index["log"][d][v]["url"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">URL</dt>
+    <dd class="govuk-summary-list__value"><a href="index["url"][{{v}}]">{{ index["url"][v]}}</a></dd>
+  </div>
+{% endif %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Headers</dt>
+    <dd class="govuk-summary-list__value"><a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/{{d}}/{{v}}.json">{{v}}</a></dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date-time</dt>
+    <dd class="govuk-summary-list__value">{{ index["log"][d][v]["datetime"] }}</dd>
+  </div>
+{% if index["log"][d][v]["elapsed"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Elapsed</dt>
+    <dd class="govuk-summary-list__value">{{ index["log"][d][v]["elapsed"] }}</dd>
+  </div>
+{% endif %}
+{% if index["log"][d][v]["status"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Status</dt>
+    <dd class="govuk-summary-list__value">{{ index["log"][d][v]["status"] }}</dd>
+  </div>
+{% endif %}
+{% if index["log"][d][v]["exception"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Exception</dt>
+    <dd class="govuk-summary-list__value">{{ index["log"][d][v]["exception"] }}</dd>
+  </div>
+{% endif %}
+{% if index["log"][d][v]["resource"] %}  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Resource</dt>
+    <dd class="govuk-summary-list__value"><a href="/resource/{{ index["log"][d][v]["resource"] }}">{{ index["log"][d][v]["resource"] }}</a></dd>
+  </div>
+{% endif %}
+
         {% endfor %}
     {% endfor %}
     </ul>
