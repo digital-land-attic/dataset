@@ -28,7 +28,14 @@ env = jinja2.Environment(loader=loader)
 
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")
+dataset_organisations_template = env.get_template("dataset-organisations.html")
 dataset_organisation_template = env.get_template("dataset-organisation.html")
+
+
+tags = OrderedDict()
+for o in csv.DictReader(get(organisation_tag_csv).splitlines()):
+    o["organisations"] = []
+    tags[o["tag"]] = o
 
 
 organisations = OrderedDict()
@@ -41,47 +48,47 @@ for o in csv.DictReader(get(organisation_csv).splitlines()):
     organisations[o["organisation"]] = o
 
 
-tags = OrderedDict()
-for o in csv.DictReader(get(organisation_tag_csv).splitlines()):
-    tags[o["tag"]] = o
-
-
-index = {}
 datasets = OrderedDict()
-for o in csv.DictReader(get(dataset_csv).splitlines()):
-    index = json.loads(get(o["resource-url"]))
-    datasets[o["dataset"]] = o
+for d in csv.DictReader(get(dataset_csv).splitlines()):
+    dataset = d["dataset"]
+    d["index"] = json.loads(get(d["resource-url"]))
+    d["organisation"] = {}
 
+    # expand index
+    for key in d["index"]:
+        for organisation in d["index"][key]["organisation"]:
+            d["organisation"].setdefault(organisation, {"key": [], "date": []})
+            d["organisation"][organisation]["key"].append(key)
+            for date in d["index"][key]["log"]:
+                d["organisation"][organisation]["date"].append(date)
 
-for dataset in index["dataset"]:
-    for organisation in index["dataset"][dataset]["organisation"]:
+    datasets[dataset] = d
+
+    # organisation page
+    for organisation in d["organisation"]:
         o = organisations[organisation]
+
         o["path"] = "/".join(o["path-segments"])
-
-        p = "docs/" + dataset + "/" + o["path"]
-
+        p = "docs/" + dataset + "/organisation/" + o["path"]
         if p and not os.path.exists(p):
             os.makedirs(p)
 
         with open(p + "/" + "index.html", "w") as f:
             f.write(
                 dataset_organisation_template.render(
-                    organisations=organisations,
-                    organisation=o,
-                    datasets=datasets,
-                    dataset=dataset,
-                    index=index,
+                    organisations=organisations, organisation=o, dataset=d
                 )
             )
 
+    # indexes
+    with open("docs/" + dataset + "/organisation/index.html", "w") as f:
+        f.write(
+            dataset_organisations_template.render(organisations=organisations, tags=tags, dataset=d)
+        )
+
     with open("docs/" + dataset + "/index.html", "w") as f:
         f.write(
-            dataset_template.render(
-                organisations=organisations,
-                datasets=datasets,
-                dataset=dataset,
-                index=index,
-            )
+            dataset_template.render(organisations=organisations, tags=tags, dataset=d)
         )
 
 with open("docs/index.html", "w") as f:

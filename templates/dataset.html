@@ -1,11 +1,37 @@
 {% extends "dlf-base.html" %}
 
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    "classes": "govuk-width-container",
+    "tag": {
+      "text": "prototype"
+    },
+    "html": 'This is a prototype. Please provide feedback to the Digital Land team.'
+  }) }}
+
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "/"
+      },
+      {
+        "text": "Dataset",
+        "href": "/dataset/"
+      },
+      {
+        "text": dataset["name"],
+      }
+    ]
+  }) }}
+
+{% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
 	<div class="govuk-grid-column-full">
      <span class="govuk-caption-xl">Dataset</span>
-     <h1 class="govuk-heading-xl">{{datasets[dataset]["name"]}}</h1>
+     <h1 class="govuk-heading-xl">{{dataset["name"]}}</h1>
 
     <p class="govuk-body">Contents</p>
     <ul class="govuk-list govuk-list--bullet">
@@ -18,15 +44,13 @@
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-l" id="organisations">Organisations</h2>
-    <ul class="govuk-list">
-    {% for organisation in index["dataset"][dataset]["organisation"] %}
-      <li>
-        <a href="{{organisations[organisation]["path"]}}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>
-      </li>
-    {% endfor %}
-    </ul>
+  <div class="govuk-grid-column-one-third">
+    <p>
+        <a href="organisation" class="govuk-link">
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["organisation"]|length}}</span><br>
+        <span class="govuk-body-l">Organisations</span>
+        </a>
+    </p>
   </div>
 </div>
 
@@ -35,7 +59,7 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l" id="download">Download the data</h2>
-    <p class="govuk-body">You can download the data on this page from the <a href="{{datasets[dataset]["documentation_url"]}}">GitHub project</a>.</p>
+    <p class="govuk-body">You can download the data on this page from the <a href="{{dataset["documentation_url"]}}">GitHub project</a>.</p>
   </div>
 </div>
 
