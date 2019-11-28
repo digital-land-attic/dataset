@@ -51,7 +51,10 @@ for o in csv.DictReader(get(organisation_csv).splitlines()):
 datasets = OrderedDict()
 for d in csv.DictReader(get(dataset_csv).splitlines()):
     dataset = d["dataset"]
-    d["index"] = json.loads(get(d["resource-url"]))
+
+    index_url = os.environ.get(dataset.replace("-", "_") + "_index", d["resource-url"])
+
+    d["index"] = json.loads(get(index_url))
     d["organisation"] = {}
 
     # expand index
@@ -83,7 +86,9 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
     # indexes
     with open("docs/" + dataset + "/organisation/index.html", "w") as f:
         f.write(
-            dataset_organisations_template.render(organisations=organisations, tags=tags, dataset=d)
+            dataset_organisations_template.render(
+                organisations=organisations, tags=tags, dataset=d
+            )
         )
 
     with open("docs/" + dataset + "/index.html", "w") as f:
