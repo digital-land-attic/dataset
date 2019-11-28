@@ -55,11 +55,97 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-m" id="log">Log</h2>
-    {% for o in dataset["organisation"][organisation["organisation"]]["key"] %}
-    <h3 class="govuk-heading-s" id="{{o}}">{{o}}</h3>
+
+    {% for key in dataset["organisation"][organisation["organisation"]]["key"] %}
+    <h3 class="govuk-heading-s" id="{{key}}">{{key}}</h3>
+
     <dl class="govuk-summary-list">
+{% if "documentation-url" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Documentation</dt>
+    <dd class="govuk-summary-list__value"><a href="{{ dataset["index"][key]["organisation"][organisation["organisation"]]["documentation-url"] }}">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["documentation-url"] }}</a></dd>
+  </div>
+{% endif %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">URL</dt>
+    <dd class="govuk-summary-list__value"><a href="{{ dataset["index"][key]["url"] }}">{{ dataset["index"][key]["url"] }}</a></dd>
+  </div>
+{% if "data-gov-uk" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">data-gov-uk</dt>
+    <dd class="govuk-summary-list__value"><a href="https://data.gov.uk/dataset/{{ dataset["index"][key]["organisation"][organisation["organisation"]]["data-gov-uk"] }}">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["data-gov-uk"] }}</a></dd>
+  </div>
+{% endif %}
+{% if "start-date" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">start-date</dt>
+    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["start-date"] }}</dd>
+  </div>
+{% endif %}
+{% if "end-date" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">end-date</dt>
+    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["end-date"] }}</dd>
+  </div>
+{% endif %}
+
+    </dl>
+
+{% if dataset["index"][key]["log"] %}
+    {% for date in dataset["index"][key]["log"] %}
+    <dl class="govuk-summary-list" id="{{ key }}/{{ date }}">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date</dt>
+    <dd class="govuk-summary-list__value">{{date}}</dd>
+  </div>
+
+{% if "datetime" in dataset["index"][key]["log"][date] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date-time</dt>
+    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["datetime"] }}</dd>
+  </div>
+{% endif %}
+{% if "elapsed" in dataset["index"][key]["log"][date] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Elapsed</dt>
+    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["elapsed"] }}</dd>
+  </div>
+{% endif %}
+{% if "status" in dataset["index"][key]["log"][date] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Status</dt>
+    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["status"] }}</dd>
+  </div>
+{% endif %}
+{% if "exception" in dataset["index"][key]["log"][date] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Exception</dt>
+    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["exception"] }}</dd>
+  </div>
+{% endif %}
+{% if "Content-Type" in dataset["index"][key]["log"][date] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Content-Type</dt>
+    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["Content-Type"] }}</dd>
+  </div>
+{% endif %}
+{% if "Content-Length" in dataset["index"][key]["log"][date] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Content-Length</dt>
+    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["Content-Length"] }}</dd>
+  </div>
+{% endif %}
+{% if "resource" in dataset["index"][key]["log"][date] %}
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Resource</dt>
+    <dd class="govuk-summary-list__value"><a href="/resource/{{ dataset["index"][key]["log"][date]["resource"] }}">{{ dataset["index"][key]["log"][date]["resource"] }}</a></dd>
+  </div>
+{% endif %}
+
     </dl>
     {% endfor %}
+{% endif %}
+  {% endfor %}
   </div>
 </div>
 
