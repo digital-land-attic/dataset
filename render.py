@@ -64,6 +64,8 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
             d["organisation"][organisation]["key"].append(key)
             for date in d["index"][key]["log"]:
                 d["organisation"][organisation]["date"].append(date)
+            d["organisation"][organisation]["date"].sort()
+
 
     datasets[dataset] = d
 
