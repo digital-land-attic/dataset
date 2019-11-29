@@ -70,13 +70,13 @@
             {{ dataset["organisation"][organisation]["key"] | count }}
           </td>
           <td class="govuk-table__cell">
-            {% set sep="" %}
             {% for key in dataset["organisation"][organisation]["key"] %}
-                {{ sep|safe }}
+                <div>
                 {% for day in dataset["index"][key]["log"] %}
-                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}/{{day}}">{{dataset["index"][key]["log"][day]["status"]}}</a>
+                    {% set status=dataset["index"][key]["log"][day].get("status", dataset["index"][key]["log"][day].get("exception", "*")) %}
+                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}/{{day}}">{% if status in ["200", "*"] %}{{ status }}{% else %}<strong class="govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% endif %}</a>
                 {% endfor %}
-                {% set sep="*<br/>" %}
+                </div>
             {% endfor %}
           </td>
         </tr>
