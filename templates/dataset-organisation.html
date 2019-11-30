@@ -95,16 +95,9 @@
     {% for date in dataset["index"][key]["log"] %}
     <dl class="govuk-summary-list" id="{{ key }}/{{ date }}">
   <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">{{date}}</dd>
-  </div>
-
-{% if "datetime" in dataset["index"][key]["log"][date] %}
-  <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["datetime"] }}</dd>
+    <dd class="govuk-summary-list__value"><a href="{{dataset["documentation-url"].replace("github.com", "raw.githubusercontent.com")}}/master/collection/log/{{date}}/{{key}}.json">{{ dataset["index"][key]["log"][date]["datetime"] }}</a></dd>
   </div>
-{% endif %}
 {% if "elapsed" in dataset["index"][key]["log"][date] %}
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Elapsed</dt>
