@@ -19,6 +19,14 @@
 
     
 <link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
+<style>
+.status-green {
+    background-color: green;
+}
+.status-red {
+    background-color: red;
+}
+</style>
 
     
     
@@ -122,13 +130,15 @@
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-m" id="log">Log</h2>
 
     
-    <h3 class="govuk-heading-s" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438">9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438</h3>
-
-    <dl class="govuk-summary-list">
+    <dl class="govuk-summary-list" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">Key</dt>
+      <dd class="govuk-summary-list__value"><a href="/log/9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438">9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438</a></dd>
+    </div>
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Documentation</dt>
@@ -142,226 +152,155 @@
 
 
 
-
     </dl>
 
 
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Elapsed</th>
+      <th scope="col" class="govuk-table__header">Content-type</th>
+      <th scope="col" class="govuk-table__header">Content-length</th>
+      <th scope="col" class="govuk-table__header">Resource</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
     
-    <dl class="govuk-summary-list" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2018-07-05">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2018-07-05</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2018-07-05T15:29:39.915294</dd>
-  </div>
-
-
-
-
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-26">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-26</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-26T09:50:27.667881</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.641</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22890</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2018-07-05">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2018-07-05/9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438.json" title="2018-07-05T15:29:39.915294">2018-07-05</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">*</strong></td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell">
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-27">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-27</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-27T20:47:14.123586</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.317</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22890</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-28">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-28</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-28T06:55:57.090503</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.322</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22890</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-26">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-26/9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438.json" title="2019-11-26T09:50:27.667881">2019-11-26</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.641</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22890
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-29">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-29</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-29T11:05:24.674513</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.302</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22890</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a></dd>
-  </div>
-
-
-    </dl>
     
+
+    <tr class="govuk-table__row" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-27">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-27/9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438.json" title="2019-11-27T20:47:14.123586">2019-11-27</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.317</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22890
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-28">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-28/9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438.json" title="2019-11-28T06:55:57.090503">2019-11-28</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.322</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22890
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-29">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-29/9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438.json" title="2019-11-29T11:05:24.674513">2019-11-29</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.302</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22890
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438/2019-11-30">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-30/9458c610122eef9a6ebbad9a67790023a49a11d91b16435d2ffe5fd89b2ff438.json" title="2019-11-30T10:26:33.825649">2019-11-30</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.316</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22890
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a>
+      
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
 
   
-    <h3 class="govuk-heading-s" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3">a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3</h3>
-
-    <dl class="govuk-summary-list">
+    <dl class="govuk-summary-list" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">Key</dt>
+      <dd class="govuk-summary-list__value"><a href="/log/a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3">a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3</a></dd>
+    </div>
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Documentation</dt>
@@ -375,200 +314,136 @@
 
 
 
-
     </dl>
 
 
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Elapsed</th>
+      <th scope="col" class="govuk-table__header">Content-type</th>
+      <th scope="col" class="govuk-table__header">Content-length</th>
+      <th scope="col" class="govuk-table__header">Resource</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
     
-    <dl class="govuk-summary-list" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-26">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-26</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-26T09:50:28.321149</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">8.678</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22156</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-27">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-27</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-27T20:47:14.757329</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.272</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22156</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-26">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-26/a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3.json" title="2019-11-26T09:50:28.321149">2019-11-26</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">8.678</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22156
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-28">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-28</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-28T06:55:57.717339</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.237</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22156</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-29">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-29</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-29T11:05:25.258834</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.234</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22156</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-27">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-27/a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3.json" title="2019-11-27T20:47:14.757329">2019-11-27</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.272</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22156
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a>
+      
+      </td>
+    </tr>
     
+    
+
+    <tr class="govuk-table__row" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-28">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-28/a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3.json" title="2019-11-28T06:55:57.717339">2019-11-28</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.237</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22156
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-29">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-29/a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3.json" title="2019-11-29T11:05:25.258834">2019-11-29</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.234</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22156
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3/2019-11-30">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-30/a52a9a58f7a0c7e0149824a97c231d590aeba0d40eb0dea5e9298390f19cbba3.json" title="2019-11-30T10:26:34.436811">2019-11-30</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.216</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22156
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e">2538ffb8acb1ed2431125fc409a8c27bbe9fb906a816719936a38f38442a247e</a>
+      
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
 
   
-    <h3 class="govuk-heading-s" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4">adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4</h3>
-
-    <dl class="govuk-summary-list">
+    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">Key</dt>
+      <dd class="govuk-summary-list__value"><a href="/log/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4">adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4</a></dd>
+    </div>
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Documentation</dt>
@@ -582,773 +457,400 @@
 
 
 
-
     </dl>
 
 
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Elapsed</th>
+      <th scope="col" class="govuk-table__header">Content-type</th>
+      <th scope="col" class="govuk-table__header">Content-length</th>
+      <th scope="col" class="govuk-table__header">Resource</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2018-05-22">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2018-05-22</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2018-05-22T00:00:00.0</dd>
-  </div>
-
-
-
-
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-10-20">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-10-20</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-10-20T23:24:12.139298</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.346</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2018-05-22">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2018-05-22/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2018-05-22T00:00:00.0">2018-05-22</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">*</strong></td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell">
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde">d044b96116cc9d06732a919af514c5523aee0a02f6996d82348f235239654fde</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-10-21">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-10-21</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-10-21T06:26:06.899195</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.27</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-10-29">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-10-29</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-10-29T05:40:23.092914</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.354</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-10-20">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-10-20/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-10-20T23:24:12.139298">2019-10-20</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.346</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-03">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-03</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-03T19:16:31.818432</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.425</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-04">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-04</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-04T12:48:24.655203</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.554</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-10-21">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-10-21/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-10-21T06:26:06.899195">2019-10-21</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.27</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-05">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-05</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-05T19:18:47.566212</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.388</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-18">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-18</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-18T15:37:11.322881</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.454</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-10-29">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-10-29/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-10-29T05:40:23.092914">2019-10-29</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.354</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-19">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-19</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-19T10:01:59.185168</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.436</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-22">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-22</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-22T15:29:35.738270</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.341</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-03">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-03/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-03T19:16:31.818432">2019-11-03</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.425</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-23">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-23</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-23T10:54:08.450985</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.365</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-24">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-24</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-24T08:07:15.635912</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.33</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-04">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-04/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-04T12:48:24.655203">2019-11-04</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.554</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-25">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-25</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-25T06:46:57.035833</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.338</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-26">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-26</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-26T06:32:49.378181</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.322</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-05">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-05/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-05T19:18:47.566212">2019-11-05</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.388</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-27">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-27</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-27T20:47:14.443522</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.311</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-28">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-28</dd>
-  </div>
 
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-28T06:55:57.415110</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.299</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-18">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-18/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-18T15:37:11.322881">2019-11-18</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.454</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
     
-    <dl class="govuk-summary-list" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-29">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date</dt>
-    <dd class="govuk-summary-list__value">2019-11-29</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value">2019-11-29T11:05:24.979665</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">0.275</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">200</dd>
-  </div>
-
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">application/octet-stream</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">22065</dd>
-  </div>
-
-
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a></dd>
-  </div>
-
-
-    </dl>
     
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-19">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-19/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-19T10:01:59.185168">2019-11-19</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.436</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-22">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-22/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-22T15:29:35.738270">2019-11-22</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.341</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-23">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-23/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-23T10:54:08.450985">2019-11-23</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.365</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-24">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-24/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-24T08:07:15.635912">2019-11-24</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.33</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-25">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-25/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-25T06:46:57.035833">2019-11-25</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.338</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-26">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-26/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-26T06:32:49.378181">2019-11-26</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.322</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-27">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-27/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-27T20:47:14.443522">2019-11-27</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.311</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-28">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-28/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-28T06:55:57.415110">2019-11-28</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.299</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-29">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-29/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-29T11:05:24.979665">2019-11-29</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.275</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+    
+
+    <tr class="govuk-table__row" id="adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4/2019-11-30">
+      <th scope="row" class="govuk-table__header">
+        <a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/collection/log/2019-11-30/adca013d505b76dfd5eeb1a290c8e16dce403ffc37b91655d7053faf79efdcb4.json" title="2019-11-30T10:26:34.144533">2019-11-30</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-green govuk-tag govuk-!-margin-bottom-2">200</strong></td>
+      <td class="govuk-table__cell">0.289</td>
+      <td class="govuk-table__cell">application/octet-stream</td>
+      <td class="govuk-table__cell">
+      
+          22065
+      
+      </td>
+      <td class="govuk-table__cell">
+      
+        <a href="/resource/ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d">ccf1e5ed6b2f62728d94bed3665bbdd7381d736b94b28fd066a21fb96ee9f23d</a>
+      
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
 
   
   </div>
@@ -1359,7 +861,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-2" id="download">Download the data</h2>
+    <h2 class="govuk-heading-m" id="download">Download the data</h2>
     <p class="govuk-body">You can download the data on this page from the <a href="https://github.com/digital-land/brownfield-land-collection">GitHub project</a>.</p>
   </div>
 </div>

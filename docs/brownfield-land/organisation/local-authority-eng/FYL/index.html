@@ -19,6 +19,14 @@
 
     
 <link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
+<style>
+.status-green {
+    background-color: green;
+}
+.status-red {
+    background-color: red;
+}
+</style>
 
     
     
@@ -122,13 +130,15 @@
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-m" id="log">Log</h2>
 
     
-    <h3 class="govuk-heading-s" id="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</h3>
-
-    <dl class="govuk-summary-list">
+    <dl class="govuk-summary-list" id="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">Key</dt>
+      <dd class="govuk-summary-list__value"><a href="/log/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</a></dd>
+    </div>
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Documentation</dt>
@@ -139,7 +149,6 @@
     <dt class="govuk-summary-list__key">URL</dt>
     <dd class="govuk-summary-list__value"><a href=""></a></dd>
   </div>
-
 
 
 
@@ -155,7 +164,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-2" id="download">Download the data</h2>
+    <h2 class="govuk-heading-m" id="download">Download the data</h2>
     <p class="govuk-body">You can download the data on this page from the <a href="https://github.com/digital-land/brownfield-land-collection">GitHub project</a>.</p>
   </div>
 </div>
