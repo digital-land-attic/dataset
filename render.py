@@ -71,7 +71,7 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
             d["organisation"][organisation]["key"].append(key)
 
     for organisation in d["organisation"]:
-        d["organisation"][organisation]["key"] = sorted(d["organisation"][organisation]["key"], key=lambda key: d["index"][key].get("date", ""))
+        d["organisation"][organisation]["key"] = sorted(d["organisation"][organisation]["key"], key=lambda key: d["index"][key]["log"][d["index"][key]["date"]]["datetime"] if "date" in d["index"][key] else "")
 
     datasets[dataset] = d
 
