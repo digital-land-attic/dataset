@@ -70,7 +70,7 @@
                 <div>
                 {% for day in dataset["index"][key]["log"] %}
                     {% set status=dataset["index"][key]["log"][day].get("status", dataset["index"][key]["log"][day].get("exception", "*")) %}
-                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}/{{day}}">{% if status in ["200", "*"] %}<strong class="status-green govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% else %}<strong class="status-red govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% endif %}</a>
+                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}/{{day}}" title="{{day}}">{% if status in ["200", "*"] %}<strong class="status-green govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% else %}<strong class="status-red govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% endif %}</a>
                 {% endfor %}
                 </div>
             {% endfor %}

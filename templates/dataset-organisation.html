@@ -53,13 +53,15 @@
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-m" id="log">Log</h2>
 
     {% for key in dataset["organisation"][organisation["organisation"]]["key"] %}
-    <h3 class="govuk-heading-s" id="{{key}}">{{key}}</h3>
-
-    <dl class="govuk-summary-list">
+    <dl class="govuk-summary-list" id="{{key}}">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">Key</dt>
+      <dd class="govuk-summary-list__value"><a href="/log/{{key}}">{{key}}</a></dd>
+    </div>
 {% if "documentation-url" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Documentation</dt>
@@ -88,56 +90,45 @@
     <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["end-date"] }}</dd>
   </div>
 {% endif %}
-
     </dl>
 
 {% if dataset["index"][key]["log"] %}
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Elapsed</th>
+      <th scope="col" class="govuk-table__header">Content-type</th>
+      <th scope="col" class="govuk-table__header">Content-length</th>
+      <th scope="col" class="govuk-table__header">Resource</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
     {% for date in dataset["index"][key]["log"] %}
-    <dl class="govuk-summary-list" id="{{ key }}/{{ date }}">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Date-time</dt>
-    <dd class="govuk-summary-list__value"><a href="{{dataset["documentation-url"].replace("github.com", "raw.githubusercontent.com")}}/master/collection/log/{{date}}/{{key}}.json">{{ dataset["index"][key]["log"][date]["datetime"] }}</a></dd>
-  </div>
-{% if "elapsed" in dataset["index"][key]["log"][date] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Elapsed</dt>
-    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["elapsed"] }}</dd>
-  </div>
-{% endif %}
-{% if "status" in dataset["index"][key]["log"][date] %}
-  {% set status=dataset["index"][key]["log"][date]["status"] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value"><strong class="status-{% if status in ["200", "*"] %}green{% else %}red{% endif %} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></dd>
-  </div>
-{% endif %}
-{% if "exception" in dataset["index"][key]["log"][date] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Exception</dt>
-    <dd class="govuk-summary-list__value"><strong class="status-red govuk-tag govuk-!-margin-bottom-2">{{ dataset["index"][key]["log"][date]["exception"] }}</strong></dd>
-  </div>
-{% endif %}
-{% if "Content-Type" in dataset["index"][key]["log"][date] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Type</dt>
-    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["Content-Type"] }}</dd>
-  </div>
-{% endif %}
-{% if "Content-Length" in dataset["index"][key]["log"][date] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Content-Length</dt>
-    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["Content-Length"] }}</dd>
-  </div>
-{% endif %}
-{% if "resource" in dataset["index"][key]["log"][date] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Resource</dt>
-    <dd class="govuk-summary-list__value"><a href="/resource/{{ dataset["index"][key]["log"][date]["resource"] }}">{{ dataset["index"][key]["log"][date]["resource"] }}</a></dd>
-  </div>
-{% endif %}
+    {% set status=dataset["index"][key]["log"][date].get("status", dataset["index"][key]["log"][date].get("exception", "*")) %}
 
-    </dl>
+    <tr class="govuk-table__row" id="{{ key }}/{{ date }}">
+      <th scope="row" class="govuk-table__header">
+        <a href="{{dataset["documentation-url"].replace("github.com", "raw.githubusercontent.com")}}/master/collection/log/{{date}}/{{key}}.json" title="{{ dataset["index"][key]["log"][date]["datetime"] }}">{{date}}</a>
+      </th>
+      <td class="govuk-table__cell"><strong class="status-{% if status in ["200", "*"] %}green{% else %}red{% endif %} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></td>
+      <td class="govuk-table__cell">{{ dataset["index"][key]["log"][date]["elapsed"] }}</td>
+      <td class="govuk-table__cell">{% if "Content-Type" in dataset["index"][key]["log"][date] %}{{ dataset["index"][key]["log"][date]["Content-Type"] }}{% endif %}</td>
+      <td class="govuk-table__cell">
+      {% if "Content-Length" in dataset["index"][key]["log"][date] %}
+          {{ dataset["index"][key]["log"][date]["Content-Length"] }}
+      {% endif %}
+      </td>
+      <td class="govuk-table__cell">
+      {% if "resource" in dataset["index"][key]["log"][date] %}
+        <a href="/resource/{{ dataset["index"][key]["log"][date]["resource"] }}">{{ dataset["index"][key]["log"][date]["resource"] }}</a>
+      {% endif %}
+      </td>
+    </tr>
     {% endfor %}
+  </tbody>
+</table>
 {% endif %}
   {% endfor %}
   </div>
