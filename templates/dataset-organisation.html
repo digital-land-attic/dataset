@@ -62,8 +62,8 @@
     <h2 class="govuk-heading-m" id="log">Log</h2>
 
     {% for key in dataset["organisation"][organisation["organisation"]]["key"] %}
-    <div class="govuk-!-margin-bottom-9">
-    <h3 class="govuk-heading-m id="{{key}}"><a href="/log/{{key}}">{{key}}</a></h3>
+    <div class="govuk-!-margin-bottom-9" id="{{key}}">
+    <h3 class="govuk-heading-m"><a href="/log/{{key}}">{{key}}</a></h3>
     <dl class="govuk-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">URL</dt>
@@ -109,13 +109,13 @@
   </thead>
   <tbody class="govuk-table__body">
     {% for date in dataset["index"][key]["log"] %}
-    {% set status=dataset["index"][key]["log"][date].get("status", dataset["index"][key]["log"][date].get("exception", "*")) %}
+    {% set status=dataset["index"][key]["log"][date].get("status", dataset["index"][key]["log"][date].get("exception", "●")) %}
 
     <tr class="govuk-table__row" id="{{ key }}/{{ date }}">
       <th scope="row" class="govuk-table__header">
         <a href="{{dataset["documentation-url"].replace("github.com", "raw.githubusercontent.com")}}/master/collection/log/{{date}}/{{key}}.json" title="{{ dataset["index"][key]["log"][date]["datetime"] }}">{{date}}</a>
       </th>
-      <td class="govuk-table__cell"><strong class="status-{% if status in ["200", "*"] %}green{% else %}red{% endif %} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></td>
+      <td class="govuk-table__cell"><strong class="status-{% if status in ["200", "●"] %}green{% else %}red{% endif %} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></td>
       <td class="govuk-table__cell">{{ dataset["index"][key]["log"][date]["elapsed"] }}</td>
       <td class="govuk-table__cell">{% if "Content-Type" in dataset["index"][key]["log"][date] %}{{ dataset["index"][key]["log"][date]["Content-Type"] }}{% endif %}</td>
       <td class="govuk-table__cell">

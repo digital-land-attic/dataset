@@ -64,10 +64,10 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
             date = list(d["index"][key]["log"].keys())[-1]
             d["index"][key]["date"] = date
             d["index"][key]["status"] = d["index"][key]["log"][date].get(
-                "status", d["index"][key]["log"][date].get("exception", "*")
+                "status", d["index"][key]["log"][date].get("exception", "●")
             )
             d["index"][key]["colour"] = (
-                "green" if d["index"][key]["status"] in ["200", "*"] else "red"
+                "green" if d["index"][key]["status"] in ["200", "●"] else "red"
             )
 
         for organisation in d["index"][key]["organisation"]:
