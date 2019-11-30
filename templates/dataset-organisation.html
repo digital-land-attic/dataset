@@ -58,38 +58,38 @@
 
     {% for key in dataset["organisation"][organisation["organisation"]]["key"] %}
     <dl class="govuk-summary-list" id="{{key}}">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">Key</dt>
-      <dd class="govuk-summary-list__value"><a href="/log/{{key}}">{{key}}</a></dd>
-    </div>
-{% if "documentation-url" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">Documentation</dt>
-    <dd class="govuk-summary-list__value"><a href="{{ dataset["index"][key]["organisation"][organisation["organisation"]]["documentation-url"] }}">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["documentation-url"] }}</a></dd>
-  </div>
-{% endif %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">URL</dt>
-    <dd class="govuk-summary-list__value"><a href="{{ dataset["index"][key]["url"] }}">{{ dataset["index"][key]["url"] }}</a></dd>
-  </div>
-{% if "data-gov-uk" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">data-gov-uk</dt>
-    <dd class="govuk-summary-list__value"><a href="https://data.gov.uk/dataset/{{ dataset["index"][key]["organisation"][organisation["organisation"]]["data-gov-uk"] }}">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["data-gov-uk"] }}</a></dd>
-  </div>
-{% endif %}
-{% if "start-date" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">start-date</dt>
-    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["start-date"] }}</dd>
-  </div>
-{% endif %}
-{% if "end-date" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">end-date</dt>
-    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["end-date"] }}</dd>
-  </div>
-{% endif %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">URL</dt>
+        <dd class="govuk-summary-list__value"><a href="{{ dataset["index"][key]["url"] }}">{{ dataset["index"][key]["url"] }}</a></dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Key</dt>
+        <dd class="govuk-summary-list__value"><a href="/log/{{key}}">{{key}}</a></dd>
+      </div>
+      {% if "documentation-url" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">Documentation</dt>
+        <dd class="govuk-summary-list__value"><a href="{{ dataset["index"][key]["organisation"][organisation["organisation"]]["documentation-url"] }}">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["documentation-url"] }}</a></dd>
+      </div>
+      {% endif %}
+      {% if "data-gov-uk" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">data-gov-uk</dt>
+        <dd class="govuk-summary-list__value"><a href="https://data.gov.uk/dataset/{{ dataset["index"][key]["organisation"][organisation["organisation"]]["data-gov-uk"] }}">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["data-gov-uk"] }}</a></dd>
+      </div>
+      {% endif %}
+      {% if "start-date" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">start-date</dt>
+        <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["start-date"] }}</dd>
+      </div>
+      {% endif %}
+      {% if "end-date" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">end-date</dt>
+        <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["end-date"] }}</dd>
+      </div>
+      {% endif %}
     </dl>
 
 {% if dataset["index"][key]["log"] %}
