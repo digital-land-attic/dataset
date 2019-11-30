@@ -112,15 +112,16 @@
   </div>
 {% endif %}
 {% if "status" in dataset["index"][key]["log"][date] %}
+  {% set status=dataset["index"][key]["log"][date]["status"] %}
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Status</dt>
-    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["status"] }}</dd>
+    <dd class="govuk-summary-list__value"><strong class="status-{% if status in ["200", "*"] %}green{% else %}red{% endif %} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></dd>
   </div>
 {% endif %}
 {% if "exception" in dataset["index"][key]["log"][date] %}
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">Exception</dt>
-    <dd class="govuk-summary-list__value">{{ dataset["index"][key]["log"][date]["exception"] }}</dd>
+    <dd class="govuk-summary-list__value"><strong class="status-red govuk-tag govuk-!-margin-bottom-2">{{ dataset["index"][key]["log"][date]["exception"] }}</strong></dd>
   </div>
 {% endif %}
 {% if "Content-Type" in dataset["index"][key]["log"][date] %}

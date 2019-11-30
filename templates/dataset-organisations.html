@@ -55,7 +55,6 @@
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header">Organisation</th>
-          <th scope="col" class="govuk-table__header">Links</th>
           <th scope="col" class="govuk-table__header">Status</th>
         </tr>
       </thead>
@@ -67,14 +66,11 @@
             <a href="{{organisations[organisation]["path"]}}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>
           </th>
           <td class="govuk-table__cell">
-            {{ dataset["organisation"][organisation]["key"] | count }}
-          </td>
-          <td class="govuk-table__cell">
             {% for key in dataset["organisation"][organisation]["key"] %}
                 <div>
                 {% for day in dataset["index"][key]["log"] %}
                     {% set status=dataset["index"][key]["log"][day].get("status", dataset["index"][key]["log"][day].get("exception", "*")) %}
-                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}/{{day}}">{% if status in ["200", "*"] %}{{ status }}{% else %}<strong class="govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% endif %}</a>
+                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}/{{day}}">{% if status in ["200", "*"] %}<strong class="status-green govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% else %}<strong class="status-red govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% endif %}</a>
                 {% endfor %}
                 </div>
             {% endfor %}
