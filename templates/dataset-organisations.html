@@ -67,12 +67,12 @@
           </th>
           <td class="govuk-table__cell">
             {% for key in dataset["organisation"][organisation]["key"] %}
-                <div>
-                {% for day in dataset["index"][key]["log"] %}
-                    {% set status=dataset["index"][key]["log"][day].get("status", dataset["index"][key]["log"][day].get("exception", "*")) %}
-                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}/{{day}}" title="{{day}}">{% if status in ["200", "*"] %}<strong class="status-green govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% else %}<strong class="status-red govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong>{% endif %}</a>
-                {% endfor %}
-                </div>
+                {% if "date" in dataset["index"][key] %}
+                    {% set date=dataset["index"][key]["date"] %}
+                    {% set status=dataset["index"][key]["status"] %}
+                    {% set colour=dataset["index"][key]["colour"] %}
+                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}/{{date}}" title="{{date}}"><strong class="status-{{colour}} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></a>
+                {% endif %}
             {% endfor %}
           </td>
         </tr>

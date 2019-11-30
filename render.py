@@ -59,10 +59,19 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
 
     # expand index
     for key in d["index"]:
+        dates = list(d["index"][key]["log"].keys())
+        if dates:
+            date = list(d["index"][key]["log"].keys())[-1]
+            d["index"][key]["date"] = date
+            d["index"][key]["status"] = d["index"][key]["log"][date].get("status", d["index"][key]["log"][date].get("exception", "*"))
+            d["index"][key]["colour"] = "green" if d["index"][key]["status"] in ["200", "*"] else "red"
+
         for organisation in d["index"][key]["organisation"]:
             d["organisation"].setdefault(organisation, {"key": []})
             d["organisation"][organisation]["key"].append(key)
 
+    for organisation in d["organisation"]:
+        d["organisation"][organisation]["key"] = sorted(d["organisation"][organisation]["key"], key=lambda key: d["index"][key].get("date", ""))
 
     datasets[dataset] = d
 
