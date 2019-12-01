@@ -68,10 +68,12 @@
           <td class="govuk-table__cell">
             {% for key in dataset["organisation"][organisation]["key"] %}
                 {% if "date" in dataset["index"][key] %}
-                    {% set date=dataset["index"][key]["date"] %}
-                    {% set status=dataset["index"][key]["status"] %}
-                    {% set colour=dataset["index"][key]["colour"] %}
-                    <a href="{{organisations[organisation]["path"]}}/#{{ key }}" title="{{date}}"><strong class="status-{{colour}} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></a>
+                    {% if not dataset["index"][key]["organisation"][organisation].get("end-date", "") %}
+                      {% set date=dataset["index"][key]["date"] %}
+                      {% set status=dataset["index"][key]["status"] %}
+                      {% set colour=dataset["index"][key]["colour"] %}
+                      <a href="{{organisations[organisation]["path"]}}/#{{ key }}" title="{{date}}"><strong class="status-{{colour}} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></a>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
           </td>
