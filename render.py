@@ -56,10 +56,21 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
 
     d["index"] = json.loads(get(index_url))
     d["organisation"] = {}
+    d["resource"] = {}
+    d["data-govuk"] = {}
 
     # expand index
     for key in d["index"]:
         dates = list(d["index"][key]["log"].keys())
+
+        # index by resource
+        for date in dates: 
+            if "resource" in d["index"][key]["log"][date]:
+                resource = d["index"][key]["log"][date]["resource"]
+                d["resource"].setdefault(resource, {})
+                d["resource"][resource].setdefault(key, [])
+                d["resource"][resource][key].append(date)
+
         if dates:
             date = list(d["index"][key]["log"].keys())[-1]
             d["index"][key]["date"] = date
@@ -81,6 +92,14 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
             if "date" in d["index"][key]
             else "",
         )
+
+    # stats
+    d["stats"] = {
+        "organisations": len(d["organisation"]),
+        "resources": len(d["resource"]),
+        "urls": len(d["index"]),
+    }
+    
 
     datasets[dataset] = d
 
