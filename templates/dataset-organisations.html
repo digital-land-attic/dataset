@@ -79,6 +79,7 @@
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header">Organisation</th>
+          <th scope="col" class="govuk-table__header">Documentation</th>
           <th scope="col" class="govuk-table__header">Status</th>
         </tr>
       </thead>
@@ -89,6 +90,13 @@
           <th scope="row" class="govuk-table__header">
             <a href="{{organisations[organisation]["path"]}}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>
           </th>
+          <td class="govuk-table__cell">
+            {% for key in dataset["organisation"][organisation]["key"] %}
+              {% if "documentation-url" in dataset["index"][key]["organisation"][organisation] %}
+                <a href="{{dataset["index"][key]["organisation"][organisation]["documentation-url"]  }}">✔</a>
+              {% endif %}
+            {% endfor %}
+          </td>
           <td class="govuk-table__cell">
             {% for key in dataset["organisation"][organisation]["key"] %}
                 {% if "date" in dataset["index"][key] %}
