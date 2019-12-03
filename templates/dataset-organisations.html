@@ -57,14 +57,41 @@
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["landing-pages"]}}</span><br>
+        <span class="govuk-body-l">With documentation</span>
+    </p>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["documentation-urls"]}}</span><br>
+        <span class="govuk-body-l">Broken</span>
+    </p>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["documentation-urls"]}}</span><br>
+        <span class="govuk-body-l">Without a link</span>
+    </p>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <p>
         <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["urls"]}}</span><br>
         <span class="govuk-body-l">Links</span>
     </p>
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["resources"]}}</span><br>
-        <span class="govuk-body-l">Resources</span>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["broken-urls"]}}</span><br>
+        <span class="govuk-body-l">Broken</span>
+    </p>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["documentation-urls"]}}</span><br>
+        <span class="govuk-body-l">Not listed on data.gov.uk</span>
     </p>
   </div>
 </div>
@@ -91,11 +118,9 @@
             <a href="{{organisations[organisation]["path"]}}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>
           </th>
           <td class="govuk-table__cell">
-            {% for key in dataset["organisation"][organisation]["key"] %}
-              {% if "documentation-url" in dataset["index"][key]["organisation"][organisation] %}
-                <a href="{{dataset["index"][key]["organisation"][organisation]["documentation-url"]  }}">✔</a>
-              {% endif %}
-            {% endfor %}
+            {% if "landing-page" in dataset["organisation"][organisation] %}
+              <a href="{{dataset["organisation"][organisation]["landng-page"] }}">✔</a>
+            {% endif %}
           </td>
           <td class="govuk-table__cell">
             {% for key in dataset["organisation"][organisation]["key"] %}

@@ -93,13 +93,18 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
             else "",
         )
 
+    for organisation in d["organisation"]:
+        for key in d["organisation"][organisation]["key"]:
+            if "documentation-url" in d["index"][key]["organisation"][organisation]:
+                d["organisation"][organisation]["landing-page"] = d["index"][key]["organisation"][organisation]["documentation-url"]
+
     # stats
     d["stats"] = {
         "organisations": len(d["organisation"]),
         "resources": len(d["resource"]),
         "urls": len(d["index"]),
+        "landing-pages": len([o for o in d["organisation"] if "landing-page" in d["organisation"][o]]),
     }
-    
 
     datasets[dataset] = d
 
