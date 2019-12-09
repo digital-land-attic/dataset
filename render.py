@@ -54,7 +54,8 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
 
     index_url = os.environ.get(dataset.replace("-", "_") + "_index", d["resource-url"])
 
-    d["index"] = json.loads(get(index_url))
+    idx = json.loads(get(index_url))
+    d["index"] = idx["key"]
     d["organisation"] = {}
     d["resource"] = {}
     d["data-govuk"] = {}
@@ -97,6 +98,8 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         for key in d["organisation"][organisation]["key"]:
             if "documentation-url" in d["index"][key]["organisation"][organisation]:
                 d["organisation"][organisation]["landing-page"] = d["index"][key]["organisation"][organisation]["documentation-url"]
+            if "data-gov-uk" in d["index"][key]["organisation"][organisation]:
+                d["organisation"][organisation]["data-gov-uk"] = d["index"][key]["organisation"][organisation]["data-gov-uk"]
 
     # stats
     d["stats"] = {
@@ -104,6 +107,10 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         "resources": len(d["resource"]),
         "urls": len(d["index"]),
         "landing-pages": len([o for o in d["organisation"] if "landing-page" in d["organisation"][o]]),
+        "data-gov-uk": len([o for o in d["organisation"] if "data-gov-uk" in d["organisation"][o]]),
+        "valid": len([resource for resource in idx["resource"] if idx["resource"][resource]['valid']]),
+        "rows": sum([r['row-count'] for r in idx["resource"].values()]),
+        "errors": sum([r['error-count'] for r in idx["resource"].values()]),
     }
 
     datasets[dataset] = d
