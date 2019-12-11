@@ -11,6 +11,19 @@ The datasets are collected into the [collection](collection) directories:
 
     $ make
 
+# Data
+
+* [digital-land/dataset-collection/dataset/dataset.csv](https://github.com/digital-land/dataset-collection/blob/master/dataset/dataset.csv)
+
+Information about organisations is taken from:
+
+* [digital-land/organisation-collection/collection/organisation.csv](https://github.com/digital-land/organisation-collection/blob/master/collection/organisation.csv)
+* [digital-land/organisation-collection/collection/tag.csv](https://github.com/digital-land/organisation-collection/blob/master/data/tag.csv)
+
+You can change the URL for an individual file using an environment variable, for example:
+
+    export brownfield_land_index=http://localhost:8000/brownfield-land-collection/collection/index.json
+
 # Licence
 
 The software in this project is open source and covered by LICENSE file.
