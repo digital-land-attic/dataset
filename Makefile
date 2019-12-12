@@ -2,9 +2,16 @@
 .SECONDARY:
 .DELETE_ON_ERROR:
 
+TEMPLATE_FILES=\
+	templates/dataset.html\
+	templates/dataset-organisation.html\
+	templates/dataset-organisations.html\
+	templates/dataset-resources.html\
+	templates/datasets.html
+
 all:	render
 
-render:	render.py $(DATASET_FILES)
+render:	render.py $(DATASET_FILES) $(TEMPLATE_FILES)
 	@-rm -rf ./docs/
 	@-mkdir ./docs/
 	python3 render.py

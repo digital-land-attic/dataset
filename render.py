@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import os.path
 import jinja2
 import csv
 import json
@@ -14,12 +15,23 @@ session = CacheControl(requests.session(), cache=FileCache(".cache"))
 dataset_csv = "https://raw.githubusercontent.com/digital-land/dataset-collection/master/dataset/dataset.csv"
 organisation_csv = "https://raw.githubusercontent.com/digital-land/organisation-collection/master/collection/organisation.csv"
 organisation_tag_csv = "https://raw.githubusercontent.com/digital-land/organisation-collection/master/data/tag.csv"
+docs = "docs/"
 
 
 def get(url):
     r = session.get(url)
     r.raise_for_status()
     return r.text
+
+
+def render(path, template, organisations, tags, dataset=None, organisation=None):
+    path = os.path.join(docs, path)
+    directory = os.path.dirname(path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    with open(path, "w") as f:
+        f.write(template.render(organisations=organisations, tags=tags, dataset=dataset, organisation=organisation))
 
 
 loader = jinja2.FileSystemLoader(searchpath="./templates")
@@ -30,6 +42,7 @@ datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")
 dataset_organisations_template = env.get_template("dataset-organisations.html")
 dataset_organisation_template = env.get_template("dataset-organisation.html")
+dataset_resources_template = env.get_template("dataset-resources.html")
 
 
 tags = OrderedDict()
@@ -56,8 +69,8 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
 
     idx = json.loads(get(index_url))
     d["index"] = idx["key"]
+    d["resource"] = idx["resource"]
     d["organisation"] = {}
-    d["resource"] = {}
     d["data-govuk"] = {}
 
     # expand index
@@ -68,9 +81,9 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         for date in dates: 
             if "resource" in d["index"][key]["log"][date]:
                 resource = d["index"][key]["log"][date]["resource"]
-                d["resource"].setdefault(resource, {})
-                d["resource"][resource].setdefault(key, [])
-                d["resource"][resource][key].append(date)
+                d["resource"][resource].setdefault("key", {})
+                d["resource"][resource]["key"].setdefault(key, [])
+                d["resource"][resource]["key"][key].append(date)
 
         if dates:
             date = list(d["index"][key]["log"].keys())[-1]
@@ -101,6 +114,19 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
             if "data-gov-uk" in d["index"][key]["organisation"][organisation]:
                 d["organisation"][organisation]["data-gov-uk"] = d["index"][key]["organisation"][organisation]["data-gov-uk"]
 
+    # colour resources
+    for resource, r in d["resource"].items():
+        r["colour"] = "green" if r["valid"] else "red"
+        if r["suffix"] == ".htm":
+            r["suffix"] = ".html"
+
+        # add resource organisations
+        r.setdefault("organisation", [])
+        for key in r["key"]:
+            for organisation in d["index"][key]["organisation"]:
+                    if organisation not in r["organisation"]:
+                        r["organisation"].append(organisation)
+
     # stats
     d["stats"] = {
         "organisations": len(d["organisation"]),
@@ -115,34 +141,20 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
 
     datasets[dataset] = d
 
-    # organisation page
+    # page per-organisation
     for organisation in d["organisation"]:
         o = organisations[organisation]
 
         o["path"] = "/".join(o["path-segments"])
-        p = "docs/" + dataset + "/organisation/" + o["path"]
-        if p and not os.path.exists(p):
-            os.makedirs(p)
+        p = dataset + "/organisation/" + o["path"]
 
-        with open(p + "/" + "index.html", "w") as f:
-            f.write(
-                dataset_organisation_template.render(
-                    organisations=organisations, organisation=o, dataset=d
-                )
-            )
+        render(p + "/index.html", dataset_organisation_template, organisations, tags, dataset=d, organisation=o)
 
-    # indexes
-    with open("docs/" + dataset + "/organisation/index.html", "w") as f:
-        f.write(
-            dataset_organisations_template.render(
-                organisations=organisations, tags=tags, dataset=d
-            )
-        )
+    # dataset indexes
+    render(dataset + "/index.html", dataset_template, organisations, tags, dataset=d)
+    render(dataset + "/organisation/index.html", dataset_organisations_template, organisations, tags, dataset=d)
+    render(dataset + "/resource/index.html", dataset_resources_template, organisations, tags, dataset=d)
 
-    with open("docs/" + dataset + "/index.html", "w") as f:
-        f.write(
-            dataset_template.render(organisations=organisations, tags=tags, dataset=d)
-        )
-
+# datasets
 with open("docs/index.html", "w") as f:
     f.write(datasets_template.render(datasets=datasets, download_url=dataset_csv))

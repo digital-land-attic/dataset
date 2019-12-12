@@ -1,0 +1,145 @@
+{% extends "dlf-base.html" %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    "classes": "govuk-width-container",
+    "tag": {
+      "text": "prototype"
+    },
+    "html": 'This is a prototype. Please provide feedback to the Digital Land team.'
+  }) }}
+
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "/"
+      },
+      {
+        "text": "Dataset",
+        "href": "/dataset/"
+      },
+      {
+        "text": dataset["name"],
+        "href": "/dataset/" + dataset["dataset"]
+      },
+      {
+        "text": "Resources"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-full">
+     <span class="govuk-caption-xl">Dataset</span>
+     <h1 class="govuk-heading-xl">{{dataset["name"]}} Resources</h1>
+
+    <p class="govuk-body">Contents</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="#organisations">Publications by organisation</a></li>
+      <li><a href="#download">Download the data</a>
+    </ul>
+	</div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["resources"]}}</span><br>
+        <span class="govuk-body-l">Resources</span>
+    </p>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["valid"]}}</span><br>
+        <span class="govuk-body-l">Valid</span>
+    </p>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["rows"]}}</span><br>
+        <span class="govuk-body-l">Rows</span>
+    </p>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["errors"]}}</span><br>
+        <span class="govuk-body-l">Errors</span>
+    </p>
+  </div>
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <table class="govuk-table" id="organisations">
+      <caption class="govuk-table__caption">Resources</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Organisations</th>
+          <th scope="col" class="govuk-table__header">Resource</th>
+          <th scope="col" class="govuk-table__header">Type</th>
+          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Rows</th>
+          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Errors</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+    {% for resource, r in dataset["resource"].items() %}
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            {% for organisation in r["organisation"] %}
+                <a href="../organisation/{{ organisations[organisation]["path"] }}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>{{- ",<br/>" if not loop.last }} 
+            {% endfor %}
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/{{ resource }}" class="govuk-link">{{ "…" + resource[-8:] }}</a>
+          </td>
+          <td class="govuk-table__cell">
+            {{ r["suffix"][1:] }}
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            {{ r["row-count"] }}
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-{{r["colour"]}} govuk-tag govuk-!-margin-bottom-2">{{ r["error-count"] }}</strong>
+          </td>
+        </tr>
+    {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l" id="download">Download the data</h2>
+    <p class="govuk-body">You can download the data on this page from the <a href="{{dataset["documentation_url"]}}">GitHub project</a>.</p>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block bodyEnd %}
+{{ super() }}
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-127566551-1', 'auto');
+ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+{% endblock %}
