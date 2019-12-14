@@ -1,1 +1,1 @@
-export brownfield_land_index=http://localhost:8000/brownfield-sites-collection/collection/index.json
+export brownfield_land_index=http://localhost:8000/brownfield-land-collection/collection/index.json
