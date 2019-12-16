@@ -57,13 +57,13 @@
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["rows"]}}</span><br>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["rows"]|commanum}}</span><br>
         <span class="govuk-body-l">Rows</span>
     </p>
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["errors"]}}</span><br>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["errors"]|commanum}}</span><br>
         <span class="govuk-body-l">Errors</span>
     </p>
   </div>

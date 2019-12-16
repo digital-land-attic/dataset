@@ -37,6 +37,7 @@ def render(path, template, organisations, tags, dataset=None, organisation=None)
 loader = jinja2.FileSystemLoader(searchpath="./templates")
 env = jinja2.Environment(loader=loader)
 
+env.filters['commanum'] = lambda v: "{:,}".format(v)
 
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")
