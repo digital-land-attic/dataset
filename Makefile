@@ -15,7 +15,7 @@ render:	render.py $(DATASET_FILES) $(TEMPLATE_FILES)
 	@-rm -rf ./docs/
 	@-mkdir ./docs/
 	python3 render.py
-	touch ./docs/.nojekyll
+	@touch ./docs/.nojekyll
 
 black:
 	black .
