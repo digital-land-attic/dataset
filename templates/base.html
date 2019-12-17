@@ -55,22 +55,6 @@
       {{ govukFooter({}) }}
     {% endblock %}
 
-    {% block bodyEnd %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
-    {% endblock %}
+    {% block bodyEnd %}{% endblock %}
   </body>
 </html>
