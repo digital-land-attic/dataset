@@ -44,6 +44,7 @@ dataset_template = env.get_template("dataset.html")
 dataset_organisations_template = env.get_template("dataset-organisations.html")
 dataset_organisation_template = env.get_template("dataset-organisation.html")
 dataset_resources_template = env.get_template("dataset-resources.html")
+dataset_links_template = env.get_template("dataset-links.html")
 
 
 tags = OrderedDict()
@@ -155,6 +156,7 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
     render(dataset + "/index.html", dataset_template, organisations, tags, dataset=d)
     render(dataset + "/organisation/index.html", dataset_organisations_template, organisations, tags, dataset=d)
     render(dataset + "/resource/index.html", dataset_resources_template, organisations, tags, dataset=d)
+    render(dataset + "/link/index.html", dataset_links_template, organisations, tags, dataset=d)
 
 # datasets
 with open("docs/index.html", "w") as f:
