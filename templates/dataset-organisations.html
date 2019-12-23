@@ -34,10 +34,10 @@
 
 {% block content %}
 <div class="govuk-grid-row">
-	<div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-full">
      <span class="govuk-caption-xl">Dataset</span>
      <h1 class="govuk-heading-xl">{{dataset["name"]}} Organisations</h1>
-	</div>
+  </div>
 </div>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
@@ -53,48 +53,6 @@
     <p>
         <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["landing-pages"]}}</span><br>
         <span class="govuk-body-l">With a documentation page</span>
-    </p>
-  </div>
-</div>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-quarter">
-    <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["urls"]}}</span><br>
-        <span class="govuk-body-l">Links</span>
-    </p>
-  </div>
-  <div class="govuk-grid-column-one-quarter">
-    <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["data-gov-uk"]}}</span><br>
-        <span class="govuk-body-l">Listed on data.gov.uk</span>
-    </p>
-  </div>
-</div>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-quarter">
-    <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["resources"]}}</span><br>
-        <span class="govuk-body-l"><a href="../resource" class="govuk-link">Resources</a></span>
-    </p>
-  </div>
-  <div class="govuk-grid-column-one-quarter">
-    <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["valid"]}}</span><br>
-        <span class="govuk-body-l">Valid</span>
-    </p>
-  </div>
-  <div class="govuk-grid-column-one-quarter">
-    <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["rows"]|commanum}}</span><br>
-        <span class="govuk-body-l">Rows</span>
-    </p>
-  </div>
-  <div class="govuk-grid-column-one-quarter">
-    <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["errors"]|commanum}}</span><br>
-        <span class="govuk-body-l">Errors</span>
     </p>
   </div>
 </div>
