@@ -98,7 +98,7 @@
             <a href="/resource/{{ resource }}" class="govuk-link">{{ "…" + resource[-8:] }}</a>
           </td>
           <td class="govuk-table__cell">
-            {{ r["suffix"][1:] }}
+            {{ r.get("suffix") or "??" }}
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
             {{ r["row-count"] }}
