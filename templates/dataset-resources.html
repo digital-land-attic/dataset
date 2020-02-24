@@ -31,6 +31,7 @@
 
 {% endblock %}
 
+{% block pageTitle %}{{dataset["name"]}} Resources | Datasets | Digital Land{% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
@@ -91,7 +92,7 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             {% for organisation in r["organisation"] %}
-                <a href="../organisation/{{ organisations[organisation]["path"] }}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>{{- ",<br/>" if not loop.last }} 
+                <a href="../organisation/{{ organisations[organisation]["path"] }}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>{{- ",<br/>" if not loop.last }}
             {% endfor %}
           </td>
           <td class="govuk-table__cell">
