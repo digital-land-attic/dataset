@@ -1,0 +1,49 @@
+name: Add check.html files from brownfield-resources
+
+on:
+  push:
+    paths-ignore:
+      - "docs/**"
+    branches:
+      - master
+    schedule:
+      - cron: '0 7 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v1
+    - name: Install Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Install brownfield-resources
+      run: |
+        git clone https://github.com/digital-land/brownfield-resources.git
+        cd brownfield-resources
+        python3 -m pip install -r requirements.txt
+        cd ..
+    - name: Clone organisation-collection
+      run: |
+        git clone https://github.com/digital-land/organisation-collection.git
+        cd ..
+    - name: Generate pages
+      run: |
+        cd brownfield-resources
+        python3 resource_generator/check_per_org.py --all
+        cd ..
+        rsync -a ./dataset/docs/ ./docs/
+    - name: Commit files
+      env:
+        GITHUB_ACTOR_EMAIL: ${{ secrets.GITHUB_ACTOR_EMAIL }}
+        GITHUB_ACTOR_TOKEN: ${{ secrets.GITHUB_ACTOR_TOKEN }}
+        GITHUB_ACTOR_USERNAME: ${{ secrets.GITHUB_ACTOR_USERNAME }}
+      run: |
+        git config user.email "${GITHUB_ACTOR_EMAIL}"
+        git config user.name "${GITHUB_ACTOR_USERNAME}"
+        git remote set-url origin https://${GITHUB_ACTOR_USERNAME}:${GITHUB_ACTOR_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git checkout master
+        git add docs/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Add check.html pages for $(date +%F)"; git push origin master)
