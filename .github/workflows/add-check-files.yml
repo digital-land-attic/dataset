@@ -4,8 +4,7 @@ on:
   push:
     paths:
       - 'docs/**'
-    paths-ignore:
-      - 'docs/**/check.html'
+      - '!docs/**/check.html'
     branches:
       - master
   schedule:
