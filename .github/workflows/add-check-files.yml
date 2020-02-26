@@ -3,7 +3,9 @@ name: Add check.html files from brownfield-resources
 on:
   push:
     paths:
-    - "docs/**"
+      - 'docs/**'
+    branches:
+      - master
   schedule:
     - cron: '0 7 * * *'
 
