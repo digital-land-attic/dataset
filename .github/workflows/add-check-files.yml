@@ -3,8 +3,7 @@ name: Add check.html files from brownfield-resources
 on:
   push:
     paths:
-      - 'docs/**'
-      - '!docs/**/check.html'
+      - 'build-check.txt'
     branches:
       - master
 
