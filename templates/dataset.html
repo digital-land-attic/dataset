@@ -60,6 +60,9 @@
   </div>
 </div>
 
+<h2 class="govuk-heading-l govuk-!-margin-top-6" id="national-dataset-map">View the data</h2>
+<div id="map" style="width: 100%; height: 640px;"></div>
+
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 <div class="govuk-grid-row">
@@ -82,4 +85,21 @@ ga('send', 'pageview');
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>
+  const bbox = [-10.855, 2.0215, 49.824, 59.479] // (min_lng, max_lng, min_lat, max_lat)
+
+  // grey-scale tiles
+  const base = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      id: 'base',
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      maxZoom: 18
+  });
+
+  const map = L.map('map', { preferCanvas: true, renderer: L.canvas({ padding: 0.5 }), layers: [base] })
+    .fitBounds([[bbox[2], bbox[0]], [bbox[3], bbox[1]]]);
+
+  var map_width = map._container.offsetWidth;
+  map._container.style.height = `${map_width * (2/3)}px`;
+</script>
 {% endblock %}
