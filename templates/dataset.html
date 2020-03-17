@@ -55,10 +55,13 @@
   </div>
 </div>
 
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-quarter">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l" id="national-dataset-map">National dataset</h2>
+  </div>
+  <div class="govuk-grid-column-one-quarter govuk-!-margin-bottom-6">
     <p>
         <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["organisations"]}}</span><br>
         <span class="govuk-body-l"><a href="organisation" class="govuk-link">Organisations</a></span>
@@ -78,7 +81,6 @@
   </div>
 </div>
 
-<h2 class="govuk-heading-l govuk-!-margin-top-6" id="national-dataset-map">View the data</h2>
 <div id="map" style="width: 100%; height: 640px;"></div>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -86,7 +88,10 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l" id="download">Download the data</h2>
-    <p class="govuk-body">You can download the data on this page from the <a href="{{dataset["documentation-url"]}}">GitHub project</a>.</p>
+    <p class="govuk-body">The collected data has been processed to match an updated <a href="" class="govuk-link">brownfield land schema</a>.</p>
+    <p class="govuk-body">All the original data is available, however if you would like to use the dataset we recommend using the processed data.</p>
+    <p class="govuk-body">Download as: <a href="#" class="govuk-link">geojson</a>, <a href="#" class="govuk-link">csv</a> and <a href="#" class="govuk-link">data package</a>.</p>
+    <p class="govuk-body">You can read about how the data is processed on the <a href="{{dataset["documentation-url"]}}">GitHub project</a>.</p>
   </div>
 </div>
 
