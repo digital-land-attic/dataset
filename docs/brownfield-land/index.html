@@ -117,13 +117,50 @@
 	<div class="govuk-grid-column-full">
      <span class="govuk-caption-xl">Dataset</span>
      <h1 class="govuk-heading-xl">Brownfield Land</h1>
-	</div>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">The <a href="https://digital-land.github.io/about/">Digital Land team</a> and policymakers at the Ministry of Housing, Communities and Local Government (MHCLG) have built a national dataset of brownfield land. We collect brownfield land data from local planning authorities and run it through our <a href="https://digital-land.github.io/guidance/pipeline/">pipeline process</a>, which updates the data to meet the standard and fixes common errors in the data.</p>
+    <p class="govuk-body">Whilst our process has significantly improved the data, we cannot guarantee its accuracy, since it relies on the data published by 345 organisations.</p>
+    <p class="govuk-body">After collecting and processing the data, we’re able to build a national map of brownfield land and calculate important numbers for housing and planning, such as the number of potential dwellings that could be built on this land.</p>
+    <p class="govuk-body">Our work builds on the <a href="https://www.housing.org.uk/resources/housing-sites-brownfield-land-map/">National Housing Federation’s</a> brownfield map and <a href="https://www.cpre.org.uk/resources/state-of-brownfield-2019/">CPRE’s</a> research into the state of brownfield land. We’re not aiming to duplicate this work, but want to contribute to this national picture by making the data easier to find, use and trust.</p>
+    <p class="govuk-body">Our relationship with local planning authorities means we’re able to improve the data by:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        improving and simplifying the <a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data">data standard</a>
+      </li>
+      <li>
+        working closely with many local planning authorities, in particular through research and feedback sessions
+      </li>
+      <li>
+        changing and improving policy, for example introducing financial incentives for publishing data that meets the standard
+      </li>
+    </ul>
+    <p class="govuk-body">Our map and calculations are just an example of how this data can be used. We hope that the data will support innovative research, the development of digital services in the <a href="https://digital-land.github.io/users/proptech/">PropTech</a> sector, and other projects that will improve planning and housing.</p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <aside class="app-related-items app-related-items--small" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Related content
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li><a href="https://www.legislation.gov.uk/uksi/2017/403/contents/made">The Town and Country Planning Regulations 2017</a></li>
+          <li><a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data">Publish your brownfield land data</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
 </div>
 
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-quarter">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l" id="national-dataset-map">National dataset</h2>
+  </div>
+  <div class="govuk-grid-column-one-quarter govuk-!-margin-bottom-6">
     <p>
         <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">345</span><br>
         <span class="govuk-body-l"><a href="organisation" class="govuk-link">Organisations</a></span>
@@ -131,25 +168,41 @@
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">795</span><br>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">796</span><br>
         <span class="govuk-body-l"><a href="link" class="govuk-link">Links</a></span>
     </p>
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">869</span><br>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">870</span><br>
         <span class="govuk-body-l"><a href="resource" class="govuk-link">Resources</a></span>
     </p>
   </div>
 </div>
+
+<div id="map" style="width: 100%; height: 640px;"></div>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l" id="download">Download the data</h2>
-    <p class="govuk-body">You can download the data on this page from the <a href="https://github.com/digital-land/brownfield-land-collection">GitHub project</a>.</p>
+    <p class="govuk-body">After collecting the data, we run it through our pipeline process. This changes the original data published by local planning authorities so that it meets the <a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data">data standard</a>, as well as correcting some common errors.</p>
+    <p class="govuk-body">We recommend that you download the processed data. However, all original datasets published by local planning authorities are also available.</p>
+    <h3 class="govuk-heading-s">Download the processed data as:</h3>
+    <ul class="govuk-list">
+      <li><a href="#" class="govuk-link">Geojson</a></li>
+      <li><a href="#" class="govuk-link">CSV file</a></li>
+      <li><a href="#" class="govuk-link">Data package</a></li>
+    </ul>
+    <!--<p class="govuk-body">You can read about how the data is processed on the <a href="https://github.com/digital-land/brownfield-land-collection">GitHub project</a>.</p>-->
   </div>
+</div>
+
+<div class="feedback-panel">
+  <h3 class="feedback-panel__heading">Help improve this data</h3>
+  <p>If you are not responsible for editing and publishing this data, but you have found errors, please complete <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTmyAeKH5m0Xy3pXAYNcNApPdx0_Eioj-toHCOMZWiEdU8g/viewform?usp=sf_link">this form</a> or email corrections or questions to
+      <a href="mailto:DigitalLand@communities.gov.uk">DigitalLand@communities.gov.uk</a>.</p>
 </div>
 
 
@@ -231,6 +284,23 @@ ga('send', 'pageview');
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>
+  const bbox = [-10.855, 2.0215, 49.824, 59.479] // (min_lng, max_lng, min_lat, max_lat)
+
+  // grey-scale tiles
+  const base = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      id: 'base',
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      maxZoom: 18
+  });
+
+  const map = L.map('map', { preferCanvas: true, renderer: L.canvas({ padding: 0.5 }), layers: [base] })
+    .fitBounds([[bbox[2], bbox[0]], [bbox[3], bbox[1]]]);
+
+  var map_width = map._container.offsetWidth;
+  map._container.style.height = `${map_width * (2/3)}px`;
+</script>
 
   </body>
 </html>
