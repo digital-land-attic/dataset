@@ -1,0 +1,3 @@
+[submodule "brownfield-land-collection"]
+	path = brownfield-land-collection
+	url = git@github.com:digital-land/brownfield-land-collection.git
