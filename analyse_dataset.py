@@ -6,19 +6,20 @@ import csv
 
 import pandas as pd
 
-dataset_url = 'https://github.com/digital-land/brownfield-land-collection/tree/master/index/dataset.csv?raw=true'
+brownfield_path = './brownfield-land-collection/index/dataset.csv'
 
 
 class DatasetAnalyser():
 
-    def __init__(self):
+    def __init__(self, path):
         super().__init__()
+        self.dataset_path = path
         self.pd_data = self.panda_read()
         self.json_data = json.loads(self.pd_data.to_json(orient='records'))
 
     def panda_read(self):
         # read local file
-        data = pd.read_csv('data/dataset.csv', sep=",")
+        data = pd.read_csv(self.dataset_path, sep=",")
         return data
 
     def number_of_records(self):
