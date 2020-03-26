@@ -10,6 +10,8 @@ from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
 from collections import OrderedDict
 
+from analyse_dataset import DatasetAnalyser
+
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
 
 dataset_csv = "https://raw.githubusercontent.com/digital-land/dataset-collection/master/dataset/dataset.csv"
@@ -142,6 +144,10 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
     }
 
     datasets[dataset] = d
+    
+    if dataset == "brownfield-land":
+        da = DatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
+        d["summary"] = da.summary()
 
     # page per-organisation
     for organisation in d["organisation"]:
