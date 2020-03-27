@@ -10,7 +10,7 @@ from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
 from collections import OrderedDict
 
-from analyse_dataset import DatasetAnalyser
+from analyse_dataset import BrownfieldDatasetAnalyser
 
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
 
@@ -146,7 +146,7 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
     datasets[dataset] = d
     
     if dataset == "brownfield-land":
-        da = DatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
+        da = BrownfieldDatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
         d["summary"] = da.summary()
 
     # page per-organisation

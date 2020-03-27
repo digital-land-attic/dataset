@@ -6,8 +6,6 @@ import csv
 
 import pandas as pd
 
-brownfield_path = './brownfield-land-collection/index/dataset.csv'
-
 
 class DatasetAnalyser():
 
@@ -28,6 +26,14 @@ class DatasetAnalyser():
     def active_records(self):
         return [x for x in self.json_data if x['end-date'] is None]
 
+
+# Keep Brownfield specific code separate 
+class BrownfieldDatasetAnalyser(DatasetAnalyser):
+    def __init__(self, path):
+        self.type = "brownfield-land"
+        DatasetAnalyser.__init__(self, path)
+
+    # should this be moved to parent class
     def organisations(self):
         orgs = [x['organisation'] for x in self.json_data]
         return set(orgs)
