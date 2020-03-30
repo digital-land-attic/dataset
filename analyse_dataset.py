@@ -26,6 +26,9 @@ class DatasetAnalyser():
     def active_records(self):
         return [x for x in self.json_data if x['end-date'] is None]
 
+    def historical_records(self):
+        return [x for x in self.json_data if x['end-date'] is not None]
+
 
 # Keep Brownfield specific code separate 
 class BrownfieldDatasetAnalyser(DatasetAnalyser):
