@@ -10,32 +10,36 @@ on:
   schedule:
     - cron: '0 6 * * *'
 
+env:
+  GITHUB_ACTOR_EMAIL: ${{ secrets.GITHUB_ACTOR_EMAIL }}
+  GITHUB_ACTOR_TOKEN: ${{ secrets.GITHUB_ACTOR_TOKEN }}
+  GITHUB_ACTOR_USERNAME: ${{ secrets.GITHUB_ACTOR_USERNAME }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v1
-    - name: Install Python 3.7
-      uses: actions/setup-python@v1
+    - uses: actions/checkout@v2
       with:
-        python-version: 3.7
+        submodules: true
+    - run: git submodule update --remote
+    - uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
     - name: Install dependencies
       run: make init
     - name: Run make
       run: make
-    - name: Kickoff 'add-check-files' workflow
-      run: |
-        echo $(date +%Y-%m-%dT%H:%M:%S%z) > build-check.txt
-    - name: Commit files
-      env:
-        GITHUB_ACTOR_EMAIL: ${{ secrets.GITHUB_ACTOR_EMAIL }}
-        GITHUB_ACTOR_TOKEN: ${{ secrets.GITHUB_ACTOR_TOKEN }}
-        GITHUB_ACTOR_USERNAME: ${{ secrets.GITHUB_ACTOR_USERNAME }}
+    - name: Setup Git
       run: |
         git config user.email "${GITHUB_ACTOR_EMAIL}"
         git config user.name "${GITHUB_ACTOR_USERNAME}"
         git remote set-url origin https://${GITHUB_ACTOR_USERNAME}:${GITHUB_ACTOR_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         git checkout master
+    - name: Kickoff 'add-check-files' workflow
+      run: |
+        echo $(date +%Y-%m-%dT%H:%M:%S%z) > build-check.txt
+    - name: Commit files
+      run: |
         git add .
         git diff --quiet && git diff --staged --quiet || (git commit -m "Rebuild dataset pages on $(date +%F)"; git push origin master)
