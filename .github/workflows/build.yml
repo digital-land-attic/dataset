@@ -4,6 +4,9 @@ on:
   push:
     paths-ignore:
       - 'docs/**'
+      - 'brownfield-land-collection/**'
+      - 'brownfield-resources/**'
+      - 'organisation-collection/**'
     branches:
       - master
   schedule:
