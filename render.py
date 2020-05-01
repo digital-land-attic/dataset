@@ -15,8 +15,8 @@ from analyse_dataset import BrownfieldDatasetAnalyser
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
 
 dataset_csv = "https://raw.githubusercontent.com/digital-land/dataset-collection/master/dataset/dataset.csv"
-organisation_csv = "https://raw.githubusercontent.com/digital-land/organisation-collection/master/collection/organisation.csv"
-organisation_tag_csv = "https://raw.githubusercontent.com/digital-land/organisation-collection/master/data/tag.csv"
+organisation_csv = "https://raw.githubusercontent.com/digital-land/organisation-dataset/master/collection/organisation.csv"
+organisation_tag_csv = "https://raw.githubusercontent.com/digital-land/organisation-dataset/master/data/tag.csv"
 docs = "docs/"
 
 

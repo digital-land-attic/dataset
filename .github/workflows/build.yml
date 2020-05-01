@@ -6,7 +6,7 @@ on:
       - 'docs/**'
       - 'brownfield-land-collection/**'
       - 'brownfield-resources/**'
-      - 'organisation-collection/**'
+      - 'organisation-dataset/**'
     branches:
       - master
   schedule:
@@ -39,5 +39,5 @@ jobs:
       run: make
     - name: Commit files
       run: |
-        git add docs brownfield-land-collection organisation-collection brownfield-resources
+        git add docs brownfield-land-collection organisation-dataset brownfield-resources
         git diff --quiet && git diff --staged --quiet || (git commit -m "Build dataset pages on $(date +%F)"; git push origin master)

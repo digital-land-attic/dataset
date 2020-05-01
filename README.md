@@ -17,8 +17,8 @@ The datasets are collected into the [collection](collection) directories:
 
 Information about organisations is taken from:
 
-* [digital-land/organisation-collection/collection/organisation.csv](https://github.com/digital-land/organisation-collection/blob/master/collection/organisation.csv)
-* [digital-land/organisation-collection/collection/tag.csv](https://github.com/digital-land/organisation-collection/blob/master/data/tag.csv)
+* [digital-land/organisation-dataset/collection/organisation.csv](https://github.com/digital-land/organisation-dataset/blob/master/collection/organisation.csv)
+* [digital-land/organisation-dataset/collection/tag.csv](https://github.com/digital-land/organisation-dataset/blob/master/data/tag.csv)
 
 You can change the URL for an individual file using an environment variable, for example:
 

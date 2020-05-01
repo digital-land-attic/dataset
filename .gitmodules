@@ -1,9 +1,9 @@
 [submodule "brownfield-land-collection"]
 	path = brownfield-land-collection
 	url = https://github.com/digital-land/brownfield-land-collection.git
-[submodule "organisation-collection"]
-	path = organisation-collection
-	url = https://github.com/digital-land/organisation-collection.git
+[submodule "organisation-dataset"]
+	path = organisation-dataset
+	url = https://github.com/digital-land/organisation-dataset.git
 [submodule "brownfield-resources"]
 	path = brownfield-resources
 	url = https://github.com/digital-land/brownfield-resources.git
