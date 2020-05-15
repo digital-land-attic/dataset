@@ -45,6 +45,7 @@ env.filters['commanum'] = lambda v: "{:,}".format(v)
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")
 dataset_organisations_template = env.get_template("dataset-organisations.html")
+dataset_organisations_status_template = env.get_template("dataset-organisations-statuses.html")
 dataset_organisation_template = env.get_template("dataset-organisation.html")
 dataset_resources_template = env.get_template("dataset-resources.html")
 dataset_links_template = env.get_template("dataset-links.html")
@@ -167,6 +168,7 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
     # dataset indexes
     render(dataset + "/index.html", dataset_template, organisations, tags, dataset=d)
     render(dataset + "/organisation/index.html", dataset_organisations_template, organisations, tags, dataset=d)
+    render(dataset + "/organisation/log.html", dataset_organisations_status_template, organisations, tags, dataset=d)
     render(dataset + "/resource/index.html", dataset_resources_template, organisations, tags, dataset=d)
     render(dataset + "/link/index.html", dataset_links_template, organisations, tags, dataset=d)
 

@@ -1,0 +1,130 @@
+{% extends "dlf-base.html" %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    "classes": "govuk-width-container",
+    "tag": {
+      "text": "prototype"
+    },
+    "html": 'This is a prototype. Please provide feedback to the Digital Land team.'
+  }) }}
+
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "../../../"
+      },
+      {
+        "text": "Datasets",
+        "href": "../../"
+      },
+      {
+        "text": dataset["name"],
+        "href": "../"
+      },
+      {
+        "text": "Organisations"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block pageTitle %}{{dataset["name"]}} Organisations | Datasets | Digital Land{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+     <span class="govuk-caption-xl">Dataset</span>
+     <h1 class="govuk-heading-xl">{{dataset["name"]}} Organisations</h1>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["organisations"]}}</span><br>
+        <span class="govuk-body-l">Organisations</span>
+    </p>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <p>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">{{dataset["stats"]["landing-pages"]}}</span><br>
+        <span class="govuk-body-l">With a documentation page</span>
+    </p>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <table class="govuk-table" id="organisations">
+      <caption class="govuk-table__caption">Publications by organisation</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Organisation</th>
+          <th scope="col" class="govuk-table__header">Documentation</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+    {% for organisation in dataset["organisation"] | sort %}
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">
+            <a href="{{organisations[organisation]["path"]}}/" class="govuk-link govuk-body-l">{{organisations[organisation]["name"]}}</a>
+          </th>
+          <td class="govuk-table__cell">
+            {% if "landing-page" in dataset["organisation"][organisation] %}
+              <a href="{{dataset["organisation"][organisation]["landing-page"] }}">✔</a>
+            {% endif %}
+          </td>
+          <td class="govuk-table__cell">
+            {% for key in dataset["organisation"][organisation]["key"] %}
+                {% if "date" in dataset["index"][key] %}
+                    {% if not dataset["index"][key]["organisation"][organisation].get("end-date", "") %}
+                      {% set date=dataset["index"][key]["date"] %}
+                      {% set status=dataset["index"][key]["status"] %}
+                      {% set colour=dataset["index"][key]["colour"] %}
+                      <a href="{{organisations[organisation]["path"]}}/#{{ key }}" title="{{date}}"><strong class="status-{{colour}} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+          </td>
+        </tr>
+    {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l" id="download">Download the data</h2>
+    <p class="govuk-body">You can download the data on this page from the <a href="{{dataset["documentation-url"]}}">GitHub project</a>.</p>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block bodyEnd %}
+{{ super() }}
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-127566551-1', 'auto');
+ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+{% endblock %}
