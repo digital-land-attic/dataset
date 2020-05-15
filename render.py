@@ -11,6 +11,7 @@ from cachecontrol.caches.file_cache import FileCache
 from collections import OrderedDict
 
 from analyse_dataset import BrownfieldDatasetAnalyser
+from latest_resource import get_latest_brownfield_resource, get_brownfield_resource_list
 
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
 
@@ -117,6 +118,11 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
                 d["organisation"][organisation]["landing-page"] = d["index"][key]["organisation"][organisation]["documentation-url"]
             if "data-gov-uk" in d["index"][key]["organisation"][organisation]:
                 d["organisation"][organisation]["data-gov-uk"] = d["index"][key]["organisation"][organisation]["data-gov-uk"]
+        d["organisation"][organisation]["resource"] = get_brownfield_resource_list(organisation)
+        # check there are resource(s) associated with org
+        if len(d["organisation"][organisation]["resource"]):
+            d["organisation"][organisation]["latest-resource"] = get_latest_brownfield_resource(d["organisation"][organisation]["resource"])
+
 
     # colour resources
     for resource, r in d["resource"].items():
