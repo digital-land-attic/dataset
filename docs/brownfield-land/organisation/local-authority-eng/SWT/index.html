@@ -115,61 +115,36 @@
           
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-  <span class="govuk-caption-xl">Dataset</span>
-  <h1 class="govuk-heading-xl">Brownfield Land &mdash; Somerset West and Taunton Council</h1>
+    <span class="govuk-caption-xl">Brownfield Land dataset</span>
+    <h1 class="govuk-heading-xl">Somerset West and Taunton Council</h1>
+  </div>
 
-    <p class="govuk-body">Contents</p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li><a href="#log">Log</a>
-        <ul>
-          
-          <li><a href="#e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</a></li>
-          
-          </ul></li>
-      <li><a href="#download">Download the data</a>
-    </ul>
-
+  
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">Somerset West and Taunton Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
+    
+    <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.somersetwestandtaunton.gov.uk/planning-policy/brownfield-register/" class="govuk-link">documentation page</a>.</p>
   </div>
 </div>
+
+<div class="govuk-grid-row">
+  <a class="highlight-box govuk-!-margin-top-6" href="">
+    <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
+    <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
+  </a>
+</div>
+
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <h2 class="govuk-heading-m" id="log">Log</h2>
-
-    
-    <div class="govuk-!-margin-bottom-9" id="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855">
-    <h3 class="govuk-heading-m"><a href="/log/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</a></h3>
-    <dl class="govuk-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">URL</dt>
-        <dd class="govuk-summary-list__value"><a href=""></a></dd>
-      </div>
-      
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">Documentation</dt>
-        <dd class="govuk-summary-list__value"><a href="https://www.somersetwestandtaunton.gov.uk/planning-policy/brownfield-register/">https://www.somersetwestandtaunton.gov.uk/planning-policy/brownfield-register/</a></dd>
-      </div>
-      
-      
-      
-      
-    </dl>
-
-
-  </div>
-  
-  </div>
-</div>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-m" id="download">Download the data</h2>
-    <p class="govuk-body">You can download the data on this page from the <a href="https://github.com/digital-land/brownfield-land-collection">GitHub project</a>.</p>
+    <h2 class="govuk-heading-m" id="download">View more of the data</h2>
+    <p class="govuk-body">You can view and download the data on this page from the <a href="https://github.com/digital-land/brownfield-land-collection">GitHub project</a>.</p>
   </div>
 </div>
 
@@ -227,7 +202,9 @@
 	window.GOVUKFrontend.initAll();
 </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+
+<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script> 
 <script>
 $(function () {
   $.tablesorter.addParser({
@@ -251,6 +228,21 @@ ga('send', 'pageview');
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>
+  // Initialise data tables component
+  var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+  $data_tables.forEach(function(data_table) {
+      new window.DLFrontend.ScrollableTables(data_table).init()
+  })
+</script>
+
+<script>
+var $linkable_tables = document.querySelectorAll('[data-module*="data-linkable-table"]')
+$linkable_tables.forEach(function(linkable_table) {
+  new window.DLFrontend.LinkableTable(linkable_table).init()
+})
+</script>
 
   </body>
 </html>
