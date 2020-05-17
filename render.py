@@ -10,6 +10,7 @@ from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
 from collections import OrderedDict
 
+from filters import is_valid_uri, float_to_int
 from analyse_dataset import BrownfieldDatasetAnalyser
 from latest_resource import get_latest_brownfield_resource, get_brownfield_resource_list
 
@@ -41,12 +42,15 @@ loader = jinja2.FileSystemLoader(searchpath="./templates")
 env = jinja2.Environment(loader=loader)
 
 env.filters['commanum'] = lambda v: "{:,}".format(v)
+env.filters['is_valid_uri'] = is_valid_uri
+env.filters['float_to_int'] = float_to_int
 
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")
 dataset_organisations_template = env.get_template("dataset-organisations.html")
 dataset_organisations_status_template = env.get_template("dataset-organisations-statuses.html")
 dataset_organisation_template = env.get_template("dataset-organisation.html")
+dataset_organisation_log_template = env.get_template("dataset-organisation-log.html")
 dataset_resources_template = env.get_template("dataset-resources.html")
 dataset_links_template = env.get_template("dataset-links.html")
 
@@ -122,7 +126,7 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         d["organisation"][organisation]["resource"] = get_brownfield_resource_list(organisation)
         # check there are resource(s) associated with org
         if len(d["organisation"][organisation]["resource"]):
-            d["organisation"][organisation]["latest-resource"] = get_latest_brownfield_resource(d["organisation"][organisation]["resource"])
+            d["organisation"][organisation]["latest-resource"] = get_latest_brownfield_resource(d["organisation"][organisation]["resource"], data_preview=True)
 
 
     # colour resources
@@ -164,6 +168,7 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         p = dataset + "/organisation/" + o["path"]
 
         render(p + "/index.html", dataset_organisation_template, organisations, tags, dataset=d, organisation=o)
+        render(p + "/log.html", dataset_organisation_log_template, organisations, tags, dataset=d, organisation=o)
 
     # dataset indexes
     render(dataset + "/index.html", dataset_template, organisations, tags, dataset=d)

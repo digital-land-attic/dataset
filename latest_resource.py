@@ -53,7 +53,7 @@ def get_brownfield_resource_list(organisation):
     return d_index.get_resources_for_org(organisation, ordered=True)
 
 
-def get_latest_brownfield_resource(resource_list):
+def get_latest_brownfield_resource(resource_list, data_preview=False):
     latest_resource = resource_list[-1]
     raw_data_url = url_for_harmonised(latest_resource['resource'])
 
@@ -63,5 +63,7 @@ def get_latest_brownfield_resource(resource_list):
     analysed = DataAnalyser(json_data)
     latest_resource['summary'] = analysed.summary()
     latest_resource['url'] = raw_data_url
+    if data_preview:
+        latest_resource['data_preview'] = json_data[:10]
 
     return latest_resource

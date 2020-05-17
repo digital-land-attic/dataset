@@ -1,0 +1,95 @@
+{% macro makeLinkAnAnchor(uri) %}
+    {%- if uri|is_valid_uri -%}
+        <a href="{{ uri }}" class="govuk-link">{{ uri }}</a>
+    {%- else -%}
+        {{ uri }}
+    {%- endif -%}
+{% endmacro %}
+
+{% macro brownfieldDataTable(data) %}
+<div class="data-table__wrapper" data-module="data-table data-linkable-table">
+    <div class="data-table-left-shadow"></div>
+    <div class="wide-table">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th scope="col" aria-sort="none">SiteReference</th>
+                    <th scope="col" aria-sort="none">SiteNameAddress</th>
+                    <th scope="col">GeoX</th>
+                    <th scope="col">GeoY</th>
+                    <th scope="col" aria-sort="none">Hectares</th>
+                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
+                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
+                    <th scope="col">FirstAddedDate</th>
+                    <th scope="col">LastUpdatedDate</th>
+                    <th scope="col">Deliverable</th>
+                    <th scope="col">HazardousSubstances</th>
+                    <th scope="col">OrganisationURI</th>
+                    <th scope="col">OwnershipStatus</th>
+                    <th scope="col">PermissionDate</th>
+                    <th scope="col">PermissionType</th>
+                    <th scope="col">PlanningHistory</th>
+                    <th scope="col">PlanningStatus</th>
+                    <th scope="col">SiteplanURL</th>
+                    <th scope="col">Notes</th>
+                    <th scope="col">EndDate</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%- for row in data -%}
+                {% set row_num = loop.index %}
+                <tr id="row{{row_num}}">
+                    {# SiteReference #}
+                    <td data-sort-value="{{ '' if row['SiteReference'] == None else row['SiteReference'] }}">{{ "" if row["SiteReference"] == None else row["SiteReference"] }}</td>
+                    <td data-sort-value="{{ '' if row['SiteNameAddress'] == None else row['SiteNameAddress'] }}" class="data-table__cell--max-width">{{ "" if row["SiteNameAddress"] == None else row["SiteNameAddress"] }}</td>
+                    {# GeoX #}
+                    <td>{{ "" if row["GeoX"] == None else row["GeoX"] }}</td>
+                    {# GeoY #}
+                    <td>{{ "" if row["GeoY"] == None else row["GeoY"] }}</td>
+                    {# Hectares #}
+                    <td data-sort-value="{{ '' if row['Hectares'] == None else row['Hectares'] }}">{{ "" if row["Hectares"] == None else row["Hectares"] }}</td>
+                    {# NetDwellingsRangeFrom #}
+                    <td data-sort-value="{{ '' if row['NetDwellingsRangeFrom'] == None else row['NetDwellingsRangeFrom'] }}">{{ "" if row["NetDwellingsRangeFrom"] == None else row["NetDwellingsRangeFrom"]|float_to_int }}</td>
+                    {# NetDwellingsRangeTo #}
+                    <td data-sort-value="{{ '' if row['NetDwellingsRangeTo'] == None else row['NetDwellingsRangeTo'] }}">{{ "" if row["NetDwellingsRangeTo"] == None else row["NetDwellingsRangeTo"]|float_to_int }}</td>
+                    <td>{{ "" if row["FirstAddedDate"] == None else row["FirstAddedDate"] }}</td>
+                    {# LastUpdatedDate #}
+                    <td>{{ "" if row["LastUpdatedDate"] == None else row["LastUpdatedDate"] }}</td>
+                    <td>{{ "" if row["Deliverable"] == None else row["Deliverable"] }}</td>
+                    <td>{{ "" if row["HazardousSubstances"] == None else row["HazardousSubstances"] }}</td>
+                    {# OrganisationURI #}
+                    <td>
+                        {%- if not row["OrganisationURI"] == None -%}
+                        {{ makeLinkAnAnchor(row["OrganisationURI"]) }}
+                        {%- endif -%}
+                    </td>
+                    <td>{{ "" if row["OwnershipStatus"] == None else row["OwnershipStatus"] }}</td>
+                    <td>{{ "" if row["PermissionDate"] == None else row["PermissionDate"] }}</td>
+                    <td>{{ "" if row["PermissionType"] == None else row["PermissionType"] }}</td>
+                    <td>{# row["PlanningHistory"] #}</td>
+                    <td>{{ "" if row["PlanningStatus"] == None else row["PlanningStatus"] }}</td>
+                    {# SiteplanURL #}
+                    <td>
+                        {%- if not row["SiteplanURL"] == None -%}
+                        {{ makeLinkAnAnchor(row["SiteplanURL"]) }}
+                        {%- endif -%}
+                    </td>
+
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        {% if row["Notes"] == None %}
+                        {% else %}
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">{{ row["Notes"] }}</div>
+                        </details>
+                        {% endif %}
+                    </td>
+                    <td>{{ "" if row["EndDate"] == None else row["EndDate"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="data-table-right-shadow"></div>
+</div>
+{% endmacro %}
