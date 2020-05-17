@@ -11,3 +11,5 @@ __pycache__/
 local
 var
 tmp
+
+.vscode

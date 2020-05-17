@@ -37,116 +37,57 @@
 
 {% block pageTitle %}{{dataset["name"]}} &mdash; {{organisation["name"]}} | Datasets | Digital Land{% endblock %}
 
+{% from 'dl-partials/brownfield-data-table.html' import makeLinkAnAnchor %}
+{% from 'dl-partials/brownfield-data-table.html' import brownfieldDataTable %}
+
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-  <span class="govuk-caption-xl">Dataset</span>
-  <h1 class="govuk-heading-xl">{{dataset["name"]}} &mdash; {{organisation["name"]}}</h1>
+    <span class="govuk-caption-xl">{{dataset["name"]}} dataset</span>
+    <h1 class="govuk-heading-xl">{{organisation["name"]}}</h1>
+  </div>
 
-    <p class="govuk-body">Contents</p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li><a href="#log">Log</a>
-        <ul>
-          {% for key in dataset["organisation"][organisation["organisation"]]["key"] %}
-          <li><a href="#{{key}}">{{key}}</a></li>
-          {% endfor %}
-          </ul></li>
-      <li><a href="#download">Download the data</a>
-    </ul>
-
+  {% set dorg=dataset["organisation"][organisation["organisation"]] %}
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">{{organisation["name"]}} publish brownfield land data that is included in the National Brownfield land dataset.</p>
+    {% if dorg['latest-resource'] %}
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published {{ dorg['latest-resource']['start_date'] }}</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected {{ dorg['latest-resource']['last_collected'] }}</p>
+    {% endif %}
+    <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="{{ dorg['landing-page'] }}" class="govuk-link">documentation page</a>.</p>
   </div>
 </div>
+
+<div class="govuk-grid-row">
+  <a class="highlight-box govuk-!-margin-top-6" href="{% if dorg['latest-resource'] %}{{ dorg['latest-resource']['url'] }}{% endif %}">
+    <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
+    <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
+  </a>
+</div>
+
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <h2 class="govuk-heading-m" id="log">Log</h2>
+{% if dorg['latest-resource'] %}
+  {% if dorg['latest-resource']['data_preview'] %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-    {% for key in dataset["organisation"][organisation["organisation"]]["key"] %}
-    <div class="govuk-!-margin-bottom-9" id="{{key}}">
-    <h3 class="govuk-heading-m"><a href="/log/{{key}}">{{key}}</a></h3>
-    <dl class="govuk-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">URL</dt>
-        <dd class="govuk-summary-list__value"><a href="{{ dataset["index"][key]["url"] }}">{{ dataset["index"][key]["url"] }}</a></dd>
-      </div>
-      {% if "documentation-url" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">Documentation</dt>
-        <dd class="govuk-summary-list__value"><a href="{{ dataset["index"][key]["organisation"][organisation["organisation"]]["documentation-url"] }}">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["documentation-url"] }}</a></dd>
-      </div>
-      {% endif %}
-      {% if "data-gov-uk" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">data-gov-uk</dt>
-        <dd class="govuk-summary-list__value"><a href="https://data.gov.uk/dataset/{{ dataset["index"][key]["organisation"][organisation["organisation"]]["data-gov-uk"] }}">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["data-gov-uk"] }}</a></dd>
-      </div>
-      {% endif %}
-      {% if "start-date" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">start-date</dt>
-        <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["start-date"] }}</dd>
-      </div>
-      {% endif %}
-      {% if "end-date" in dataset["index"][key]["organisation"][organisation["organisation"]] %}
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">end-date</dt>
-        <dd class="govuk-summary-list__value">{{ dataset["index"][key]["organisation"][organisation["organisation"]]["end-date"] }}</dd>
-      </div>
-      {% endif %}
-    </dl>
-
-{% if dataset["index"][key]["log"] %}
-<table class="govuk-table">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header">Date</th>
-      <th scope="col" class="govuk-table__header">Status</th>
-      <th scope="col" class="govuk-table__header">Elapsed</th>
-      <th scope="col" class="govuk-table__header">Content-Type</th>
-      <th scope="col" class="govuk-table__header">Content-Length</th>
-      <th scope="col" class="govuk-table__header">Resource</th>
-    </tr>
-  </thead>
-  <tbody class="govuk-table__body">
-    {% for date in dataset["index"][key]["log"] %}
-    {% set status=dataset["index"][key]["log"][date].get("status", dataset["index"][key]["log"][date].get("exception", "●")) %}
-
-    <tr class="govuk-table__row" id="{{ key }}/{{ date }}">
-      <th scope="row" class="govuk-table__header">
-        <a href="{{dataset["documentation-url"].replace("github.com", "raw.githubusercontent.com")}}/master/collection/log/{{date}}/{{key}}.json" title="{{ dataset["index"][key]["log"][date]["datetime"] }}">{{date}}</a>
-      </th>
-      <td class="govuk-table__cell"><strong class="status-{% if status in ["200", "●"] %}green{% else %}red{% endif %} govuk-tag govuk-!-margin-bottom-2">{{ status }}</strong></td>
-      <td class="govuk-table__cell">{{ dataset["index"][key]["log"][date]["elapsed"] }}</td>
-      <td class="govuk-table__cell">{% if "Content-Type" in dataset["index"][key]["log"][date] %}{{ dataset["index"][key]["log"][date]["Content-Type"] }}{% endif %}</td>
-      <td class="govuk-table__cell">
-      {% if "Content-Length" in dataset["index"][key]["log"][date] %}
-          {{ dataset["index"][key]["log"][date]["Content-Length"] }}
-      {% endif %}
-      </td>
-      <td class="govuk-table__cell">
-      {% if "resource" in dataset["index"][key]["log"][date] %}
-        <a href="/resource/{{ dataset["index"][key]["log"][date]["resource"] }}">{{ dataset["index"][key]["log"][date]["resource"] }}</a>
-      {% endif %}
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+      <p class="govuk-body">There are {{ dorg['latest-resource']['summary']['total'] }} records from {{organisation["name"]}}.</p>
+      <h4 class="govuk-heading-s">Preview of {{ dorg['latest-resource']['data_preview']|length }} records</h4>
+      {{ brownfieldDataTable(dorg['latest-resource']['data_preview']) }}
+    </div>
+  </div>
+  {% endif %}
 {% endif %}
-  </div>
-  {% endfor %}
-  </div>
-</div>
-
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-m" id="download">Download the data</h2>
-    <p class="govuk-body">You can download the data on this page from the <a href="{{dataset["documentation-url"]}}">GitHub project</a>.</p>
+    <h2 class="govuk-heading-m" id="download">View more of the data</h2>
+    <p class="govuk-body">You can view and download the data on this page from the <a href="{{dataset["documentation-url"]}}">GitHub project</a>.</p>
   </div>
 </div>
 {% endblock %}
@@ -164,4 +105,19 @@ ga('send', 'pageview');
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>
+  // Initialise data tables component
+  var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+  $data_tables.forEach(function(data_table) {
+      new window.DLFrontend.ScrollableTables(data_table).init()
+  })
+</script>
+
+<script>
+var $linkable_tables = document.querySelectorAll('[data-module*="data-linkable-table"]')
+$linkable_tables.forEach(function(linkable_table) {
+  new window.DLFrontend.LinkableTable(linkable_table).init()
+})
+</script>
 {% endblock %}
