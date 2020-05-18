@@ -65,7 +65,7 @@
             <h4 class="govuk-heading-s govuk-!-margin-bottom-1"><a href="{{organisations[organisation]["path"]}}/" class="govuk-link">{{organisations[organisation]["name"]}}</a></h4>
             {%- if dorg['latest-resource'] -%}
               {%- if dorg['latest-resource']['summary']['unique_organisation_uris'] > 1 -%}
-              <span class="govuk-hint govuk-!-font-size-16 govuk-!-margin-bottom-0 govuk-!-margin-top-1">This organisation publishes a combined register, therefore the number of sites might include sites from other organisations.</span>
+              <span class="govuk-hint govuk-!-font-size-16 govuk-!-margin-bottom-0 govuk-!-margin-top-1 text-max-width">This organisation publishes a combined register, therefore the number of sites might include sites from other organisations.</span>
               {%- endif -%}
             <span class="govuk-!-font-size-16"><a href="{{ dorg['latest-resource']['url'] }}" class="govuk-link govuk-!-font-weight-regular">View raw data</a></span>
             {%- endif -%}
