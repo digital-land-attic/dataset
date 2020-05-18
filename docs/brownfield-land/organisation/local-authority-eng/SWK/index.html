@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="16-AP-3264">16-AP-3264</td>
-                    <td data-sort-value="93 Gordon Road SE15 3RR" class="data-table__cell--max-width">93 Gordon Road SE15 3RR</td>
-                    
-                    <td>-0.060744</td>
-                    
-                    <td>51.468742</td>
-                    
-                    <td data-sort-value="0.01">0.01</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>16-AP-3264</td>
+                    <td class="data-table__cell--max-width">93 Gordon Road SE15 3RR</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2016-10-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.468742</td>
+                    <td>-0.060744</td>
+                    <td>0.01</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -216,38 +204,27 @@ offices on the ground floor, 3no 2 bed x 4 person flats above and communal terra
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="16-AP-4085">16-AP-4085</td>
-                    <td data-sort-value="42 Harper Road SE1 6AD" class="data-table__cell--max-width">42 Harper Road SE1 6AD</td>
-                    
-                    <td>-0.093544</td>
-                    
-                    <td>51.496202</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>16-AP-4085</td>
+                    <td class="data-table__cell--max-width">42 Harper Road SE1 6AD</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2017-02-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.496202</td>
+                    <td>-0.093544</td>
+                    <td>0.02</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -256,38 +233,27 @@ offices on the ground floor, 3no 2 bed x 4 person flats above and communal terra
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="16-AP-3784">16-AP-3784</td>
-                    <td data-sort-value="Rear Of 2 And 3 Calverts Building 52 Borough High Street SE1 1XN" class="data-table__cell--max-width">Rear Of 2 And 3 Calverts Building 52 Borough High Street SE1 1XN</td>
-                    
-                    <td>-0.091661</td>
-                    
-                    <td>51.504146</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>16-AP-3784</td>
+                    <td class="data-table__cell--max-width">Rear Of 2 And 3 Calverts Building 52 Borough High Street SE1 1XN</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2017-03-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.504146</td>
+                    <td>-0.091661</td>
+                    <td>0.04</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -296,38 +262,27 @@ offices on the ground floor, 3no 2 bed x 4 person flats above and communal terra
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="15-AP-1883">15-AP-1883</td>
-                    <td data-sort-value="80 Peckham High Street SE15 5ED" class="data-table__cell--max-width">80 Peckham High Street SE15 5ED</td>
-                    
-                    <td>-0.069337</td>
-                    
-                    <td>51.473531</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>15-AP-1883</td>
+                    <td class="data-table__cell--max-width">80 Peckham High Street SE15 5ED</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2015-07-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.473531</td>
+                    <td>-0.069337</td>
                     <td></td>
-
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -337,38 +292,27 @@ above.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="15-AP-2864">15-AP-2864</td>
-                    <td data-sort-value="91-93 Queens Road SE15 2EZ" class="data-table__cell--max-width">91-93 Queens Road SE15 2EZ</td>
-                    
-                    <td>-0.060588</td>
-                    
-                    <td>51.474119</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>15-AP-2864</td>
+                    <td class="data-table__cell--max-width">91-93 Queens Road SE15 2EZ</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2017-01-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.474119</td>
+                    <td>-0.060588</td>
+                    <td>0.04</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -377,38 +321,27 @@ above.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="12-AP-4126">12-AP-4126</td>
-                    <td data-sort-value="Decathlon And What Surrey Quays Road SE16 2XU" class="data-table__cell--max-width">Decathlon And What Surrey Quays Road SE16 2XU</td>
-                    
-                    <td>-0.046371</td>
-                    
-                    <td>51.497647</td>
-                    
-                    <td data-sort-value="3.66">3.66</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>12-AP-4126</td>
+                    <td class="data-table__cell--max-width">Decathlon And What Surrey Quays Road SE16 2XU</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2013-12-20</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.497647</td>
+                    <td>-0.046371</td>
+                    <td>3.66</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -417,38 +350,27 @@ above.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="16-AP-2436">16-AP-2436</td>
-                    <td data-sort-value="179 Ilderton Road SE16 3LA" class="data-table__cell--max-width">179 Ilderton Road SE16 3LA</td>
-                    
-                    <td>-0.053511</td>
-                    
-                    <td>51.485174</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>16-AP-2436</td>
+                    <td class="data-table__cell--max-width">179 Ilderton Road SE16 3LA</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2016-09-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.485174</td>
+                    <td>-0.053511</td>
+                    <td>0.05</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -457,38 +379,27 @@ above.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="15-AP-5094">15-AP-5094</td>
-                    <td data-sort-value="4-7 Sudrey Street SE1 1PF" class="data-table__cell--max-width">4-7 Sudrey Street SE1 1PF</td>
-                    
-                    <td>-0.097746</td>
-                    
-                    <td>51.501355</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>15-AP-5094</td>
+                    <td class="data-table__cell--max-width">4-7 Sudrey Street SE1 1PF</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2016-07-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.501355</td>
+                    <td>-0.097746</td>
+                    <td>0.02</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -497,38 +408,27 @@ above.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="15-AP-3024">15-AP-3024</td>
-                    <td data-sort-value="Former Lesoco Campus Ufford Street SE1 8LE" class="data-table__cell--max-width">Former Lesoco Campus Ufford Street SE1 8LE</td>
-                    
-                    <td>-0.106116</td>
-                    
-                    <td>51.502848</td>
-                    
-                    <td data-sort-value="0.4">0.4</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>15-AP-3024</td>
+                    <td class="data-table__cell--max-width">Former Lesoco Campus Ufford Street SE1 8LE</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2017-03-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.502848</td>
+                    <td>-0.106116</td>
+                    <td>0.4</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -537,38 +437,27 @@ above.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="16-AP-1089">16-AP-1089</td>
-                    <td data-sort-value="6 Peckham Park Road SE15 6TW" class="data-table__cell--max-width">6 Peckham Park Road SE15 6TW</td>
-                    
-                    <td>-0.065436</td>
-                    
-                    <td>51.483098</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="0.0"></td>
-                    
-                    <td data-sort-value="0.0"></td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:SWK</td>
+                    <td>16-AP-1089</td>
+                    <td class="data-table__cell--max-width">6 Peckham Park Road SE15 6TW</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/southwark" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/southwark</a></td>
-                    <td></td>
-                    <td>2016-06-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.483098</td>
+                    <td>-0.065436</td>
+                    <td>0.02</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>2017-12-20</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -577,7 +466,7 @@ above.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22" class="govuk-link">69584001...</a></td>
                 </tr>
                 
             </tbody>
@@ -586,6 +475,11 @@ above.</div>
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BL1">BL1</td>
-                    <td data-sort-value="Site of Mount Pleasant Hospital, Frederick Road, St Leonards" class="data-table__cell--max-width">Site of Mount Pleasant Hospital, Frederick Road, St Leonards</td>
-                    
-                    <td>-6.527118</td>
-                    
-                    <td>55.057399</td>
-                    
-                    <td data-sort-value="1.84">1.84</td>
-                    
-                    <td data-sort-value="40.0">40</td>
-                    
-                    <td data-sort-value="56.0">56</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL1</td>
+                    <td class="data-table__cell--max-width">Site of Mount Pleasant Hospital, Frederick Road, St Leonards</td>
                     <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL1.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL1.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>55.057399</td>
+                    <td>-6.527118</td>
+                    <td>1.84</td>
+                    <td>40.0</td>
+                    <td>56.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,74 +203,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BL2">BL2</td>
-                    <td data-sort-value="123-125 West Hill Road, Hastings (former Malmesbury House)" class="data-table__cell--max-width">123-125 West Hill Road, Hastings (former Malmesbury House)</td>
-                    
-                    <td>-6.555933</td>
-                    
-                    <td>55.019365</td>
-                    
-                    <td data-sort-value="0.7">0.7</td>
-                    
-                    <td data-sort-value="117.0">117</td>
-                    
-                    <td data-sort-value="117.0">117</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL2</td>
+                    <td class="data-table__cell--max-width">123-125 West Hill Road, Hastings (former Malmesbury House)</td>
+                    <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL2.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL2.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
                     <td>not owned by a public authority</td>
-                    <td>1989-09-11</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL2.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL2.pdf</a></td>
-
+                    <td>55.019365</td>
+                    <td>-6.555933</td>
+                    <td>0.7</td>
+                    <td>117.0</td>
+                    <td>117.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BL3">BL3</td>
-                    <td data-sort-value="Hastings Station Yard (Part), Hastings (also known as Station Plaza, Station Approach, Devonshire Road)" class="data-table__cell--max-width">Hastings Station Yard (Part), Hastings (also known as Station Plaza, Station Approach, Devonshire Road)</td>
-                    
-                    <td>-6.545737</td>
-                    
-                    <td>55.043934</td>
-                    
-                    <td data-sort-value="0.44">0.44</td>
-                    
-                    <td data-sort-value="103.0">103</td>
-                    
-                    <td data-sort-value="103.0">103</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL3</td>
+                    <td class="data-table__cell--max-width">Hastings Station Yard (Part), Hastings (also known as Station Plaza, Station Approach, Devonshire Road)</td>
+                    <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL3.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL3.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2009-11-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL3.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL3.pdf</a></td>
-
+                    <td>55.043934</td>
+                    <td>-6.545737</td>
+                    <td>0.44</td>
+                    <td>103.0</td>
+                    <td>103.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -291,74 +257,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BL4">BL4</td>
-                    <td data-sort-value="Former Observer Building, 53 Cambridge Road, Hastings" class="data-table__cell--max-width">Former Observer Building, 53 Cambridge Road, Hastings</td>
-                    
-                    <td>-6.551242</td>
-                    
-                    <td>55.041857</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="39.0">39</td>
-                    
-                    <td data-sort-value="50.0">50</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL4</td>
+                    <td class="data-table__cell--max-width">Former Observer Building, 53 Cambridge Road, Hastings</td>
+                    <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL4.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL4.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-06-18</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL4.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL4.pdf</a></td>
-
+                    <td>55.041857</td>
+                    <td>-6.551242</td>
+                    <td>0.07</td>
+                    <td>39.0</td>
+                    <td>50.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BL5">BL5</td>
-                    <td data-sort-value="Seaside Road, West St Leonards" class="data-table__cell--max-width">Seaside Road, West St Leonards</td>
-                    
-                    <td>-6.558371</td>
-                    
-                    <td>55.016994</td>
-                    
-                    <td data-sort-value="2.22">2.22</td>
-                    
-                    <td data-sort-value="120.0">120</td>
-                    
-                    <td data-sort-value="120.0">120</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL5</td>
+                    <td class="data-table__cell--max-width">Seaside Road, West St Leonards</td>
                     <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL5.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL5.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>55.016994</td>
+                    <td>-6.558371</td>
+                    <td>2.22</td>
+                    <td>120.0</td>
+                    <td>120.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -367,146 +311,102 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BL6">BL6</td>
-                    <td data-sort-value="Broomgrove Redevelopment area, Former Power Station, Ore Valley, Hastings" class="data-table__cell--max-width">Broomgrove Redevelopment area, Former Power Station, Ore Valley, Hastings</td>
-                    
-                    <td>-6.528718</td>
-                    
-                    <td>55.053257</td>
-                    
-                    <td data-sort-value="2.35">2.35</td>
-                    
-                    <td data-sort-value="50.0">50</td>
-                    
-                    <td data-sort-value="50.0">50</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL6</td>
+                    <td class="data-table__cell--max-width">Broomgrove Redevelopment area, Former Power Station, Ore Valley, Hastings</td>
                     <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL6.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL6.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>55.053257</td>
+                    <td>-6.528718</td>
+                    <td>2.35</td>
+                    <td>50.0</td>
+                    <td>50.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BL7">BL7</td>
-                    <td data-sort-value="12-19 Braybrooke Terrace, Hastings" class="data-table__cell--max-width">12-19 Braybrooke Terrace, Hastings</td>
-                    
-                    <td>-6.546061</td>
-                    
-                    <td>55.041076</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value="25.0">25</td>
-                    
-                    <td data-sort-value="25.0">25</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL7</td>
+                    <td class="data-table__cell--max-width">12-19 Braybrooke Terrace, Hastings</td>
                     <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL7.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL7.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>55.041076</td>
+                    <td>-6.546061</td>
+                    <td>0.23</td>
+                    <td>25.0</td>
+                    <td>25.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BL8">BL8</td>
-                    <td data-sort-value="Taxi Office, Site of Former social club, St John's Road, St Leonards" class="data-table__cell--max-width">Taxi Office, Site of Former social club, St John's Road, St Leonards</td>
-                    
-                    <td>-6.550178</td>
-                    
-                    <td>55.032583</td>
-                    
-                    <td data-sort-value="0.12">0.12</td>
-                    
-                    <td data-sort-value="30.0">30</td>
-                    
-                    <td data-sort-value="30.0">30</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL8</td>
+                    <td class="data-table__cell--max-width">Taxi Office, Site of Former social club, St John's Road, St Leonards</td>
                     <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL8.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL8.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>55.032583</td>
+                    <td>-6.550178</td>
+                    <td>0.12</td>
+                    <td>30.0</td>
+                    <td>30.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BL10">BL10</td>
-                    <td data-sort-value="Site of former West St Leonards Primary School, Bexhill Road, Hastings" class="data-table__cell--max-width">Site of former West St Leonards Primary School, Bexhill Road, Hastings</td>
-                    
-                    <td>-6.554335</td>
-                    
-                    <td>55.014217</td>
-                    
-                    <td data-sort-value="3.92">3.92</td>
-                    
-                    <td data-sort-value="100.0">100</td>
-                    
-                    <td data-sort-value="100.0">100</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
-                    <td>owned by a public authority</td>
-                    <td>2019-02-14</td>
-                    <td></td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL10</td>
+                    <td class="data-table__cell--max-width">Site of former West St Leonards Primary School, Bexhill Road, Hastings</td>
                     <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL10.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL10.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>55.014217</td>
+                    <td>-6.554335</td>
+                    <td>3.92</td>
+                    <td>100.0</td>
+                    <td>100.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -515,43 +415,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BL11">BL11</td>
-                    <td data-sort-value="Gambier House, 111 West Hill Road, Hastings" class="data-table__cell--max-width">Gambier House, 111 West Hill Road, Hastings</td>
-                    
-                    <td>-6.556381</td>
-                    
-                    <td>55.021488</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    <td></td>
-                    
                     <td>2019-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/hastings" class="govuk-link">http://opendatacommunities.org/id/district-council/hastings</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HAS</td>
+                    <td>BL11</td>
+                    <td class="data-table__cell--max-width">Gambier House, 111 West Hill Road, Hastings</td>
                     <td><a href="https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL11.pdf" class="govuk-link">https://www.hastings.gov.uk/content/planning/planning_policy/pdfs/BL11.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>55.021488</td>
+                    <td>-6.556381</td>
+                    <td>0.23</td>
+                    <td>15.0</td>
+                    <td>15.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/03bebd75a639c57ad0917f35e617aefa36919656a6b5412db73b0cbc3e383d55" class="govuk-link">03bebd75...</a></td>
                 </tr>
                 
             </tbody>
@@ -560,6 +449,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

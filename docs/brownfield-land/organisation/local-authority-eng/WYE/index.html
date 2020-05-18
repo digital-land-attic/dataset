@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="AS/3">AS/3</td>
-                    <td data-sort-value="Service Station Chester Road South" class="data-table__cell--max-width">Service Station Chester Road South</td>
-                    
-                    <td>-2.239693</td>
-                    
-                    <td>52.380518</td>
-                    
-                    <td data-sort-value="0.41">0.41</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-04</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>AS/3</td>
+                    <td class="data-table__cell--max-width">Service Station Chester Road South</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-21</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>52.380518</td>
+                    <td>-2.239693</td>
+                    <td>0.41</td>
+                    <td>10.0</td>
+                    <td>15.0</td>
+                    <td>2017-12-31</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="AS/6">AS/6</td>
-                    <td data-sort-value="Lea Street School Lea Street" class="data-table__cell--max-width">Lea Street School Lea Street</td>
-                    
-                    <td>-2.23826</td>
-                    
-                    <td>52.387165</td>
-                    
-                    <td data-sort-value="0.47">0.47</td>
-                    
-                    <td data-sort-value="24.0">24</td>
-                    
-                    <td data-sort-value="24.0">24</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>AS/6</td>
+                    <td class="data-table__cell--max-width">Lea Street School Lea Street</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>52.387165</td>
+                    <td>-2.23826</td>
+                    <td>0.47</td>
+                    <td>24.0</td>
+                    <td>24.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,74 +232,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="AS/7">AS/7</td>
-                    <td data-sort-value="Former Polish Club St.Georges Terrace" class="data-table__cell--max-width">Former Polish Club St.Georges Terrace</td>
-                    
-                    <td>-2.241989</td>
-                    
-                    <td>52.386663</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    
-                    <td data-sort-value="8.0">8</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>AS/7</td>
+                    <td class="data-table__cell--max-width">Former Polish Club St.Georges Terrace</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2015-10-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>52.386663</td>
+                    <td>-2.241989</td>
+                    <td>0.11</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>2017-12-31</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="AS/8">AS/8</td>
-                    <td data-sort-value="Adjacent 78 Cherry Orchard" class="data-table__cell--max-width">Adjacent 78 Cherry Orchard</td>
-                    
-                    <td>-2.240838</td>
-                    
-                    <td>52.385613</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    
-                    <td data-sort-value="7.0">7</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>AS/8</td>
+                    <td class="data-table__cell--max-width">Adjacent 78 Cherry Orchard</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2019-05-31</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>52.385613</td>
+                    <td>-2.240838</td>
+                    <td>0.06</td>
+                    <td>5.0</td>
+                    <td>7.0</td>
+                    <td>2017-12-31</td>
+                    <td>2019-09-01</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,146 +286,102 @@
                         </details>
                         
                     </td>
-                    <td>2019-09-01</td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="AS/9">AS/9</td>
-                    <td data-sort-value="Railway Corner, Stanklyn Lane" class="data-table__cell--max-width">Railway Corner, Stanklyn Lane</td>
-                    
-                    <td>-2.233795</td>
-                    
-                    <td>52.361502</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="10.0">10</td>
                     <td>2018-12-31</td>
-                    
-                    <td>2018-12-31</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>AS/9</td>
+                    <td class="data-table__cell--max-width">Railway Corner, Stanklyn Lane</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>52.361502</td>
+                    <td>-2.233795</td>
+                    <td>0.22</td>
+                    <td>6.0</td>
+                    <td>10.0</td>
+                    <td>2018-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BHS/7">BHS/7</td>
-                    <td data-sort-value="93-94 New Road" class="data-table__cell--max-width">93-94 New Road</td>
-                    
-                    <td>-2.248122</td>
-                    
-                    <td>52.384978</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    
-                    <td data-sort-value="8.0">8</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>BHS/7</td>
+                    <td class="data-table__cell--max-width">93-94 New Road</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2019-09-26</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>52.384978</td>
+                    <td>-2.248122</td>
+                    <td>0.06</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>2017-12-31</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BHS/8">BHS/8</td>
-                    <td data-sort-value="site of British Heart Foundation Market Street" class="data-table__cell--max-width">site of British Heart Foundation Market Street</td>
-                    
-                    <td>-2.247773</td>
-                    
-                    <td>52.385761</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="10.0">10</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>BHS/8</td>
+                    <td class="data-table__cell--max-width">site of British Heart Foundation Market Street</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>52.385761</td>
+                    <td>-2.247773</td>
+                    <td>0.05</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BHS/10">BHS/10</td>
-                    <td data-sort-value="Frank Stone Building Green Street" class="data-table__cell--max-width">Frank Stone Building Green Street</td>
-                    
-                    <td>-2.246467</td>
-                    
-                    <td>52.383399</td>
-                    
-                    <td data-sort-value="0.32">0.32</td>
-                    
-                    <td data-sort-value="16.0">16</td>
-                    
-                    <td data-sort-value="16.0">16</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>BHS/10</td>
+                    <td class="data-table__cell--max-width">Frank Stone Building Green Street</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>52.383399</td>
+                    <td>-2.246467</td>
+                    <td>0.32</td>
+                    <td>16.0</td>
+                    <td>16.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -479,38 +390,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BHS/15">BHS/15</td>
-                    <td data-sort-value="37 Park Lane" class="data-table__cell--max-width">37 Park Lane</td>
-                    
-                    <td>-2.251309</td>
-                    
-                    <td>52.384863</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="7.0">7</td>
-                    
-                    <td data-sort-value="7.0">7</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-04</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>BHS/15</td>
+                    <td class="data-table__cell--max-width">37 Park Lane</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2019-06-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>52.384863</td>
+                    <td>-2.251309</td>
+                    <td>0.05</td>
+                    <td>7.0</td>
+                    <td>7.0</td>
+                    <td>2017-12-31</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -519,43 +419,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BHS/16">BHS/16</td>
-                    <td data-sort-value="Timber Yard Park Lane" class="data-table__cell--max-width">Timber Yard Park Lane</td>
-                    
-                    <td>-2.252964</td>
-                    
-                    <td>52.386496</td>
-                    
-                    <td data-sort-value="2.1">2.1</td>
-                    
-                    <td data-sort-value="55.0">55</td>
-                    
-                    <td data-sort-value="55.0">55</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WYE</td>
+                    <td>BHS/16</td>
+                    <td class="data-table__cell--max-width">Timber Yard Park Lane</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wyre-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/wyre-forest</a></td>
                     <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>52.386496</td>
+                    <td>-2.252964</td>
+                    <td>2.1</td>
+                    <td>55.0</td>
+                    <td>55.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10" class="govuk-link">9745c8ea...</a></td>
                 </tr>
                 
             </tbody>
@@ -564,6 +453,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

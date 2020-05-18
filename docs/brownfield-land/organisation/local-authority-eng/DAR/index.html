@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,388 +154,277 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="1">1</td>
-                    <td data-sort-value="Ebbsfleet Central including car parks and land east, of International Way" class="data-table__cell--max-width">Ebbsfleet Central including car parks and land east, of International Way</td>
-                    
-                    <td>0.321166</td>
-                    
-                    <td>51.439855</td>
-                    
-                    <td data-sort-value="31.92">31.92</td>
-                    
-                    <td data-sort-value="1000.0">1000</td>
-                    
-                    <td data-sort-value="3382.0">3382</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-16</td>
+                    <td>local-authority-eng:DAR</td>
+                    <td>1</td>
+                    <td class="data-table__cell--max-width">Ebbsfleet Central including car parks and land east, of International Way</td>
+                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0006/885849/001-Ebbsfleet-Central-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0006/885849/001-Ebbsfleet-Central-BLR2019.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2003-11-01</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0006/885849/001-Ebbsfleet-Central-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0006/885849/001-Ebbsfleet-Central-BLR2019.pdf</a></td>
-
+                    <td>51.439855</td>
+                    <td>0.321166</td>
+                    <td>31.92</td>
+                    <td>1000.0</td>
+                    <td>3382.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="4">4</td>
-                    <td data-sort-value="Rear of Two Brewers, 33 Lowfield Street, Dartford DA1 1EW" class="data-table__cell--max-width">Rear of Two Brewers, 33 Lowfield Street, Dartford DA1 1EW</td>
-                    
-                    <td>0.216323</td>
-                    
-                    <td>51.443171</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="11.0">11</td>
-                    
-                    <td data-sort-value="11.0">11</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-16</td>
+                    <td>local-authority-eng:DAR</td>
+                    <td>4</td>
+                    <td class="data-table__cell--max-width">Rear of Two Brewers, 33 Lowfield Street, Dartford DA1 1EW</td>
+                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0008/885851/004-Two-Brewers,-Lowfield-Street-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0008/885851/004-Two-Brewers,-Lowfield-Street-BLR2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-05-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0008/885851/004-Two-Brewers,-Lowfield-Street-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0008/885851/004-Two-Brewers,-Lowfield-Street-BLR2019.pdf</a></td>
-
+                    <td>51.443171</td>
+                    <td>0.216323</td>
+                    <td>0.05</td>
+                    <td>11.0</td>
+                    <td>11.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="5">5</td>
-                    <td data-sort-value="St Marys Church Hall, Church Hill, Stone, DA9 9BP" class="data-table__cell--max-width">St Marys Church Hall, Church Hill, Stone, DA9 9BP</td>
-                    
-                    <td>0.26488</td>
-                    
-                    <td>51.45048</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-16</td>
+                    <td>local-authority-eng:DAR</td>
+                    <td>5</td>
+                    <td class="data-table__cell--max-width">St Marys Church Hall, Church Hill, Stone, DA9 9BP</td>
+                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0012/885855/005-St-Marys-Church-Hall-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0012/885855/005-St-Marys-Church-Hall-BLR2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-11-09</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0012/885855/005-St-Marys-Church-Hall-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0012/885855/005-St-Marys-Church-Hall-BLR2019.pdf</a></td>
-
+                    <td>51.45048</td>
+                    <td>0.26488</td>
+                    <td>0.1</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="8">8</td>
-                    <td data-sort-value="Land Adjacent To The Rear Of 1-12 Cressener Place, Burnham Road, Dartford" class="data-table__cell--max-width">Land Adjacent To The Rear Of 1-12 Cressener Place, Burnham Road, Dartford</td>
-                    
-                    <td>0.211807</td>
-                    
-                    <td>51.45038</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-16</td>
+                    <td>local-authority-eng:DAR</td>
+                    <td>8</td>
+                    <td class="data-table__cell--max-width">Land Adjacent To The Rear Of 1-12 Cressener Place, Burnham Road, Dartford</td>
+                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0007/885859/008-Land-Adjacent-To-The-Rear-Of-1-12-Cressener-Place-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0007/885859/008-Land-Adjacent-To-The-Rear-Of-1-12-Cressener-Place-BLR2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-12-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0007/885859/008-Land-Adjacent-To-The-Rear-Of-1-12-Cressener-Place-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0007/885859/008-Land-Adjacent-To-The-Rear-Of-1-12-Cressener-Place-BLR2019.pdf</a></td>
-
+                    <td>51.45038</td>
+                    <td>0.211807</td>
+                    <td>0.14</td>
+                    <td>5.0</td>
+                    <td>5.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="10">10</td>
-                    <td data-sort-value="Steam Crane Wharf, Lower Hythe Street, Dartford" class="data-table__cell--max-width">Steam Crane Wharf, Lower Hythe Street, Dartford</td>
-                    
-                    <td>0.218695</td>
-                    
-                    <td>51.45025</td>
-                    
-                    <td data-sort-value="0.48">0.48</td>
-                    
-                    <td data-sort-value="19.0">19</td>
-                    
-                    <td data-sort-value="30.0">30</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-16</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:DAR</td>
+                    <td>10</td>
+                    <td class="data-table__cell--max-width">Steam Crane Wharf, Lower Hythe Street, Dartford</td>
                     <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0008/885860/010-Steam-Crane-Wharf,-Lower-Hythe-Street-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0008/885860/010-Steam-Crane-Wharf,-Lower-Hythe-Street-BLR2019.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.45025</td>
+                    <td>0.218695</td>
+                    <td>0.48</td>
+                    <td>19.0</td>
+                    <td>30.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="14">14</td>
-                    <td data-sort-value="Land East Of Lowfield Street, Dartford" class="data-table__cell--max-width">Land East Of Lowfield Street, Dartford</td>
-                    
-                    <td>0.216804</td>
-                    
-                    <td>51.442101</td>
-                    
-                    <td data-sort-value="2.55">2.55</td>
-                    
-                    <td data-sort-value="548.0">548</td>
-                    
-                    <td data-sort-value="548.0">548</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-16</td>
+                    <td>local-authority-eng:DAR</td>
+                    <td>14</td>
+                    <td class="data-table__cell--max-width">Land East Of Lowfield Street, Dartford</td>
+                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0009/885861/014-Land-East-of-Lowfield-Street-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0009/885861/014-Land-East-of-Lowfield-Street-BLR2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-09-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0009/885861/014-Land-East-of-Lowfield-Street-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0009/885861/014-Land-East-of-Lowfield-Street-BLR2019.pdf</a></td>
-
+                    <td>51.442101</td>
+                    <td>0.216804</td>
+                    <td>2.55</td>
+                    <td>548.0</td>
+                    <td>548.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="15">15</td>
-                    <td data-sort-value="Former Croxton and Garry Site, Tiltman Avenue, Swanscombe" class="data-table__cell--max-width">Former Croxton and Garry Site, Tiltman Avenue, Swanscombe</td>
-                    
-                    <td>0.296768</td>
-                    
-                    <td>51.451775</td>
-                    
-                    <td data-sort-value="2.57">2.57</td>
-                    
-                    <td data-sort-value="220.0">220</td>
-                    
-                    <td data-sort-value="220.0">220</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:DAR</td>
+                    <td>15</td>
+                    <td class="data-table__cell--max-width">Former Croxton and Garry Site, Tiltman Avenue, Swanscombe</td>
+                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0011/885863/015-Former-Croxton-and-Garry-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0011/885863/015-Former-Croxton-and-Garry-BLR2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-12-12</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0011/885863/015-Former-Croxton-and-Garry-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0011/885863/015-Former-Croxton-and-Garry-BLR2019.pdf</a></td>
-
+                    <td>51.451775</td>
+                    <td>0.296768</td>
+                    <td>2.57</td>
+                    <td>220.0</td>
+                    <td>220.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="17">17</td>
-                    <td data-sort-value="Station Approach, Dartford DA1 1BP" class="data-table__cell--max-width">Station Approach, Dartford DA1 1BP</td>
-                    
-                    <td>0.218567</td>
-                    
-                    <td>51.447005</td>
-                    
-                    <td data-sort-value="1.76">1.76</td>
-                    
-                    <td data-sort-value="106.0">106</td>
-                    
-                    <td data-sort-value="274.0">274</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-16</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:DAR</td>
+                    <td>17</td>
+                    <td class="data-table__cell--max-width">Station Approach, Dartford DA1 1BP</td>
                     <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0004/885865/017-Station-Approach-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0004/885865/017-Station-Approach-BLR2019.pdf</a></td>
-
+                    <td></td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.447005</td>
+                    <td>0.218567</td>
+                    <td>1.76</td>
+                    <td>106.0</td>
+                    <td>274.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="18">18</td>
-                    <td data-sort-value="Thames Europort (Dartford International Ferry Terminal), Clipper Boulevard, Dartford" class="data-table__cell--max-width">Thames Europort (Dartford International Ferry Terminal), Clipper Boulevard, Dartford</td>
-                    
-                    <td>0.264299</td>
-                    
-                    <td>51.455321</td>
-                    
-                    <td data-sort-value="17.93">17.93</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:DAR</td>
+                    <td>18</td>
+                    <td class="data-table__cell--max-width">Thames Europort (Dartford International Ferry Terminal), Clipper Boulevard, Dartford</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.455321</td>
+                    <td>0.264299</td>
+                    <td>17.93</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-19</td>
+                    <td>2019-12-16</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td>2019-12-16</td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="19">19</td>
-                    <td data-sort-value="Glentworth Club Site, 154 Lowfield Street, Dartford DA1 1JB" class="data-table__cell--max-width">Glentworth Club Site, 154 Lowfield Street, Dartford DA1 1JB</td>
-                    
-                    <td>0.216359</td>
-                    
-                    <td>51.440338</td>
-                    
-                    <td data-sort-value="0.55">0.55</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="31.0">31</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-16</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/dartford" class="govuk-link">http://opendatacommunities.org/id/district-council/dartford</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:DAR</td>
+                    <td>19</td>
+                    <td class="data-table__cell--max-width">Glentworth Club Site, 154 Lowfield Street, Dartford DA1 1JB</td>
                     <td><a href="https://www.dartford.gov.uk/__data/assets/pdf_file/0005/885866/019-Glentworth-Club-BLR2019.pdf" class="govuk-link">https://www.dartford.gov.uk/__data/assets/pdf_file/0005/885866/019-Glentworth-Club-BLR2019.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.440338</td>
+                    <td>0.216359</td>
+                    <td>0.55</td>
+                    <td>10.0</td>
+                    <td>31.0</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2cf90070d5f4217bf1c1cd0bdc0043d1ee567494238ffe033c9747615cf13d08" class="govuk-link">2cf90070...</a></td>
                 </tr>
                 
             </tbody>
@@ -544,6 +433,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

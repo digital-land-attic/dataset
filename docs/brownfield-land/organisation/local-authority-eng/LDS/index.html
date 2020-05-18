@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,95 +154,72 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="SHL00001">SHL00001</td>
-                    <td data-sort-value="Monk Bridge Road (3) LS6" class="data-table__cell--max-width">Monk Bridge Road (3) LS6</td>
-                    
-                    <td>-1.573746</td>
-                    
-                    <td>53.826719</td>
-                    
-                    <td data-sort-value="0.51">0.51</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00001</td>
+                    <td class="data-table__cell--max-width">Monk Bridge Road (3) LS6</td>
                     <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00001" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00001</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.826719</td>
+                    <td>-1.573746</td>
+                    <td>0.51</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="SHL00004">SHL00004</td>
-                    <td data-sort-value="Spenfield House Otley Road Headingley Leeds LS16 5" class="data-table__cell--max-width">Spenfield House Otley Road Headingley Leeds LS16 5</td>
-                    
-                    <td>-1.591333</td>
-                    
-                    <td>53.833512</td>
-                    
-                    <td data-sort-value="1.22">1.22</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="13">13</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00004</td>
+                    <td class="data-table__cell--max-width">Spenfield House Otley Road Headingley Leeds LS16 5</td>
+                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00004" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00004</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00004" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00004</a></td>
-
+                    <td>53.833512</td>
+                    <td>-1.591333</td>
+                    <td>1.22</td>
+                    <td>13</td>
+                    <td>13</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -251,74 +228,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="SHL00006">SHL00006</td>
-                    <td data-sort-value="Scarcroft Lodge Wetherby Road Scarcroft Leeds" class="data-table__cell--max-width">Scarcroft Lodge Wetherby Road Scarcroft Leeds</td>
-                    
-                    <td>-1.447</td>
-                    
-                    <td>53.8645</td>
-                    
-                    <td data-sort-value="5.79">5.79</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    
-                    <td data-sort-value="100">100</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00006</td>
+                    <td class="data-table__cell--max-width">Scarcroft Lodge Wetherby Road Scarcroft Leeds</td>
                     <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00006" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00006</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.8645</td>
+                    <td>-1.447</td>
+                    <td>5.79</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="SHL00009">SHL00009</td>
-                    <td data-sort-value="Land North Of Morrisons Swinnow Road Swinnow Leeds" class="data-table__cell--max-width">Land North Of Morrisons Swinnow Road Swinnow Leeds</td>
-                    
-                    <td>-1.636469</td>
-                    
-                    <td>53.804581</td>
-                    
-                    <td data-sort-value="0.69">0.69</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="25">25</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00009</td>
+                    <td class="data-table__cell--max-width">Land North Of Morrisons Swinnow Road Swinnow Leeds</td>
+                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00009" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00009</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-01-23</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00009" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00009</a></td>
-
+                    <td>53.804581</td>
+                    <td>-1.636469</td>
+                    <td>0.69</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -327,38 +282,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="SHL00011">SHL00011</td>
-                    <td data-sort-value="Daytona Works Carlisle Road Pudsey Leeds LS28 8PL" class="data-table__cell--max-width">Daytona Works Carlisle Road Pudsey Leeds LS28 8PL</td>
-                    
-                    <td>-1.667644</td>
-                    
-                    <td>53.790848</td>
-                    
-                    <td data-sort-value="0.53">0.53</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00011</td>
+                    <td class="data-table__cell--max-width">Daytona Works Carlisle Road Pudsey Leeds LS28 8PL</td>
+                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00011" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00011</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2012-06-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00011" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00011</a></td>
-
+                    <td>53.790848</td>
+                    <td>-1.667644</td>
+                    <td>0.53</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -367,38 +311,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="SHL00012">SHL00012</td>
-                    <td data-sort-value="Riverside Mill Low Hall Road Horsforth Leeds LS19" class="data-table__cell--max-width">Riverside Mill Low Hall Road Horsforth Leeds LS19</td>
-                    
-                    <td>-1.670673</td>
-                    
-                    <td>53.834403</td>
-                    
-                    <td data-sort-value="7.86">7.86</td>
-                    
-                    <td data-sort-value="85">85</td>
-                    
-                    <td data-sort-value="85">85</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00012</td>
+                    <td class="data-table__cell--max-width">Riverside Mill Low Hall Road Horsforth Leeds LS19</td>
+                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00012" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00012</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-09-25</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00012" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00012</a></td>
-
+                    <td>53.834403</td>
+                    <td>-1.670673</td>
+                    <td>7.86</td>
+                    <td>85</td>
+                    <td>85</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -407,110 +340,77 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="SHL00013">SHL00013</td>
-                    <td data-sort-value="Land At Vesper Road Kirkstall Leeds LS5 3NU" class="data-table__cell--max-width">Land At Vesper Road Kirkstall Leeds LS5 3NU</td>
-                    
-                    <td>-1.606748</td>
-                    
-                    <td>53.826229</td>
-                    
-                    <td data-sort-value="0.48">0.48</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    
-                    <td data-sort-value="17">17</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00013</td>
+                    <td class="data-table__cell--max-width">Land At Vesper Road Kirkstall Leeds LS5 3NU</td>
                     <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00013" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00013</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.826229</td>
+                    <td>-1.606748</td>
+                    <td>0.48</td>
+                    <td>17</td>
+                    <td>17</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="SHL00014">SHL00014</td>
-                    <td data-sort-value="Moorfield Road / Tower Works" class="data-table__cell--max-width">Moorfield Road / Tower Works</td>
-                    
-                    <td>-1.603811</td>
-                    
-                    <td>53.799345</td>
-                    
-                    <td data-sort-value="1.0">1.0</td>
-                    
-                    <td data-sort-value="62">62</td>
-                    
-                    <td data-sort-value="62">62</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00014</td>
+                    <td class="data-table__cell--max-width">Moorfield Road / Tower Works</td>
                     <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00014" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00014</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.799345</td>
+                    <td>-1.603811</td>
+                    <td>1.0</td>
+                    <td>62</td>
+                    <td>62</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="SHL00017">SHL00017</td>
-                    <td data-sort-value="South Park Mills, 15, 15a, 16 And 17, Acrivan Ltd, Fulneck" class="data-table__cell--max-width">South Park Mills, 15, 15a, 16 And 17, Acrivan Ltd, Fulneck</td>
-                    
-                    <td>-1.658151</td>
-                    
-                    <td>53.780377</td>
-                    
-                    <td data-sort-value="1.32">1.32</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    
-                    <td data-sort-value="21">21</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00017</td>
+                    <td class="data-table__cell--max-width">South Park Mills, 15, 15a, 16 And 17, Acrivan Ltd, Fulneck</td>
+                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00017" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00017</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-20</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00017" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00017</a></td>
-
+                    <td>53.780377</td>
+                    <td>-1.658151</td>
+                    <td>1.32</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -519,43 +419,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="SHL00018">SHL00018</td>
-                    <td data-sort-value="Woodside Mill Low Lane Horsforth Leeds" class="data-table__cell--max-width">Woodside Mill Low Lane Horsforth Leeds</td>
-                    
-                    <td>-1.623158</td>
-                    
-                    <td>53.841247</td>
-                    
-                    <td data-sort-value="1.3">1.3</td>
-                    
-                    <td data-sort-value="59">59</td>
-                    
-                    <td data-sort-value="59">59</td>
                     <td>2016-07-11</td>
-                    
-                    <td>2016-07-11</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/leeds" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/leeds</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LDS</td>
+                    <td>SHL00018</td>
+                    <td class="data-table__cell--max-width">Woodside Mill Low Lane Horsforth Leeds</td>
                     <td><a href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00018" class="govuk-link">https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&find=SHL00018</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.841247</td>
+                    <td>-1.623158</td>
+                    <td>1.3</td>
+                    <td>59</td>
+                    <td>59</td>
+                    <td>2016-07-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82" class="govuk-link">0718b0fc...</a></td>
                 </tr>
                 
             </tbody>
@@ -564,6 +453,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

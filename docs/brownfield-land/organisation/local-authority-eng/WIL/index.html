@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="S15.11698">S15.11698</td>
-                    <td data-sort-value="Skylark Motor Services Ltd, The Ridge, Woodfalls, Salisbury" class="data-table__cell--max-width">Skylark Motor Services Ltd, The Ridge, Woodfalls, Salisbury</td>
-                    
-                    <td>-1.719627</td>
-                    
-                    <td>50.980197</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>S15.11698</td>
+                    <td class="data-table__cell--max-width">Skylark Motor Services Ltd, The Ridge, Woodfalls, Salisbury</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-10-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>50.980197</td>
+                    <td>-1.719627</td>
+                    <td>0.28</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="N12.1442">N12.1442</td>
-                    <td data-sort-value="St Marys School, College Road, Purton (nr Swindon)" class="data-table__cell--max-width">St Marys School, College Road, Purton (nr Swindon)</td>
-                    
-                    <td>-1.86878</td>
-                    
-                    <td>51.586696</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>N12.1442</td>
+                    <td class="data-table__cell--max-width">St Marys School, College Road, Purton (nr Swindon)</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-04-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.586696</td>
+                    <td>-1.86878</td>
+                    <td>0.26</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="W16.7502">W16.7502</td>
-                    <td data-sort-value="Rear of Wesley Road Club, Wesley Road, Trowbridge" class="data-table__cell--max-width">Rear of Wesley Road Club, Wesley Road, Trowbridge</td>
-                    
-                    <td>-2.214749</td>
-                    
-                    <td>51.316457</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>W16.7502</td>
+                    <td class="data-table__cell--max-width">Rear of Wesley Road Club, Wesley Road, Trowbridge</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.316457</td>
+                    <td>-2.214749</td>
+                    <td>0.22</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="W16.1078">W16.1078</td>
-                    <td data-sort-value="Victoria Garage [demolished] 36 Victoria Road, Warminster" class="data-table__cell--max-width">Victoria Garage [demolished] 36 Victoria Road, Warminster</td>
-                    
-                    <td>-2.19981</td>
-                    
-                    <td>51.203635</td>
-                    
-                    <td data-sort-value="0.39">0.39</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>W16.1078</td>
+                    <td class="data-table__cell--max-width">Victoria Garage [demolished] 36 Victoria Road, Warminster</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-03-29</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.203635</td>
+                    <td>-2.19981</td>
+                    <td>0.39</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="N14.10444">N14.10444</td>
-                    <td data-sort-value="81 The Green Lyneham, Chippenham" class="data-table__cell--max-width">81 The Green Lyneham, Chippenham</td>
-                    
-                    <td>-1.972716</td>
-                    
-                    <td>51.513378</td>
-                    
-                    <td data-sort-value="0.5">0.5</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>N14.10444</td>
+                    <td class="data-table__cell--max-width">81 The Green Lyneham, Chippenham</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-01-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.513378</td>
+                    <td>-1.972716</td>
+                    <td>0.5</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="N15.5255">N15.5255</td>
-                    <td data-sort-value="109 & Foxlea, Gloucester Road, Malmesbury" class="data-table__cell--max-width">109 & Foxlea, Gloucester Road, Malmesbury</td>
-                    
-                    <td>-2.100889</td>
-                    
-                    <td>51.588299</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value="26">26</td>
-                    
-                    <td data-sort-value="26">26</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>N15.5255</td>
+                    <td class="data-table__cell--max-width">109 & Foxlea, Gloucester Road, Malmesbury</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>mixed ownership</td>
-                    <td>2016-03-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.588299</td>
+                    <td>-2.100889</td>
+                    <td>0.23</td>
+                    <td>26</td>
+                    <td>26</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="N14.11382">N14.11382</td>
-                    <td data-sort-value="Parklands, Malmesbury Road, Chippenham" class="data-table__cell--max-width">Parklands, Malmesbury Road, Chippenham</td>
-                    
-                    <td>-2.119244</td>
-                    
-                    <td>51.465162</td>
-                    
-                    <td data-sort-value="0.4">0.4</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>N14.11382</td>
+                    <td class="data-table__cell--max-width">Parklands, Malmesbury Road, Chippenham</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-07-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.465162</td>
+                    <td>-2.119244</td>
+                    <td>0.4</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="W08.0539">W08.0539</td>
-                    <td data-sort-value="Pembroke House Edward Street, Westbury" class="data-table__cell--max-width">Pembroke House Edward Street, Westbury</td>
-                    
-                    <td>-2.183877</td>
-                    
-                    <td>51.260652</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>W08.0539</td>
+                    <td class="data-table__cell--max-width">Pembroke House Edward Street, Westbury</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2009-01-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.260652</td>
+                    <td>-2.183877</td>
+                    <td>0.03</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="W10.2479">W10.2479</td>
-                    <td data-sort-value="North Junction, Station Road, Westbury" class="data-table__cell--max-width">North Junction, Station Road, Westbury</td>
-                    
-                    <td>-2.19853</td>
-                    
-                    <td>51.268703</td>
-                    
-                    <td data-sort-value="2.01">2.01</td>
-                    
-                    <td data-sort-value="102">102</td>
-                    
-                    <td data-sort-value="102">102</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>W10.2479</td>
+                    <td class="data-table__cell--max-width">North Junction, Station Road, Westbury</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>mixed ownership</td>
-                    <td>2013-11-25</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.268703</td>
+                    <td>-2.19853</td>
+                    <td>2.01</td>
+                    <td>102</td>
+                    <td>102</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="N14.3748">N14.3748</td>
-                    <td data-sort-value="13-16 Market Place, Chippenham" class="data-table__cell--max-width">13-16 Market Place, Chippenham</td>
-                    
-                    <td>-2.113755</td>
-                    
-                    <td>51.457471</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>N14.3748</td>
+                    <td class="data-table__cell--max-width">13-16 Market Place, Chippenham</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/wiltshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/wiltshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-11-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-
+                    <td>51.457471</td>
+                    <td>-2.113755</td>
+                    <td>0.05</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR17135">BLR17135</td>
-                    <td data-sort-value="The Old Mill Hollingthorpe Lane, Hall Green, Wakefield" class="data-table__cell--max-width">The Old Mill Hollingthorpe Lane, Hall Green, Wakefield</td>
-                    
-                    <td>-1.527481</td>
-                    
-                    <td>53.631008</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17135</td>
+                    <td class="data-table__cell--max-width">The Old Mill Hollingthorpe Lane, Hall Green, Wakefield</td>
+                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=431345&y=415046&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=431345&y=415046&zoom=10</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td></td>
-                    <td>2015-12-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=431345&y=415046&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=431345&y=415046&zoom=10</a></td>
-
+                    <td>53.631008</td>
+                    <td>-1.527481</td>
+                    <td>0.22</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR18207">BLR18207</td>
-                    <td data-sort-value="18 King Street, Wakefield" class="data-table__cell--max-width">18 King Street, Wakefield</td>
-                    
-                    <td>-1.500824</td>
-                    
-                    <td>53.683257</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2018-03-31</td>
-                    
                     <td>2018-12-31</td>
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR18207</td>
+                    <td class="data-table__cell--max-width">18 King Street, Wakefield</td>
+                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433067&y=420871&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433067&y=420871&zoom=10</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td></td>
-                    <td>2018-01-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433067&y=420871&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433067&y=420871&zoom=10</a></td>
-
+                    <td>53.683257</td>
+                    <td>-1.500824</td>
+                    <td>0.02</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2018-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR17166">BLR17166</td>
-                    <td data-sort-value="Bishopgarth, Wakefield" class="data-table__cell--max-width">Bishopgarth, Wakefield</td>
-                    
-                    <td>-1.500284</td>
-                    
-                    <td>53.690517</td>
-                    
-                    <td data-sort-value="3.55">3.55</td>
-                    
-                    <td data-sort-value="112">112</td>
-                    
-                    <td data-sort-value="112">112</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17166</td>
+                    <td class="data-table__cell--max-width">Bishopgarth, Wakefield</td>
+                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433097&y=421679&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433097&y=421679&zoom=10</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td></td>
-                    <td>2016-03-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433097&y=421679&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433097&y=421679&zoom=10</a></td>
-
+                    <td>53.690517</td>
+                    <td>-1.500284</td>
+                    <td>3.55</td>
+                    <td>112</td>
+                    <td>112</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,110 +261,77 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR17142">BLR17142</td>
-                    <td data-sort-value="Victoria Works, Wakefield" class="data-table__cell--max-width">Victoria Works, Wakefield</td>
-                    
-                    <td>-1.51368</td>
-                    
-                    <td>53.684451</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17142</td>
+                    <td class="data-table__cell--max-width">Victoria Works, Wakefield</td>
+                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432217&y=420998&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432217&y=420998&zoom=10</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432217&y=420998&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432217&y=420998&zoom=10</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>53.684451</td>
+                    <td>-1.51368</td>
+                    <td>0.18</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR17141">BLR17141</td>
-                    <td data-sort-value="Sirdar, Flanshaw Lane, Wakefield" class="data-table__cell--max-width">Sirdar, Flanshaw Lane, Wakefield</td>
-                    
-                    <td>-1.53108</td>
-                    
-                    <td>53.685545</td>
-                    
-                    <td data-sort-value="6.54">6.54</td>
-                    
-                    <td data-sort-value="262">262</td>
-                    
-                    <td data-sort-value="262">262</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17141</td>
+                    <td class="data-table__cell--max-width">Sirdar, Flanshaw Lane, Wakefield</td>
+                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=431067&y=421112&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=431067&y=421112&zoom=10</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=431067&y=421112&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=431067&y=421112&zoom=10</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>53.685545</td>
+                    <td>-1.53108</td>
+                    <td>6.54</td>
+                    <td>262</td>
+                    <td>262</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR17167">BLR17167</td>
-                    <td data-sort-value="Former B Power Station Site, Wakefield" class="data-table__cell--max-width">Former B Power Station Site, Wakefield</td>
-                    
-                    <td>-1.472772</td>
-                    
-                    <td>53.672027</td>
-                    
-                    <td data-sort-value="16.64">16.64</td>
-                    
-                    <td data-sort-value="334">334</td>
-                    
-                    <td data-sort-value="334">334</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17167</td>
+                    <td class="data-table__cell--max-width">Former B Power Station Site, Wakefield</td>
+                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=434929&y=419635&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=434929&y=419635&zoom=10</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td></td>
-                    <td>2007-05-25</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=434929&y=419635&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=434929&y=419635&zoom=10</a></td>
-
+                    <td>53.672027</td>
+                    <td>-1.472772</td>
+                    <td>16.64</td>
+                    <td>334</td>
+                    <td>334</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -407,146 +340,102 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR17140">BLR17140</td>
-                    <td data-sort-value="Eagle Grove, Flanshaw, Wakefield" class="data-table__cell--max-width">Eagle Grove, Flanshaw, Wakefield</td>
-                    
-                    <td>-1.532642</td>
-                    
-                    <td>53.68396</td>
-                    
-                    <td data-sort-value="1.23">1.23</td>
-                    
-                    <td data-sort-value="49">49</td>
-                    
-                    <td data-sort-value="49">49</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17140</td>
+                    <td class="data-table__cell--max-width">Eagle Grove, Flanshaw, Wakefield</td>
                     <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=430965&y=420935&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=430965&y=420935&zoom=10</a></td>
-
+                    <td></td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.68396</td>
+                    <td>-1.532642</td>
+                    <td>1.23</td>
+                    <td>49</td>
+                    <td>49</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR17129">BLR17129</td>
-                    <td data-sort-value="Kirkgate (Kirkgate / Sun Lane), Wakefield" class="data-table__cell--max-width">Kirkgate (Kirkgate / Sun Lane), Wakefield</td>
-                    
-                    <td>-1.492754</td>
-                    
-                    <td>53.682037</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17129</td>
+                    <td class="data-table__cell--max-width">Kirkgate (Kirkgate / Sun Lane), Wakefield</td>
                     <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433601&y=420739&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=433601&y=420739&zoom=10</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.682037</td>
+                    <td>-1.492754</td>
+                    <td>0.28</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR17137">BLR17137</td>
-                    <td data-sort-value="Former Warburton's, Westgate End, Wakefield" class="data-table__cell--max-width">Former Warburton's, Westgate End, Wakefield</td>
-                    
-                    <td>-1.512549</td>
-                    
-                    <td>53.680132</td>
-                    
-                    <td data-sort-value="0.75">0.75</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    
-                    <td data-sort-value="30">30</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17137</td>
+                    <td class="data-table__cell--max-width">Former Warburton's, Westgate End, Wakefield</td>
+                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432295&y=420518&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432295&y=420518&zoom=10</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432295&y=420518&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432295&y=420518&zoom=10</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>53.680132</td>
+                    <td>-1.512549</td>
+                    <td>0.75</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR17163">BLR17163</td>
-                    <td data-sort-value="Red Hall Avenue (unit 18B), Wakefield" class="data-table__cell--max-width">Red Hall Avenue (unit 18B), Wakefield</td>
-                    
-                    <td>-1.50654</td>
-                    
-                    <td>53.700718</td>
-                    
-                    <td data-sort-value="0.98">0.98</td>
-                    
-                    <td data-sort-value="26">26</td>
-                    
-                    <td data-sort-value="26">26</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WKF</td>
+                    <td>BLR17163</td>
+                    <td class="data-table__cell--max-width">Red Hall Avenue (unit 18B), Wakefield</td>
+                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432676&y=422811&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432676&y=422811&zoom=10</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/wakefield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/wakefield</a></td>
-                    <td></td>
-                    <td>2015-08-06</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432676&y=422811&zoom=10" class="govuk-link">http://map.wakefield.gov.uk/connect/analyst/?mapcfg=BLregister&x=432676&y=422811&zoom=10</a></td>
-
+                    <td>53.700718</td>
+                    <td>-1.50654</td>
+                    <td>0.98</td>
+                    <td>26</td>
+                    <td>26</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -555,7 +444,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c9b8266bf3bcda86dede9e8985436b9b403882d456d7936f9202f00dcbc1104" class="govuk-link">3c9b8266...</a></td>
                 </tr>
                 
             </tbody>
@@ -564,6 +453,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

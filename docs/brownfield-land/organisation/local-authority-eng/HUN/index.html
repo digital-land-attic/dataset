@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/bdb8761a3efe999199cf6be196ea1d85a36c7d58987e2f208107e8086d36d9f6.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="HDCBLR02">HDCBLR02</td>
-                    <td data-sort-value="Land At And Including British Gas Plc, Mill Common, Huntingdon" class="data-table__cell--max-width">Land At And Including British Gas Plc, Mill Common, Huntingdon</td>
-                    
-                    <td>-0.184985</td>
-                    
-                    <td>52.326003</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2018-12-14</td>
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR02</td>
+                    <td class="data-table__cell--max-width">Land At And Including British Gas Plc, Mill Common, Huntingdon</td>
+                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OEF2OOIKHXA00" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OEF2OOIKHXA00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-01-05</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OEF2OOIKHXA00" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OEF2OOIKHXA00</a></td>
-
+                    <td>52.326003</td>
+                    <td>-0.184985</td>
+                    <td>0.6</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="HDCBLR03">HDCBLR03</td>
-                    <td data-sort-value="Land Adjacent And Including 2 Cromwell Road, Eynesbury" class="data-table__cell--max-width">Land Adjacent And Including 2 Cromwell Road, Eynesbury</td>
-                    
-                    <td>-0.25347</td>
-                    
-                    <td>52.226135</td>
-                    
-                    <td data-sort-value="2.6">2.6</td>
-                    
-                    <td data-sort-value="80">80</td>
-                    
-                    <td data-sort-value="80">80</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2018-12-14</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR03</td>
+                    <td class="data-table__cell--max-width">Land Adjacent And Including 2 Cromwell Road, Eynesbury</td>
                     <td><a href="http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1435050323013#s1435050323013" class="govuk-link">http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1435050323013#s1435050323013</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.226135</td>
+                    <td>-0.25347</td>
+                    <td>2.6</td>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="HDCBLR04">HDCBLR04</td>
-                    <td data-sort-value="Car Park, Cromwell Road, Eynesbury" class="data-table__cell--max-width">Car Park, Cromwell Road, Eynesbury</td>
-                    
-                    <td>-0.255604</td>
-                    
-                    <td>52.223604</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2018-12-14</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR04</td>
+                    <td class="data-table__cell--max-width">Car Park, Cromwell Road, Eynesbury</td>
                     <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/simpleSearchResults.do?action=firstPage" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/simpleSearchResults.do?action=firstPage</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.223604</td>
+                    <td>-0.255604</td>
+                    <td>0.6</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="HDCBLR06">HDCBLR06</td>
-                    <td data-sort-value="94 Great Whyte, Ramsey, Huntingdon, PE26 1HR" class="data-table__cell--max-width">94 Great Whyte, Ramsey, Huntingdon, PE26 1HR</td>
-                    
-                    <td>-0.110341</td>
-                    
-                    <td>52.451431</td>
-                    
-                    <td data-sort-value="0.7">0.7</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2018-12-14</td>
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR06</td>
+                    <td class="data-table__cell--max-width">94 Great Whyte, Ramsey, Huntingdon, PE26 1HR</td>
+                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NZURQ4IKKMP00" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NZURQ4IKKMP00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-06-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NZURQ4IKKMP00" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NZURQ4IKKMP00</a></td>
-
+                    <td>52.451431</td>
+                    <td>-0.110341</td>
+                    <td>0.7</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="HDCBLR07">HDCBLR07</td>
-                    <td data-sort-value="Land At And Including 46 Whytefield Road, Ramsey" class="data-table__cell--max-width">Land At And Including 46 Whytefield Road, Ramsey</td>
-                    
-                    <td>-0.112094</td>
-                    
-                    <td>52.449319</td>
-                    
-                    <td data-sort-value="0.9">0.9</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2018-12-14</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR07</td>
+                    <td class="data-table__cell--max-width">Land At And Including 46 Whytefield Road, Ramsey</td>
                     <td><a href="http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1432202623157#s1432202623157" class="govuk-link">http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1432202623157#s1432202623157</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.449319</td>
+                    <td>-0.112094</td>
+                    <td>0.9</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="HDCBLR08">HDCBLR08</td>
-                    <td data-sort-value="Former RAF Upwood and Upwood Hill House, Bury Road, Ramsey" class="data-table__cell--max-width">Former RAF Upwood and Upwood Hill House, Bury Road, Ramsey</td>
-                    
-                    <td>-0.129183</td>
-                    
-                    <td>52.435699</td>
-                    
-                    <td data-sort-value="25.0">25.0</td>
-                    
-                    <td data-sort-value="450">450</td>
-                    
-                    <td data-sort-value="450">450</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2018-12-14</td>
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR08</td>
+                    <td class="data-table__cell--max-width">Former RAF Upwood and Upwood Hill House, Bury Road, Ramsey</td>
+                    <td><a href="http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1432202922047#s1432202922047" class="govuk-link">http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1432202922047#s1432202922047</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-06-07</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1432202922047#s1432202922047" class="govuk-link">http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1432202922047#s1432202922047</a></td>
-
+                    <td>52.435699</td>
+                    <td>-0.129183</td>
+                    <td>25.0</td>
+                    <td>450</td>
+                    <td>450</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="HDCBLR09">HDCBLR09</td>
-                    <td data-sort-value="Clinic, RAF Upwood, Upwood Road, Bury" class="data-table__cell--max-width">Clinic, RAF Upwood, Upwood Road, Bury</td>
-                    
-                    <td>-0.122328</td>
-                    
-                    <td>52.435338</td>
-                    
-                    <td data-sort-value="2.0">2.0</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2018-12-14</td>
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR09</td>
+                    <td class="data-table__cell--max-width">Clinic, RAF Upwood, Upwood Road, Bury</td>
+                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NHYSB8IKMNQ00" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NHYSB8IKMNQ00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-12-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NHYSB8IKMNQ00" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NHYSB8IKMNQ00</a></td>
-
+                    <td>52.435338</td>
+                    <td>-0.122328</td>
+                    <td>2.0</td>
+                    <td>60</td>
+                    <td>60</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="HDCBLR10">HDCBLR10</td>
-                    <td data-sort-value="Land Adjacent St Marys Road Industrial Estate, St Marys Road, Ramsey" class="data-table__cell--max-width">Land Adjacent St Marys Road Industrial Estate, St Marys Road, Ramsey</td>
-                    
-                    <td>-0.113773</td>
-                    
-                    <td>52.454471</td>
-                    
-                    <td data-sort-value="1.7">1.7</td>
-                    
-                    <td data-sort-value="52">52</td>
-                    
-                    <td data-sort-value="52">52</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2018-12-14</td>
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR10</td>
+                    <td class="data-table__cell--max-width">Land Adjacent St Marys Road Industrial Estate, St Marys Road, Ramsey</td>
+                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=O2N01FIKLHS00" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=O2N01FIKLHS00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-12-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=O2N01FIKLHS00" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=O2N01FIKLHS00</a></td>
-
+                    <td>52.454471</td>
+                    <td>-0.113773</td>
+                    <td>1.7</td>
+                    <td>52</td>
+                    <td>52</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="HDCBLR11">HDCBLR11</td>
-                    <td data-sort-value="West Station Yard and Northern Mill, Ramsey" class="data-table__cell--max-width">West Station Yard and Northern Mill, Ramsey</td>
-                    
-                    <td>-0.114292</td>
-                    
-                    <td>52.454029</td>
-                    
-                    <td data-sort-value="1.0">1.0</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    
-                    <td data-sort-value="30">30</td>
                     <td>2018-12-14</td>
-                    
-                    <td>2018-12-14</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR11</td>
+                    <td class="data-table__cell--max-width">West Station Yard and Northern Mill, Ramsey</td>
                     <td><a href="http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1430127377884#section-s1430127377884" class="govuk-link">http://huntsdc.objective.co.uk/portal/pp/hlp2036/cd2017/helaa2017?pointId=s1430127377884#section-s1430127377884</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.454029</td>
+                    <td>-0.114292</td>
+                    <td>1.0</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>2018-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="HDCBLR12">HDCBLR12</td>
-                    <td data-sort-value="Land Between Brampton Road And Ermine Street Huntingdon" class="data-table__cell--max-width">Land Between Brampton Road And Ermine Street Huntingdon</td>
-                    
-                    <td>-0.190883</td>
-                    
-                    <td>52.332154</td>
-                    
-                    <td data-sort-value="3.5">3.5</td>
-                    
-                    <td data-sort-value="41">41</td>
-                    
-                    <td data-sort-value="41">41</td>
                     <td>2018-12-14</td>
-                    
-                    <td>2018-12-14</td>
+                    <td>local-authority-eng:HUN</td>
+                    <td>HDCBLR12</td>
+                    <td class="data-table__cell--max-width">Land Between Brampton Road And Ermine Street Huntingdon</td>
+                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OWBIQFIKH2700" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OWBIQFIKH2700</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/huntingdonshire" class="govuk-link">http://opendatacommunities.org/id/district-council/huntingdonshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-10-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OWBIQFIKH2700" class="govuk-link">https://publicaccess.huntingdonshire.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OWBIQFIKH2700</a></td>
-
+                    <td>52.332154</td>
+                    <td>-0.190883</td>
+                    <td>3.5</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>2018-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a482681cd5cceb96153db3dde34c251ca999eb4870c73d84f8c197a968f3489" class="govuk-link">9a482681...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

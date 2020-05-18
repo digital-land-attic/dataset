@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="HOLP14">HOLP14</td>
-                    <td data-sort-value="Griffin Park, Braemar Road, Brentford TW8 0NT" class="data-table__cell--max-width">Griffin Park, Braemar Road, Brentford TW8 0NT</td>
-                    
-                    <td>-0.288113</td>
-                    
-                    <td>51.490344</td>
-                    
-                    <td data-sort-value="2.0">2.0</td>
-                    
-                    <td data-sort-value="75">75</td>
-                    
-                    <td data-sort-value="75">75</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP14</td>
+                    <td class="data-table__cell--max-width">Griffin Park, Braemar Road, Brentford TW8 0NT</td>
+                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-09-21</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>51.490344</td>
+                    <td>-0.288113</td>
+                    <td>2.0</td>
+                    <td>75</td>
+                    <td>75</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="HOLP17">HOLP17</td>
-                    <td data-sort-value="Land to the South Side of, Brentford High Street, Brentford, TW8 8EW" class="data-table__cell--max-width">Land to the South Side of, Brentford High Street, Brentford, TW8 8EW</td>
-                    
-                    <td>-0.307592</td>
-                    
-                    <td>51.482857</td>
-                    
-                    <td data-sort-value="5.02">5.02</td>
-                    
-                    <td data-sort-value="518">518</td>
-                    
-                    <td data-sort-value="518">518</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP17</td>
+                    <td class="data-table__cell--max-width">Land to the South Side of, Brentford High Street, Brentford, TW8 8EW</td>
+                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-02</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>51.482857</td>
+                    <td>-0.307592</td>
+                    <td>5.02</td>
+                    <td>518</td>
+                    <td>518</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,74 +232,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="HOLP29">HOLP29</td>
-                    <td data-sort-value="174 Twickenham Road, TW77DJ" class="data-table__cell--max-width">174 Twickenham Road, TW77DJ</td>
-                    
-                    <td>-0.329003</td>
-                    
-                    <td>51.466834</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="29">29</td>
-                    
-                    <td data-sort-value="29">29</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP29</td>
+                    <td class="data-table__cell--max-width">174 Twickenham Road, TW77DJ</td>
                     <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.466834</td>
+                    <td>-0.329003</td>
+                    <td>0.27</td>
+                    <td>29</td>
+                    <td>29</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="HOLP3">HOLP3</td>
-                    <td data-sort-value="Empire House, 408-430, Chiswick High Road, Chiswick, W4 5TF" class="data-table__cell--max-width">Empire House, 408-430, Chiswick High Road, Chiswick, W4 5TF</td>
-                    
-                    <td>-0.266369</td>
-                    
-                    <td>51.493217</td>
-                    
-                    <td data-sort-value="0.52">0.52</td>
-                    
-                    <td data-sort-value="137">137</td>
-                    
-                    <td data-sort-value="137">137</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP3</td>
+                    <td class="data-table__cell--max-width">Empire House, 408-430, Chiswick High Road, Chiswick, W4 5TF</td>
+                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>51.493217</td>
+                    <td>-0.266369</td>
+                    <td>0.52</td>
+                    <td>137</td>
+                    <td>137</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,38 +286,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="HOLP35">HOLP35</td>
-                    <td data-sort-value="Land at Bell Road, TW33NR" class="data-table__cell--max-width">Land at Bell Road, TW33NR</td>
-                    
-                    <td>-0.366032</td>
-                    
-                    <td>51.467248</td>
-                    
-                    <td data-sort-value="0.54">0.54</td>
-                    
-                    <td data-sort-value="127">127</td>
-                    
-                    <td data-sort-value="127">127</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP35</td>
+                    <td class="data-table__cell--max-width">Land at Bell Road, TW33NR</td>
+                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-09-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>51.467248</td>
+                    <td>-0.366032</td>
+                    <td>0.54</td>
+                    <td>127</td>
+                    <td>127</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -371,38 +315,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="HOLP38">HOLP38</td>
-                    <td data-sort-value="Hounslow House" class="data-table__cell--max-width">Hounslow House</td>
-                    
-                    <td>-0.354052</td>
-                    
-                    <td>51.471694</td>
-                    
-                    <td data-sort-value="1.23">1.23</td>
-                    
-                    <td data-sort-value="125">125</td>
-                    
-                    <td data-sort-value="125">125</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP38</td>
+                    <td class="data-table__cell--max-width">Hounslow House</td>
+                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2012-03-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>51.471694</td>
+                    <td>-0.354052</td>
+                    <td>1.23</td>
+                    <td>125</td>
+                    <td>125</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -411,38 +344,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="HOLP40">HOLP40</td>
-                    <td data-sort-value="Land at Lampton Road, TW3 1JG" class="data-table__cell--max-width">Land at Lampton Road, TW3 1JG</td>
-                    
-                    <td>-0.366307</td>
-                    
-                    <td>51.470022</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    
-                    <td data-sort-value="40">40</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP40</td>
+                    <td class="data-table__cell--max-width">Land at Lampton Road, TW3 1JG</td>
+                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-07-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>51.470022</td>
+                    <td>-0.366307</td>
+                    <td>0.3</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -451,38 +373,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="HOLP42">HOLP42</td>
-                    <td data-sort-value="1-83, 2nd-3rd floor, HIGH STREET, TW3 1RH" class="data-table__cell--max-width">1-83, 2nd-3rd floor, HIGH STREET, TW3 1RH</td>
-                    
-                    <td>-0.355168</td>
-                    
-                    <td>51.47028</td>
-                    
-                    <td data-sort-value="0.4">0.4</td>
-                    
-                    <td data-sort-value="58">58</td>
-                    
-                    <td data-sort-value="58">58</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP42</td>
+                    <td class="data-table__cell--max-width">1-83, 2nd-3rd floor, HIGH STREET, TW3 1RH</td>
+                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-08-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>51.47028</td>
+                    <td>-0.355168</td>
+                    <td>0.4</td>
+                    <td>58</td>
+                    <td>58</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -491,43 +402,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="HOLP63">HOLP63</td>
-                    <td data-sort-value="Fern Grove, TW4 9AY" class="data-table__cell--max-width">Fern Grove, TW4 9AY</td>
-                    
-                    <td>-0.409736</td>
-                    
-                    <td>51.450422</td>
-                    
-                    <td data-sort-value="0.38">0.38</td>
-                    
-                    <td data-sort-value="62">62</td>
-                    
-                    <td data-sort-value="62">62</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/hounslow" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/hounslow</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HNS</td>
+                    <td>HOLP63</td>
+                    <td class="data-table__cell--max-width">Fern Grove, TW4 9AY</td>
                     <td><a href="https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje" class="govuk-link">https://hounslow.box.com/s/p9emq0qarixg7brq285vf5h12pwbwkje</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.450422</td>
+                    <td>-0.409736</td>
+                    <td>0.38</td>
+                    <td>62</td>
+                    <td>62</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27e4b37b648da390f8fce37ee6705aefdbde655729d99af762c82cf5ecccfa6c" class="govuk-link">27e4b37b...</a></td>
                 </tr>
                 
             </tbody>
@@ -536,6 +436,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

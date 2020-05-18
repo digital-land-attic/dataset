@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BS0001">BS0001</td>
-                    <td data-sort-value="Tower Place, Waterworks Street, Immingham" class="data-table__cell--max-width">Tower Place, Waterworks Street, Immingham</td>
-                    
-                    <td>-0.20117</td>
-                    
-                    <td>53.618219</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0001</td>
+                    <td class="data-table__cell--max-width">Tower Place, Waterworks Street, Immingham</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2010-08-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>53.618219</td>
+                    <td>-0.20117</td>
+                    <td>0.8</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-10-18</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BS0002">BS0002</td>
-                    <td data-sort-value="71-85 Hamilton Street, Grimsby" class="data-table__cell--max-width">71-85 Hamilton Street, Grimsby</td>
-                    
-                    <td>-0.060129</td>
-                    
-                    <td>53.572164</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="24">24</td>
-                    
-                    <td data-sort-value="30">30</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0002</td>
+                    <td class="data-table__cell--max-width">71-85 Hamilton Street, Grimsby</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>53.572164</td>
+                    <td>-0.060129</td>
+                    <td>0.27</td>
+                    <td>24</td>
+                    <td>30</td>
+                    <td>2017-10-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BS0003">BS0003</td>
-                    <td data-sort-value="Chapman's pond, Hawthorne Avenue, Cleethorpes" class="data-table__cell--max-width">Chapman's pond, Hawthorne Avenue, Cleethorpes</td>
-                    
-                    <td>-0.037754</td>
-                    
-                    <td>53.566441</td>
-                    
-                    <td data-sort-value="3.76">3.76</td>
-                    
-                    <td data-sort-value="110">110</td>
-                    
-                    <td data-sort-value="110">110</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0003</td>
+                    <td class="data-table__cell--max-width">Chapman's pond, Hawthorne Avenue, Cleethorpes</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>53.566441</td>
+                    <td>-0.037754</td>
+                    <td>3.76</td>
+                    <td>110</td>
+                    <td>110</td>
+                    <td>2017-10-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BS0004">BS0004</td>
-                    <td data-sort-value="Land off Pelham Road, Cleethorpes (1)" class="data-table__cell--max-width">Land off Pelham Road, Cleethorpes (1)</td>
-                    
-                    <td>-0.036967</td>
-                    
-                    <td>53.565484</td>
-                    
-                    <td data-sort-value="0.54">0.54</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0004</td>
+                    <td class="data-table__cell--max-width">Land off Pelham Road, Cleethorpes (1)</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2015-12-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>53.565484</td>
+                    <td>-0.036967</td>
+                    <td>0.54</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-10-18</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BS0005">BS0005</td>
-                    <td data-sort-value="Land off Pelham Road, Cleethorpes (2)" class="data-table__cell--max-width">Land off Pelham Road, Cleethorpes (2)</td>
-                    
-                    <td>-0.036967</td>
-                    
-                    <td>53.565484</td>
-                    
-                    <td data-sort-value="3.96">3.96</td>
-                    
-                    <td data-sort-value="118">118</td>
-                    
-                    <td data-sort-value="118">118</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0005</td>
+                    <td class="data-table__cell--max-width">Land off Pelham Road, Cleethorpes (2)</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>53.565484</td>
+                    <td>-0.036967</td>
+                    <td>3.96</td>
+                    <td>118</td>
+                    <td>118</td>
+                    <td>2017-10-18</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BS0006">BS0006</td>
-                    <td data-sort-value="Land west of Cartergate, Grimsby" class="data-table__cell--max-width">Land west of Cartergate, Grimsby</td>
-                    
-                    <td>-0.091797</td>
-                    
-                    <td>53.563845</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0006</td>
+                    <td class="data-table__cell--max-width">Land west of Cartergate, Grimsby</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>53.563845</td>
+                    <td>-0.091797</td>
+                    <td>0.18</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-10-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BS0007">BS0007</td>
-                    <td data-sort-value="Former Clifton Bingo, Grant Street, Grimsby" class="data-table__cell--max-width">Former Clifton Bingo, Grant Street, Grimsby</td>
-                    
-                    <td>-0.030128</td>
-                    
-                    <td>53.561875</td>
-                    
-                    <td data-sort-value="0.21">0.21</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    
-                    <td data-sort-value="80">80</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0007</td>
+                    <td class="data-table__cell--max-width">Former Clifton Bingo, Grant Street, Grimsby</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2016-03-09</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>53.561875</td>
+                    <td>-0.030128</td>
+                    <td>0.21</td>
+                    <td>35</td>
+                    <td>80</td>
+                    <td>2017-10-18</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BS0008">BS0008</td>
-                    <td data-sort-value="Former Birds-eye factory site, Ladysmith Road, Grimsby" class="data-table__cell--max-width">Former Birds-eye factory site, Ladysmith Road, Grimsby</td>
-                    
-                    <td>-0.070785</td>
-                    
-                    <td>53.565342</td>
-                    
-                    <td data-sort-value="4.16">4.16</td>
-                    
-                    <td data-sort-value="176">176</td>
-                    
-                    <td data-sort-value="260">260</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0008</td>
+                    <td class="data-table__cell--max-width">Former Birds-eye factory site, Ladysmith Road, Grimsby</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2013-02-18</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>53.565342</td>
+                    <td>-0.070785</td>
+                    <td>4.16</td>
+                    <td>176</td>
+                    <td>260</td>
+                    <td>2017-10-18</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BS0009">BS0009</td>
-                    <td data-sort-value="Claremont House, 7 Welholme Avenue, Grimsby" class="data-table__cell--max-width">Claremont House, 7 Welholme Avenue, Grimsby</td>
-                    
-                    <td>-0.089109</td>
-                    
-                    <td>53.559496</td>
-                    
-                    <td data-sort-value="0.58">0.58</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="22">22</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0009</td>
+                    <td class="data-table__cell--max-width">Claremont House, 7 Welholme Avenue, Grimsby</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>53.559496</td>
+                    <td>-0.089109</td>
+                    <td>0.58</td>
+                    <td>13</td>
+                    <td>22</td>
+                    <td>2017-10-18</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BS0010">BS0010</td>
-                    <td data-sort-value="The Cedars offices, Eastern Inway, Grimsby" class="data-table__cell--max-width">The Cedars offices, Eastern Inway, Grimsby</td>
-                    
-                    <td>-0.111189</td>
-                    
-                    <td>53.553617</td>
-                    
-                    <td data-sort-value="0.43">0.43</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="34">34</td>
                     <td>2017-10-18</td>
-                    
-                    <td>2017-10-18</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NEL</td>
+                    <td>BS0010</td>
+                    <td class="data-table__cell--max-width">The Cedars offices, Eastern Inway, Grimsby</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-east-lincolnshire</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-28</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>53.553617</td>
+                    <td>-0.111189</td>
+                    <td>0.43</td>
+                    <td>32</td>
+                    <td>34</td>
+                    <td>2017-10-18</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5468cd3bd8482633be5a3dd547b51124836fd11ff1986766fc9e503bff653e9e" class="govuk-link">5468cd3b...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

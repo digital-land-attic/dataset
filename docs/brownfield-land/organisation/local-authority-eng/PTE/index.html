@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,388 +154,277 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="PDL/0001/17">PDL/0001/17</td>
-                    <td data-sort-value="Land To The Rear Of 105, Oxney Road, Peterborough" class="data-table__cell--max-width">Land To The Rear Of 105, Oxney Road, Peterborough</td>
-                    
-                    <td>-0.209359</td>
-                    
-                    <td>52.589761</td>
-                    
-                    <td data-sort-value="2.8">2.8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0001/17</td>
+                    <td class="data-table__cell--max-width">Land To The Rear Of 105, Oxney Road, Peterborough</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N3VCML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N3VCML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2010-11-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N3VCML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N3VCML0CW00</a></td>
-
+                    <td>52.589761</td>
+                    <td>-0.209359</td>
+                    <td>2.8</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="PDL/0002/17">PDL/0002/17</td>
-                    <td data-sort-value="16-18 Manor House Street, Peterborough" class="data-table__cell--max-width">16-18 Manor House Street, Peterborough</td>
-                    
-                    <td>-0.242821</td>
-                    
-                    <td>52.577342</td>
-                    
-                    <td data-sort-value="0.7">0.7</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0002/17</td>
+                    <td class="data-table__cell--max-width">16-18 Manor House Street, Peterborough</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N4EVML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N4EVML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2016-11-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N4EVML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N4EVML0CW00</a></td>
-
+                    <td>52.577342</td>
+                    <td>-0.242821</td>
+                    <td>0.7</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="PDL/0003/17">PDL/0003/17</td>
-                    <td data-sort-value="3-7 Oxford Road, Millfield, Peterborough, PE1 3BL" class="data-table__cell--max-width">3-7 Oxford Road, Millfield, Peterborough, PE1 3BL</td>
-                    
-                    <td>-0.246281</td>
-                    
-                    <td>52.588264</td>
-                    
-                    <td data-sort-value="1.3">1.3</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0003/17</td>
+                    <td class="data-table__cell--max-width">3-7 Oxford Road, Millfield, Peterborough, PE1 3BL</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N5U4ML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N5U4ML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2016-07-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N5U4ML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N5U4ML0CW00</a></td>
-
+                    <td>52.588264</td>
+                    <td>-0.246281</td>
+                    <td>1.3</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="PDL/0004/17">PDL/0004/17</td>
-                    <td data-sort-value="38 Elm Street, Woodston, Peterborough" class="data-table__cell--max-width">38 Elm Street, Woodston, Peterborough</td>
-                    
-                    <td>-0.246721</td>
-                    
-                    <td>52.561333</td>
-                    
-                    <td data-sort-value="0.9">0.9</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0004/17</td>
+                    <td class="data-table__cell--max-width">38 Elm Street, Woodston, Peterborough</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N6A0ML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N6A0ML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2011-06-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N6A0ML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N6A0ML0CW00</a></td>
-
+                    <td>52.561333</td>
+                    <td>-0.246721</td>
+                    <td>0.9</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="PDL/0005/17">PDL/0005/17</td>
-                    <td data-sort-value="659 Lincoln Road, Peterborough, PE1 3HA" class="data-table__cell--max-width">659 Lincoln Road, Peterborough, PE1 3HA</td>
-                    
-                    <td>-0.256084</td>
-                    
-                    <td>52.59383</td>
-                    
-                    <td data-sort-value="1.9">1.9</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    
-                    <td data-sort-value="23">23</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0005/17</td>
+                    <td class="data-table__cell--max-width">659 Lincoln Road, Peterborough, PE1 3HA</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7BTML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7BTML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2007-06-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7BTML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7BTML0CW00</a></td>
-
+                    <td>52.59383</td>
+                    <td>-0.256084</td>
+                    <td>1.9</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="PDL/0006/17">PDL/0006/17</td>
-                    <td data-sort-value="78 High Street, Eye, Peterborough, PE6 7UY" class="data-table__cell--max-width">78 High Street, Eye, Peterborough, PE6 7UY</td>
-                    
-                    <td>-0.193822</td>
-                    
-                    <td>52.608586</td>
-                    
-                    <td data-sort-value="1.9">1.9</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0006/17</td>
+                    <td class="data-table__cell--max-width">78 High Street, Eye, Peterborough, PE6 7UY</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7JDML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7JDML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2009-11-25</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7JDML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7JDML0CW00</a></td>
-
+                    <td>52.608586</td>
+                    <td>-0.193822</td>
+                    <td>1.9</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="PDL/0007/17">PDL/0007/17</td>
-                    <td data-sort-value="83 Oxney Road, Peterborough, PE1 5NG" class="data-table__cell--max-width">83 Oxney Road, Peterborough, PE1 5NG</td>
-                    
-                    <td>-0.2118</td>
-                    
-                    <td>52.588917</td>
-                    
-                    <td data-sort-value="1.6">1.6</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0007/17</td>
+                    <td class="data-table__cell--max-width">83 Oxney Road, Peterborough, PE1 5NG</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7O9ML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7O9ML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2016-10-19</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7O9ML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N7O9ML0CW00</a></td>
-
+                    <td>52.588917</td>
+                    <td>-0.2118</td>
+                    <td>1.6</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="PDL/0008/17">PDL/0008/17</td>
-                    <td data-sort-value="85 Park Road, Peterborough" class="data-table__cell--max-width">85 Park Road, Peterborough</td>
-                    
-                    <td>-0.241319</td>
-                    
-                    <td>52.578003</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0008/17</td>
+                    <td class="data-table__cell--max-width">85 Park Road, Peterborough</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N8E2ML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N8E2ML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2016-11-23</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N8E2ML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N8E2ML0CW00</a></td>
-
+                    <td>52.578003</td>
+                    <td>-0.241319</td>
+                    <td>0.3</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="PDL/0009/17">PDL/0009/17</td>
-                    <td data-sort-value="Land Adjacent To 39-41 Station Road, Thorney, Peterborough" class="data-table__cell--max-width">Land Adjacent To 39-41 Station Road, Thorney, Peterborough</td>
-                    
-                    <td>-0.10739</td>
-                    
-                    <td>52.624409</td>
-                    
-                    <td data-sort-value="4.7">4.7</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0009/17</td>
+                    <td class="data-table__cell--max-width">Land Adjacent To 39-41 Station Road, Thorney, Peterborough</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N8LYML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N8LYML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td>2017-01-30</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N8LYML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N8LYML0CW00</a></td>
-
+                    <td>52.624409</td>
+                    <td>-0.10739</td>
+                    <td>4.7</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="PDL/0010/17">PDL/0010/17</td>
-                    <td data-sort-value="British Sugar, Oundle Road, Woodston, Peterborough, PE2 9AY" class="data-table__cell--max-width">British Sugar, Oundle Road, Woodston, Peterborough, PE2 9AY</td>
-                    
-                    <td>-0.259204</td>
-                    
-                    <td>52.563163</td>
-                    
-                    <td data-sort-value="24.6">24.6</td>
-                    
-                    <td data-sort-value="70">70</td>
-                    
-                    <td data-sort-value="70">70</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:PTE</td>
+                    <td>PDL/0010/17</td>
+                    <td class="data-table__cell--max-width">British Sugar, Oundle Road, Woodston, Peterborough, PE2 9AY</td>
+                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N92GML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N92GML0CW00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/peterborough" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/peterborough</a></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N92GML0CW00" class="govuk-link">https://planpa.peterborough.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P0N92GML0CW00</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>52.563163</td>
+                    <td>-0.259204</td>
+                    <td>24.6</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0219993638d3c37f053f2297c1d34e9767a23326c8e24b7ebec770d1e39c003a" class="govuk-link">02199936...</a></td>
                 </tr>
                 
             </tbody>
@@ -544,6 +433,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

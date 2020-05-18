@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="RBBCBLR004">RBBCBLR004</td>
-                    <td data-sort-value="Courtlands Farm, Park Road, Banstead" class="data-table__cell--max-width">Courtlands Farm, Park Road, Banstead</td>
-                    
-                    <td>-0.184509</td>
-                    
-                    <td>51.317693</td>
-                    
-                    <td data-sort-value="2.5">2.5</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR004</td>
+                    <td class="data-table__cell--max-width">Courtlands Farm, Park Road, Banstead</td>
+                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3825/rbbcblr004" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3825/rbbcblr004</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-20</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3825/rbbcblr004" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3825/rbbcblr004</a></td>
-
+                    <td>51.317693</td>
+                    <td>-0.184509</td>
+                    <td>2.5</td>
+                    <td>9.0</td>
+                    <td>9.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="RBBCBLR008">RBBCBLR008</td>
-                    <td data-sort-value="Hockley Business Centre, Hooley Lane, Redhill" class="data-table__cell--max-width">Hockley Business Centre, Hooley Lane, Redhill</td>
-                    
-                    <td>-0.170394</td>
-                    
-                    <td>51.232365</td>
-                    
-                    <td data-sort-value="0.52">0.52</td>
-                    
-                    <td data-sort-value="60.0">60</td>
-                    
-                    <td data-sort-value="60.0">60</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR008</td>
+                    <td class="data-table__cell--max-width">Hockley Business Centre, Hooley Lane, Redhill</td>
+                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3828/rbbcblr008" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3828/rbbcblr008</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-07-19</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3828/rbbcblr008" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3828/rbbcblr008</a></td>
-
+                    <td>51.232365</td>
+                    <td>-0.170394</td>
+                    <td>0.52</td>
+                    <td>60.0</td>
+                    <td>60.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -257,38 +234,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="RBBCBLR011">RBBCBLR011</td>
-                    <td data-sort-value="Merstham Library, Weldon Way, Merstham" class="data-table__cell--max-width">Merstham Library, Weldon Way, Merstham</td>
-                    
-                    <td>-0.145883</td>
-                    
-                    <td>51.259156</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR011</td>
+                    <td class="data-table__cell--max-width">Merstham Library, Weldon Way, Merstham</td>
                     <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3827/rbbcblr011" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3827/rbbcblr011</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.259156</td>
+                    <td>-0.145883</td>
+                    <td>0.26</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -299,38 +265,27 @@ The site is partially affected by flood risk (Zone 2 and 3).</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="RBBCBLR012">RBBCBLR012</td>
-                    <td data-sort-value="Former Oakley Centre, Radstock Way, Merstham" class="data-table__cell--max-width">Former Oakley Centre, Radstock Way, Merstham</td>
-                    
-                    <td>-0.132443</td>
-                    
-                    <td>51.261523</td>
-                    
-                    <td data-sort-value="0.58">0.58</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR012</td>
+                    <td class="data-table__cell--max-width">Former Oakley Centre, Radstock Way, Merstham</td>
                     <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3821/rbbcblr012" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3821/rbbcblr012</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.261523</td>
+                    <td>-0.132443</td>
+                    <td>0.58</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -340,38 +295,27 @@ Planning permission (18/00312/F) for the redevelopment of the wider site was ref
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="RBBCBLR013">RBBCBLR013</td>
-                    <td data-sort-value="Oakley Farm, 143 Bletchingley Road, Merstham" class="data-table__cell--max-width">Oakley Farm, 143 Bletchingley Road, Merstham</td>
-                    
-                    <td>-0.133085</td>
-                    
-                    <td>51.259483</td>
-                    
-                    <td data-sort-value="0.67">0.67</td>
-                    
-                    <td data-sort-value="13.0">13</td>
-                    
-                    <td data-sort-value="13.0">13</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR013</td>
+                    <td class="data-table__cell--max-width">Oakley Farm, 143 Bletchingley Road, Merstham</td>
                     <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3835/rbbcblr013" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3835/rbbcblr013</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.259483</td>
+                    <td>-0.133085</td>
+                    <td>0.67</td>
+                    <td>13.0</td>
+                    <td>13.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -382,38 +326,27 @@ Its delivery will be subject to DMP Policy MLS1 “Managing land supply”.</div
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="RBBCBLR014">RBBCBLR014</td>
-                    <td data-sort-value="Bellway House, Station Road North, Merstham" class="data-table__cell--max-width">Bellway House, Station Road North, Merstham</td>
-                    
-                    <td>-0.151811</td>
-                    
-                    <td>51.265365</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="33.0">33</td>
-                    
-                    <td data-sort-value="33.0">33</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR014</td>
+                    <td class="data-table__cell--max-width">Bellway House, Station Road North, Merstham</td>
+                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3838/rbbcblr014" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3838/rbbcblr014</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-08-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3838/rbbcblr014" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3838/rbbcblr014</a></td>
-
+                    <td>51.265365</td>
+                    <td>-0.151811</td>
+                    <td>0.03</td>
+                    <td>33.0</td>
+                    <td>33.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -425,38 +358,27 @@ There has been a new planning application approved since the 2018 Brownfield lan
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="RBBCBLR016">RBBCBLR016</td>
-                    <td data-sort-value="Church of the Epiphany, Merstham" class="data-table__cell--max-width">Church of the Epiphany, Merstham</td>
-                    
-                    <td>-0.141664</td>
-                    
-                    <td>51.262119</td>
-                    
-                    <td data-sort-value="0.32">0.32</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR016</td>
+                    <td class="data-table__cell--max-width">Church of the Epiphany, Merstham</td>
                     <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3836/rbbcblr016" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3836/rbbcblr016</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.262119</td>
+                    <td>-0.141664</td>
+                    <td>0.32</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -466,38 +388,27 @@ The church has been closed for a number of years and there are a number of Angli
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="RBBCBLR018">RBBCBLR018</td>
-                    <td data-sort-value="Elgar Works, Merstham" class="data-table__cell--max-width">Elgar Works, Merstham</td>
-                    
-                    <td>-0.151267</td>
-                    
-                    <td>51.257478</td>
-                    
-                    <td data-sort-value="0.42">0.42</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR018</td>
+                    <td class="data-table__cell--max-width">Elgar Works, Merstham</td>
+                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3833/rbbcblr018" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3833/rbbcblr018</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-07-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3833/rbbcblr018" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3833/rbbcblr018</a></td>
-
+                    <td>51.257478</td>
+                    <td>-0.151267</td>
+                    <td>0.42</td>
+                    <td>14.0</td>
+                    <td>14.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -506,38 +417,27 @@ The church has been closed for a number of years and there are a number of Angli
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="RBBCBLR019">RBBCBLR019</td>
-                    <td data-sort-value="Redhill Railway Station, Princess Way, Redhill" class="data-table__cell--max-width">Redhill Railway Station, Princess Way, Redhill</td>
-                    
-                    <td>-0.166145</td>
-                    
-                    <td>51.240167</td>
-                    
-                    <td data-sort-value="0.9">0.9</td>
-                    
-                    <td data-sort-value="200.0">200</td>
-                    
-                    <td data-sort-value="200.0">200</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR019</td>
+                    <td class="data-table__cell--max-width">Redhill Railway Station, Princess Way, Redhill</td>
                     <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3847/rbbcblr019" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3847/rbbcblr019</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.240167</td>
+                    <td>-0.166145</td>
+                    <td>0.9</td>
+                    <td>200.0</td>
+                    <td>200.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -546,38 +446,27 @@ The church has been closed for a number of years and there are a number of Angli
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="RBBCBLR020">RBBCBLR020</td>
-                    <td data-sort-value="Land at Marketfield Way/ High Street, Redhill" class="data-table__cell--max-width">Land at Marketfield Way/ High Street, Redhill</td>
-                    
-                    <td>-0.167602</td>
-                    
-                    <td>51.239552</td>
-                    
-                    <td data-sort-value="0.65">0.65</td>
-                    
-                    <td data-sort-value="150.0">150</td>
-                    
-                    <td data-sort-value="150.0">150</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-31</td>
+                    <td>local-authority-eng:REI</td>
+                    <td>RBBCBLR020</td>
+                    <td class="data-table__cell--max-width">Land at Marketfield Way/ High Street, Redhill</td>
+                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3848/rbbcblr020" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3848/rbbcblr020</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/reigate-banstead" class="govuk-link">http://opendatacommunities.org/id/district-council/reigate-banstead</a></td>
                     <td>mixed ownership</td>
-                    <td>2017-01-20</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.reigate-banstead.gov.uk/downloads/file/3848/rbbcblr020" class="govuk-link">http://www.reigate-banstead.gov.uk/downloads/file/3848/rbbcblr020</a></td>
-
+                    <td>51.239552</td>
+                    <td>-0.167602</td>
+                    <td>0.65</td>
+                    <td>150.0</td>
+                    <td>150.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -586,7 +475,7 @@ The church has been closed for a number of years and there are a number of Angli
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2" class="govuk-link">8b7de81e...</a></td>
                 </tr>
                 
             </tbody>
@@ -595,6 +484,11 @@ The church has been closed for a number of years and there are a number of Angli
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

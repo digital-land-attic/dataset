@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="3">3</td>
-                    <td data-sort-value="89 Ingram Road, Gillingham" class="data-table__cell--max-width">89 Ingram Road, Gillingham</td>
-                    
-                    <td>0.560513</td>
-                    
-                    <td>51.390117</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="22.0">22</td>
-                    
-                    <td data-sort-value="22.0">22</td>
-                    <td>2019-01-24</td>
-                    
                     <td>2020-03-05</td>
+                    <td>local-authority-eng:MDW</td>
+                    <td>3</td>
+                    <td class="data-table__cell--max-width">89 Ingram Road, Gillingham</td>
+                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-05-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td>51.390117</td>
+                    <td>0.560513</td>
+                    <td>0.16</td>
+                    <td>22.0</td>
+                    <td>22.0</td>
+                    <td>2019-01-24</td>
+                    <td>2020-03-05</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,110 +203,77 @@
                         </details>
                         
                     </td>
-                    <td>2020-03-05</td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="100">100</td>
-                    <td data-sort-value="320-344 High Street inc. 42 New Road, Rochester" class="data-table__cell--max-width">320-344 High Street inc. 42 New Road, Rochester</td>
-                    
-                    <td>0.5135</td>
-                    
-                    <td>51.383176</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="111.0">111</td>
-                    
-                    <td data-sort-value="111.0">111</td>
                     <td>2020-03-05</td>
-                    
-                    <td>2020-03-05</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MDW</td>
+                    <td>100</td>
+                    <td class="data-table__cell--max-width">320-344 High Street inc. 42 New Road, Rochester</td>
                     <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.383176</td>
+                    <td>0.5135</td>
+                    <td>0.6</td>
+                    <td>111.0</td>
+                    <td>111.0</td>
+                    <td>2020-03-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="102">102</td>
-                    <td data-sort-value="1-35 High Street, Chatham (Grays Garage)" class="data-table__cell--max-width">1-35 High Street, Chatham (Grays Garage)</td>
-                    
-                    <td>0.518006</td>
-                    
-                    <td>51.383565</td>
-                    
-                    <td data-sort-value="0.59">0.59</td>
-                    
-                    <td data-sort-value="97.0">97</td>
-                    
-                    <td data-sort-value="97.0">97</td>
                     <td>2020-03-05</td>
-                    
-                    <td>2020-03-05</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MDW</td>
+                    <td>102</td>
+                    <td class="data-table__cell--max-width">1-35 High Street, Chatham (Grays Garage)</td>
                     <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.383565</td>
+                    <td>0.518006</td>
+                    <td>0.59</td>
+                    <td>97.0</td>
+                    <td>97.0</td>
+                    <td>2020-03-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="144">144</td>
-                    <td data-sort-value="St Bartholomews Hospital, New Road, Rochester" class="data-table__cell--max-width">St Bartholomews Hospital, New Road, Rochester</td>
-                    
-                    <td>0.515454</td>
-                    
-                    <td>51.38264</td>
-                    
-                    <td data-sort-value="0.98">0.98</td>
-                    
-                    <td data-sort-value="103.0">103</td>
-                    
-                    <td data-sort-value="103.0">103</td>
                     <td>2020-03-05</td>
-                    
-                    <td>2020-03-05</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:MDW</td>
+                    <td>144</td>
+                    <td class="data-table__cell--max-width">St Bartholomews Hospital, New Road, Rochester</td>
                     <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.38264</td>
+                    <td>0.515454</td>
+                    <td>0.98</td>
+                    <td>103.0</td>
+                    <td>103.0</td>
+                    <td>2020-03-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -327,110 +282,77 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="213">213</td>
-                    <td data-sort-value="352-356 Luton Road, Luton" class="data-table__cell--max-width">352-356 Luton Road, Luton</td>
-                    
-                    <td>0.545584</td>
-                    
-                    <td>51.371071</td>
-                    
-                    <td data-sort-value="0.31">0.31</td>
-                    
-                    <td data-sort-value="22.0">22</td>
-                    
-                    <td data-sort-value="22.0">22</td>
                     <td>2020-03-05</td>
-                    
-                    <td>2020-03-05</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MDW</td>
+                    <td>213</td>
+                    <td class="data-table__cell--max-width">352-356 Luton Road, Luton</td>
                     <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.371071</td>
+                    <td>0.545584</td>
+                    <td>0.31</td>
+                    <td>22.0</td>
+                    <td>22.0</td>
+                    <td>2020-03-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="493">493</td>
-                    <td data-sort-value="Land rear of 7-13 New Road CHATHAM" class="data-table__cell--max-width">Land rear of 7-13 New Road CHATHAM</td>
-                    
-                    <td>0.524299</td>
-                    
-                    <td>51.381181</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    
-                    <td data-sort-value="14.0">14</td>
                     <td>2020-03-05</td>
-                    
-                    <td>2020-03-05</td>
+                    <td>local-authority-eng:MDW</td>
+                    <td>493</td>
+                    <td class="data-table__cell--max-width">Land rear of 7-13 New Road CHATHAM</td>
+                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td>51.381181</td>
+                    <td>0.524299</td>
+                    <td>0.1</td>
+                    <td>14.0</td>
+                    <td>14.0</td>
+                    <td>2020-03-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="530">530</td>
-                    <td data-sort-value="389 High Street CHATHAM" class="data-table__cell--max-width">389 High Street CHATHAM</td>
-                    
-                    <td>0.518029</td>
-                    
-                    <td>51.380066</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="24.0">24</td>
-                    
-                    <td data-sort-value="24.0">24</td>
                     <td>2020-03-05</td>
-                    
-                    <td>2020-03-05</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MDW</td>
+                    <td>530</td>
+                    <td class="data-table__cell--max-width">389 High Street CHATHAM</td>
                     <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.380066</td>
+                    <td>0.518029</td>
+                    <td>0.06</td>
+                    <td>24.0</td>
+                    <td>24.0</td>
+                    <td>2020-03-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -439,38 +361,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="537">537</td>
-                    <td data-sort-value="22-26 Victoria Street, Rochester" class="data-table__cell--max-width">22-26 Victoria Street, Rochester</td>
-                    
-                    <td>0.505418</td>
-                    
-                    <td>51.385445</td>
-                    
-                    <td data-sort-value="0.46">0.46</td>
-                    
-                    <td data-sort-value="3.0">3</td>
-                    
-                    <td data-sort-value="3.0">3</td>
                     <td>2020-03-05</td>
-                    
-                    <td>2020-03-05</td>
+                    <td>local-authority-eng:MDW</td>
+                    <td>537</td>
+                    <td class="data-table__cell--max-width">22-26 Victoria Street, Rochester</td>
+                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-03-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td>51.385445</td>
+                    <td>0.505418</td>
+                    <td>0.46</td>
+                    <td>3.0</td>
+                    <td>3.0</td>
+                    <td>2020-03-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -479,38 +390,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="547">547</td>
-                    <td data-sort-value="85 Church Street GILLINGHAM" class="data-table__cell--max-width">85 Church Street GILLINGHAM</td>
-                    
-                    <td>0.560567</td>
-                    
-                    <td>51.392886</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="17.0">17</td>
-                    
-                    <td data-sort-value="17.0">17</td>
                     <td>2020-03-05</td>
-                    
-                    <td>2020-03-05</td>
+                    <td>local-authority-eng:MDW</td>
+                    <td>547</td>
+                    <td class="data-table__cell--max-width">85 Church Street GILLINGHAM</td>
+                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-10-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td>51.392886</td>
+                    <td>0.560567</td>
+                    <td>0.09</td>
+                    <td>17.0</td>
+                    <td>17.0</td>
+                    <td>2020-03-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -519,43 +419,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="663">663</td>
-                    <td data-sort-value="82 Jeffery Street, Gillingham" class="data-table__cell--max-width">82 Jeffery Street, Gillingham</td>
-                    
-                    <td>0.549239</td>
-                    
-                    <td>51.387728</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="12.0">12</td>
-                    
-                    <td data-sort-value="12.0">12</td>
-                    <td>2019-01-24</td>
-                    
                     <td>2020-03-05</td>
+                    <td>local-authority-eng:MDW</td>
+                    <td>663</td>
+                    <td class="data-table__cell--max-width">82 Jeffery Street, Gillingham</td>
+                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/medway" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/medway</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-02-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.medway.gov.uk/webmaplayersext/map.aspx" class="govuk-link">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a></td>
-
+                    <td>51.387728</td>
+                    <td>0.549239</td>
+                    <td>0.14</td>
+                    <td>12.0</td>
+                    <td>12.0</td>
+                    <td>2019-01-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28" class="govuk-link">fcc3eadb...</a></td>
                 </tr>
                 
             </tbody>
@@ -564,6 +453,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

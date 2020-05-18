@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BFR008">BFR008</td>
-                    <td data-sort-value="Former Worsley Inn, High Stret, Wroxall, PO38 3HB" class="data-table__cell--max-width">Former Worsley Inn, High Stret, Wroxall, PO38 3HB</td>
-                    
-                    <td>-1.223373</td>
-                    
-                    <td>50.615762</td>
-                    
-                    <td data-sort-value="0.31">0.31</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR008</td>
+                    <td class="data-table__cell--max-width">Former Worsley Inn, High Stret, Wroxall, PO38 3HB</td>
                     <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.615762</td>
+                    <td>-1.223373</td>
+                    <td>0.31</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BFR026">BFR026</td>
-                    <td data-sort-value="Former Somerton Reservoir, Newport Road, Cowes, PO31 7ER" class="data-table__cell--max-width">Former Somerton Reservoir, Newport Road, Cowes, PO31 7ER</td>
-                    
-                    <td>-1.303079</td>
-                    
-                    <td>50.750485</td>
-                    
-                    <td data-sort-value="1.89">1.89</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR026</td>
+                    <td class="data-table__cell--max-width">Former Somerton Reservoir, Newport Road, Cowes, PO31 7ER</td>
                     <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.750485</td>
+                    <td>-1.303079</td>
+                    <td>1.89</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BFR038a">BFR038a</td>
-                    <td data-sort-value="9-11 George Street, Ryde, PO33 2EB" class="data-table__cell--max-width">9-11 George Street, Ryde, PO33 2EB</td>
-                    
-                    <td>-1.160125</td>
-                    
-                    <td>50.732115</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR038a</td>
+                    <td class="data-table__cell--max-width">9-11 George Street, Ryde, PO33 2EB</td>
                     <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.732115</td>
+                    <td>-1.160125</td>
+                    <td>0.09</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BFR038b">BFR038b</td>
-                    <td data-sort-value="6-8 Georges Street, Ryde, PO33 2EB" class="data-table__cell--max-width">6-8 Georges Street, Ryde, PO33 2EB</td>
-                    
-                    <td>-1.159589</td>
-                    
-                    <td>50.732021</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR038b</td>
+                    <td class="data-table__cell--max-width">6-8 Georges Street, Ryde, PO33 2EB</td>
                     <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.732021</td>
+                    <td>-1.159589</td>
+                    <td>0.03</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BFR047">BFR047</td>
-                    <td data-sort-value="SPA site, Shanklin Esplanade" class="data-table__cell--max-width">SPA site, Shanklin Esplanade</td>
-                    
-                    <td>-1.17284</td>
-                    
-                    <td>50.629561</td>
-                    
-                    <td data-sort-value="0.37">0.37</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR047</td>
+                    <td class="data-table__cell--max-width">SPA site, Shanklin Esplanade</td>
                     <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.629561</td>
+                    <td>-1.17284</td>
+                    <td>0.37</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BFR050">BFR050</td>
-                    <td data-sort-value="23, Carter Street, Sandown, PO36 8DG" class="data-table__cell--max-width">23, Carter Street, Sandown, PO36 8DG</td>
-                    
-                    <td>-1.153344</td>
-                    
-                    <td>50.657865</td>
-                    
-                    <td data-sort-value="0.19">0.19</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR050</td>
+                    <td class="data-table__cell--max-width">23, Carter Street, Sandown, PO36 8DG</td>
                     <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.657865</td>
+                    <td>-1.153344</td>
+                    <td>0.19</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BFR053">BFR053</td>
-                    <td data-sort-value="Car sales area, Havenstreet Garage, Main Road, Havenstreet, PO33 4DR" class="data-table__cell--max-width">Car sales area, Havenstreet Garage, Main Road, Havenstreet, PO33 4DR</td>
-                    
-                    <td>-1.209424</td>
-                    
-                    <td>50.708395</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR053</td>
+                    <td class="data-table__cell--max-width">Car sales area, Havenstreet Garage, Main Road, Havenstreet, PO33 4DR</td>
                     <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.708395</td>
+                    <td>-1.209424</td>
+                    <td>0.28</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BFR073">BFR073</td>
-                    <td data-sort-value="Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE" class="data-table__cell--max-width">Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE</td>
-                    
-                    <td>-1.25409</td>
-                    
-                    <td>50.664786</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR073</td>
+                    <td class="data-table__cell--max-width">Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE</td>
                     <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.664786</td>
+                    <td>-1.25409</td>
+                    <td>0.6</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BFR080">BFR080</td>
-                    <td data-sort-value="Berkeley Court Hotel, 2 Culver Road, Shanklin, PO376ER" class="data-table__cell--max-width">Berkeley Court Hotel, 2 Culver Road, Shanklin, PO376ER</td>
-                    
-                    <td>-1.174076</td>
-                    
-                    <td>50.634875</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR080</td>
+                    <td class="data-table__cell--max-width">Berkeley Court Hotel, 2 Culver Road, Shanklin, PO376ER</td>
+                    <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-04-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td>50.634875</td>
+                    <td>-1.174076</td>
+                    <td>0.17</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BFR081">BFR081</td>
-                    <td data-sort-value="Site of Former Rozelle Hotel, 22 Atherley Road, Shanklin, PO377AT" class="data-table__cell--max-width">Site of Former Rozelle Hotel, 22 Atherley Road, Shanklin, PO377AT</td>
-                    
-                    <td>-1.17865</td>
-                    
-                    <td>50.633721</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td>local-authority-eng:IOW</td>
+                    <td>BFR081</td>
+                    <td class="data-table__cell--max-width">Site of Former Rozelle Hotel, 22 Atherley Road, Shanklin, PO377AT</td>
+                    <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/isle-of-wight" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/isle-of-wight</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-09-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.iwight.com/brownfieldlandregister" class="govuk-link">https://www.iwight.com/brownfieldlandregister</a></td>
-
+                    <td>50.633721</td>
+                    <td>-1.17865</td>
+                    <td>0.08</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8" class="govuk-link">cc84216f...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="13/00875/FUL">13/00875/FUL</td>
-                    <td data-sort-value="76 High Street Brentwood, CM14 4AN" class="data-table__cell--max-width">76 High Street Brentwood, CM14 4AN</td>
-                    
-                    <td>0.305702</td>
-                    
-                    <td>51.619824</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>13/00875/FUL</td>
+                    <td class="data-table__cell--max-width">76 High Street Brentwood, CM14 4AN</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559362.9%5e193717.45&layersidentifier=81c5d818746e419e99fb18aba62522b1&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559362.9%5e193717.45&layersidentifier=81c5d818746e419e99fb18aba62522b1&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-01-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559362.9%5e193717.45&layersidentifier=81c5d818746e419e99fb18aba62522b1&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559362.9%5e193717.45&layersidentifier=81c5d818746e419e99fb18aba62522b1&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.619824</td>
+                    <td>0.305702</td>
+                    <td>0.04</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="17/00127/PNCOU">17/00127/PNCOU</td>
-                    <td data-sort-value="Library House New Road Brentwood" class="data-table__cell--max-width">Library House New Road Brentwood</td>
-                    
-                    <td>0.303262</td>
-                    
-                    <td>51.618804</td>
-                    
-                    <td data-sort-value="0.37">0.37</td>
-                    
-                    <td data-sort-value="55">55</td>
-                    
-                    <td data-sort-value="55">55</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>17/00127/PNCOU</td>
+                    <td class="data-table__cell--max-width">Library House New Road Brentwood</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559542.3^193637.95&layersidentifier=c741e6b4c4be4880b0662ec90d273535&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559542.3^193637.95&layersidentifier=c741e6b4c4be4880b0662ec90d273535&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-07</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559542.3^193637.95&layersidentifier=c741e6b4c4be4880b0662ec90d273535&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559542.3^193637.95&layersidentifier=c741e6b4c4be4880b0662ec90d273535&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.618804</td>
+                    <td>0.303262</td>
+                    <td>0.37</td>
+                    <td>55</td>
+                    <td>55</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="14/00439/OUT">14/00439/OUT</td>
-                    <td data-sort-value="Brescia House And 5 & 7 Eastfield Road Brentwood Essex CM14 4HB" class="data-table__cell--max-width">Brescia House And 5 & 7 Eastfield Road Brentwood Essex CM14 4HB</td>
-                    
-                    <td>0.304572</td>
-                    
-                    <td>51.617804</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>14/00439/OUT</td>
+                    <td class="data-table__cell--max-width">Brescia House And 5 & 7 Eastfield Road Brentwood Essex CM14 4HB</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559688.241494892^193534.55&layersidentifier=046694ef79164e3082ab4ca021634005&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559688.241494892^193534.55&layersidentifier=046694ef79164e3082ab4ca021634005&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-10-15</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559688.241494892^193534.55&layersidentifier=046694ef79164e3082ab4ca021634005&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559688.241494892^193534.55&layersidentifier=046694ef79164e3082ab4ca021634005&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.617804</td>
+                    <td>0.304572</td>
+                    <td>0.14</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="16/01558/PNCOU">16/01558/PNCOU</td>
-                    <td data-sort-value="Majenta House Coptfold Road Brentwood CM14 4BS" class="data-table__cell--max-width">Majenta House Coptfold Road Brentwood CM14 4BS</td>
-                    
-                    <td>0.302699</td>
-                    
-                    <td>51.61842</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>16/01558/PNCOU</td>
+                    <td class="data-table__cell--max-width">Majenta House Coptfold Road Brentwood CM14 4BS</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559513.65^193577.425&layersidentifier=1eaaccddb40746b989fdec470a6e1c05&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559513.65^193577.425&layersidentifier=1eaaccddb40746b989fdec470a6e1c05&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559513.65^193577.425&layersidentifier=1eaaccddb40746b989fdec470a6e1c05&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559513.65^193577.425&layersidentifier=1eaaccddb40746b989fdec470a6e1c05&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.61842</td>
+                    <td>0.302699</td>
+                    <td>0.03</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="16/00499/PNCOU">16/00499/PNCOU</td>
-                    <td data-sort-value="Essex House 141 Kings Road Brentwood CM14 4DR" class="data-table__cell--max-width">Essex House 141 Kings Road Brentwood CM14 4DR</td>
-                    
-                    <td>0.299349</td>
-                    
-                    <td>51.615571</td>
-                    
-                    <td data-sort-value="0.13">0.13</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>16/00499/PNCOU</td>
+                    <td class="data-table__cell--max-width">Essex House 141 Kings Road Brentwood CM14 4DR</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559275.55^193260.426833474&layersidentifier=d923e7860b244b6c8e142ea56868fe91&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559275.55^193260.426833474&layersidentifier=d923e7860b244b6c8e142ea56868fe91&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-06-10</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559275.55^193260.426833474&layersidentifier=d923e7860b244b6c8e142ea56868fe91&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559275.55^193260.426833474&layersidentifier=d923e7860b244b6c8e142ea56868fe91&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.615571</td>
+                    <td>0.299349</td>
+                    <td>0.13</td>
+                    <td>33</td>
+                    <td>33</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="16/00606/PNCOU">16/00606/PNCOU</td>
-                    <td data-sort-value="Kings House 101-135 Kings Road Brentwood CM14 4DR" class="data-table__cell--max-width">Kings House 101-135 Kings Road Brentwood CM14 4DR</td>
-                    
-                    <td>0.299236</td>
-                    
-                    <td>51.615946</td>
-                    
-                    <td data-sort-value="0.29">0.29</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>16/00606/PNCOU</td>
+                    <td class="data-table__cell--max-width">Kings House 101-135 Kings Road Brentwood CM14 4DR</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=750&location=559270.875^193306.825&layersidentifier=7128169958564ccc9bfc6717f3fad101&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=750&location=559270.875^193306.825&layersidentifier=7128169958564ccc9bfc6717f3fad101&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-06-21</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=750&location=559270.875^193306.825&layersidentifier=7128169958564ccc9bfc6717f3fad101&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=750&location=559270.875^193306.825&layersidentifier=7128169958564ccc9bfc6717f3fad101&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.615946</td>
+                    <td>0.299236</td>
+                    <td>0.29</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="15/01084/FUL">15/01084/FUL</td>
-                    <td data-sort-value="Land Formerly Known as NV Tools St James Road Brentwood CM14 4EF" class="data-table__cell--max-width">Land Formerly Known as NV Tools St James Road Brentwood CM14 4EF</td>
-                    
-                    <td>0.297639</td>
-                    
-                    <td>51.614421</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>15/01084/FUL</td>
+                    <td class="data-table__cell--max-width">Land Formerly Known as NV Tools St James Road Brentwood CM14 4EF</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559226.325^193120.585&layersidentifier=8838b5c3707c4d91906dddadd326301e&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559226.325^193120.585&layersidentifier=8838b5c3707c4d91906dddadd326301e&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559226.325^193120.585&layersidentifier=8838b5c3707c4d91906dddadd326301e&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559226.325^193120.585&layersidentifier=8838b5c3707c4d91906dddadd326301e&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.614421</td>
+                    <td>0.297639</td>
+                    <td>0.04</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="16/01061/PNCOU">16/01061/PNCOU</td>
-                    <td data-sort-value="Potential House (First Floor) 149-157 Kings Road Brentwood CM14 4EG" class="data-table__cell--max-width">Potential House (First Floor) 149-157 Kings Road Brentwood CM14 4EG</td>
-                    
-                    <td>0.299189</td>
-                    
-                    <td>51.615065</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>16/01061/PNCOU</td>
+                    <td class="data-table__cell--max-width">Potential House (First Floor) 149-157 Kings Road Brentwood CM14 4EG</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559294.474998056^193218.654063948&layersidentifier=6d72857f14b14b9aa028dee125f8c30b&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559294.474998056^193218.654063948&layersidentifier=6d72857f14b14b9aa028dee125f8c30b&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-30</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559294.474998056^193218.654063948&layersidentifier=6d72857f14b14b9aa028dee125f8c30b&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=559294.474998056^193218.654063948&layersidentifier=6d72857f14b14b9aa028dee125f8c30b&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.615065</td>
+                    <td>0.299189</td>
+                    <td>0.02</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="14/01247/FUL">14/01247/FUL</td>
-                    <td data-sort-value="Former Elliots Nightclub and Petrol Station West Horndon CM13 3TB" class="data-table__cell--max-width">Former Elliots Nightclub and Petrol Station West Horndon CM13 3TB</td>
-                    
-                    <td>0.244771</td>
-                    
-                    <td>51.650985</td>
-                    
-                    <td data-sort-value="1.4">1.4</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>14/01247/FUL</td>
+                    <td class="data-table__cell--max-width">Former Elliots Nightclub and Petrol Station West Horndon CM13 3TB</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=750&location=563301.838738525^189291.399975282&layersidentifier=0cec9750e5eb4984a31770293ced8607&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=750&location=563301.838738525^189291.399975282&layersidentifier=0cec9750e5eb4984a31770293ced8607&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-06-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=750&location=563301.838738525^189291.399975282&layersidentifier=0cec9750e5eb4984a31770293ced8607&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=750&location=563301.838738525^189291.399975282&layersidentifier=0cec9750e5eb4984a31770293ced8607&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.650985</td>
+                    <td>0.244771</td>
+                    <td>1.4</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="11/00009/EXT">11/00009/EXT</td>
-                    <td data-sort-value="32 Sylvia Avenue Hutton Essex CM13 2HP" class="data-table__cell--max-width">32 Sylvia Avenue Hutton Essex CM13 2HP</td>
-                    
-                    <td>0.337265</td>
-                    
-                    <td>51.626102</td>
-                    
-                    <td data-sort-value="0.84">0.84</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-01-03</td>
+                    <td>local-authority-eng:BRW</td>
+                    <td>11/00009/EXT</td>
+                    <td class="data-table__cell--max-width">32 Sylvia Avenue Hutton Essex CM13 2HP</td>
+                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=562107.625^193560.25&layersidentifier=77755e1473ea4a0d9961c1e82ae1aa0f&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=562107.625^193560.25&layersidentifier=77755e1473ea4a0d9961c1e82ae1aa0f&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/brentwood" class="govuk-link">http://opendatacommunities.org/id/district-council/brentwood</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-05-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=562107.625^193560.25&layersidentifier=77755e1473ea4a0d9961c1e82ae1aa0f&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://myproperty.brentwood.gov.uk/cnet49live/cmfindit/Default.aspx?getmap=true&scale=250&location=562107.625^193560.25&layersidentifier=77755e1473ea4a0d9961c1e82ae1aa0f&menuconfig=BrownfieldSites&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>51.626102</td>
+                    <td>0.337265</td>
+                    <td>0.84</td>
+                    <td>33</td>
+                    <td>33</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a23f2de23de444a9a71de1471aa2aed3ec7a8aa61c389c19218d2340b5870877" class="govuk-link">a23f2de2...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

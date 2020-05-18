@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="10a">10a</td>
-                    <td data-sort-value="Dunsfold Aerodrome, Stovolds Hill, Cranleigh" class="data-table__cell--max-width">Dunsfold Aerodrome, Stovolds Hill, Cranleigh</td>
-                    
-                    <td>-0.535632</td>
-                    
-                    <td>51.116282</td>
-                    
-                    <td data-sort-value="214.0">214.0</td>
-                    
-                    <td data-sort-value="2600">2600</td>
-                    
-                    <td data-sort-value="2600">2600</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2019-12-04</td>
+                    <td>local-authority-eng:WAE</td>
+                    <td>10a</td>
+                    <td class="data-table__cell--max-width">Dunsfold Aerodrome, Stovolds Hill, Cranleigh</td>
+                    <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-03-29</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td>51.116282</td>
+                    <td>-0.535632</td>
+                    <td>214.0</td>
+                    <td>2600</td>
+                    <td>2600</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,110 +203,77 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="130">130</td>
-                    <td data-sort-value="Cranleigh C of E Primary School (Infant), Church Lane, Cranleigh" class="data-table__cell--max-width">Cranleigh C of E Primary School (Infant), Church Lane, Cranleigh</td>
-                    
-                    <td>-0.485114</td>
-                    
-                    <td>51.142539</td>
-                    
-                    <td data-sort-value="0.61">0.61</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2019-12-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAE</td>
+                    <td>130</td>
+                    <td class="data-table__cell--max-width">Cranleigh C of E Primary School (Infant), Church Lane, Cranleigh</td>
                     <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.142539</td>
+                    <td>-0.485114</td>
+                    <td>0.61</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="132a">132a</td>
-                    <td data-sort-value="Coal Yard, 6 The Street, Wrecclesham, Farnham" class="data-table__cell--max-width">Coal Yard, 6 The Street, Wrecclesham, Farnham</td>
-                    
-                    <td>-0.818773</td>
-                    
-                    <td>51.199569</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-12</td>
+                    <td>local-authority-eng:WAE</td>
+                    <td>132a</td>
+                    <td class="data-table__cell--max-width">Coal Yard, 6 The Street, Wrecclesham, Farnham</td>
+                    <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-09-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td>51.199569</td>
+                    <td>-0.818773</td>
+                    <td>0.27</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-15</td>
+                    <td>2019-12-04</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td>2019-12-04</td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="133a">133a</td>
-                    <td data-sort-value="Colemans Yard, Wrecclesham Road, Farnham" class="data-table__cell--max-width">Colemans Yard, Wrecclesham Road, Farnham</td>
-                    
-                    <td>-0.81658</td>
-                    
-                    <td>51.199888</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2019-12-04</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAE</td>
+                    <td>133a</td>
+                    <td class="data-table__cell--max-width">Colemans Yard, Wrecclesham Road, Farnham</td>
                     <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.199888</td>
+                    <td>-0.81658</td>
+                    <td>0.24</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -327,74 +282,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="144">144</td>
-                    <td data-sort-value="Central Hindhead, London Road, Hindhead" class="data-table__cell--max-width">Central Hindhead, London Road, Hindhead</td>
-                    
-                    <td>-0.731194</td>
-                    
-                    <td>51.114449</td>
-                    
-                    <td data-sort-value="1.64">1.64</td>
-                    
-                    <td data-sort-value="34">34</td>
-                    
-                    <td data-sort-value="34">34</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-12</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAE</td>
+                    <td>144</td>
+                    <td class="data-table__cell--max-width">Central Hindhead, London Road, Hindhead</td>
                     <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.114449</td>
+                    <td>-0.731194</td>
+                    <td>1.64</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="245">245</td>
-                    <td data-sort-value="Site of 5 to 21 Wey Hill, Haslemere" class="data-table__cell--max-width">Site of 5 to 21 Wey Hill, Haslemere</td>
-                    
-                    <td>-0.723738</td>
-                    
-                    <td>51.08791</td>
-                    
-                    <td data-sort-value="0.31">0.31</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-12</td>
+                    <td>local-authority-eng:WAE</td>
+                    <td>245</td>
+                    <td class="data-table__cell--max-width">Site of 5 to 21 Wey Hill, Haslemere</td>
+                    <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-11-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td>51.08791</td>
+                    <td>-0.723738</td>
+                    <td>0.31</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -403,74 +336,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="264">264</td>
-                    <td data-sort-value="Victoria House, South Street, Farnham" class="data-table__cell--max-width">Victoria House, South Street, Farnham</td>
-                    
-                    <td>-0.795983</td>
-                    
-                    <td>51.214095</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2017-12-15</td>
-                    
-                    <td>2017-12-15</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAE</td>
+                    <td>264</td>
+                    <td class="data-table__cell--max-width">Victoria House, South Street, Farnham</td>
                     <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.214095</td>
+                    <td>-0.795983</td>
+                    <td>0.06</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="368">368</td>
-                    <td data-sort-value="Wheeler Street Nurseries, Wheeler Lane, Witley, Godalming" class="data-table__cell--max-width">Wheeler Street Nurseries, Wheeler Lane, Witley, Godalming</td>
-                    
-                    <td>-0.649846</td>
-                    
-                    <td>51.157423</td>
-                    
-                    <td data-sort-value="0.71">0.71</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-12</td>
+                    <td>local-authority-eng:WAE</td>
+                    <td>368</td>
+                    <td class="data-table__cell--max-width">Wheeler Street Nurseries, Wheeler Lane, Witley, Godalming</td>
+                    <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-01-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td>51.157423</td>
+                    <td>-0.649846</td>
+                    <td>0.71</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-12-15</td>
+                    <td>2019-12-04</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -479,79 +390,57 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-04</td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="383a">383a</td>
-                    <td data-sort-value="Cranleigh C of E Primary School (Junior), Parsonage Road, Cranleigh" class="data-table__cell--max-width">Cranleigh C of E Primary School (Junior), Parsonage Road, Cranleigh</td>
-                    
-                    <td>-0.488236</td>
-                    
-                    <td>51.142421</td>
-                    
-                    <td data-sort-value="1.98">1.98</td>
-                    
-                    <td data-sort-value="70">70</td>
-                    
-                    <td data-sort-value="70">70</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2019-12-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAE</td>
+                    <td>383a</td>
+                    <td class="data-table__cell--max-width">Cranleigh C of E Primary School (Junior), Parsonage Road, Cranleigh</td>
                     <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.142421</td>
+                    <td>-0.488236</td>
+                    <td>1.98</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="478a">478a</td>
-                    <td data-sort-value="Part of SSE Farnham Depot, Lower Weybourne Lane, Farnham" class="data-table__cell--max-width">Part of SSE Farnham Depot, Lower Weybourne Lane, Farnham</td>
-                    
-                    <td>-0.770997</td>
-                    
-                    <td>51.231888</td>
-                    
-                    <td data-sort-value="1.79">1.79</td>
-                    
-                    <td data-sort-value="52">52</td>
-                    
-                    <td data-sort-value="52">52</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2019-12-04</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waverley" class="govuk-link">http://opendatacommunities.org/id/district-council/waverley</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAE</td>
+                    <td>478a</td>
+                    <td class="data-table__cell--max-width">Part of SSE Farnham Depot, Lower Weybourne Lane, Farnham</td>
                     <td><a href="http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html" class="govuk-link">http://85.92.197.215/ishare5.4.web/atsolomap_brownfieldreg.html</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.231888</td>
+                    <td>-0.770997</td>
+                    <td>1.79</td>
+                    <td>52</td>
+                    <td>52</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/cd8c6b4aa33cb32a9a1107e1c3806900d377c0e2bb24621109aba5897c37c567" class="govuk-link">cd8c6b4a...</a></td>
                 </tr>
                 
             </tbody>
@@ -560,6 +449,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

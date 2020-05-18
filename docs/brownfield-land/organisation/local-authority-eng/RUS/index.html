@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="SHLAA127">SHLAA127</td>
-                    <td data-sort-value="Flintham Islamic Institute, Flintham" class="data-table__cell--max-width">Flintham Islamic Institute, Flintham</td>
-                    
-                    <td>-0.902598</td>
-                    
-                    <td>53.013663</td>
-                    
-                    <td data-sort-value="3.45">3.45</td>
-                    
-                    <td data-sort-value="95">95</td>
-                    
-                    <td data-sort-value="95">95</td>
                     <td>2017-12-11</td>
-                    
-                    <td>2017-12-11</td>
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA127</td>
+                    <td class="data-table__cell--max-width">Flintham Islamic Institute, Flintham</td>
+                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/127.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/127.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/127.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/127.pdf</a></td>
-
+                    <td>53.013663</td>
+                    <td>-0.902598</td>
+                    <td>3.45</td>
+                    <td>95</td>
+                    <td>95</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="SHLAA275">SHLAA275</td>
-                    <td data-sort-value="West Bridgford Depot, West Bridgford" class="data-table__cell--max-width">West Bridgford Depot, West Bridgford</td>
-                    
-                    <td>-1.119512</td>
-                    
-                    <td>52.928349</td>
-                    
-                    <td data-sort-value="1.7">1.7</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2018-08-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA275</td>
+                    <td class="data-table__cell--max-width">West Bridgford Depot, West Bridgford</td>
                     <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/275.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/275.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.928349</td>
+                    <td>-1.119512</td>
+                    <td>1.7</td>
+                    <td>50</td>
+                    <td>60</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="SHLAA287">SHLAA287</td>
-                    <td data-sort-value="Former Filling Station, Radcliffe Road, West Bridgford" class="data-table__cell--max-width">Former Filling Station, Radcliffe Road, West Bridgford</td>
-                    
-                    <td>-1.132962</td>
-                    
-                    <td>52.937914</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2018-08-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA287</td>
+                    <td class="data-table__cell--max-width">Former Filling Station, Radcliffe Road, West Bridgford</td>
                     <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/287.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/287.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.937914</td>
+                    <td>-1.132962</td>
+                    <td>0.1</td>
+                    <td>6</td>
+                    <td>10</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="SHLAA319">SHLAA319</td>
-                    <td data-sort-value="Land between Lady Bay Bridge and Radcliffe Road, West Bridgford" class="data-table__cell--max-width">Land between Lady Bay Bridge and Radcliffe Road, West Bridgford</td>
-                    
-                    <td>-1.129413</td>
-                    
-                    <td>52.939057</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="48">48</td>
-                    
-                    <td data-sort-value="48">48</td>
                     <td>2017-12-11</td>
-                    
-                    <td>2017-12-11</td>
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA319</td>
+                    <td class="data-table__cell--max-width">Land between Lady Bay Bridge and Radcliffe Road, West Bridgford</td>
+                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/319.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/319.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-11-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/319.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/319.pdf</a></td>
-
+                    <td>52.939057</td>
+                    <td>-1.129413</td>
+                    <td>0.15</td>
+                    <td>48</td>
+                    <td>48</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="SHLAA331">SHLAA331</td>
-                    <td data-sort-value="1-27 Loughborough Road & 2-6 Bridgford Road, West Bridgford" class="data-table__cell--max-width">1-27 Loughborough Road & 2-6 Bridgford Road, West Bridgford</td>
-                    
-                    <td>-1.133885</td>
-                    
-                    <td>52.93642</td>
-                    
-                    <td data-sort-value="0.7">0.7</td>
-                    
-                    <td data-sort-value="215">215</td>
-                    
-                    <td data-sort-value="230">230</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2018-08-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA331</td>
+                    <td class="data-table__cell--max-width">1-27 Loughborough Road & 2-6 Bridgford Road, West Bridgford</td>
                     <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/331.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/331.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.93642</td>
+                    <td>-1.133885</td>
+                    <td>0.7</td>
+                    <td>215</td>
+                    <td>230</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="SHLAA502">SHLAA502</td>
-                    <td data-sort-value="Former RAF Newton, Newton" class="data-table__cell--max-width">Former RAF Newton, Newton</td>
-                    
-                    <td>-0.975683</td>
-                    
-                    <td>52.962571</td>
-                    
-                    <td data-sort-value="35.4">35.4</td>
-                    
-                    <td data-sort-value="550">550</td>
-                    
-                    <td data-sort-value="550">550</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-01-16</td>
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA502</td>
+                    <td class="data-table__cell--max-width">Former RAF Newton, Newton</td>
+                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/502.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/502.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-01-30</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/502.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/502.pdf</a></td>
-
+                    <td>52.962571</td>
+                    <td>-0.975683</td>
+                    <td>35.4</td>
+                    <td>550</td>
+                    <td>550</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="SHLAA802">SHLAA802</td>
-                    <td data-sort-value="15 Parkyns Street, Ruddington" class="data-table__cell--max-width">15 Parkyns Street, Ruddington</td>
-                    
-                    <td>-1.150348</td>
-                    
-                    <td>52.891186</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-01-16</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2015-05-22</td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA802</td>
+                    <td class="data-table__cell--max-width">15 Parkyns Street, Ruddington</td>
                     <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/802.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/802.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.891186</td>
+                    <td>-1.150348</td>
+                    <td>0.05</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="SHLAA860">SHLAA860</td>
-                    <td data-sort-value="Pedigree Wholesale, The Crescent, Radcliffe on Trent" class="data-table__cell--max-width">Pedigree Wholesale, The Crescent, Radcliffe on Trent</td>
-                    
-                    <td>-1.030153</td>
-                    
-                    <td>52.948833</td>
-                    
-                    <td data-sort-value="0.5">0.5</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2017-12-12</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA860</td>
+                    <td class="data-table__cell--max-width">Pedigree Wholesale, The Crescent, Radcliffe on Trent</td>
                     <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/860.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/860.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.948833</td>
+                    <td>-1.030153</td>
+                    <td>0.5</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="SHLAA916">SHLAA916</td>
-                    <td data-sort-value="56-62 Radcliffe Road, West Bridgford" class="data-table__cell--max-width">56-62 Radcliffe Road, West Bridgford</td>
-                    
-                    <td>-1.125599</td>
-                    
-                    <td>52.937815</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-12</td>
-                    
                     <td>2019-01-16</td>
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA916</td>
+                    <td class="data-table__cell--max-width">56-62 Radcliffe Road, West Bridgford</td>
+                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/916.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/916.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-08-31</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/916.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/916.pdf</a></td>
-
+                    <td>52.937815</td>
+                    <td>-1.125599</td>
+                    <td>0.09</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="SHLAA919">SHLAA919</td>
-                    <td data-sort-value="John Germans Drovers, 37 Gordon Road, West Bridgford" class="data-table__cell--max-width">John Germans Drovers, 37 Gordon Road, West Bridgford</td>
-                    
-                    <td>-1.125099</td>
-                    
-                    <td>52.929388</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-12-12</td>
-                    
-                    <td>2017-12-12</td>
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA919</td>
+                    <td class="data-table__cell--max-width">John Germans Drovers, 37 Gordon Road, West Bridgford</td>
+                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/919.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/919.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushcliffe" class="govuk-link">http://opendatacommunities.org/id/district-council/rushcliffe</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/919.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/919.pdf</a></td>
-
+                    <td>52.929388</td>
+                    <td>-1.125099</td>
+                    <td>0.02</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

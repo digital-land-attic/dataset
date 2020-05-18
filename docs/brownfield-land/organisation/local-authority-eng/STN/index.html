@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,388 +154,277 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="LBS-BLR1">LBS-BLR1</td>
-                    <td data-sort-value="Morrisons Local and Car Park" class="data-table__cell--max-width">Morrisons Local and Car Park</td>
-                    
-                    <td>-0.19556</td>
-                    
-                    <td>51.369931</td>
-                    
-                    <td data-sort-value="0.21">0.21</td>
-                    
-                    <td data-sort-value="37.0">37</td>
-                    
-                    <td data-sort-value="75.0">75</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR1</td>
+                    <td class="data-table__cell--max-width">Morrisons Local and Car Park</td>
+                    <td><a href="https://drive.google.com/file/d/1EZUg2F0-J89AyvhPrwz5_JIi2FPUON-J/view" class="govuk-link">https://drive.google.com/file/d/1EZUg2F0-J89AyvhPrwz5_JIi2FPUON-J/view</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/file/d/1EZUg2F0-J89AyvhPrwz5_JIi2FPUON-J/view" class="govuk-link">https://drive.google.com/file/d/1EZUg2F0-J89AyvhPrwz5_JIi2FPUON-J/view</a></td>
-
+                    <td>51.369931</td>
+                    <td>-0.19556</td>
+                    <td>0.21</td>
+                    <td>37.0</td>
+                    <td>75.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="LBS-BLR2">LBS-BLR2</td>
-                    <td data-sort-value="Sutton West Centre, Robin Hood Lane" class="data-table__cell--max-width">Sutton West Centre, Robin Hood Lane</td>
-                    
-                    <td>-0.20046</td>
-                    
-                    <td>51.364791</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="44.0">44</td>
-                    
-                    <td data-sort-value="180.0">180</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR2</td>
+                    <td class="data-table__cell--max-width">Sutton West Centre, Robin Hood Lane</td>
+                    <td><a href="https://drive.google.com/file/d/1kgdlGCIJrMRlJTG-zLbauW2kSwSC8a9E/view" class="govuk-link">https://drive.google.com/file/d/1kgdlGCIJrMRlJTG-zLbauW2kSwSC8a9E/view</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/file/d/1kgdlGCIJrMRlJTG-zLbauW2kSwSC8a9E/view" class="govuk-link">https://drive.google.com/file/d/1kgdlGCIJrMRlJTG-zLbauW2kSwSC8a9E/view</a></td>
-
+                    <td>51.364791</td>
+                    <td>-0.20046</td>
+                    <td>0.8</td>
+                    <td>44.0</td>
+                    <td>180.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="LBS-BLR3">LBS-BLR3</td>
-                    <td data-sort-value="North of Lodge Place" class="data-table__cell--max-width">North of Lodge Place</td>
-                    
-                    <td>-0.192968</td>
-                    
-                    <td>51.365359</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="52.0">52</td>
-                    
-                    <td data-sort-value="105.0">105</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR3</td>
+                    <td class="data-table__cell--max-width">North of Lodge Place</td>
+                    <td><a href="https://drive.google.com/file/d/1eD9yz_UjzbtEB4WjACjYzeFv8RrG7dse/view" class="govuk-link">https://drive.google.com/file/d/1eD9yz_UjzbtEB4WjACjYzeFv8RrG7dse/view</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/file/d/1eD9yz_UjzbtEB4WjACjYzeFv8RrG7dse/view" class="govuk-link">https://drive.google.com/file/d/1eD9yz_UjzbtEB4WjACjYzeFv8RrG7dse/view</a></td>
-
+                    <td>51.365359</td>
+                    <td>-0.192968</td>
+                    <td>0.3</td>
+                    <td>52.0</td>
+                    <td>105.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="LBS-BLR4">LBS-BLR4</td>
-                    <td data-sort-value="South of Lodge Place" class="data-table__cell--max-width">South of Lodge Place</td>
-                    
-                    <td>-0.192967</td>
-                    
-                    <td>51.364648</td>
-                    
-                    <td data-sort-value="0.37">0.37</td>
-                    
-                    <td data-sort-value="65.0">65</td>
-                    
-                    <td data-sort-value="131.0">131</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR4</td>
+                    <td class="data-table__cell--max-width">South of Lodge Place</td>
+                    <td><a href="https://drive.google.com/file/d/1mxhbqaQ2i55CSiz54HXcaLaxcbHWHfdi/view" class="govuk-link">https://drive.google.com/file/d/1mxhbqaQ2i55CSiz54HXcaLaxcbHWHfdi/view</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/file/d/1mxhbqaQ2i55CSiz54HXcaLaxcbHWHfdi/view" class="govuk-link">https://drive.google.com/file/d/1mxhbqaQ2i55CSiz54HXcaLaxcbHWHfdi/view</a></td>
-
+                    <td>51.364648</td>
+                    <td>-0.192967</td>
+                    <td>0.37</td>
+                    <td>65.0</td>
+                    <td>131.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="LBS-BLR5">LBS-BLR5</td>
-                    <td data-sort-value="Kwikfit" class="data-table__cell--max-width">Kwikfit</td>
-                    
-                    <td>-0.192169</td>
-                    
-                    <td>51.365221</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="4.0">4</td>
-                    
-                    <td data-sort-value="16.0">16</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR5</td>
+                    <td class="data-table__cell--max-width">Kwikfit</td>
+                    <td><a href="https://drive.google.com/file/d/16Est7aYeZhYWLB5gqWMF6YFsw3js8rtP/view" class="govuk-link">https://drive.google.com/file/d/16Est7aYeZhYWLB5gqWMF6YFsw3js8rtP/view</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/file/d/16Est7aYeZhYWLB5gqWMF6YFsw3js8rtP/view" class="govuk-link">https://drive.google.com/file/d/16Est7aYeZhYWLB5gqWMF6YFsw3js8rtP/view</a></td>
-
+                    <td>51.365221</td>
+                    <td>-0.192169</td>
+                    <td>0.07</td>
+                    <td>4.0</td>
+                    <td>16.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="LBS-BLR6">LBS-BLR6</td>
-                    <td data-sort-value="North of Greenford Road" class="data-table__cell--max-width">North of Greenford Road</td>
-                    
-                    <td>-0.195131</td>
-                    
-                    <td>51.366237</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="12.0">12</td>
-                    
-                    <td data-sort-value="25.0">25</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR6</td>
+                    <td class="data-table__cell--max-width">North of Greenford Road</td>
+                    <td><a href="https://drive.google.com/open?id=1jl2SWkVtclNniCMYGJG41PdNtN-p5OWu" class="govuk-link">https://drive.google.com/open?id=1jl2SWkVtclNniCMYGJG41PdNtN-p5OWu</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/open?id=1jl2SWkVtclNniCMYGJG41PdNtN-p5OWu" class="govuk-link">https://drive.google.com/open?id=1jl2SWkVtclNniCMYGJG41PdNtN-p5OWu</a></td>
-
+                    <td>51.366237</td>
+                    <td>-0.195131</td>
+                    <td>0.07</td>
+                    <td>12.0</td>
+                    <td>25.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="LBS-BLR7">LBS-BLR7</td>
-                    <td data-sort-value="Civic Centre" class="data-table__cell--max-width">Civic Centre</td>
-                    
-                    <td>-0.195173</td>
-                    
-                    <td>51.361868</td>
-                    
-                    <td data-sort-value="0.9">0.9</td>
-                    
-                    <td data-sort-value="158.0">158</td>
-                    
-                    <td data-sort-value="321.0">321</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR7</td>
+                    <td class="data-table__cell--max-width">Civic Centre</td>
+                    <td><a href="https://drive.google.com/open?id=1R4DeBQTzwGH7clQGRaPv13asithwj_BY" class="govuk-link">https://drive.google.com/open?id=1R4DeBQTzwGH7clQGRaPv13asithwj_BY</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/open?id=1R4DeBQTzwGH7clQGRaPv13asithwj_BY" class="govuk-link">https://drive.google.com/open?id=1R4DeBQTzwGH7clQGRaPv13asithwj_BY</a></td>
-
+                    <td>51.361868</td>
+                    <td>-0.195173</td>
+                    <td>0.9</td>
+                    <td>158.0</td>
+                    <td>321.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="LBS-BLR8">LBS-BLR8</td>
-                    <td data-sort-value="Times Square Car Park" class="data-table__cell--max-width">Times Square Car Park</td>
-                    
-                    <td>-0.191611</td>
-                    
-                    <td>51.364412</td>
-                    
-                    <td data-sort-value="0.73">0.73</td>
-                    
-                    <td data-sort-value="127.0">127</td>
-                    
-                    <td data-sort-value="257.0">257</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR8</td>
+                    <td class="data-table__cell--max-width">Times Square Car Park</td>
+                    <td><a href="https://drive.google.com/open?id=1_PcbGRO4rFOs6UzEqPhbeESg3oCTkmqc" class="govuk-link">https://drive.google.com/open?id=1_PcbGRO4rFOs6UzEqPhbeESg3oCTkmqc</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/open?id=1_PcbGRO4rFOs6UzEqPhbeESg3oCTkmqc" class="govuk-link">https://drive.google.com/open?id=1_PcbGRO4rFOs6UzEqPhbeESg3oCTkmqc</a></td>
-
+                    <td>51.364412</td>
+                    <td>-0.191611</td>
+                    <td>0.73</td>
+                    <td>127.0</td>
+                    <td>257.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="LBS-BLR9">LBS-BLR9</td>
-                    <td data-sort-value="Times House" class="data-table__cell--max-width">Times House</td>
-                    
-                    <td>-0.192205</td>
-                    
-                    <td>51.363575</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="26.0">26</td>
-                    
-                    <td data-sort-value="53.0">53</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR9</td>
+                    <td class="data-table__cell--max-width">Times House</td>
+                    <td><a href="https://drive.google.com/open?id=1csz6adzLDXmc8Y9BNcnqvm3AObCtC8S7" class="govuk-link">https://drive.google.com/open?id=1csz6adzLDXmc8Y9BNcnqvm3AObCtC8S7</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/open?id=1csz6adzLDXmc8Y9BNcnqvm3AObCtC8S7" class="govuk-link">https://drive.google.com/open?id=1csz6adzLDXmc8Y9BNcnqvm3AObCtC8S7</a></td>
-
+                    <td>51.363575</td>
+                    <td>-0.192205</td>
+                    <td>0.15</td>
+                    <td>26.0</td>
+                    <td>53.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="LBS-BLR10">LBS-BLR10</td>
-                    <td data-sort-value="Elm Grove" class="data-table__cell--max-width">Elm Grove</td>
-                    
-                    <td>-0.193568</td>
-                    
-                    <td>51.366906</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="105.0">105</td>
-                    
-                    <td data-sort-value="213.0">213</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:STN</td>
+                    <td>LBS-BLR10</td>
+                    <td class="data-table__cell--max-width">Elm Grove</td>
+                    <td><a href="https://drive.google.com/open?id=1UJmyfgdQ9QsCoNsc167Quf9KIHY2sM2_" class="govuk-link">https://drive.google.com/open?id=1UJmyfgdQ9QsCoNsc167Quf9KIHY2sM2_</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/sutton" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/sutton</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://drive.google.com/open?id=1UJmyfgdQ9QsCoNsc167Quf9KIHY2sM2_" class="govuk-link">https://drive.google.com/open?id=1UJmyfgdQ9QsCoNsc167Quf9KIHY2sM2_</a></td>
-
+                    <td>51.366906</td>
+                    <td>-0.193568</td>
+                    <td>0.6</td>
+                    <td>105.0</td>
+                    <td>213.0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6c2e9015d78d3f49828ddf5bea7ecbd28be26caace8b2adbcd26c59eaa9eac23" class="govuk-link">6c2e9015...</a></td>
                 </tr>
                 
             </tbody>
@@ -544,6 +433,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BURN001">BURN001</td>
-                    <td data-sort-value="Land at Simpson Street" class="data-table__cell--max-width">Land at Simpson Street</td>
-                    
-                    <td>-2.31723</td>
-                    
-                    <td>53.784062</td>
-                    
-                    <td data-sort-value="0.31">0.31</td>
-                    
-                    <td data-sort-value="19">19</td>
-                    
-                    <td data-sort-value="19">19</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN001</td>
+                    <td class="data-table__cell--max-width">Land at Simpson Street</td>
+                    <td><a href="http://www.burnley.gov.uk/attachments/APP20150048_215%200048%20Amended%20Prop%20Site%20Plan.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20150048_215%200048%20Amended%20Prop%20Site%20Plan.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-05-27</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.burnley.gov.uk/attachments/APP20150048_215%200048%20Amended%20Prop%20Site%20Plan.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20150048_215%200048%20Amended%20Prop%20Site%20Plan.pdf</a></td>
-
+                    <td>53.784062</td>
+                    <td>-2.31723</td>
+                    <td>0.31</td>
+                    <td>19</td>
+                    <td>19</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BURN002">BURN002</td>
-                    <td data-sort-value="Land rear of 7 Southern Avenue" class="data-table__cell--max-width">Land rear of 7 Southern Avenue</td>
-                    
-                    <td>-2.272475</td>
-                    
-                    <td>53.798344</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN002</td>
+                    <td class="data-table__cell--max-width">Land rear of 7 Southern Avenue</td>
+                    <td><a href="http://www.burnley.gov.uk/attachments/APP20150233_315%200233%20Site%20Plan.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20150233_315%200233%20Site%20Plan.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-07-13</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.burnley.gov.uk/attachments/APP20150233_315%200233%20Site%20Plan.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20150233_315%200233%20Site%20Plan.pdf</a></td>
-
+                    <td>53.798344</td>
+                    <td>-2.272475</td>
+                    <td>0.23</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BURN004">BURN004</td>
-                    <td data-sort-value="Lower Gibfield Farm, Crown Point Road" class="data-table__cell--max-width">Lower Gibfield Farm, Crown Point Road</td>
-                    
-                    <td>-2.255995</td>
-                    
-                    <td>53.768488</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN004</td>
+                    <td class="data-table__cell--max-width">Lower Gibfield Farm, Crown Point Road</td>
+                    <td><a href="http://www.burnley.gov.uk/attachments/APP20150064_415%200064%20Drawing%203.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20150064_415%200064%20Drawing%203.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-24</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.burnley.gov.uk/attachments/APP20150064_415%200064%20Drawing%203.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20150064_415%200064%20Drawing%203.pdf</a></td>
-
+                    <td>53.768488</td>
+                    <td>-2.255995</td>
+                    <td>0.3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BURN005">BURN005</td>
-                    <td data-sort-value="Lambert Howarth" class="data-table__cell--max-width">Lambert Howarth</td>
-                    
-                    <td>-2.242949</td>
-                    
-                    <td>53.784426</td>
-                    
-                    <td data-sort-value="3.2">3.2</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN005</td>
+                    <td class="data-table__cell--max-width">Lambert Howarth</td>
+                    <td><a href="http://www.burnley.gov.uk/attachments/APP20130501_113%200500%20&%200501%20Amended%20Proposed%20Site%20Plan%20Healey%20Royd%20&%20Finsley%20Gate%20Sites.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20130501_113%200500%20&%200501%20Amended%20Proposed%20Site%20Plan%20Healey%20Royd%20&%20Finsley%20Gate%20Sites.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-09-03</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.burnley.gov.uk/attachments/APP20130501_113%200500%20&%200501%20Amended%20Proposed%20Site%20Plan%20Healey%20Royd%20&%20Finsley%20Gate%20Sites.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20130501_113%200500%20&%200501%20Amended%20Proposed%20Site%20Plan%20Healey%20Royd%20&%20Finsley%20Gate%20Sites.pdf</a></td>
-
+                    <td>53.784426</td>
+                    <td>-2.242949</td>
+                    <td>3.2</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BURN006">BURN006</td>
-                    <td data-sort-value="Former AIT Site" class="data-table__cell--max-width">Former AIT Site</td>
-                    
-                    <td>-2.268806</td>
-                    
-                    <td>53.785174</td>
-                    
-                    <td data-sort-value="1.81">1.81</td>
-                    
-                    <td data-sort-value="54">54</td>
-                    
-                    <td data-sort-value="54">54</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN006</td>
+                    <td class="data-table__cell--max-width">Former AIT Site</td>
                     <td><a href="http://www.burnley.gov.uk/attachments/APP20140145_014%200145%20Illustrative%20Masterplan.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20140145_014%200145%20Illustrative%20Masterplan.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.785174</td>
+                    <td>-2.268806</td>
+                    <td>1.81</td>
+                    <td>54</td>
+                    <td>54</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BURN007">BURN007</td>
-                    <td data-sort-value="Former Baxi Site" class="data-table__cell--max-width">Former Baxi Site</td>
-                    
-                    <td>-2.306442</td>
-                    
-                    <td>53.802634</td>
-                    
-                    <td data-sort-value="6.9">6.9</td>
-                    
-                    <td data-sort-value="205">205</td>
-                    
-                    <td data-sort-value="244">244</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN007</td>
+                    <td class="data-table__cell--max-width">Former Baxi Site</td>
                     <td><a href="http://www.burnley.gov.uk/attachments/NOT20170474_0_17%200474%20Demolition%20Works%20Site%20Layout.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/NOT20170474_0_17%200474%20Demolition%20Works%20Site%20Layout.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.802634</td>
+                    <td>-2.306442</td>
+                    <td>6.9</td>
+                    <td>205</td>
+                    <td>244</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BURN008">BURN008</td>
-                    <td data-sort-value="George Street Mill" class="data-table__cell--max-width">George Street Mill</td>
-                    
-                    <td>-2.250105</td>
-                    
-                    <td>53.788686</td>
-                    
-                    <td data-sort-value="0.98">0.98</td>
-                    
-                    <td data-sort-value="143">143</td>
-                    
-                    <td data-sort-value="143">143</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN008</td>
+                    <td class="data-table__cell--max-width">George Street Mill</td>
                     <td><a href="http://www.burnley.gov.uk/attachments/APP20130194_013%200194%20Location%20plan.PDF" class="govuk-link">http://www.burnley.gov.uk/attachments/APP20130194_013%200194%20Location%20plan.PDF</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.788686</td>
+                    <td>-2.250105</td>
+                    <td>0.98</td>
+                    <td>143</td>
+                    <td>143</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BURN010">BURN010</td>
-                    <td data-sort-value="Barden Mill, Barden Lane" class="data-table__cell--max-width">Barden Mill, Barden Lane</td>
-                    
-                    <td>-2.242842</td>
-                    
-                    <td>53.810281</td>
-                    
-                    <td data-sort-value="0.86">0.86</td>
-                    
-                    <td data-sort-value="37">37</td>
-                    
-                    <td data-sort-value="37">37</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN010</td>
+                    <td class="data-table__cell--max-width">Barden Mill, Barden Lane</td>
+                    <td><a href="http://www.burnley.gov.uk/attachments/app20140031_014%200031%20Amended%20proposed%20site%20plan.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/app20140031_014%200031%20Amended%20proposed%20site%20plan.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-20</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.burnley.gov.uk/attachments/app20140031_014%200031%20Amended%20proposed%20site%20plan.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/app20140031_014%200031%20Amended%20proposed%20site%20plan.pdf</a></td>
-
+                    <td>53.810281</td>
+                    <td>-2.242842</td>
+                    <td>0.86</td>
+                    <td>37</td>
+                    <td>37</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BURN012">BURN012</td>
-                    <td data-sort-value="Land at Burnley General Hospital" class="data-table__cell--max-width">Land at Burnley General Hospital</td>
-                    
-                    <td>-2.227403</td>
-                    
-                    <td>53.807582</td>
-                    
-                    <td data-sort-value="1.27">1.27</td>
-                    
-                    <td data-sort-value="64">64</td>
-                    
-                    <td data-sort-value="64">64</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN012</td>
+                    <td class="data-table__cell--max-width">Land at Burnley General Hospital</td>
                     <td><a href="http://www.planvu.co.uk/burnleybc/bbcplanvu2.php" class="govuk-link">http://www.planvu.co.uk/burnleybc/bbcplanvu2.php</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.807582</td>
+                    <td>-2.227403</td>
+                    <td>1.27</td>
+                    <td>64</td>
+                    <td>64</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BURN013">BURN013</td>
-                    <td data-sort-value="Tay Street" class="data-table__cell--max-width">Tay Street</td>
-                    
-                    <td>-2.260673</td>
-                    
-                    <td>53.787583</td>
-                    
-                    <td data-sort-value="1.18">1.18</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    <td>2018-01-12</td>
-                    
                     <td>2018-02-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/burnley" class="govuk-link">http://opendatacommunities.org/id/district-council/burnley</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUN</td>
+                    <td>BURN013</td>
+                    <td class="data-table__cell--max-width">Tay Street</td>
                     <td><a href="http://www.burnley.gov.uk/attachments/12_0247_Site_Plan.pdf" class="govuk-link">http://www.burnley.gov.uk/attachments/12_0247_Site_Plan.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.787583</td>
+                    <td>-2.260673</td>
+                    <td>1.18</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>2018-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8061e6b586b41a2619949bcefee912931c69e0bea72bd6f38c69341b71c6de53" class="govuk-link">8061e6b5...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

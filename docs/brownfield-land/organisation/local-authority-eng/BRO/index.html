@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="B/AYL/001">B/AYL/001</td>
-                    <td data-sort-value="Aegel House, Burgh Rd, Aylsham, NR116AS" class="data-table__cell--max-width">Aegel House, Burgh Rd, Aylsham, NR116AS</td>
-                    
-                    <td>1.260888</td>
-                    
-                    <td>52.792494</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-09-23</td>
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/AYL/001</td>
+                    <td class="data-table__cell--max-width">Aegel House, Burgh Rd, Aylsham, NR116AS</td>
+                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20130715" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20130715</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-06-02</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20130715" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20130715</a></td>
-
+                    <td>52.792494</td>
+                    <td>1.260888</td>
+                    <td>0.8</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="B/AYL/002">B/AYL/002</td>
-                    <td data-sort-value="The Old Mill, Dunkirk, Aylsham" class="data-table__cell--max-width">The Old Mill, Dunkirk, Aylsham</td>
-                    
-                    <td>1.262561</td>
-                    
-                    <td>52.800767</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-01</td>
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/AYL/002</td>
+                    <td class="data-table__cell--max-width">The Old Mill, Dunkirk, Aylsham</td>
+                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20151963" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20151963</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-03-31</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20151963" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20151963</a></td>
-
+                    <td>52.800767</td>
+                    <td>1.262561</td>
+                    <td>0.3</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="B/COL/001">B/COL/001</td>
-                    <td data-sort-value="Land at Jordan's, Station Rd, Coltishall" class="data-table__cell--max-width">Land at Jordan's, Station Rd, Coltishall</td>
-                    
-                    <td>1.358586</td>
-                    
-                    <td>52.730921</td>
-                    
-                    <td data-sort-value="1.8">1.8</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-01</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/COL/001</td>
+                    <td class="data-table__cell--max-width">Land at Jordan's, Station Rd, Coltishall</td>
                     <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CCOL2" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CCOL2</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.730921</td>
+                    <td>1.358586</td>
+                    <td>1.8</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="B/DRA/001">B/DRA/001</td>
-                    <td data-sort-value="Land east of School Road, Drayton" class="data-table__cell--max-width">Land east of School Road, Drayton</td>
-                    
-                    <td>1.225449</td>
-                    
-                    <td>52.676424</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/DRA/001</td>
+                    <td class="data-table__cell--max-width">Land east of School Road, Drayton</td>
                     <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CDRA2" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CDRA2</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.676424</td>
+                    <td>1.225449</td>
+                    <td>0.8</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="B/GLP/001">B/GLP/001</td>
-                    <td data-sort-value="Land at former Little Plumstead Hospital, Hospital Rd, Great and Little Plumstead" class="data-table__cell--max-width">Land at former Little Plumstead Hospital, Hospital Rd, Great and Little Plumstead</td>
-                    
-                    <td>1.40838</td>
-                    
-                    <td>52.645271</td>
-                    
-                    <td data-sort-value="9.7">9.7</td>
-                    
-                    <td data-sort-value="108">108</td>
-                    
-                    <td data-sort-value="108">108</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-11-19</td>
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/GLP/001</td>
+                    <td class="data-table__cell--max-width">Land at former Little Plumstead Hospital, Hospital Rd, Great and Little Plumstead</td>
+                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20130906" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20130906</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-10-24</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20130906" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20130906</a></td>
-
+                    <td>52.645271</td>
+                    <td>1.40838</td>
+                    <td>9.7</td>
+                    <td>108</td>
+                    <td>108</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="B/HEL/001">B/HEL/001</td>
-                    <td data-sort-value="Land at Hellesdon Hospital, Drayton High Rd, Hellesdon" class="data-table__cell--max-width">Land at Hellesdon Hospital, Drayton High Rd, Hellesdon</td>
-                    
-                    <td>1.249625</td>
-                    
-                    <td>52.660474</td>
-                    
-                    <td data-sort-value="14.7">14.7</td>
-                    
-                    <td data-sort-value="300">300</td>
-                    
-                    <td data-sort-value="300">300</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-01</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/HEL/001</td>
+                    <td class="data-table__cell--max-width">Land at Hellesdon Hospital, Drayton High Rd, Hellesdon</td>
                     <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CHEL1" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CHEL1</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.660474</td>
+                    <td>1.249625</td>
+                    <td>14.7</td>
+                    <td>300</td>
+                    <td>300</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="B/HEL/002">B/HEL/002</td>
-                    <td data-sort-value="Royal Norwich Golf Club, Drayton High Rd, Hellesdon" class="data-table__cell--max-width">Royal Norwich Golf Club, Drayton High Rd, Hellesdon</td>
-                    
-                    <td>1.258799</td>
-                    
-                    <td>52.656544</td>
-                    
-                    <td data-sort-value="45.8">45.8</td>
-                    
-                    <td data-sort-value="987">987</td>
-                    
-                    <td data-sort-value="987">987</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-11-19</td>
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/HEL/002</td>
+                    <td class="data-table__cell--max-width">Royal Norwich Golf Club, Drayton High Rd, Hellesdon</td>
+                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CHEL2" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CHEL2</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-12-06</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CHEL2" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CHEL2</a></td>
-
+                    <td>52.656544</td>
+                    <td>1.258799</td>
+                    <td>45.8</td>
+                    <td>987</td>
+                    <td>987</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="B/LIN/001">B/LIN/001</td>
-                    <td data-sort-value="Former Lingwood Primary School, ChapelRd, Lingwood" class="data-table__cell--max-width">Former Lingwood Primary School, ChapelRd, Lingwood</td>
-                    
-                    <td>1.48426</td>
-                    
-                    <td>52.620127</td>
-                    
-                    <td data-sort-value="1.2">1.2</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-01</td>
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/LIN/001</td>
+                    <td class="data-table__cell--max-width">Former Lingwood Primary School, ChapelRd, Lingwood</td>
+                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20140979" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20140979</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
                     <td>owned by a public authority</td>
-                    <td>2015-04-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20140979" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20140979</a></td>
-
+                    <td>52.620127</td>
+                    <td>1.48426</td>
+                    <td>1.2</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="B/MOR/001">B/MOR/001</td>
-                    <td data-sort-value="Offices, Atlas Works, Norwich Rd, Lenwade" class="data-table__cell--max-width">Offices, Atlas Works, Norwich Rd, Lenwade</td>
-                    
-                    <td>1.13206</td>
-                    
-                    <td>52.715119</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-11-19</td>
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/MOR/001</td>
+                    <td class="data-table__cell--max-width">Offices, Atlas Works, Norwich Rd, Lenwade</td>
+                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20160525" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20160525</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-05-18</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20160525" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2C20160525</a></td>
-
+                    <td>52.715119</td>
+                    <td>1.13206</td>
+                    <td>0.23</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="B/REP/001">B/REP/001</td>
-                    <td data-sort-value="Former Station Yard, Station Rd, Reepham" class="data-table__cell--max-width">Former Station Yard, Station Rd, Reepham</td>
-                    
-                    <td>1.112917</td>
-                    
-                    <td>52.76817</td>
-                    
-                    <td data-sort-value="2.8">2.8</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-09-23</td>
+                    <td>local-authority-eng:BRO</td>
+                    <td>B/REP/001</td>
+                    <td class="data-table__cell--max-width">Former Station Yard, Station Rd, Reepham</td>
+                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CREP2" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CREP2</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/broadland" class="govuk-link">http://opendatacommunities.org/id/district-council/broadland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-03-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CREP2" class="govuk-link">https://www.arcgis.com/apps/webappviewer/index.html?id=64110f1c89b340938fdc601e639d063e&query=BrownfieldSites_8038_0%2CAlt_Ref%2CREP2</a></td>
-
+                    <td>52.76817</td>
+                    <td>1.112917</td>
+                    <td>2.8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a845be601c6062d61bd171769d1ba3dcf806d7ce55eaf2450a9dd7cd1f3c3837" class="govuk-link">a845be60...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

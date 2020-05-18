@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BD072">BD072</td>
-                    <td data-sort-value="Trough Laithe Farm" class="data-table__cell--max-width">Trough Laithe Farm</td>
-                    
-                    <td>-2.2313</td>
-                    
-                    <td>53.8472</td>
-                    
-                    <td data-sort-value="0.512">0.512</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2019-10-14</td>
-                    
-                    <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BD072</td>
+                    <td class="data-table__cell--max-width">Trough Laithe Farm</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/10031/site_plan_sh013_-_salterforth_mill_earby_road_salterforth" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10031/site_plan_sh013_-_salterforth_mill_earby_road_salterforth</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-08-13</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/10031/site_plan_sh013_-_salterforth_mill_earby_road_salterforth" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10031/site_plan_sh013_-_salterforth_mill_earby_road_salterforth</a></td>
-
+                    <td>53.8472</td>
+                    <td>-2.2313</td>
+                    <td>0.512</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2019-10-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BK045">BK045</td>
-                    <td data-sort-value="Land at Kirkstall Drive, Barnoldswick" class="data-table__cell--max-width">Land at Kirkstall Drive, Barnoldswick</td>
-                    
-                    <td>-2.1735</td>
-                    
-                    <td>53.9209</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-14</td>
-                    
                     <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BK045</td>
+                    <td class="data-table__cell--max-width">Land at Kirkstall Drive, Barnoldswick</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/9998/site_plan_bk045_-_land_at_kirkstall_drive_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/9998/site_plan_bk045_-_land_at_kirkstall_drive_barnoldswick</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2005-06-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/9998/site_plan_bk045_-_land_at_kirkstall_drive_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/9998/site_plan_bk045_-_land_at_kirkstall_drive_barnoldswick</a></td>
-
+                    <td>53.9209</td>
+                    <td>-2.1735</td>
+                    <td>0.11</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BK090">BK090</td>
-                    <td data-sort-value="Land to the rear of the Greyhound Pub, Manchester Road, Barnoldswick" class="data-table__cell--max-width">Land to the rear of the Greyhound Pub, Manchester Road, Barnoldswick</td>
-                    
-                    <td>-2.1882</td>
-                    
-                    <td>53.9126</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-14</td>
-                    
                     <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BK090</td>
+                    <td class="data-table__cell--max-width">Land to the rear of the Greyhound Pub, Manchester Road, Barnoldswick</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/9999/site_plan_bk090_-_land_to_rear_of_the_greyhound_pub_manchester_road_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/9999/site_plan_bk090_-_land_to_rear_of_the_greyhound_pub_manchester_road_barnoldswick</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/9999/site_plan_bk090_-_land_to_rear_of_the_greyhound_pub_manchester_road_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/9999/site_plan_bk090_-_land_to_rear_of_the_greyhound_pub_manchester_road_barnoldswick</a></td>
-
+                    <td>53.9126</td>
+                    <td>-2.1882</td>
+                    <td>0.22</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BK110">BK110</td>
-                    <td data-sort-value="B Preston Joinery Works, Bank Street, Barnoldswick" class="data-table__cell--max-width">B Preston Joinery Works, Bank Street, Barnoldswick</td>
-                    
-                    <td>-2.1839</td>
-                    
-                    <td>53.9178</td>
-                    
-                    <td data-sort-value="0.034">0.034</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-14</td>
-                    
                     <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BK110</td>
+                    <td class="data-table__cell--max-width">B Preston Joinery Works, Bank Street, Barnoldswick</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/10000/site_plan_bk110_-_b_preston_joinery_works_bank_street_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10000/site_plan_bk110_-_b_preston_joinery_works_bank_street_barnoldswick</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-11-25</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/10000/site_plan_bk110_-_b_preston_joinery_works_bank_street_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10000/site_plan_bk110_-_b_preston_joinery_works_bank_street_barnoldswick</a></td>
-
+                    <td>53.9178</td>
+                    <td>-2.1839</td>
+                    <td>0.034</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BK115">BK115</td>
-                    <td data-sort-value="Briercliffe Lodge, Rainhall Crescent, Barnoldswick" class="data-table__cell--max-width">Briercliffe Lodge, Rainhall Crescent, Barnoldswick</td>
-                    
-                    <td>-2.1716</td>
-                    
-                    <td>53.9199</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-14</td>
-                    
                     <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BK115</td>
+                    <td class="data-table__cell--max-width">Briercliffe Lodge, Rainhall Crescent, Barnoldswick</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/10001/site_plan_bk115_-_briercliffe_lodge_rainhall_crescent_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10001/site_plan_bk115_-_briercliffe_lodge_rainhall_crescent_barnoldswick</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-06-13</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/10001/site_plan_bk115_-_briercliffe_lodge_rainhall_crescent_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10001/site_plan_bk115_-_briercliffe_lodge_rainhall_crescent_barnoldswick</a></td>
-
+                    <td>53.9199</td>
+                    <td>-2.1716</td>
+                    <td>0.14</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BK116">BK116</td>
-                    <td data-sort-value="St Andrews Methodist Church, Mosley Street, Barnoldswick" class="data-table__cell--max-width">St Andrews Methodist Church, Mosley Street, Barnoldswick</td>
-                    
-                    <td>-2.1851</td>
-                    
-                    <td>53.9156</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-14</td>
-                    
                     <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BK116</td>
+                    <td class="data-table__cell--max-width">St Andrews Methodist Church, Mosley Street, Barnoldswick</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/10002/site_plan_bk116_-_st_andrews_methodist_church_mosley_street_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10002/site_plan_bk116_-_st_andrews_methodist_church_mosley_street_barnoldswick</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-07-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/10002/site_plan_bk116_-_st_andrews_methodist_church_mosley_street_barnoldswick" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10002/site_plan_bk116_-_st_andrews_methodist_church_mosley_street_barnoldswick</a></td>
-
+                    <td>53.9156</td>
+                    <td>-2.1851</td>
+                    <td>0.14</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BK132">BK132</td>
-                    <td data-sort-value="Gisburn Street Works, Barnoldswick" class="data-table__cell--max-width">Gisburn Street Works, Barnoldswick</td>
-                    
-                    <td>-2.1885</td>
-                    
-                    <td>53.9207</td>
-                    
-                    <td data-sort-value="0.093">0.093</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    
-                    <td data-sort-value="3">3</td>
                     <td>2019-10-14</td>
-                    
-                    <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BK132</td>
+                    <td class="data-table__cell--max-width">Gisburn Street Works, Barnoldswick</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/10031/site_plan_sh013_-_salterforth_mill_earby_road_salterforth" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10031/site_plan_sh013_-_salterforth_mill_earby_road_salterforth</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-02-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/10031/site_plan_sh013_-_salterforth_mill_earby_road_salterforth" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10031/site_plan_sh013_-_salterforth_mill_earby_road_salterforth</a></td>
-
+                    <td>53.9207</td>
+                    <td>-2.1885</td>
+                    <td>0.093</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2019-10-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR037">BR037</td>
-                    <td data-sort-value="Four Oaks, The Crescent, Brierfield" class="data-table__cell--max-width">Four Oaks, The Crescent, Brierfield</td>
-                    
-                    <td>-2.2309</td>
-                    
-                    <td>53.8185</td>
-                    
-                    <td data-sort-value="0.39">0.39</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-14</td>
-                    
                     <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BR037</td>
+                    <td class="data-table__cell--max-width">Four Oaks, The Crescent, Brierfield</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/10003/site_plan_br037_-_four_oaks_the_crescent_brierfield" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10003/site_plan_br037_-_four_oaks_the_crescent_brierfield</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-09-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/10003/site_plan_br037_-_four_oaks_the_crescent_brierfield" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10003/site_plan_br037_-_four_oaks_the_crescent_brierfield</a></td>
-
+                    <td>53.8185</td>
+                    <td>-2.2309</td>
+                    <td>0.39</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR053">BR053</td>
-                    <td data-sort-value="Marsden Cross, 30 Higher Reedley Road, Brierfield" class="data-table__cell--max-width">Marsden Cross, 30 Higher Reedley Road, Brierfield</td>
-                    
-                    <td>-2.2205</td>
-                    
-                    <td>53.8224</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-14</td>
-                    
                     <td>2019-10-14</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PEN</td>
+                    <td>BR053</td>
+                    <td class="data-table__cell--max-width">Marsden Cross, 30 Higher Reedley Road, Brierfield</td>
                     <td><a href="http://www.pendle.gov.uk/downloads/file/10004/site_plan_br053_-_marsden_cross_30_higher_reedley_road_brierfield" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10004/site_plan_br053_-_marsden_cross_30_higher_reedley_road_brierfield</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.8224</td>
+                    <td>-2.2205</td>
+                    <td>0.26</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>2017-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BY011">BY011</td>
-                    <td data-sort-value="Barley House Farm, Barley Lane, Barley" class="data-table__cell--max-width">Barley House Farm, Barley Lane, Barley</td>
-                    
-                    <td>-2.2725</td>
-                    
-                    <td>53.8603</td>
-                    
-                    <td data-sort-value="0.25">0.25</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-14</td>
-                    
                     <td>2019-10-14</td>
+                    <td>local-authority-eng:PEN</td>
+                    <td>BY011</td>
+                    <td class="data-table__cell--max-width">Barley House Farm, Barley Lane, Barley</td>
+                    <td><a href="http://www.pendle.gov.uk/downloads/file/10005/site_plan_by011_-_barley_house_farm_barley_lane_barley" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10005/site_plan_by011_-_barley_house_farm_barley_lane_barley</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/pendle" class="govuk-link">http://opendatacommunities.org/id/district-council/pendle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-09-15</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.pendle.gov.uk/downloads/file/10005/site_plan_by011_-_barley_house_farm_barley_lane_barley" class="govuk-link">http://www.pendle.gov.uk/downloads/file/10005/site_plan_by011_-_barley_house_farm_barley_lane_barley</a></td>
-
+                    <td>53.8603</td>
+                    <td>-2.2725</td>
+                    <td>0.25</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-14</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/35bde384fa555a48e4c3007d2b9ad93aeb98bb9bbc43fabe7166c90976e1f442" class="govuk-link">35bde384...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

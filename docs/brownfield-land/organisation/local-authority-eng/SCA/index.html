@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="17SC0004a">17SC0004a</td>
-                    <td data-sort-value="Former Bayer Cropscience Site, Cambridge Road, Hauxton, Cambridge, Cambridgeshire, CB22 5HT" class="data-table__cell--max-width">Former Bayer Cropscience Site, Cambridge Road, Hauxton, Cambridge, Cambridgeshire, CB22 5HT</td>
-                    
-                    <td>0.093579</td>
-                    
-                    <td>52.15117</td>
-                    
-                    <td data-sort-value="7.24">7.24</td>
-                    
-                    <td data-sort-value="201">201</td>
-                    
-                    <td data-sort-value="201">201</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0004a</td>
+                    <td class="data-table__cell--max-width">Former Bayer Cropscience Site, Cambridge Road, Hauxton, Cambridge, Cambridgeshire, CB22 5HT</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0004a" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0004a</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2014-11-13</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0004a" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0004a</a></td>
-
+                    <td>52.15117</td>
+                    <td>0.093579</td>
+                    <td>7.24</td>
+                    <td>201</td>
+                    <td>201</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="17SC0005">17SC0005</td>
-                    <td data-sort-value="17-19, Bandon Road, Girton, Cambridgeshire, CB3 OLU" class="data-table__cell--max-width">17-19, Bandon Road, Girton, Cambridgeshire, CB3 OLU</td>
-                    
-                    <td>0.088665</td>
-                    
-                    <td>52.226015</td>
-                    
-                    <td data-sort-value="0.34">0.34</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    
-                    <td data-sort-value="2">2</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0005</td>
+                    <td class="data-table__cell--max-width">17-19, Bandon Road, Girton, Cambridgeshire, CB3 OLU</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0005" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0005</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2016-07-12</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0005" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0005</a></td>
-
+                    <td>52.226015</td>
+                    <td>0.088665</td>
+                    <td>0.34</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="17SC0006">17SC0006</td>
-                    <td data-sort-value="Former CEMEX Cement Works, Barrington Cement Plant, Haslingfield Road, Barrington, Cambridge, Cambridgeshire, CB22 7RQ" class="data-table__cell--max-width">Former CEMEX Cement Works, Barrington Cement Plant, Haslingfield Road, Barrington, Cambridge, Cambridgeshire, CB22 7RQ</td>
-                    
-                    <td>0.044141</td>
-                    
-                    <td>52.129764</td>
-                    
-                    <td data-sort-value="31.63">31.63</td>
-                    
-                    <td data-sort-value="220">220</td>
-                    
-                    <td data-sort-value="220">220</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0006</td>
+                    <td class="data-table__cell--max-width">Former CEMEX Cement Works, Barrington Cement Plant, Haslingfield Road, Barrington, Cambridge, Cambridgeshire, CB22 7RQ</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0006" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0006</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2016-10-27</td>
+                    <td>pending decision</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0006" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0006</a></td>
-
+                    <td>52.129764</td>
+                    <td>0.044141</td>
+                    <td>31.63</td>
+                    <td>220</td>
+                    <td>220</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="17SC0008a">17SC0008a</td>
-                    <td data-sort-value="Ida Darwin Hospital, Fulbourn Old Drift, FULBOURN, CB21 5EE" class="data-table__cell--max-width">Ida Darwin Hospital, Fulbourn Old Drift, FULBOURN, CB21 5EE</td>
-                    
-                    <td>0.200671</td>
-                    
-                    <td>52.18615</td>
-                    
-                    <td data-sort-value="13.38">13.38</td>
-                    
-                    <td data-sort-value="203">203</td>
-                    
-                    <td data-sort-value="203">203</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0008a</td>
+                    <td class="data-table__cell--max-width">Ida Darwin Hospital, Fulbourn Old Drift, FULBOURN, CB21 5EE</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0008a" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0008a</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2017-02-28</td>
+                    <td>pending decision</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0008a" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0008a</a></td>
-
+                    <td>52.18615</td>
+                    <td>0.200671</td>
+                    <td>13.38</td>
+                    <td>203</td>
+                    <td>203</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="17SC0009b">17SC0009b</td>
-                    <td data-sort-value="Northstowe, Longstanton Road, Cambridgeshire" class="data-table__cell--max-width">Northstowe, Longstanton Road, Cambridgeshire</td>
-                    
-                    <td>0.063245</td>
-                    
-                    <td>52.272411</td>
-                    
-                    <td data-sort-value="176.5">176.5</td>
-                    
-                    <td data-sort-value="3500">3500</td>
-                    
-                    <td data-sort-value="3500">3500</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0009b</td>
+                    <td class="data-table__cell--max-width">Northstowe, Longstanton Road, Cambridgeshire</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0009b" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0009b</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
                     <td>owned by a public authority</td>
-                    <td>2007-07-19</td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0009b" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0009b</a></td>
-
+                    <td>52.272411</td>
+                    <td>0.063245</td>
+                    <td>176.5</td>
+                    <td>3500</td>
+                    <td>3500</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -384,38 +328,27 @@ agreed by the Joint Northstowe Development Control Committee in July 2015."</div
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="17SC0009a">17SC0009a</td>
-                    <td data-sort-value="Land to the East of B1050 and Longstanton, West of the Cambridgeshire Guided Busway (CGB) and North of Oakington" class="data-table__cell--max-width">Land to the East of B1050 and Longstanton, West of the Cambridgeshire Guided Busway (CGB) and North of Oakington</td>
-                    
-                    <td>0.063898</td>
-                    
-                    <td>52.281724</td>
-                    
-                    <td data-sort-value="63.3">63.3</td>
-                    
-                    <td data-sort-value="3500">3500</td>
-                    
-                    <td data-sort-value="3500">3500</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0009a</td>
+                    <td class="data-table__cell--max-width">Land to the East of B1050 and Longstanton, West of the Cambridgeshire Guided Busway (CGB) and North of Oakington</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0009a" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0009a</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2017-01-08</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0009a" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0009a</a></td>
-
+                    <td>52.281724</td>
+                    <td>0.063898</td>
+                    <td>63.3</td>
+                    <td>3500</td>
+                    <td>3500</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -424,38 +357,27 @@ agreed by the Joint Northstowe Development Control Committee in July 2015."</div
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="17SC0010">17SC0010</td>
-                    <td data-sort-value="27, Cambridge Road, Little Abington, Cambridgeshire, CB21 6BL" class="data-table__cell--max-width">27, Cambridge Road, Little Abington, Cambridgeshire, CB21 6BL</td>
-                    
-                    <td>0.234045</td>
-                    
-                    <td>52.122875</td>
-                    
-                    <td data-sort-value="0.48">0.48</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    
-                    <td data-sort-value="2">2</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0010</td>
+                    <td class="data-table__cell--max-width">27, Cambridge Road, Little Abington, Cambridgeshire, CB21 6BL</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0010" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0010</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2016-06-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0010" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0010</a></td>
-
+                    <td>52.122875</td>
+                    <td>0.234045</td>
+                    <td>0.48</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -464,38 +386,27 @@ agreed by the Joint Northstowe Development Control Committee in July 2015."</div
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="17SC0011">17SC0011</td>
-                    <td data-sort-value="1, Horseheath Road, Linton, Cambridge, Cambridgeshire, CB21 4LU" class="data-table__cell--max-width">1, Horseheath Road, Linton, Cambridge, Cambridgeshire, CB21 4LU</td>
-                    
-                    <td>0.287163</td>
-                    
-                    <td>52.097775</td>
-                    
-                    <td data-sort-value="0.29">0.29</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0011</td>
+                    <td class="data-table__cell--max-width">1, Horseheath Road, Linton, Cambridge, Cambridgeshire, CB21 4LU</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0011" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0011</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2016-11-30</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0011" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0011</a></td>
-
+                    <td>52.097775</td>
+                    <td>0.287163</td>
+                    <td>0.29</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -504,38 +415,27 @@ agreed by the Joint Northstowe Development Control Committee in July 2015."</div
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="17SC0013">17SC0013</td>
-                    <td data-sort-value="15, Comberton Road, Barton, Cambridge, Cambridgeshire, CB23 7BA" class="data-table__cell--max-width">15, Comberton Road, Barton, Cambridge, Cambridgeshire, CB23 7BA</td>
-                    
-                    <td>0.050903</td>
-                    
-                    <td>52.183769</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    
-                    <td data-sort-value="2">2</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0013</td>
+                    <td class="data-table__cell--max-width">15, Comberton Road, Barton, Cambridge, Cambridgeshire, CB23 7BA</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0013" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0013</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2016-02-15</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0013" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0013</a></td>
-
+                    <td>52.183769</td>
+                    <td>0.050903</td>
+                    <td>0.27</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -544,38 +444,27 @@ agreed by the Joint Northstowe Development Control Committee in July 2015."</div
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="17SC0014">17SC0014</td>
-                    <td data-sort-value="L Abri, Teversham Road, Fulbourn, Cambridge, Cambridgeshire, CB21 5EB" class="data-table__cell--max-width">L Abri, Teversham Road, Fulbourn, Cambridge, Cambridgeshire, CB21 5EB</td>
-                    
-                    <td>0.206727</td>
-                    
-                    <td>52.188798</td>
-                    
-                    <td data-sort-value="0.47">0.47</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:SCA</td>
+                    <td>17SC0014</td>
+                    <td class="data-table__cell--max-width">L Abri, Teversham Road, Fulbourn, Cambridge, Cambridgeshire, CB21 5EB</td>
+                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0014" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0014</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-cambridgeshire</a></td>
-                    <td></td>
-                    <td>2016-09-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0014" class="govuk-link">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0014</a></td>
-
+                    <td>52.188798</td>
+                    <td>0.206727</td>
+                    <td>0.47</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -584,7 +473,7 @@ agreed by the Joint Northstowe Development Control Committee in July 2015."</div
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb" class="govuk-link">4f28c52f...</a></td>
                 </tr>
                 
             </tbody>
@@ -593,6 +482,11 @@ agreed by the Joint Northstowe Development Control Committee in July 2015."</div
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

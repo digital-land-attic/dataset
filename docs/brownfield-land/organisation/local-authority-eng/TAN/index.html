@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="CAT 041">CAT 041</td>
-                    <td data-sort-value="Maybrook House, 97 Godstone Road, Caterham, CR3 6RE" class="data-table__cell--max-width">Maybrook House, 97 Godstone Road, Caterham, CR3 6RE</td>
-                    
-                    <td>-0.075443</td>
-                    
-                    <td>51.279296</td>
-                    
-                    <td data-sort-value="0.33">0.33</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>CAT 041</td>
+                    <td class="data-table__cell--max-width">Maybrook House, 97 Godstone Road, Caterham, CR3 6RE</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-06-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>51.279296</td>
+                    <td>-0.075443</td>
+                    <td>0.33</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="CAT 044">CAT 044</td>
-                    <td data-sort-value="Land at Fern Towers, Harestone Hill, Caterham, CR3 6SL" class="data-table__cell--max-width">Land at Fern Towers, Harestone Hill, Caterham, CR3 6SL</td>
-                    
-                    <td>-0.079136</td>
-                    
-                    <td>51.277738</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TAN</td>
+                    <td>CAT 044</td>
+                    <td class="data-table__cell--max-width">Land at Fern Towers, Harestone Hill, Caterham, CR3 6SL</td>
                     <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.277738</td>
+                    <td>-0.079136</td>
+                    <td>0.18</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="CAT 079">CAT 079</td>
-                    <td data-sort-value="Hallmark House, 2 Timber Hill Road, Caterham, CR3 6LD" class="data-table__cell--max-width">Hallmark House, 2 Timber Hill Road, Caterham, CR3 6LD</td>
-                    
-                    <td>-0.076112</td>
-                    
-                    <td>51.282158</td>
-                    
-                    <td data-sort-value="0.017">0.017</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TAN</td>
+                    <td>CAT 079</td>
+                    <td class="data-table__cell--max-width">Hallmark House, 2 Timber Hill Road, Caterham, CR3 6LD</td>
                     <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.282158</td>
+                    <td>-0.076112</td>
+                    <td>0.017</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="CAT 081">CAT 081</td>
-                    <td data-sort-value="Former Coulsdon Lodge, Coulsdon Road, Caterham, CR3 5NE" class="data-table__cell--max-width">Former Coulsdon Lodge, Coulsdon Road, Caterham, CR3 5NE</td>
-                    
-                    <td>-0.097617</td>
-                    
-                    <td>51.284703</td>
-                    
-                    <td data-sort-value="0.39">0.39</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TAN</td>
+                    <td>CAT 081</td>
+                    <td class="data-table__cell--max-width">Former Coulsdon Lodge, Coulsdon Road, Caterham, CR3 5NE</td>
                     <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.284703</td>
+                    <td>-0.097617</td>
+                    <td>0.39</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="GOD 021">GOD 021</td>
-                    <td data-sort-value="William Way Builders Merchants, 38-42 High Street, Godstone, RH9 8LW" class="data-table__cell--max-width">William Way Builders Merchants, 38-42 High Street, Godstone, RH9 8LW</td>
-                    
-                    <td>-0.067258</td>
-                    
-                    <td>51.250555</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>GOD 021</td>
+                    <td class="data-table__cell--max-width">William Way Builders Merchants, 38-42 High Street, Godstone, RH9 8LW</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>51.250555</td>
+                    <td>-0.067258</td>
+                    <td>0.23</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="OXT 016">OXT 016</td>
-                    <td data-sort-value="Oxted Gas Holder, Nursery Way, Station Road East, Oxted, RH8 0BE" class="data-table__cell--max-width">Oxted Gas Holder, Nursery Way, Station Road East, Oxted, RH8 0BE</td>
-                    
-                    <td>-0.002936</td>
-                    
-                    <td>51.257047</td>
-                    
-                    <td data-sort-value="0.91">0.91</td>
-                    
-                    <td data-sort-value="111">111</td>
-                    
-                    <td data-sort-value="111">111</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>OXT 016</td>
+                    <td class="data-table__cell--max-width">Oxted Gas Holder, Nursery Way, Station Road East, Oxted, RH8 0BE</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-07-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>51.257047</td>
+                    <td>-0.002936</td>
+                    <td>0.91</td>
+                    <td>111</td>
+                    <td>111</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="OXT 067">OXT 067</td>
-                    <td data-sort-value="Council Depot, Warren Lane, Hurst Green, Oxted, RH8 9DB" class="data-table__cell--max-width">Council Depot, Warren Lane, Hurst Green, Oxted, RH8 9DB</td>
-                    
-                    <td>0.004296</td>
-                    
-                    <td>51.234513</td>
-                    
-                    <td data-sort-value="1.21">1.21</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TAN</td>
+                    <td>OXT 067</td>
+                    <td class="data-table__cell--max-width">Council Depot, Warren Lane, Hurst Green, Oxted, RH8 9DB</td>
                     <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.234513</td>
+                    <td>0.004296</td>
+                    <td>1.21</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="SMA 015">SMA 015</td>
-                    <td data-sort-value="Park Chesterfield, Chapel Road, Smallfield, RH6 9NW" class="data-table__cell--max-width">Park Chesterfield, Chapel Road, Smallfield, RH6 9NW</td>
-                    
-                    <td>-0.114835</td>
-                    
-                    <td>51.173721</td>
-                    
-                    <td data-sort-value="0.54">0.54</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TAN</td>
+                    <td>SMA 015</td>
+                    <td class="data-table__cell--max-width">Park Chesterfield, Chapel Road, Smallfield, RH6 9NW</td>
                     <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.173721</td>
+                    <td>-0.114835</td>
+                    <td>0.54</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="WAR 016">WAR 016</td>
-                    <td data-sort-value="Amenity land at Edgeworth Close, Whyteleafe" class="data-table__cell--max-width">Amenity land at Edgeworth Close, Whyteleafe</td>
-                    
-                    <td>-0.07848</td>
-                    
-                    <td>51.30788</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-10-23</td>
-                    
                     <td>2019-11-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TAN</td>
+                    <td>WAR 016</td>
+                    <td class="data-table__cell--max-width">Amenity land at Edgeworth Close, Whyteleafe</td>
                     <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.30788</td>
+                    <td>-0.07848</td>
+                    <td>0.16</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-10-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="2017/240">2017/240</td>
-                    <td data-sort-value="409 to 411 Croydon Road, Caterham CR3 6PP" class="data-table__cell--max-width">409 to 411 Croydon Road, Caterham CR3 6PP</td>
-                    
-                    <td>-0.071361</td>
-                    
-                    <td>51.29699</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2018-12-04</td>
-                    
                     <td>2019-11-21</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>2017/240</td>
+                    <td class="data-table__cell--max-width">409 to 411 Croydon Road, Caterham CR3 6PP</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/tandridge" class="govuk-link">http://opendatacommunities.org/id/district-council/tandridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-29</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
-
+                    <td>51.29699</td>
+                    <td>-0.071361</td>
+                    <td>0.09</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125" class="govuk-link">68ec0d69...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

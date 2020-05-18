@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,95 +154,72 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="B/BLR/0001">B/BLR/0001</td>
-                    <td data-sort-value="22 to 22a (car park) St Stephens Road, BH2 6JP" class="data-table__cell--max-width">22 to 22a (car park) St Stephens Road, BH2 6JP</td>
-                    
-                    <td>-1.885164</td>
-                    
-                    <td>50.72328</td>
-                    
-                    <td data-sort-value="0.12">0.12</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="11">11</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0001</td>
+                    <td class="data-table__cell--max-width">22 to 22a (car park) St Stephens Road, BH2 6JP</td>
                     <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=408202.41759&y=91523.6356499999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=408202.41759&y=91523.6356499999&scale=1000</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.72328</td>
+                    <td>-1.885164</td>
+                    <td>0.12</td>
+                    <td>9</td>
+                    <td>11</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="B/BLR/0002">B/BLR/0002</td>
-                    <td data-sort-value="8-10 Madeira Road" class="data-table__cell--max-width">8-10 Madeira Road</td>
-                    
-                    <td>-1.869048</td>
-                    
-                    <td>50.723911</td>
-                    
-                    <td data-sort-value="0.25">0.25</td>
-                    
-                    <td data-sort-value="74">74</td>
-                    
-                    <td data-sort-value="74">74</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0002</td>
+                    <td class="data-table__cell--max-width">8-10 Madeira Road</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409339.849969999&y=91595.69658&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409339.849969999&y=91595.69658&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-12-22</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409339.849969999&y=91595.69658&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409339.849969999&y=91595.69658&scale=1000</a></td>
-
+                    <td>50.723911</td>
+                    <td>-1.869048</td>
+                    <td>0.25</td>
+                    <td>74</td>
+                    <td>74</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -251,38 +228,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="B/BLR/0003">B/BLR/0003</td>
-                    <td data-sort-value="59 Christchurch Road" class="data-table__cell--max-width">59 Christchurch Road</td>
-                    
-                    <td>-1.850464</td>
-                    
-                    <td>50.722973</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0003</td>
+                    <td class="data-table__cell--max-width">59 Christchurch Road</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=410651.88474&y=91493.9321999999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=410651.88474&y=91493.9321999999&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2012-02-27</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=410651.88474&y=91493.9321999999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=410651.88474&y=91493.9321999999&scale=1000</a></td>
-
+                    <td>50.722973</td>
+                    <td>-1.850464</td>
+                    <td>0.06</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -291,38 +257,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="B/BLR/0007">B/BLR/0007</td>
-                    <td data-sort-value="55 Southwick Road and 11a Warnford Road" class="data-table__cell--max-width">55 Southwick Road and 11a Warnford Road</td>
-                    
-                    <td>-1.811204</td>
-                    
-                    <td>50.734944</td>
-                    
-                    <td data-sort-value="0.36">0.36</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    
-                    <td data-sort-value="23">23</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0007</td>
+                    <td class="data-table__cell--max-width">55 Southwick Road and 11a Warnford Road</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=413419.757459999&y=92831.4141399999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=413419.757459999&y=92831.4141399999&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-08-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=413419.757459999&y=92831.4141399999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=413419.757459999&y=92831.4141399999&scale=1000</a></td>
-
+                    <td>50.734944</td>
+                    <td>-1.811204</td>
+                    <td>0.36</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,38 +286,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="B/BLR/0017">B/BLR/0017</td>
-                    <td data-sort-value="9 Southbourne Overcliff Drive" class="data-table__cell--max-width">9 Southbourne Overcliff Drive</td>
-                    
-                    <td>-1.815169</td>
-                    
-                    <td>50.721891</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0017</td>
+                    <td class="data-table__cell--max-width">9 Southbourne Overcliff Drive</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=413143.612789999&y=91379.23414&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=413143.612789999&y=91379.23414&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-02-29</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=413143.612789999&y=91379.23414&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=413143.612789999&y=91379.23414&scale=1000</a></td>
-
+                    <td>50.721891</td>
+                    <td>-1.815169</td>
+                    <td>0.05</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -371,38 +315,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="B/BLR/0021">B/BLR/0021</td>
-                    <td data-sort-value="1 Lorne Park Road" class="data-table__cell--max-width">1 Lorne Park Road</td>
-                    
-                    <td>-1.870585</td>
-                    
-                    <td>50.72269</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="38">38</td>
-                    
-                    <td data-sort-value="38">38</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0021</td>
+                    <td class="data-table__cell--max-width">1 Lorne Park Road</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409231.593969999&y=91459.75809&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409231.593969999&y=91459.75809&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-23</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409231.593969999&y=91459.75809&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409231.593969999&y=91459.75809&scale=1000</a></td>
-
+                    <td>50.72269</td>
+                    <td>-1.870585</td>
+                    <td>0.07</td>
+                    <td>38</td>
+                    <td>38</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -411,38 +344,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="B/BLR/0024">B/BLR/0024</td>
-                    <td data-sort-value="23 Hinton Road" class="data-table__cell--max-width">23 Hinton Road</td>
-                    
-                    <td>-1.873509</td>
-                    
-                    <td>50.719082</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="39">39</td>
-                    
-                    <td data-sort-value="39">39</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0024</td>
+                    <td class="data-table__cell--max-width">23 Hinton Road</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409025.910199999&y=91058.22286&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409025.910199999&y=91058.22286&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409025.910199999&y=91058.22286&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409025.910199999&y=91058.22286&scale=1000</a></td>
-
+                    <td>50.719082</td>
+                    <td>-1.873509</td>
+                    <td>0.11</td>
+                    <td>39</td>
+                    <td>39</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -451,38 +373,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="B/BLR/0028">B/BLR/0028</td>
-                    <td data-sort-value="7 East Overcliff Drive" class="data-table__cell--max-width">7 East Overcliff Drive</td>
-                    
-                    <td>-1.868081</td>
-                    
-                    <td>50.718347</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0028</td>
+                    <td class="data-table__cell--max-width">7 East Overcliff Drive</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409409.185059999&y=90977.0821799999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409409.185059999&y=90977.0821799999&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-01-05</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409409.185059999&y=90977.0821799999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=409409.185059999&y=90977.0821799999&scale=1000</a></td>
-
+                    <td>50.718347</td>
+                    <td>-1.868081</td>
+                    <td>0.16</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -491,38 +402,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="B/BLR/0032">B/BLR/0032</td>
-                    <td data-sort-value="32-34 Tregonwell Road" class="data-table__cell--max-width">32-34 Tregonwell Road</td>
-                    
-                    <td>-1.883422</td>
-                    
-                    <td>50.718224</td>
-                    
-                    <td data-sort-value="0.25">0.25</td>
-                    
-                    <td data-sort-value="54">54</td>
-                    
-                    <td data-sort-value="54">54</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0032</td>
+                    <td class="data-table__cell--max-width">32-34 Tregonwell Road</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=408326.197329999&y=90961.6162699999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=408326.197329999&y=90961.6162699999&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-07-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=408326.197329999&y=90961.6162699999&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=408326.197329999&y=90961.6162699999&scale=1000</a></td>
-
+                    <td>50.718224</td>
+                    <td>-1.883422</td>
+                    <td>0.25</td>
+                    <td>54</td>
+                    <td>54</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -531,38 +431,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="B/BLR/0033">B/BLR/0033</td>
-                    <td data-sort-value="75-87 Grove Road and 33-35 East Overcliff Drive" class="data-table__cell--max-width">75-87 Grove Road and 33-35 East Overcliff Drive</td>
-                    
-                    <td>-1.858935</td>
-                    
-                    <td>50.719769</td>
-                    
-                    <td data-sort-value="0.88">0.88</td>
-                    
-                    <td data-sort-value="119">119</td>
-                    
-                    <td data-sort-value="119">119</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:BMH</td>
+                    <td>B/BLR/0033</td>
+                    <td class="data-table__cell--max-width">75-87 Grove Road and 33-35 East Overcliff Drive</td>
+                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=410054.61599&y=91136.3855&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=410054.61599&y=91136.3855&scale=1000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-01-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=410054.61599&y=91136.3855&scale=1000" class="govuk-link">https://maps.christchurchandeastdorset.gov.uk/map/Aurora.svc/run?script=%5CAurora%5CBBC%20Brownfield%20Register.AuroraScript%24&nocache=3767cdae-64dd-6422-1aa9-a5aa651d7145&resize=always&x=410054.61599&y=91136.3855&scale=1000</a></td>
-
+                    <td>50.719769</td>
+                    <td>-1.858935</td>
+                    <td>0.88</td>
+                    <td>119</td>
+                    <td>119</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -571,7 +460,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/8d05d6a50bf15add3cf538fcad97c5999dbc14a35c59ce867043488ae20f69de" class="govuk-link">8d05d6a5...</a></td>
                 </tr>
                 
             </tbody>
@@ -580,6 +469,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

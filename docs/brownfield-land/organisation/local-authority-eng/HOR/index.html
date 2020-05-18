@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="SA012">SA012</td>
-                    <td data-sort-value="Thakeham Tiles, Thakeham" class="data-table__cell--max-width">Thakeham Tiles, Thakeham</td>
-                    
-                    <td>-0.430751</td>
-                    
-                    <td>50.922791</td>
-                    
-                    <td data-sort-value="4.8">4.8</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="50">50</td>
                     <td>2018-12-31</td>
-                    
-                    <td>2018-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA012</td>
+                    <td class="data-table__cell--max-width">Thakeham Tiles, Thakeham</td>
                     <td><a href="https://www.horsham.gov.uk/planningpolicy/planning-policy/housing-land-availability/brownfield-site-maps/related-site-maps/SA012_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/planningpolicy/planning-policy/housing-land-availability/brownfield-site-maps/related-site-maps/SA012_BLR.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.922791</td>
+                    <td>-0.430751</td>
+                    <td>4.8</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2018-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="SA032">SA032</td>
-                    <td data-sort-value="Nyewood Court, Brookers Road, Billingshurst" class="data-table__cell--max-width">Nyewood Court, Brookers Road, Billingshurst</td>
-                    
-                    <td>-0.448267</td>
-                    
-                    <td>51.01594</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA032</td>
+                    <td class="data-table__cell--max-width">Nyewood Court, Brookers Road, Billingshurst</td>
+                    <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0011/49376/SA032_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0011/49376/SA032_BLR.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-08-20</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0011/49376/SA032_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0011/49376/SA032_BLR.pdf</a></td>
-
+                    <td>51.01594</td>
+                    <td>-0.448267</td>
+                    <td>0.26</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="SA137">SA137</td>
-                    <td data-sort-value="Station Garage (Skoda), Billingshurst Road, Broadbridge Heath" class="data-table__cell--max-width">Station Garage (Skoda), Billingshurst Road, Broadbridge Heath</td>
-                    
-                    <td>-0.364977</td>
-                    
-                    <td>51.071918</td>
-                    
-                    <td data-sort-value="0.9">0.9</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    
-                    <td data-sort-value="45">45</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA137</td>
+                    <td class="data-table__cell--max-width">Station Garage (Skoda), Billingshurst Road, Broadbridge Heath</td>
                     <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0003/49377/SA137_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0003/49377/SA137_BLR.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.071918</td>
+                    <td>-0.364977</td>
+                    <td>0.9</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="SA138">SA138</td>
-                    <td data-sort-value="137 Crawley Road, Horsham (North Horsham)" class="data-table__cell--max-width">137 Crawley Road, Horsham (North Horsham)</td>
-                    
-                    <td>-0.30159</td>
-                    
-                    <td>51.074135</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    
-                    <td data-sort-value="21">21</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA138</td>
+                    <td class="data-table__cell--max-width">137 Crawley Road, Horsham (North Horsham)</td>
                     <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0004/49378/SA138_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0004/49378/SA138_BLR.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.074135</td>
+                    <td>-0.30159</td>
+                    <td>0.17</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="SA139">SA139</td>
-                    <td data-sort-value="9-13 Crawley Road, Horsham (North Horsham)" class="data-table__cell--max-width">9-13 Crawley Road, Horsham (North Horsham)</td>
-                    
-                    <td>-0.307726</td>
-                    
-                    <td>51.072632</td>
-                    
-                    <td data-sort-value="0.29">0.29</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA139</td>
+                    <td class="data-table__cell--max-width">9-13 Crawley Road, Horsham (North Horsham)</td>
                     <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0005/49379/SA139_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0005/49379/SA139_BLR.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.072632</td>
+                    <td>-0.307726</td>
+                    <td>0.29</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="SA143">SA143</td>
-                    <td data-sort-value="Lifestyle Ford and Bishops Weald, Bishopric, Horsham (Denne)" class="data-table__cell--max-width">Lifestyle Ford and Bishops Weald, Bishopric, Horsham (Denne)</td>
-                    
-                    <td>-0.333908</td>
-                    
-                    <td>51.063413</td>
-                    
-                    <td data-sort-value="0.58">0.58</td>
-                    
-                    <td data-sort-value="70">70</td>
-                    
-                    <td data-sort-value="70">70</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA143</td>
+                    <td class="data-table__cell--max-width">Lifestyle Ford and Bishops Weald, Bishopric, Horsham (Denne)</td>
+                    <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0006/49380/SA143_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0006/49380/SA143_BLR.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-08-14</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0006/49380/SA143_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0006/49380/SA143_BLR.pdf</a></td>
-
+                    <td>51.063413</td>
+                    <td>-0.333908</td>
+                    <td>0.58</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="SA144">SA144</td>
-                    <td data-sort-value="Parsonage Farm, Parsonage Road, Horsham (North Horsham)" class="data-table__cell--max-width">Parsonage Farm, Parsonage Road, Horsham (North Horsham)</td>
-                    
-                    <td>-0.301619</td>
-                    
-                    <td>51.071402</td>
-                    
-                    <td data-sort-value="4.5">4.5</td>
-                    
-                    <td data-sort-value="127">127</td>
-                    
-                    <td data-sort-value="127">127</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA144</td>
+                    <td class="data-table__cell--max-width">Parsonage Farm, Parsonage Road, Horsham (North Horsham)</td>
                     <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0007/49381/SA144_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0007/49381/SA144_BLR.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.071402</td>
+                    <td>-0.301619</td>
+                    <td>4.5</td>
+                    <td>127</td>
+                    <td>127</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="SA146">SA146</td>
-                    <td data-sort-value="Star Reservoir, Comptons Brow Lane, Horsham (North Horsham)" class="data-table__cell--max-width">Star Reservoir, Comptons Brow Lane, Horsham (North Horsham)</td>
-                    
-                    <td>-0.32949</td>
-                    
-                    <td>51.065625</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA146</td>
+                    <td class="data-table__cell--max-width">Star Reservoir, Comptons Brow Lane, Horsham (North Horsham)</td>
                     <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0008/49382/SA146_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0008/49382/SA146_BLR.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.065625</td>
+                    <td>-0.32949</td>
+                    <td>0.8</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="SA198">SA198</td>
-                    <td data-sort-value="West Point, Springfield Road, Horsham, (Denne)" class="data-table__cell--max-width">West Point, Springfield Road, Horsham, (Denne)</td>
-                    
-                    <td>-0.315609</td>
-                    
-                    <td>51.067422</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA198</td>
+                    <td class="data-table__cell--max-width">West Point, Springfield Road, Horsham, (Denne)</td>
+                    <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0009/49383/SA198_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0009/49383/SA198_BLR.pdf</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0009/49383/SA198_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0009/49383/SA198_BLR.pdf</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.067422</td>
+                    <td>-0.315609</td>
+                    <td>0.03</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="SA199">SA199</td>
-                    <td data-sort-value="Century House, Station Road, Horsham (Forest)" class="data-table__cell--max-width">Century House, Station Road, Horsham (Forest)</td>
-                    
-                    <td>-0.308246</td>
-                    
-                    <td>51.079133</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="37">37</td>
-                    
-                    <td data-sort-value="37">37</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-31</td>
+                    <td>local-authority-eng:HOR</td>
+                    <td>SA199</td>
+                    <td class="data-table__cell--max-width">Century House, Station Road, Horsham (Forest)</td>
+                    <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0010/49384/SA199_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0010/49384/SA199_BLR.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/horsham" class="govuk-link">http://opendatacommunities.org/id/district-council/horsham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-22</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.horsham.gov.uk/__data/assets/pdf_file/0010/49384/SA199_BLR.pdf" class="govuk-link">https://www.horsham.gov.uk/__data/assets/pdf_file/0010/49384/SA199_BLR.pdf</a></td>
-
+                    <td>51.079133</td>
+                    <td>-0.308246</td>
+                    <td>0.2</td>
+                    <td>37</td>
+                    <td>37</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e72da34990e03084c230ada05f4b0711da80da1330ca6b0a913c726ebb2c6693" class="govuk-link">e72da349...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR01">BLR01</td>
-                    <td data-sort-value="The Bridge Inn, High Street, Newhaven" class="data-table__cell--max-width">The Bridge Inn, High Street, Newhaven</td>
-                    
-                    <td>0.049879</td>
-                    
-                    <td>50.794866</td>
-                    
-                    <td data-sort-value="0.35">0.35</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:LEE</td>
+                    <td>BLR01</td>
+                    <td class="data-table__cell--max-width">The Bridge Inn, High Street, Newhaven</td>
+                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-08-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td>50.794866</td>
+                    <td>0.049879</td>
+                    <td>0.35</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="05HY">05HY</td>
-                    <td data-sort-value="Former Hamsey Brickworks, South Road, South Common, Chailey Parish" class="data-table__cell--max-width">Former Hamsey Brickworks, South Road, South Common, Chailey Parish</td>
-                    
-                    <td>-0.010799</td>
-                    
-                    <td>50.926396</td>
-                    
-                    <td data-sort-value="9.14">9.14</td>
-                    
-                    <td data-sort-value="49">49</td>
-                    
-                    <td data-sort-value="49">49</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:LEE</td>
+                    <td>05HY</td>
+                    <td class="data-table__cell--max-width">Former Hamsey Brickworks, South Road, South Common, Chailey Parish</td>
                     <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.926396</td>
+                    <td>-0.010799</td>
+                    <td>9.14</td>
+                    <td>49</td>
+                    <td>49</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -256,38 +233,27 @@ enabling residential development of 37 open market houses and 12 affordable dwel
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="52NH">52NH</td>
-                    <td data-sort-value="Newhaven fire station, Fort Road, Newhaven" class="data-table__cell--max-width">Newhaven fire station, Fort Road, Newhaven</td>
-                    
-                    <td>0.045145</td>
-                    
-                    <td>50.790413</td>
-                    
-                    <td data-sort-value="0.12">0.12</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:LEE</td>
+                    <td>52NH</td>
+                    <td class="data-table__cell--max-width">Newhaven fire station, Fort Road, Newhaven</td>
+                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-06-05</td>
+                    <td>not permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td>50.790413</td>
+                    <td>0.045145</td>
+                    <td>0.12</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -296,38 +262,27 @@ enabling residential development of 37 open market houses and 12 affordable dwel
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="46NH">46NH</td>
-                    <td data-sort-value="Former Parker Pen Site, 52 Railway Road, Newhaven" class="data-table__cell--max-width">Former Parker Pen Site, 52 Railway Road, Newhaven</td>
-                    
-                    <td>0.057149</td>
-                    
-                    <td>50.793668</td>
-                    
-                    <td data-sort-value="2.8">2.8</td>
-                    
-                    <td data-sort-value="145">145</td>
-                    
-                    <td data-sort-value="145">145</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:LEE</td>
+                    <td>46NH</td>
+                    <td class="data-table__cell--max-width">Former Parker Pen Site, 52 Railway Road, Newhaven</td>
+                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-11-30</td>
+                    <td>not permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td>50.793668</td>
+                    <td>0.057149</td>
+                    <td>2.8</td>
+                    <td>145</td>
+                    <td>145</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -336,38 +291,27 @@ enabling residential development of 37 open market houses and 12 affordable dwel
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="16NH">16NH</td>
-                    <td data-sort-value="Old Shipyard, Robinson Road, Newhaven" class="data-table__cell--max-width">Old Shipyard, Robinson Road, Newhaven</td>
-                    
-                    <td>0.046253</td>
-                    
-                    <td>50.797286</td>
-                    
-                    <td data-sort-value="0.64">0.64</td>
-                    
-                    <td data-sort-value="66">66</td>
-                    
-                    <td data-sort-value="66">66</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:LEE</td>
+                    <td>16NH</td>
+                    <td class="data-table__cell--max-width">Old Shipyard, Robinson Road, Newhaven</td>
+                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-11-30</td>
+                    <td>not permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td>50.797286</td>
+                    <td>0.046253</td>
+                    <td>0.64</td>
+                    <td>66</td>
+                    <td>66</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -376,110 +320,77 @@ enabling residential development of 37 open market houses and 12 affordable dwel
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="02NH">02NH</td>
-                    <td data-sort-value="Seahaven Caravans, Railway Road, Newhaven" class="data-table__cell--max-width">Seahaven Caravans, Railway Road, Newhaven</td>
-                    
-                    <td>0.055358</td>
-                    
-                    <td>50.794896</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LEE</td>
+                    <td>02NH</td>
+                    <td class="data-table__cell--max-width">Seahaven Caravans, Railway Road, Newhaven</td>
                     <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.794896</td>
+                    <td>0.055358</td>
+                    <td>0.22</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="39NH">39NH</td>
-                    <td data-sort-value="Robinson Road Depot, Robinson Road, Newhaven" class="data-table__cell--max-width">Robinson Road Depot, Robinson Road, Newhaven</td>
-                    
-                    <td>0.047147</td>
-                    
-                    <td>50.795975</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="80">80</td>
-                    
-                    <td data-sort-value="80">80</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LEE</td>
+                    <td>39NH</td>
+                    <td class="data-table__cell--max-width">Robinson Road Depot, Robinson Road, Newhaven</td>
                     <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td></td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.795975</td>
+                    <td>0.047147</td>
+                    <td>0.8</td>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="40NH">40NH</td>
-                    <td data-sort-value="LDC Offices, Fort Road Newhaven" class="data-table__cell--max-width">LDC Offices, Fort Road Newhaven</td>
-                    
-                    <td>0.051282</td>
-                    
-                    <td>50.790929</td>
-                    
-                    <td data-sort-value="0.13">0.13</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-21</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:LEE</td>
+                    <td>40NH</td>
+                    <td class="data-table__cell--max-width">LDC Offices, Fort Road Newhaven</td>
+                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
                     <td>owned by a public authority</td>
-                    <td>2019-04-04</td>
+                    <td>not permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td>50.790929</td>
+                    <td>0.051282</td>
+                    <td>0.13</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -488,79 +399,57 @@ enabling residential development of 37 open market houses and 12 affordable dwel
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="48NH">48NH</td>
-                    <td data-sort-value="Clubhouse, Railway Quay, Newhaven" class="data-table__cell--max-width">Clubhouse, Railway Quay, Newhaven</td>
-                    
-                    <td>0.053468</td>
-                    
-                    <td>50.794515</td>
-                    
-                    <td data-sort-value="0.46">0.46</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="25">25</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LEE</td>
+                    <td>48NH</td>
+                    <td class="data-table__cell--max-width">Clubhouse, Railway Quay, Newhaven</td>
                     <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.794515</td>
+                    <td>0.053468</td>
+                    <td>0.46</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="51NH">51NH</td>
-                    <td data-sort-value="Newhaven Police Station, South Road, Newhaven" class="data-table__cell--max-width">Newhaven Police Station, South Road, Newhaven</td>
-                    
-                    <td>0.05039</td>
-                    
-                    <td>50.793238</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lewes" class="govuk-link">http://opendatacommunities.org/id/district-council/lewes</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LEE</td>
+                    <td>51NH</td>
+                    <td class="data-table__cell--max-width">Newhaven Police Station, South Road, Newhaven</td>
                     <td><a href="http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/" class="govuk-link">http://www.lewes-eastbourne.gov.uk/planning-policy/brownfield-land-register/</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.793238</td>
+                    <td>0.05039</td>
+                    <td>0.15</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b6b44d88e5fa77e07b5f02ba0c49782ba6643e50fce9635ef24387be04b3cc1a" class="govuk-link">b6b44d88...</a></td>
                 </tr>
                 
             </tbody>
@@ -569,6 +458,11 @@ enabling residential development of 37 open market houses and 12 affordable dwel
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

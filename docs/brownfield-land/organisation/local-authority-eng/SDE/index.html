@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="9/2014/0300">9/2014/0300</td>
-                    <td data-sort-value="47-51 ALEXANDRA ROAD, SWADLINCOTE" class="data-table__cell--max-width">47-51 ALEXANDRA ROAD, SWADLINCOTE</td>
-                    
-                    <td>-1.560008</td>
-                    
-                    <td>52.770936</td>
-                    
-                    <td data-sort-value="0.19">0.19</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>9/2014/0300</td>
+                    <td class="data-table__cell--max-width">47-51 ALEXANDRA ROAD, SWADLINCOTE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429784.96412936&StartNorthing=319352.67195786&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429784.96412936&StartNorthing=319352.67195786&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-12-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429784.96412936&StartNorthing=319352.67195786&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429784.96412936&StartNorthing=319352.67195786&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.770936</td>
+                    <td>-1.560008</td>
+                    <td>0.19</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="9/2015/0396">9/2015/0396</td>
-                    <td data-sort-value="145 OVERSETTS ROAD, NEWHALL, SWADLINCOTE, DERBYSHIRE" class="data-table__cell--max-width">145 OVERSETTS ROAD, NEWHALL, SWADLINCOTE, DERBYSHIRE</td>
-                    
-                    <td>-1.580193</td>
-                    
-                    <td>52.780484</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>9/2015/0396</td>
+                    <td class="data-table__cell--max-width">145 OVERSETTS ROAD, NEWHALL, SWADLINCOTE, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=428416.55416639&StartNorthing=320405.77613859&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=428416.55416639&StartNorthing=320405.77613859&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=428416.55416639&StartNorthing=320405.77613859&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=428416.55416639&StartNorthing=320405.77613859&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.780484</td>
+                    <td>-1.580193</td>
+                    <td>0.27</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="9/2016/0322">9/2016/0322</td>
-                    <td data-sort-value="FORMER BRETBY POTTERY SITE, SWADLINCOTE ROAD, WOODVILLE, SWADLINCOTE, DERBYSHIRE" class="data-table__cell--max-width">FORMER BRETBY POTTERY SITE, SWADLINCOTE ROAD, WOODVILLE, SWADLINCOTE, DERBYSHIRE</td>
-                    
-                    <td>-1.53913</td>
-                    
-                    <td>52.768969</td>
-                    
-                    <td data-sort-value="0.45">0.45</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>9/2016/0322</td>
+                    <td class="data-table__cell--max-width">FORMER BRETBY POTTERY SITE, SWADLINCOTE ROAD, WOODVILLE, SWADLINCOTE, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=431193.54670677&StartNorthing=319141.94149361&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=431193.54670677&StartNorthing=319141.94149361&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-11-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=431193.54670677&StartNorthing=319141.94149361&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=431193.54670677&StartNorthing=319141.94149361&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.768969</td>
+                    <td>-1.53913</td>
+                    <td>0.45</td>
+                    <td>27</td>
+                    <td>27</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="9/2015/0730">9/2015/0730</td>
-                    <td data-sort-value="STENSON HOUSE BARN, STENSON ROAD, STENSON, DERBY, DERBYSHIRE" class="data-table__cell--max-width">STENSON HOUSE BARN, STENSON ROAD, STENSON, DERBY, DERBYSHIRE</td>
-                    
-                    <td>-1.51815</td>
-                    
-                    <td>52.867564</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>9/2015/0730</td>
+                    <td class="data-table__cell--max-width">STENSON HOUSE BARN, STENSON ROAD, STENSON, DERBY, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=432568.95147353&StartNorthing=330140.28546269&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=432568.95147353&StartNorthing=330140.28546269&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-10-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=432568.95147353&StartNorthing=330140.28546269&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=432568.95147353&StartNorthing=330140.28546269&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.867564</td>
+                    <td>-1.51815</td>
+                    <td>0.11</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="9/2013/0342">9/2013/0342</td>
-                    <td data-sort-value="MILL GREEN HOUSE, SCROPTON, DERBYSHIRE" class="data-table__cell--max-width">MILL GREEN HOUSE, SCROPTON, DERBYSHIRE</td>
-                    
-                    <td>-1.713289</td>
-                    
-                    <td>52.867179</td>
-                    
-                    <td data-sort-value="2.96">2.96</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>9/2013/0342</td>
+                    <td class="data-table__cell--max-width">MILL GREEN HOUSE, SCROPTON, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=419620.89815178&StartNorthing=329967.38866484&StartZoom=1500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=419620.89815178&StartNorthing=329967.38866484&StartZoom=1500&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-08-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=419620.89815178&StartNorthing=329967.38866484&StartZoom=1500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=419620.89815178&StartNorthing=329967.38866484&StartZoom=1500&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.867179</td>
+                    <td>-1.713289</td>
+                    <td>2.96</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="LP HOUSING POLICY 7">LP HOUSING POLICY 7</td>
-                    <td data-sort-value="LAND AT THE MEASE, HILTON, DERBYSHIRE" class="data-table__cell--max-width">LAND AT THE MEASE, HILTON, DERBYSHIRE</td>
-                    
-                    <td>-1.626202</td>
-                    
-                    <td>52.864564</td>
-                    
-                    <td data-sort-value="16.91">16.91</td>
-                    
-                    <td data-sort-value="485">485</td>
-                    
-                    <td data-sort-value="485">485</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>LP HOUSING POLICY 7</td>
+                    <td class="data-table__cell--max-width">LAND AT THE MEASE, HILTON, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=425260.77725715&StartNorthing=329736.89034843&StartZoom=1500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=425260.77725715&StartNorthing=329736.89034843&StartZoom=1500&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-12-11</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=425260.77725715&StartNorthing=329736.89034843&StartZoom=1500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=425260.77725715&StartNorthing=329736.89034843&StartZoom=1500&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.864564</td>
+                    <td>-1.626202</td>
+                    <td>16.91</td>
+                    <td>485</td>
+                    <td>485</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="9/2011/0329">9/2011/0329</td>
-                    <td data-sort-value="FORMER KATHGLOW PREMISES, DOMINION ROAD, SWADLINCOTE, DERBYSHIRE" class="data-table__cell--max-width">FORMER KATHGLOW PREMISES, DOMINION ROAD, SWADLINCOTE, DERBYSHIRE</td>
-                    
-                    <td>-1.558191</td>
-                    
-                    <td>52.77769</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>9/2011/0329</td>
+                    <td class="data-table__cell--max-width">FORMER KATHGLOW PREMISES, DOMINION ROAD, SWADLINCOTE, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429903.06697713&StartNorthing=320104.21860854&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429903.06697713&StartNorthing=320104.21860854&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2011-08-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429903.06697713&StartNorthing=320104.21860854&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429903.06697713&StartNorthing=320104.21860854&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.77769</td>
+                    <td>-1.558191</td>
+                    <td>0.2</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="9/2009/1026">9/2009/1026</td>
-                    <td data-sort-value="BARLEY MOW, PARK ROAD, CHURCH GRESLEY, DERBYSHIRE" class="data-table__cell--max-width">BARLEY MOW, PARK ROAD, CHURCH GRESLEY, DERBYSHIRE</td>
-                    
-                    <td>-1.554944</td>
-                    
-                    <td>52.767492</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>9/2009/1026</td>
+                    <td class="data-table__cell--max-width">BARLEY MOW, PARK ROAD, CHURCH GRESLEY, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430128.33606964&StartNorthing=318971.06956367&StartZoom=400&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430128.33606964&StartNorthing=318971.06956367&StartZoom=400&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-03-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430128.33606964&StartNorthing=318971.06956367&StartZoom=400&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430128.33606964&StartNorthing=318971.06956367&StartZoom=400&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.767492</td>
+                    <td>-1.554944</td>
+                    <td>0.08</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="LP HOUSING POLICY 23K">LP HOUSING POLICY 23K</td>
-                    <td data-sort-value="H K WENTWORTH FACTORY & ARRIVA BUS DEPOT, MIDLAND ROAD, SWADLINCOTE, DERBYSHIRE" class="data-table__cell--max-width">H K WENTWORTH FACTORY & ARRIVA BUS DEPOT, MIDLAND ROAD, SWADLINCOTE, DERBYSHIRE</td>
-                    
-                    <td>-1.555774</td>
-                    
-                    <td>52.776287</td>
-                    
-                    <td data-sort-value="1.48">1.48</td>
-                    
-                    <td data-sort-value="57">57</td>
-                    
-                    <td data-sort-value="57">57</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>LP HOUSING POLICY 23K</td>
+                    <td class="data-table__cell--max-width">H K WENTWORTH FACTORY & ARRIVA BUS DEPOT, MIDLAND ROAD, SWADLINCOTE, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430065.91887752&StartNorthing=319948.87470792&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430065.91887752&StartNorthing=319948.87470792&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-02-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430065.91887752&StartNorthing=319948.87470792&StartZoom=500&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430065.91887752&StartNorthing=319948.87470792&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.776287</td>
+                    <td>-1.555774</td>
+                    <td>1.48</td>
+                    <td>57</td>
+                    <td>57</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="9/2013/0675">9/2013/0675</td>
-                    <td data-sort-value="HILLTOP NURSING HOME, COLLIERY ROAD, CHURCH GRESLEY, SWADLINCOTE, DERBYSHIRE" class="data-table__cell--max-width">HILLTOP NURSING HOME, COLLIERY ROAD, CHURCH GRESLEY, SWADLINCOTE, DERBYSHIRE</td>
-                    
-                    <td>-1.568641</td>
-                    
-                    <td>52.759812</td>
-                    
-                    <td data-sort-value="0.13">0.13</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:SDE</td>
+                    <td>9/2013/0675</td>
+                    <td class="data-table__cell--max-width">HILLTOP NURSING HOME, COLLIERY ROAD, CHURCH GRESLEY, SWADLINCOTE, DERBYSHIRE</td>
+                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429207.98804633&StartNorthing=318110.47420512&StartZoom=400&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429207.98804633&StartNorthing=318110.47420512&StartZoom=400&o=1&Layers=Brownfield_Land_Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-04-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429207.98804633&StartNorthing=318110.47420512&StartZoom=400&o=1&Layers=Brownfield_Land_Register" class="govuk-link">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=429207.98804633&StartNorthing=318110.47420512&StartZoom=400&o=1&Layers=Brownfield_Land_Register</a></td>
-
+                    <td>52.759812</td>
+                    <td>-1.568641</td>
+                    <td>0.13</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248" class="govuk-link">b7eaf905...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

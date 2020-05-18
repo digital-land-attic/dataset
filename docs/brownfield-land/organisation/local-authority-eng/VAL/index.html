@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="P17/V3275/FUL">P17/V3275/FUL</td>
-                    <td data-sort-value="Gables, 6 Cumnor Hill, Botley, Oxford OX2 9HA" class="data-table__cell--max-width">Gables, 6 Cumnor Hill, Botley, Oxford OX2 9HA</td>
-                    
-                    <td>-1.302949</td>
-                    
-                    <td>51.749908</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2018-12-21</td>
-                    
-                    <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P17/V3275/FUL</td>
+                    <td class="data-table__cell--max-width">Gables, 6 Cumnor Hill, Botley, Oxford OX2 9HA</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3275_FUL-V3.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3275_FUL-V3.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3275_FUL-V3.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3275_FUL-V3.pdf</a></td>
-
+                    <td>51.749908</td>
+                    <td>-1.302949</td>
+                    <td>0.1</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2018-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="P17/V3417/PDO">P17/V3417/PDO</td>
-                    <td data-sort-value="St Lawrence House, North Hinksey Lane, Botley OX2 0NB" class="data-table__cell--max-width">St Lawrence House, North Hinksey Lane, Botley OX2 0NB</td>
-                    
-                    <td>-1.285631</td>
-                    
-                    <td>51.745776</td>
-                    
-                    <td data-sort-value="0.48">0.48</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2018-12-21</td>
-                    
-                    <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P17/V3417/PDO</td>
+                    <td class="data-table__cell--max-width">St Lawrence House, North Hinksey Lane, Botley OX2 0NB</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3417_PDO-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3417_PDO-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-14</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3417_PDO-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3417_PDO-V2.pdf</a></td>
-
+                    <td>51.745776</td>
+                    <td>-1.285631</td>
+                    <td>0.48</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2018-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="P17/V2427/PDO">P17/V2427/PDO</td>
-                    <td data-sort-value="55-59 Stert Street, Abingdon, OX14 3JF" class="data-table__cell--max-width">55-59 Stert Street, Abingdon, OX14 3JF</td>
-                    
-                    <td>-1.281145</td>
-                    
-                    <td>51.671552</td>
-                    
-                    <td data-sort-value="0.13">0.13</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    <td>2017-12-08</td>
-                    
                     <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P17/V2427/PDO</td>
+                    <td class="data-table__cell--max-width">55-59 Stert Street, Abingdon, OX14 3JF</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V2427_PDO-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V2427_PDO-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-27</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V2427_PDO-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V2427_PDO-V2.pdf</a></td>
-
+                    <td>51.671552</td>
+                    <td>-1.281145</td>
+                    <td>0.13</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-12-08</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="P17/V0569/FUL">P17/V0569/FUL</td>
-                    <td data-sort-value="Land to the south of Challow Road and north of Naldertown, Wantage, OX12 9DJ" class="data-table__cell--max-width">Land to the south of Challow Road and north of Naldertown, Wantage, OX12 9DJ</td>
-                    
-                    <td>-1.435391</td>
-                    
-                    <td>51.590591</td>
-                    
-                    <td data-sort-value="0.97">0.97</td>
-                    
-                    <td data-sort-value="29">29</td>
-                    
-                    <td data-sort-value="29">29</td>
                     <td>2018-12-21</td>
-                    
-                    <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P17/V0569/FUL</td>
+                    <td class="data-table__cell--max-width">Land to the south of Challow Road and north of Naldertown, Wantage, OX12 9DJ</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V0569_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V0569_FUL-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V0569_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V0569_FUL-V2.pdf</a></td>
-
+                    <td>51.590591</td>
+                    <td>-1.435391</td>
+                    <td>0.97</td>
+                    <td>29</td>
+                    <td>29</td>
+                    <td>2018-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="P17/V3039/FUL">P17/V3039/FUL</td>
-                    <td data-sort-value="8 Elms Road, Botley, Oxford, OX2 9JZ" class="data-table__cell--max-width">8 Elms Road, Botley, Oxford, OX2 9JZ</td>
-                    
-                    <td>-1.298753</td>
-                    
-                    <td>51.753345</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2018-12-21</td>
-                    
-                    <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P17/V3039/FUL</td>
+                    <td class="data-table__cell--max-width">8 Elms Road, Botley, Oxford, OX2 9JZ</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3039_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3039_FUL-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-06-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3039_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3039_FUL-V2.pdf</a></td>
-
+                    <td>51.753345</td>
+                    <td>-1.298753</td>
+                    <td>0.06</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2018-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="P17/V1310/O">P17/V1310/O</td>
-                    <td data-sort-value="5 Lechlade Road, Faringdon, SN7 8AL" class="data-table__cell--max-width">5 Lechlade Road, Faringdon, SN7 8AL</td>
-                    
-                    <td>-1.589744</td>
-                    
-                    <td>51.657768</td>
-                    
-                    <td data-sort-value="0.36">0.36</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-12-08</td>
-                    
                     <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P17/V1310/O</td>
+                    <td class="data-table__cell--max-width">5 Lechlade Road, Faringdon, SN7 8AL</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V1310_O.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V1310_O.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-12</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V1310_O.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V1310_O.pdf</a></td>
-
+                    <td>51.657768</td>
+                    <td>-1.589744</td>
+                    <td>0.36</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-12-08</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="P17/V3395/FUL">P17/V3395/FUL</td>
-                    <td data-sort-value="Letcombe Bowers Farm, Letcombe Regis, Wantage, OX12 9NG" class="data-table__cell--max-width">Letcombe Bowers Farm, Letcombe Regis, Wantage, OX12 9NG</td>
-                    
-                    <td>-1.445902</td>
-                    
-                    <td>51.542897</td>
-                    
-                    <td data-sort-value="0.38">0.38</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2018-12-21</td>
-                    
-                    <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P17/V3395/FUL</td>
+                    <td class="data-table__cell--max-width">Letcombe Bowers Farm, Letcombe Regis, Wantage, OX12 9NG</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3395_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3395_FUL-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-04-20</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3395_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3395_FUL-V2.pdf</a></td>
-
+                    <td>51.542897</td>
+                    <td>-1.445902</td>
+                    <td>0.38</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2018-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="P18/V0585/PDO">P18/V0585/PDO</td>
-                    <td data-sort-value="1 Stert Street, Abingdon, Oxon OX14 3JG" class="data-table__cell--max-width">1 Stert Street, Abingdon, Oxon OX14 3JG</td>
-                    
-                    <td>-1.280801</td>
-                    
-                    <td>51.670426</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2018-12-21</td>
-                    
-                    <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P18/V0585/PDO</td>
+                    <td class="data-table__cell--max-width">1 Stert Street, Abingdon, Oxon OX14 3JG</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0585_PDO.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0585_PDO.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-15</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0585_PDO.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0585_PDO.pdf</a></td>
-
+                    <td>51.670426</td>
+                    <td>-1.280801</td>
+                    <td>0.02</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2018-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="P18/V0695/FUL">P18/V0695/FUL</td>
-                    <td data-sort-value="31 Eynsham Road, Botley, Oxford, OX2 9BS" class="data-table__cell--max-width">31 Eynsham Road, Botley, Oxford, OX2 9BS</td>
-                    
-                    <td>-1.305719</td>
-                    
-                    <td>51.749718</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2018-12-21</td>
-                    
-                    <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P18/V0695/FUL</td>
+                    <td class="data-table__cell--max-width">31 Eynsham Road, Botley, Oxford, OX2 9BS</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0695_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0695_FUL-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0695_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0695_FUL-V2.pdf</a></td>
-
+                    <td>51.749718</td>
+                    <td>-1.305719</td>
+                    <td>0.11</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2018-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="P18/V0787/FUL">P18/V0787/FUL</td>
-                    <td data-sort-value="96 West Way, Oxford, OX2 9JU" class="data-table__cell--max-width">96 West Way, Oxford, OX2 9JU</td>
-                    
-                    <td>-1.300597</td>
-                    
-                    <td>51.751189</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2018-12-21</td>
-                    
-                    <td>2018-12-21</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td>P18/V0787/FUL</td>
+                    <td class="data-table__cell--max-width">96 West Way, Oxford, OX2 9JU</td>
+                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0787_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0787_FUL-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/vale-of-white-horse" class="govuk-link">http://opendatacommunities.org/id/district-council/vale-of-white-horse</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-07-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0787_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0787_FUL-V2.pdf</a></td>
-
+                    <td>51.751189</td>
+                    <td>-1.300597</td>
+                    <td>0.08</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2018-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

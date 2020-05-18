@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,388 +154,277 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="WBR/17/0002">WBR/17/0002</td>
-                    <td data-sort-value="Newcombe House, 319-323 Battersea Park Road" class="data-table__cell--max-width">Newcombe House, 319-323 Battersea Park Road</td>
-                    
-                    <td>-0.155988</td>
-                    
-                    <td>51.474161</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0002</td>
+                    <td class="data-table__cell--max-width">Newcombe House, 319-323 Battersea Park Road</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-03-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.474161</td>
+                    <td>-0.155988</td>
+                    <td>0.02</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="WBR/17/0003">WBR/17/0003</td>
-                    <td data-sort-value="Battersea Technology College and 3 Culovert Road, 401 Battersea Park Road (Harris Academy)" class="data-table__cell--max-width">Battersea Technology College and 3 Culovert Road, 401 Battersea Park Road (Harris Academy)</td>
-                    
-                    <td>-0.159109</td>
-                    
-                    <td>51.473176</td>
-                    
-                    <td data-sort-value="1.9">1.9</td>
-                    
-                    <td data-sort-value="38">38</td>
-                    
-                    <td data-sort-value="38">38</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0003</td>
+                    <td class="data-table__cell--max-width">Battersea Technology College and 3 Culovert Road, 401 Battersea Park Road (Harris Academy)</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-09-11</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.473176</td>
+                    <td>-0.159109</td>
+                    <td>1.9</td>
+                    <td>38</td>
+                    <td>38</td>
+                    <td>2017-12-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="WBR/17/0004">WBR/17/0004</td>
-                    <td data-sort-value="Lock up garages, 26-40 Balham New Road" class="data-table__cell--max-width">Lock up garages, 26-40 Balham New Road</td>
-                    
-                    <td>-0.146166</td>
-                    
-                    <td>51.446461</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0004</td>
+                    <td class="data-table__cell--max-width">Lock up garages, 26-40 Balham New Road</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-09-25</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.446461</td>
+                    <td>-0.146166</td>
+                    <td>0.07</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="WBR/17/0005">WBR/17/0005</td>
-                    <td data-sort-value="Our Lady of Mount Carmel and St Joseph Church, 8 Battersea Park Road" class="data-table__cell--max-width">Our Lady of Mount Carmel and St Joseph Church, 8 Battersea Park Road</td>
-                    
-                    <td>-0.146976</td>
-                    
-                    <td>51.47731</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0005</td>
+                    <td class="data-table__cell--max-width">Our Lady of Mount Carmel and St Joseph Church, 8 Battersea Park Road</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-10-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.47731</td>
+                    <td>-0.146976</td>
+                    <td>0.17</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="WBR/17/0006">WBR/17/0006</td>
-                    <td data-sort-value="81-87 Upper Tooting Road" class="data-table__cell--max-width">81-87 Upper Tooting Road</td>
-                    
-                    <td>-0.162411</td>
-                    
-                    <td>51.433633</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0006</td>
+                    <td class="data-table__cell--max-width">81-87 Upper Tooting Road</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-12-20</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.433633</td>
+                    <td>-0.162411</td>
+                    <td>0.1</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-12-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="WBR/17/0007">WBR/17/0007</td>
-                    <td data-sort-value="94-94a Longley Road" class="data-table__cell--max-width">94-94a Longley Road</td>
-                    
-                    <td>-0.167037</td>
-                    
-                    <td>51.420854</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0007</td>
+                    <td class="data-table__cell--max-width">94-94a Longley Road</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.420854</td>
+                    <td>-0.167037</td>
+                    <td>0.07</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="WBR/17/0008">WBR/17/0008</td>
-                    <td data-sort-value="191-195 Balham High Road" class="data-table__cell--max-width">191-195 Balham High Road</td>
-                    
-                    <td>-0.154081</td>
-                    
-                    <td>51.441478</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0008</td>
+                    <td class="data-table__cell--max-width">191-195 Balham High Road</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-03-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.441478</td>
+                    <td>-0.154081</td>
+                    <td>0.07</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-13</td>
+                    <td>2018-04-23</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td>2018-04-23</td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="WBR/17/0009">WBR/17/0009</td>
-                    <td data-sort-value="89-93 Putney High Street" class="data-table__cell--max-width">89-93 Putney High Street</td>
-                    
-                    <td>-0.215423</td>
-                    
-                    <td>51.4633</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0009</td>
+                    <td class="data-table__cell--max-width">89-93 Putney High Street</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-09-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.4633</td>
+                    <td>-0.215423</td>
+                    <td>0.07</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-12-13</td>
+                    <td>2019-01-30</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td>2019-01-30</td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="WBR/17/0011">WBR/17/0011</td>
-                    <td data-sort-value="Chelsea Bridge Wharf (southern site), Queenstown Road (Phase 5, Residential Blocks F & G (Lanson House & Burnelli House))" class="data-table__cell--max-width">Chelsea Bridge Wharf (southern site), Queenstown Road (Phase 5, Residential Blocks F & G (Lanson House & Burnelli House))</td>
-                    
-                    <td>-0.148467</td>
-                    
-                    <td>51.481381</td>
-                    
-                    <td data-sort-value="0.92">0.92</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0011</td>
+                    <td class="data-table__cell--max-width">Chelsea Bridge Wharf (southern site), Queenstown Road (Phase 5, Residential Blocks F & G (Lanson House & Burnelli House))</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-04-05</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.481381</td>
+                    <td>-0.148467</td>
+                    <td>0.92</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="WBR/17/0012">WBR/17/0012</td>
-                    <td data-sort-value="Former Domus Tiles site, 31-33 Parkgate Road/Elcho Street (27-33 Parkgate Road & 2-42 Elcho Street)" class="data-table__cell--max-width">Former Domus Tiles site, 31-33 Parkgate Road/Elcho Street (27-33 Parkgate Road & 2-42 Elcho Street)</td>
-                    
-                    <td>-0.168789</td>
-                    
-                    <td>51.479586</td>
-                    
-                    <td data-sort-value="0.54">0.54</td>
-                    
-                    <td data-sort-value="118">118</td>
-                    
-                    <td data-sort-value="118">118</td>
-                    <td>2017-12-13</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:WND</td>
+                    <td>WBR/17/0012</td>
+                    <td class="data-table__cell--max-width">Former Domus Tiles site, 31-33 Parkgate Road/Elcho Street (27-33 Parkgate Road & 2-42 Elcho Street)</td>
+                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/wandsworth" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/wandsworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-06-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always" class="govuk-link">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a></td>
-
+                    <td>51.479586</td>
+                    <td>-0.168789</td>
+                    <td>0.54</td>
+                    <td>118</td>
+                    <td>118</td>
+                    <td>2017-12-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/c906cff32aaa59dc601f5ec819e3299dd44621b69cb6f402413eb9ed4b272eab" class="govuk-link">c906cff3...</a></td>
                 </tr>
                 
             </tbody>
@@ -544,6 +433,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

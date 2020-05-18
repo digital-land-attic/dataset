@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="H1343">H1343</td>
-                    <td data-sort-value="Land off Wentworth Road, Mapplewell, Barnsley" class="data-table__cell--max-width">Land off Wentworth Road, Mapplewell, Barnsley</td>
-                    
-                    <td>-1.497208</td>
-                    
-                    <td>53.58109</td>
-                    
-                    <td data-sort-value="0.5">0.5</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="25">25</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H1343</td>
+                    <td class="data-table__cell--max-width">Land off Wentworth Road, Mapplewell, Barnsley</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2013-11-29</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>53.58109</td>
+                    <td>-1.497208</td>
+                    <td>0.5</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="H1628">H1628</td>
-                    <td data-sort-value="Grove street junior & infant school, grasmere road, barnsley, south yorkshire, s71 1es" class="data-table__cell--max-width">Grove street junior & infant school, grasmere road, barnsley, south yorkshire, s71 1es</td>
-                    
-                    <td>-1.469643</td>
-                    
-                    <td>53.552293</td>
-                    
-                    <td data-sort-value="0.5">0.5</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H1628</td>
+                    <td class="data-table__cell--max-width">Grove street junior & infant school, grasmere road, barnsley, south yorkshire, s71 1es</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2016-05-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>53.552293</td>
+                    <td>-1.469643</td>
+                    <td>0.5</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="H1916">H1916</td>
-                    <td data-sort-value="The lundwood, pontefract road, lundwood, barnsley" class="data-table__cell--max-width">The lundwood, pontefract road, lundwood, barnsley</td>
-                    
-                    <td>-1.43569</td>
-                    
-                    <td>53.562584</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H1916</td>
+                    <td class="data-table__cell--max-width">The lundwood, pontefract road, lundwood, barnsley</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2011-06-01</td>
-                    <td>full planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>53.562584</td>
+                    <td>-1.43569</td>
+                    <td>0.3</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="H1973">H1973</td>
-                    <td data-sort-value="Land at School Street, Bolton upon Dearne, Barnsley, South Yorkshire" class="data-table__cell--max-width">Land at School Street, Bolton upon Dearne, Barnsley, South Yorkshire</td>
-                    
-                    <td>-1.315487</td>
-                    
-                    <td>53.519145</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H1973</td>
+                    <td class="data-table__cell--max-width">Land at School Street, Bolton upon Dearne, Barnsley, South Yorkshire</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2016-10-18</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>53.519145</td>
+                    <td>-1.315487</td>
+                    <td>0.3</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="H2198">H2198</td>
-                    <td data-sort-value="G m asquith fabrications ltd, beever street, goldthorpe, rotherham, s63 9ht" class="data-table__cell--max-width">G m asquith fabrications ltd, beever street, goldthorpe, rotherham, s63 9ht</td>
-                    
-                    <td>-1.29843</td>
-                    
-                    <td>53.533019</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H2198</td>
+                    <td class="data-table__cell--max-width">G m asquith fabrications ltd, beever street, goldthorpe, rotherham, s63 9ht</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2014-04-10</td>
-                    <td>outline planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>outline planning permission</td>
+                    <td></td>
+                    <td>53.533019</td>
+                    <td>-1.29843</td>
+                    <td>0.3</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="H2237">H2237</td>
-                    <td data-sort-value="Penistone coal drops, st. Mary's street penistone sheffield S36 6DT" class="data-table__cell--max-width">Penistone coal drops, st. Mary's street penistone sheffield S36 6DT</td>
-                    
-                    <td>-1.633382</td>
-                    
-                    <td>53.526774</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H2237</td>
+                    <td class="data-table__cell--max-width">Penistone coal drops, st. Mary's street penistone sheffield S36 6DT</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2014-10-10</td>
-                    <td>full planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>53.526774</td>
+                    <td>-1.633382</td>
+                    <td>0.6</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="H2256">H2256</td>
-                    <td data-sort-value="Belle vue house, cockerham lane, barnsley, s75 1at" class="data-table__cell--max-width">Belle vue house, cockerham lane, barnsley, s75 1at</td>
-                    
-                    <td>-1.484366</td>
-                    
-                    <td>53.560298</td>
-                    
-                    <td data-sort-value="1.9">1.9</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H2256</td>
+                    <td class="data-table__cell--max-width">Belle vue house, cockerham lane, barnsley, s75 1at</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2014-12-17</td>
-                    <td>full planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>53.560298</td>
+                    <td>-1.484366</td>
+                    <td>1.9</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="H2260">H2260</td>
-                    <td data-sort-value="Land at High Street, Royston, Barnsley" class="data-table__cell--max-width">Land at High Street, Royston, Barnsley</td>
-                    
-                    <td>-1.45923</td>
-                    
-                    <td>53.597724</td>
-                    
-                    <td data-sort-value="1.0">1.0</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H2260</td>
+                    <td class="data-table__cell--max-width">Land at High Street, Royston, Barnsley</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2014-06-04</td>
-                    <td>outline planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>outline planning permission</td>
+                    <td></td>
+                    <td>53.597724</td>
+                    <td>-1.45923</td>
+                    <td>1.0</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="H2281">H2281</td>
-                    <td data-sort-value="Bolton hall nursing home, carr head lane, bolton upon dearne, rotherham, s63 8da" class="data-table__cell--max-width">Bolton hall nursing home, carr head lane, bolton upon dearne, rotherham, s63 8da</td>
-                    
-                    <td>-1.322068</td>
-                    
-                    <td>53.519133</td>
-                    
-                    <td data-sort-value="1.2">1.2</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    
-                    <td data-sort-value="28">28</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H2281</td>
+                    <td class="data-table__cell--max-width">Bolton hall nursing home, carr head lane, bolton upon dearne, rotherham, s63 8da</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2017-03-29</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>53.519133</td>
+                    <td>-1.322068</td>
+                    <td>1.2</td>
+                    <td>28</td>
+                    <td>28</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="H2317">H2317</td>
-                    <td data-sort-value="Pearson Crescent, Barnsley, South Yorkshire, S73 8sq" class="data-table__cell--max-width">Pearson Crescent, Barnsley, South Yorkshire, S73 8sq</td>
-                    
-                    <td>-1.420336</td>
-                    
-                    <td>53.530139</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    
-                    <td data-sort-value="3">3</td>
                     <td>2017-08-02</td>
-                    
-                    <td>2017-08-02</td>
+                    <td>local-authority-eng:BNS</td>
+                    <td>H2317</td>
+                    <td class="data-table__cell--max-width">Pearson Crescent, Barnsley, South Yorkshire, S73 8sq</td>
+                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/barnsley" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/barnsley</a></td>
-                    <td></td>
-                    <td>2015-09-30</td>
-                    <td>full planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/" class="govuk-link">https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/brownfield-land-register/</a></td>
-
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>53.530139</td>
+                    <td>-1.420336</td>
+                    <td>0.2</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/753de6ee9f46353c168dc6a16fb6ed6f9e7f057352cc265912cc4f20741235aa" class="govuk-link">753de6ee...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

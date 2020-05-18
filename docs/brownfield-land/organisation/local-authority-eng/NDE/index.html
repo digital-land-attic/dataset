@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BFL/BAR/001">BFL/BAR/001</td>
-                    <td data-sort-value="Borough Arms, Forches Estate Barnstaple EX32 8ED" class="data-table__cell--max-width">Borough Arms, Forches Estate Barnstaple EX32 8ED</td>
-                    
-                    <td>-4.044018</td>
-                    
-                    <td>51.076921</td>
-                    
-                    <td data-sort-value="0.21">0.21</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/BAR/001</td>
+                    <td class="data-table__cell--max-width">Borough Arms, Forches Estate Barnstaple EX32 8ED</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2014-06-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>51.076921</td>
+                    <td>-4.044018</td>
+                    <td>0.21</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-08-02</td>
+                    <td>2017-06-30</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td>2017-06-30</td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BFL/SMO/002">BFL/SMO/002</td>
-                    <td data-sort-value="Garages off Churchill Crescent, South Molton EX36 4EL" class="data-table__cell--max-width">Garages off Churchill Crescent, South Molton EX36 4EL</td>
-                    
-                    <td>-3.840096</td>
-                    
-                    <td>51.013167</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/SMO/002</td>
+                    <td class="data-table__cell--max-width">Garages off Churchill Crescent, South Molton EX36 4EL</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2016-06-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>51.013167</td>
+                    <td>-3.840096</td>
+                    <td>0.16</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-08-02</td>
+                    <td>2018-03-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td>2018-03-31</td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BFL/BAR/003">BFL/BAR/003</td>
-                    <td data-sort-value="Beaufort Walk, Gorwell Barnstaple EX32 7JD" class="data-table__cell--max-width">Beaufort Walk, Gorwell Barnstaple EX32 7JD</td>
-                    
-                    <td>-4.047075</td>
-                    
-                    <td>51.083756</td>
-                    
-                    <td data-sort-value="0.41">0.41</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/BAR/003</td>
+                    <td class="data-table__cell--max-width">Beaufort Walk, Gorwell Barnstaple EX32 7JD</td>
+                    <td><a href="https://www.northdevon.gov.uk/media/379737/bfl-bar-003-beaufort-walk-barnstaple-1-1250.pdf" class="govuk-link">https://www.northdevon.gov.uk/media/379737/bfl-bar-003-beaufort-walk-barnstaple-1-1250.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-04-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.northdevon.gov.uk/media/379737/bfl-bar-003-beaufort-walk-barnstaple-1-1250.pdf" class="govuk-link">https://www.northdevon.gov.uk/media/379737/bfl-bar-003-beaufort-walk-barnstaple-1-1250.pdf</a></td>
-
+                    <td>51.083756</td>
+                    <td>-4.047075</td>
+                    <td>0.41</td>
+                    <td>27</td>
+                    <td>27</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BFL/BRA/004">BFL/BRA/004</td>
-                    <td data-sort-value="Knowle Industrial Estate, Knowle BRAUNTON EX33 2NA" class="data-table__cell--max-width">Knowle Industrial Estate, Knowle BRAUNTON EX33 2NA</td>
-                    
-                    <td>-4.156664</td>
-                    
-                    <td>51.126122</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/BRA/004</td>
+                    <td class="data-table__cell--max-width">Knowle Industrial Estate, Knowle BRAUNTON EX33 2NA</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2007-04-17</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>51.126122</td>
+                    <td>-4.156664</td>
+                    <td>0.3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2017-08-02</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BFL/ILF/005">BFL/ILF/005</td>
-                    <td data-sort-value="Former Liberal Club, 133 High Street ILFRACOMBE EX34 9EZ" class="data-table__cell--max-width">Former Liberal Club, 133 High Street ILFRACOMBE EX34 9EZ</td>
-                    
-                    <td>-4.12205</td>
-                    
-                    <td>51.20837</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/ILF/005</td>
+                    <td class="data-table__cell--max-width">Former Liberal Club, 133 High Street ILFRACOMBE EX34 9EZ</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2004-01-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>51.20837</td>
+                    <td>-4.12205</td>
+                    <td>0.02</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2017-08-02</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BFL/ILF/006">BFL/ILF/006</td>
-                    <td data-sort-value="Willow Court, Torrs Park ILFRACOMBE EX34 8AZ" class="data-table__cell--max-width">Willow Court, Torrs Park ILFRACOMBE EX34 8AZ</td>
-                    
-                    <td>-4.130684</td>
-                    
-                    <td>51.206531</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/ILF/006</td>
+                    <td class="data-table__cell--max-width">Willow Court, Torrs Park ILFRACOMBE EX34 8AZ</td>
+                    <td><a href="https://www.northdevon.gov.uk/media/379756/bfl-ilf-006-willow-court-torrs-park-ilfracombe-1-1250.pdf" class="govuk-link">https://www.northdevon.gov.uk/media/379756/bfl-ilf-006-willow-court-torrs-park-ilfracombe-1-1250.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2007-02-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.northdevon.gov.uk/media/379756/bfl-ilf-006-willow-court-torrs-park-ilfracombe-1-1250.pdf" class="govuk-link">https://www.northdevon.gov.uk/media/379756/bfl-ilf-006-willow-court-torrs-park-ilfracombe-1-1250.pdf</a></td>
-
+                    <td>51.206531</td>
+                    <td>-4.130684</td>
+                    <td>0.24</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-08-02</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BFL/ILF/007">BFL/ILF/007</td>
-                    <td data-sort-value="Palm Court Hotel, Runnacleave Road ILFRACOMBE EX34 8AH" class="data-table__cell--max-width">Palm Court Hotel, Runnacleave Road ILFRACOMBE EX34 8AH</td>
-                    
-                    <td>-4.125858</td>
-                    
-                    <td>51.209299</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/ILF/007</td>
+                    <td class="data-table__cell--max-width">Palm Court Hotel, Runnacleave Road ILFRACOMBE EX34 8AH</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>51.209299</td>
+                    <td>-4.125858</td>
+                    <td>0.09</td>
+                    <td>14</td>
+                    <td>23</td>
+                    <td>2017-08-02</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -459,38 +381,27 @@ Site is currently under construction.". "CONVERSION OF HOTEL TO ONE HOUSE & EIGH
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BFL/MOR/008">BFL/MOR/008</td>
-                    <td data-sort-value="Car Park adjacent Sandy Lane Court, Sandy Lane Woolacombe EX34 7DG" class="data-table__cell--max-width">Car Park adjacent Sandy Lane Court, Sandy Lane Woolacombe EX34 7DG</td>
-                    
-                    <td>-4.20633</td>
-                    
-                    <td>51.173535</td>
-                    
-                    <td data-sort-value="0.12">0.12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/MOR/008</td>
+                    <td class="data-table__cell--max-width">Car Park adjacent Sandy Lane Court, Sandy Lane Woolacombe EX34 7DG</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2014-05-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>51.173535</td>
+                    <td>-4.20633</td>
+                    <td>0.12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-08-02</td>
+                    <td>2019-03-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -499,38 +410,27 @@ Site is currently under construction.". "CONVERSION OF HOTEL TO ONE HOUSE & EIGH
                         </details>
                         
                     </td>
-                    <td>2019-03-31</td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BFL/SMO/009">BFL/SMO/009</td>
-                    <td data-sort-value="103 East Street, SOUTH MOLTON EX36 3DF" class="data-table__cell--max-width">103 East Street, SOUTH MOLTON EX36 3DF</td>
-                    
-                    <td>-3.830153</td>
-                    
-                    <td>51.018431</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    <td>2017-07-25</td>
-                    
                     <td>2019-12-03</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/SMO/009</td>
+                    <td class="data-table__cell--max-width">103 East Street, SOUTH MOLTON EX36 3DF</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2008-03-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>51.018431</td>
+                    <td>-3.830153</td>
+                    <td>0.05</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2017-07-25</td>
+                    <td>2018-03-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -539,38 +439,27 @@ Site is currently under construction.". "CONVERSION OF HOTEL TO ONE HOUSE & EIGH
                         </details>
                         
                     </td>
-                    <td>2018-03-31</td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BFL/SMO/010">BFL/SMO/010</td>
-                    <td data-sort-value="The Old Savoy Cinema, New Road SOUTH MOLTON EX36 4BH" class="data-table__cell--max-width">The Old Savoy Cinema, New Road SOUTH MOLTON EX36 4BH</td>
-                    
-                    <td>-3.83157</td>
-                    
-                    <td>51.017843</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-08-02</td>
-                    
                     <td>2019-12-03</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NDE</td>
+                    <td>BFL/SMO/010</td>
+                    <td class="data-table__cell--max-width">The Old Savoy Cinema, New Road SOUTH MOLTON EX36 4BH</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-devon" class="govuk-link">http://opendatacommunities.org/id/district-council/north-devon</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2008-12-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td></td>
-
+                    <td>51.017843</td>
+                    <td>-3.83157</td>
+                    <td>0.03</td>
+                    <td>6</td>
+                    <td>10</td>
+                    <td>2017-08-02</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -581,7 +470,7 @@ The site is currently under construction by a local developer. A new planning pe
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/aeee3c7132caf1234a0a45deecce17dff25e0c65e24d71b16eb6704b59c8867e" class="govuk-link">aeee3c71...</a></td>
                 </tr>
                 
             </tbody>
@@ -590,6 +479,11 @@ The site is currently under construction by a local developer. A new planning pe
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

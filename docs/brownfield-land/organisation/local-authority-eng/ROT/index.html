@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR0002">BR0002</td>
-                    <td data-sort-value="Land off York Road, St Ann's, Rotherham, S65 1PN" class="data-table__cell--max-width">Land off York Road, St Ann's, Rotherham, S65 1PN</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.47">0.47</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    
-                    <td data-sort-value="30.0">30</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0002</td>
+                    <td class="data-table__cell--max-width">Land off York Road, St Ann's, Rotherham, S65 1PN</td>
                     <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0.47</td>
+                    <td>15.0</td>
+                    <td>30.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR0004">BR0004</td>
-                    <td data-sort-value="Land at Boswell Street and Arundel Road, Herringthorpe, Rotherham" class="data-table__cell--max-width">Land at Boswell Street and Arundel Road, Herringthorpe, Rotherham</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.46">0.46</td>
-                    
-                    <td data-sort-value="11.0">11</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0004</td>
+                    <td class="data-table__cell--max-width">Land at Boswell Street and Arundel Road, Herringthorpe, Rotherham</td>
+                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0.46</td>
+                    <td>11.0</td>
+                    <td>15.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR0005">BR0005</td>
-                    <td data-sort-value="Land behind Bradgate Club, Bradgate Lane, Rotherham, S61 1QJ" class="data-table__cell--max-width">Land behind Bradgate Club, Bradgate Lane, Rotherham, S61 1QJ</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.59">0.59</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    
-                    <td data-sort-value="19.0">19</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0005</td>
+                    <td class="data-table__cell--max-width">Land behind Bradgate Club, Bradgate Lane, Rotherham, S61 1QJ</td>
+                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0.59</td>
+                    <td>14.0</td>
+                    <td>19.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR0006">BR0006</td>
-                    <td data-sort-value="Timberyard, Outgang Lane, Dinnington, S25 3QX" class="data-table__cell--max-width">Timberyard, Outgang Lane, Dinnington, S25 3QX</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="7.96">7.96</td>
-                    
-                    <td data-sort-value="167.0">167</td>
-                    
-                    <td data-sort-value="271.0">271</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0006</td>
+                    <td class="data-table__cell--max-width">Timberyard, Outgang Lane, Dinnington, S25 3QX</td>
                     <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>7.96</td>
+                    <td>167.0</td>
+                    <td>271.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR0008">BR0008</td>
-                    <td data-sort-value="Tarmac site off Blyth Road, Maltby, Rotherham, S64 8HJ" class="data-table__cell--max-width">Tarmac site off Blyth Road, Maltby, Rotherham, S64 8HJ</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.95">0.95</td>
-                    
-                    <td data-sort-value="18.0">18</td>
-                    
-                    <td data-sort-value="25.0">25</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0008</td>
+                    <td class="data-table__cell--max-width">Tarmac site off Blyth Road, Maltby, Rotherham, S64 8HJ</td>
+                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-06-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>0.95</td>
+                    <td>18.0</td>
+                    <td>25.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR0009">BR0009</td>
-                    <td data-sort-value="North Farm Close, Harthill, S26 7YH" class="data-table__cell--max-width">North Farm Close, Harthill, S26 7YH</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.75">0.75</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    
-                    <td data-sort-value="17.0">17</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0009</td>
+                    <td class="data-table__cell--max-width">North Farm Close, Harthill, S26 7YH</td>
                     <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0.75</td>
+                    <td>14.0</td>
+                    <td>17.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR0010">BR0010</td>
-                    <td data-sort-value="128-130 Wellgate, Rotherham, S60 2LL" class="data-table__cell--max-width">128-130 Wellgate, Rotherham, S60 2LL</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.65">0.65</td>
-                    
-                    <td data-sort-value="52.0">52</td>
-                    
-                    <td data-sort-value="100.0">100</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0010</td>
+                    <td class="data-table__cell--max-width">128-130 Wellgate, Rotherham, S60 2LL</td>
+                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
                     <td>owned by a public authority</td>
-                    <td>2019-11-29</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>0.65</td>
+                    <td>52.0</td>
+                    <td>100.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR0011">BR0011</td>
-                    <td data-sort-value="Moorgate House, Moorgate Road, Rotherham, S60 2AD" class="data-table__cell--max-width">Moorgate House, Moorgate Road, Rotherham, S60 2AD</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.43">0.43</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="26.0">26</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0011</td>
+                    <td class="data-table__cell--max-width">Moorgate House, Moorgate Road, Rotherham, S60 2AD</td>
                     <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0.43</td>
+                    <td>10.0</td>
+                    <td>26.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR0012">BR0012</td>
-                    <td data-sort-value="Land off Mansfield Road, North of A57, Aston, Rotherham" class="data-table__cell--max-width">Land off Mansfield Road, North of A57, Aston, Rotherham</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.78">0.78</td>
-                    
-                    <td data-sort-value="18.0">18</td>
-                    
-                    <td data-sort-value="24.0">24</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0012</td>
+                    <td class="data-table__cell--max-width">Land off Mansfield Road, North of A57, Aston, Rotherham</td>
+                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-09-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>0.78</td>
+                    <td>18.0</td>
+                    <td>24.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR0013">BR0013</td>
-                    <td data-sort-value="Land to the north west of Doncaster Road, Dalton, Rotherham" class="data-table__cell--max-width">Land to the north west of Doncaster Road, Dalton, Rotherham</td>
-                    
-                    <td></td>
-                    
-                    <td></td>
-                    
-                    <td data-sort-value="0.63">0.63</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    
-                    <td data-sort-value="38.0">38</td>
-                    <td>2017-09-29</td>
-                    
                     <td>2019-12-02</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/rotherham" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/rotherham</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ROT</td>
+                    <td>BR0013</td>
+                    <td class="data-table__cell--max-width">Land to the north west of Doncaster Road, Dalton, Rotherham</td>
                     <td><a href="http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/" class="govuk-link">http://communitymapping.rotherham.gov.uk/Communitymapfindit/findit/</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0.63</td>
+                    <td>15.0</td>
+                    <td>38.0</td>
+                    <td>2017-09-29</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5bb7e25b160e47e5c2ec0c4afa58029a3a71dc799041a2ab61ba9f47aa9abc4a" class="govuk-link">5bb7e25b...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

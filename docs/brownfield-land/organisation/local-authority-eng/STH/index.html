@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR CC 60">BLR CC 60</td>
-                    <td data-sort-value="American Wharf, Elm Street" class="data-table__cell--max-width">American Wharf, Elm Street</td>
-                    
-                    <td>-1.390387</td>
-                    
-                    <td>50.901771</td>
-                    
-                    <td data-sort-value="0.21">0.21</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 60</td>
+                    <td class="data-table__cell--max-width">American Wharf, Elm Street</td>
+                    <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2060" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2060</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-18</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2060" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2060</a></td>
-
+                    <td>50.901771</td>
+                    <td>-1.390387</td>
+                    <td>0.21</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,182 +203,127 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR CC 18">BLR CC 18</td>
-                    <td data-sort-value="Land to rear of 104-106 East Street" class="data-table__cell--max-width">Land to rear of 104-106 East Street</td>
-                    
-                    <td>-1.40181</td>
-                    
-                    <td>50.901515</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 18</td>
+                    <td class="data-table__cell--max-width">Land to rear of 104-106 East Street</td>
                     <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2018" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2018</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.901515</td>
+                    <td>-1.40181</td>
+                    <td>0.06</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR CC 13">BLR CC 13</td>
-                    <td data-sort-value="11 Queensway" class="data-table__cell--max-width">11 Queensway</td>
-                    
-                    <td>-1.401521</td>
-                    
-                    <td>50.899661</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 13</td>
+                    <td class="data-table__cell--max-width">11 Queensway</td>
                     <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2013" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2013</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.899661</td>
+                    <td>-1.401521</td>
+                    <td>0.07</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR CC 30">BLR CC 30</td>
-                    <td data-sort-value="Land adjacent to 2 Northam Rd" class="data-table__cell--max-width">Land adjacent to 2 Northam Rd</td>
-                    
-                    <td>-1.397471</td>
-                    
-                    <td>50.907176</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 30</td>
+                    <td class="data-table__cell--max-width">Land adjacent to 2 Northam Rd</td>
+                    <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2030" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2030</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2030" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2030</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>50.907176</td>
+                    <td>-1.397471</td>
+                    <td>0.03</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR CC 61">BLR CC 61</td>
-                    <td data-sort-value="59-61 St Mary Street" class="data-table__cell--max-width">59-61 St Mary Street</td>
-                    
-                    <td>-1.396923</td>
-                    
-                    <td>50.904421</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 61</td>
+                    <td class="data-table__cell--max-width">59-61 St Mary Street</td>
                     <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2061" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2061</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.904421</td>
+                    <td>-1.396923</td>
+                    <td>0.05</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR CC 29">BLR CC 29</td>
-                    <td data-sort-value="101-119 St Mary Street" class="data-table__cell--max-width">101-119 St Mary Street</td>
-                    
-                    <td>-1.396345</td>
-                    
-                    <td>50.906262</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="58">58</td>
-                    
-                    <td data-sort-value="58">58</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 29</td>
+                    <td class="data-table__cell--max-width">101-119 St Mary Street</td>
+                    <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2029" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2029</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-12-14</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2029" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2029</a></td>
-
+                    <td>50.906262</td>
+                    <td>-1.396345</td>
+                    <td>0.18</td>
+                    <td>58</td>
+                    <td>58</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -399,151 +332,107 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR CC 58">BLR CC 58</td>
-                    <td data-sort-value="Cedar Press" class="data-table__cell--max-width">Cedar Press</td>
-                    
-                    <td>-1.392875</td>
-                    
-                    <td>50.898555</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="122">122</td>
-                    
-                    <td data-sort-value="122">122</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 58</td>
+                    <td class="data-table__cell--max-width">Cedar Press</td>
                     <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2058" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2058</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.898555</td>
+                    <td>-1.392875</td>
+                    <td>0.24</td>
+                    <td>122</td>
+                    <td>122</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR CC 44a">BLR CC 44a</td>
-                    <td data-sort-value="Aviation Museum" class="data-table__cell--max-width">Aviation Museum</td>
-                    
-                    <td>-1.392597</td>
-                    
-                    <td>50.898086</td>
-                    
-                    <td data-sort-value="0.42">0.42</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 44a</td>
+                    <td class="data-table__cell--max-width">Aviation Museum</td>
                     <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2044a" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2044a</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.898086</td>
+                    <td>-1.392597</td>
+                    <td>0.42</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR CC 44b">BLR CC 44b</td>
-                    <td data-sort-value="24-32 Canute Road and 157-159 Albert Road South" class="data-table__cell--max-width">24-32 Canute Road and 157-159 Albert Road South</td>
-                    
-                    <td>-1.392433</td>
-                    
-                    <td>50.897591</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="53">53</td>
-                    
-                    <td data-sort-value="53">53</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 44b</td>
+                    <td class="data-table__cell--max-width">24-32 Canute Road and 157-159 Albert Road South</td>
                     <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2044b" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2044b</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.897591</td>
+                    <td>-1.392433</td>
+                    <td>0.1</td>
+                    <td>53</td>
+                    <td>53</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR CC 57">BLR CC 57</td>
-                    <td data-sort-value="135-141 Albert Road South" class="data-table__cell--max-width">135-141 Albert Road South</td>
-                    
-                    <td>-1.391659</td>
-                    
-                    <td>50.898009</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-11-17</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southampton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southampton</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:STH</td>
+                    <td>BLR CC 57</td>
+                    <td class="data-table__cell--max-width">135-141 Albert Road South</td>
+                    <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2057" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2057</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2057" class="govuk-link">http://www.southampton.gov.uk/planning/planning-policy/brownfield-land-register/brownfield-land-register-map.aspx?FINDLAYER=SCC:BROWNFIELD_REGISTER_EXT&FINDFIELD=SITE_NAME&FINDVALUE=BLR%20CC%2057</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>50.898009</td>
+                    <td>-1.391659</td>
+                    <td>0.07</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-11-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/099c5b0cc29d8022bd42dc28da7ee72bb43ecc20171dff34da9edd4d169a38a9" class="govuk-link">099c5b0c...</a></td>
                 </tr>
                 
             </tbody>
@@ -552,6 +441,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

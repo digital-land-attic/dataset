@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR_Brans_001">BLR_Brans_001</td>
-                    <td data-sort-value="Merryfield Park, Derritt Lane, Bransgore" class="data-table__cell--max-width">Merryfield Park, Derritt Lane, Bransgore</td>
-                    
-                    <td>-1.747586</td>
-                    
-                    <td>50.782055</td>
-                    
-                    <td data-sort-value="0.88">0.88</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Brans_001</td>
+                    <td class="data-table__cell--max-width">Merryfield Park, Derritt Lane, Bransgore</td>
+                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td>50.782055</td>
+                    <td>-1.747586</td>
+                    <td>0.88</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-31</td>
+                    <td>2018-03-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td>2018-03-31</td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR_Fawl_001">BLR_Fawl_001</td>
-                    <td data-sort-value="Methodist Church Land Of Long Lane, Fawley" class="data-table__cell--max-width">Methodist Church Land Of Long Lane, Fawley</td>
-                    
-                    <td>-1.389601</td>
-                    
-                    <td>50.839653</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Fawl_001</td>
+                    <td class="data-table__cell--max-width">Methodist Church Land Of Long Lane, Fawley</td>
+                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-06-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td>50.839653</td>
+                    <td>-1.389601</td>
+                    <td>0.17</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-31</td>
+                    <td>2019-03-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-03-31</td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR_Fawl_002">BLR_Fawl_002</td>
-                    <td data-sort-value="Site of the Former Fawley Power Station, Fawley" class="data-table__cell--max-width">Site of the Former Fawley Power Station, Fawley</td>
-                    
-                    <td>-1.329304</td>
-                    
-                    <td>50.819675</td>
-                    
-                    <td data-sort-value="49.0">49.0</td>
-                    
-                    <td data-sort-value="1380">1380</td>
-                    
-                    <td data-sort-value="1380">1380</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Fawl_002</td>
+                    <td class="data-table__cell--max-width">Site of the Former Fawley Power Station, Fawley</td>
                     <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.819675</td>
+                    <td>-1.329304</td>
+                    <td>49.0</td>
+                    <td>1380</td>
+                    <td>1380</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR_Fording_001">BLR_Fording_001</td>
-                    <td data-sort-value="Unit B Fordingbridge Business Park Ashford Road, Fordingbridge" class="data-table__cell--max-width">Unit B Fordingbridge Business Park Ashford Road, Fordingbridge</td>
-                    
-                    <td>-1.806759</td>
-                    
-                    <td>50.928607</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Fording_001</td>
+                    <td class="data-table__cell--max-width">Unit B Fordingbridge Business Park Ashford Road, Fordingbridge</td>
+                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-04-06</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td>50.928607</td>
+                    <td>-1.806759</td>
+                    <td>0.15</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-31</td>
+                    <td>2019-03-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-03-31</td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR_Fording_002">BLR_Fording_002</td>
-                    <td data-sort-value="Ashford Works, Fordingbridge" class="data-table__cell--max-width">Ashford Works, Fordingbridge</td>
-                    
-                    <td>-1.806299</td>
-                    
-                    <td>50.927304</td>
-                    
-                    <td data-sort-value="0.35">0.35</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Fording_002</td>
+                    <td class="data-table__cell--max-width">Ashford Works, Fordingbridge</td>
                     <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.927304</td>
+                    <td>-1.806299</td>
+                    <td>0.35</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR_Fording_003">BLR_Fording_003</td>
-                    <td data-sort-value="Fordingbridge Club, Roundhill, Fordingbridge" class="data-table__cell--max-width">Fordingbridge Club, Roundhill, Fordingbridge</td>
-                    
-                    <td>-1.790917</td>
-                    
-                    <td>50.927596</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Fording_003</td>
+                    <td class="data-table__cell--max-width">Fordingbridge Club, Roundhill, Fordingbridge</td>
+                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-07-12</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td>50.927596</td>
+                    <td>-1.790917</td>
+                    <td>0.1</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR_Hythe_001">BLR_Hythe_001</td>
-                    <td data-sort-value="2 South Street, Hythe" class="data-table__cell--max-width">2 South Street, Hythe</td>
-                    
-                    <td>-1.397012</td>
-                    
-                    <td>50.868033</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="41">41</td>
-                    
-                    <td data-sort-value="41">41</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Hythe_001</td>
+                    <td class="data-table__cell--max-width">2 South Street, Hythe</td>
+                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-04-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td>50.868033</td>
+                    <td>-1.397012</td>
+                    <td>0.27</td>
+                    <td>41</td>
+                    <td>41</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR_Hythe_002">BLR_Hythe_002</td>
-                    <td data-sort-value="Hythe & Dibden War Memorial Hospital, Beaulieu Road, Hythe" class="data-table__cell--max-width">Hythe & Dibden War Memorial Hospital, Beaulieu Road, Hythe</td>
-                    
-                    <td>-1.402987</td>
-                    
-                    <td>50.858539</td>
-                    
-                    <td data-sort-value="1.5">1.5</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Hythe_002</td>
+                    <td class="data-table__cell--max-width">Hythe & Dibden War Memorial Hospital, Beaulieu Road, Hythe</td>
+                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
                     <td>owned by a public authority</td>
-                    <td>2018-08-03</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td>50.858539</td>
+                    <td>-1.402987</td>
+                    <td>1.5</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR_Hythe_003">BLR_Hythe_003</td>
-                    <td data-sort-value="Former Police Station Site, Jones Lane, Hythe" class="data-table__cell--max-width">Former Police Station Site, Jones Lane, Hythe</td>
-                    
-                    <td>-1.40172</td>
-                    
-                    <td>50.871474</td>
-                    
-                    <td data-sort-value="0.4">0.4</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Hythe_003</td>
+                    <td class="data-table__cell--max-width">Former Police Station Site, Jones Lane, Hythe</td>
                     <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.871474</td>
+                    <td>-1.40172</td>
+                    <td>0.4</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR_Hythe_004">BLR_Hythe_004</td>
-                    <td data-sort-value="1-20 Marsh Parade, Hythe" class="data-table__cell--max-width">1-20 Marsh Parade, Hythe</td>
-                    
-                    <td>-1.399894</td>
-                    
-                    <td>50.869841</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2020-03-24</td>
+                    <td>local-authority-eng:NEW</td>
+                    <td>BLR_Hythe_004</td>
+                    <td class="data-table__cell--max-width">1-20 Marsh Parade, Hythe</td>
+                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/new-forest" class="govuk-link">http://opendatacommunities.org/id/district-council/new-forest</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2002-03-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf" class="govuk-link">http://www.newforest.gov.uk/media/39728/Brownfield-Land-Register-Site-Location-Maps/Pdf/Brownfield_Land_Register_Site_Location_Maps_Update_March_2020.pdf</a></td>
-
+                    <td>50.869841</td>
+                    <td>-1.399894</td>
+                    <td>0.2</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-31</td>
+                    <td>2018-06-29</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td>2018-06-29</td>
+                    <td><a href="https://digital-land.github.io/resource/325bfbb3c1555b5aab52040f7491dca408ae32da52ea0fb8d0e88df4ead0a43a" class="govuk-link">325bfbb3...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="UPRN:010008993390">UPRN:010008993390</td>
-                    <td data-sort-value="Land Adjacent 3 Disraeli Road, Forest Gate, London, E7 9JR" class="data-table__cell--max-width">Land Adjacent 3 Disraeli Road, Forest Gate, London, E7 9JR</td>
-                    
-                    <td>0.021816</td>
-                    
-                    <td>51.545353</td>
-                    
-                    <td data-sort-value="0.026">0.026</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:010008993390</td>
+                    <td class="data-table__cell--max-width">Land Adjacent 3 Disraeli Road, Forest Gate, London, E7 9JR</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-11-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.545353</td>
+                    <td>0.021816</td>
+                    <td>0.026</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="UPRN:010009017702">UPRN:010009017702</td>
-                    <td data-sort-value="313-319 Katherine Road, Forest Gate, London, E7 8PJ" class="data-table__cell--max-width">313-319 Katherine Road, Forest Gate, London, E7 8PJ</td>
-                    
-                    <td>0.038846</td>
-                    
-                    <td>51.539884</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:010009017702</td>
+                    <td class="data-table__cell--max-width">313-319 Katherine Road, Forest Gate, London, E7 8PJ</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-10-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.539884</td>
+                    <td>0.038846</td>
+                    <td>0.06</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="UPRN:010034509461">UPRN:010034509461</td>
-                    <td data-sort-value="656-666 Romford Road, Manor Park, London, E12 5AQ" class="data-table__cell--max-width">656-666 Romford Road, Manor Park, London, E12 5AQ</td>
-                    
-                    <td>0.050007</td>
-                    
-                    <td>51.55135</td>
-                    
-                    <td data-sort-value="0.096">0.096</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="28">28</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:010034509461</td>
+                    <td class="data-table__cell--max-width">656-666 Romford Road, Manor Park, London, E12 5AQ</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-10-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.55135</td>
+                    <td>0.050007</td>
+                    <td>0.096</td>
+                    <td>10</td>
+                    <td>28</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="UPRN:010008996671">UPRN:010008996671</td>
-                    <td data-sort-value="2A Michigan Avenue, Manor Park, London, E12 5JD" class="data-table__cell--max-width">2A Michigan Avenue, Manor Park, London, E12 5JD</td>
-                    
-                    <td>0.053898</td>
-                    
-                    <td>51.553355</td>
-                    
-                    <td data-sort-value="0.043">0.043</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:010008996671</td>
+                    <td class="data-table__cell--max-width">2A Michigan Avenue, Manor Park, London, E12 5JD</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-05-30</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.553355</td>
+                    <td>0.053898</td>
+                    <td>0.043</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -336,38 +291,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="UPRN:010023994688">UPRN:010023994688</td>
-                    <td data-sort-value="59 Southern Road, Plaistow, London, E13 9JD" class="data-table__cell--max-width">59 Southern Road, Plaistow, London, E13 9JD</td>
-                    
-                    <td>0.031621</td>
-                    
-                    <td>51.530952</td>
-                    
-                    <td data-sort-value="0.104">0.104</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:010023994688</td>
+                    <td class="data-table__cell--max-width">59 Southern Road, Plaistow, London, E13 9JD</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-05-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.530952</td>
+                    <td>0.031621</td>
+                    <td>0.104</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -376,38 +320,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="UPRN:000046251892">UPRN:000046251892</td>
-                    <td data-sort-value="Land Adjacent 19 Woolwich Manor Way, North Woolwich, London, E16 2NJ" class="data-table__cell--max-width">Land Adjacent 19 Woolwich Manor Way, North Woolwich, London, E16 2NJ</td>
-                    
-                    <td>0.069043</td>
-                    
-                    <td>51.501088</td>
-                    
-                    <td data-sort-value="0.035">0.035</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:000046251892</td>
+                    <td class="data-table__cell--max-width">Land Adjacent 19 Woolwich Manor Way, North Woolwich, London, E16 2NJ</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-04-12</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.501088</td>
+                    <td>0.069043</td>
+                    <td>0.035</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -416,38 +349,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="UPRN:010094370739">UPRN:010094370739</td>
-                    <td data-sort-value="Site at Radlett Close, Forest Gate, London, E7 9JF" class="data-table__cell--max-width">Site at Radlett Close, Forest Gate, London, E7 9JF</td>
-                    
-                    <td>0.016972</td>
-                    
-                    <td>51.545534</td>
-                    
-                    <td data-sort-value="0.086">0.086</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="7">7</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:010094370739</td>
+                    <td class="data-table__cell--max-width">Site at Radlett Close, Forest Gate, London, E7 9JF</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-04-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.545534</td>
+                    <td>0.016972</td>
+                    <td>0.086</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -456,38 +378,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="UPRN:010008992217">UPRN:010008992217</td>
-                    <td data-sort-value="12-14 Upton Lane, Forest Gate, London, E7 9LN" class="data-table__cell--max-width">12-14 Upton Lane, Forest Gate, London, E7 9LN</td>
-                    
-                    <td>0.025537</td>
-                    
-                    <td>51.545729</td>
-                    
-                    <td data-sort-value="0.033">0.033</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:010008992217</td>
+                    <td class="data-table__cell--max-width">12-14 Upton Lane, Forest Gate, London, E7 9LN</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-03-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.545729</td>
+                    <td>0.025537</td>
+                    <td>0.033</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -496,38 +407,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="UPRN:010008992232">UPRN:010008992232</td>
-                    <td data-sort-value="61-63 Upton Lane, Forest Gate, London, E7 9PB" class="data-table__cell--max-width">61-63 Upton Lane, Forest Gate, London, E7 9PB</td>
-                    
-                    <td>0.02651</td>
-                    
-                    <td>51.543645</td>
-                    
-                    <td data-sort-value="0.042">0.042</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:010008992232</td>
+                    <td class="data-table__cell--max-width">61-63 Upton Lane, Forest Gate, London, E7 9PB</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-12-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.543645</td>
+                    <td>0.02651</td>
+                    <td>0.042</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -536,40 +436,28 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="UPRN:
-000046098532">UPRN:
+                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NWM</td>
+                    <td>UPRN:
 000046098532</td>
-                    <td data-sort-value="Baptist Tabernacle, West Ham Lane, Stratford, London, E15 4PT" class="data-table__cell--max-width">Baptist Tabernacle, West Ham Lane, Stratford, London, E15 4PT</td>
-                    
-                    <td>0.006331</td>
-                    
-                    <td>51.53638</td>
-                    
-                    <td data-sort-value="0.049">0.049</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td class="data-table__cell--max-width">Baptist Tabernacle, West Ham Lane, Stratford, London, E15 4PT</td>
+                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/newham" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/newham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-12-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d" class="govuk-link">https://lbnewham.maps.arcgis.com/apps/webappviewer/index.html?id=730d34968dea4214a10e7d378f37ef2d</a></td>
-
+                    <td>51.53638</td>
+                    <td>0.006331</td>
+                    <td>0.049</td>
+                    <td>15</td>
+                    <td>17</td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -578,7 +466,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0eabbcf511b826780dbb52f492f6e2e00b3366148cc1a1e0a499132b7eefee45" class="govuk-link">0eabbcf5...</a></td>
                 </tr>
                 
             </tbody>
@@ -587,6 +475,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

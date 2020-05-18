@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,95 +154,72 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="P/BLR/0043">P/BLR/0043</td>
-                    <td data-sort-value="Voyager House, 253-257 High Street North, Poole, BH15 1DX" class="data-table__cell--max-width">Voyager House, 253-257 High Street North, Poole, BH15 1DX</td>
-                    
-                    <td>-1.978312</td>
-                    
-                    <td>50.719257</td>
-                    
-                    <td data-sort-value="0.293">0.293</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
                     <td>2017-01-12</td>
-                    
-                    <td>2017-01-12</td>
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0043</td>
+                    <td class="data-table__cell--max-width">Voyager House, 253-257 High Street North, Poole, BH15 1DX</td>
+                    <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-10-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td>50.719257</td>
+                    <td>-1.978312</td>
+                    <td>0.293</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="P/BLR/0054">P/BLR/0054</td>
-                    <td data-sort-value="Land between Wilkins Way & RNLI, Poole" class="data-table__cell--max-width">Land between Wilkins Way & RNLI, Poole</td>
-                    
-                    <td>-1.990465</td>
-                    
-                    <td>50.716069</td>
-                    
-                    <td data-sort-value="0.619">0.619</td>
-                    
-                    <td data-sort-value="203">203</td>
-                    
-                    <td data-sort-value="203">203</td>
-                    <td>2017-01-12</td>
-                    
                     <td>2018-01-12</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0054</td>
+                    <td class="data-table__cell--max-width">Land between Wilkins Way & RNLI, Poole</td>
                     <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.716069</td>
+                    <td>-1.990465</td>
+                    <td>0.619</td>
+                    <td>203</td>
+                    <td>203</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -251,38 +228,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="P/BLR/0072">P/BLR/0072</td>
-                    <td data-sort-value="Civic Centre and surrounds" class="data-table__cell--max-width">Civic Centre and surrounds</td>
-                    
-                    <td>-1.961107</td>
-                    
-                    <td>50.722683</td>
-                    
-                    <td data-sort-value="2.455">2.455</td>
-                    
-                    <td data-sort-value="283">283</td>
-                    
-                    <td data-sort-value="283">283</td>
-                    <td>2017-01-12</td>
-                    
                     <td>2018-01-12</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0072</td>
+                    <td class="data-table__cell--max-width">Civic Centre and surrounds</td>
                     <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.722683</td>
+                    <td>-1.961107</td>
+                    <td>2.455</td>
+                    <td>283</td>
+                    <td>283</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -291,38 +257,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="P/BLR/0076">P/BLR/0076</td>
-                    <td data-sort-value="Oakdale Public Buildings" class="data-table__cell--max-width">Oakdale Public Buildings</td>
-                    
-                    <td>-1.977056</td>
-                    
-                    <td>50.732624</td>
-                    
-                    <td data-sort-value="0.777">0.777</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    <td>2017-01-12</td>
-                    
                     <td>2018-01-12</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0076</td>
+                    <td class="data-table__cell--max-width">Oakdale Public Buildings</td>
                     <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.732624</td>
+                    <td>-1.977056</td>
+                    <td>0.777</td>
+                    <td>60</td>
+                    <td>60</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,38 +286,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="P/BLR/0061">P/BLR/0061</td>
-                    <td data-sort-value="St Mary's Maternity Hospital site, St. Mary's Road, Poole, BH15 2BH" class="data-table__cell--max-width">St Mary's Maternity Hospital site, St. Mary's Road, Poole, BH15 2BH</td>
-                    
-                    <td>-1.97493</td>
-                    
-                    <td>50.72267</td>
-                    
-                    <td data-sort-value="0.754">0.754</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    <td>2017-01-12</td>
-                    
                     <td>2018-01-12</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0061</td>
+                    <td class="data-table__cell--max-width">St Mary's Maternity Hospital site, St. Mary's Road, Poole, BH15 2BH</td>
                     <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.72267</td>
+                    <td>-1.97493</td>
+                    <td>0.754</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -371,38 +315,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="P/BLR/0075">P/BLR/0075</td>
-                    <td data-sort-value="Beach Road Car Park" class="data-table__cell--max-width">Beach Road Car Park</td>
-                    
-                    <td>-1.914258</td>
-                    
-                    <td>50.70609</td>
-                    
-                    <td data-sort-value="0.364">0.364</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    <td>2017-01-12</td>
-                    
                     <td>2018-01-12</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0075</td>
+                    <td class="data-table__cell--max-width">Beach Road Car Park</td>
                     <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.70609</td>
+                    <td>-1.914258</td>
+                    <td>0.364</td>
+                    <td>60</td>
+                    <td>60</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -411,38 +344,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="P/BLR/0071">P/BLR/0071</td>
-                    <td data-sort-value="Hillbourne" class="data-table__cell--max-width">Hillbourne</td>
-                    
-                    <td>-1.994366</td>
-                    
-                    <td>50.751057</td>
-                    
-                    <td data-sort-value="4.676">4.676</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    <td>2017-01-12</td>
-                    
                     <td>2018-01-12</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0071</td>
+                    <td class="data-table__cell--max-width">Hillbourne</td>
                     <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.751057</td>
+                    <td>-1.994366</td>
+                    <td>4.676</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -451,38 +373,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="P/BLR/0074">P/BLR/0074</td>
-                    <td data-sort-value="Sopers Lane" class="data-table__cell--max-width">Sopers Lane</td>
-                    
-                    <td>-1.99883</td>
-                    
-                    <td>50.746514</td>
-                    
-                    <td data-sort-value="1.993">1.993</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    <td>2017-01-12</td>
-                    
                     <td>2018-01-12</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0074</td>
+                    <td class="data-table__cell--max-width">Sopers Lane</td>
                     <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.746514</td>
+                    <td>-1.99883</td>
+                    <td>1.993</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -491,38 +402,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="P/BLR/0069">P/BLR/0069</td>
-                    <td data-sort-value="Creekmoor Local Centre" class="data-table__cell--max-width">Creekmoor Local Centre</td>
-                    
-                    <td>-2.002992</td>
-                    
-                    <td>50.741433</td>
-                    
-                    <td data-sort-value="1.238">1.238</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    <td>2017-01-12</td>
-                    
                     <td>2018-01-12</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0069</td>
+                    <td class="data-table__cell--max-width">Creekmoor Local Centre</td>
                     <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td></td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.741433</td>
+                    <td>-2.002992</td>
+                    <td>1.238</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -531,43 +431,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="P/BLR/0073">P/BLR/0073</td>
-                    <td data-sort-value="Parrs" class="data-table__cell--max-width">Parrs</td>
-                    
-                    <td>-1.922983</td>
-                    
-                    <td>50.729296</td>
-                    
-                    <td data-sort-value="0.836">0.836</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
                     <td>2017-01-12</td>
-                    
-                    <td>2017-01-12</td>
+                    <td>local-authority-eng:BPC</td>
+                    <td>P/BLR/0073</td>
+                    <td class="data-table__cell--max-width">Parrs</td>
+                    <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bournemouth-christchurch-and-poole</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-11-25</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf" class="govuk-link">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a></td>
-
+                    <td>50.729296</td>
+                    <td>-1.922983</td>
+                    <td>0.836</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-01-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713" class="govuk-link">a630588f...</a></td>
                 </tr>
                 
             </tbody>
@@ -576,6 +465,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

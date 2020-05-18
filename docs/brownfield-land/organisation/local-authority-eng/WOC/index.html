@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,388 +154,277 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="SWDP44/5">SWDP44/5</td>
-                    <td data-sort-value="Carden Street Opportunity Zone" class="data-table__cell--max-width">Carden Street Opportunity Zone</td>
-                    
-                    <td>-2.215937</td>
-                    
-                    <td>52.19044</td>
-                    
-                    <td data-sort-value="3.9">3.9</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP44/5</td>
+                    <td class="data-table__cell--max-width">Carden Street Opportunity Zone</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Carden%20Street%20Opportunity%20Zone%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Carden%20Street%20Opportunity%20Zone%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>mixed ownership</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Carden%20Street%20Opportunity%20Zone%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Carden%20Street%20Opportunity%20Zone%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.19044</td>
+                    <td>-2.215937</td>
+                    <td>3.9</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="SWDP44/4">SWDP44/4</td>
-                    <td data-sort-value="Shrub Hill Opportunity Zone" class="data-table__cell--max-width">Shrub Hill Opportunity Zone</td>
-                    
-                    <td>-2.211276</td>
-                    
-                    <td>52.195266</td>
-                    
-                    <td data-sort-value="19.72">19.72</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP44/4</td>
+                    <td class="data-table__cell--max-width">Shrub Hill Opportunity Zone</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Shrub%20Hill%20Opportunity%20Zone%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Shrub%20Hill%20Opportunity%20Zone%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Shrub%20Hill%20Opportunity%20Zone%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Shrub%20Hill%20Opportunity%20Zone%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.195266</td>
+                    <td>-2.211276</td>
+                    <td>19.72</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="SWDP43/w">SWDP43/w</td>
-                    <td data-sort-value="23-24 Foregate Street" class="data-table__cell--max-width">23-24 Foregate Street</td>
-                    
-                    <td>-2.221975</td>
-                    
-                    <td>52.196156</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP43/w</td>
+                    <td class="data-table__cell--max-width">23-24 Foregate Street</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=23-24%20Foregate%20Street.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=23-24%20Foregate%20Street.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=23-24%20Foregate%20Street.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=23-24%20Foregate%20Street.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.196156</td>
+                    <td>-2.221975</td>
+                    <td>0.1</td>
+                    <td>5.0</td>
+                    <td>10.0</td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="SWDP43/t">SWDP43/t</td>
-                    <td data-sort-value="Commandery Coach Depot, Tolladine Road" class="data-table__cell--max-width">Commandery Coach Depot, Tolladine Road</td>
-                    
-                    <td>-2.180756</td>
-                    
-                    <td>52.207448</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    
-                    <td data-sort-value="7.0">7</td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP43/t</td>
+                    <td class="data-table__cell--max-width">Commandery Coach Depot, Tolladine Road</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Commandery%20Coach%20Depot%2C%20Tolladine%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Commandery%20Coach%20Depot%2C%20Tolladine%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Commandery%20Coach%20Depot%2C%20Tolladine%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Commandery%20Coach%20Depot%2C%20Tolladine%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.207448</td>
+                    <td>-2.180756</td>
+                    <td>0.07</td>
+                    <td>5.0</td>
+                    <td>7.0</td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="SWDP43/s">SWDP43/s</td>
-                    <td data-sort-value="Rose Avenue" class="data-table__cell--max-width">Rose Avenue</td>
-                    
-                    <td>-2.201603</td>
-                    
-                    <td>52.198356</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP43/s</td>
+                    <td class="data-table__cell--max-width">Rose Avenue</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Rose%20Avenue%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Rose%20Avenue%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Rose%20Avenue%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Rose%20Avenue%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.198356</td>
+                    <td>-2.201603</td>
+                    <td>0.18</td>
+                    <td>5.0</td>
+                    <td>8.0</td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="SWDP43/r">SWDP43/r</td>
-                    <td data-sort-value="The Bridge Inn, Lowesmoor Terrace" class="data-table__cell--max-width">The Bridge Inn, Lowesmoor Terrace</td>
-                    
-                    <td>-2.215645</td>
-                    
-                    <td>52.195967</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP43/r</td>
+                    <td class="data-table__cell--max-width">The Bridge Inn, Lowesmoor Terrace</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=The%20Bridge%20Inn%2C%20Lowesmoor%20Terrace%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=The%20Bridge%20Inn%2C%20Lowesmoor%20Terrace%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=The%20Bridge%20Inn%2C%20Lowesmoor%20Terrace%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=The%20Bridge%20Inn%2C%20Lowesmoor%20Terrace%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.195967</td>
+                    <td>-2.215645</td>
+                    <td>0.1</td>
+                    <td>5.0</td>
+                    <td>9.0</td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="SWDP43/q">SWDP43/q</td>
-                    <td data-sort-value="79 St Johns" class="data-table__cell--max-width">79 St Johns</td>
-                    
-                    <td>-2.235188</td>
-                    
-                    <td>52.186872</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP43/q</td>
+                    <td class="data-table__cell--max-width">79 St Johns</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=79%20St%20Johns%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=79%20St%20Johns%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>other</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=79%20St%20Johns%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=79%20St%20Johns%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.186872</td>
+                    <td>-2.235188</td>
+                    <td>0.05</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="SWDP43/m">SWDP43/m</td>
-                    <td data-sort-value="Former Club House, Tolladine Golf Course" class="data-table__cell--max-width">Former Club House, Tolladine Golf Course</td>
-                    
-                    <td>-2.188366</td>
-                    
-                    <td>52.199268</td>
-                    
-                    <td data-sort-value="0.5">0.5</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP43/m</td>
+                    <td class="data-table__cell--max-width">Former Club House, Tolladine Golf Course</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Former%20Club%20House%20Tolladine%20Golf%20Course%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Former%20Club%20House%20Tolladine%20Golf%20Course%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Former%20Club%20House%20Tolladine%20Golf%20Course%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Former%20Club%20House%20Tolladine%20Golf%20Course%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.199268</td>
+                    <td>-2.188366</td>
+                    <td>0.5</td>
+                    <td>9.0</td>
+                    <td>15.0</td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="SWDP43/h">SWDP43/h</td>
-                    <td data-sort-value="Laugherne Garage, Bransford Road" class="data-table__cell--max-width">Laugherne Garage, Bransford Road</td>
-                    
-                    <td>-2.253973</td>
-                    
-                    <td>52.183961</td>
-                    
-                    <td data-sort-value="0.44">0.44</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP43/h</td>
+                    <td class="data-table__cell--max-width">Laugherne Garage, Bransford Road</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Bransford%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Bransford%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Bransford%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Bransford%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.183961</td>
+                    <td>-2.253973</td>
+                    <td>0.44</td>
+                    <td>8.0</td>
+                    <td>10.0</td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="SWDP43/g">SWDP43/g</td>
-                    <td data-sort-value="County Council Offices, Bilford Road" class="data-table__cell--max-width">County Council Offices, Bilford Road</td>
-                    
-                    <td>-2.216007</td>
-                    
-                    <td>52.213017</td>
-                    
-                    <td data-sort-value="0.67">0.67</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    
-                    <td data-sort-value="20.0">20</td>
-                    <td>2017-08-04</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:WOC</td>
+                    <td>SWDP43/g</td>
+                    <td class="data-table__cell--max-width">County Council Offices, Bilford Road</td>
+                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Bilford%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Bilford%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/worcester" class="govuk-link">http://opendatacommunities.org/id/district-council/worcester</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Bilford%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files" class="govuk-link">https://www.worcester.gov.uk/?option=com_fileman&view=file&routed=1&name=Bilford%20Road%20-%20Site%20Plan.pdf&folder=PDF%20Documents%2FPlanning%2Fplanning_policy%2Fbrownfieldsites&container=fileman-files</a></td>
-
+                    <td>52.213017</td>
+                    <td>-2.216007</td>
+                    <td>0.67</td>
+                    <td>15.0</td>
+                    <td>20.0</td>
+                    <td>2017-08-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dae00a2f84301c3729f72e7f035ae4de2d518b28264d1a890f2430040512027f" class="govuk-link">dae00a2f...</a></td>
                 </tr>
                 
             </tbody>
@@ -544,6 +433,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="WDC001">WDC001</td>
-                    <td data-sort-value="Neeves Pit Normanston Drive Lowestoft Suffolk" class="data-table__cell--max-width">Neeves Pit Normanston Drive Lowestoft Suffolk</td>
-                    
-                    <td>1.722135</td>
-                    
-                    <td>52.482036</td>
-                    
-                    <td data-sort-value="2.54">2.54</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC001</td>
+                    <td class="data-table__cell--max-width">Neeves Pit Normanston Drive Lowestoft Suffolk</td>
                     <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.482036</td>
+                    <td>1.722135</td>
+                    <td>2.54</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="WDC002">WDC002</td>
-                    <td data-sort-value="Monckton Avenue Nursery Lowestoft Suffolk" class="data-table__cell--max-width">Monckton Avenue Nursery Lowestoft Suffolk</td>
-                    
-                    <td>1.724297</td>
-                    
-                    <td>52.48391</td>
-                    
-                    <td data-sort-value="1.52">1.52</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC002</td>
+                    <td class="data-table__cell--max-width">Monckton Avenue Nursery Lowestoft Suffolk</td>
                     <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.48391</td>
+                    <td>1.724297</td>
+                    <td>1.52</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="WDC003">WDC003</td>
-                    <td data-sort-value="Telephone Exchange Lower Olland Street Bungay Suffolk" class="data-table__cell--max-width">Telephone Exchange Lower Olland Street Bungay Suffolk</td>
-                    
-                    <td>1.439795</td>
-                    
-                    <td>52.452786</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC003</td>
+                    <td class="data-table__cell--max-width">Telephone Exchange Lower Olland Street Bungay Suffolk</td>
                     <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.452786</td>
+                    <td>1.439795</td>
+                    <td>0.26</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="WDC004">WDC004</td>
-                    <td data-sort-value="Brooke Business Park Lowestoft Suffolk" class="data-table__cell--max-width">Brooke Business Park Lowestoft Suffolk</td>
-                    
-                    <td>1.724245</td>
-                    
-                    <td>52.474935</td>
-                    
-                    <td data-sort-value="11.93">11.93</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC004</td>
+                    <td class="data-table__cell--max-width">Brooke Business Park Lowestoft Suffolk</td>
+                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-08-17</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td>52.474935</td>
+                    <td>1.724245</td>
+                    <td>11.93</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="WDC005">WDC005</td>
-                    <td data-sort-value="Former Sanyo site Lowestoft Suffolk" class="data-table__cell--max-width">Former Sanyo site Lowestoft Suffolk</td>
-                    
-                    <td>1.721705</td>
-                    
-                    <td>52.472757</td>
-                    
-                    <td data-sort-value="8.06">8.06</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC005</td>
+                    <td class="data-table__cell--max-width">Former Sanyo site Lowestoft Suffolk</td>
+                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-01-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td>52.472757</td>
+                    <td>1.721705</td>
+                    <td>8.06</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="WDC006">WDC006</td>
-                    <td data-sort-value="Part Former Jeld Wen site Lowestoft Suffolk" class="data-table__cell--max-width">Part Former Jeld Wen site Lowestoft Suffolk</td>
-                    
-                    <td>1.730403</td>
-                    
-                    <td>52.471808</td>
-                    
-                    <td data-sort-value="6.08">6.08</td>
-                    
-                    <td data-sort-value="250">250</td>
-                    
-                    <td data-sort-value="300">300</td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC006</td>
+                    <td class="data-table__cell--max-width">Part Former Jeld Wen site Lowestoft Suffolk</td>
                     <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.471808</td>
+                    <td>1.730403</td>
+                    <td>6.08</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="WDC007">WDC007</td>
-                    <td data-sort-value="Oswald’s Boatyard Lowestoft Suffolk" class="data-table__cell--max-width">Oswald’s Boatyard Lowestoft Suffolk</td>
-                    
-                    <td>1.712346</td>
-                    
-                    <td>52.475148</td>
-                    
-                    <td data-sort-value="0.7">0.7</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC007</td>
+                    <td class="data-table__cell--max-width">Oswald’s Boatyard Lowestoft Suffolk</td>
+                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-02-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td>52.475148</td>
+                    <td>1.712346</td>
+                    <td>0.7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="WDC008">WDC008</td>
-                    <td data-sort-value="Builders Direct Supply Co Ltd South Elmham Terrace Lowestoft Suffolk NR33 9NH" class="data-table__cell--max-width">Builders Direct Supply Co Ltd South Elmham Terrace Lowestoft Suffolk NR33 9NH</td>
-                    
-                    <td>1.712502</td>
-                    
-                    <td>52.472795</td>
-                    
-                    <td data-sort-value="0.98">0.98</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC008</td>
+                    <td class="data-table__cell--max-width">Builders Direct Supply Co Ltd South Elmham Terrace Lowestoft Suffolk NR33 9NH</td>
+                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-10</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td>52.472795</td>
+                    <td>1.712502</td>
+                    <td>0.98</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="WDC009">WDC009</td>
-                    <td data-sort-value="Former H M Prison Blundeston Lakeside Rise Blundeston Suffolk" class="data-table__cell--max-width">Former H M Prison Blundeston Lakeside Rise Blundeston Suffolk</td>
-                    
-                    <td>1.70505</td>
-                    
-                    <td>52.510475</td>
-                    
-                    <td data-sort-value="9.86">9.86</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC009</td>
+                    <td class="data-table__cell--max-width">Former H M Prison Blundeston Lakeside Rise Blundeston Suffolk</td>
+                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-06-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td>52.510475</td>
+                    <td>1.70505</td>
+                    <td>9.86</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="WDC010">WDC010</td>
-                    <td data-sort-value="Hillside Garage Hillside Road East Bungay Suffolk NR35 1RX" class="data-table__cell--max-width">Hillside Garage Hillside Road East Bungay Suffolk NR35 1RX</td>
-                    
-                    <td>1.447398</td>
-                    
-                    <td>52.44929</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2017-12-01</td>
-                    
-                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WAV</td>
+                    <td>WDC010</td>
+                    <td class="data-table__cell--max-width">Hillside Garage Hillside Road East Bungay Suffolk NR35 1RX</td>
+                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/waveney" class="govuk-link">http://opendatacommunities.org/id/district-council/waveney</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2006-11-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188" class="govuk-link">http://waveney.maps.arcgis.com/apps/MapJournal/index.html?appid=1a787ff0d2604387987c86ac1ae56188</a></td>
-
+                    <td>52.44929</td>
+                    <td>1.447398</td>
+                    <td>0.26</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/bedb897fb5dcb787c0307cc21b9e3a56c1f4630f328ab4ec60bf04999dcf3104" class="govuk-link">bedb897f...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

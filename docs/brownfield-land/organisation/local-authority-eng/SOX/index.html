@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="P17/S4127/PDO">P17/S4127/PDO</td>
-                    <td data-sort-value="Building 1 (DAF Trucks) Kingsmead Business Park Howland Road Thame, OX9 3FB" class="data-table__cell--max-width">Building 1 (DAF Trucks) Kingsmead Business Park Howland Road Thame, OX9 3FB</td>
-                    
-                    <td>-0.958559</td>
-                    
-                    <td>51.741176</td>
-                    
-                    <td data-sort-value="1.14">1.14</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    <td>2018-12-03</td>
-                    
                     <td>2018-12-21</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P17/S4127/PDO</td>
+                    <td class="data-table__cell--max-width">Building 1 (DAF Trucks) Kingsmead Business Park Howland Road Thame, OX9 3FB</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P17_S4127_PDO-V2.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P17_S4127_PDO-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-01-17</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P17_S4127_PDO-V2.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P17_S4127_PDO-V2.pdf</a></td>
-
+                    <td>51.741176</td>
+                    <td>-0.958559</td>
+                    <td>1.14</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>2018-12-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="P17/S1865/FUL">P17/S1865/FUL</td>
-                    <td data-sort-value="The Railway Hotel24 Station RoadWheatley OX33 1ST" class="data-table__cell--max-width">The Railway Hotel24 Station RoadWheatley OX33 1ST</td>
-                    
-                    <td>-1.139877</td>
-                    
-                    <td>51.746373</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2018-12-03</td>
-                    
                     <td>2018-12-21</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P17/S1865/FUL</td>
+                    <td class="data-table__cell--max-width">The Railway Hotel24 Station RoadWheatley OX33 1ST</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P17_S1865_FUL-V2.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P17_S1865_FUL-V2.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-03-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P17_S1865_FUL-V2.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P17_S1865_FUL-V2.pdf</a></td>
-
+                    <td>51.746373</td>
+                    <td>-1.139877</td>
+                    <td>0.26</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2018-12-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="P17/S3501/FUL">P17/S3501/FUL</td>
-                    <td data-sort-value="69-71 Peppard Road Sonning Common RG4 9RN" class="data-table__cell--max-width">69-71 Peppard Road Sonning Common RG4 9RN</td>
-                    
-                    <td>-0.976157</td>
-                    
-                    <td>51.517736</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2018-12-03</td>
-                    
                     <td>2018-12-21</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P17/S3501/FUL</td>
+                    <td class="data-table__cell--max-width">69-71 Peppard Road Sonning Common RG4 9RN</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P17_S3501_FUL.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P17_S3501_FUL.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P17_S3501_FUL.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P17_S3501_FUL.pdf</a></td>
-
+                    <td>51.517736</td>
+                    <td>-0.976157</td>
+                    <td>0.17</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2018-12-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="P12/S1424/FUL">P12/S1424/FUL</td>
-                    <td data-sort-value="Townlands Hospital York Road HENLEY-ON-THAMES RG9 2EB" class="data-table__cell--max-width">Townlands Hospital York Road HENLEY-ON-THAMES RG9 2EB</td>
-                    
-                    <td>-0.909224</td>
-                    
-                    <td>51.538983</td>
-                    
-                    <td data-sort-value="2.4">2.4</td>
-                    
-                    <td data-sort-value="97">97</td>
-                    
-                    <td data-sort-value="97">97</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P12/S1424/FUL</td>
+                    <td class="data-table__cell--max-width">Townlands Hospital York Road HENLEY-ON-THAMES RG9 2EB</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P12S1424FUL_Townlands%20Hospital.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P12S1424FUL_Townlands%20Hospital.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-03-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P12S1424FUL_Townlands%20Hospital.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P12S1424FUL_Townlands%20Hospital.pdf</a></td>
-
+                    <td>51.538983</td>
+                    <td>-0.909224</td>
+                    <td>2.4</td>
+                    <td>97</td>
+                    <td>97</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,40 +290,28 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="P15/S1880/O
-(SHELAA: 184)">P15/S1880/O
+                    <td>2017-12-22</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P15/S1880/O
 (SHELAA: 184)</td>
-                    <td data-sort-value="Didcot A" class="data-table__cell--max-width">Didcot A</td>
-                    
-                    <td>-1.262269</td>
-                    
-                    <td>51.617487</td>
-                    
-                    <td data-sort-value="9.7">9.7</td>
-                    
-                    <td data-sort-value="280">280</td>
-                    
-                    <td data-sort-value="400">400</td>
-                    <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td class="data-table__cell--max-width">Didcot A</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P15S1880O_Didcot%20A.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P15S1880O_Didcot%20A.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P15S1880O_Didcot%20A.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P15S1880O_Didcot%20A.pdf</a></td>
-
+                    <td>51.617487</td>
+                    <td>-1.262269</td>
+                    <td>9.7</td>
+                    <td>280</td>
+                    <td>400</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -377,38 +320,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="P15/S2685/FUL">P15/S2685/FUL</td>
-                    <td data-sort-value="Woodcote NDP Site 16: Former Reservoir site, Greenmore" class="data-table__cell--max-width">Woodcote NDP Site 16: Former Reservoir site, Greenmore</td>
-                    
-                    <td>-1.068691</td>
-                    
-                    <td>51.527292</td>
-                    
-                    <td data-sort-value="0.45">0.45</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P15/S2685/FUL</td>
+                    <td class="data-table__cell--max-width">Woodcote NDP Site 16: Former Reservoir site, Greenmore</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P15S2685FUL_Woodcote%20NDP%20Site%2016.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P15S2685FUL_Woodcote%20NDP%20Site%2016.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P15S2685FUL_Woodcote%20NDP%20Site%2016.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P15S2685FUL_Woodcote%20NDP%20Site%2016.pdf</a></td>
-
+                    <td>51.527292</td>
+                    <td>-1.068691</td>
+                    <td>0.45</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -417,38 +349,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="P16/S0375/FUL">P16/S0375/FUL</td>
-                    <td data-sort-value="Woodcote NDP Site 02: Woodcote Garden Centre, Reading Road" class="data-table__cell--max-width">Woodcote NDP Site 02: Woodcote Garden Centre, Reading Road</td>
-                    
-                    <td>-1.065674</td>
-                    
-                    <td>51.534551</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P16/S0375/FUL</td>
+                    <td class="data-table__cell--max-width">Woodcote NDP Site 02: Woodcote Garden Centre, Reading Road</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P16S0375FUL_Woodcote%20NDP%20Site%2002.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P16S0375FUL_Woodcote%20NDP%20Site%2002.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-06-29</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P16S0375FUL_Woodcote%20NDP%20Site%2002.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P16S0375FUL_Woodcote%20NDP%20Site%2002.pdf</a></td>
-
+                    <td>51.534551</td>
+                    <td>-1.065674</td>
+                    <td>0.24</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -457,38 +378,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="P16/S1227/FUL">P16/S1227/FUL</td>
-                    <td data-sort-value="JHHNDP Site U: Wilkins Yard Deanfield Avenue HENLEY-ON-THAMES Oxon RG9 1UE" class="data-table__cell--max-width">JHHNDP Site U: Wilkins Yard Deanfield Avenue HENLEY-ON-THAMES Oxon RG9 1UE</td>
-                    
-                    <td>-0.908563</td>
-                    
-                    <td>51.535245</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    
-                    <td data-sort-value="23">23</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P16/S1227/FUL</td>
+                    <td class="data-table__cell--max-width">JHHNDP Site U: Wilkins Yard Deanfield Avenue HENLEY-ON-THAMES Oxon RG9 1UE</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P16S1227FUL_JHHNDP%20Site%20U.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P16S1227FUL_JHHNDP%20Site%20U.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P16S1227FUL_JHHNDP%20Site%20U.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P16S1227FUL_JHHNDP%20Site%20U.pdf</a></td>
-
+                    <td>51.535245</td>
+                    <td>-0.908563</td>
+                    <td>0.23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -497,40 +407,28 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="P16/S3922/FUL
-(SHELAA 200)">P16/S3922/FUL
+                    <td>2017-12-22</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P16/S3922/FUL
 (SHELAA 200)</td>
-                    <td data-sort-value="Atalanta Garage, Beggars bush Hill, Benson OX10 6PL" class="data-table__cell--max-width">Atalanta Garage, Beggars bush Hill, Benson OX10 6PL</td>
-                    
-                    <td>-1.077913</td>
-                    
-                    <td>51.606671</td>
-                    
-                    <td data-sort-value="0.33">0.33</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td class="data-table__cell--max-width">Atalanta Garage, Beggars bush Hill, Benson OX10 6PL</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P16S3922FUL_Atalanta%20Garage.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P16S3922FUL_Atalanta%20Garage.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P16S3922FUL_Atalanta%20Garage.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P16S3922FUL_Atalanta%20Garage.pdf</a></td>
-
+                    <td>51.606671</td>
+                    <td>-1.077913</td>
+                    <td>0.33</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -539,38 +437,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="P16/S4117/FUL">P16/S4117/FUL</td>
-                    <td data-sort-value="40 Oakley Road, Chinnor, Oxon, OX39 4ES" class="data-table__cell--max-width">40 Oakley Road, Chinnor, Oxon, OX39 4ES</td>
-                    
-                    <td>-0.914981</td>
-                    
-                    <td>51.698737</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2017-12-22</td>
-                    
-                    <td>2017-12-22</td>
+                    <td>local-authority-eng:SOX</td>
+                    <td>P16/S4117/FUL</td>
+                    <td class="data-table__cell--max-width">40 Oakley Road, Chinnor, Oxon, OX39 4ES</td>
+                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P16S4117FUL_40%20Oakley%20Road.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P16S4117FUL_40%20Oakley%20Road.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-oxfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/south-oxfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southoxon.gov.uk/sites/default/files/P16S4117FUL_40%20Oakley%20Road.pdf" class="govuk-link">http://www.southoxon.gov.uk/sites/default/files/P16S4117FUL_40%20Oakley%20Road.pdf</a></td>
-
+                    <td>51.698737</td>
+                    <td>-0.914981</td>
+                    <td>0.18</td>
+                    <td>6</td>
+                    <td>20</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -579,7 +466,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa" class="govuk-link">ea0d0eb8...</a></td>
                 </tr>
                 
             </tbody>
@@ -588,6 +475,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

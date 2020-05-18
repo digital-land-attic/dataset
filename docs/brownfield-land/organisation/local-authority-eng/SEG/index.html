@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="H252a">H252a</td>
-                    <td data-sort-value="Yeo Valley, Axbridge Road" class="data-table__cell--max-width">Yeo Valley, Axbridge Road</td>
-                    
-                    <td>-2.795729</td>
-                    
-                    <td>51.2885</td>
-                    
-                    <td data-sort-value="3.41">3.41</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    <td>2017-11-27</td>
-                    
                     <td>2018-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:SEG</td>
+                    <td>H252a</td>
+                    <td class="data-table__cell--max-width">Yeo Valley, Axbridge Road</td>
                     <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=344606.27&y=154674.83&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=344606.27&y=154674.83&zoom=10</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.2885</td>
+                    <td>-2.795729</td>
+                    <td>3.41</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="H255">H255</td>
-                    <td data-sort-value="Land between 21 and 35 Monmouth Street and to the rear of, Church Street, Bridgwater" class="data-table__cell--max-width">Land between 21 and 35 Monmouth Street and to the rear of, Church Street, Bridgwater</td>
-                    
-                    <td>-2.996917</td>
-                    
-                    <td>51.13012</td>
-                    
-                    <td data-sort-value="0.4">0.4</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    <td>2017-11-27</td>
-                    
                     <td>2018-11-27</td>
+                    <td>local-authority-eng:SEG</td>
+                    <td>H255</td>
+                    <td class="data-table__cell--max-width">Land between 21 and 35 Monmouth Street and to the rear of, Church Street, Bridgwater</td>
+                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330337.75&y=137233.13&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330337.75&y=137233.13&zoom=10</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-10-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330337.75&y=137233.13&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330337.75&y=137233.13&zoom=10</a></td>
-
+                    <td>51.13012</td>
+                    <td>-2.996917</td>
+                    <td>0.4</td>
+                    <td>28</td>
+                    <td>28</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="H260a">H260a</td>
-                    <td data-sort-value="83-89 Bath Road, Bridgwater" class="data-table__cell--max-width">83-89 Bath Road, Bridgwater</td>
-                    
-                    <td>-2.9919</td>
-                    
-                    <td>51.133768</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-11-27</td>
-                    
                     <td>2018-11-27</td>
+                    <td>local-authority-eng:SEG</td>
+                    <td>H260a</td>
+                    <td class="data-table__cell--max-width">83-89 Bath Road, Bridgwater</td>
+                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330694.25&y=137634.02&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330694.25&y=137634.02&zoom=10</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-12-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330694.25&y=137634.02&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330694.25&y=137634.02&zoom=10</a></td>
-
+                    <td>51.133768</td>
+                    <td>-2.9919</td>
+                    <td>0.16</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="H262">H262</td>
-                    <td data-sort-value="On land at, The Old Tile Works, All Saints Terrace, Bridgwater, TA6 5JQ" class="data-table__cell--max-width">On land at, The Old Tile Works, All Saints Terrace, Bridgwater, TA6 5JQ</td>
-                    
-                    <td>-2.990596</td>
-                    
-                    <td>51.126128</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    <td>2017-11-27</td>
-                    
                     <td>2018-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:SEG</td>
+                    <td>H262</td>
+                    <td class="data-table__cell--max-width">On land at, The Old Tile Works, All Saints Terrace, Bridgwater, TA6 5JQ</td>
                     <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330774.05&y=136783.13&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330774.05&y=136783.13&zoom=10</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.126128</td>
+                    <td>-2.990596</td>
+                    <td>0.26</td>
+                    <td>6</td>
+                    <td>25</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="H265b">H265b</td>
-                    <td data-sort-value="The Hope Inn, 80-82 Taunton Road, Bridgwater, TA6 6AF" class="data-table__cell--max-width">The Hope Inn, 80-82 Taunton Road, Bridgwater, TA6 6AF</td>
-                    
-                    <td>-2.999956</td>
-                    
-                    <td>51.121909</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
+                    <td>local-authority-eng:SEG</td>
+                    <td>H265b</td>
+                    <td class="data-table__cell--max-width">The Hope Inn, 80-82 Taunton Road, Bridgwater, TA6 6AF</td>
+                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330112.73&y=136322.8&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330112.73&y=136322.8&zoom=10</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330112.73&y=136322.8&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330112.73&y=136322.8&zoom=10</a></td>
-
+                    <td>51.121909</td>
+                    <td>-2.999956</td>
+                    <td>0.17</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="H266a">H266a</td>
-                    <td data-sort-value="Former Bridgwater Cattle Market, Bath Road, Bridgwater" class="data-table__cell--max-width">Former Bridgwater Cattle Market, Bath Road, Bridgwater</td>
-                    
-                    <td>-2.991599</td>
-                    
-                    <td>51.135126</td>
-                    
-                    <td data-sort-value="2.01">2.01</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    <td>2017-11-27</td>
-                    
                     <td>2018-11-27</td>
+                    <td>local-authority-eng:SEG</td>
+                    <td>H266a</td>
+                    <td class="data-table__cell--max-width">Former Bridgwater Cattle Market, Bath Road, Bridgwater</td>
+                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330717.35&y=137784.72&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330717.35&y=137784.72&zoom=10</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
                     <td>owned by a public authority</td>
-                    <td>2018-02-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330717.35&y=137784.72&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330717.35&y=137784.72&zoom=10</a></td>
-
+                    <td>51.135126</td>
+                    <td>-2.991599</td>
+                    <td>2.01</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="H266b">H266b</td>
-                    <td data-sort-value="Former abattoir site, Bath Road, Bridgwater" class="data-table__cell--max-width">Former abattoir site, Bath Road, Bridgwater</td>
-                    
-                    <td>-2.990426</td>
-                    
-                    <td>51.135787</td>
-                    
-                    <td data-sort-value="0.5">0.5</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="13">13</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:SEG</td>
+                    <td>H266b</td>
+                    <td class="data-table__cell--max-width">Former abattoir site, Bath Road, Bridgwater</td>
                     <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330800.45&y=137857.17&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330800.45&y=137857.17&zoom=10</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.135787</td>
+                    <td>-2.990426</td>
+                    <td>0.5</td>
+                    <td>13</td>
+                    <td>13</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="H268">H268</td>
-                    <td data-sort-value="The Mill (formerly Bigwood & Staple), Church Street, Bridgwater" class="data-table__cell--max-width">The Mill (formerly Bigwood & Staple), Church Street, Bridgwater</td>
-                    
-                    <td>-2.999145</td>
-                    
-                    <td>51.131513</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="29">29</td>
-                    
-                    <td data-sort-value="29">29</td>
-                    <td>2017-11-27</td>
-                    
                     <td>2018-11-27</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:SEG</td>
+                    <td>H268</td>
+                    <td class="data-table__cell--max-width">The Mill (formerly Bigwood & Staple), Church Street, Bridgwater</td>
                     <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330183.93&y=137390.1&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330183.93&y=137390.1&zoom=10</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.131513</td>
+                    <td>-2.999145</td>
+                    <td>0.22</td>
+                    <td>29</td>
+                    <td>29</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="H275">H275</td>
-                    <td data-sort-value="Former Bridgwater Community Hospital, Salmon Parade, Bridgwater, TA6 5AH" class="data-table__cell--max-width">Former Bridgwater Community Hospital, Salmon Parade, Bridgwater, TA6 5AH</td>
-                    
-                    <td>-2.998918</td>
-                    
-                    <td>51.128044</td>
-                    
-                    <td data-sort-value="0.89">0.89</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    
-                    <td data-sort-value="3">3</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
+                    <td>local-authority-eng:SEG</td>
+                    <td>H275</td>
+                    <td class="data-table__cell--max-width">Former Bridgwater Community Hospital, Salmon Parade, Bridgwater, TA6 5AH</td>
+                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330194.58&y=137004.07&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330194.58&y=137004.07&zoom=10</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
                     <td>owned by a public authority</td>
-                    <td>2016-11-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330194.58&y=137004.07&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=330194.58&y=137004.07&zoom=10</a></td>
-
+                    <td>51.128044</td>
+                    <td>-2.998918</td>
+                    <td>0.89</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="H280a">H280a</td>
-                    <td data-sort-value="Land at, Newtown Road, Highbridge" class="data-table__cell--max-width">Land at, Newtown Road, Highbridge</td>
-                    
-                    <td>-2.982229</td>
-                    
-                    <td>51.221631</td>
-                    
-                    <td data-sort-value="2.57">2.57</td>
-                    
-                    <td data-sort-value="95">95</td>
-                    
-                    <td data-sort-value="95">95</td>
-                    <td>2017-11-27</td>
-                    
                     <td>2018-11-27</td>
+                    <td>local-authority-eng:SEG</td>
+                    <td>H280a</td>
+                    <td class="data-table__cell--max-width">Land at, Newtown Road, Highbridge</td>
+                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=331501.46&y=147395.89&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=331501.46&y=147395.89&zoom=10</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/sedgemoor" class="govuk-link">http://opendatacommunities.org/id/district-council/sedgemoor</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=331501.46&y=147395.89&zoom=10" class="govuk-link">http://webmaps.sedgemoor.gov.uk/connect/analyst/mobile/#/main?mapcfg=brownfield_register&x=331501.46&y=147395.89&zoom=10</a></td>
-
+                    <td>51.221631</td>
+                    <td>-2.982229</td>
+                    <td>2.57</td>
+                    <td>95</td>
+                    <td>95</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/dc230135b24d4e1d175ba66c7e4f379bef82e832f7db19ebff8825b84ecfb516" class="govuk-link">dc230135...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="AD/022">AD/022</td>
-                    <td data-sort-value="Church Street/Main Street, Addingham" class="data-table__cell--max-width">Church Street/Main Street, Addingham</td>
-                    
-                    <td>-1.873512</td>
-                    
-                    <td>53.941284</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-11-01</td>
-                    
                     <td>2019-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BRD</td>
+                    <td>AD/022</td>
+                    <td class="data-table__cell--max-width">Church Street/Main Street, Addingham</td>
                     <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=408368.23,449443.6,408439.8,449500.52,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=408368.23,449443.6,408439.8,449500.52,27700</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.941284</td>
+                    <td>-1.873512</td>
+                    <td>0.24</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>2017-11-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,110 +203,77 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BA/031">BA/031</td>
-                    <td data-sort-value="Knoll Terrace, Denby Drive, Baildon" class="data-table__cell--max-width">Knoll Terrace, Denby Drive, Baildon</td>
-                    
-                    <td>-1.776479</td>
-                    
-                    <td>53.841177</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
-                    <td>2018-11-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:BRD</td>
+                    <td>BA/031</td>
+                    <td class="data-table__cell--max-width">Knoll Terrace, Denby Drive, Baildon</td>
+                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=414783.66,438334.89,414827.9683,438361.2846,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=414783.66,438334.89,414827.9683,438361.2846,27700</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-12</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=414783.66,438334.89,414827.9683,438361.2846,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=414783.66,438334.89,414827.9683,438361.2846,27700</a></td>
-
+                    <td>53.841177</td>
+                    <td>-1.776479</td>
+                    <td>0.1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2018-11-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BI/006">BI/006</td>
-                    <td data-sort-value="Keighley Road, Crossflatts" class="data-table__cell--max-width">Keighley Road, Crossflatts</td>
-                    
-                    <td>-1.849875</td>
-                    
-                    <td>53.863434</td>
-                    
-                    <td data-sort-value="0.74">0.74</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
-                    <td>2017-11-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:BRD</td>
+                    <td>BI/006</td>
+                    <td class="data-table__cell--max-width">Keighley Road, Crossflatts</td>
+                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=409886.75,440772.3728,410033.0978,440851.75,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=409886.75,440772.3728,410033.0978,440851.75,27700</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-08-14</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=409886.75,440772.3728,410033.0978,440851.75,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=409886.75,440772.3728,410033.0978,440851.75,27700</a></td>
-
+                    <td>53.863434</td>
+                    <td>-1.849875</td>
+                    <td>0.74</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-11-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BI/038">BI/038</td>
-                    <td data-sort-value="Marley Court, Crossflatts" class="data-table__cell--max-width">Marley Court, Crossflatts</td>
-                    
-                    <td>-1.850887</td>
-                    
-                    <td>53.866342</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-11-01</td>
-                    
                     <td>2019-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BRD</td>
+                    <td>BI/038</td>
+                    <td class="data-table__cell--max-width">Marley Court, Crossflatts</td>
                     <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=409833.925,441101.1428,409964.5261,441165.097,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=409833.925,441101.1428,409964.5261,441165.097,27700</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.866342</td>
+                    <td>-1.850887</td>
+                    <td>0.3</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-11-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -327,146 +282,102 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BI/055">BI/055</td>
-                    <td data-sort-value="110 Main Street" class="data-table__cell--max-width">110 Main Street</td>
-                    
-                    <td>-1.839881</td>
-                    
-                    <td>53.849854</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2019-12-01</td>
-                    
-                    <td>2019-12-01</td>
+                    <td>local-authority-eng:BRD</td>
+                    <td>BI/055</td>
+                    <td class="data-table__cell--max-width">110 Main Street</td>
+                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=410621.67,439293.01,410641.97,439312.55,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=410621.67,439293.01,410641.97,439312.55,27700</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=410621.67,439293.01,410641.97,439312.55,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=410621.67,439293.01,410641.97,439312.55,27700</a></td>
-
+                    <td>53.849854</td>
+                    <td>-1.839881</td>
+                    <td>0.02</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2019-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BI/060">BI/060</td>
-                    <td data-sort-value="Former Priestthorpe Annex, Mornington Rd" class="data-table__cell--max-width">Former Priestthorpe Annex, Mornington Rd</td>
-                    
-                    <td>-1.832872</td>
-                    
-                    <td>53.849705</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
                     <td>2019-12-01</td>
-                    
-                    <td>2019-12-01</td>
+                    <td>local-authority-eng:BRD</td>
+                    <td>BI/060</td>
+                    <td class="data-table__cell--max-width">Former Priestthorpe Annex, Mornington Rd</td>
+                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=411070.85,439264.9,411113.6,439309.6016,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=411070.85,439264.9,411113.6,439309.6016,27700</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-04-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=411070.85,439264.9,411113.6,439309.6016,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=411070.85,439264.9,411113.6,439309.6016,27700</a></td>
-
+                    <td>53.849705</td>
+                    <td>-1.832872</td>
+                    <td>0.08</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2019-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BU/011">BU/011</td>
-                    <td data-sort-value="Greenholme Mills, Great Pasture Lane, Burley in Wharfedale" class="data-table__cell--max-width">Greenholme Mills, Great Pasture Lane, Burley in Wharfedale</td>
-                    
-                    <td>-1.745905</td>
-                    
-                    <td>53.917176</td>
-                    
-                    <td data-sort-value="2.89">2.89</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
-                    <td>2017-11-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:BRD</td>
+                    <td>BU/011</td>
+                    <td class="data-table__cell--max-width">Greenholme Mills, Great Pasture Lane, Burley in Wharfedale</td>
+                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416699.1,446668.45,416875.218,446970.63,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416699.1,446668.45,416875.218,446970.63,27700</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-02-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416699.1,446668.45,416875.218,446970.63,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416699.1,446668.45,416875.218,446970.63,27700</a></td>
-
+                    <td>53.917176</td>
+                    <td>-1.745905</td>
+                    <td>2.89</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-11-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="CC/001">CC/001</td>
-                    <td data-sort-value="Fulton Street/Tetley Street/ Sunbridge Road, City Centre" class="data-table__cell--max-width">Fulton Street/Tetley Street/ Sunbridge Road, City Centre</td>
-                    
-                    <td>-1.758903</td>
-                    
-                    <td>53.7937</td>
-                    
-                    <td data-sort-value="0.51">0.51</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    <td>2017-11-01</td>
-                    
                     <td>2019-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BRD</td>
+                    <td>CC/001</td>
+                    <td class="data-table__cell--max-width">Fulton Street/Tetley Street/ Sunbridge Road, City Centre</td>
                     <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=415950.1563,433006.6873,416006.0,433130.4061,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=415950.1563,433006.6873,416006.0,433130.4061,27700</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.7937</td>
+                    <td>-1.758903</td>
+                    <td>0.51</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2017-11-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -475,74 +386,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="CC/003">CC/003</td>
-                    <td data-sort-value="Hamm Strasse/ Grammar School Street, City Centre" class="data-table__cell--max-width">Hamm Strasse/ Grammar School Street, City Centre</td>
-                    
-                    <td>-1.756113</td>
-                    
-                    <td>53.798223</td>
-                    
-                    <td data-sort-value="0.51">0.51</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
-                    <td>2017-11-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:BRD</td>
+                    <td>CC/003</td>
+                    <td class="data-table__cell--max-width">Hamm Strasse/ Grammar School Street, City Centre</td>
+                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416116.5938,433524.3505,416213.5625,433638.8123,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416116.5938,433524.3505,416213.5625,433638.8123,27700</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-04-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416116.5938,433524.3505,416213.5625,433638.8123,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416116.5938,433524.3505,416213.5625,433638.8123,27700</a></td>
-
+                    <td>53.798223</td>
+                    <td>-1.756113</td>
+                    <td>0.51</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2017-11-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="CC/007">CC/007</td>
-                    <td data-sort-value="Beehive Mills, Thornton Road, City Centre" class="data-table__cell--max-width">Beehive Mills, Thornton Road, City Centre</td>
-                    
-                    <td>-1.763471</td>
-                    
-                    <td>53.793795</td>
-                    
-                    <td data-sort-value="1.05">1.05</td>
-                    
-                    <td data-sort-value="220">220</td>
-                    
-                    <td data-sort-value="220">220</td>
-                    <td>2017-11-01</td>
-                    
                     <td>2019-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bradford" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bradford</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BRD</td>
+                    <td>CC/007</td>
+                    <td class="data-table__cell--max-width">Beehive Mills, Thornton Road, City Centre</td>
                     <td><a href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=415602.75,433012.7,415758.0,433139.0499,27700" class="govuk-link">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=415602.75,433012.7,415758.0,433139.0499,27700</a></td>
-
+                    <td></td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.793795</td>
+                    <td>-1.763471</td>
+                    <td>1.05</td>
+                    <td>220</td>
+                    <td>220</td>
+                    <td>2017-11-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -551,7 +440,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a" class="govuk-link">69b3bbfd...</a></td>
                 </tr>
                 
             </tbody>
@@ -560,6 +449,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

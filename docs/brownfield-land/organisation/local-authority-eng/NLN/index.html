@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="IN1-18">IN1-18</td>
-                    <td data-sort-value="Land east of Beck Lane, Barrow Upon Humber" class="data-table__cell--max-width">Land east of Beck Lane, Barrow Upon Humber</td>
-                    
-                    <td>-0.37421</td>
-                    
-                    <td>53.678746</td>
-                    
-                    <td data-sort-value="2.23">2.23</td>
-                    
-                    <td data-sort-value="71">71</td>
-                    
-                    <td data-sort-value="71">71</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-17</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NLN</td>
+                    <td>IN1-18</td>
+                    <td class="data-table__cell--max-width">Land east of Beck Lane, Barrow Upon Humber</td>
                     <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=507485.0292&StartNorthing=421480.8305&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=507485.0292&StartNorthing=421480.8305&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.678746</td>
+                    <td>-0.37421</td>
+                    <td>2.23</td>
+                    <td>71</td>
+                    <td>71</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="SCUH-12">SCUH-12</td>
-                    <td data-sort-value="Former Carpark, Collum Avenue, Scunthorpe" class="data-table__cell--max-width">Former Carpark, Collum Avenue, Scunthorpe</td>
-                    
-                    <td>-0.644239</td>
-                    
-                    <td>53.56769</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:NLN</td>
+                    <td>SCUH-12</td>
+                    <td class="data-table__cell--max-width">Former Carpark, Collum Avenue, Scunthorpe</td>
+                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=489885.3971&StartNorthing=408752.2051&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=489885.3971&StartNorthing=408752.2051&StartZoom=1000&Layers=Brownfield_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
                     <td>owned by a public authority</td>
-                    <td>2018-03-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=489885.3971&StartNorthing=408752.2051&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=489885.3971&StartNorthing=408752.2051&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td>53.56769</td>
+                    <td>-0.644239</td>
+                    <td>0.16</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="PA/2014/1183">PA/2014/1183</td>
-                    <td data-sort-value="Plot 29 Hebden Road, Scunthorpe" class="data-table__cell--max-width">Plot 29 Hebden Road, Scunthorpe</td>
-                    
-                    <td>-0.682541</td>
-                    
-                    <td>53.598789</td>
-                    
-                    <td data-sort-value="0.39">0.39</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:NLN</td>
+                    <td>PA/2014/1183</td>
+                    <td class="data-table__cell--max-width">Plot 29 Hebden Road, Scunthorpe</td>
+                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=487284.874&StartNorthing=412164.3244&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=487284.874&StartNorthing=412164.3244&StartZoom=1000&Layers=Brownfield_Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-12-30</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=487284.874&StartNorthing=412164.3244&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=487284.874&StartNorthing=412164.3244&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td>53.598789</td>
+                    <td>-0.682541</td>
+                    <td>0.39</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="PA/2018/660">PA/2018/660</td>
-                    <td data-sort-value="Belton Garden Centre, Sandtoft Road, Westgate, Epworth, DN9 1PN" class="data-table__cell--max-width">Belton Garden Centre, Sandtoft Road, Westgate, Epworth, DN9 1PN</td>
-                    
-                    <td>-0.851361</td>
-                    
-                    <td>53.561281</td>
-                    
-                    <td data-sort-value="0.34">0.34</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2018-12-18</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:NLN</td>
+                    <td>PA/2018/660</td>
+                    <td class="data-table__cell--max-width">Belton Garden Centre, Sandtoft Road, Westgate, Epworth, DN9 1PN</td>
+                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=476180.42875876&StartNorthing=407798.009674064&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=476180.42875876&StartNorthing=407798.009674064&StartZoom=1000&Layers=Brownfield_Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-08-06</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=476180.42875876&StartNorthing=407798.009674064&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=476180.42875876&StartNorthing=407798.009674064&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td>53.561281</td>
+                    <td>-0.851361</td>
+                    <td>0.34</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2018-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="RM14C">RM14C</td>
-                    <td data-sort-value="Former Mellors Coaches Depot, Goxhill" class="data-table__cell--max-width">Former Mellors Coaches Depot, Goxhill</td>
-                    
-                    <td>-0.336462</td>
-                    
-                    <td>53.676999</td>
-                    
-                    <td data-sort-value="0.25">0.25</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2018-12-18</td>
-                    
                     <td>2019-12-17</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NLN</td>
+                    <td>RM14C</td>
+                    <td class="data-table__cell--max-width">Former Mellors Coaches Depot, Goxhill</td>
                     <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=509982.744550759&StartNorthing=421344.16994787&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=509982.744550759&StartNorthing=421344.16994787&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.676999</td>
+                    <td>-0.336462</td>
+                    <td>0.25</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2018-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="9F980">9F980</td>
-                    <td data-sort-value="Old Railway Sidings, Keadby" class="data-table__cell--max-width">Old Railway Sidings, Keadby</td>
-                    
-                    <td>-0.740363</td>
-                    
-                    <td>53.585756</td>
-                    
-                    <td data-sort-value="3.05">3.05</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2018-12-18</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:NLN</td>
+                    <td>9F980</td>
+                    <td class="data-table__cell--max-width">Old Railway Sidings, Keadby</td>
+                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=483484.181715146&StartNorthing=410645.182227312&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=483484.181715146&StartNorthing=410645.182227312&StartZoom=1000&Layers=Brownfield_Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-14</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=483484.181715146&StartNorthing=410645.182227312&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=483484.181715146&StartNorthing=410645.182227312&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td>53.585756</td>
+                    <td>-0.740363</td>
+                    <td>3.05</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2018-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="X5EJ7">X5EJ7</td>
-                    <td data-sort-value="6 Park Street, Winterton" class="data-table__cell--max-width">6 Park Street, Winterton</td>
-                    
-                    <td>-0.59224</td>
-                    
-                    <td>53.653398</td>
-                    
-                    <td data-sort-value="0.31">0.31</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    <td>2018-12-18</td>
-                    
                     <td>2019-12-17</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NLN</td>
+                    <td>X5EJ7</td>
+                    <td class="data-table__cell--max-width">6 Park Street, Winterton</td>
                     <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=493140.361136339&StartNorthing=418353.737024812&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=493140.361136339&StartNorthing=418353.737024812&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.653398</td>
+                    <td>-0.59224</td>
+                    <td>0.31</td>
+                    <td>27</td>
+                    <td>27</td>
+                    <td>2018-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="PA/2018/845">PA/2018/845</td>
-                    <td data-sort-value="C Spencer Ltd, Mill Lane, Barrow Upon Humber" class="data-table__cell--max-width">C Spencer Ltd, Mill Lane, Barrow Upon Humber</td>
-                    
-                    <td>-0.389147</td>
-                    
-                    <td>53.677</td>
-                    
-                    <td data-sort-value="1.55">1.55</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    
-                    <td data-sort-value="40">40</td>
                     <td>2019-12-17</td>
-                    
-                    <td>2019-12-17</td>
+                    <td>local-authority-eng:NLN</td>
+                    <td>PA/2018/845</td>
+                    <td class="data-table__cell--max-width">C Spencer Ltd, Mill Lane, Barrow Upon Humber</td>
+                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=506502.850701111&StartNorthing=421264.200246377&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=506502.850701111&StartNorthing=421264.200246377&StartZoom=1000&Layers=Brownfield_Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>not permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=506502.850701111&StartNorthing=421264.200246377&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=506502.850701111&StartNorthing=421264.200246377&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td>53.677</td>
+                    <td>-0.389147</td>
+                    <td>1.55</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>2019-12-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="PA/2017/113">PA/2017/113</td>
-                    <td data-sort-value="32-34 Newland Avenue, Scunthorpe" class="data-table__cell--max-width">32-34 Newland Avenue, Scunthorpe</td>
-                    
-                    <td>-0.670121</td>
-                    
-                    <td>53.58759</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-17</td>
+                    <td>local-authority-eng:NLN</td>
+                    <td>PA/2017/113</td>
+                    <td class="data-table__cell--max-width">32-34 Newland Avenue, Scunthorpe</td>
+                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=488130.0338&StartNorthing=410933.7451&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=488130.0338&StartNorthing=410933.7451&StartZoom=1000&Layers=Brownfield_Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-05</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=488130.0338&StartNorthing=410933.7451&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=488130.0338&StartNorthing=410933.7451&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td>53.58759</td>
+                    <td>-0.670121</td>
+                    <td>0.05</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BARH-3">BARH-3</td>
-                    <td data-sort-value="Former St Marys CycleWorks, Barton Upon Humber" class="data-table__cell--max-width">Former St Marys CycleWorks, Barton Upon Humber</td>
-                    
-                    <td>-0.436055</td>
-                    
-                    <td>53.685715</td>
-                    
-                    <td data-sort-value="1.95">1.95</td>
-                    
-                    <td data-sort-value="73">73</td>
-                    
-                    <td data-sort-value="73">73</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-17</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-lincolnshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-lincolnshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NLN</td>
+                    <td>BARH-3</td>
+                    <td class="data-table__cell--max-width">Former St Marys CycleWorks, Barton Upon Humber</td>
                     <td><a href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=503383.294&StartNorthing=422164.5054&StartZoom=1000&Layers=Brownfield_Register" class="govuk-link">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=503383.294&StartNorthing=422164.5054&StartZoom=1000&Layers=Brownfield_Register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.685715</td>
+                    <td>-0.436055</td>
+                    <td>1.95</td>
+                    <td>73</td>
+                    <td>73</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10" class="govuk-link">09a3e48a...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

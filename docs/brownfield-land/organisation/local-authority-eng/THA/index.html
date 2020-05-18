@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="S189">S189</td>
-                    <td data-sort-value="Queen Arms Yard, Margate" class="data-table__cell--max-width">Queen Arms Yard, Margate</td>
-                    
-                    <td>1.381276</td>
-                    
-                    <td>51.389522</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="24.0">24</td>
-                    
-                    <td data-sort-value="24.0">24</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S189</td>
+                    <td class="data-table__cell--max-width">Queen Arms Yard, Margate</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.389522</td>
+                    <td>1.381276</td>
+                    <td>0.11</td>
+                    <td>24.0</td>
+                    <td>24.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="S411">S411</td>
-                    <td data-sort-value="Cottage Car Park, New Street, Margate" class="data-table__cell--max-width">Cottage Car Park, New Street, Margate</td>
-                    
-                    <td>1.380975</td>
-                    
-                    <td>51.388955</td>
-                    
-                    <td data-sort-value="0.32">0.32</td>
-                    
-                    <td data-sort-value="32.0">32</td>
-                    
-                    <td data-sort-value="32.0">32</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S411</td>
+                    <td class="data-table__cell--max-width">Cottage Car Park, New Street, Margate</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.388955</td>
+                    <td>1.380975</td>
+                    <td>0.32</td>
+                    <td>32.0</td>
+                    <td>32.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="S412">S412</td>
-                    <td data-sort-value="Margate Town Centre, (south of New Street, Margate)" class="data-table__cell--max-width">Margate Town Centre, (south of New Street, Margate)</td>
-                    
-                    <td>1.380986</td>
-                    
-                    <td>51.388325</td>
-                    
-                    <td data-sort-value="0.99">0.99</td>
-                    
-                    <td data-sort-value="27.0">27</td>
-                    
-                    <td data-sort-value="27.0">27</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S412</td>
+                    <td class="data-table__cell--max-width">Margate Town Centre, (south of New Street, Margate)</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.388325</td>
+                    <td>1.380986</td>
+                    <td>0.99</td>
+                    <td>27.0</td>
+                    <td>27.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="S019">S019</td>
-                    <td data-sort-value="Adjacent to 9 Minnis Road, Birchington" class="data-table__cell--max-width">Adjacent to 9 Minnis Road, Birchington</td>
-                    
-                    <td>1.302269</td>
-                    
-                    <td>51.376468</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="11.0">11</td>
-                    
-                    <td data-sort-value="11.0">11</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S019</td>
+                    <td class="data-table__cell--max-width">Adjacent to 9 Minnis Road, Birchington</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.376468</td>
+                    <td>1.302269</td>
+                    <td>0.22</td>
+                    <td>11.0</td>
+                    <td>11.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="S106">S106</td>
-                    <td data-sort-value="End of Seafield Road" class="data-table__cell--max-width">End of Seafield Road</td>
-                    
-                    <td>1.403737</td>
-                    
-                    <td>51.335557</td>
-                    
-                    <td data-sort-value="1.15">1.15</td>
-                    
-                    <td data-sort-value="16.0">16</td>
-                    
-                    <td data-sort-value="16.0">16</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S106</td>
+                    <td class="data-table__cell--max-width">End of Seafield Road</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.335557</td>
+                    <td>1.403737</td>
+                    <td>1.15</td>
+                    <td>16.0</td>
+                    <td>16.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="S112">S112</td>
-                    <td data-sort-value="Adjacent to 8 Chapel Place, Ramsgate" class="data-table__cell--max-width">Adjacent to 8 Chapel Place, Ramsgate</td>
-                    
-                    <td>1.401785</td>
-                    
-                    <td>51.390592</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S112</td>
+                    <td class="data-table__cell--max-width">Adjacent to 8 Chapel Place, Ramsgate</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.390592</td>
+                    <td>1.401785</td>
+                    <td>0.09</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="S113">S113</td>
-                    <td data-sort-value="Adjacent to 21 Royal Road & 9 Townley Street" class="data-table__cell--max-width">Adjacent to 21 Royal Road & 9 Townley Street</td>
-                    
-                    <td>1.413276</td>
-                    
-                    <td>51.330773</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="18.0">18</td>
-                    
-                    <td data-sort-value="18.0">18</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S113</td>
+                    <td class="data-table__cell--max-width">Adjacent to 21 Royal Road & 9 Townley Street</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.330773</td>
+                    <td>1.413276</td>
+                    <td>0.28</td>
+                    <td>18.0</td>
+                    <td>18.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="S168">S168</td>
-                    <td data-sort-value="Gas Works Boundary Road, Ramsgate" class="data-table__cell--max-width">Gas Works Boundary Road, Ramsgate</td>
-                    
-                    <td>1.421086</td>
-                    
-                    <td>51.338667</td>
-                    
-                    <td data-sort-value="1.34">1.34</td>
-                    
-                    <td data-sort-value="96.0">96</td>
-                    
-                    <td data-sort-value="96.0">96</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S168</td>
+                    <td class="data-table__cell--max-width">Gas Works Boundary Road, Ramsgate</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.338667</td>
+                    <td>1.421086</td>
+                    <td>1.34</td>
+                    <td>96.0</td>
+                    <td>96.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="SP05">SP05</td>
-                    <td data-sort-value="Former Airport site Manston" class="data-table__cell--max-width">Former Airport site Manston</td>
-                    
-                    <td>1.352058</td>
-                    
-                    <td>51.348967</td>
-                    
-                    <td data-sort-value="320.0">320.0</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>SP05</td>
+                    <td class="data-table__cell--max-width">Former Airport site Manston</td>
                     <td><a href="https://planning.thanet.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=O5Z2F2QE00300" class="govuk-link">https://planning.thanet.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=O5Z2F2QE00300</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.348967</td>
+                    <td>1.352058</td>
+                    <td>320.0</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="S174">S174</td>
-                    <td data-sort-value="Land at Wilderness Hill and Dane Road" class="data-table__cell--max-width">Land at Wilderness Hill and Dane Road</td>
-                    
-                    <td>1.391287</td>
-                    
-                    <td>51.387452</td>
-                    
-                    <td data-sort-value="0.44">0.44</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2017-12-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/thanet" class="govuk-link">http://opendatacommunities.org/id/district-council/thanet</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:THA</td>
+                    <td>S174</td>
+                    <td class="data-table__cell--max-width">Land at Wilderness Hill and Dane Road</td>
                     <td><a href="https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=" class="govuk-link">https://consult.thanet.gov.uk/consult.ti/TPODLP/viewCompoundDoc?docid=6059444&partid=6059540&sessionid=&voteid=</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.387452</td>
+                    <td>1.391287</td>
+                    <td>0.44</td>
+                    <td>14.0</td>
+                    <td>14.0</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/533baee9e3480b03672a6696ad87954ddd2f6f8734d12ca9f6f3f0b20e206bab" class="govuk-link">533baee9...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

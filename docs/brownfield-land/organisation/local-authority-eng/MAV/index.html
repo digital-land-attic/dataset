@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="MHDCBLR/0001">MHDCBLR/0001</td>
-                    <td data-sort-value="Walsh’s Yard, 190 Poolbrook Road, Malvern" class="data-table__cell--max-width">Walsh’s Yard, 190 Poolbrook Road, Malvern</td>
-                    
-                    <td>-2.309115</td>
-                    
-                    <td>52.094306</td>
-                    
-                    <td data-sort-value="0.35">0.35</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-07</td>
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0001</td>
+                    <td class="data-table__cell--max-width">Walsh’s Yard, 190 Poolbrook Road, Malvern</td>
+                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0001+Walsh+Yard%2C+Common+Road%2C+Malvern.pdf/08bb8fea-b0b4-f7ef-a843-049da46459b8" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0001+Walsh+Yard%2C+Common+Road%2C+Malvern.pdf/08bb8fea-b0b4-f7ef-a843-049da46459b8</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-30</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0001+Walsh+Yard%2C+Common+Road%2C+Malvern.pdf/08bb8fea-b0b4-f7ef-a843-049da46459b8" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0001+Walsh+Yard%2C+Common+Road%2C+Malvern.pdf/08bb8fea-b0b4-f7ef-a843-049da46459b8</a></td>
-
+                    <td>52.094306</td>
+                    <td>-2.309115</td>
+                    <td>0.35</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,74 +203,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="MHDCBLR/0002">MHDCBLR/0002</td>
-                    <td data-sort-value="Portland House, 129 Church Street, Malvern" class="data-table__cell--max-width">Portland House, 129 Church Street, Malvern</td>
-                    
-                    <td>-2.324935</td>
-                    
-                    <td>52.112002</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-07</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0002</td>
+                    <td class="data-table__cell--max-width">Portland House, 129 Church Street, Malvern</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0002+Portland+House%2C+Church+Street%2C+Malvern.pdf/cadca1a1-9c5d-a34f-ac69-fcea24678a09" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0002+Portland+House%2C+Church+Street%2C+Malvern.pdf/cadca1a1-9c5d-a34f-ac69-fcea24678a09</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.112002</td>
+                    <td>-2.324935</td>
+                    <td>0.22</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="MHDCBLR/0003">MHDCBLR/0003</td>
-                    <td data-sort-value="(Former Hospital) Landsdowne Crescent, Malvern" class="data-table__cell--max-width">(Former Hospital) Landsdowne Crescent, Malvern</td>
-                    
-                    <td>-2.320339</td>
-                    
-                    <td>52.112608</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-07</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2018-07-05</td>
-                    <td></td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0003</td>
+                    <td class="data-table__cell--max-width">(Former Hospital) Landsdowne Crescent, Malvern</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0003+Former+Hospital%2C+Landsdowne+Crescent%2C+Malvern.pdf/3b819c33-fc15-d99c-eb75-53e0ef5713fd" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0003+Former+Hospital%2C+Landsdowne+Crescent%2C+Malvern.pdf/3b819c33-fc15-d99c-eb75-53e0ef5713fd</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.112608</td>
+                    <td>-2.320339</td>
+                    <td>0.27</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -291,38 +257,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="MHDCBLR/0004">MHDCBLR/0004</td>
-                    <td data-sort-value="Pickersleigh Grove, Malvern-part BF (buildings now demolished) and part GF" class="data-table__cell--max-width">Pickersleigh Grove, Malvern-part BF (buildings now demolished) and part GF</td>
-                    
-                    <td>-2.317205</td>
-                    
-                    <td>52.119476</td>
-                    
-                    <td data-sort-value="3.29">3.29</td>
-                    
-                    <td data-sort-value="92">92</td>
-                    
-                    <td data-sort-value="92">92</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-07</td>
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0004</td>
+                    <td class="data-table__cell--max-width">Pickersleigh Grove, Malvern-part BF (buildings now demolished) and part GF</td>
+                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0004+Pickersleigh+Grove%2C+Malvern.pdf/75fa740c-f63b-bd1b-a3d3-cc9282c0b8e5" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0004+Pickersleigh+Grove%2C+Malvern.pdf/75fa740c-f63b-bd1b-a3d3-cc9282c0b8e5</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-11-20</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0004+Pickersleigh+Grove%2C+Malvern.pdf/75fa740c-f63b-bd1b-a3d3-cc9282c0b8e5" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0004+Pickersleigh+Grove%2C+Malvern.pdf/75fa740c-f63b-bd1b-a3d3-cc9282c0b8e5</a></td>
-
+                    <td>52.119476</td>
+                    <td>-2.317205</td>
+                    <td>3.29</td>
+                    <td>92</td>
+                    <td>92</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,218 +286,152 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="MHDCBLR/0005">MHDCBLR/0005</td>
-                    <td data-sort-value="former Railway Sidings, Peachfield Road" class="data-table__cell--max-width">former Railway Sidings, Peachfield Road</td>
-                    
-                    <td>-2.324068</td>
-                    
-                    <td>52.095111</td>
-                    
-                    <td data-sort-value="0.66">0.66</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-07</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0005</td>
+                    <td class="data-table__cell--max-width">former Railway Sidings, Peachfield Road</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0005+Former+Railway+Sidings%2C+Peachfield+Road%2C+Malvern.pdf/3822a5cb-03cd-e482-96bb-23ccbd3889ff" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0005+Former+Railway+Sidings%2C+Peachfield+Road%2C+Malvern.pdf/3822a5cb-03cd-e482-96bb-23ccbd3889ff</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.095111</td>
+                    <td>-2.324068</td>
+                    <td>0.66</td>
+                    <td>18</td>
+                    <td>22</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="MHDCBLR/0006">MHDCBLR/0006</td>
-                    <td data-sort-value="Victoria Road Car Park, Malvern" class="data-table__cell--max-width">Victoria Road Car Park, Malvern</td>
-                    
-                    <td>-2.325412</td>
-                    
-                    <td>52.113331</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-07</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0006</td>
+                    <td class="data-table__cell--max-width">Victoria Road Car Park, Malvern</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0006+Victoria+Road+Car+Park%2C+Malvern.pdf/769cfa34-62c2-380b-8884-c974287a2539" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0006+Victoria+Road+Car+Park%2C+Malvern.pdf/769cfa34-62c2-380b-8884-c974287a2539</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.113331</td>
+                    <td>-2.325412</td>
+                    <td>0.28</td>
+                    <td>18</td>
+                    <td>21</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="MHDCBLR/0007">MHDCBLR/0007</td>
-                    <td data-sort-value="Barracks Store, Court Road, Malvern" class="data-table__cell--max-width">Barracks Store, Court Road, Malvern</td>
-                    
-                    <td>-2.317711</td>
-                    
-                    <td>52.104407</td>
-                    
-                    <td data-sort-value="0.81">0.81</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-07</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0007</td>
+                    <td class="data-table__cell--max-width">Barracks Store, Court Road, Malvern</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0007+Barracks+Store%2C+Court+Road%2C+Malvern.pdf/f8dcc812-6cf3-dddb-4051-8a333e6cbba0" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0007+Barracks+Store%2C+Court+Road%2C+Malvern.pdf/f8dcc812-6cf3-dddb-4051-8a333e6cbba0</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.104407</td>
+                    <td>-2.317711</td>
+                    <td>0.81</td>
+                    <td>25</td>
+                    <td>31</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="MHDCBLR/0008">MHDCBLR/0008</td>
-                    <td data-sort-value="Malvern Technology Centre, Malvern" class="data-table__cell--max-width">Malvern Technology Centre, Malvern</td>
-                    
-                    <td>-2.313112</td>
-                    
-                    <td>52.100184</td>
-                    
-                    <td data-sort-value="15.4">15.4</td>
-                    
-                    <td data-sort-value="270">270</td>
-                    
-                    <td data-sort-value="330">330</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-08</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0008</td>
+                    <td class="data-table__cell--max-width">Malvern Technology Centre, Malvern</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0008+Malvern+Technology+Centre%2C+Malvern.pdf/f67dcb67-2542-91a1-0407-59d3d3bc5f43" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0008+Malvern+Technology+Centre%2C+Malvern.pdf/f67dcb67-2542-91a1-0407-59d3d3bc5f43</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.100184</td>
+                    <td>-2.313112</td>
+                    <td>15.4</td>
+                    <td>270</td>
+                    <td>330</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="MHDCBLR/0011">MHDCBLR/0011</td>
-                    <td data-sort-value="Land adj Henwick Mill House, Martley Road-part BF and part GF, Lower Broadheath" class="data-table__cell--max-width">Land adj Henwick Mill House, Martley Road-part BF and part GF, Lower Broadheath</td>
-                    
-                    <td>-2.249061</td>
-                    
-                    <td>52.203737</td>
-                    
-                    <td data-sort-value="1.54">1.54</td>
-                    
-                    <td data-sort-value="38">38</td>
-                    
-                    <td data-sort-value="46">46</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-08</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0011</td>
+                    <td class="data-table__cell--max-width">Land adj Henwick Mill House, Martley Road-part BF and part GF, Lower Broadheath</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0011+Land+adj+Henwick+Mill+House%2C+Martley+Road%2C+Lower+Broadheath.pdf/37ed5b38-8dc0-331a-88c0-df8d06abb39b" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0011+Land+adj+Henwick+Mill+House%2C+Martley+Road%2C+Lower+Broadheath.pdf/37ed5b38-8dc0-331a-88c0-df8d06abb39b</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.203737</td>
+                    <td>-2.249061</td>
+                    <td>1.54</td>
+                    <td>38</td>
+                    <td>46</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="MHDCBLR/0012">MHDCBLR/0012</td>
-                    <td data-sort-value="Land adj. former Pheasant Inn-part BF and part GF, Welland" class="data-table__cell--max-width">Land adj. former Pheasant Inn-part BF and part GF, Welland</td>
-                    
-                    <td>-2.296148</td>
-                    
-                    <td>52.058287</td>
-                    
-                    <td data-sort-value="0.67">0.67</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-08</td>
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0012</td>
+                    <td class="data-table__cell--max-width">Land adj. former Pheasant Inn-part BF and part GF, Welland</td>
+                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0012+Land+adj+former+Pheasant+Inn%2C+Welland.pdf/90ebf4a6-035d-2260-639f-adf302d1f99f" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0012+Land+adj+former+Pheasant+Inn%2C+Welland.pdf/90ebf4a6-035d-2260-639f-adf302d1f99f</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/malvern-hills" class="govuk-link">http://opendatacommunities.org/id/district-council/malvern-hills</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-10-19</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0012+Land+adj+former+Pheasant+Inn%2C+Welland.pdf/90ebf4a6-035d-2260-639f-adf302d1f99f" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0012+Land+adj+former+Pheasant+Inn%2C+Welland.pdf/90ebf4a6-035d-2260-639f-adf302d1f99f</a></td>
-
+                    <td>52.058287</td>
+                    <td>-2.296148</td>
+                    <td>0.67</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -551,7 +440,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
                 </tr>
                 
             </tbody>
@@ -560,6 +449,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

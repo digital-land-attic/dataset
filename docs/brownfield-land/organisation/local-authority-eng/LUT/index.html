@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="SHLAA138">SHLAA138</td>
-                    <td data-sort-value="High Town Block C, Midland Road Passage" class="data-table__cell--max-width">High Town Block C, Midland Road Passage</td>
-                    
-                    <td>-0.413124</td>
-                    
-                    <td>51.883154</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="7.0">7</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA138</td>
+                    <td class="data-table__cell--max-width">High Town Block C, Midland Road Passage</td>
+                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/138-and-139.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/138-and-139.pdf</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/138-and-139.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/138-and-139.pdf</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.883154</td>
+                    <td>-0.413124</td>
+                    <td>0.16</td>
+                    <td>6.0</td>
+                    <td>7.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="SHLAA148">SHLAA148</td>
-                    <td data-sort-value="Station Quarter" class="data-table__cell--max-width">Station Quarter</td>
-                    
-                    <td>-0.412433</td>
-                    
-                    <td>51.881328</td>
-                    
-                    <td data-sort-value="1.48">1.48</td>
-                    
-                    <td data-sort-value="375.0">375</td>
-                    
-                    <td data-sort-value="413.0">413</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA148</td>
+                    <td class="data-table__cell--max-width">Station Quarter</td>
+                    <td><a href="https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/148-and-149.pdf" class="govuk-link">https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/148-and-149.pdf</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/148-and-149.pdf" class="govuk-link">https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/148-and-149.pdf</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.881328</td>
+                    <td>-0.412433</td>
+                    <td>1.48</td>
+                    <td>375.0</td>
+                    <td>413.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,74 +232,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="SHLAA149">SHLAA149</td>
-                    <td data-sort-value="Marsh Farm Central Area" class="data-table__cell--max-width">Marsh Farm Central Area</td>
-                    
-                    <td>-0.453512</td>
-                    
-                    <td>51.917995</td>
-                    
-                    <td data-sort-value="3.91">3.91</td>
-                    
-                    <td data-sort-value="94.0">94</td>
-                    
-                    <td data-sort-value="103.0">103</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA149</td>
+                    <td class="data-table__cell--max-width">Marsh Farm Central Area</td>
+                    <td><a href="https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/148-and-149.pdf" class="govuk-link">https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/148-and-149.pdf</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td>2018-12-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/148-and-149.pdf" class="govuk-link">https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/148-and-149.pdf</a></td>
-
+                    <td>51.917995</td>
+                    <td>-0.453512</td>
+                    <td>3.91</td>
+                    <td>94.0</td>
+                    <td>103.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="SHLAA150">SHLAA150</td>
-                    <td data-sort-value="Power Court" class="data-table__cell--max-width">Power Court</td>
-                    
-                    <td>-0.40828</td>
-                    
-                    <td>51.879618</td>
-                    
-                    <td data-sort-value="7.21">7.21</td>
-                    
-                    <td data-sort-value="550.0">550</td>
-                    
-                    <td data-sort-value="605.0">605</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA150</td>
+                    <td class="data-table__cell--max-width">Power Court</td>
+                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/150-and-151.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/150-and-151.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td>2019-09-30</td>
-                    <td>full planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/150-and-151.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/150-and-151.pdf</a></td>
-
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.879618</td>
+                    <td>-0.40828</td>
+                    <td>7.21</td>
+                    <td>550.0</td>
+                    <td>605.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,110 +286,77 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="SHLAA160">SHLAA160</td>
-                    <td data-sort-value="Moreton Park Estate" class="data-table__cell--max-width">Moreton Park Estate</td>
-                    
-                    <td>-0.399109</td>
-                    
-                    <td>51.892792</td>
-                    
-                    <td data-sort-value="0.83">0.83</td>
-                    
-                    <td data-sort-value="41.0">41</td>
-                    
-                    <td data-sort-value="45.0">45</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA160</td>
+                    <td class="data-table__cell--max-width">Moreton Park Estate</td>
+                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/160-and-161.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/160-and-161.pdf</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td>2018-07-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/160-and-161.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/160-and-161.pdf</a></td>
-
+                    <td>51.892792</td>
+                    <td>-0.399109</td>
+                    <td>0.83</td>
+                    <td>41.0</td>
+                    <td>45.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="SHLAA161">SHLAA161</td>
-                    <td data-sort-value="Oxen Industrial Estate, Oxen Road" class="data-table__cell--max-width">Oxen Industrial Estate, Oxen Road</td>
-                    
-                    <td>-0.405778</td>
-                    
-                    <td>51.887092</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="48.0">48</td>
-                    
-                    <td data-sort-value="53.0">53</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA161</td>
+                    <td class="data-table__cell--max-width">Oxen Industrial Estate, Oxen Road</td>
+                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/160-and-161.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/160-and-161.pdf</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/160-and-161.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/160-and-161.pdf</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.887092</td>
+                    <td>-0.405778</td>
+                    <td>0.6</td>
+                    <td>48.0</td>
+                    <td>53.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="SHLAA174">SHLAA174</td>
-                    <td data-sort-value="Land at Caleb Close" class="data-table__cell--max-width">Land at Caleb Close</td>
-                    
-                    <td>-0.448048</td>
-                    
-                    <td>51.89343</td>
-                    
-                    <td data-sort-value="2.5">2.5</td>
-                    
-                    <td data-sort-value="208.0">208</td>
-                    
-                    <td data-sort-value="229.0">229</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA174</td>
+                    <td class="data-table__cell--max-width">Land at Caleb Close</td>
+                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/174-and-175.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/174-and-175.pdf</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td>2018-03-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/174-and-175.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/174-and-175.pdf</a></td>
-
+                    <td>51.89343</td>
+                    <td>-0.448048</td>
+                    <td>2.5</td>
+                    <td>208.0</td>
+                    <td>229.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -443,38 +365,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="SHLAA175">SHLAA175</td>
-                    <td data-sort-value="Car Parks on Dunstable Place" class="data-table__cell--max-width">Car Parks on Dunstable Place</td>
-                    
-                    <td>-0.420048</td>
-                    
-                    <td>51.879201</td>
-                    
-                    <td data-sort-value="0.29">0.29</td>
-                    
-                    <td data-sort-value="41.0">41</td>
-                    
-                    <td data-sort-value="45.0">45</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA175</td>
+                    <td class="data-table__cell--max-width">Car Parks on Dunstable Place</td>
+                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/174-and-175.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/174-and-175.pdf</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/174-and-175.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/174-and-175.pdf</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.879201</td>
+                    <td>-0.420048</td>
+                    <td>0.29</td>
+                    <td>41.0</td>
+                    <td>45.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -483,38 +394,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="SHLAA180">SHLAA180</td>
-                    <td data-sort-value="Dalroad Industrial Estate" class="data-table__cell--max-width">Dalroad Industrial Estate</td>
-                    
-                    <td>-0.434327</td>
-                    
-                    <td>51.883456</td>
-                    
-                    <td data-sort-value="0.79">0.79</td>
-                    
-                    <td data-sort-value="32.0">32</td>
-                    
-                    <td data-sort-value="35.0">35</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA180</td>
+                    <td class="data-table__cell--max-width">Dalroad Industrial Estate</td>
+                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/180-and-181.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/180-and-181.pdf</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/180-and-181.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/180-and-181.pdf</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.883456</td>
+                    <td>-0.434327</td>
+                    <td>0.79</td>
+                    <td>32.0</td>
+                    <td>35.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -523,38 +423,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="SHLAA183">SHLAA183</td>
-                    <td data-sort-value="The Windsor Castle, 12 Albert Road" class="data-table__cell--max-width">The Windsor Castle, 12 Albert Road</td>
-                    
-                    <td>-0.411712</td>
-                    
-                    <td>51.875393</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="119.0">119</td>
-                    
-                    <td data-sort-value="131.0">131</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LUT</td>
+                    <td>SHLAA183</td>
+                    <td class="data-table__cell--max-width">The Windsor Castle, 12 Albert Road</td>
+                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/182-and-183.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/182-and-183.pdf</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/luton" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/luton</a></td>
-                    <td></td>
-                    <td>2017-06-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/182-and-183.pdf" class="govuk-link">http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/182-and-183.pdf</a></td>
-
+                    <td>51.875393</td>
+                    <td>-0.411712</td>
+                    <td>0.08</td>
+                    <td>119.0</td>
+                    <td>131.0</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -563,7 +452,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad" class="govuk-link">2f7c0fef...</a></td>
                 </tr>
                 
             </tbody>
@@ -572,6 +461,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

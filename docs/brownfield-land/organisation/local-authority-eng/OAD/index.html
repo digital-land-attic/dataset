@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="OWBCBFL/001">OWBCBFL/001</td>
-                    <td data-sort-value="Former Oadby Swimming Pool Site, Leicester Road, Oadby" class="data-table__cell--max-width">Former Oadby Swimming Pool Site, Leicester Road, Oadby</td>
-                    
-                    <td>-1.086378</td>
-                    
-                    <td>52.601328</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/001</td>
+                    <td class="data-table__cell--max-width">Former Oadby Swimming Pool Site, Leicester Road, Oadby</td>
                     <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.601328</td>
+                    <td>-1.086378</td>
+                    <td>0.26</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="OWBCBFL/002">OWBCBFL/002</td>
-                    <td data-sort-value="53-59 Queens Drive, Wigston" class="data-table__cell--max-width">53-59 Queens Drive, Wigston</td>
-                    
-                    <td>-1.117732</td>
-                    
-                    <td>52.5855</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/002</td>
+                    <td class="data-table__cell--max-width">53-59 Queens Drive, Wigston</td>
                     <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.5855</td>
+                    <td>-1.117732</td>
+                    <td>0.09</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="OWBCBFL/003">OWBCBFL/003</td>
-                    <td data-sort-value="Land At Bennett Way, South Wigston" class="data-table__cell--max-width">Land At Bennett Way, South Wigston</td>
-                    
-                    <td>-1.128604</td>
-                    
-                    <td>52.58212</td>
-                    
-                    <td data-sort-value="0.13">0.13</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/003</td>
+                    <td class="data-table__cell--max-width">Land At Bennett Way, South Wigston</td>
                     <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.58212</td>
+                    <td>-1.128604</td>
+                    <td>0.13</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="OWBCBFL/005">OWBCBFL/005</td>
-                    <td data-sort-value="29-31 Canal Street, Wigston, LE18 4PL" class="data-table__cell--max-width">29-31 Canal Street, Wigston, LE18 4PL</td>
-                    
-                    <td>-1.131548</td>
-                    
-                    <td>52.578761</td>
-                    
-                    <td data-sort-value="0.002">0.002</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-04-06</td>
-                    
-                    <td>2017-04-06</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/005</td>
+                    <td class="data-table__cell--max-width">29-31 Canal Street, Wigston, LE18 4PL</td>
                     <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.578761</td>
+                    <td>-1.131548</td>
+                    <td>0.002</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="OWBCBFL/006">OWBCBFL/006</td>
-                    <td data-sort-value="8-10 Long Street, Wigston" class="data-table__cell--max-width">8-10 Long Street, Wigston</td>
-                    
-                    <td>-1.109126</td>
-                    
-                    <td>52.583395</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/006</td>
+                    <td class="data-table__cell--max-width">8-10 Long Street, Wigston</td>
+                    <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>52.583395</td>
+                    <td>-1.109126</td>
+                    <td>0.09</td>
+                    <td>27</td>
+                    <td>27</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="OWBCBFL/007">OWBCBFL/007</td>
-                    <td data-sort-value="271 Leicester Road, Wigston" class="data-table__cell--max-width">271 Leicester Road, Wigston</td>
-                    
-                    <td>-1.110317</td>
-                    
-                    <td>52.59528</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/007</td>
+                    <td class="data-table__cell--max-width">271 Leicester Road, Wigston</td>
+                    <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-10-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>52.59528</td>
+                    <td>-1.110317</td>
+                    <td>0.06</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="OWBCBFL/008">OWBCBFL/008</td>
-                    <td data-sort-value="39 Long Street, Wigston" class="data-table__cell--max-width">39 Long Street, Wigston</td>
-                    
-                    <td>-1.107853</td>
-                    
-                    <td>52.583583</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/008</td>
+                    <td class="data-table__cell--max-width">39 Long Street, Wigston</td>
                     <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.583583</td>
+                    <td>-1.107853</td>
+                    <td>0.24</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="OWBCBFL/009">OWBCBFL/009</td>
-                    <td data-sort-value="Arriva Bus Depot, Station Street, South Wigston" class="data-table__cell--max-width">Arriva Bus Depot, Station Street, South Wigston</td>
-                    
-                    <td>-1.130078</td>
-                    
-                    <td>52.581465</td>
-                    
-                    <td data-sort-value="1.11">1.11</td>
-                    
-                    <td data-sort-value="43">43</td>
-                    
-                    <td data-sort-value="43">43</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/009</td>
+                    <td class="data-table__cell--max-width">Arriva Bus Depot, Station Street, South Wigston</td>
                     <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.581465</td>
+                    <td>-1.130078</td>
+                    <td>1.11</td>
+                    <td>43</td>
+                    <td>43</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="OWBCBFL/011">OWBCBFL/011</td>
-                    <td data-sort-value="Lyn House, 37-41 The Parade, Oadby" class="data-table__cell--max-width">Lyn House, 37-41 The Parade, Oadby</td>
-                    
-                    <td>-1.083467</td>
-                    
-                    <td>52.60002</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/011</td>
+                    <td class="data-table__cell--max-width">Lyn House, 37-41 The Parade, Oadby</td>
+                    <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-07-21</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>52.60002</td>
+                    <td>-1.083467</td>
+                    <td></td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="OWBCBFL/014">OWBCBFL/014</td>
-                    <td data-sort-value="41-43 Canal Street, South Wigston" class="data-table__cell--max-width">41-43 Canal Street, South Wigston</td>
-                    
-                    <td>-1.132188</td>
-                    
-                    <td>52.577723</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-04-06</td>
-                    
                     <td>2017-12-01</td>
+                    <td>local-authority-eng:OAD</td>
+                    <td>OWBCBFL/014</td>
+                    <td class="data-table__cell--max-width">41-43 Canal Street, South Wigston</td>
+                    <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/oadby-and-wigston" class="govuk-link">http://opendatacommunities.org/id/district-council/oadby-and-wigston</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-09-29</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf" class="govuk-link">https://www.oadby-wigston.gov.uk/files/documents/brownfield_land_register_site_plans_2018_2019/Brownfield%20Land%20Register%20Site%20Plans%202018-2019.pdf</a></td>
-
+                    <td>52.577723</td>
+                    <td>-1.132188</td>
+                    <td>0.04</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-04-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/1acc207e89a6a1ea460d438c9d4cbcdb2c629c4691d623ffa87df13773259587" class="govuk-link">1acc207e...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,95 +154,72 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR/ABB/01H">BR/ABB/01H</td>
-                    <td data-sort-value="Land to the north of Laurel Terrace, Laurel Terrace, Abbeytown" class="data-table__cell--max-width">Land to the north of Laurel Terrace, Laurel Terrace, Abbeytown</td>
-                    
-                    <td>-3.289643</td>
-                    
-                    <td>54.845185</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/ABB/01H</td>
+                    <td class="data-table__cell--max-width">Land to the north of Laurel Terrace, Laurel Terrace, Abbeytown</td>
                     <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.845185</td>
+                    <td>-3.289643</td>
+                    <td>0.28</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR/BRM/01H">BR/BRM/01H</td>
-                    <td data-sort-value="Land at former Broughton Moor RNAD, Moor Road, Broughton Moor" class="data-table__cell--max-width">Land at former Broughton Moor RNAD, Moor Road, Broughton Moor</td>
-                    
-                    <td>-3.452105</td>
-                    
-                    <td>54.675365</td>
-                    
-                    <td data-sort-value="4.3">4.3</td>
-                    
-                    <td data-sort-value="24">24</td>
-                    
-                    <td data-sort-value="30">30</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/BRM/01H</td>
+                    <td class="data-table__cell--max-width">Land at former Broughton Moor RNAD, Moor Road, Broughton Moor</td>
+                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
                     <td>owned by a public authority</td>
-                    <td>2015-05-06</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td>54.675365</td>
+                    <td>-3.452105</td>
+                    <td>4.3</td>
+                    <td>24</td>
+                    <td>30</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -251,74 +228,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR/FLI/01H">BR/FLI/01H</td>
-                    <td data-sort-value="Former Flimby Garage, Church Road, Flimby" class="data-table__cell--max-width">Former Flimby Garage, Church Road, Flimby</td>
-                    
-                    <td>-3.51579</td>
-                    
-                    <td>54.686323</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/FLI/01H</td>
+                    <td class="data-table__cell--max-width">Former Flimby Garage, Church Road, Flimby</td>
                     <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.686323</td>
+                    <td>-3.51579</td>
+                    <td>0.17</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR/GRC/02H">BR/GRC/02H</td>
-                    <td data-sort-value="Land at William Street, Great Clifton" class="data-table__cell--max-width">Land at William Street, Great Clifton</td>
-                    
-                    <td>-3.490071</td>
-                    
-                    <td>54.654637</td>
-                    
-                    <td data-sort-value="0.52">0.52</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="18">18</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/GRC/02H</td>
+                    <td class="data-table__cell--max-width">Land at William Street, Great Clifton</td>
+                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2012-09-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td>54.654637</td>
+                    <td>-3.490071</td>
+                    <td>0.52</td>
+                    <td>15</td>
+                    <td>18</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -327,38 +282,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR/KBR/01H">BR/KBR/01H</td>
-                    <td data-sort-value="Land adjacent to Rodway, West Lane, Kirkbride" class="data-table__cell--max-width">Land adjacent to Rodway, West Lane, Kirkbride</td>
-                    
-                    <td>-3.205189</td>
-                    
-                    <td>54.894861</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="19">19</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/KBR/01H</td>
+                    <td class="data-table__cell--max-width">Land adjacent to Rodway, West Lane, Kirkbride</td>
+                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2010-11-12</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td>54.894861</td>
+                    <td>-3.205189</td>
+                    <td>0.6</td>
+                    <td>5</td>
+                    <td>19</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -367,38 +311,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR/MAR/01H">BR/MAR/01H</td>
-                    <td data-sort-value="Land at Ropery Street, Maryport" class="data-table__cell--max-width">Land at Ropery Street, Maryport</td>
-                    
-                    <td>-3.502352</td>
-                    
-                    <td>54.709337</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/MAR/01H</td>
+                    <td class="data-table__cell--max-width">Land at Ropery Street, Maryport</td>
+                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-06-16</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td>54.709337</td>
+                    <td>-3.502352</td>
+                    <td>0.8</td>
+                    <td>12</td>
+                    <td>20</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -407,38 +340,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR/MAR/02H">BR/MAR/02H</td>
-                    <td data-sort-value="Land at The Netherdales, Ellenborough Road, Maryport" class="data-table__cell--max-width">Land at The Netherdales, Ellenborough Road, Maryport</td>
-                    
-                    <td>-3.485217</td>
-                    
-                    <td>54.711067</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/MAR/02H</td>
+                    <td class="data-table__cell--max-width">Land at The Netherdales, Ellenborough Road, Maryport</td>
+                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-05-14</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td>54.711067</td>
+                    <td>-3.485217</td>
+                    <td>0.3</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -447,110 +369,77 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR/MAR/03H">BR/MAR/03H</td>
-                    <td data-sort-value="Land to the east of Marine Road, Maryport" class="data-table__cell--max-width">Land to the east of Marine Road, Maryport</td>
-                    
-                    <td>-3.474062</td>
-                    
-                    <td>52.621386</td>
-                    
-                    <td data-sort-value="1.53">1.53</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    
-                    <td data-sort-value="50">50</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/MAR/03H</td>
+                    <td class="data-table__cell--max-width">Land to the east of Marine Road, Maryport</td>
                     <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.621386</td>
+                    <td>-3.474062</td>
+                    <td>1.53</td>
+                    <td>30</td>
+                    <td>50</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR/PRO/01H">BR/PRO/01H</td>
-                    <td data-sort-value="Prospect Garage, Main Road (A596), Prospect" class="data-table__cell--max-width">Prospect Garage, Main Road (A596), Prospect</td>
-                    
-                    <td>-3.368044</td>
-                    
-                    <td>54.756422</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/PRO/01H</td>
+                    <td class="data-table__cell--max-width">Prospect Garage, Main Road (A596), Prospect</td>
                     <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.756422</td>
+                    <td>-3.368044</td>
+                    <td>0.6</td>
+                    <td>12</td>
+                    <td>20</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR/SIL/01H">BR/SIL/01H</td>
-                    <td data-sort-value="Former Fisons Factory, Skiddaw Street, Silloth" class="data-table__cell--max-width">Former Fisons Factory, Skiddaw Street, Silloth</td>
-                    
-                    <td>-3.385944</td>
-                    
-                    <td>54.865433</td>
-                    
-                    <td data-sort-value="8.7">8.7</td>
-                    
-                    <td data-sort-value="170">170</td>
-                    
-                    <td data-sort-value="254">254</td>
                     <td>2017-12-20</td>
-                    
-                    <td>2017-12-20</td>
+                    <td>local-authority-eng:ALL</td>
+                    <td>BR/SIL/01H</td>
+                    <td class="data-table__cell--max-width">Former Fisons Factory, Skiddaw Street, Silloth</td>
+                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/allerdale" class="govuk-link">http://opendatacommunities.org/id/district-council/allerdale</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2011-05-23</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://mapping.allerdale.gov.uk/myallerdale.aspx" class="govuk-link">http://mapping.allerdale.gov.uk/myallerdale.aspx</a></td>
-
+                    <td>54.865433</td>
+                    <td>-3.385944</td>
+                    <td>8.7</td>
+                    <td>170</td>
+                    <td>254</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -559,7 +448,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3b694528538878d378fd6892a649fa634f0013ef299331e6c12b078cfe85d3b2" class="govuk-link">3b694528...</a></td>
                 </tr>
                 
             </tbody>
@@ -568,6 +457,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

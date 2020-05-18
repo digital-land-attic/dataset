@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR3">BR3</td>
-                    <td data-sort-value="Grange Park Primary School, Calcott, Stirchley, Telford, Shropshire, TF3 1YQ" class="data-table__cell--max-width">Grange Park Primary School, Calcott, Stirchley, Telford, Shropshire, TF3 1YQ</td>
-                    
-                    <td>-2.43151</td>
-                    
-                    <td>52.657732</td>
-                    
-                    <td data-sort-value="0.58">0.58</td>
-                    
-                    <td data-sort-value="37">37</td>
-                    
-                    <td data-sort-value="37">37</td>
                     <td>2016-12-01</td>
-                    
-                    <td>2016-12-01</td>
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR3</td>
+                    <td class="data-table__cell--max-width">Grange Park Primary School, Calcott, Stirchley, Telford, Shropshire, TF3 1YQ</td>
+                    <td><a href="http://www.telford.gov.uk/downloads/file/6576/br3_-_grange_park_primary_school" class="govuk-link">http://www.telford.gov.uk/downloads/file/6576/br3_-_grange_park_primary_school</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
                     <td>owned by a public authority</td>
-                    <td>2013-10-04</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.telford.gov.uk/downloads/file/6576/br3_-_grange_park_primary_school" class="govuk-link">http://www.telford.gov.uk/downloads/file/6576/br3_-_grange_park_primary_school</a></td>
-
+                    <td>52.657732</td>
+                    <td>-2.43151</td>
+                    <td>0.58</td>
+                    <td>37</td>
+                    <td>37</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR4">BR4</td>
-                    <td data-sort-value="Sutherland Co Operative Academy, Gibbons Road, Trench, Telford, Shropshire, TF2 7JR" class="data-table__cell--max-width">Sutherland Co Operative Academy, Gibbons Road, Trench, Telford, Shropshire, TF2 7JR</td>
-                    
-                    <td>-2.447226</td>
-                    
-                    <td>52.712735</td>
-                    
-                    <td data-sort-value="5.29">5.29</td>
-                    
-                    <td data-sort-value="123">123</td>
-                    
-                    <td data-sort-value="123">123</td>
-                    <td>2016-12-01</td>
-                    
                     <td>2018-11-26</td>
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR4</td>
+                    <td class="data-table__cell--max-width">Sutherland Co Operative Academy, Gibbons Road, Trench, Telford, Shropshire, TF2 7JR</td>
+                    <td><a href="http://www.telford.gov.uk/downloads/file/6577/br4_-_sutherland_cooperative_academy" class="govuk-link">http://www.telford.gov.uk/downloads/file/6577/br4_-_sutherland_cooperative_academy</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
                     <td>owned by a public authority</td>
-                    <td>2016-05-31</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.telford.gov.uk/downloads/file/6577/br4_-_sutherland_cooperative_academy" class="govuk-link">http://www.telford.gov.uk/downloads/file/6577/br4_-_sutherland_cooperative_academy</a></td>
-
+                    <td>52.712735</td>
+                    <td>-2.447226</td>
+                    <td>5.29</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR5">BR5</td>
-                    <td data-sort-value="Land at Park Road, Dawley Bank, Telford, Shropshire" class="data-table__cell--max-width">Land at Park Road, Dawley Bank, Telford, Shropshire</td>
-                    
-                    <td>-2.466977</td>
-                    
-                    <td>52.674336</td>
-                    
-                    <td data-sort-value="0.54">0.54</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2016-12-01</td>
-                    
-                    <td>2016-12-01</td>
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR5</td>
+                    <td class="data-table__cell--max-width">Land at Park Road, Dawley Bank, Telford, Shropshire</td>
+                    <td><a href="http://www.telford.gov.uk/downloads/file/6578/br5_-_land_at_park_road_dawley_bank" class="govuk-link">http://www.telford.gov.uk/downloads/file/6578/br5_-_land_at_park_road_dawley_bank</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
                     <td>owned by a public authority</td>
-                    <td>2010-11-23</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.telford.gov.uk/downloads/file/6578/br5_-_land_at_park_road_dawley_bank" class="govuk-link">http://www.telford.gov.uk/downloads/file/6578/br5_-_land_at_park_road_dawley_bank</a></td>
-
+                    <td>52.674336</td>
+                    <td>-2.466977</td>
+                    <td>0.54</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR6">BR6</td>
-                    <td data-sort-value="Land back of Constitutional Hill, College, Masonic Building Constitution Hill, Wellington, Telford, Shropshire, TF1 3AY" class="data-table__cell--max-width">Land back of Constitutional Hill, College, Masonic Building Constitution Hill, Wellington, Telford, Shropshire, TF1 3AY</td>
-                    
-                    <td>-2.513879</td>
-                    
-                    <td>52.702442</td>
-                    
-                    <td data-sort-value="0.253">0.253</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    <td>2016-12-01</td>
-                    
                     <td>2018-11-26</td>
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR6</td>
+                    <td class="data-table__cell--max-width">Land back of Constitutional Hill, College, Masonic Building Constitution Hill, Wellington, Telford, Shropshire, TF1 3AY</td>
+                    <td><a href="http://www.telford.gov.uk/downloads/file/6579/br6_-_land_back_of_constitutional_hil" class="govuk-link">http://www.telford.gov.uk/downloads/file/6579/br6_-_land_back_of_constitutional_hil</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-25</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.telford.gov.uk/downloads/file/6579/br6_-_land_back_of_constitutional_hil" class="govuk-link">http://www.telford.gov.uk/downloads/file/6579/br6_-_land_back_of_constitutional_hil</a></td>
-
+                    <td>52.702442</td>
+                    <td>-2.513879</td>
+                    <td>0.253</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -336,38 +291,27 @@ Reserved matters application for the erection of 4no. dwellings with access incl
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR10">BR10</td>
-                    <td data-sort-value="Old Park 1, Old Park Way" class="data-table__cell--max-width">Old Park 1, Old Park Way</td>
-                    
-                    <td>-2.463348</td>
-                    
-                    <td>52.679411</td>
-                    
-                    <td data-sort-value="6.0">6.0</td>
-                    
-                    <td data-sort-value="200">200</td>
-                    
-                    <td data-sort-value="200">200</td>
                     <td>2016-12-01</td>
-                    
-                    <td>2016-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR10</td>
+                    <td class="data-table__cell--max-width">Old Park 1, Old Park Way</td>
                     <td><a href="http://www.telford.gov.uk/downloads/file/6580/br10_-_old_park_1_old_park_way" class="govuk-link">http://www.telford.gov.uk/downloads/file/6580/br10_-_old_park_1_old_park_way</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.679411</td>
+                    <td>-2.463348</td>
+                    <td>6.0</td>
+                    <td>200</td>
+                    <td>200</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -376,38 +320,27 @@ Reserved matters application for the erection of 4no. dwellings with access incl
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR11">BR11</td>
-                    <td data-sort-value="Land off Garfield Road, Mossey Green" class="data-table__cell--max-width">Land off Garfield Road, Mossey Green</td>
-                    
-                    <td>-2.468045</td>
-                    
-                    <td>52.688482</td>
-                    
-                    <td data-sort-value="1.052">1.052</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    
-                    <td data-sort-value="30">30</td>
                     <td>2016-12-01</td>
-                    
-                    <td>2016-12-01</td>
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR11</td>
+                    <td class="data-table__cell--max-width">Land off Garfield Road, Mossey Green</td>
+                    <td><a href="http://www.telford.gov.uk/downloads/file/6581/br11_-_land_off_garfield_road_mossey_green" class="govuk-link">http://www.telford.gov.uk/downloads/file/6581/br11_-_land_off_garfield_road_mossey_green</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-12-04</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.telford.gov.uk/downloads/file/6581/br11_-_land_off_garfield_road_mossey_green" class="govuk-link">http://www.telford.gov.uk/downloads/file/6581/br11_-_land_off_garfield_road_mossey_green</a></td>
-
+                    <td>52.688482</td>
+                    <td>-2.468045</td>
+                    <td>1.052</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -416,74 +349,52 @@ Reserved matters application for the erection of 4no. dwellings with access incl
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR13">BR13</td>
-                    <td data-sort-value="Land East of Fence Road" class="data-table__cell--max-width">Land East of Fence Road</td>
-                    
-                    <td>-2.478874</td>
-                    
-                    <td>52.668193</td>
-                    
-                    <td data-sort-value="0.43">0.43</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="13">13</td>
                     <td>2016-12-01</td>
-                    
-                    <td>2016-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR13</td>
+                    <td class="data-table__cell--max-width">Land East of Fence Road</td>
                     <td><a href="http://www.telford.gov.uk/downloads/file/6582/br13_-_land_east_of_fence_road" class="govuk-link">http://www.telford.gov.uk/downloads/file/6582/br13_-_land_east_of_fence_road</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.668193</td>
+                    <td>-2.478874</td>
+                    <td>0.43</td>
+                    <td>13</td>
+                    <td>13</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR14">BR14</td>
-                    <td data-sort-value="Granville Site, Donnington" class="data-table__cell--max-width">Granville Site, Donnington</td>
-                    
-                    <td>-2.427055</td>
-                    
-                    <td>52.710194</td>
-                    
-                    <td data-sort-value="15.24">15.24</td>
-                    
-                    <td data-sort-value="350">350</td>
-                    
-                    <td data-sort-value="350">350</td>
-                    <td>2016-12-01</td>
-                    
                     <td>2018-11-26</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR14</td>
+                    <td class="data-table__cell--max-width">Granville Site, Donnington</td>
                     <td><a href="http://www.telford.gov.uk/downloads/file/6583/br14_-_granville_donnington" class="govuk-link">http://www.telford.gov.uk/downloads/file/6583/br14_-_granville_donnington</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.710194</td>
+                    <td>-2.427055</td>
+                    <td>15.24</td>
+                    <td>350</td>
+                    <td>350</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -492,38 +403,27 @@ Reserved matters application for the erection of 4no. dwellings with access incl
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR15">BR15</td>
-                    <td data-sort-value="Land fronting south side of Water Lane, Newport Shropshire TF10 7LD" class="data-table__cell--max-width">Land fronting south side of Water Lane, Newport Shropshire TF10 7LD</td>
-                    
-                    <td>-2.378554</td>
-                    
-                    <td>52.770454</td>
-                    
-                    <td data-sort-value="1.38">1.38</td>
-                    
-                    <td data-sort-value="67">67</td>
-                    
-                    <td data-sort-value="67">67</td>
-                    <td>2016-12-01</td>
-                    
                     <td>2017-12-01</td>
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR15</td>
+                    <td class="data-table__cell--max-width">Land fronting south side of Water Lane, Newport Shropshire TF10 7LD</td>
+                    <td><a href="http://www.telford.gov.uk/downloads/file/6584/br15_-_land_fronting_south_side_of_water_lane" class="govuk-link">http://www.telford.gov.uk/downloads/file/6584/br15_-_land_fronting_south_side_of_water_lane</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="http://www.telford.gov.uk/downloads/file/6584/br15_-_land_fronting_south_side_of_water_lane" class="govuk-link">http://www.telford.gov.uk/downloads/file/6584/br15_-_land_fronting_south_side_of_water_lane</a></td>
-
+                    <td>52.770454</td>
+                    <td>-2.378554</td>
+                    <td>1.38</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -532,38 +432,27 @@ Reserved matters application for the erection of 4no. dwellings with access incl
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR16">BR16</td>
-                    <td data-sort-value="Old Park 2, Colliersway" class="data-table__cell--max-width">Old Park 2, Colliersway</td>
-                    
-                    <td>-2.460624</td>
-                    
-                    <td>52.682011</td>
-                    
-                    <td data-sort-value="6.571">6.571</td>
-                    
-                    <td data-sort-value="78">78</td>
-                    
-                    <td data-sort-value="78">78</td>
                     <td>2016-12-01</td>
-                    
-                    <td>2016-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/telford-and-wrekin</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TFW</td>
+                    <td>BR16</td>
+                    <td class="data-table__cell--max-width">Old Park 2, Colliersway</td>
                     <td><a href="http://www.telford.gov.uk/downloads/file/6585/br16_-_old_park_2_colliersway" class="govuk-link">http://www.telford.gov.uk/downloads/file/6585/br16_-_old_park_2_colliersway</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.682011</td>
+                    <td>-2.460624</td>
+                    <td>6.571</td>
+                    <td>78</td>
+                    <td>78</td>
+                    <td>2016-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -572,7 +461,7 @@ Reserved matters application for the erection of 4no. dwellings with access incl
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/812f3116e2f1113add20738f9aae4c78f9688a5910555a6030486cd197dc8fe5" class="govuk-link">812f3116...</a></td>
                 </tr>
                 
             </tbody>
@@ -581,6 +470,11 @@ Reserved matters application for the erection of 4no. dwellings with access incl
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

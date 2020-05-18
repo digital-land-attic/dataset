@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR0201">BLR0201</td>
-                    <td data-sort-value="Police Station, 12, Bell Road, Bottisham, CAMBRIDGE, CB25 9DF" class="data-table__cell--max-width">Police Station, 12, Bell Road, Bottisham, CAMBRIDGE, CB25 9DF</td>
-                    
-                    <td>0.256845</td>
-                    
-                    <td>52.222905</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-12-12</td>
-                    
-                    <td>2017-12-12</td>
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR0201</td>
+                    <td class="data-table__cell--max-width">Police Station, 12, Bell Road, Bottisham, CAMBRIDGE, CB25 9DF</td>
+                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR0201.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR0201.jpg</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-09-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR0201.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR0201.jpg</a></td>
-
+                    <td>52.222905</td>
+                    <td>0.256845</td>
+                    <td>0.11</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR0501">BLR0501</td>
-                    <td data-sort-value="Former D S Smith Site Reach Road Burwell Burwell CB25 0AH" class="data-table__cell--max-width">Former D S Smith Site Reach Road Burwell Burwell CB25 0AH</td>
-                    
-                    <td>0.322746</td>
-                    
-                    <td>52.266392</td>
-                    
-                    <td data-sort-value="3.053">3.053</td>
-                    
-                    <td data-sort-value="70">70</td>
-                    
-                    <td data-sort-value="70">70</td>
                     <td>2017-12-12</td>
-                    
-                    <td>2017-12-12</td>
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR0501</td>
+                    <td class="data-table__cell--max-width">Former D S Smith Site Reach Road Burwell Burwell CB25 0AH</td>
+                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR0501.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR0501.jpg</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-02-19</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR0501.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR0501.jpg</a></td>
-
+                    <td>52.266392</td>
+                    <td>0.322746</td>
+                    <td>3.053</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>2017-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR0601">BLR0601</td>
-                    <td data-sort-value="1, Oak Lane, Cheveley, NEWMARKET, CB8 9RA" class="data-table__cell--max-width">1, Oak Lane, Cheveley, NEWMARKET, CB8 9RA</td>
-                    
-                    <td>0.462439</td>
-                    
-                    <td>52.21174</td>
-                    
-                    <td data-sort-value="0.513">0.513</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2017-12-12</td>
-                    
-                    <td>2017-12-12</td>
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR0601</td>
+                    <td class="data-table__cell--max-width">1, Oak Lane, Cheveley, NEWMARKET, CB8 9RA</td>
+                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR0601.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR0601.jpg</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-12-06</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR0601.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR0601.jpg</a></td>
-
+                    <td>52.21174</td>
+                    <td>0.462439</td>
+                    <td>0.513</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-12</td>
+                    <td>2019-12-12</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-12</td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR1001">BLR1001</td>
-                    <td data-sort-value="Land At Barton Road Car Park Barton Road Ely Cambridgeshire" class="data-table__cell--max-width">Land At Barton Road Car Park Barton Road Ely Cambridgeshire</td>
-                    
-                    <td>0.258723</td>
-                    
-                    <td>52.396555</td>
-                    
-                    <td data-sort-value="0.186">0.186</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
                     <td>2017-12-12</td>
-                    
-                    <td>2017-12-12</td>
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR1001</td>
+                    <td class="data-table__cell--max-width">Land At Barton Road Car Park Barton Road Ely Cambridgeshire</td>
+                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1001.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1001.jpg</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
                     <td>owned by a public authority</td>
-                    <td>2016-12-28</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1001.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1001.jpg</a></td>
-
+                    <td>52.396555</td>
+                    <td>0.258723</td>
+                    <td>0.186</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-12-12</td>
+                    <td>2019-12-12</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-12</td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR1002">BLR1002</td>
-                    <td data-sort-value="Pound Store, 10, Forehill, ELY, Cambridgeshire CB7 4AF" class="data-table__cell--max-width">Pound Store, 10, Forehill, ELY, Cambridgeshire CB7 4AF</td>
-                    
-                    <td>0.266795</td>
-                    
-                    <td>52.398304</td>
-                    
-                    <td data-sort-value="0.096">0.096</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-12</td>
-                    
-                    <td>2017-12-12</td>
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR1002</td>
+                    <td class="data-table__cell--max-width">Pound Store, 10, Forehill, ELY, Cambridgeshire CB7 4AF</td>
+                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1002.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1002.jpg</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-08-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1002.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1002.jpg</a></td>
-
+                    <td>52.398304</td>
+                    <td>0.266795</td>
+                    <td>0.096</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR1003">BLR1003</td>
-                    <td data-sort-value="The Grange, Nutholt Lane, Ely CB7 4EE" class="data-table__cell--max-width">The Grange, Nutholt Lane, Ely CB7 4EE</td>
-                    
-                    <td>0.263666</td>
-                    
-                    <td>52.400841</td>
-                    
-                    <td data-sort-value="0.605">0.605</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2017-12-12</td>
-                    
-                    <td>2017-12-12</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR1003</td>
+                    <td class="data-table__cell--max-width">The Grange, Nutholt Lane, Ely CB7 4EE</td>
                     <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1003.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1003.jpg</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.400841</td>
+                    <td>0.263666</td>
+                    <td>0.605</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR1035">BLR1035</td>
-                    <td data-sort-value="Police/ Abulance Station, Nutholt Lane, Ely, CB7 4PL" class="data-table__cell--max-width">Police/ Abulance Station, Nutholt Lane, Ely, CB7 4PL</td>
-                    
-                    <td>0.264065</td>
-                    
-                    <td>52.401569</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value="30">30</td>
-                    
-                    <td data-sort-value="30">30</td>
                     <td>2019-11-12</td>
-                    
-                    <td>2019-11-12</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR1035</td>
+                    <td class="data-table__cell--max-width">Police/ Abulance Station, Nutholt Lane, Ely, CB7 4PL</td>
                     <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1035%20-%20Police%20%26%20Ambulance%20Station%2C%20Nutholt%20Lane.pdf" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1035%20-%20Police%20%26%20Ambulance%20Station%2C%20Nutholt%20Lane.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.401569</td>
+                    <td>0.264065</td>
+                    <td></td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>2019-11-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR1004">BLR1004</td>
-                    <td data-sort-value="Paradise Leisure Centre, Newnham St, Ely CB7 4PQ" class="data-table__cell--max-width">Paradise Leisure Centre, Newnham St, Ely CB7 4PQ</td>
-                    
-                    <td>0.266758</td>
-                    
-                    <td>52.401932</td>
-                    
-                    <td data-sort-value="1.037">1.037</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="50">50</td>
                     <td>2017-12-12</td>
-                    
-                    <td>2017-12-12</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR1004</td>
+                    <td class="data-table__cell--max-width">Paradise Leisure Centre, Newnham St, Ely CB7 4PQ</td>
                     <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1004.jpg" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1004.jpg</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.401932</td>
+                    <td>0.266758</td>
+                    <td>1.037</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2017-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR1034">BLR1034</td>
-                    <td data-sort-value="Waitrose Car Park area, Brays Lane, Ely, CB7 4QJ" class="data-table__cell--max-width">Waitrose Car Park area, Brays Lane, Ely, CB7 4QJ</td>
-                    
-                    <td>0.267654</td>
-                    
-                    <td>52.40062</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2019-11-12</td>
-                    
-                    <td>2019-11-12</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR1034</td>
+                    <td class="data-table__cell--max-width">Waitrose Car Park area, Brays Lane, Ely, CB7 4QJ</td>
                     <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1034%20-%20Waitrose%20Car%20Park%2C%20Ely.pdf" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1034%20-%20Waitrose%20Car%20Park%2C%20Ely.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.40062</td>
+                    <td>0.267654</td>
+                    <td></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2019-11-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,43 +435,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR1036">BLR1036</td>
-                    <td data-sort-value="Alexander House 38 Forehill Ely Cambridgeshire" class="data-table__cell--max-width">Alexander House 38 Forehill Ely Cambridgeshire</td>
-                    
-                    <td>0.268003</td>
-                    
-                    <td>52.39784</td>
-                    
-                    <td data-sort-value="0.145">0.145</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2019-11-12</td>
-                    
-                    <td>2019-11-12</td>
+                    <td>local-authority-eng:ECA</td>
+                    <td>BLR1036</td>
+                    <td class="data-table__cell--max-width">Alexander House 38 Forehill Ely Cambridgeshire</td>
+                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1036%20-%20%2038%20Forehill%2C%20Ely.pdf" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1036%20-%20%2038%20Forehill%2C%20Ely.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/east-cambridgeshire" class="govuk-link">http://opendatacommunities.org/id/district-council/east-cambridgeshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-31</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.eastcambs.gov.uk/sites/default/files/BLR1036%20-%20%2038%20Forehill%2C%20Ely.pdf" class="govuk-link">https://www.eastcambs.gov.uk/sites/default/files/BLR1036%20-%20%2038%20Forehill%2C%20Ely.pdf</a></td>
-
+                    <td>52.39784</td>
+                    <td>0.268003</td>
+                    <td>0.145</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2019-11-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a639f02254a8ae8fb54dca24fbbf5912ed7a1d1ae04bfe66712cd4c73ea99cb" class="govuk-link">3a639f02...</a></td>
                 </tr>
                 
             </tbody>
@@ -580,6 +469,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

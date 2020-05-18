@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLA/0039(a)">BLA/0039(a)</td>
-                    <td data-sort-value="Land to rear of 21-33 Western Avenue, Blacon" class="data-table__cell--max-width">Land to rear of 21-33 Western Avenue, Blacon</td>
-                    
-                    <td>-2.927215</td>
-                    
-                    <td>53.203847</td>
-                    
-                    <td data-sort-value="0.216">0.216</td>
-                    
-                    <td data-sort-value="16.0">16</td>
-                    
-                    <td data-sort-value="16.0">16</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:CHW</td>
+                    <td>BLA/0039(a)</td>
+                    <td class="data-table__cell--max-width">Land to rear of 21-33 Western Avenue, Blacon</td>
                     <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.203847</td>
+                    <td>-2.927215</td>
+                    <td>0.216</td>
+                    <td>16.0</td>
+                    <td>16.0</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLA/0070">BLA/0070</td>
-                    <td data-sort-value="27 Blacon Point Road, Blacon, Chester. CH1 5LD" class="data-table__cell--max-width">27 Blacon Point Road, Blacon, Chester. CH1 5LD</td>
-                    
-                    <td>-2.920795</td>
-                    
-                    <td>53.20191</td>
-                    
-                    <td data-sort-value="0.173">0.173</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:CHW</td>
+                    <td>BLA/0070</td>
+                    <td class="data-table__cell--max-width">27 Blacon Point Road, Blacon, Chester. CH1 5LD</td>
+                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2012-09-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td>53.20191</td>
+                    <td>-2.920795</td>
+                    <td>0.173</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BOU/0010">BOU/0010</td>
-                    <td data-sort-value="King Edward Buildings/ Bensons site and surrounding land, Christleton" class="data-table__cell--max-width">King Edward Buildings/ Bensons site and surrounding land, Christleton</td>
-                    
-                    <td>-2.864868</td>
-                    
-                    <td>53.189457</td>
-                    
-                    <td data-sort-value="0.339">0.339</td>
-                    
-                    <td data-sort-value="11.0">11</td>
-                    
-                    <td data-sort-value="11.0">11</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:CHW</td>
+                    <td>BOU/0010</td>
+                    <td class="data-table__cell--max-width">King Edward Buildings/ Bensons site and surrounding land, Christleton</td>
                     <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td></td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.189457</td>
+                    <td>-2.864868</td>
+                    <td>0.339</td>
+                    <td>11.0</td>
+                    <td>11.0</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BOU/0045">BOU/0045</td>
-                    <td data-sort-value="Land at Premier House, Charterhall Drive, Chester" class="data-table__cell--max-width">Land at Premier House, Charterhall Drive, Chester</td>
-                    
-                    <td>-2.876767</td>
-                    
-                    <td>53.194638</td>
-                    
-                    <td data-sort-value="2.476">2.476</td>
-                    
-                    <td data-sort-value="200.0">200</td>
-                    
-                    <td data-sort-value="200.0">200</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:CHW</td>
+                    <td>BOU/0045</td>
+                    <td class="data-table__cell--max-width">Land at Premier House, Charterhall Drive, Chester</td>
+                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-09-10</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td>53.194638</td>
+                    <td>-2.876767</td>
+                    <td>2.476</td>
+                    <td>200.0</td>
+                    <td>200.0</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -336,38 +291,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BOU/0074">BOU/0074</td>
-                    <td data-sort-value="125-127 Boughton, Chester, CH3 5BH" class="data-table__cell--max-width">125-127 Boughton, Chester, CH3 5BH</td>
-                    
-                    <td>-2.8733</td>
-                    
-                    <td>53.192713</td>
-                    
-                    <td data-sort-value="0.218">0.218</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    
-                    <td data-sort-value="14.0">14</td>
                     <td>2018-12-30</td>
-                    
-                    <td>2018-12-30</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2017-01-30</td>
-                    <td></td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:CHW</td>
+                    <td>BOU/0074</td>
+                    <td class="data-table__cell--max-width">125-127 Boughton, Chester, CH3 5BH</td>
                     <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.192713</td>
+                    <td>-2.8733</td>
+                    <td>0.218</td>
+                    <td>14.0</td>
+                    <td>14.0</td>
+                    <td>2018-12-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -376,38 +320,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BOU/0084">BOU/0084</td>
-                    <td data-sort-value="The Cloud, 10 Boughton, Chester, CH3 5BH" class="data-table__cell--max-width">The Cloud, 10 Boughton, Chester, CH3 5BH</td>
-                    
-                    <td>-2.879858</td>
-                    
-                    <td>53.192071</td>
-                    
-                    <td data-sort-value="0.066">0.066</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    
-                    <td data-sort-value="8.0">8</td>
                     <td>2018-12-30</td>
-                    
-                    <td>2018-12-30</td>
+                    <td>local-authority-eng:CHW</td>
+                    <td>BOU/0084</td>
+                    <td class="data-table__cell--max-width">The Cloud, 10 Boughton, Chester, CH3 5BH</td>
+                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-11-08</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td>53.192071</td>
+                    <td>-2.879858</td>
+                    <td>0.066</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>2018-12-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -416,38 +349,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BOU/0095">BOU/0095</td>
-                    <td data-sort-value="GC and P Wright, Charles Street, Chester" class="data-table__cell--max-width">GC and P Wright, Charles Street, Chester</td>
-                    
-                    <td>-2.885408</td>
-                    
-                    <td>53.194826</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    
-                    <td data-sort-value="9.0">9</td>
                     <td>2019-12-01</td>
-                    
-                    <td>2019-12-01</td>
+                    <td>local-authority-eng:CHW</td>
+                    <td>BOU/0095</td>
+                    <td class="data-table__cell--max-width">GC and P Wright, Charles Street, Chester</td>
+                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-03-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td>53.194826</td>
+                    <td>-2.885408</td>
+                    <td>0.09</td>
+                    <td>9.0</td>
+                    <td>9.0</td>
+                    <td>2019-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -456,38 +378,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="CHC/0003">CHC/0003</td>
-                    <td data-sort-value="Linenhall car park, Stanley Street, Chester, CH1 2LR" class="data-table__cell--max-width">Linenhall car park, Stanley Street, Chester, CH1 2LR</td>
-                    
-                    <td>-2.896213</td>
-                    
-                    <td>53.190421</td>
-                    
-                    <td data-sort-value="0.737">0.737</td>
-                    
-                    <td data-sort-value="202.0">202</td>
-                    
-                    <td data-sort-value="202.0">202</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
+                    <td>local-authority-eng:CHW</td>
+                    <td>CHC/0003</td>
+                    <td class="data-table__cell--max-width">Linenhall car park, Stanley Street, Chester, CH1 2LR</td>
+                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-12-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td>53.190421</td>
+                    <td>-2.896213</td>
+                    <td>0.737</td>
+                    <td>202.0</td>
+                    <td>202.0</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -497,38 +408,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="CHC/0004">CHC/0004</td>
-                    <td data-sort-value="Land off Hoole Way/Black Diamond Street, Chester" class="data-table__cell--max-width">Land off Hoole Way/Black Diamond Street, Chester</td>
-                    
-                    <td>-2.884913</td>
-                    
-                    <td>53.196951</td>
-                    
-                    <td data-sort-value="0.297">0.297</td>
-                    
-                    <td data-sort-value="20.0">20</td>
-                    
-                    <td data-sort-value="20.0">20</td>
                     <td>2017-12-21</td>
-                    
-                    <td>2017-12-21</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:CHW</td>
+                    <td>CHC/0004</td>
+                    <td class="data-table__cell--max-width">Land off Hoole Way/Black Diamond Street, Chester</td>
                     <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.196951</td>
+                    <td>-2.884913</td>
+                    <td>0.297</td>
+                    <td>20.0</td>
+                    <td>20.0</td>
+                    <td>2017-12-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -537,38 +437,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="CHC/0005A">CHC/0005A</td>
-                    <td data-sort-value="Land at Trafford Street, Chester" class="data-table__cell--max-width">Land at Trafford Street, Chester</td>
-                    
-                    <td>-2.88986</td>
-                    
-                    <td>53.196572</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-21</td>
-                    
                     <td>2019-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/cheshire-west-and-chester</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:CHW</td>
+                    <td>CHC/0005A</td>
+                    <td class="data-table__cell--max-width">Land at Trafford Street, Chester</td>
                     <td><a href="http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files" class="govuk-link">http://consult.cheshirewestandchester.gov.uk/portal/cwc_ldf/land/blr?tab=files</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.196572</td>
+                    <td>-2.88986</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-21</td>
+                    <td>2019-12-01</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -577,7 +466,7 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-01</td>
+                    <td><a href="https://digital-land.github.io/resource/9b4bf51edb0fde008239fa4a284e2dcee2b3db7151f1a1407174fdfe481d21f8" class="govuk-link">9b4bf51e...</a></td>
                 </tr>
                 
             </tbody>
@@ -586,6 +475,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

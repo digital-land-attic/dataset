@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,95 +154,72 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR00003">BR00003</td>
-                    <td data-sort-value="Ground, First and Second Floor, 328-330 High Road, Wembley, HA9 6AZ" class="data-table__cell--max-width">Ground, First and Second Floor, 328-330 High Road, Wembley, HA9 6AZ</td>
-                    
-                    <td>-0.287414</td>
-                    
-                    <td>51.55366</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="227">227</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-14</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00003</td>
+                    <td class="data-table__cell--max-width">Ground, First and Second Floor, 328-330 High Road, Wembley, HA9 6AZ</td>
                     <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.55366</td>
+                    <td>-0.287414</td>
+                    <td>0.03</td>
+                    <td>227</td>
+                    <td>6</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR00004">BR00004</td>
-                    <td data-sort-value="Heron House, 109-115 Wembley Hill Road, Wembley, HA9 8DA" class="data-table__cell--max-width">Heron House, 109-115 Wembley Hill Road, Wembley, HA9 8DA</td>
-                    
-                    <td>-0.287561</td>
-                    
-                    <td>51.557265</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-14</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00004</td>
+                    <td class="data-table__cell--max-width">Heron House, 109-115 Wembley Hill Road, Wembley, HA9 8DA</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td>51.557265</td>
+                    <td>-0.287561</td>
+                    <td>0.15</td>
+                    <td>5</td>
+                    <td>40</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -251,38 +228,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR00005">BR00005</td>
-                    <td data-sort-value="Stonebridge Primary School Annexe, Twybridge Way, London, NW10 0ST" class="data-table__cell--max-width">Stonebridge Primary School Annexe, Twybridge Way, London, NW10 0ST</td>
-                    
-                    <td>-0.266283</td>
-                    
-                    <td>51.542723</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="55">55</td>
                     <td>2017-12-15</td>
-                    
-                    <td>2017-12-15</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00005</td>
+                    <td class="data-table__cell--max-width">Stonebridge Primary School Annexe, Twybridge Way, London, NW10 0ST</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
                     <td>owned by a public authority</td>
-                    <td>2016-06-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td>51.542723</td>
+                    <td>-0.266283</td>
+                    <td>0.6</td>
+                    <td>12</td>
+                    <td>55</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -291,38 +257,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR00006">BR00006</td>
-                    <td data-sort-value="1 Olympic Way, Wembley, HA9 0NP" class="data-table__cell--max-width">1 Olympic Way, Wembley, HA9 0NP</td>
-                    
-                    <td>-0.278971</td>
-                    
-                    <td>51.561992</td>
-                    
-                    <td data-sort-value="0.54">0.54</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="227">227</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-14</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00006</td>
+                    <td class="data-table__cell--max-width">1 Olympic Way, Wembley, HA9 0NP</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
-                    <td></td>
-                    <td>2017-12-19</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td>51.561992</td>
+                    <td>-0.278971</td>
+                    <td>0.54</td>
+                    <td>5</td>
+                    <td>227</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,38 +286,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR00007">BR00007</td>
-                    <td data-sort-value="13, Christchurch Avenue, NW6 7QP" class="data-table__cell--max-width">13, Christchurch Avenue, NW6 7QP</td>
-                    
-                    <td>-0.206306</td>
-                    
-                    <td>51.545938</td>
-                    
-                    <td data-sort-value="0.041">0.041</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
                     <td>2018-12-14</td>
-                    
-                    <td>2018-12-14</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00007</td>
+                    <td class="data-table__cell--max-width">13, Christchurch Avenue, NW6 7QP</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
-                    <td></td>
-                    <td>2018-07-05</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.545938</td>
+                    <td>-0.206306</td>
+                    <td>0.041</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2018-12-14</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -371,74 +315,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR00008">BR00008</td>
-                    <td data-sort-value="Olympic Office Centre, 8 Fulton Road, Wembley, HA9 0NU" class="data-table__cell--max-width">Olympic Office Centre, 8 Fulton Road, Wembley, HA9 0NU</td>
-                    
-                    <td>-0.279098</td>
-                    
-                    <td>51.55931</td>
-                    
-                    <td data-sort-value="0.75">0.75</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="253">253</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-14</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00008</td>
+                    <td class="data-table__cell--max-width">Olympic Office Centre, 8 Fulton Road, Wembley, HA9 0NU</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.55931</td>
+                    <td>-0.279098</td>
+                    <td>0.75</td>
+                    <td>5</td>
+                    <td>253</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR00009">BR00009</td>
-                    <td data-sort-value="205, 205A, 205B and Church Road car park and Building rear of 189-203 Church Road, London, NW10 9EP" class="data-table__cell--max-width">205, 205A, 205B and Church Road car park and Building rear of 189-203 Church Road, London, NW10 9EP</td>
-                    
-                    <td>-0.249061</td>
-                    
-                    <td>51.548262</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="34">34</td>
                     <td>2017-12-15</td>
-                    
-                    <td>2017-12-15</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00009</td>
+                    <td class="data-table__cell--max-width">205, 205A, 205B and Church Road car park and Building rear of 189-203 Church Road, London, NW10 9EP</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-02-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td>51.548262</td>
+                    <td>-0.249061</td>
+                    <td>0.3</td>
+                    <td>5</td>
+                    <td>34</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -447,38 +369,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR00010">BR00010</td>
-                    <td data-sort-value="Wembley Point, 1 Harrow Road, Wembley, HA9 6DE" class="data-table__cell--max-width">Wembley Point, 1 Harrow Road, Wembley, HA9 6DE</td>
-                    
-                    <td>-0.274157</td>
-                    
-                    <td>51.544644</td>
-                    
-                    <td data-sort-value="0.92">0.92</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="382">382</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-12</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00010</td>
+                    <td class="data-table__cell--max-width">Wembley Point, 1 Harrow Road, Wembley, HA9 6DE</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-11</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td>51.544644</td>
+                    <td>-0.274157</td>
+                    <td>0.92</td>
+                    <td>5</td>
+                    <td>382</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -487,38 +398,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR00011">BR00011</td>
-                    <td data-sort-value="Land rear of 234-240, Princes Avenue, London, NW9 9QU" class="data-table__cell--max-width">Land rear of 234-240, Princes Avenue, London, NW9 9QU</td>
-                    
-                    <td>-0.280717</td>
-                    
-                    <td>51.589295</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-12</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00011</td>
+                    <td class="data-table__cell--max-width">Land rear of 234-240, Princes Avenue, London, NW9 9QU</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
-                    <td></td>
-                    <td>2018-09-14</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td>51.589295</td>
+                    <td>-0.280717</td>
+                    <td>0.11</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -527,38 +427,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR00012">BR00012</td>
-                    <td data-sort-value="Oman Avenue Garages, Oman Avenue, London" class="data-table__cell--max-width">Oman Avenue Garages, Oman Avenue, London</td>
-                    
-                    <td>-0.227657</td>
-                    
-                    <td>51.555848</td>
-                    
-                    <td data-sort-value="0.42">0.42</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="7">7</td>
                     <td>2017-12-15</td>
-                    
-                    <td>2017-12-15</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00012</td>
+                    <td class="data-table__cell--max-width">Oman Avenue Garages, Oman Avenue, London</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/brent" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/brent</a></td>
-                    <td></td>
-                    <td>2017-03-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-
+                    <td>51.555848</td>
+                    <td>-0.227657</td>
+                    <td>0.42</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -567,7 +456,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
                 </tr>
                 
             </tbody>
@@ -576,6 +465,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR/BID/132">BLR/BID/132</td>
-                    <td data-sort-value="Littlejohns Coalyard, Northam Road, Bideford" class="data-table__cell--max-width">Littlejohns Coalyard, Northam Road, Bideford</td>
-                    
-                    <td>-4.211447</td>
-                    
-                    <td>51.020886</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2018-12-12</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/BID/132</td>
+                    <td class="data-table__cell--max-width">Littlejohns Coalyard, Northam Road, Bideford</td>
                     <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18220" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18220</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.020886</td>
+                    <td>-4.211447</td>
+                    <td>0.2</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>2017-12-22</td>
+                    <td>2018-12-12</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -217,38 +205,27 @@ Site removed Dec 2018 - no longer an allocation in the NDTLP and in flood zone 3
                         </details>
                         
                     </td>
-                    <td>2018-12-12</td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR/NOR/158">BLR/NOR/158</td>
-                    <td data-sort-value="Bywater House, Silford Cross, Westward Ho!, Bideford" class="data-table__cell--max-width">Bywater House, Silford Cross, Westward Ho!, Bideford</td>
-                    
-                    <td>-4.232189</td>
-                    
-                    <td>51.031743</td>
-                    
-                    <td data-sort-value="0.45">0.45</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-22</td>
-                    
                     <td>2018-12-12</td>
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/NOR/158</td>
+                    <td class="data-table__cell--max-width">Bywater House, Silford Cross, Westward Ho!, Bideford</td>
+                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18229" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18229</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-05</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18229" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18229</a></td>
-
+                    <td>51.031743</td>
+                    <td>-4.232189</td>
+                    <td>0.45</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-22</td>
+                    <td>2018-12-12</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -259,38 +236,27 @@ Site commenced - site removed from BLR 2018</div>
                         </details>
                         
                     </td>
-                    <td>2018-12-12</td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR/BID/72">BLR/BID/72</td>
-                    <td data-sort-value="Former Jet Garage, New Road, Bideford" class="data-table__cell--max-width">Former Jet Garage, New Road, Bideford</td>
-                    
-                    <td>-4.205965</td>
-                    
-                    <td>51.012644</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-11-26</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/BID/72</td>
+                    <td class="data-table__cell--max-width">Former Jet Garage, New Road, Bideford</td>
                     <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18218" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18218</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.012644</td>
+                    <td>-4.205965</td>
+                    <td>0.06</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -300,38 +266,27 @@ Residential potential of site considered through SHLAA SHA/BID/72</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR/BID/18">BLR/BID/18</td>
-                    <td data-sort-value="Land at Nuttaberry Works, Bideford" class="data-table__cell--max-width">Land at Nuttaberry Works, Bideford</td>
-                    
-                    <td>-4.201262</td>
-                    
-                    <td>51.009666</td>
-                    
-                    <td data-sort-value="3.64">3.64</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-11-26</td>
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/BID/18</td>
+                    <td class="data-table__cell--max-width">Land at Nuttaberry Works, Bideford</td>
+                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18211" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18211</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18211" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18211</a></td>
-
+                    <td>51.009666</td>
+                    <td>-4.201262</td>
+                    <td>3.64</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -343,38 +298,27 @@ Non allocated strategic site in North Devon and Torridge Local Plan 2011-2031</d
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR/BID/108">BLR/BID/108</td>
-                    <td data-sort-value="8-11 Market Place, Bideford" class="data-table__cell--max-width">8-11 Market Place, Bideford</td>
-                    
-                    <td>-4.20793</td>
-                    
-                    <td>51.0174</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-11-26</td>
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/BID/108</td>
+                    <td class="data-table__cell--max-width">8-11 Market Place, Bideford</td>
+                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18219" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18219</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18219" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18219</a></td>
-
+                    <td>51.0174</td>
+                    <td>-4.20793</td>
+                    <td>0.16</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -384,38 +328,27 @@ Ressidential potential of site considered through SHLAA - SHA/BID/108</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR/PAR/4">BLR/PAR/4</td>
-                    <td data-sort-value="Penhaven and Rectory Farm, Bideford" class="data-table__cell--max-width">Penhaven and Rectory Farm, Bideford</td>
-                    
-                    <td>-4.294483</td>
-                    
-                    <td>50.967759</td>
-                    
-                    <td data-sort-value="1.63">1.63</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-11-26</td>
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/PAR/4</td>
+                    <td class="data-table__cell--max-width">Penhaven and Rectory Farm, Bideford</td>
+                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18230" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18230</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-12-23</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18230" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18230</a></td>
-
+                    <td>50.967759</td>
+                    <td>-4.294483</td>
+                    <td>1.63</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -427,38 +360,27 @@ FPE/0281/2019</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR/NOR/72">BLR/NOR/72</td>
-                    <td data-sort-value="Roslyn Gardens Caravan Park, Merley Road, Westward Ho!, Bideford" class="data-table__cell--max-width">Roslyn Gardens Caravan Park, Merley Road, Westward Ho!, Bideford</td>
-                    
-                    <td>-4.244254</td>
-                    
-                    <td>51.038806</td>
-                    
-                    <td data-sort-value="0.54">0.54</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-22</td>
-                    
                     <td>2018-12-12</td>
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/NOR/72</td>
+                    <td class="data-table__cell--max-width">Roslyn Gardens Caravan Park, Merley Road, Westward Ho!, Bideford</td>
+                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18226" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18226</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-01-08</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18226" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18226</a></td>
-
+                    <td>51.038806</td>
+                    <td>-4.244254</td>
+                    <td>0.54</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-22</td>
+                    <td>2018-12-12</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -469,38 +391,27 @@ Site started - site removed from BLR 12/12/2018</div>
                         </details>
                         
                     </td>
-                    <td>2018-12-12</td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR/BID/29">BLR/BID/29</td>
-                    <td data-sort-value="Land adjacent to Blights Garage, Clovelly Road, Bideford" class="data-table__cell--max-width">Land adjacent to Blights Garage, Clovelly Road, Bideford</td>
-                    
-                    <td>-4.224624</td>
-                    
-                    <td>51.01139</td>
-                    
-                    <td data-sort-value="1.96">1.96</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-12-26</td>
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/BID/29</td>
+                    <td class="data-table__cell--max-width">Land adjacent to Blights Garage, Clovelly Road, Bideford</td>
+                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18212" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18212</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-10</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18212" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18212</a></td>
-
+                    <td>51.01139</td>
+                    <td>-4.224624</td>
+                    <td>1.96</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -510,38 +421,27 @@ Residential potential of site considered through SHLAA SHA/BID/29</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR/SHB/8">BLR/SHB/8</td>
-                    <td data-sort-value="Works, Haycross Hill, Shebbear, Beaworthy" class="data-table__cell--max-width">Works, Haycross Hill, Shebbear, Beaworthy</td>
-                    
-                    <td>-4.219181</td>
-                    
-                    <td>50.859885</td>
-                    
-                    <td data-sort-value="1.27">1.27</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-11-26</td>
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/SHB/8</td>
+                    <td class="data-table__cell--max-width">Works, Haycross Hill, Shebbear, Beaworthy</td>
+                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18231" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18231</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18231" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18231</a></td>
-
+                    <td>50.859885</td>
+                    <td>-4.219181</td>
+                    <td>1.27</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -552,38 +452,27 @@ Residential capacity of site considered through SHLAA SHA/SHB/8</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR/BID/38">BLR/BID/38</td>
-                    <td data-sort-value="Brunswick, Queens and Clarance Wharves, Barnstaple Street, Bideford" class="data-table__cell--max-width">Brunswick, Queens and Clarance Wharves, Barnstaple Street, Bideford</td>
-                    
-                    <td>-4.201281</td>
-                    
-                    <td>51.016986</td>
-                    
-                    <td data-sort-value="0.89">0.89</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-11-26</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/torridge" class="govuk-link">http://opendatacommunities.org/id/district-council/torridge</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOR</td>
+                    <td>BLR/BID/38</td>
+                    <td class="data-table__cell--max-width">Brunswick, Queens and Clarance Wharves, Barnstaple Street, Bideford</td>
                     <td><a href="http://www.torridge.gov.uk/CHttpHandler.ashx?id=18213" class="govuk-link">http://www.torridge.gov.uk/CHttpHandler.ashx?id=18213</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.016986</td>
+                    <td>-4.201281</td>
+                    <td>0.89</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -596,7 +485,7 @@ The North Devon and Torridge Local Plan identifies this site as a Bideford Regen
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6a0babeed8861d23f99af913fbf0b4ca0174949d5659d0d8dd0028d32a9f8cee" class="govuk-link">6a0babee...</a></td>
                 </tr>
                 
             </tbody>
@@ -605,6 +494,11 @@ The North Devon and Torridge Local Plan identifies this site as a Bideford Regen
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="DA/2016/0800">DA/2016/0800</td>
-                    <td data-sort-value="7-13 Warwick Street, Daventry" class="data-table__cell--max-width">7-13 Warwick Street, Daventry</td>
-                    
-                    <td>-1.168172</td>
-                    
-                    <td>52.256209</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2020-03-17</td>
+                    <td>local-authority-eng:DAV</td>
+                    <td>DA/2016/0800</td>
+                    <td class="data-table__cell--max-width">7-13 Warwick Street, Daventry</td>
+                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/daventry" class="govuk-link">http://opendatacommunities.org/id/district-council/daventry</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display</a></td>
-
+                    <td>52.256209</td>
+                    <td>-1.168172</td>
+                    <td>0.06</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced" class="govuk-link">9a972e2f...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="DA/2015/1114">DA/2015/1114</td>
-                    <td data-sort-value="Abercorn Hotel, 101 Warwick Street, Daventry" class="data-table__cell--max-width">Abercorn Hotel, 101 Warwick Street, Daventry</td>
-                    
-                    <td>-1.168563</td>
-                    
-                    <td>52.255637</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2020-03-17</td>
+                    <td>local-authority-eng:DAV</td>
+                    <td>DA/2015/1114</td>
+                    <td class="data-table__cell--max-width">Abercorn Hotel, 101 Warwick Street, Daventry</td>
+                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/daventry" class="govuk-link">http://opendatacommunities.org/id/district-council/daventry</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-07-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display</a></td>
-
+                    <td>52.255637</td>
+                    <td>-1.168563</td>
+                    <td>0.17</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced" class="govuk-link">9a972e2f...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="DA/2016/0518">DA/2016/0518</td>
-                    <td data-sort-value="Farol Ltd, Boddington Road, Byfield" class="data-table__cell--max-width">Farol Ltd, Boddington Road, Byfield</td>
-                    
-                    <td>-1.248187</td>
-                    
-                    <td>52.177548</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2020-03-17</td>
+                    <td>local-authority-eng:DAV</td>
+                    <td>DA/2016/0518</td>
+                    <td class="data-table__cell--max-width">Farol Ltd, Boddington Road, Byfield</td>
+                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/daventry" class="govuk-link">http://opendatacommunities.org/id/district-council/daventry</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-27</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display</a></td>
-
+                    <td>52.177548</td>
+                    <td>-1.248187</td>
+                    <td>0.3</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced" class="govuk-link">9a972e2f...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="DA/2016/0689">DA/2016/0689</td>
-                    <td data-sort-value="Coach And Horses, Warwick Street, Daventry" class="data-table__cell--max-width">Coach And Horses, Warwick Street, Daventry</td>
-                    
-                    <td>-1.16713</td>
-                    
-                    <td>52.256301</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2018-12-07</td>
-                    
                     <td>2020-03-17</td>
+                    <td>local-authority-eng:DAV</td>
+                    <td>DA/2016/0689</td>
+                    <td class="data-table__cell--max-width">Coach And Horses, Warwick Street, Daventry</td>
+                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=DA/2016/0689&backURL=<ahref=wphappcriteria.display?paSearchKey=1063076>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1423005%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1063076>SearchCriteria</a>'>SearchResults</a>" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=DA/2016/0689&backURL=<ahref=wphappcriteria.display?paSearchKey=1063076>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1423005%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1063076>SearchCriteria</a>'>SearchResults</a></a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/daventry" class="govuk-link">http://opendatacommunities.org/id/district-council/daventry</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=DA/2016/0689&backURL=<ahref=wphappcriteria.display?paSearchKey=1063076>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1423005%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1063076>SearchCriteria</a>'>SearchResults</a>" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=DA/2016/0689&backURL=<ahref=wphappcriteria.display?paSearchKey=1063076>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1423005%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1063076>SearchCriteria</a>'>SearchResults</a></a></td>
-
+                    <td>52.256301</td>
+                    <td>-1.16713</td>
+                    <td>0.09</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2018-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced" class="govuk-link">9a972e2f...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="DA/2015/0183">DA/2015/0183</td>
-                    <td data-sort-value="Former St Joseph's RC Church & Land To Rear, Station Road, Long Buckby" class="data-table__cell--max-width">Former St Joseph's RC Church & Land To Rear, Station Road, Long Buckby</td>
-                    
-                    <td>-1.085437</td>
-                    
-                    <td>52.297026</td>
-                    
-                    <td data-sort-value="0.42">0.42</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    <td>2018-12-07</td>
-                    
                     <td>2020-03-17</td>
+                    <td>local-authority-eng:DAV</td>
+                    <td>DA/2015/0183</td>
+                    <td class="data-table__cell--max-width">Former St Joseph's RC Church & Land To Rear, Station Road, Long Buckby</td>
+                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=DA/2015/0183&backURL=<ahref=wphappcriteria.display?paSearchKey=1063085>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1423015%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1063085>SearchCriteria</a>'>SearchResults</a>" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=DA/2015/0183&backURL=<ahref=wphappcriteria.display?paSearchKey=1063085>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1423015%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1063085>SearchCriteria</a>'>SearchResults</a></a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/daventry" class="govuk-link">http://opendatacommunities.org/id/district-council/daventry</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-12-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=DA/2015/0183&backURL=<ahref=wphappcriteria.display?paSearchKey=1063085>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1423015%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1063085>SearchCriteria</a>'>SearchResults</a>" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=DA/2015/0183&backURL=<ahref=wphappcriteria.display?paSearchKey=1063085>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1423015%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1063085>SearchCriteria</a>'>SearchResults</a></a></td>
-
+                    <td>52.297026</td>
+                    <td>-1.085437</td>
+                    <td>0.42</td>
+                    <td>13</td>
+                    <td>13</td>
+                    <td>2018-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced" class="govuk-link">9a972e2f...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="PD/2017/0028">PD/2017/0028</td>
-                    <td data-sort-value="Charter House, 35 Spratton Road, Brixworth" class="data-table__cell--max-width">Charter House, 35 Spratton Road, Brixworth</td>
-                    
-                    <td>-0.906111</td>
-                    
-                    <td>52.328012</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2018-12-07</td>
-                    
                     <td>2020-03-17</td>
+                    <td>local-authority-eng:DAV</td>
+                    <td>PD/2017/0028</td>
+                    <td class="data-table__cell--max-width">Charter House, 35 Spratton Road, Brixworth</td>
+                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=PD/2017/0028&backURL=<ahref=wphappcriteria.display?paSearchKey=1065527>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1426193%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1065527>SearchCriteria</a>'>SearchResults</a>" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=PD/2017/0028&backURL=<ahref=wphappcriteria.display?paSearchKey=1065527>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1426193%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1065527>SearchCriteria</a>'>SearchResults</a></a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/daventry" class="govuk-link">http://opendatacommunities.org/id/district-council/daventry</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-08-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=PD/2017/0028&backURL=<ahref=wphappcriteria.display?paSearchKey=1065527>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1426193%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1065527>SearchCriteria</a>'>SearchResults</a>" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=PD/2017/0028&backURL=<ahref=wphappcriteria.display?paSearchKey=1065527>SearchCriteria</a>><ahref='wphappsearchres.displayResultsURL?ResultID=1426193%26StartIndex=1%26SortOrder=APNID:desc%26DispResultsAs=WPHAPPSEARCHRES%26BackURL=<ahref=wphappcriteria.display?paSearchKey=1065527>SearchCriteria</a>'>SearchResults</a></a></td>
-
+                    <td>52.328012</td>
+                    <td>-0.906111</td>
+                    <td>0.16</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2018-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced" class="govuk-link">9a972e2f...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="DA/2013/0066">DA/2013/0066</td>
-                    <td data-sort-value="Old Station Yard, Station Road, Brixworth" class="data-table__cell--max-width">Old Station Yard, Station Road, Brixworth</td>
-                    
-                    <td>-0.918645</td>
-                    
-                    <td>52.334546</td>
-                    
-                    <td data-sort-value="2.77">2.77</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2019-02-26</td>
-                    
                     <td>2020-03-17</td>
+                    <td>local-authority-eng:DAV</td>
+                    <td>DA/2013/0066</td>
+                    <td class="data-table__cell--max-width">Old Station Yard, Station Road, Brixworth</td>
+                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/daventry" class="govuk-link">http://opendatacommunities.org/id/district-council/daventry</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-12-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display" class="govuk-link">http://selfservice.daventrydc.gov.uk/swiftlg/apas/run/wphappcriteria.display</a></td>
-
+                    <td>52.334546</td>
+                    <td>-0.918645</td>
+                    <td>2.77</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2019-02-26</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced" class="govuk-link">9a972e2f...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="DA/2018/0701">DA/2018/0701</td>
-                    <td data-sort-value="The Grange, Staverton Road, Daventry" class="data-table__cell--max-width">The Grange, Staverton Road, Daventry</td>
-                    
-                    <td>-1.178416</td>
-                    
-                    <td>52.252847</td>
-                    
-                    <td data-sort-value="0.78">0.78</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    <td>2019-03-17</td>
-                    
                     <td>2020-03-17</td>
+                    <td>local-authority-eng:DAV</td>
+                    <td>DA/2018/0701</td>
+                    <td class="data-table__cell--max-width">The Grange, Staverton Road, Daventry</td>
+                    <td><a href="https://selfservice.daventrydc.gov.uk/NorthgatePublicDocs/00129117.pdf" class="govuk-link">https://selfservice.daventrydc.gov.uk/NorthgatePublicDocs/00129117.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/daventry" class="govuk-link">http://opendatacommunities.org/id/district-council/daventry</a></td>
                     <td>owned by a public authority</td>
-                    <td>2019-03-18</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://selfservice.daventrydc.gov.uk/NorthgatePublicDocs/00129117.pdf" class="govuk-link">https://selfservice.daventrydc.gov.uk/NorthgatePublicDocs/00129117.pdf</a></td>
-
+                    <td>52.252847</td>
+                    <td>-1.178416</td>
+                    <td>0.78</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2019-03-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,7 +406,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a972e2f9839fb816ededaff219256fbf9a51b89e5dfbc9eb652c2f4ec3bdced" class="govuk-link">9a972e2f...</a></td>
                 </tr>
                 
             </tbody>
@@ -504,6 +415,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

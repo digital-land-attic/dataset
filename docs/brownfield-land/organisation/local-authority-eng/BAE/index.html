@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,95 +154,72 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="LAA002">LAA002</td>
-                    <td data-sort-value="' Montagu House London Road Retford ''" class="data-table__cell--max-width">' Montagu House London Road Retford ''</td>
-                    
-                    <td>-0.931228</td>
-                    
-                    <td>53.304118</td>
-                    
-                    <td data-sort-value="0.59">0.59</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA002</td>
+                    <td class="data-table__cell--max-width">' Montagu House London Road Retford ''</td>
                     <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.304118</td>
+                    <td>-0.931228</td>
+                    <td>0.59</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="LAA008">LAA008</td>
-                    <td data-sort-value="' Land opposite 87 West Carr Road Retford ''" class="data-table__cell--max-width">' Land opposite 87 West Carr Road Retford ''</td>
-                    
-                    <td>-0.950521</td>
-                    
-                    <td>53.316578</td>
-                    
-                    <td data-sort-value="0.33">0.33</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA008</td>
+                    <td class="data-table__cell--max-width">' Land opposite 87 West Carr Road Retford ''</td>
+                    <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-12-15</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td>53.316578</td>
+                    <td>-0.950521</td>
+                    <td>0.33</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -251,254 +228,177 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="LAA011">LAA011</td>
-                    <td data-sort-value="' Unit 3 Rossington Park West Carr Road Retford ''" class="data-table__cell--max-width">' Unit 3 Rossington Park West Carr Road Retford ''</td>
-                    
-                    <td>-0.948841</td>
-                    
-                    <td>53.314082</td>
-                    
-                    <td data-sort-value="2.16">2.16</td>
-                    
-                    <td data-sort-value="78">78</td>
-                    
-                    <td data-sort-value="78">78</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA011</td>
+                    <td class="data-table__cell--max-width">' Unit 3 Rossington Park West Carr Road Retford ''</td>
                     <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.314082</td>
+                    <td>-0.948841</td>
+                    <td>2.16</td>
+                    <td>78</td>
+                    <td>78</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="LAA040">LAA040</td>
-                    <td data-sort-value="' Kettlewell ltd Grove Street Retford ''" class="data-table__cell--max-width">' Kettlewell ltd Grove Street Retford ''</td>
-                    
-                    <td>-0.93669</td>
-                    
-                    <td>53.322253</td>
-                    
-                    <td data-sort-value="0.51">0.51</td>
-                    
-                    <td data-sort-value="65">65</td>
-                    
-                    <td data-sort-value="65">65</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA040</td>
+                    <td class="data-table__cell--max-width">' Kettlewell ltd Grove Street Retford ''</td>
                     <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.322253</td>
+                    <td>-0.93669</td>
+                    <td>0.51</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="LAA077">LAA077</td>
-                    <td data-sort-value="' Worksop Golf Club Windmill Lane Worksop ''" class="data-table__cell--max-width">' Worksop Golf Club Windmill Lane Worksop ''</td>
-                    
-                    <td>-1.108022</td>
-                    
-                    <td>53.292573</td>
-                    
-                    <td data-sort-value="1.19">1.19</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA077</td>
+                    <td class="data-table__cell--max-width">' Worksop Golf Club Windmill Lane Worksop ''</td>
                     <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.292573</td>
+                    <td>-1.108022</td>
+                    <td>1.19</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="LAA138">LAA138</td>
-                    <td data-sort-value="' Canal Turn Welham Road Retford ''" class="data-table__cell--max-width">' Canal Turn Welham Road Retford ''</td>
-                    
-                    <td>-0.924601</td>
-                    
-                    <td>53.328932</td>
-                    
-                    <td data-sort-value="1.24">1.24</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="4">4</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA138</td>
+                    <td class="data-table__cell--max-width">' Canal Turn Welham Road Retford ''</td>
                     <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.328932</td>
+                    <td>-0.924601</td>
+                    <td>1.24</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="LAA142">LAA142</td>
-                    <td data-sort-value="' Former Bassetlaw Learning Centre 112 Newgate Street Worksop ''" class="data-table__cell--max-width">' Former Bassetlaw Learning Centre 112 Newgate Street Worksop ''</td>
-                    
-                    <td>-1.116559</td>
-                    
-                    <td>53.299819</td>
-                    
-                    <td data-sort-value="0.85">0.85</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    
-                    <td data-sort-value="31">31</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA142</td>
+                    <td class="data-table__cell--max-width">' Former Bassetlaw Learning Centre 112 Newgate Street Worksop ''</td>
                     <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.299819</td>
+                    <td>-1.116559</td>
+                    <td>0.85</td>
+                    <td>31</td>
+                    <td>31</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="LAA147">LAA147</td>
-                    <td data-sort-value="' Manton Primary School Worksop ''" class="data-table__cell--max-width">' Manton Primary School Worksop ''</td>
-                    
-                    <td>-1.100535</td>
-                    
-                    <td>53.296175</td>
-                    
-                    <td data-sort-value="3.69">3.69</td>
-                    
-                    <td data-sort-value="133">133</td>
-                    
-                    <td data-sort-value="133">133</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA147</td>
+                    <td class="data-table__cell--max-width">' Manton Primary School Worksop ''</td>
                     <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.296175</td>
+                    <td>-1.100535</td>
+                    <td>3.69</td>
+                    <td>133</td>
+                    <td>133</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="LAA223">LAA223</td>
-                    <td data-sort-value="' Welbeck Colliery Budby Road Welbeck ''" class="data-table__cell--max-width">' Welbeck Colliery Budby Road Welbeck ''</td>
-                    
-                    <td>-1.136683</td>
-                    
-                    <td>53.228206</td>
-                    
-                    <td data-sort-value="33.63">33.63</td>
-                    
-                    <td data-sort-value="65">65</td>
-                    
-                    <td data-sort-value="65">65</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA223</td>
+                    <td class="data-table__cell--max-width">' Welbeck Colliery Budby Road Welbeck ''</td>
+                    <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-08-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td>53.228206</td>
+                    <td>-1.136683</td>
+                    <td>33.63</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -507,43 +407,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="LAA229">LAA229</td>
-                    <td data-sort-value="' Tuxford Memorial Hall Ashvale Road Tuxford ''" class="data-table__cell--max-width">' Tuxford Memorial Hall Ashvale Road Tuxford ''</td>
-                    
-                    <td>-0.893845</td>
-                    
-                    <td>53.231513</td>
-                    
-                    <td data-sort-value="0.4">0.4</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2020-03-25</td>
-                    
-                    <td>2020-03-25</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bassetlaw" class="govuk-link">http://opendatacommunities.org/id/district-council/bassetlaw</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BAE</td>
+                    <td>LAA229</td>
+                    <td class="data-table__cell--max-width">' Tuxford Memorial Hall Ashvale Road Tuxford ''</td>
                     <td><a href="https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d" class="govuk-link">https://arcgisportal.bassetlaw.gov.uk/arcgis/apps/webappviewer/index.html?id=ca84ac93eb5b49ad899e54d2efe4bf3d</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.231513</td>
+                    <td>-0.893845</td>
+                    <td>0.4</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2020-03-25</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6066c33870d863dba9e4ff834e1a3f0d79be983a146c0baa09399603ae5315a4" class="govuk-link">6066c338...</a></td>
                 </tr>
                 
             </tbody>
@@ -552,6 +441,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

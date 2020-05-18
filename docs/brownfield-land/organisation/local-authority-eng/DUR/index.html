@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,239 +154,172 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="1/CO/11">1/CO/11</td>
-                    <td data-sort-value="Consett Swimming Baths" class="data-table__cell--max-width">Consett Swimming Baths</td>
-                    
-                    <td>-1.828681</td>
-                    
-                    <td>54.855673</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="25">25</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:DUR</td>
+                    <td>1/CO/11</td>
+                    <td class="data-table__cell--max-width">Consett Swimming Baths</td>
                     <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=411097.24135&y=551221.232695&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=411097.24135&y=551221.232695&scale=17</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.855673</td>
+                    <td>-1.828681</td>
+                    <td>0.8</td>
+                    <td>22</td>
+                    <td>25</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="1/CO/113">1/CO/113</td>
-                    <td data-sort-value="Magistrates Court Ashdale Road" class="data-table__cell--max-width">Magistrates Court Ashdale Road</td>
-                    
-                    <td>-1.830131</td>
-                    
-                    <td>54.857599</td>
-                    
-                    <td data-sort-value="0.52">0.52</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
+                    <td>local-authority-eng:DUR</td>
+                    <td>1/CO/113</td>
+                    <td class="data-table__cell--max-width">Magistrates Court Ashdale Road</td>
+                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=411003.675537&y=551435.410275&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=411003.675537&y=551435.410275&scale=17</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
                     <td>owned by a public authority</td>
-                    <td>2018-08-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=411003.675537&y=551435.410275&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=411003.675537&y=551435.410275&scale=17</a></td>
-
+                    <td>54.857599</td>
+                    <td>-1.830131</td>
+                    <td>0.52</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="1/CO/114">1/CO/114</td>
-                    <td data-sort-value="The Moorside Hotel" class="data-table__cell--max-width">The Moorside Hotel</td>
-                    
-                    <td>-1.865062</td>
-                    
-                    <td>54.837885</td>
-                    
-                    <td data-sort-value="0.45">0.45</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
+                    <td>local-authority-eng:DUR</td>
+                    <td>1/CO/114</td>
+                    <td class="data-table__cell--max-width">The Moorside Hotel</td>
+                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=408765.383922&y=549236.72979&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=408765.383922&y=549236.72979&scale=17</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=408765.383922&y=549236.72979&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=408765.383922&y=549236.72979&scale=17</a></td>
-
+                    <td>54.837885</td>
+                    <td>-1.865062</td>
+                    <td>0.45</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="1/CO/89a">1/CO/89a</td>
-                    <td data-sort-value="Consett Community Sports College Site A" class="data-table__cell--max-width">Consett Community Sports College Site A</td>
-                    
-                    <td>-1.836306</td>
-                    
-                    <td>54.862148</td>
-                    
-                    <td data-sort-value="4.17">4.17</td>
-                    
-                    <td data-sort-value="95">95</td>
-                    
-                    <td data-sort-value="100">100</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:DUR</td>
+                    <td>1/CO/89a</td>
+                    <td class="data-table__cell--max-width">Consett Community Sports College Site A</td>
                     <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=410606.103799&y=551940.693312&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=410606.103799&y=551940.693312&scale=17</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.862148</td>
+                    <td>-1.836306</td>
+                    <td>4.17</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="1/ST/34">1/ST/34</td>
-                    <td data-sort-value="South Moor Hospital" class="data-table__cell--max-width">South Moor Hospital</td>
-                    
-                    <td>-1.689933</td>
-                    
-                    <td>54.858202</td>
-                    
-                    <td data-sort-value="1.98">1.98</td>
-                    
-                    <td data-sort-value="53">53</td>
-                    
-                    <td data-sort-value="65">65</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
+                    <td>local-authority-eng:DUR</td>
+                    <td>1/ST/34</td>
+                    <td class="data-table__cell--max-width">South Moor Hospital</td>
+                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=420003.730538&y=551533.165765&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=420003.730538&y=551533.165765&scale=17</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
                     <td>mixed ownership</td>
-                    <td>2017-08-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=420003.730538&y=551533.165765&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=420003.730538&y=551533.165765&scale=17</a></td>
-
+                    <td>54.858202</td>
+                    <td>-1.689933</td>
+                    <td>1.98</td>
+                    <td>53</td>
+                    <td>65</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="1/ST/59">1/ST/59</td>
-                    <td data-sort-value="Former Return To Learn Centre Front Street" class="data-table__cell--max-width">Former Return To Learn Centre Front Street</td>
-                    
-                    <td>-1.69866</td>
-                    
-                    <td>54.870801</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
+                    <td>local-authority-eng:DUR</td>
+                    <td>1/ST/59</td>
+                    <td class="data-table__cell--max-width">Former Return To Learn Centre Front Street</td>
+                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=419437.454026&y=552932.787116&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=419437.454026&y=552932.787116&scale=17</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
                     <td>owned by a public authority</td>
-                    <td>2016-09-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=419437.454026&y=552932.787116&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=419437.454026&y=552932.787116&scale=17</a></td>
-
+                    <td>54.870801</td>
+                    <td>-1.69866</td>
+                    <td>0.22</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -395,74 +328,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="1/TL/03">1/TL/03</td>
-                    <td data-sort-value="Tanfield Lea Industrial Estate" class="data-table__cell--max-width">Tanfield Lea Industrial Estate</td>
-                    
-                    <td>-1.70465</td>
-                    
-                    <td>54.887661</td>
-                    
-                    <td data-sort-value="15.46">15.46</td>
-                    
-                    <td data-sort-value="348">348</td>
-                    
-                    <td data-sort-value="365">365</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
+                    <td>local-authority-eng:DUR</td>
+                    <td>1/TL/03</td>
+                    <td class="data-table__cell--max-width">Tanfield Lea Industrial Estate</td>
+                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=419045.123105&y=554807.405058&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=419045.123105&y=554807.405058&scale=17</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-13</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=419045.123105&y=554807.405058&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=419045.123105&y=554807.405058&scale=17</a></td>
-
+                    <td>54.887661</td>
+                    <td>-1.70465</td>
+                    <td>15.46</td>
+                    <td>348</td>
+                    <td>365</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="2/CH/40">2/CH/40</td>
-                    <td data-sort-value="Arizona Chemicals Vigo Lane" class="data-table__cell--max-width">Arizona Chemicals Vigo Lane</td>
-                    
-                    <td>-1.56734</td>
-                    
-                    <td>54.879755</td>
-                    
-                    <td data-sort-value="2.68">2.68</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    
-                    <td data-sort-value="85">85</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
+                    <td>local-authority-eng:DUR</td>
+                    <td>2/CH/40</td>
+                    <td class="data-table__cell--max-width">Arizona Chemicals Vigo Lane</td>
+                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=427858.827371&y=553973.279913&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=427858.827371&y=553973.279913&scale=17</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=427858.827371&y=553973.279913&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=427858.827371&y=553973.279913&scale=17</a></td>
-
+                    <td>54.879755</td>
+                    <td>-1.56734</td>
+                    <td>2.68</td>
+                    <td>60</td>
+                    <td>85</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -471,79 +382,57 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="2/PE/11">2/PE/11</td>
-                    <td data-sort-value="Former Sports Community College" class="data-table__cell--max-width">Former Sports Community College</td>
-                    
-                    <td>-1.621946</td>
-                    
-                    <td>54.86722</td>
-                    
-                    <td data-sort-value="2.84">2.84</td>
-                    
-                    <td data-sort-value="64">64</td>
-                    
-                    <td data-sort-value="64">64</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:DUR</td>
+                    <td>2/PE/11</td>
+                    <td class="data-table__cell--max-width">Former Sports Community College</td>
                     <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=424362.820994&y=552558.143688&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=424362.820994&y=552558.143688&scale=17</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.86722</td>
+                    <td>-1.621946</td>
+                    <td>2.84</td>
+                    <td>64</td>
+                    <td>64</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="2/WP/05">2/WP/05</td>
-                    <td data-sort-value="Lawson Court" class="data-table__cell--max-width">Lawson Court</td>
-                    
-                    <td>-1.641364</td>
-                    
-                    <td>54.870386</td>
-                    
-                    <td data-sort-value="0.33">0.33</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2018-12-04</td>
-                    
-                    <td>2018-12-04</td>
+                    <td>local-authority-eng:DUR</td>
+                    <td>2/WP/05</td>
+                    <td class="data-table__cell--max-width">Lawson Court</td>
+                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=423114.721221&y=552903.912483&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=423114.721221&y=552903.912483&scale=17</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/county-durham" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/county-durham</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-03-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=423114.721221&y=552903.912483&scale=17" class="govuk-link">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=423114.721221&y=552903.912483&scale=17</a></td>
-
+                    <td>54.870386</td>
+                    <td>-1.641364</td>
+                    <td>0.33</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2018-12-04</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8" class="govuk-link">f6319e61...</a></td>
                 </tr>
                 
             </tbody>
@@ -552,6 +441,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

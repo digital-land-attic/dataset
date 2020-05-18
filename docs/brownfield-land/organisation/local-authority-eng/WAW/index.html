@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="H02">H02</td>
-                    <td data-sort-value="Former Sewage Works, South of Harbury Lane" class="data-table__cell--max-width">Former Sewage Works, South of Harbury Lane</td>
-                    
-                    <td>-1.548556</td>
-                    
-                    <td>52.261144</td>
-                    
-                    <td data-sort-value="13.1">13.1</td>
-                    
-                    <td data-sort-value="196">196</td>
-                    
-                    <td data-sort-value="327">327</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAW</td>
+                    <td>H02</td>
+                    <td class="data-table__cell--max-width">Former Sewage Works, South of Harbury Lane</td>
                     <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=5000&location=431001.677083333^262658.5625&layersidentifier=cb22aef6dd3841d8874328867f1020a1&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=5000&location=431001.677083333^262658.5625&layersidentifier=cb22aef6dd3841d8874328867f1020a1&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.261144</td>
+                    <td>-1.548556</td>
+                    <td>13.1</td>
+                    <td>196</td>
+                    <td>327</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="H09">H09</td>
-                    <td data-sort-value="Kenilworth School Site, Leyes Lane" class="data-table__cell--max-width">Kenilworth School Site, Leyes Lane</td>
-                    
-                    <td>-1.56044</td>
-                    
-                    <td>52.345401</td>
-                    
-                    <td data-sort-value="9.41">9.41</td>
-                    
-                    <td data-sort-value="189">189</td>
-                    
-                    <td data-sort-value="315">315</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAW</td>
+                    <td>H09</td>
+                    <td class="data-table__cell--max-width">Kenilworth School Site, Leyes Lane</td>
                     <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=430067.458333334^272012.03125&layersidentifier=d819a8db892d401c8210a05600e9e43d&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=430067.458333334^272012.03125&layersidentifier=d819a8db892d401c8210a05600e9e43d&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.345401</td>
+                    <td>-1.56044</td>
+                    <td>9.41</td>
+                    <td>189</td>
+                    <td>315</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="H11">H11</td>
-                    <td data-sort-value="Land at Montague Road" class="data-table__cell--max-width">Land at Montague Road</td>
-                    
-                    <td>-1.576395</td>
-                    
-                    <td>52.291769</td>
-                    
-                    <td data-sort-value="3.49">3.49</td>
-                    
-                    <td data-sort-value="140">140</td>
-                    
-                    <td data-sort-value="140">140</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAW</td>
+                    <td>H11</td>
+                    <td class="data-table__cell--max-width">Land at Montague Road</td>
                     <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=429036.942916667^266045.81875&layersidentifier=464781f95ca048058421ee4e0673e54e&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=429036.942916667^266045.81875&layersidentifier=464781f95ca048058421ee4e0673e54e&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.291769</td>
+                    <td>-1.576395</td>
+                    <td>3.49</td>
+                    <td>140</td>
+                    <td>140</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="H12">H12</td>
-                    <td data-sort-value="Kenilworth VI Form College, Rouncil Lane" class="data-table__cell--max-width">Kenilworth VI Form College, Rouncil Lane</td>
-                    
-                    <td>-1.580252</td>
-                    
-                    <td>52.332032</td>
-                    
-                    <td data-sort-value="5.2">5.2</td>
-                    
-                    <td data-sort-value="112">112</td>
-                    
-                    <td data-sort-value="187">187</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAW</td>
+                    <td>H12</td>
+                    <td class="data-table__cell--max-width">Kenilworth VI Form College, Rouncil Lane</td>
                     <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=5000&location=428853.722916667^270408.022916667&layersidentifier=3cdb1478153847d38e57cebb9f217ff8&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=5000&location=428853.722916667^270408.022916667&layersidentifier=3cdb1478153847d38e57cebb9f217ff8&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.332032</td>
+                    <td>-1.580252</td>
+                    <td>5.2</td>
+                    <td>112</td>
+                    <td>187</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="H14">H14</td>
-                    <td data-sort-value="Riverside House" class="data-table__cell--max-width">Riverside House</td>
-                    
-                    <td>-1.543373</td>
-                    
-                    <td>52.289246</td>
-                    
-                    <td data-sort-value="1.75">1.75</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WAW</td>
+                    <td>H14</td>
+                    <td class="data-table__cell--max-width">Riverside House</td>
+                    <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=750&location=431268.8%5e265771.54&layersidentifier=6dd444fe69f5435b893f99067cec2a75&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=750&location=431268.8%5e265771.54&layersidentifier=6dd444fe69f5435b893f99067cec2a75&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=750&location=431268.8%5e265771.54&layersidentifier=6dd444fe69f5435b893f99067cec2a75&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=750&location=431268.8%5e265771.54&layersidentifier=6dd444fe69f5435b893f99067cec2a75&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>52.289246</td>
+                    <td>-1.543373</td>
+                    <td>1.75</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="H16">H16</td>
-                    <td data-sort-value="Court Street" class="data-table__cell--max-width">Court Street</td>
-                    
-                    <td>-1.530581</td>
-                    
-                    <td>52.283064</td>
-                    
-                    <td data-sort-value="1.48">1.48</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    
-                    <td data-sort-value="75">75</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAW</td>
+                    <td>H16</td>
+                    <td class="data-table__cell--max-width">Court Street</td>
                     <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=432126.135770833^265105.173270833&layersidentifier=87a283ab94d540a49a4c4c3b7b86f4cb&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=432126.135770833^265105.173270833&layersidentifier=87a283ab94d540a49a4c4c3b7b86f4cb&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.283064</td>
+                    <td>-1.530581</td>
+                    <td>1.48</td>
+                    <td>30</td>
+                    <td>75</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="L35">L35</td>
-                    <td data-sort-value="Station Approach" class="data-table__cell--max-width">Station Approach</td>
-                    
-                    <td>-1.538563</td>
-                    
-                    <td>52.285136</td>
-                    
-                    <td data-sort-value="4.7">4.7</td>
-                    
-                    <td data-sort-value="212">212</td>
-                    
-                    <td data-sort-value="212">212</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WAW</td>
+                    <td>L35</td>
+                    <td class="data-table__cell--max-width">Station Approach</td>
+                    <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=431500.4205^265335.947&layersidentifier=1d83ccfb80114bf8a6b9968e98d83bba&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=431500.4205^265335.947&layersidentifier=1d83ccfb80114bf8a6b9968e98d83bba&backgroundmap=MapDefaultLayerNames</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-02-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=431500.4205^265335.947&layersidentifier=1d83ccfb80114bf8a6b9968e98d83bba&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=431500.4205^265335.947&layersidentifier=1d83ccfb80114bf8a6b9968e98d83bba&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>52.285136</td>
+                    <td>-1.538563</td>
+                    <td>4.7</td>
+                    <td>212</td>
+                    <td>212</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="L55">L55</td>
-                    <td data-sort-value="Land at Hazelmere, Golf Lane" class="data-table__cell--max-width">Land at Hazelmere, Golf Lane</td>
-                    
-                    <td>-1.517958</td>
-                    
-                    <td>52.260241</td>
-                    
-                    <td data-sort-value="0.57">0.57</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="22">22</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAW</td>
+                    <td>L55</td>
+                    <td class="data-table__cell--max-width">Land at Hazelmere, Golf Lane</td>
                     <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=750&location=432998^262562&layersidentifier=1c85868b3aac4a1892b3abf3d0130d53&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=750&location=432998^262562&layersidentifier=1c85868b3aac4a1892b3abf3d0130d53&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.260241</td>
+                    <td>-1.517958</td>
+                    <td>0.57</td>
+                    <td>10</td>
+                    <td>22</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="L56">L56</td>
-                    <td data-sort-value="Land at Little Acre, Golf Lane" class="data-table__cell--max-width">Land at Little Acre, Golf Lane</td>
-                    
-                    <td>-1.516688</td>
-                    
-                    <td>52.259849</td>
-                    
-                    <td data-sort-value="2.78">2.78</td>
-                    
-                    <td data-sort-value="56">56</td>
-                    
-                    <td data-sort-value="93">93</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WAW</td>
+                    <td>L56</td>
+                    <td class="data-table__cell--max-width">Land at Little Acre, Golf Lane</td>
                     <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=433131.217708333^262487.850520834&layersidentifier=2900f8f471fe4c938e652fe02f61f9fe&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=1000&location=433131.217708333^262487.850520834&layersidentifier=2900f8f471fe4c938e652fe02f61f9fe&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.259849</td>
+                    <td>-1.516688</td>
+                    <td>2.78</td>
+                    <td>56</td>
+                    <td>93</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="L58">L58</td>
-                    <td data-sort-value="Lillington Free Church" class="data-table__cell--max-width">Lillington Free Church</td>
-                    
-                    <td>-1.520806</td>
-                    
-                    <td>52.304611</td>
-                    
-                    <td data-sort-value="0.41">0.41</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="25">25</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:WAW</td>
+                    <td>L58</td>
+                    <td class="data-table__cell--max-width">Lillington Free Church</td>
+                    <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=500&location=432773.45^267497.008&layersidentifier=1add1a511bfb493ab61014d271395b33&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=500&location=432773.45^267497.008&layersidentifier=1add1a511bfb493ab61014d271395b33&backgroundmap=MapDefaultLayerNames</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/warwick" class="govuk-link">http://opendatacommunities.org/id/district-council/warwick</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-09-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=500&location=432773.45^267497.008&layersidentifier=1add1a511bfb493ab61014d271395b33&backgroundmap=MapDefaultLayerNames" class="govuk-link">http://ceres2.warwickdc.gov.uk/CNET49LIVE/CMFindIt/Default.aspx?getmap=true&scale=500&location=432773.45^267497.008&layersidentifier=1add1a511bfb493ab61014d271395b33&backgroundmap=MapDefaultLayerNames</a></td>
-
+                    <td>52.304611</td>
+                    <td>-1.520806</td>
+                    <td>0.41</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/78ed5fbfa690db98ab8cf1ee50a20e13a6e7cf4e7c8d682a25e0b46e09376524" class="govuk-link">78ed5fbf...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="464">464</td>
-                    <td data-sort-value="Bridge House, Bridge Court, Normanby" class="data-table__cell--max-width">Bridge House, Bridge Court, Normanby</td>
-                    
-                    <td>-1.159834</td>
-                    
-                    <td>54.555829</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:RCC</td>
+                    <td>464</td>
+                    <td class="data-table__cell--max-width">Bridge House, Bridge Court, Normanby</td>
+                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/464_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/464_19.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/464_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/464_19.pdf</a></td>
-
+                    <td>54.555829</td>
+                    <td>-1.159834</td>
+                    <td>0.17</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-11-10</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="136">136</td>
-                    <td data-sort-value="Wilton Lane, Guisborough" class="data-table__cell--max-width">Wilton Lane, Guisborough</td>
-                    
-                    <td>-1.054712</td>
-                    
-                    <td>54.539524</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:RCC</td>
+                    <td>136</td>
+                    <td class="data-table__cell--max-width">Wilton Lane, Guisborough</td>
+                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/136_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/136_19.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/136_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/136_19.pdf</a></td>
-
+                    <td>54.539524</td>
+                    <td>-1.054712</td>
+                    <td>0.27</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-11-10</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="387">387</td>
-                    <td data-sort-value="Land Adjacent Ryehills School, Redcar" class="data-table__cell--max-width">Land Adjacent Ryehills School, Redcar</td>
-                    
-                    <td>-1.057576</td>
-                    
-                    <td>54.605045</td>
-                    
-                    <td data-sort-value="1.4">1.4</td>
-                    
-                    <td data-sort-value="49">49</td>
-                    
-                    <td data-sort-value="49">49</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:RCC</td>
+                    <td>387</td>
+                    <td class="data-table__cell--max-width">Land Adjacent Ryehills School, Redcar</td>
+                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/387_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/387_19.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/387_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/387_19.pdf</a></td>
-
+                    <td>54.605045</td>
+                    <td>-1.057576</td>
+                    <td>1.4</td>
+                    <td>49</td>
+                    <td>49</td>
+                    <td>2017-11-10</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="360">360</td>
-                    <td data-sort-value="Former Rosecroft School, Rosecroft Lane, Loftus" class="data-table__cell--max-width">Former Rosecroft School, Rosecroft Lane, Loftus</td>
-                    
-                    <td>-0.891035</td>
-                    
-                    <td>54.550708</td>
-                    
-                    <td data-sort-value="1.38">1.38</td>
-                    
-                    <td data-sort-value="69">69</td>
-                    
-                    <td data-sort-value="69">69</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:RCC</td>
+                    <td>360</td>
+                    <td class="data-table__cell--max-width">Former Rosecroft School, Rosecroft Lane, Loftus</td>
+                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/360_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/360_19.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/360_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/360_19.pdf</a></td>
-
+                    <td>54.550708</td>
+                    <td>-0.891035</td>
+                    <td>1.38</td>
+                    <td>69</td>
+                    <td>69</td>
+                    <td>2017-11-10</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="389">389</td>
-                    <td data-sort-value="Hummersea Hills Phase 1, Loftus" class="data-table__cell--max-width">Hummersea Hills Phase 1, Loftus</td>
-                    
-                    <td>-0.886763</td>
-                    
-                    <td>54.557688</td>
-                    
-                    <td data-sort-value="0.41">0.41</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:RCC</td>
+                    <td>389</td>
+                    <td class="data-table__cell--max-width">Hummersea Hills Phase 1, Loftus</td>
+                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/389_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/389_19.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2010-03-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/389_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/389_19.pdf</a></td>
-
+                    <td>54.557688</td>
+                    <td>-0.886763</td>
+                    <td>0.41</td>
+                    <td>17</td>
+                    <td>17</td>
+                    <td>2017-11-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="392">392</td>
-                    <td data-sort-value="Hummersea Hills Phase 2, Loftus" class="data-table__cell--max-width">Hummersea Hills Phase 2, Loftus</td>
-                    
-                    <td>-0.889832</td>
-                    
-                    <td>54.557402</td>
-                    
-                    <td data-sort-value="3.11">3.11</td>
-                    
-                    <td data-sort-value="104">104</td>
-                    
-                    <td data-sort-value="104">104</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:RCC</td>
+                    <td>392</td>
+                    <td class="data-table__cell--max-width">Hummersea Hills Phase 2, Loftus</td>
+                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/392_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/392_19.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2011-11-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/392_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/392_19.pdf</a></td>
-
+                    <td>54.557402</td>
+                    <td>-0.889832</td>
+                    <td>3.11</td>
+                    <td>104</td>
+                    <td>104</td>
+                    <td>2017-11-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -416,38 +349,27 @@ Comprises remaining dwellings on phase 2 and excludes separate permission on par
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="457">457</td>
-                    <td data-sort-value="Former Abattoir Site, Boosbeck" class="data-table__cell--max-width">Former Abattoir Site, Boosbeck</td>
-                    
-                    <td>-0.983966</td>
-                    
-                    <td>54.54464</td>
-                    
-                    <td data-sort-value="0.81">0.81</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
+                    <td>local-authority-eng:RCC</td>
+                    <td>457</td>
+                    <td class="data-table__cell--max-width">Former Abattoir Site, Boosbeck</td>
+                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/457_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/457_19.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-02-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/457_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/457_19.pdf</a></td>
-
+                    <td>54.54464</td>
+                    <td>-0.983966</td>
+                    <td>0.81</td>
+                    <td>31</td>
+                    <td>31</td>
+                    <td>2017-11-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -458,38 +380,27 @@ Part of larger allocation site (4.3ha.) site with outline permission for 69 dwel
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="456">456</td>
-                    <td data-sort-value="Former Handale Primary School, Loftus" class="data-table__cell--max-width">Former Handale Primary School, Loftus</td>
-                    
-                    <td>-0.892609</td>
-                    
-                    <td>54.554237</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:RCC</td>
+                    <td>456</td>
+                    <td class="data-table__cell--max-width">Former Handale Primary School, Loftus</td>
                     <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/456_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/456_19.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.554237</td>
+                    <td>-0.892609</td>
+                    <td>0.28</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-11-10</td>
+                    <td>2019-12-03</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -498,38 +409,27 @@ Part of larger allocation site (4.3ha.) site with outline permission for 69 dwel
                         </details>
                         
                     </td>
-                    <td>2019-12-03</td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="376">376</td>
-                    <td data-sort-value="Land at Park Lane, Guisborough" class="data-table__cell--max-width">Land at Park Lane, Guisborough</td>
-                    
-                    <td>-1.057268</td>
-                    
-                    <td>54.536596</td>
-                    
-                    <td data-sort-value="0.48">0.48</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RCC</td>
+                    <td>376</td>
+                    <td class="data-table__cell--max-width">Land at Park Lane, Guisborough</td>
                     <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/376_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/376_19.pdf</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.536596</td>
+                    <td>-1.057268</td>
+                    <td>0.48</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-11-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -539,38 +439,27 @@ https://www.redcar-cleveland.gov.uk/resident/planning-and-building/strategic%20p
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="405">405</td>
-                    <td data-sort-value="Land at Stanghow Road, Skelton" class="data-table__cell--max-width">Land at Stanghow Road, Skelton</td>
-                    
-                    <td>-0.972613</td>
-                    
-                    <td>54.560263</td>
-                    
-                    <td data-sort-value="0.33">0.33</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-11-10</td>
-                    
                     <td>2019-12-03</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/redcar-and-cleveland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RCC</td>
+                    <td>405</td>
+                    <td class="data-table__cell--max-width">Land at Stanghow Road, Skelton</td>
                     <td><a href="https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/405_19.pdf" class="govuk-link">https://wca.redclev.net/resident/planning-and-building/local-plan/Local%20Plan%20Documents/Brownfield%20Land%20Register%202019/405_19.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.560263</td>
+                    <td>-0.972613</td>
+                    <td>0.33</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-11-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -580,7 +469,7 @@ https://www.redcar-cleveland.gov.uk/resident/planning-and-building/strategic%20p
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/81e38899e7e04a506c4406843728bcd4fc0c0875a70dbf93abe9fbbeb8e2a7a8" class="govuk-link">81e38899...</a></td>
                 </tr>
                 
             </tbody>
@@ -589,6 +478,11 @@ https://www.redcar-cleveland.gov.uk/resident/planning-and-building/strategic%20p
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -124,14 +124,14 @@
     <p class="govuk-body">South Ribble Borough Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-11-25</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-05-18</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2019-11-25</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">documentation page</a>.</p>
   </div>
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/f5674dc4ad613c5c8c20aa46c6bda8505968fe65f6598a227cc4f2511972a8ba.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -146,7 +146,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 15 records from South Ribble Borough Council.</p>
+      <p class="govuk-body">There are 28 records from South Ribble Borough Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -154,148 +154,147 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="2031">2031</td>
-                    <td data-sort-value="Tusons Farm, Gill Lane, Walmer Bridge" class="data-table__cell--max-width">Tusons Farm, Gill Lane, Walmer Bridge</td>
-                    
-                    <td>-2.7848</td>
-                    
-                    <td>53.7145</td>
-                    
-                    <td data-sort-value="4.64">4.64</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    <td>2019-07-04</td>
-                    
-                    <td>2019-07-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2019-03-05</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>BBE01</td>
+                    <td class="data-table__cell--max-width">New Mill, Wesley Street</td>
                     <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>reserved matters approval</td>
+                    <td></td>
+                    <td>53.72445</td>
+                    <td>-2.658661</td>
+                    <td>6.5</td>
+                    <td>163</td>
+                    <td>163</td>
+                    <td>2017-09-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Conversion of existing detached dwelling into a pair of semi-detached dwellings.</div>
+                            <div class="govuk-details__text">07/2016/0690/REM - approved 4/9/17.. Reserved matters application for the erection 188 dwellings following outline approval 07/2012/0729/OUT. Matters of layout, scale, appearance and landscaping are applied for (Amended Site Layout Plan)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="MF02b">MF02b</td>
-                    <td data-sort-value="Vernon Carus Site/Penwortham Mills, Factory Lane-Phase 2" class="data-table__cell--max-width">Vernon Carus Site/Penwortham Mills, Factory Lane-Phase 2</td>
-                    
-                    <td>-2.6984</td>
-                    
-                    <td>53.7392</td>
-                    
-                    <td data-sort-value="9.45">9.45</td>
-                    
-                    <td data-sort-value="236">236</td>
-                    
-                    <td data-sort-value="236">236</td>
-                    <td>2016-06-03</td>
-                    
-                    <td>2019-07-04</td>
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>SS05</td>
+                    <td class="data-table__cell--max-width">Expac, Dunkirk Mill, Dunkirk Lane</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-12-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>0.67</td>
+                    <td>17</td>
+                    <td>17</td>
+                    <td>2016-06-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Outline application for the erection of approximately 385 dwellings. This is hybrid application which includes two parts -
+                            <div class="govuk-details__text">May come forward with Rear of Dunkirk Mill.  
 
-Part A : Outline application permission (excluding Phase 1) for the erection of up to 204 dwellings, with the provision of associated infrastructure (including roads, footpath,cycleways and open space). All matters reserved for subsequent approval 
+Site clearance completed at the beginning of the year, construction unlikely to start until 2019.  
 
-PART B: Full planning permission (Phase 1 as shown on the plans) for the erection of 181 dwellings and the provision of associated infrastructure (including roads, footpaths, cycleways and open spaces)</div>
+07/2012/0551/REN - approved 31/3/15.. Outline application for the erection of 35 No dwellings and creation of new access onto Dunkirk Lane (Access Only) - Renewal of permission 07/2008/0422/OUT</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="MF02c">MF02c</td>
-                    <td data-sort-value="Vernon Carus Site/Penwortham Mills, Factory Lane-Phase 3" class="data-table__cell--max-width">Vernon Carus Site/Penwortham Mills, Factory Lane-Phase 3</td>
-                    
-                    <td>-2.6987</td>
-                    
-                    <td>53.7405</td>
-                    
-                    <td data-sort-value="1.17">1.17</td>
-                    
-                    <td data-sort-value="29">29</td>
-                    
-                    <td data-sort-value="29">29</td>
-                    <td>2016-06-03</td>
-                    
-                    <td>2019-07-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2015-12-22</td>
-                    <td>outline planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>FW09b</td>
+                    <td class="data-table__cell--max-width">Farington Business Park, east of Wheelton Lane (northern section)-Phase 2</td>
                     <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>6.49</td>
+                    <td>162</td>
+                    <td>162</td>
+                    <td>2017-09-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Outline application for the erection of approximately 385 dwellings. This is hybrid application which includes two parts -
+                            <div class="govuk-details__text">D1 - Housing.  07/2013/0288/FUL approved 30/8/13. (234 dwellings full/234 dwellings outline) - the outline approval relates to this part of the site.  S106.
+
+AH - Phase 2 - up to a minimum of 20 units in accordance with a reserved matters approval taking account of any review pursuant to Part 4 of Schedule 3 of S106 agreement.  UU still on site.. Erection of a Residential development  - Outline application with all matters reserved for approx 234 dwellings with associated ground works, access arrangements and demolition.</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
+                </tr>
+                
+                <tr id="row4">
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>MF02b</td>
+                    <td class="data-table__cell--max-width">Vernon Carus Site/Penwortham Mills, Factory Lane-Phase 2</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>reserved matters approval</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>9.45</td>
+                    <td>74</td>
+                    <td>74</td>
+                    <td>2016-06-03</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Hybrid application approved 20/2/17.
+
+The public house has been vacated.. Outline application for the erection of approximately 385 dwellings. This is hybrid application which includes two parts -
 
 Part A : Outline application permission (excluding Phase 1) for the erection of up to 204 dwellings, with the provision of associated infrastructure (including roads, footpath,cycleways and open space). All matters reserved for subsequent approval 
 
@@ -303,287 +302,187 @@ PART B: Full planning permission (Phase 1 as shown on the plans) for the erectio
                         </details>
                         
                     </td>
-                    <td></td>
-                </tr>
-                
-                <tr id="row4">
-                    
-                    <td data-sort-value="TG08">TG08</td>
-                    <td data-sort-value="Gas Holders Site (Morris Homes) (aka Land off Wateringpool Lane)" class="data-table__cell--max-width">Gas Holders Site (Morris Homes) (aka Land off Wateringpool Lane)</td>
-                    
-                    <td>-2.6888</td>
-                    
-                    <td>53.7337</td>
-                    
-                    <td data-sort-value="1.9">1.9</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-09-20</td>
-                    
-                    <td>2019-07-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Application for residential development of 22 no dwellings and associated works</div>
-                        </details>
-                        
-                    </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="2013">2013</td>
-                    <td data-sort-value="Church Farm, Liverpool Old Road, Much Hoole" class="data-table__cell--max-width">Church Farm, Liverpool Old Road, Much Hoole</td>
-                    
-                    <td>-2.8148</td>
-                    
-                    <td>53.6951</td>
-                    
-                    <td data-sort-value="0.63">0.63</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    <td>2019-07-04</td>
-                    
-                    <td>2019-07-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2018-10-19</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>MF02c</td>
+                    <td class="data-table__cell--max-width">Vernon Carus Site/Penwortham Mills, Factory Lane-Phase 3</td>
                     <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>reserved matters approval</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1.17</td>
+                    <td>29</td>
+                    <td>29</td>
+                    <td>2016-06-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Renovation of unused former farmhouse.</div>
+                            <div class="govuk-details__text">Hybrid application approved 20/2/17.
+
+The public house has been vacated.. Outline application for the erection of approximately 385 dwellings. This is hybrid application which includes two parts -
+
+Part A : Outline application permission (excluding Phase 1) for the erection of up to 204 dwellings, with the provision of associated infrastructure (including roads, footpath,cycleways and open space). All matters reserved for subsequent approval 
+
+PART B: Full planning permission (Phase 1 as shown on the plans) for the erection of 181 dwellings and the provision of associated infrastructure (including roads, footpaths, cycleways and open spaces)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="2016">2016</td>
-                    <td data-sort-value="Land adj Banks Farm, Station Road, Little Hoole" class="data-table__cell--max-width">Land adj Banks Farm, Station Road, Little Hoole</td>
-                    
-                    <td>-2.8005</td>
-                    
-                    <td>53.7079</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    
-                    <td data-sort-value="2">2</td>
-                    <td>2019-07-04</td>
-                    
-                    <td>2019-07-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2018-10-30</td>
-                    <td>outline planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>TG03</td>
+                    <td class="data-table__cell--max-width">Lostock Hall Gas Works, Leyland Road/The Cawsey</td>
                     <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>reserved matters approval</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>12.0</td>
+                    <td>281</td>
+                    <td>281</td>
+                    <td>2016-06-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Outline application for the erection of two detached dwellings (access, layout and scale applied for)</div>
+                            <div class="govuk-details__text">07/2015/0315/REM approved 13/8/15.. Reserved matters application for the erection of 281 dwellings with associated infrastructure and landscaping (amended plans)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="1987">1987</td>
-                    <td data-sort-value="Golden Ball Hotel, 150 Liverpool Road, Longton" class="data-table__cell--max-width">Golden Ball Hotel, 150 Liverpool Road, Longton</td>
-                    
-                    <td>-2.7921</td>
-                    
-                    <td>53.7254</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    <td>2019-07-04</td>
-                    
-                    <td>2019-07-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2018-04-10</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>MF05</td>
+                    <td class="data-table__cell--max-width">The Maltings, Hill Road South</td>
                     <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>reserved matters approval</td>
+                    <td></td>
+                    <td>53.724453</td>
+                    <td>-2.79585</td>
+                    <td>1.7</td>
+                    <td>43</td>
+                    <td>43</td>
+                    <td>2017-09-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Erection of two pairs of semi detached three bed dwellinghouses on part of car park and the erection of a single storey extension to the rear/side of the public house</div>
+                            <div class="govuk-details__text">07/2017/1266/REM - pending decision.. Reserved Matters application for the erection of 61 residential units comprising of dwellings and apartments with associated landscaping</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="1395">1395</td>
-                    <td data-sort-value="Rosedale, Gill Lane, Longton" class="data-table__cell--max-width">Rosedale, Gill Lane, Longton</td>
-                    
-                    <td>-2.7762</td>
-                    
-                    <td>53.7122</td>
-                    
-                    <td data-sort-value="0.41">0.41</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    <td>2019-07-04</td>
-                    
-                    <td>2019-07-04</td>
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>SS11</td>
+                    <td class="data-table__cell--max-width">Land on west side of Mill Street, Leyland</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-01-03</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>0.18</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2016-06-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Outline Application (Access, Layout, Scale) for the erection of 3 No. detached dormer bungalows following demolition of existing outbuilding</div>
+                            <div class="govuk-details__text">07/2014/0574/OUT - approved 17/3/15.. Outline planning application for residential development comprising seven dwellings. (Access applied for)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="2017">2017</td>
-                    <td data-sort-value="Earnshaw Business Centre, High Lane, Leyland" class="data-table__cell--max-width">Earnshaw Business Centre, High Lane, Leyland</td>
-                    
-                    <td>-2.7238</td>
-                    
-                    <td>53.7042</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2019-07-04</td>
-                    
-                    <td>2019-07-04</td>
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>1803</td>
+                    <td class="data-table__cell--max-width">Moorhey Farm, Moss House Lane, Much Hoole</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-11-12</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td>53.698423</td>
+                    <td>-2.779364</td>
+                    <td>0.3</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-09-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Outline application for the erection of 7 houses following demolition of existing offices/workshops (all matters reserved)</div>
+                            <div class="govuk-details__text">07/2016/0341/FUL - approved 20/9/16. Erection of two storey dwelling house with attached double garage</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="NLH08b (NE part)">NLH08b (NE part)</td>
-                    <td data-sort-value="Land at Orchard Avenue" class="data-table__cell--max-width">Land at Orchard Avenue</td>
-                    
-                    <td>-2.7405</td>
-                    
-                    <td>53.7218</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    <td>2019-07-04</td>
-                    
-                    <td>2019-07-04</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-ribble" class="govuk-link">http://opendatacommunities.org/id/district-council/south-ribble</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2018-01-11</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>2017-09-20</td>
+                    <td>local-authority-eng:SRI</td>
+                    <td>1921</td>
+                    <td class="data-table__cell--max-width">Whitestake Garage, Long Moss Lane, New Longton</td>
                     <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>outline planning permission</td>
+                    <td></td>
+                    <td>53.7225</td>
+                    <td>-2.729889</td>
+                    <td>0.31</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-09-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Erection of two pairs semi-detached dwellings including garages, following demolition of existing storage buildings</div>
+                            <div class="govuk-details__text">07/2016/0728/OUT - approved 2/11/16. Outline application for the erection of 4no detached bungalows following demoliiton of existing garage and outbuildings (Access, Landscaping, Layout and Scale applied for)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c" class="govuk-link">19d4766e...</a></td>
                 </tr>
                 
             </tbody>
@@ -592,6 +491,11 @@ PART B: Full planning permission (Phase 1 as shown on the plans) for the erectio
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

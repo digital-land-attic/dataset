@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR1">BLR1</td>
-                    <td data-sort-value="Former Cedar House School, Kirkby Lonsdale" class="data-table__cell--max-width">Former Cedar House School, Kirkby Lonsdale</td>
-                    
-                    <td>-2.6029</td>
-                    
-                    <td>54.2028</td>
-                    
-                    <td data-sort-value="0.87">0.87</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR1</td>
+                    <td class="data-table__cell--max-width">Former Cedar House School, Kirkby Lonsdale</td>
+                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR01" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR01</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-13</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR01" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR01</a></td>
-
+                    <td>54.2028</td>
+                    <td>-2.6029</td>
+                    <td>0.87</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR2">BLR2</td>
-                    <td data-sort-value="Busher House, Busher Walk, Kendal" class="data-table__cell--max-width">Busher House, Busher Walk, Kendal</td>
-                    
-                    <td>-2.9138</td>
-                    
-                    <td>54.187</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="16">16</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR2</td>
+                    <td class="data-table__cell--max-width">Busher House, Busher Walk, Kendal</td>
+                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR02" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR02</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-01-19</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR02" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR02</a></td>
-
+                    <td>54.187</td>
+                    <td>-2.9138</td>
+                    <td>0.17</td>
+                    <td>4</td>
+                    <td>16</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR3">BLR3</td>
-                    <td data-sort-value="Sawyers Arms Hotel, Stricklandgate, Kendal" class="data-table__cell--max-width">Sawyers Arms Hotel, Stricklandgate, Kendal</td>
-                    
-                    <td>-2.928</td>
-                    
-                    <td>54.1816</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR3</td>
+                    <td class="data-table__cell--max-width">Sawyers Arms Hotel, Stricklandgate, Kendal</td>
+                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR03" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR03</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-07-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR03" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR03</a></td>
-
+                    <td>54.1816</td>
+                    <td>-2.928</td>
+                    <td>0.03</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR4">BLR4</td>
-                    <td data-sort-value="Royal Hotel, Burton-in-Kendal" class="data-table__cell--max-width">Royal Hotel, Burton-in-Kendal</td>
-                    
-                    <td>-3.0874</td>
-                    
-                    <td>54.1936</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR4</td>
+                    <td class="data-table__cell--max-width">Royal Hotel, Burton-in-Kendal</td>
+                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR04" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR04</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-03-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR04" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR04</a></td>
-
+                    <td>54.1936</td>
+                    <td>-3.0874</td>
+                    <td>0.26</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR5">BLR5</td>
-                    <td data-sort-value="West End Nursery, Ulverston" class="data-table__cell--max-width">West End Nursery, Ulverston</td>
-                    
-                    <td>-3.087</td>
-                    
-                    <td>54.1923</td>
-                    
-                    <td data-sort-value="0.61">0.61</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR5</td>
+                    <td class="data-table__cell--max-width">West End Nursery, Ulverston</td>
+                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR05" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR05</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-02-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR05" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR05</a></td>
-
+                    <td>54.1923</td>
+                    <td>-3.087</td>
+                    <td>0.61</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR6">BLR6</td>
-                    <td data-sort-value="Depot on the south side of Parkside Road, Kendal" class="data-table__cell--max-width">Depot on the south side of Parkside Road, Kendal</td>
-                    
-                    <td>-3.0928</td>
-                    
-                    <td>54.1975</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR6</td>
+                    <td class="data-table__cell--max-width">Depot on the south side of Parkside Road, Kendal</td>
                     <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR06" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR06</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.1975</td>
+                    <td>-3.0928</td>
+                    <td>0.18</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -416,38 +349,27 @@ of 6no. dwellings on land south of Parkside Road, Kendal.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR7">BLR7</td>
-                    <td data-sort-value="Depot on the north side of Parkside Road, Kendal" class="data-table__cell--max-width">Depot on the north side of Parkside Road, Kendal</td>
-                    
-                    <td>-3.0878</td>
-                    
-                    <td>54.1892</td>
-                    
-                    <td data-sort-value="1.17">1.17</td>
-                    
-                    <td data-sort-value="43">43</td>
-                    
-                    <td data-sort-value="43">43</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR7</td>
+                    <td class="data-table__cell--max-width">Depot on the north side of Parkside Road, Kendal</td>
+                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR07" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR07</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-02-11</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR07" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR07</a></td>
-
+                    <td>54.1892</td>
+                    <td>-3.0878</td>
+                    <td>1.17</td>
+                    <td>43</td>
+                    <td>43</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -457,38 +379,27 @@ for the development of 43no. Dwellings.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR8">BLR8</td>
-                    <td data-sort-value="Ulverston Town Hall, Queen St, Ulverston" class="data-table__cell--max-width">Ulverston Town Hall, Queen St, Ulverston</td>
-                    
-                    <td>-2.8325</td>
-                    
-                    <td>54.1973</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR8</td>
+                    <td class="data-table__cell--max-width">Ulverston Town Hall, Queen St, Ulverston</td>
+                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR08" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR08</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-12-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR08" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR08</a></td>
-
+                    <td>54.1973</td>
+                    <td>-2.8325</td>
+                    <td>0.07</td>
+                    <td>17</td>
+                    <td>17</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -497,38 +408,27 @@ for the development of 43no. Dwellings.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR9">BLR9</td>
-                    <td data-sort-value="Stables, Cartmel Racecourse, Cartmel" class="data-table__cell--max-width">Stables, Cartmel Racecourse, Cartmel</td>
-                    
-                    <td>-2.8008</td>
-                    
-                    <td>54.2197</td>
-                    
-                    <td data-sort-value="0.48">0.48</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR9</td>
+                    <td class="data-table__cell--max-width">Stables, Cartmel Racecourse, Cartmel</td>
                     <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR09" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR09</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.2197</td>
+                    <td>-2.8008</td>
+                    <td>0.48</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -537,38 +437,27 @@ for the development of 43no. Dwellings.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR10">BLR10</td>
-                    <td data-sort-value="Mixed use allocation at Berners Pool, Grange" class="data-table__cell--max-width">Mixed use allocation at Berners Pool, Grange</td>
-                    
-                    <td>-3.0926</td>
-                    
-                    <td>54.1945</td>
-                    
-                    <td data-sort-value="0.61">0.61</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    <td>2017-12-01</td>
-                    
                     <td>2019-12-01</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/south-lakeland" class="govuk-link">http://opendatacommunities.org/id/district-council/south-lakeland</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:SLA</td>
+                    <td>BLR10</td>
+                    <td class="data-table__cell--max-width">Mixed use allocation at Berners Pool, Grange</td>
                     <td><a href="https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR10" class="govuk-link">https://my.southlakeland.gov.uk/mysouthlakeland.aspx?SouthLakes/MyMapsSouthLakes&SearchLayer=Brownfield&SearchField=site_ref&SearchValue=BLR10</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.1945</td>
+                    <td>-3.0926</td>
+                    <td>0.61</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>2017-12-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -577,7 +466,7 @@ for the development of 43no. Dwellings.</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/976158acf44056dd98b7952d6af92dbc4216b64a04327c7ffc1980f69ebe27f2" class="govuk-link">976158ac...</a></td>
                 </tr>
                 
             </tbody>
@@ -586,6 +475,11 @@ for the development of 43no. Dwellings.</div>
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

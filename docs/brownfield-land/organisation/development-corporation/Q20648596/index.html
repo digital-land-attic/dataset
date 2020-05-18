@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,95 +154,72 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="OPDC/BLR/1">OPDC/BLR/1</td>
-                    <td data-sort-value="Harrow Road" class="data-table__cell--max-width">Harrow Road</td>
-                    
-                    <td>-0.240301</td>
-                    
-                    <td>51.53246</td>
-                    
-                    <td data-sort-value="1.6">1.6</td>
-                    
-                    <td data-sort-value="700">700</td>
-                    
-                    <td data-sort-value="700">700</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/1</td>
+                    <td class="data-table__cell--max-width">Harrow Road</td>
                     <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.53246</td>
+                    <td>-0.240301</td>
+                    <td>1.6</td>
+                    <td>700</td>
+                    <td>700</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="OPDC/BLR/2">OPDC/BLR/2</td>
-                    <td data-sort-value="2 Scrubs Lane" class="data-table__cell--max-width">2 Scrubs Lane</td>
-                    
-                    <td>-0.237725</td>
-                    
-                    <td>51.531963</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="85">85</td>
-                    
-                    <td data-sort-value="85">85</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/2</td>
+                    <td class="data-table__cell--max-width">2 Scrubs Lane</td>
+                    <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-10-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td>51.531963</td>
+                    <td>-0.237725</td>
+                    <td>0.1</td>
+                    <td>85</td>
+                    <td>85</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -251,146 +228,102 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="OPDC/BLR/3">OPDC/BLR/3</td>
-                    <td data-sort-value="Car Giant" class="data-table__cell--max-width">Car Giant</td>
-                    
-                    <td>-0.239694</td>
-                    
-                    <td>51.527272</td>
-                    
-                    <td data-sort-value="9.7">9.7</td>
-                    
-                    <td data-sort-value="5300">5300</td>
-                    
-                    <td data-sort-value="5300">5300</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/3</td>
+                    <td class="data-table__cell--max-width">Car Giant</td>
                     <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.527272</td>
+                    <td>-0.239694</td>
+                    <td>9.7</td>
+                    <td>5300</td>
+                    <td>5300</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="OPDC/BLR/4">OPDC/BLR/4</td>
-                    <td data-sort-value="EMR" class="data-table__cell--max-width">EMR</td>
-                    
-                    <td>-0.241983</td>
-                    
-                    <td>51.529977</td>
-                    
-                    <td data-sort-value="1.8">1.8</td>
-                    
-                    <td data-sort-value="1100">1100</td>
-                    
-                    <td data-sort-value="1100">1100</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/4</td>
+                    <td class="data-table__cell--max-width">EMR</td>
                     <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.529977</td>
+                    <td>-0.241983</td>
+                    <td>1.8</td>
+                    <td>1100</td>
+                    <td>1100</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="OPDC/BLR/5">OPDC/BLR/5</td>
-                    <td data-sort-value="Cumberland Business Park" class="data-table__cell--max-width">Cumberland Business Park</td>
-                    
-                    <td>-0.23737</td>
-                    
-                    <td>51.529215</td>
-                    
-                    <td data-sort-value="1.1">1.1</td>
-                    
-                    <td data-sort-value="300">300</td>
-                    
-                    <td data-sort-value="300">300</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/5</td>
+                    <td class="data-table__cell--max-width">Cumberland Business Park</td>
                     <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.529215</td>
+                    <td>-0.23737</td>
+                    <td>1.1</td>
+                    <td>300</td>
+                    <td>300</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="OPDC/BLR/6">OPDC/BLR/6</td>
-                    <td data-sort-value="North Kensington Gate North" class="data-table__cell--max-width">North Kensington Gate North</td>
-                    
-                    <td>-0.235402</td>
-                    
-                    <td>51.527993</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="47">47</td>
-                    
-                    <td data-sort-value="47">47</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/6</td>
+                    <td class="data-table__cell--max-width">North Kensington Gate North</td>
+                    <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td>51.527993</td>
+                    <td>-0.235402</td>
+                    <td>0.2</td>
+                    <td>47</td>
+                    <td>47</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -399,38 +332,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="OPDC/BLR/7">OPDC/BLR/7</td>
-                    <td data-sort-value="Mitre Yard" class="data-table__cell--max-width">Mitre Yard</td>
-                    
-                    <td>-0.235433</td>
-                    
-                    <td>51.527194</td>
-                    
-                    <td data-sort-value="0.5">0.5</td>
-                    
-                    <td data-sort-value="200">200</td>
-                    
-                    <td data-sort-value="200">200</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/7</td>
+                    <td class="data-table__cell--max-width">Mitre Yard</td>
+                    <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-07-12</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td>51.527194</td>
+                    <td>-0.235433</td>
+                    <td>0.5</td>
+                    <td>200</td>
+                    <td>200</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -439,38 +361,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="OPDC/BLR/8">OPDC/BLR/8</td>
-                    <td data-sort-value="North Kensington Gate South" class="data-table__cell--max-width">North Kensington Gate South</td>
-                    
-                    <td>-0.234356</td>
-                    
-                    <td>51.526645</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="164">164</td>
-                    
-                    <td data-sort-value="164">164</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/8</td>
+                    <td class="data-table__cell--max-width">North Kensington Gate South</td>
+                    <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-05</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td>51.526645</td>
+                    <td>-0.234356</td>
+                    <td>0.1</td>
+                    <td>164</td>
+                    <td>164</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -479,79 +390,57 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="OPDC/BLR/9">OPDC/BLR/9</td>
-                    <td data-sort-value="Mitre Wharf" class="data-table__cell--max-width">Mitre Wharf</td>
-                    
-                    <td>-0.234097</td>
-                    
-                    <td>51.526241</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/9</td>
+                    <td class="data-table__cell--max-width">Mitre Wharf</td>
                     <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.526241</td>
+                    <td>-0.234097</td>
+                    <td>0.1</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="OPDC/BLR/10">OPDC/BLR/10</td>
-                    <td data-sort-value="Willesden Junction Depot" class="data-table__cell--max-width">Willesden Junction Depot</td>
-                    
-                    <td>-0.239968</td>
-                    
-                    <td>51.531449</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    
-                    <td data-sort-value="100">100</td>
-                    <td>2017-12-15</td>
-                    
                     <td>2018-12-15</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal" class="govuk-link">http://opendatacommunities.org/id/dev-corp/old-oak-and-park-royal</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>development-corporation:Q20648596</td>
+                    <td>OPDC/BLR/10</td>
+                    <td class="data-table__cell--max-width">Willesden Junction Depot</td>
                     <td><a href="https://data.london.gov.uk/" class="govuk-link">https://data.london.gov.uk/</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.531449</td>
+                    <td>-0.239968</td>
+                    <td>0.2</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2017-12-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f1e218c96f99e378fdbaed9a426c6b44d0e7d3b5fec63e201625047643c6da74" class="govuk-link">f1e218c9...</a></td>
                 </tr>
                 
             </tbody>
@@ -560,6 +449,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

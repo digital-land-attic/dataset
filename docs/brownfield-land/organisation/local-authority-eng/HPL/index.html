@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR1 - Blakelock Road">BR1 - Blakelock Road</td>
-                    <td data-sort-value="Blakelock Road, Blakelock Rd, Foggy Furze Ward" class="data-table__cell--max-width">Blakelock Road, Blakelock Rd, Foggy Furze Ward</td>
-                    
-                    <td>-1.231234</td>
-                    
-                    <td>54.675333</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="15.0">15</td>
-                    <td>2017-12-17</td>
-                    
                     <td>2019-12-11</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR1 - Blakelock Road</td>
+                    <td class="data-table__cell--max-width">Blakelock Road, Blakelock Rd, Foggy Furze Ward</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>54.675333</td>
+                    <td>-1.231234</td>
+                    <td>0.6</td>
+                    <td>10.0</td>
+                    <td>15.0</td>
+                    <td>2017-12-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR2 - Brenda Road East">BR2 - Brenda Road East</td>
-                    <td data-sort-value="Brenda Road East, Brenda Rd, Seaton Ward" class="data-table__cell--max-width">Brenda Road East, Brenda Rd, Seaton Ward</td>
-                    
-                    <td>-1.206668</td>
-                    
-                    <td>54.657138</td>
-                    
-                    <td data-sort-value="4.72">4.72</td>
-                    
-                    <td data-sort-value="100.0">100</td>
-                    
-                    <td data-sort-value="140.0">140</td>
-                    <td>2017-12-17</td>
-                    
                     <td>2019-12-11</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR2 - Brenda Road East</td>
+                    <td class="data-table__cell--max-width">Brenda Road East, Brenda Rd, Seaton Ward</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>54.657138</td>
+                    <td>-1.206668</td>
+                    <td>4.72</td>
+                    <td>100.0</td>
+                    <td>140.0</td>
+                    <td>2017-12-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR3 - Britmag Central">BR3 - Britmag Central</td>
-                    <td data-sort-value="Britmag Central, Old Cemetery Rd, Headland&Harbour" class="data-table__cell--max-width">Britmag Central, Old Cemetery Rd, Headland&Harbour</td>
-                    
-                    <td>-1.203922</td>
-                    
-                    <td>54.705631</td>
-                    
-                    <td data-sort-value="3.6">3.6</td>
-                    
-                    <td data-sort-value="69.0">69</td>
-                    
-                    <td data-sort-value="69.0">69</td>
-                    <td>2017-12-17</td>
-                    
                     <td>2019-12-11</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR3 - Britmag Central</td>
+                    <td class="data-table__cell--max-width">Britmag Central, Old Cemetery Rd, Headland&Harbour</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2016-12-22</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>54.705631</td>
+                    <td>-1.203922</td>
+                    <td>3.6</td>
+                    <td>69.0</td>
+                    <td>69.0</td>
+                    <td>2017-12-17</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR4 - Britmag North">BR4 - Britmag North</td>
-                    <td data-sort-value="Britmag North, Old Cemetery Rd, De Bruce Ward" class="data-table__cell--max-width">Britmag North, Old Cemetery Rd, De Bruce Ward</td>
-                    
-                    <td>-1.220611</td>
-                    
-                    <td>54.710979</td>
-                    
-                    <td data-sort-value="21.0">21.0</td>
-                    
-                    <td data-sort-value="373.0">373</td>
-                    
-                    <td data-sort-value="373.0">373</td>
-                    <td>2017-12-17</td>
-                    
                     <td>2019-12-11</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR4 - Britmag North</td>
+                    <td class="data-table__cell--max-width">Britmag North, Old Cemetery Rd, De Bruce Ward</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2014-12-18</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>54.710979</td>
+                    <td>-1.220611</td>
+                    <td>21.0</td>
+                    <td>373.0</td>
+                    <td>373.0</td>
+                    <td>2017-12-17</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR5 - Britmag South">BR5 - Britmag South</td>
-                    <td data-sort-value="Britmag South, Old Cemetery Rd, Headland&Harbour" class="data-table__cell--max-width">Britmag South, Old Cemetery Rd, Headland&Harbour</td>
-                    
-                    <td>-1.200364</td>
-                    
-                    <td>54.704251</td>
-                    
-                    <td data-sort-value="1.2">1.2</td>
-                    
-                    <td data-sort-value="41.0">41</td>
-                    
-                    <td data-sort-value="41.0">41</td>
-                    <td>2017-12-17</td>
-                    
                     <td>2019-12-11</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR5 - Britmag South</td>
+                    <td class="data-table__cell--max-width">Britmag South, Old Cemetery Rd, Headland&Harbour</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2016-12-22</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>54.704251</td>
+                    <td>-1.200364</td>
+                    <td>1.2</td>
+                    <td>41.0</td>
+                    <td>41.0</td>
+                    <td>2017-12-17</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR6 - The Former Ambulance Station">BR6 - The Former Ambulance Station</td>
-                    <td data-sort-value="Former Ambulance Station, Elwick Road" class="data-table__cell--max-width">Former Ambulance Station, Elwick Road</td>
-                    
-                    <td>-1.236061</td>
-                    
-                    <td>54.68258</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
                     <td>2019-12-11</td>
-                    
-                    <td>2019-12-11</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR6 - The Former Ambulance Station</td>
+                    <td class="data-table__cell--max-width">Former Ambulance Station, Elwick Road</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>54.68258</td>
+                    <td>-1.236061</td>
+                    <td>0.28</td>
+                    <td></td>
+                    <td></td>
+                    <td>2019-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR7 - Close Farm Cottage">BR7 - Close Farm Cottage</td>
-                    <td data-sort-value="Close Farm Cottage, Wolviston, Rural West Ward" class="data-table__cell--max-width">Close Farm Cottage, Wolviston, Rural West Ward</td>
-                    
-                    <td>-1.336851</td>
-                    
-                    <td>54.653795</td>
-                    
-                    <td data-sort-value="3.01">3.01</td>
-                    
-                    <td data-sort-value="3.0">3</td>
-                    
-                    <td data-sort-value="3.0">3</td>
-                    <td>2017-12-17</td>
-                    
                     <td>2019-12-11</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR7 - Close Farm Cottage</td>
+                    <td class="data-table__cell--max-width">Close Farm Cottage, Wolviston, Rural West Ward</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2012-10-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>54.653795</td>
+                    <td>-1.336851</td>
+                    <td>3.01</td>
+                    <td>3.0</td>
+                    <td>3.0</td>
+                    <td>2017-12-17</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR8 - Former Brierton Road Site">BR8 - Former Brierton Road Site</td>
-                    <td data-sort-value="FormerBriertonRoadSite, Brierton Lane, Manor House" class="data-table__cell--max-width">FormerBriertonRoadSite, Brierton Lane, Manor House</td>
-                    
-                    <td>-1.238945</td>
-                    
-                    <td>54.666862</td>
-                    
-                    <td data-sort-value="1.39">1.39</td>
-                    
-                    <td data-sort-value="100.0">100</td>
-                    
-                    <td data-sort-value="110.0">110</td>
-                    <td>2017-12-17</td>
-                    
                     <td>2019-12-11</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR8 - Former Brierton Road Site</td>
+                    <td class="data-table__cell--max-width">FormerBriertonRoadSite, Brierton Lane, Manor House</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>54.666862</td>
+                    <td>-1.238945</td>
+                    <td>1.39</td>
+                    <td>100.0</td>
+                    <td>110.0</td>
+                    <td>2017-12-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR9 - 9,11 Hutton Avenue">BR9 - 9,11 Hutton Avenue</td>
-                    <td data-sort-value="9, 11 Hutton Avenue, Hartlepool" class="data-table__cell--max-width">9, 11 Hutton Avenue, Hartlepool</td>
-                    
-                    <td>-1.220992</td>
-                    
-                    <td>54.684605</td>
-                    
-                    <td data-sort-value="0.049">0.049</td>
-                    
-                    <td data-sort-value="13.0">13</td>
-                    
-                    <td data-sort-value="13.0">13</td>
                     <td>2019-12-11</td>
-                    
-                    <td>2019-12-11</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR9 - 9,11 Hutton Avenue</td>
+                    <td class="data-table__cell--max-width">9, 11 Hutton Avenue, Hartlepool</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2017-09-14</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>54.684605</td>
+                    <td>-1.220992</td>
+                    <td>0.049</td>
+                    <td>13.0</td>
+                    <td>13.0</td>
+                    <td>2019-12-11</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR10 - Former King Oswy Public House">BR10 - Former King Oswy Public House</td>
-                    <td data-sort-value="Former King Oswy Public House, KingOswy Dr, DeBruce" class="data-table__cell--max-width">Former King Oswy Public House, KingOswy Dr, DeBruce</td>
-                    
-                    <td>-1.234304</td>
-                    
-                    <td>54.710806</td>
-                    
-                    <td data-sort-value="0.25">0.25</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    <td>2017-12-17</td>
-                    
                     <td>2019-12-11</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:HPL</td>
+                    <td>BR10 - Former King Oswy Public House</td>
+                    <td class="data-table__cell--max-width">Former King Oswy Public House, KingOswy Dr, DeBruce</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/hartlepool" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/hartlepool</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>54.710806</td>
+                    <td>-1.234304</td>
+                    <td>0.25</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>2017-12-17</td>
                     <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3c92e7482c97c7cdf37d030ec26c81cf176d8d1dadbe6829fc82be10147f5ce1" class="govuk-link">3c92e748...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

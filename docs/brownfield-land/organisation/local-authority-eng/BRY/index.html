@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,388 +154,277 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR1">BLR1</td>
-                    <td data-sort-value="Gas Holder Site, Homesdale Road, Bromley, BR1 2UE" class="data-table__cell--max-width">Gas Holder Site, Homesdale Road, Bromley, BR1 2UE</td>
-                    
-                    <td>0.032183</td>
-                    
-                    <td>51.400753</td>
-                    
-                    <td data-sort-value="1.0">1.0</td>
-                    
-                    <td data-sort-value="60.0">60</td>
-                    
-                    <td data-sort-value="60.0">60</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR1</td>
+                    <td class="data-table__cell--max-width">Gas Holder Site, Homesdale Road, Bromley, BR1 2UE</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.400753</td>
+                    <td>0.032183</td>
+                    <td>1.0</td>
+                    <td>60.0</td>
+                    <td>60.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR2">BLR2</td>
-                    <td data-sort-value="Land adjacent to Bickley Station, BR1 2EB" class="data-table__cell--max-width">Land adjacent to Bickley Station, BR1 2EB</td>
-                    
-                    <td>0.042703</td>
-                    
-                    <td>51.39968</td>
-                    
-                    <td data-sort-value="0.9">0.9</td>
-                    
-                    <td data-sort-value="30.0">30</td>
-                    
-                    <td data-sort-value="30.0">30</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR2</td>
+                    <td class="data-table__cell--max-width">Land adjacent to Bickley Station, BR1 2EB</td>
+                    <td></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.39968</td>
+                    <td>0.042703</td>
+                    <td>0.9</td>
+                    <td>30.0</td>
+                    <td>30.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR3">BLR3</td>
-                    <td data-sort-value="Opportunity Site B Corner of Tweedy Road/London Road" class="data-table__cell--max-width">Opportunity Site B Corner of Tweedy Road/London Road</td>
-                    
-                    <td>0.012023</td>
-                    
-                    <td>51.408852</td>
-                    
-                    <td data-sort-value="0.37">0.37</td>
-                    
-                    <td data-sort-value="24.0">24</td>
-                    
-                    <td data-sort-value="24.0">24</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR3</td>
+                    <td class="data-table__cell--max-width">Opportunity Site B Corner of Tweedy Road/London Road</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.408852</td>
+                    <td>0.012023</td>
+                    <td>0.37</td>
+                    <td>24.0</td>
+                    <td>24.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR4">BLR4</td>
-                    <td data-sort-value="Opportunity Site C, Old Town Hall, 30 Tweedy Road, BR1 3FE" class="data-table__cell--max-width">Opportunity Site C, Old Town Hall, 30 Tweedy Road, BR1 3FE</td>
-                    
-                    <td>0.017921</td>
-                    
-                    <td>51.406628</td>
-                    
-                    <td data-sort-value="0.7">0.7</td>
-                    
-                    <td data-sort-value="53.0">53</td>
-                    
-                    <td data-sort-value="53.0">53</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR4</td>
+                    <td class="data-table__cell--max-width">Opportunity Site C, Old Town Hall, 30 Tweedy Road, BR1 3FE</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
+                    <td>yes</td>
                     <td>owned by a public authority</td>
-                    <td>2016-08-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>51.406628</td>
+                    <td>0.017921</td>
+                    <td>0.7</td>
+                    <td>53.0</td>
+                    <td>53.0</td>
                     <td></td>
-
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR5">BLR5</td>
-                    <td data-sort-value="Opportunity Site P, Sainsbury's West Street, Bromley BR1 1TP" class="data-table__cell--max-width">Opportunity Site P, Sainsbury's West Street, Bromley BR1 1TP</td>
-                    
-                    <td>0.013545</td>
-                    
-                    <td>51.407153</td>
-                    
-                    <td data-sort-value="1.25">1.25</td>
-                    
-                    <td data-sort-value="20.0">20</td>
-                    
-                    <td data-sort-value="20.0">20</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
-                    <td></td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR5</td>
+                    <td class="data-table__cell--max-width">Opportunity Site P, Sainsbury's West Street, Bromley BR1 1TP</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.407153</td>
+                    <td>0.013545</td>
+                    <td>1.25</td>
+                    <td>20.0</td>
+                    <td>20.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR6">BLR6</td>
-                    <td data-sort-value="Bromley Civic Centre, Stockwell Close, BR1 3UH" class="data-table__cell--max-width">Bromley Civic Centre, Stockwell Close, BR1 3UH</td>
-                    
-                    <td>0.021199</td>
-                    
-                    <td>51.403676</td>
-                    
-                    <td data-sort-value="5.75">5.75</td>
-                    
-                    <td data-sort-value="70.0">70</td>
-                    
-                    <td data-sort-value="70.0">70</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR6</td>
+                    <td class="data-table__cell--max-width">Bromley Civic Centre, Stockwell Close, BR1 3UH</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.403676</td>
+                    <td>0.021199</td>
+                    <td>5.75</td>
+                    <td>70.0</td>
+                    <td>70.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR7">BLR7</td>
-                    <td data-sort-value="West of Bromley High Street and Land at Bromley South, BR1/BR2" class="data-table__cell--max-width">West of Bromley High Street and Land at Bromley South, BR1/BR2</td>
-                    
-                    <td>0.015747</td>
-                    
-                    <td>51.401324</td>
-                    
-                    <td data-sort-value="4.54">4.54</td>
-                    
-                    <td data-sort-value="1230.0">1230</td>
-                    
-                    <td data-sort-value="1230.0">1230</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR7</td>
+                    <td class="data-table__cell--max-width">West of Bromley High Street and Land at Bromley South, BR1/BR2</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
                     <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.401324</td>
+                    <td>0.015747</td>
+                    <td>4.54</td>
+                    <td>1230.0</td>
+                    <td>1230.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR8">BLR8</td>
-                    <td data-sort-value="Land adjacent to Bromley North Station, Tweedy Road, Bromley, BR1" class="data-table__cell--max-width">Land adjacent to Bromley North Station, Tweedy Road, Bromley, BR1</td>
-                    
-                    <td>0.017434</td>
-                    
-                    <td>51.409272</td>
-                    
-                    <td data-sort-value="3.0">3.0</td>
-                    
-                    <td data-sort-value="525.0">525</td>
-                    
-                    <td data-sort-value="525.0">525</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR8</td>
+                    <td class="data-table__cell--max-width">Land adjacent to Bromley North Station, Tweedy Road, Bromley, BR1</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
                     <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.409272</td>
+                    <td>0.017434</td>
+                    <td>3.0</td>
+                    <td>525.0</td>
+                    <td>525.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR9">BLR9</td>
-                    <td data-sort-value="The Hill Car Park & Adjacent Lands, BR2 0DA" class="data-table__cell--max-width">The Hill Car Park & Adjacent Lands, BR2 0DA</td>
-                    
-                    <td>0.011342</td>
-                    
-                    <td>51.406427</td>
-                    
-                    <td data-sort-value="1.25">1.25</td>
-                    
-                    <td data-sort-value="150.0">150</td>
-                    
-                    <td data-sort-value="150.0">150</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR9</td>
+                    <td class="data-table__cell--max-width">The Hill Car Park & Adjacent Lands, BR2 0DA</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
                     <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.406427</td>
+                    <td>0.011342</td>
+                    <td>1.25</td>
+                    <td>150.0</td>
+                    <td>150.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR10">BLR10</td>
-                    <td data-sort-value="Banbury House, Bushell Way, Chislehurst, BR7 6SF" class="data-table__cell--max-width">Banbury House, Bushell Way, Chislehurst, BR7 6SF</td>
-                    
-                    <td>0.059481</td>
-                    
-                    <td>51.423064</td>
-                    
-                    <td data-sort-value="0.27">0.27</td>
-                    
-                    <td data-sort-value="25.0">25</td>
-                    
-                    <td data-sort-value="25.0">25</td>
-                    <td></td>
-                    
                     <td>2019-10-20</td>
+                    <td>local-authority-eng:BRY</td>
+                    <td>BLR10</td>
+                    <td class="data-table__cell--max-width">Banbury House, Bushell Way, Chislehurst, BR7 6SF</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bromley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bromley</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.423064</td>
+                    <td>0.059481</td>
+                    <td>0.27</td>
+                    <td>25.0</td>
+                    <td>25.0</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/291b6038921e171a6e061c6860089277811cb8deb14ad68db16550310dfb0c13" class="govuk-link">291b6038...</a></td>
                 </tr>
                 
             </tbody>
@@ -544,6 +433,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

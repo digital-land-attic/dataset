@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,131 +154,97 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="SHELAA ID: 8">SHELAA ID: 8</td>
-                    <td data-sort-value="Union Street West Car Park, Union Street, Farnborough" class="data-table__cell--max-width">Union Street West Car Park, Union Street, Farnborough</td>
-                    
-                    <td>-0.758112</td>
-                    
-                    <td>51.295747</td>
-                    
-                    <td data-sort-value="0.25">0.25</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    <td>2018-12-10</td>
-                    
                     <td>2019-12-09</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 8</td>
+                    <td class="data-table__cell--max-width">Union Street West Car Park, Union Street, Farnborough</td>
                     <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.295747</td>
+                    <td>-0.758112</td>
+                    <td>0.25</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>2018-12-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="SHELAA ID: 9">SHELAA ID: 9</td>
-                    <td data-sort-value="Union Street East Car Park, Union Street, Farnborough" class="data-table__cell--max-width">Union Street East Car Park, Union Street, Farnborough</td>
-                    
-                    <td>-0.754301</td>
-                    
-                    <td>51.295581</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-12-09</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 9</td>
+                    <td class="data-table__cell--max-width">Union Street East Car Park, Union Street, Farnborough</td>
                     <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.295581</td>
+                    <td>-0.754301</td>
+                    <td>0.08</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="SHELAA ID: 15">SHELAA ID: 15</td>
-                    <td data-sort-value="Farnborough Civic Quarter, Farnborough" class="data-table__cell--max-width">Farnborough Civic Quarter, Farnborough</td>
-                    
-                    <td>-0.757203</td>
-                    
-                    <td>51.289569</td>
-                    
-                    <td data-sort-value="4.27">4.27</td>
-                    
-                    <td data-sort-value="700">700</td>
-                    
-                    <td data-sort-value="700">700</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-12-09</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 15</td>
+                    <td class="data-table__cell--max-width">Farnborough Civic Quarter, Farnborough</td>
                     <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.289569</td>
+                    <td>-0.757203</td>
+                    <td>4.27</td>
+                    <td>700</td>
+                    <td>700</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -287,146 +253,102 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="SHELAA ID: 102">SHELAA ID: 102</td>
-                    <td data-sort-value="Willow House, 23 Grosvenor Road, Aldershot" class="data-table__cell--max-width">Willow House, 23 Grosvenor Road, Aldershot</td>
-                    
-                    <td>-0.766873</td>
-                    
-                    <td>51.248701</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-12-09</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 102</td>
+                    <td class="data-table__cell--max-width">Willow House, 23 Grosvenor Road, Aldershot</td>
                     <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.248701</td>
+                    <td>-0.766873</td>
+                    <td>0.06</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="SHELAA ID: 110">SHELAA ID: 110</td>
-                    <td data-sort-value="Progress House and Penmark House, Albert Road, Aldershot" class="data-table__cell--max-width">Progress House and Penmark House, Albert Road, Aldershot</td>
-                    
-                    <td>-0.758301</td>
-                    
-                    <td>51.247244</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-12-09</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 110</td>
+                    <td class="data-table__cell--max-width">Progress House and Penmark House, Albert Road, Aldershot</td>
                     <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.247244</td>
+                    <td>-0.758301</td>
+                    <td>0.07</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="SHELAA ID: 284">SHELAA ID: 284</td>
-                    <td data-sort-value="Former Laundry, 53 Rectory Road, Farnborough" class="data-table__cell--max-width">Former Laundry, 53 Rectory Road, Farnborough</td>
-                    
-                    <td>-0.744322</td>
-                    
-                    <td>51.294935</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-12-09</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 284</td>
+                    <td class="data-table__cell--max-width">Former Laundry, 53 Rectory Road, Farnborough</td>
+                    <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.294935</td>
+                    <td>-0.744322</td>
+                    <td>0.14</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="SHELAA ID: 304">SHELAA ID: 304</td>
-                    <td data-sort-value="69 Gordon Road, Aldershot" class="data-table__cell--max-width">69 Gordon Road, Aldershot</td>
-                    
-                    <td>-0.763784</td>
-                    
-                    <td>51.245809</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2018-12-10</td>
-                    
                     <td>2019-12-09</td>
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 304</td>
+                    <td class="data-table__cell--max-width">69 Gordon Road, Aldershot</td>
+                    <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-07-13</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td>51.245809</td>
+                    <td>-0.763784</td>
+                    <td>0.06</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2018-12-10</td>
+                    <td>2019-12-09</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -435,74 +357,52 @@
                         </details>
                         
                     </td>
-                    <td>2019-12-09</td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="SHELAA ID: 320">SHELAA ID: 320</td>
-                    <td data-sort-value="Car Park next to Scout Hall, Fleet Road, Farnborough" class="data-table__cell--max-width">Car Park next to Scout Hall, Fleet Road, Farnborough</td>
-                    
-                    <td>-0.778693</td>
-                    
-                    <td>51.295236</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-12-09</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 320</td>
+                    <td class="data-table__cell--max-width">Car Park next to Scout Hall, Fleet Road, Farnborough</td>
                     <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.295236</td>
+                    <td>-0.778693</td>
+                    <td>0.1</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="SHELAA ID: 409">SHELAA ID: 409</td>
-                    <td data-sort-value="16 Union Street, Aldershot" class="data-table__cell--max-width">16 Union Street, Aldershot</td>
-                    
-                    <td>-0.766668</td>
-                    
-                    <td>51.249382</td>
-                    
-                    <td data-sort-value="0.01">0.01</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2018-12-10</td>
-                    
                     <td>2012-12-09</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 409</td>
+                    <td class="data-table__cell--max-width">16 Union Street, Aldershot</td>
                     <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.249382</td>
+                    <td>-0.766668</td>
+                    <td>0.01</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2018-12-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -511,38 +411,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="SHELAA ID: 516">SHELAA ID: 516</td>
-                    <td data-sort-value="The Crescent, Southwood Business Park, Summit Avenue, Farnborough" class="data-table__cell--max-width">The Crescent, Southwood Business Park, Summit Avenue, Farnborough</td>
-                    
-                    <td>-0.78435</td>
-                    
-                    <td>51.292831</td>
-                    
-                    <td data-sort-value="4.26">4.26</td>
-                    
-                    <td data-sort-value="159">159</td>
-                    
-                    <td data-sort-value="159">159</td>
-                    <td>2017-12-11</td>
-                    
                     <td>2019-12-09</td>
+                    <td>local-authority-eng:RUH</td>
+                    <td>SHELAA ID: 516</td>
+                    <td class="data-table__cell--max-width">The Crescent, Southwood Business Park, Summit Avenue, Farnborough</td>
+                    <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/rushmoor" class="govuk-link">http://opendatacommunities.org/id/district-council/rushmoor</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-03-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register" class="govuk-link">http://www.rushmoor.gov.uk/article/10524/Brownfield-land-register</a></td>
-
+                    <td>51.292831</td>
+                    <td>-0.78435</td>
+                    <td>4.26</td>
+                    <td>159</td>
+                    <td>159</td>
+                    <td>2017-12-11</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -551,7 +440,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/58410bbae3f132b4befdd0baf673a34267546489087ae18ce09b64fdfeaf67e0" class="govuk-link">58410bba...</a></td>
                 </tr>
                 
             </tbody>
@@ -560,6 +449,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

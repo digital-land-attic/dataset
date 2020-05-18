@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="04/00562/F">04/00562/F</td>
-                    <td data-sort-value="2-4 Church Road Lawrence Hill Bristol BS5 9PP" class="data-table__cell--max-width">2-4 Church Road Lawrence Hill Bristol BS5 9PP</td>
-                    
-                    <td>-2.56427</td>
-                    
-                    <td>51.457603</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>04/00562/F</td>
+                    <td class="data-table__cell--max-width">2-4 Church Road Lawrence Hill Bristol BS5 9PP</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=0400562F" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=0400562F</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2004-05-11</td>
-                    <td>full planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=0400562F" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=0400562F</a></td>
-
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.457603</td>
+                    <td>-2.56427</td>
+                    <td>0.06</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="04/02177/F">04/02177/F</td>
-                    <td data-sort-value="Former Courage Brewery Counterslip Redcliff Bristol" class="data-table__cell--max-width">Former Courage Brewery Counterslip Redcliff Bristol</td>
-                    
-                    <td>-2.588635</td>
-                    
-                    <td>51.45398</td>
-                    
-                    <td data-sort-value="2.28">2.28</td>
-                    
-                    <td data-sort-value="199">199</td>
-                    
-                    <td data-sort-value="199">199</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>04/02177/F</td>
+                    <td class="data-table__cell--max-width">Former Courage Brewery Counterslip Redcliff Bristol</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=HYMYT5DNDD000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=HYMYT5DNDD000</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2006-11-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=HYMYT5DNDD000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=HYMYT5DNDD000</a></td>
-
+                    <td>51.45398</td>
+                    <td>-2.588635</td>
+                    <td>2.28</td>
+                    <td>199</td>
+                    <td>199</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="04/03995/P">04/03995/P</td>
-                    <td data-sort-value="Redfield Post Office Chalks Road Bristol BS5 9EW" class="data-table__cell--max-width">Redfield Post Office Chalks Road Bristol BS5 9EW</td>
-                    
-                    <td>-2.551278</td>
-                    
-                    <td>51.459864</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2018-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>04/03995/P</td>
+                    <td class="data-table__cell--max-width">Redfield Post Office Chalks Road Bristol BS5 9EW</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I4G002DN2D000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I4G002DN2D000</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2005-03-01</td>
-                    <td>outline planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I4G002DN2D000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I4G002DN2D000</a></td>
-
+                    <td>outline planning permission</td>
+                    <td></td>
+                    <td>51.459864</td>
+                    <td>-2.551278</td>
+                    <td>0.04</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2018-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="04/04126/P">04/04126/P</td>
-                    <td data-sort-value="Land At Wapping Wharf Wapping Road Bristol" class="data-table__cell--max-width">Land At Wapping Wharf Wapping Road Bristol</td>
-                    
-                    <td>-2.598709</td>
-                    
-                    <td>51.447254</td>
-                    
-                    <td data-sort-value="4.19">4.19</td>
-                    
-                    <td data-sort-value="61">61</td>
-                    
-                    <td data-sort-value="61">61</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>04/04126/P</td>
+                    <td class="data-table__cell--max-width">Land At Wapping Wharf Wapping Road Bristol</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I520C3DNGC000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I520C3DNGC000</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2007-06-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I520C3DNGC000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I520C3DNGC000</a></td>
-
+                    <td>51.447254</td>
+                    <td>-2.598709</td>
+                    <td>4.19</td>
+                    <td>61</td>
+                    <td>61</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="04/04164/M">04/04164/M</td>
-                    <td data-sort-value="Plot ND6 Temple Quay North Temple Gate Bristol" class="data-table__cell--max-width">Plot ND6 Temple Quay North Temple Gate Bristol</td>
-                    
-                    <td>-2.5814</td>
-                    
-                    <td>51.452857</td>
-                    
-                    <td data-sort-value="0.38">0.38</td>
-                    
-                    <td data-sort-value="120">120</td>
-                    
-                    <td data-sort-value="120">120</td>
                     <td>2019-12-19</td>
-                    
-                    <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>04/04164/M</td>
+                    <td class="data-table__cell--max-width">Plot ND6 Temple Quay North Temple Gate Bristol</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I5479MDNDD000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I5479MDNDD000</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2005-01-07</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I5479MDNDD000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I5479MDNDD000</a></td>
-
+                    <td>51.452857</td>
+                    <td>-2.5814</td>
+                    <td>0.38</td>
+                    <td>120</td>
+                    <td>120</td>
+                    <td>2019-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="04/05284/F">04/05284/F</td>
-                    <td data-sort-value="3-5 Bushy Park Bristol BS4 2EG" class="data-table__cell--max-width">3-5 Bushy Park Bristol BS4 2EG</td>
-                    
-                    <td>-2.577935</td>
-                    
-                    <td>51.441142</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2018-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>04/05284/F</td>
+                    <td class="data-table__cell--max-width">3-5 Bushy Park Bristol BS4 2EG</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I9H9KLDN98000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I9H9KLDN98000</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2006-06-19</td>
-                    <td>full planning permission</td>
                     <td></td>
                     <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I9H9KLDN98000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=I9H9KLDN98000</a></td>
-
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.441142</td>
+                    <td>-2.577935</td>
+                    <td>0.1</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2018-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="05/03988/F">05/03988/F</td>
-                    <td data-sort-value="Former Imperial Tobacco Office Building Hengrove Way Bristol BS14 0HR" class="data-table__cell--max-width">Former Imperial Tobacco Office Building Hengrove Way Bristol BS14 0HR</td>
-                    
-                    <td>-2.602685</td>
-                    
-                    <td>51.41526</td>
-                    
-                    <td data-sort-value="4.66">4.66</td>
-                    
-                    <td data-sort-value="136">136</td>
-                    
-                    <td data-sort-value="136">136</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>05/03988/F</td>
+                    <td class="data-table__cell--max-width">Former Imperial Tobacco Office Building Hengrove Way Bristol BS14 0HR</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=IO56ECDN3J000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=IO56ECDN3J000</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2007-02-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=IO56ECDN3J000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=IO56ECDN3J000</a></td>
-
+                    <td>51.41526</td>
+                    <td>-2.602685</td>
+                    <td>4.66</td>
+                    <td>136</td>
+                    <td>136</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="06/05456/F">06/05456/F</td>
-                    <td data-sort-value="100-110 North Street Bedminster Bristol BS3 1HF" class="data-table__cell--max-width">100-110 North Street Bedminster Bristol BS3 1HF</td>
-                    
-                    <td>-2.606018</td>
-                    
-                    <td>51.440657</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2018-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>06/05456/F</td>
+                    <td class="data-table__cell--max-width">100-110 North Street Bedminster Bristol BS3 1HF</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=JAXIXDDNIM000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=JAXIXDDNIM000</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2007-03-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=JAXIXDDNIM000" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=JAXIXDDNIM000</a></td>
-
+                    <td>51.440657</td>
+                    <td>-2.606018</td>
+                    <td>0.07</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2018-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="07/02235/F">07/02235/F</td>
-                    <td data-sort-value="Former Avonmouth Bus Depot Avonmouth Road Bristol BS11 9LP" class="data-table__cell--max-width">Former Avonmouth Bus Depot Avonmouth Road Bristol BS11 9LP</td>
-                    
-                    <td>-2.694501</td>
-                    
-                    <td>51.499439</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    
-                    <td data-sort-value="23">23</td>
-                    <td>2018-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>07/02235/F</td>
+                    <td class="data-table__cell--max-width">Former Avonmouth Bus Depot Avonmouth Road Bristol BS11 9LP</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=JIFTQCDN0DD00" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=JIFTQCDN0DD00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2008-03-05</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=JIFTQCDN0DD00" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=JIFTQCDN0DD00</a></td>
-
+                    <td>51.499439</td>
+                    <td>-2.694501</td>
+                    <td>0.2</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>2018-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="08/03169/P">08/03169/P</td>
-                    <td data-sort-value="104 Belle Vue Road Easton Bristol BS5 6BX" class="data-table__cell--max-width">104 Belle Vue Road Easton Bristol BS5 6BX</td>
-                    
-                    <td>-2.561468</td>
-                    
-                    <td>51.466403</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2018-12-19</td>
-                    
                     <td>2019-12-19</td>
+                    <td>local-authority-eng:BST</td>
+                    <td>08/03169/P</td>
+                    <td class="data-table__cell--max-width">104 Belle Vue Road Easton Bristol BS5 6BX</td>
+                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=K4D1L7DN00J00" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=K4D1L7DN00J00</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bristol" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bristol</a></td>
-                    <td></td>
-                    <td>2009-02-11</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=K4D1L7DN00J00" class="govuk-link">https://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=K4D1L7DN00J00</a></td>
-
+                    <td>51.466403</td>
+                    <td>-2.561468</td>
+                    <td>0.04</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2018-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/71557048ba0c0f9cbc7e8c5defc1688542c938a1b91a2d0bb3c4c3290e6c812e" class="govuk-link">71557048...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

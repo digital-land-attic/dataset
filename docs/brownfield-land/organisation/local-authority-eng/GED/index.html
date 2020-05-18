@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="6\7">6\7</td>
-                    <td data-sort-value="Meadow Road Industrial Site, Meadow Road, Carlton" class="data-table__cell--max-width">Meadow Road Industrial Site, Meadow Road, Carlton</td>
-                    
-                    <td>-1.082693</td>
-                    
-                    <td>52.961695</td>
-                    
-                    <td data-sort-value="1.18">1.18</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:GED</td>
+                    <td>6\7</td>
+                    <td class="data-table__cell--max-width">Meadow Road Industrial Site, Meadow Road, Carlton</td>
                     <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C7" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C7</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.961695</td>
+                    <td>-1.082693</td>
+                    <td>1.18</td>
+                    <td>35</td>
+                    <td>40</td>
+                    <td>2017-04-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="6\18">6\18</td>
-                    <td data-sort-value="Rolleston Drive (NCC Offices), Rolleston Drive, Arnold" class="data-table__cell--max-width">Rolleston Drive (NCC Offices), Rolleston Drive, Arnold</td>
-                    
-                    <td>-1.116093</td>
-                    
-                    <td>53.003151</td>
-                    
-                    <td data-sort-value="3.64">3.64</td>
-                    
-                    <td data-sort-value="140">140</td>
-                    
-                    <td data-sort-value="140">140</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:GED</td>
+                    <td>6\18</td>
+                    <td class="data-table__cell--max-width">Rolleston Drive (NCC Offices), Rolleston Drive, Arnold</td>
                     <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C18" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C18</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.003151</td>
+                    <td>-1.116093</td>
+                    <td>3.64</td>
+                    <td>140</td>
+                    <td>140</td>
+                    <td>2017-04-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="6\20">6\20</td>
-                    <td data-sort-value="Bestwood Business Park, Park Road, Bestwood Village" class="data-table__cell--max-width">Bestwood Business Park, Park Road, Bestwood Village</td>
-                    
-                    <td>-1.180971</td>
-                    
-                    <td>53.020485</td>
-                    
-                    <td data-sort-value="6.01">6.01</td>
-                    
-                    <td data-sort-value="220">220</td>
-                    
-                    <td data-sort-value="220">220</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:GED</td>
+                    <td>6\20</td>
+                    <td class="data-table__cell--max-width">Bestwood Business Park, Park Road, Bestwood Village</td>
                     <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C20" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C20</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.020485</td>
+                    <td>-1.180971</td>
+                    <td>6.01</td>
+                    <td>220</td>
+                    <td>220</td>
+                    <td>2017-04-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="6\49">6\49</td>
-                    <td data-sort-value="Brookfields Garden Centre, Mapperley Plains, Arnold" class="data-table__cell--max-width">Brookfields Garden Centre, Mapperley Plains, Arnold</td>
-                    
-                    <td>-1.102291</td>
-                    
-                    <td>53.004843</td>
-                    
-                    <td data-sort-value="3.52">3.52</td>
-                    
-                    <td data-sort-value="90">90</td>
-                    
-                    <td data-sort-value="90">90</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:GED</td>
+                    <td>6\49</td>
+                    <td class="data-table__cell--max-width">Brookfields Garden Centre, Mapperley Plains, Arnold</td>
                     <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C49" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C49</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.004843</td>
+                    <td>-1.102291</td>
+                    <td>3.52</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>2017-04-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="6\73">6\73</td>
-                    <td data-sort-value="Bestwood Hotel, Park Road, Bestwood Village" class="data-table__cell--max-width">Bestwood Hotel, Park Road, Bestwood Village</td>
-                    
-                    <td>-1.175971</td>
-                    
-                    <td>53.022213</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:GED</td>
+                    <td>6\73</td>
+                    <td class="data-table__cell--max-width">Bestwood Hotel, Park Road, Bestwood Village</td>
+                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C73" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C73</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-09-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C73" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C73</a></td>
-
+                    <td>53.022213</td>
+                    <td>-1.175971</td>
+                    <td>0.15</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-04-01</td>
+                    <td>2017-12-19</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td>2017-12-19</td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="6\154">6\154</td>
-                    <td data-sort-value="Mansfield Lane (110-112), Mansfield Lane, Calverton" class="data-table__cell--max-width">Mansfield Lane (110-112), Mansfield Lane, Calverton</td>
-                    
-                    <td>-1.081316</td>
-                    
-                    <td>53.041728</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:GED</td>
+                    <td>6\154</td>
+                    <td class="data-table__cell--max-width">Mansfield Lane (110-112), Mansfield Lane, Calverton</td>
+                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C154" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C154</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2004-12-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C154" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C154</a></td>
-
+                    <td>53.041728</td>
+                    <td>-1.081316</td>
+                    <td>0.11</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-04-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="6\209">6\209</td>
-                    <td data-sort-value="Burton Road, Burton Road, Carlton" class="data-table__cell--max-width">Burton Road, Burton Road, Carlton</td>
-                    
-                    <td>-1.085946</td>
-                    
-                    <td>52.967507</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:GED</td>
+                    <td>6\209</td>
+                    <td class="data-table__cell--max-width">Burton Road, Burton Road, Carlton</td>
                     <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C209" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C209</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.967507</td>
+                    <td>-1.085946</td>
+                    <td>0.06</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-04-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="6\216">6\216</td>
-                    <td data-sort-value="Fraser Street (Site of 36), Fraser Street, Newstead" class="data-table__cell--max-width">Fraser Street (Site of 36), Fraser Street, Newstead</td>
-                    
-                    <td>-1.225328</td>
-                    
-                    <td>53.069804</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:GED</td>
+                    <td>6\216</td>
+                    <td class="data-table__cell--max-width">Fraser Street (Site of 36), Fraser Street, Newstead</td>
+                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C216" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C216</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-10-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C216" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C216</a></td>
-
+                    <td>53.069804</td>
+                    <td>-1.225328</td>
+                    <td>0.2</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-04-01</td>
+                    <td>2017-12-06</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td>2017-12-06</td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="6\229">6\229</td>
-                    <td data-sort-value="Westdale Lane East (72-74), Westdale Lane East, Carlton" class="data-table__cell--max-width">Westdale Lane East (72-74), Westdale Lane East, Carlton</td>
-                    
-                    <td>-1.087858</td>
-                    
-                    <td>52.974199</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:GED</td>
+                    <td>6\229</td>
+                    <td class="data-table__cell--max-width">Westdale Lane East (72-74), Westdale Lane East, Carlton</td>
+                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C229" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C229</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-10-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C229" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C229</a></td>
-
+                    <td>52.974199</td>
+                    <td>-1.087858</td>
+                    <td>0.09</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-04-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="6\260">6\260</td>
-                    <td data-sort-value="Sol Construction Ltd, Vale Road, Carlton" class="data-table__cell--max-width">Sol Construction Ltd, Vale Road, Carlton</td>
-                    
-                    <td>-1.092242</td>
-                    
-                    <td>52.956599</td>
-                    
-                    <td data-sort-value="0.74">0.74</td>
-                    
-                    <td data-sort-value="44">44</td>
-                    
-                    <td data-sort-value="44">44</td>
-                    <td>2017-04-01</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:GED</td>
+                    <td>6\260</td>
+                    <td class="data-table__cell--max-width">Sol Construction Ltd, Vale Road, Carlton</td>
+                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C260" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C260</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/gedling" class="govuk-link">http://opendatacommunities.org/id/district-council/gedling</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2008-07-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C260" class="govuk-link">http://gedlingbc.maps.arcgis.com/apps/webappviewer/index.html?id=57b3b3cce7c44532b0cface13f74177e&find=6%5C260</a></td>
-
+                    <td>52.956599</td>
+                    <td>-1.092242</td>
+                    <td>0.74</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>2017-04-01</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/fb922e16e6cfbb68f5d618b418e5773adf2cf6d48eaa8953685317e6667629e2" class="govuk-link">fb922e16...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

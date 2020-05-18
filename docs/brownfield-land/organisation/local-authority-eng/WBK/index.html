@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR/2017/03">BR/2017/03</td>
-                    <td data-sort-value="Greens Yard, High Street (Tithe Barn Close), Compton" class="data-table__cell--max-width">Greens Yard, High Street (Tithe Barn Close), Compton</td>
-                    
-                    <td>-1.253276</td>
-                    
-                    <td>51.516743</td>
-                    
-                    <td data-sort-value="0.95">0.95</td>
-                    
-                    <td data-sort-value="25.0">25</td>
-                    
-                    <td data-sort-value="25.0">25</td>
                     <td>2017-10-17</td>
-                    
-                    <td>2017-10-17</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/03</td>
+                    <td class="data-table__cell--max-width">Greens Yard, High Street (Tithe Barn Close), Compton</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N4L0L4RD04Z00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N4L0L4RD04Z00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-14</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N4L0L4RD04Z00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N4L0L4RD04Z00</a></td>
-
+                    <td>51.516743</td>
+                    <td>-1.253276</td>
+                    <td>0.95</td>
+                    <td>25.0</td>
+                    <td>25.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR/2017/04">BR/2017/04</td>
-                    <td data-sort-value="Pirbright Institute site (formerly Institute For Animal Health), Compton" class="data-table__cell--max-width">Pirbright Institute site (formerly Institute For Animal Health), Compton</td>
-                    
-                    <td>-1.25482</td>
-                    
-                    <td>51.51838</td>
-                    
-                    <td data-sort-value="9.1">9.1</td>
-                    
-                    <td data-sort-value="140.0">140</td>
-                    
-                    <td data-sort-value="140.0">140</td>
                     <td>2017-10-17</td>
-                    
-                    <td>2017-10-17</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/04</td>
+                    <td class="data-table__cell--max-width">Pirbright Institute site (formerly Institute For Animal Health), Compton</td>
                     <td><a href="http://info.westberks.gov.uk/CHttpHandler.ashx?id=43955&p=0" class="govuk-link">http://info.westberks.gov.uk/CHttpHandler.ashx?id=43955&p=0</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.51838</td>
+                    <td>-1.25482</td>
+                    <td>9.1</td>
+                    <td>140.0</td>
+                    <td>140.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR/2017/05">BR/2017/05</td>
-                    <td data-sort-value="Crookham House, Crookham Hill, Crookham Common, Thatcham" class="data-table__cell--max-width">Crookham House, Crookham Hill, Crookham Common, Thatcham</td>
-                    
-                    <td>-1.246687</td>
-                    
-                    <td>51.380449</td>
-                    
-                    <td data-sort-value="7.32">7.32</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    
-                    <td data-sort-value="8.0">8</td>
                     <td>2017-10-17</td>
-                    
-                    <td>2017-10-17</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/05</td>
+                    <td class="data-table__cell--max-width">Crookham House, Crookham Hill, Crookham Common, Thatcham</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=MPQ9R4RD04Z00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=MPQ9R4RD04Z00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-03-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=MPQ9R4RD04Z00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=MPQ9R4RD04Z00</a></td>
-
+                    <td>51.380449</td>
+                    <td>-1.246687</td>
+                    <td>7.32</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR/2017/06">BR/2017/06</td>
-                    <td data-sort-value="St Johns Hall, Station Road, Hungerford" class="data-table__cell--max-width">St Johns Hall, Station Road, Hungerford</td>
-                    
-                    <td>-1.511632</td>
-                    
-                    <td>51.414294</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
                     <td>2017-10-17</td>
-                    
-                    <td>2017-10-17</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/06</td>
+                    <td class="data-table__cell--max-width">St Johns Hall, Station Road, Hungerford</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=MUAU7KRD0EA00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=MUAU7KRD0EA00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-07-31</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=MUAU7KRD0EA00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=MUAU7KRD0EA00</a></td>
-
+                    <td>51.414294</td>
+                    <td>-1.511632</td>
+                    <td>0.05</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR/2017/07">BR/2017/07</td>
-                    <td data-sort-value="Three Swans Hotel, 117 High Street, Hungerford" class="data-table__cell--max-width">Three Swans Hotel, 117 High Street, Hungerford</td>
-                    
-                    <td>-1.515336</td>
-                    
-                    <td>51.414867</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="13.0">13</td>
-                    
-                    <td data-sort-value="13.0">13</td>
                     <td>2017-10-17</td>
-                    
-                    <td>2017-10-17</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/07</td>
+                    <td class="data-table__cell--max-width">Three Swans Hotel, 117 High Street, Hungerford</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=LRVR39RD09N00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=LRVR39RD09N00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2011-12-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=LRVR39RD09N00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=LRVR39RD09N00</a></td>
-
+                    <td>51.414867</td>
+                    <td>-1.515336</td>
+                    <td>0.2</td>
+                    <td>13.0</td>
+                    <td>13.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR/2017/10">BR/2017/10</td>
-                    <td data-sort-value="39 London Road, Newbury" class="data-table__cell--max-width">39 London Road, Newbury</td>
-                    
-                    <td>-1.322955</td>
-                    
-                    <td>51.405867</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
                     <td>2017-10-17</td>
-                    
-                    <td>2017-10-17</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/10</td>
+                    <td class="data-table__cell--max-width">39 London Road, Newbury</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OGQRWNRD0K500" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OGQRWNRD0K500</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OGQRWNRD0K500" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OGQRWNRD0K500</a></td>
-
+                    <td>51.405867</td>
+                    <td>-1.322955</td>
+                    <td>0.05</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR/2017/13">BR/2017/13</td>
-                    <td data-sort-value="Sherwood House, 78 London Road, Newbury" class="data-table__cell--max-width">Sherwood House, 78 London Road, Newbury</td>
-                    
-                    <td>-1.319304</td>
-                    
-                    <td>51.406817</td>
-                    
-                    <td data-sort-value="0.12">0.12</td>
-                    
-                    <td data-sort-value="27.0">27</td>
-                    
-                    <td data-sort-value="27.0">27</td>
-                    <td>2017-10-17</td>
-                    
                     <td>2019-01-08</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/13</td>
+                    <td class="data-table__cell--max-width">Sherwood House, 78 London Road, Newbury</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OUIYNGRD0KD00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OUIYNGRD0KD00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-10-05</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OUIYNGRD0KD00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OUIYNGRD0KD00</a></td>
-
+                    <td>51.406817</td>
+                    <td>-1.319304</td>
+                    <td>0.12</td>
+                    <td>27.0</td>
+                    <td>27.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR/2017/14">BR/2017/14</td>
-                    <td data-sort-value="11-17 and land to side of Mill Lane, Newbury" class="data-table__cell--max-width">11-17 and land to side of Mill Lane, Newbury</td>
-                    
-                    <td>-1.319128</td>
-                    
-                    <td>51.400297</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value="12.0">12</td>
-                    
-                    <td data-sort-value="12.0">12</td>
                     <td>2017-10-17</td>
-                    
-                    <td>2017-10-17</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/14</td>
+                    <td class="data-table__cell--max-width">11-17 and land to side of Mill Lane, Newbury</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NIY0PKRD04Z00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NIY0PKRD04Z00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-09-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NIY0PKRD04Z00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NIY0PKRD04Z00</a></td>
-
+                    <td>51.400297</td>
+                    <td>-1.319128</td>
+                    <td>0.23</td>
+                    <td>12.0</td>
+                    <td>12.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR/2017/15">BR/2017/15</td>
-                    <td data-sort-value="St Marys Surgery, St Marys Road, Newbury" class="data-table__cell--max-width">St Marys Surgery, St Marys Road, Newbury</td>
-                    
-                    <td>-1.319933</td>
-                    
-                    <td>51.406065</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="12.0">12</td>
-                    
-                    <td data-sort-value="12.0">12</td>
                     <td>2017-10-17</td>
-                    
-                    <td>2017-10-17</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/15</td>
+                    <td class="data-table__cell--max-width">St Marys Surgery, St Marys Road, Newbury</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NTKXTRRD0EF00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NTKXTRRD0EF00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-05-13</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NTKXTRRD0EF00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NTKXTRRD0EF00</a></td>
-
+                    <td>51.406065</td>
+                    <td>-1.319933</td>
+                    <td>0.1</td>
+                    <td>12.0</td>
+                    <td>12.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR/2017/16">BR/2017/16</td>
-                    <td data-sort-value="Centrix House, 5 Oxford Road, Newbury" class="data-table__cell--max-width">Centrix House, 5 Oxford Road, Newbury</td>
-                    
-                    <td>-1.327878</td>
-                    
-                    <td>51.406444</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="42.0">42</td>
-                    
-                    <td data-sort-value="42.0">42</td>
-                    <td>2017-10-17</td>
-                    
                     <td>2019-01-08</td>
+                    <td>local-authority-eng:WBK</td>
+                    <td>BR/2017/16</td>
+                    <td class="data-table__cell--max-width">Centrix House, 5 Oxford Road, Newbury</td>
+                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P1MJITRD01V00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P1MJITRD01V00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/west-berkshire" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/west-berkshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-08-16</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P1MJITRD01V00" class="govuk-link">https://publicaccess.westberks.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=P1MJITRD01V00</a></td>
-
+                    <td>51.406444</td>
+                    <td>-1.327878</td>
+                    <td>0.16</td>
+                    <td>42.0</td>
+                    <td>42.0</td>
+                    <td>2017-10-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/47ae15c373da005ad5d1280e13163dca5725ed4a04b32374991d14004b9eab78" class="govuk-link">47ae15c3...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

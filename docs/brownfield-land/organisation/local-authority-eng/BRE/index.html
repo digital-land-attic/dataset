@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR_01">BLR_01</td>
-                    <td data-sort-value="Land south of Whitehouse Lane, Attleborough" class="data-table__cell--max-width">Land south of Whitehouse Lane, Attleborough</td>
-                    
-                    <td>1.02623</td>
-                    
-                    <td>52.511745</td>
-                    
-                    <td data-sort-value="2.62">2.62</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    
-                    <td data-sort-value="78">78</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_01</td>
+                    <td class="data-table__cell--max-width">Land south of Whitehouse Lane, Attleborough</td>
+                    <td><a href="https://www.breckland.gov.uk/media/6177/BLR-01/pdf/BLR_01.pdf" class="govuk-link">https://www.breckland.gov.uk/media/6177/BLR-01/pdf/BLR_01.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-20</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.breckland.gov.uk/media/6177/BLR-01/pdf/BLR_01.pdf" class="govuk-link">https://www.breckland.gov.uk/media/6177/BLR-01/pdf/BLR_01.pdf</a></td>
-
+                    <td>52.511745</td>
+                    <td>1.02623</td>
+                    <td>2.62</td>
+                    <td>60</td>
+                    <td>78</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,74 +203,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR_02">BLR_02</td>
-                    <td data-sort-value="Land at Dereham hospital, Dereham" class="data-table__cell--max-width">Land at Dereham hospital, Dereham</td>
-                    
-                    <td>0.946188</td>
-                    
-                    <td>52.690288</td>
-                    
-                    <td data-sort-value="3.28">3.28</td>
-                    
-                    <td data-sort-value="98">98</td>
-                    
-                    <td data-sort-value="114">114</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_02</td>
+                    <td class="data-table__cell--max-width">Land at Dereham hospital, Dereham</td>
                     <td><a href="https://www.breckland.gov.uk/media/6178/BLR-02/pdf/BLR_02.pdf" class="govuk-link">https://www.breckland.gov.uk/media/6178/BLR-02/pdf/BLR_02.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.690288</td>
+                    <td>0.946188</td>
+                    <td>3.28</td>
+                    <td>98</td>
+                    <td>114</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR_03">BLR_03</td>
-                    <td data-sort-value="The Necton Diner, Necton" class="data-table__cell--max-width">The Necton Diner, Necton</td>
-                    
-                    <td>0.773996</td>
-                    
-                    <td>52.65628</td>
-                    
-                    <td data-sort-value="0.85">0.85</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
-                    <td>yes</td>
-                    <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2015-02-09</td>
-                    <td>outline planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_03</td>
+                    <td class="data-table__cell--max-width">The Necton Diner, Necton</td>
                     <td><a href="http://planning.breckland.gov.uk/OcellaWeb/viewDocument?file=dv_pl_files%5C3PL_2013_0983_O%5C3PL_2013_0983_O-AM_1_1.pdf&module=pl" class="govuk-link">http://planning.breckland.gov.uk/OcellaWeb/viewDocument?file=dv_pl_files%5C3PL_2013_0983_O%5C3PL_2013_0983_O-AM_1_1.pdf&module=pl</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>outline planning permission</td>
+                    <td>yes</td>
+                    <td>52.65628</td>
+                    <td>0.773996</td>
+                    <td>0.85</td>
+                    <td>31</td>
+                    <td>31</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -291,38 +257,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR_04">BLR_04</td>
-                    <td data-sort-value="Former V A Infant School, Necton" class="data-table__cell--max-width">Former V A Infant School, Necton</td>
-                    
-                    <td>0.780292</td>
-                    
-                    <td>52.652257</td>
-                    
-                    <td data-sort-value="0.34">0.34</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2018-02-20</td>
-                    <td>yes</td>
-                    <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2015-03-20</td>
-                    <td>outline planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_04</td>
+                    <td class="data-table__cell--max-width">Former V A Infant School, Necton</td>
                     <td><a href="https://www.breckland.gov.uk/media/6179/BLR-04/pdf/BLR_04.pdf" class="govuk-link">https://www.breckland.gov.uk/media/6179/BLR-04/pdf/BLR_04.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>outline planning permission</td>
+                    <td>yes</td>
+                    <td>52.652257</td>
+                    <td>0.780292</td>
+                    <td>0.34</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,38 +286,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR_05">BLR_05</td>
-                    <td data-sort-value="D D Dodd and Sons, Chapel Street, Shipdham" class="data-table__cell--max-width">D D Dodd and Sons, Chapel Street, Shipdham</td>
-                    
-                    <td>0.896217</td>
-                    
-                    <td>52.630081</td>
-                    
-                    <td data-sort-value="0.44">0.44</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
-                    <td>yes</td>
-                    <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2017-03-31</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_05</td>
+                    <td class="data-table__cell--max-width">D D Dodd and Sons, Chapel Street, Shipdham</td>
                     <td><a href="https://www.breckland.gov.uk/media/6180/BLR-05/pdf/BLR_05.pdf" class="govuk-link">https://www.breckland.gov.uk/media/6180/BLR-05/pdf/BLR_05.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td>yes</td>
+                    <td>52.630081</td>
+                    <td>0.896217</td>
+                    <td>0.44</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -371,38 +315,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR_06">BLR_06</td>
-                    <td data-sort-value="Mellor Metals, Attleborough Road, Great Ellingham" class="data-table__cell--max-width">Mellor Metals, Attleborough Road, Great Ellingham</td>
-                    
-                    <td>0.980077</td>
-                    
-                    <td>52.53414</td>
-                    
-                    <td data-sort-value="1.61">1.61</td>
-                    
-                    <td data-sort-value="75">75</td>
-                    
-                    <td data-sort-value="75">75</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
-                    <td>yes</td>
-                    <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2016-05-24</td>
-                    <td>outline planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_06</td>
+                    <td class="data-table__cell--max-width">Mellor Metals, Attleborough Road, Great Ellingham</td>
                     <td><a href="https://www.breckland.gov.uk/media/6181/BLR-06/pdf/BLR_06.pdf" class="govuk-link">https://www.breckland.gov.uk/media/6181/BLR-06/pdf/BLR_06.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>outline planning permission</td>
+                    <td>yes</td>
+                    <td>52.53414</td>
+                    <td>0.980077</td>
+                    <td>1.61</td>
+                    <td>75</td>
+                    <td>75</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -411,38 +344,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR_07">BLR_07</td>
-                    <td data-sort-value="Plaswood Products Ltd Griston Road, Watton" class="data-table__cell--max-width">Plaswood Products Ltd Griston Road, Watton</td>
-                    
-                    <td>0.838471</td>
-                    
-                    <td>52.568359</td>
-                    
-                    <td data-sort-value="0.65">0.65</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
-                    <td>yes</td>
-                    <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2017-06-15</td>
-                    <td>reserved matters approval</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_07</td>
+                    <td class="data-table__cell--max-width">Plaswood Products Ltd Griston Road, Watton</td>
                     <td><a href="http://planning.breckland.gov.uk/OcellaWeb/viewDocument?file=dv_pl_files%5C3PL_2017_0370_D%5C6226+S01.pdf&module=pl" class="govuk-link">http://planning.breckland.gov.uk/OcellaWeb/viewDocument?file=dv_pl_files%5C3PL_2017_0370_D%5C6226+S01.pdf&module=pl</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>reserved matters approval</td>
+                    <td>yes</td>
+                    <td>52.568359</td>
+                    <td>0.838471</td>
+                    <td>0.65</td>
+                    <td>31</td>
+                    <td>31</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -451,38 +373,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR_08">BLR_08</td>
-                    <td data-sort-value="Development Site, Station Road, Eccles" class="data-table__cell--max-width">Development Site, Station Road, Eccles</td>
-                    
-                    <td>0.971203</td>
-                    
-                    <td>52.469954</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
-                    <td>yes</td>
-                    <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2017-07-06</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_08</td>
+                    <td class="data-table__cell--max-width">Development Site, Station Road, Eccles</td>
                     <td><a href="https://www.breckland.gov.uk/media/6182/BLR-08/pdf/BLR_08.pdf" class="govuk-link">https://www.breckland.gov.uk/media/6182/BLR-08/pdf/BLR_08.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td>yes</td>
+                    <td>52.469954</td>
+                    <td>0.971203</td>
+                    <td>0.26</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -491,38 +402,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR_09">BLR_09</td>
-                    <td data-sort-value="The Old Rectory, Ashburton Road, Ickburgh" class="data-table__cell--max-width">The Old Rectory, Ashburton Road, Ickburgh</td>
-                    
-                    <td>0.683627</td>
-                    
-                    <td>52.524589</td>
-                    
-                    <td data-sort-value="0.96">0.96</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
-                    <td>yes</td>
-                    <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2015-09-17</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_09</td>
+                    <td class="data-table__cell--max-width">The Old Rectory, Ashburton Road, Ickburgh</td>
                     <td><a href="http://planning.breckland.gov.uk/OcellaWeb/viewDocument?file=dv_pl_files%5C3PL_2015_0001_F%5C3PL_2015_0001_F-LP.pdf&module=pl" class="govuk-link">http://planning.breckland.gov.uk/OcellaWeb/viewDocument?file=dv_pl_files%5C3PL_2015_0001_F%5C3PL_2015_0001_F-LP.pdf&module=pl</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td>yes</td>
+                    <td>52.524589</td>
+                    <td>0.683627</td>
+                    <td>0.96</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -531,38 +431,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR_10">BLR_10</td>
-                    <td data-sort-value="Necton Garden Centre, Necton" class="data-table__cell--max-width">Necton Garden Centre, Necton</td>
-                    
-                    <td>0.776026</td>
-                    
-                    <td>52.656808</td>
-                    
-                    <td data-sort-value="0.4">0.4</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-08-10</td>
-                    
                     <td>2017-11-20</td>
-                    <td>yes</td>
-                    <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/breckland" class="govuk-link">http://opendatacommunities.org/id/district-council/breckland</a></td>
-                    <td>not owned by a public authority</td>
-                    <td>2016-06-30</td>
-                    <td>reserved matters approval</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:BRE</td>
+                    <td>BLR_10</td>
+                    <td class="data-table__cell--max-width">Necton Garden Centre, Necton</td>
                     <td><a href="http://planning.breckland.gov.uk/OcellaWeb/viewDocument?file=dv_pl_files%5C3PL_2016_0422_D%5CSite+Layout+%281%29%281%29.pdf&module=pl" class="govuk-link">http://planning.breckland.gov.uk/OcellaWeb/viewDocument?file=dv_pl_files%5C3PL_2016_0422_D%5CSite+Layout+%281%29%281%29.pdf&module=pl</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>reserved matters approval</td>
+                    <td>yes</td>
+                    <td>52.656808</td>
+                    <td>0.776026</td>
+                    <td>0.4</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-08-10</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -571,7 +460,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/86fb2f30b39697e5e5706eea57d7c2c36d703ad68c62d8dfc3a518f89d0fe976" class="govuk-link">86fb2f30...</a></td>
                 </tr>
                 
             </tbody>
@@ -580,6 +469,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

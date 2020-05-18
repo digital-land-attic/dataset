@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="60">60</td>
-                    <td data-sort-value="Former Co-Op Building, John Street" class="data-table__cell--max-width">Former Co-Op Building, John Street</td>
-                    
-                    <td>-2.769577</td>
-                    
-                    <td>54.12788</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
                     <td>2017-03-21</td>
-                    
-                    <td>2017-03-21</td>
+                    <td>local-authority-eng:LAC</td>
+                    <td>60</td>
+                    <td class="data-table__cell--max-width">Former Co-Op Building, John Street</td>
+                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-10-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>54.12788</td>
+                    <td>-2.769577</td>
+                    <td>0.04</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2017-03-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="61">61</td>
-                    <td data-sort-value="Lundsfield Quarry, Kellet Road" class="data-table__cell--max-width">Lundsfield Quarry, Kellet Road</td>
-                    
-                    <td>-2.769003</td>
-                    
-                    <td>54.123327</td>
-                    
-                    <td data-sort-value="13.44">13.44</td>
-                    
-                    <td data-sort-value="200.0">200</td>
-                    
-                    <td data-sort-value="250.0">250</td>
                     <td>2017-03-21</td>
-                    
-                    <td>2017-03-21</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LAC</td>
+                    <td>61</td>
+                    <td class="data-table__cell--max-width">Lundsfield Quarry, Kellet Road</td>
                     <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.123327</td>
+                    <td>-2.769003</td>
+                    <td>13.44</td>
+                    <td>200.0</td>
+                    <td>250.0</td>
+                    <td>2017-03-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,74 +232,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="83">83</td>
-                    <td data-sort-value="Windermere Road Garages" class="data-table__cell--max-width">Windermere Road Garages</td>
-                    
-                    <td>-2.766751</td>
-                    
-                    <td>54.120681</td>
-                    
-                    <td data-sort-value="0.19">0.19</td>
-                    
-                    <td data-sort-value="4.0">4</td>
-                    
-                    <td data-sort-value="6.0">6</td>
                     <td>2018-02-15</td>
-                    
-                    <td>2018-02-15</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LAC</td>
+                    <td>83</td>
+                    <td class="data-table__cell--max-width">Windermere Road Garages</td>
                     <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.120681</td>
+                    <td>-2.766751</td>
+                    <td>0.19</td>
+                    <td>4.0</td>
+                    <td>6.0</td>
+                    <td>2018-02-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="179">179</td>
-                    <td data-sort-value="Former Police Station, Heysham Road" class="data-table__cell--max-width">Former Police Station, Heysham Road</td>
-                    
-                    <td>-2.892667</td>
-                    
-                    <td>54.047946</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="14.0">14</td>
-                    
-                    <td data-sort-value="14.0">14</td>
                     <td>2018-02-15</td>
-                    
-                    <td>2018-02-15</td>
+                    <td>local-authority-eng:LAC</td>
+                    <td>179</td>
+                    <td class="data-table__cell--max-width">Former Police Station, Heysham Road</td>
+                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2012-04-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>54.047946</td>
+                    <td>-2.892667</td>
+                    <td>0.06</td>
+                    <td>14.0</td>
+                    <td>14.0</td>
+                    <td>2018-02-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -331,38 +286,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="202">202</td>
-                    <td data-sort-value="Garage, Grosvenor Road" class="data-table__cell--max-width">Garage, Grosvenor Road</td>
-                    
-                    <td>-2.890487</td>
-                    
-                    <td>54.059566</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    
-                    <td data-sort-value="9.0">9</td>
                     <td>2018-02-15</td>
-                    
-                    <td>2018-02-15</td>
+                    <td>local-authority-eng:LAC</td>
+                    <td>202</td>
+                    <td class="data-table__cell--max-width">Garage, Grosvenor Road</td>
+                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-18</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>54.059566</td>
+                    <td>-2.890487</td>
+                    <td>0.06</td>
+                    <td>9.0</td>
+                    <td>9.0</td>
+                    <td>2018-02-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -371,38 +315,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="203">203</td>
-                    <td data-sort-value="Sunacre Court, Maple Avenue" class="data-table__cell--max-width">Sunacre Court, Maple Avenue</td>
-                    
-                    <td>-2.881416</td>
-                    
-                    <td>54.059722</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
                     <td>2018-02-15</td>
-                    
-                    <td>2018-02-15</td>
+                    <td>local-authority-eng:LAC</td>
+                    <td>203</td>
+                    <td class="data-table__cell--max-width">Sunacre Court, Maple Avenue</td>
+                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-08-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>54.059722</td>
+                    <td>-2.881416</td>
+                    <td>0.14</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2018-02-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -411,74 +344,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="252">252</td>
-                    <td data-sort-value="Garages Adjacent 32 Tan Hill Drive Lancaster Lancashire LA1 2JB" class="data-table__cell--max-width">Garages Adjacent 32 Tan Hill Drive Lancaster Lancashire LA1 2JB</td>
-                    
-                    <td>-2.799414</td>
-                    
-                    <td>54.063315</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="1.0">1</td>
-                    
-                    <td data-sort-value="1.0">1</td>
                     <td>2018-02-15</td>
-                    
-                    <td>2018-02-15</td>
+                    <td>local-authority-eng:LAC</td>
+                    <td>252</td>
+                    <td class="data-table__cell--max-width">Garages Adjacent 32 Tan Hill Drive Lancaster Lancashire LA1 2JB</td>
+                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>54.063315</td>
+                    <td>-2.799414</td>
+                    <td>0.04</td>
+                    <td>1.0</td>
+                    <td>1.0</td>
+                    <td>2018-02-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="260">260</td>
-                    <td data-sort-value="New Quay, New Quay Road" class="data-table__cell--max-width">New Quay, New Quay Road</td>
-                    
-                    <td>-2.823076</td>
-                    
-                    <td>54.051508</td>
-                    
-                    <td data-sort-value="0.37">0.37</td>
-                    
-                    <td data-sort-value="12.0">12</td>
-                    
-                    <td data-sort-value="12.0">12</td>
                     <td>2018-02-15</td>
-                    
-                    <td>2018-02-15</td>
+                    <td>local-authority-eng:LAC</td>
+                    <td>260</td>
+                    <td class="data-table__cell--max-width">New Quay, New Quay Road</td>
+                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-12-22</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>54.051508</td>
+                    <td>-2.823076</td>
+                    <td>0.37</td>
+                    <td>12.0</td>
+                    <td>12.0</td>
+                    <td>2018-02-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -487,74 +398,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="268">268</td>
-                    <td data-sort-value="Land At Corner Of Bulk Road And St Leonards Gate" class="data-table__cell--max-width">Land At Corner Of Bulk Road And St Leonards Gate</td>
-                    
-                    <td>-2.794916</td>
-                    
-                    <td>54.051814</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="4.0">4</td>
-                    
-                    <td data-sort-value="4.0">4</td>
                     <td>2018-02-15</td>
-                    
-                    <td>2018-02-15</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LAC</td>
+                    <td>268</td>
+                    <td class="data-table__cell--max-width">Land At Corner Of Bulk Road And St Leonards Gate</td>
                     <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.051814</td>
+                    <td>-2.794916</td>
+                    <td>0.15</td>
+                    <td>4.0</td>
+                    <td>4.0</td>
+                    <td>2018-02-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="289">289</td>
-                    <td data-sort-value="Private Car Park, Dolphinlee Bridge" class="data-table__cell--max-width">Private Car Park, Dolphinlee Bridge</td>
-                    
-                    <td>-2.786153</td>
-                    
-                    <td>54.062594</td>
-                    
-                    <td data-sort-value="0.71">0.71</td>
-                    
-                    <td data-sort-value="10.0">10</td>
-                    
-                    <td data-sort-value="15.0">15</td>
                     <td>2018-02-15</td>
-                    
-                    <td>2018-02-15</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lancaster" class="govuk-link">http://opendatacommunities.org/id/district-council/lancaster</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LAC</td>
+                    <td>289</td>
+                    <td class="data-table__cell--max-width">Private Car Park, Dolphinlee Bridge</td>
                     <td><a href="http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register" class="govuk-link">http://www.lancaster.gov.uk/planning/planning-policy/brownfield-register</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.062594</td>
+                    <td>-2.786153</td>
+                    <td>0.71</td>
+                    <td>10.0</td>
+                    <td>15.0</td>
+                    <td>2018-02-15</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -563,7 +452,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3a08581a2d2b314ecff1c8703db791d27f4df8ec27bc53873b76a93767e4b908" class="govuk-link">3a08581a...</a></td>
                 </tr>
                 
             </tbody>
@@ -572,6 +461,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

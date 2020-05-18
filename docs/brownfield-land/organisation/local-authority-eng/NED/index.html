@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="CX/501">CX/501</td>
-                    <td data-sort-value="County Council depot, off Stretton road, Clay Cross" class="data-table__cell--max-width">County Council depot, off Stretton road, Clay Cross</td>
-                    
-                    <td>-1.414736</td>
-                    
-                    <td>53.161354</td>
-                    
-                    <td data-sort-value="1.6">1.6</td>
-                    
-                    <td data-sort-value="44">44</td>
-                    
-                    <td data-sort-value="44">44</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NED</td>
+                    <td>CX/501</td>
+                    <td class="data-table__cell--max-width">County Council depot, off Stretton road, Clay Cross</td>
                     <td><a href="https://www.ne-derbyshire.gov.uk/documents/cx-501/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/cx-501/download</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.161354</td>
+                    <td>-1.414736</td>
+                    <td>1.6</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="CX/1607">CX/1607</td>
-                    <td data-sort-value="Former Biwaters site, land off Derby Road, Clay Cross" class="data-table__cell--max-width">Former Biwaters site, land off Derby Road, Clay Cross</td>
-                    
-                    <td>-1.408381</td>
-                    
-                    <td>53.174303</td>
-                    
-                    <td data-sort-value="36.46">36.46</td>
-                    
-                    <td data-sort-value="669">669</td>
-                    
-                    <td data-sort-value="669">669</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:NED</td>
+                    <td>CX/1607</td>
+                    <td class="data-table__cell--max-width">Former Biwaters site, land off Derby Road, Clay Cross</td>
+                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/cx-1607/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/cx-1607/download</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-04-10</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/cx-1607/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/cx-1607/download</a></td>
-
+                    <td>53.174303</td>
+                    <td>-1.408381</td>
+                    <td>36.46</td>
+                    <td>669</td>
+                    <td>669</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="ECK/2410">ECK/2410</td>
-                    <td data-sort-value="Bradley Lomas Electrolok Ltd, Church Street, Eckington" class="data-table__cell--max-width">Bradley Lomas Electrolok Ltd, Church Street, Eckington</td>
-                    
-                    <td>-1.356081</td>
-                    
-                    <td>53.311878</td>
-                    
-                    <td data-sort-value="0.97">0.97</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:NED</td>
+                    <td>ECK/2410</td>
+                    <td class="data-table__cell--max-width">Bradley Lomas Electrolok Ltd, Church Street, Eckington</td>
+                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/eck-2410/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/eck-2410/download</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-12-05</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/eck-2410/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/eck-2410/download</a></td>
-
+                    <td>53.311878</td>
+                    <td>-1.356081</td>
+                    <td>0.97</td>
+                    <td>13</td>
+                    <td>13</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="KIL/1603">KIL/1603</td>
-                    <td data-sort-value="65 / 67 Mansfield Road, Highmoor, Killamarsh" class="data-table__cell--max-width">65 / 67 Mansfield Road, Highmoor, Killamarsh</td>
-                    
-                    <td>-1.298634</td>
-                    
-                    <td>53.318691</td>
-                    
-                    <td data-sort-value="0.78">0.78</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:NED</td>
+                    <td>KIL/1603</td>
+                    <td class="data-table__cell--max-width">65 / 67 Mansfield Road, Highmoor, Killamarsh</td>
+                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/kil-1603/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/kil-1603/download</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-10-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/kil-1603/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/kil-1603/download</a></td>
-
+                    <td>53.318691</td>
+                    <td>-1.298634</td>
+                    <td>0.78</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="ECK/1503">ECK/1503</td>
-                    <td data-sort-value="Garages to the rear of 34-46 Emmett Carr Lane, Renishaw" class="data-table__cell--max-width">Garages to the rear of 34-46 Emmett Carr Lane, Renishaw</td>
-                    
-                    <td>-1.326766</td>
-                    
-                    <td>53.292893</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NED</td>
+                    <td>ECK/1503</td>
+                    <td class="data-table__cell--max-width">Garages to the rear of 34-46 Emmett Carr Lane, Renishaw</td>
                     <td><a href="https://www.ne-derbyshire.gov.uk/documents/eck-1503/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/eck-1503/download</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.292893</td>
+                    <td>-1.326766</td>
+                    <td>0.2</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="WW/1610 (2)">WW/1610 (2)</td>
-                    <td data-sort-value="Former Avenue Coking Works site, Derby Road, Wingerworth" class="data-table__cell--max-width">Former Avenue Coking Works site, Derby Road, Wingerworth</td>
-                    
-                    <td>-1.415597</td>
-                    
-                    <td>53.204731</td>
-                    
-                    <td data-sort-value="30.97">30.97</td>
-                    
-                    <td data-sort-value="489">489</td>
-                    
-                    <td data-sort-value="489">489</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:NED</td>
+                    <td>WW/1610 (2)</td>
+                    <td class="data-table__cell--max-width">Former Avenue Coking Works site, Derby Road, Wingerworth</td>
+                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/ww-1610-2/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/ww-1610-2/download</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-09-19</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/ww-1610-2/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/ww-1610-2/download</a></td>
-
+                    <td>53.204731</td>
+                    <td>-1.415597</td>
+                    <td>30.97</td>
+                    <td>489</td>
+                    <td>489</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="ScD/2103">ScD/2103</td>
-                    <td data-sort-value="Land at Former Coalite Works, Buttermilk Lane, Bolsover" class="data-table__cell--max-width">Land at Former Coalite Works, Buttermilk Lane, Bolsover</td>
-                    
-                    <td>-1.321629</td>
-                    
-                    <td>53.237375</td>
-                    
-                    <td data-sort-value="14.64">14.64</td>
-                    
-                    <td data-sort-value="304">304</td>
-                    
-                    <td data-sort-value="304">304</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:NED</td>
+                    <td>ScD/2103</td>
+                    <td class="data-table__cell--max-width">Land at Former Coalite Works, Buttermilk Lane, Bolsover</td>
+                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/scd-2103/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/scd-2103/download</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-10-31</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/scd-2103/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/scd-2103/download</a></td>
-
+                    <td>53.237375</td>
+                    <td>-1.321629</td>
+                    <td>14.64</td>
+                    <td>304</td>
+                    <td>304</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="ECK/602">ECK/602</td>
-                    <td data-sort-value="Garages at Castle Hill, Eckington" class="data-table__cell--max-width">Garages at Castle Hill, Eckington</td>
-                    
-                    <td>-1.361879</td>
-                    
-                    <td>53.312565</td>
-                    
-                    <td data-sort-value="0.21">0.21</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NED</td>
+                    <td>ECK/602</td>
+                    <td class="data-table__cell--max-width">Garages at Castle Hill, Eckington</td>
                     <td><a href="https://www.ne-derbyshire.gov.uk/documents/eck-602/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/eck-602/download</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.312565</td>
+                    <td>-1.361879</td>
+                    <td>0.21</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="NW/1702">NW/1702</td>
-                    <td data-sort-value="Land to the rear of 181 Chesterfield Road, Holmewood" class="data-table__cell--max-width">Land to the rear of 181 Chesterfield Road, Holmewood</td>
-                    
-                    <td>-1.369686</td>
-                    
-                    <td>53.192011</td>
-                    
-                    <td data-sort-value="1.13">1.13</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:NED</td>
+                    <td>NW/1702</td>
+                    <td class="data-table__cell--max-width">Land to the rear of 181 Chesterfield Road, Holmewood</td>
+                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/nw-1702/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/nw-1702/download</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-08-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/nw-1702/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/nw-1702/download</a></td>
-
+                    <td>53.192011</td>
+                    <td>-1.369686</td>
+                    <td>1.13</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="KIL/2501">KIL/2501</td>
-                    <td data-sort-value="The Old Station, Station Road, Killamarsh" class="data-table__cell--max-width">The Old Station, Station Road, Killamarsh</td>
-                    
-                    <td>-1.328219</td>
-                    
-                    <td>53.323643</td>
-                    
-                    <td data-sort-value="0.47">0.47</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:NED</td>
+                    <td>KIL/2501</td>
+                    <td class="data-table__cell--max-width">The Old Station, Station Road, Killamarsh</td>
+                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/kil-2501/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/kil-2501/download</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-east-derbyshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-east-derbyshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://www.ne-derbyshire.gov.uk/documents/kil-2501/download" class="govuk-link">https://www.ne-derbyshire.gov.uk/documents/kil-2501/download</a></td>
-
+                    <td>53.323643</td>
+                    <td>-1.328219</td>
+                    <td>0.47</td>
+                    <td>13</td>
+                    <td>13</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/6532de8eb78f40ba39855e41473bccf8f7ccbd4d380dc2e353b8d71065679611" class="govuk-link">6532de8e...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

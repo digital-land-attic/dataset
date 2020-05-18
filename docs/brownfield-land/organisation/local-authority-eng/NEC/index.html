@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="AB17">AB17</td>
-                    <td data-sort-value="Former working men's club, New Road, Audley" class="data-table__cell--max-width">Former working men's club, New Road, Audley</td>
-                    
-                    <td>-2.292382</td>
-                    
-                    <td>53.055588</td>
-                    
-                    <td data-sort-value="0.33">0.33</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-18</td>
-                    
                     <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>AB17</td>
+                    <td class="data-table__cell--max-width">Former working men's club, New Road, Audley</td>
+                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NSLI1MBMGW500" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NSLI1MBMGW500</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-05-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NSLI1MBMGW500" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NSLI1MBMGW500</a></td>
-
+                    <td>53.055588</td>
+                    <td>-2.292382</td>
+                    <td>0.33</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-18</td>
+                    <td>2019-05-22</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-05-22</td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="AB29">AB29</td>
-                    <td data-sort-value="Land at Wedgewood Avenue, Wood Lane" class="data-table__cell--max-width">Land at Wedgewood Avenue, Wood Lane</td>
-                    
-                    <td>-2.284465</td>
-                    
-                    <td>53.04953</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>AB29</td>
+                    <td class="data-table__cell--max-width">Land at Wedgewood Avenue, Wood Lane</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>53.04953</td>
+                    <td>-2.284465</td>
+                    <td>0.16</td>
+                    <td></td>
+                    <td></td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BL7">BL7</td>
-                    <td data-sort-value="West Avenue (North West Site) Kidsgrove" class="data-table__cell--max-width">West Avenue (North West Site) Kidsgrove</td>
-                    
-                    <td>-2.267113</td>
-                    
-                    <td>53.087567</td>
-                    
-                    <td data-sort-value="0.98">0.98</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>BL7</td>
+                    <td class="data-table__cell--max-width">West Avenue (North West Site) Kidsgrove</td>
+                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PYA1YPBM01S00" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PYA1YPBM01S00</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PYA1YPBM01S00" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PYA1YPBM01S00</a></td>
-
+                    <td>53.087567</td>
+                    <td>-2.267113</td>
+                    <td>0.98</td>
+                    <td></td>
+                    <td></td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BL8">BL8</td>
-                    <td data-sort-value="Land adjacent to roundabout at West Avenue, Kidsgrove" class="data-table__cell--max-width">Land adjacent to roundabout at West Avenue, Kidsgrove</td>
-                    
-                    <td>-2.265407</td>
-                    
-                    <td>53.086337</td>
-                    
-                    <td data-sort-value="1.42">1.42</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-18</td>
-                    
                     <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>BL8</td>
+                    <td class="data-table__cell--max-width">Land adjacent to roundabout at West Avenue, Kidsgrove</td>
+                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NNMN7MBMN3F00" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NNMN7MBMN3F00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-07</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NNMN7MBMN3F00" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NNMN7MBMN3F00</a></td>
-
+                    <td>53.086337</td>
+                    <td>-2.265407</td>
+                    <td>1.42</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="CH12">CH12</td>
-                    <td data-sort-value="Land between Johnson Avenue and Liverpool Road, Cross Heath" class="data-table__cell--max-width">Land between Johnson Avenue and Liverpool Road, Cross Heath</td>
-                    
-                    <td>-2.236159</td>
-                    
-                    <td>53.027163</td>
-                    
-                    <td data-sort-value="0.23">0.23</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>CH12</td>
+                    <td class="data-table__cell--max-width">Land between Johnson Avenue and Liverpool Road, Cross Heath</td>
+                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=KEA2Q4BM06500" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=KEA2Q4BM06500</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2009-03-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=KEA2Q4BM06500" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=KEA2Q4BM06500</a></td>
-
+                    <td>53.027163</td>
+                    <td>-2.236159</td>
+                    <td>0.23</td>
+                    <td></td>
+                    <td></td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="CH4">CH4</td>
-                    <td data-sort-value="Wilmott Drive, Cross Heath, Newcastle-under-Lyme" class="data-table__cell--max-width">Wilmott Drive, Cross Heath, Newcastle-under-Lyme</td>
-                    
-                    <td>-2.243963</td>
-                    
-                    <td>53.023674</td>
-                    
-                    <td data-sort-value="8.79">8.79</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-18</td>
-                    
                     <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>CH4</td>
+                    <td class="data-table__cell--max-width">Wilmott Drive, Cross Heath, Newcastle-under-Lyme</td>
+                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ONOB4WBMK6800" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ONOB4WBMK6800</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ONOB4WBMK6800" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ONOB4WBMK6800</a></td>
-
+                    <td>53.023674</td>
+                    <td>-2.243963</td>
+                    <td>8.79</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="CT12">CT12</td>
-                    <td data-sort-value="Dragon Square, Rosevale Court" class="data-table__cell--max-width">Dragon Square, Rosevale Court</td>
-                    
-                    <td>-2.253582</td>
-                    
-                    <td>53.043811</td>
-                    
-                    <td data-sort-value="0.35">0.35</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
                     <td>2019-12-12</td>
-                    
-                    <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>CT12</td>
+                    <td class="data-table__cell--max-width">Dragon Square, Rosevale Court</td>
                     <td></td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>53.043811</td>
+                    <td>-2.253582</td>
+                    <td>0.35</td>
+                    <td></td>
+                    <td></td>
+                    <td>2019-12-12</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="CT13">CT13</td>
-                    <td data-sort-value="Heathcote Street, Chesterton (Chesterton Ex-Servicemens Club)" class="data-table__cell--max-width">Heathcote Street, Chesterton (Chesterton Ex-Servicemens Club)</td>
-                    
-                    <td>-2.250345</td>
-                    
-                    <td>53.043764</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-18</td>
-                    
                     <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>CT13</td>
+                    <td class="data-table__cell--max-width">Heathcote Street, Chesterton (Chesterton Ex-Servicemens Club)</td>
+                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PC1SPJBMJF700" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PC1SPJBMJF700</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-03-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PC1SPJBMJF700" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PC1SPJBMJF700</a></td>
-
+                    <td>53.043764</td>
+                    <td>-2.250345</td>
+                    <td>0.1</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="CT22">CT22</td>
-                    <td data-sort-value="Ex Servicemens Club Heathcote Street" class="data-table__cell--max-width">Ex Servicemens Club Heathcote Street</td>
-                    
-                    <td>-2.250515</td>
-                    
-                    <td>53.043873</td>
-                    
-                    <td data-sort-value="0.31">0.31</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-18</td>
-                    
                     <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>CT22</td>
+                    <td class="data-table__cell--max-width">Ex Servicemens Club Heathcote Street</td>
+                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OQ3EWWBMH0G00" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OQ3EWWBMH0G00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-09-28</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OQ3EWWBMH0G00" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OQ3EWWBMH0G00</a></td>
-
+                    <td>53.043873</td>
+                    <td>-2.250515</td>
+                    <td>0.31</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-18</td>
+                    <td>2019-05-22</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-05-22</td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="CT23">CT23</td>
-                    <td data-sort-value="Corona Park, Sandford Street, Chesterton" class="data-table__cell--max-width">Corona Park, Sandford Street, Chesterton</td>
-                    
-                    <td>-2.250297</td>
-                    
-                    <td>53.043168</td>
-                    
-                    <td data-sort-value="0.3">0.3</td>
-                    
-                    <td data-sort-value=""></td>
-                    
-                    <td data-sort-value=""></td>
-                    <td>2017-12-18</td>
-                    
                     <td>2019-12-12</td>
+                    <td>local-authority-eng:NEC</td>
+                    <td>CT23</td>
+                    <td class="data-table__cell--max-width">Corona Park, Sandford Street, Chesterton</td>
+                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=L7AIQNBM4V000" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=L7AIQNBM4V000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/newcastle-staffs" class="govuk-link">http://opendatacommunities.org/id/district-council/newcastle-staffs</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2010-12-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=L7AIQNBM4V000" class="govuk-link">https://publicaccess.newcastle-staffs.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=L7AIQNBM4V000</a></td>
-
+                    <td>53.043168</td>
+                    <td>-2.250297</td>
+                    <td>0.3</td>
+                    <td></td>
+                    <td></td>
+                    <td>2017-12-18</td>
+                    <td>2019-05-22</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td>2019-05-22</td>
+                    <td><a href="https://digital-land.github.io/resource/ac814e76b44ac80e419b942fc47f3f6a72e95e9d075197328cb15e533b22151a" class="govuk-link">ac814e76...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

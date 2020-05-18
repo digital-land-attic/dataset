@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="12/01792/OUT">12/01792/OUT</td>
-                    <td data-sort-value="Land parcel south of Quercus Road, Quercus Road (Matbro SIAC), Tetbury" class="data-table__cell--max-width">Land parcel south of Quercus Road, Quercus Road (Matbro SIAC), Tetbury</td>
-                    
-                    <td>-2.150873</td>
-                    
-                    <td>51.644468</td>
-                    
-                    <td data-sort-value="5.0">5.0</td>
-                    
-                    <td data-sort-value="224">224</td>
-                    
-                    <td data-sort-value="224">224</td>
-                    <td>2017-11-13</td>
-                    
                     <td>2017-12-01</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>12/01792/OUT</td>
+                    <td class="data-table__cell--max-width">Land parcel south of Quercus Road, Quercus Road (Matbro SIAC), Tetbury</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=389657.000000&StartNorthing=193974.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=389657.000000&StartNorthing=193974.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-09-26</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=389657.000000&StartNorthing=193974.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=389657.000000&StartNorthing=193974.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.644468</td>
+                    <td>-2.150873</td>
+                    <td>5.0</td>
+                    <td>224</td>
+                    <td>224</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="15/03385/FUL">15/03385/FUL</td>
-                    <td data-sort-value="Former filling station on the A40 Windrush Section, Windrush" class="data-table__cell--max-width">Former filling station on the A40 Windrush Section, Windrush</td>
-                    
-                    <td>-1.969337</td>
-                    
-                    <td>51.71774</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
                     <td>2017-11-13</td>
-                    
-                    <td>2017-11-13</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>15/03385/FUL</td>
+                    <td class="data-table__cell--max-width">Former filling station on the A40 Windrush Section, Windrush</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418936.000000&StartNorthing=212498.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418936.000000&StartNorthing=212498.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-08-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418936.000000&StartNorthing=212498.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418936.000000&StartNorthing=212498.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.71774</td>
+                    <td>-1.969337</td>
+                    <td>0.15</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="16/05023/FUL">16/05023/FUL</td>
-                    <td data-sort-value="First Floor, 27 Dyer Street, Cirencester" class="data-table__cell--max-width">First Floor, 27 Dyer Street, Cirencester</td>
-                    
-                    <td>-1.964243</td>
-                    
-                    <td>51.716606</td>
-                    
-                    <td data-sort-value="0.16">0.16</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-11-13</td>
-                    
-                    <td>2017-11-13</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>16/05023/FUL</td>
+                    <td class="data-table__cell--max-width">First Floor, 27 Dyer Street, Cirencester</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=402567.000000&StartNorthing=201987.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=402567.000000&StartNorthing=201987.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=402567.000000&StartNorthing=201987.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=402567.000000&StartNorthing=201987.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.716606</td>
+                    <td>-1.964243</td>
+                    <td>0.16</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="17/00323/OUT">17/00323/OUT</td>
-                    <td data-sort-value="Ullenwood Court, Ullenwood, Coberley" class="data-table__cell--max-width">Ullenwood Court, Ullenwood, Coberley</td>
-                    
-                    <td>-2.08577</td>
-                    
-                    <td>51.851571</td>
-                    
-                    <td data-sort-value="6.57">6.57</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-11-13</td>
-                    
                     <td>2018-11-23</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>17/00323/OUT</td>
+                    <td class="data-table__cell--max-width">Ullenwood Court, Ullenwood, Coberley</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=394189.000000&StartNorthing=1217001.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=394189.000000&StartNorthing=1217001.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-07-12</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=394189.000000&StartNorthing=1217001.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=394189.000000&StartNorthing=1217001.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.851571</td>
+                    <td>-2.08577</td>
+                    <td>6.57</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="17/00842/FUL">17/00842/FUL</td>
-                    <td data-sort-value="Land Adjacent Fosse Lodge, Stratford Road, Moreton-In-Marsh" class="data-table__cell--max-width">Land Adjacent Fosse Lodge, Stratford Road, Moreton-In-Marsh</td>
-                    
-                    <td>-1.698598</td>
-                    
-                    <td>51.997462</td>
-                    
-                    <td data-sort-value="0.21">0.21</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2018-11-23</td>
-                    
-                    <td>2018-11-23</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>17/00842/FUL</td>
+                    <td class="data-table__cell--max-width">Land Adjacent Fosse Lodge, Stratford Road, Moreton-In-Marsh</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=420790.000000&StartNorthing=233267.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=420790.000000&StartNorthing=233267.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-02-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=420790.000000&StartNorthing=233267.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=420790.000000&StartNorthing=233267.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.997462</td>
+                    <td>-1.698598</td>
+                    <td>0.21</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2018-11-23</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="17/02205/FUL">17/02205/FUL</td>
-                    <td data-sort-value="50-52 Lewis Lane, Cirencester" class="data-table__cell--max-width">50-52 Lewis Lane, Cirencester</td>
-                    
-                    <td>-1.962767</td>
-                    
-                    <td>51.715634</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
                     <td>2017-11-13</td>
-                    
-                    <td>2017-11-13</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>17/02205/FUL</td>
+                    <td class="data-table__cell--max-width">50-52 Lewis Lane, Cirencester</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=402669.000000&StartNorthing=201879.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=402669.000000&StartNorthing=201879.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-08-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=402669.000000&StartNorthing=201879.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=402669.000000&StartNorthing=201879.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.715634</td>
+                    <td>-1.962767</td>
+                    <td>0.04</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="17/02435/OUT">17/02435/OUT</td>
-                    <td data-sort-value="Former filling station on the A40 Windrush section, Windrush" class="data-table__cell--max-width">Former filling station on the A40 Windrush section, Windrush</td>
-                    
-                    <td>-1.727007</td>
-                    
-                    <td>51.811519</td>
-                    
-                    <td data-sort-value="1.17">1.17</td>
-                    
-                    <td data-sort-value="16">16</td>
-                    
-                    <td data-sort-value="16">16</td>
-                    <td>2017-11-13</td>
-                    
                     <td>2018-11-23</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>17/02435/OUT</td>
+                    <td class="data-table__cell--max-width">Former filling station on the A40 Windrush section, Windrush</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418917.000000&StartNorthing=212578.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418917.000000&StartNorthing=212578.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-08-04</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418917.000000&StartNorthing=212578.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418917.000000&StartNorthing=212578.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.811519</td>
+                    <td>-1.727007</td>
+                    <td>1.17</td>
+                    <td>16</td>
+                    <td>16</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="17/03081/FUL">17/03081/FUL</td>
-                    <td data-sort-value="Land at White Hart Lane, Stow-on-the-Wold" class="data-table__cell--max-width">Land at White Hart Lane, Stow-on-the-Wold</td>
-                    
-                    <td>-1.720612</td>
-                    
-                    <td>51.930895</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-11-13</td>
-                    
                     <td>2018-11-23</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>17/03081/FUL</td>
+                    <td class="data-table__cell--max-width">Land at White Hart Lane, Stow-on-the-Wold</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=419307.000000&StartNorthing=1225857.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=419307.000000&StartNorthing=1225857.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=419307.000000&StartNorthing=1225857.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=419307.000000&StartNorthing=1225857.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.930895</td>
+                    <td>-1.720612</td>
+                    <td>0.06</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="17/03221/FUL">17/03221/FUL</td>
-                    <td data-sort-value="Former Hospital Site, Moreton-in-Marsh" class="data-table__cell--max-width">Former Hospital Site, Moreton-in-Marsh</td>
-                    
-                    <td>-1.704864</td>
-                    
-                    <td>51.992506</td>
-                    
-                    <td data-sort-value="0.79">0.79</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-11-13</td>
-                    
                     <td>2017-12-01</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>17/03221/FUL</td>
+                    <td class="data-table__cell--max-width">Former Hospital Site, Moreton-in-Marsh</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=420362.000000&StartNorthing=232714.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=420362.000000&StartNorthing=232714.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=420362.000000&StartNorthing=232714.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=420362.000000&StartNorthing=232714.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.992506</td>
+                    <td>-1.704864</td>
+                    <td>0.79</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="17/04749/FUL">17/04749/FUL</td>
-                    <td data-sort-value="Stow Agricultural Services, Lower Swell Road, Stow-on-the-Wold" class="data-table__cell--max-width">Stow Agricultural Services, Lower Swell Road, Stow-on-the-Wold</td>
-                    
-                    <td>-1.726148</td>
-                    
-                    <td>51.92937</td>
-                    
-                    <td data-sort-value="0.19">0.19</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-11-13</td>
-                    
                     <td>2018-11-23</td>
+                    <td>local-authority-eng:COT</td>
+                    <td>17/04749/FUL</td>
+                    <td class="data-table__cell--max-width">Stow Agricultural Services, Lower Swell Road, Stow-on-the-Wold</td>
+                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418913.000000&StartNorthing=225693.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418913.000000&StartNorthing=225693.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/cotswold" class="govuk-link">http://opendatacommunities.org/id/district-council/cotswold</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-03-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418913.000000&StartNorthing=225693.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC" class="govuk-link">http://my.cotswold.gov.uk/mcd.aspx?MapSource=WOxford/cdc_AllMaps&StartEasting=418913.000000&StartNorthing=225693.000000&StartZoom=250&o=1&Layers=Brownfield_Sites_CDC</a></td>
-
+                    <td>51.92937</td>
+                    <td>-1.726148</td>
+                    <td>0.19</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-11-13</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/84d621087fd6393947111b9955b6834dea71ffefba6c80f88a303c366fee25d6" class="govuk-link">84d62108...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

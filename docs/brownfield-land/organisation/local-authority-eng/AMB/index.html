@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BFLR0001">BFLR0001</td>
-                    <td data-sort-value="Spring Road Riddings" class="data-table__cell--max-width">Spring Road Riddings</td>
-                    
-                    <td>-1.350658</td>
-                    
-                    <td>53.069235</td>
-                    
-                    <td data-sort-value="1.27">1.27</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0001</td>
+                    <td class="data-table__cell--max-width">Spring Road Riddings</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0692352277&lng=-1.3506579388" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0692352277&lng=-1.3506579388</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2004-07-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0692352277&lng=-1.3506579388" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0692352277&lng=-1.3506579388</a></td>
-
+                    <td>53.069235</td>
+                    <td>-1.350658</td>
+                    <td>1.27</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BFLR0002">BFLR0002</td>
-                    <td data-sort-value="Land at Greenhill Lane Leabrooks" class="data-table__cell--max-width">Land at Greenhill Lane Leabrooks</td>
-                    
-                    <td>-1.372058</td>
-                    
-                    <td>53.075517</td>
-                    
-                    <td data-sort-value="2.02">2.02</td>
-                    
-                    <td data-sort-value="24">24</td>
-                    
-                    <td data-sort-value="24">24</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0002</td>
+                    <td class="data-table__cell--max-width">Land at Greenhill Lane Leabrooks</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0755165967&lng=-1.3720578812" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0755165967&lng=-1.3720578812</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2007-11-15</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0755165967&lng=-1.3720578812" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0755165967&lng=-1.3720578812</a></td>
-
+                    <td>53.075517</td>
+                    <td>-1.372058</td>
+                    <td>2.02</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BFLR0005">BFLR0005</td>
-                    <td data-sort-value="John Smedley Ltd Lea Road Lea Bridge" class="data-table__cell--max-width">John Smedley Ltd Lea Road Lea Bridge</td>
-                    
-                    <td>-1.525055</td>
-                    
-                    <td>53.104037</td>
-                    
-                    <td data-sort-value="0.46">0.46</td>
-                    
-                    <td data-sort-value="26">26</td>
-                    
-                    <td data-sort-value="26">26</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0005</td>
+                    <td class="data-table__cell--max-width">John Smedley Ltd Lea Road Lea Bridge</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.1040369302&lng=-1.5250554687" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.1040369302&lng=-1.5250554687</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-12-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.1040369302&lng=-1.5250554687" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.1040369302&lng=-1.5250554687</a></td>
-
+                    <td>53.104037</td>
+                    <td>-1.525055</td>
+                    <td>0.46</td>
+                    <td>26</td>
+                    <td>26</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BFLR0007">BFLR0007</td>
-                    <td data-sort-value="Land at Salcombe Road Alfreton" class="data-table__cell--max-width">Land at Salcombe Road Alfreton</td>
-                    
-                    <td>-1.373292</td>
-                    
-                    <td>53.100504</td>
-                    
-                    <td data-sort-value="0.34">0.34</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0007</td>
+                    <td class="data-table__cell--max-width">Land at Salcombe Road Alfreton</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.1005040651&lng=-1.3732924756" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.1005040651&lng=-1.3732924756</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-05-14</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.1005040651&lng=-1.3732924756" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.1005040651&lng=-1.3732924756</a></td>
-
+                    <td>53.100504</td>
+                    <td>-1.373292</td>
+                    <td>0.34</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BFLR0010">BFLR0010</td>
-                    <td data-sort-value="Bradshaw Avenue Ridding" class="data-table__cell--max-width">Bradshaw Avenue Ridding</td>
-                    
-                    <td>-1.362249</td>
-                    
-                    <td>53.068588</td>
-                    
-                    <td data-sort-value="2.5">2.5</td>
-                    
-                    <td data-sort-value="93">93</td>
-                    
-                    <td data-sort-value="93">93</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0010</td>
+                    <td class="data-table__cell--max-width">Bradshaw Avenue Ridding</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0685877201&lng=-1.3622487862" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0685877201&lng=-1.3622487862</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>owned by a public authority</td>
-                    <td>2016-01-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0685877201&lng=-1.3622487862" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0685877201&lng=-1.3622487862</a></td>
-
+                    <td>53.068588</td>
+                    <td>-1.362249</td>
+                    <td>2.5</td>
+                    <td>93</td>
+                    <td>93</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BFLR0014">BFLR0014</td>
-                    <td data-sort-value="Land to rear of 27-41 Main Road Leabrooks" class="data-table__cell--max-width">Land to rear of 27-41 Main Road Leabrooks</td>
-                    
-                    <td>-1.372129</td>
-                    
-                    <td>53.076811</td>
-                    
-                    <td data-sort-value="0.32">0.32</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0014</td>
+                    <td class="data-table__cell--max-width">Land to rear of 27-41 Main Road Leabrooks</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0768114135&lng=-1.3721286348" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0768114135&lng=-1.3721286348</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-11-02</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0768114135&lng=-1.3721286348" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0768114135&lng=-1.3721286348</a></td>
-
+                    <td>53.076811</td>
+                    <td>-1.372129</td>
+                    <td>0.32</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BFLR0017">BFLR0017</td>
-                    <td data-sort-value="17 King Street Alfreton" class="data-table__cell--max-width">17 King Street Alfreton</td>
-                    
-                    <td>-1.390162</td>
-                    
-                    <td>53.096798</td>
-                    
-                    <td data-sort-value="1.0">1.0</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0017</td>
+                    <td class="data-table__cell--max-width">17 King Street Alfreton</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0967981203&lng=-1.3901619656" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0967981203&lng=-1.3901619656</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-11-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0967981203&lng=-1.3901619656" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0967981203&lng=-1.3901619656</a></td>
-
+                    <td>53.096798</td>
+                    <td>-1.390162</td>
+                    <td>1.0</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BFLR0018">BFLR0018</td>
-                    <td data-sort-value="Former American Adventure Theme Park Pit Lane Shipley" class="data-table__cell--max-width">Former American Adventure Theme Park Pit Lane Shipley</td>
-                    
-                    <td>-1.338263</td>
-                    
-                    <td>52.993639</td>
-                    
-                    <td data-sort-value="46.48">46.48</td>
-                    
-                    <td data-sort-value="307">307</td>
-                    
-                    <td data-sort-value="307">307</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0018</td>
+                    <td class="data-table__cell--max-width">Former American Adventure Theme Park Pit Lane Shipley</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.9936392978&lng=-1.3382626567" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.9936392978&lng=-1.3382626567</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>owned by a public authority</td>
-                    <td>2016-01-12</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.9936392978&lng=-1.3382626567" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.9936392978&lng=-1.3382626567</a></td>
-
+                    <td>52.993639</td>
+                    <td>-1.338263</td>
+                    <td>46.48</td>
+                    <td>307</td>
+                    <td>307</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BFLR0021">BFLR0021</td>
-                    <td data-sort-value="Marehay Garage Derby Road Marehay" class="data-table__cell--max-width">Marehay Garage Derby Road Marehay</td>
-                    
-                    <td>-1.406543</td>
-                    
-                    <td>53.031736</td>
-                    
-                    <td data-sort-value="0.42">0.42</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0021</td>
+                    <td class="data-table__cell--max-width">Marehay Garage Derby Road Marehay</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0317361246&lng=-1.4065426835" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0317361246&lng=-1.4065426835</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-08-04</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0317361246&lng=-1.4065426835" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0317361246&lng=-1.4065426835</a></td>
-
+                    <td>53.031736</td>
+                    <td>-1.406543</td>
+                    <td>0.42</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BFLR0023">BFLR0023</td>
-                    <td data-sort-value="Memory Lane Inn 72 Derby Road Heanor" class="data-table__cell--max-width">Memory Lane Inn 72 Derby Road Heanor</td>
-                    
-                    <td>-1.361152</td>
-                    
-                    <td>53.013541</td>
-                    
-                    <td data-sort-value="0.12">0.12</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    <td>2017-12-06</td>
-                    
                     <td>2019-03-31</td>
+                    <td>local-authority-eng:AMB</td>
+                    <td>BFLR0023</td>
+                    <td class="data-table__cell--max-width">Memory Lane Inn 72 Derby Road Heanor</td>
+                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0135406622&lng=-1.3611515064" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0135406622&lng=-1.3611515064</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/amber-valley" class="govuk-link">http://opendatacommunities.org/id/district-council/amber-valley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-10-03</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0135406622&lng=-1.3611515064" class="govuk-link">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0135406622&lng=-1.3611515064</a></td>
-
+                    <td>53.013541</td>
+                    <td>-1.361152</td>
+                    <td>0.12</td>
+                    <td>13</td>
+                    <td>13</td>
+                    <td>2017-12-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/27710b83c46fb36c73ae7eb3d9011e7cd2488c535e04c7bd0beb2587364d464b" class="govuk-link">27710b83...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

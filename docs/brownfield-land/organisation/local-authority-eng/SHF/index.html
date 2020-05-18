@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="S00023">S00023</td>
-                    <td data-sort-value="Site of Richardsons Cutlery Works, 60 Russell Street, Cotton Street and Alma Street, Sheffield S3 8RW" class="data-table__cell--max-width">Site of Richardsons Cutlery Works, 60 Russell Street, Cotton Street and Alma Street, Sheffield S3 8RW</td>
-                    
-                    <td>-1.47102</td>
-                    
-                    <td>53.388162</td>
-                    
-                    <td data-sort-value="0.84">0.84</td>
-                    
-                    <td data-sort-value="98">98</td>
-                    
-                    <td data-sort-value="98">98</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S00023</td>
+                    <td class="data-table__cell--max-width">Site of Richardsons Cutlery Works, 60 Russell Street, Cotton Street and Alma Street, Sheffield S3 8RW</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-03-19</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.388162</td>
+                    <td>-1.47102</td>
+                    <td>0.84</td>
+                    <td>98</td>
+                    <td>98</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="S00108">S00108</td>
-                    <td data-sort-value="Site of Vernons the Bakers and Bankside Works, Archer Road, Sheffield S8 0JT" class="data-table__cell--max-width">Site of Vernons the Bakers and Bankside Works, Archer Road, Sheffield S8 0JT</td>
-                    
-                    <td>-1.486797</td>
-                    
-                    <td>53.349465</td>
-                    
-                    <td data-sort-value="0.47">0.47</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S00108</td>
+                    <td class="data-table__cell--max-width">Site of Vernons the Bakers and Bankside Works, Archer Road, Sheffield S8 0JT</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2006-10-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.349465</td>
+                    <td>-1.486797</td>
+                    <td>0.47</td>
+                    <td>33</td>
+                    <td>33</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="S02156">S02156</td>
-                    <td data-sort-value="Site of 1-7 Allen Street, 7, 9, 11, 13 and 15 Smithfield and Snow Lane, Sheffield" class="data-table__cell--max-width">Site of 1-7 Allen Street, 7, 9, 11, 13 and 15 Smithfield and Snow Lane, Sheffield</td>
-                    
-                    <td>-1.474414</td>
-                    
-                    <td>53.386505</td>
-                    
-                    <td data-sort-value="0.43">0.43</td>
-                    
-                    <td data-sort-value="36">36</td>
-                    
-                    <td data-sort-value="36">36</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S02156</td>
+                    <td class="data-table__cell--max-width">Site of 1-7 Allen Street, 7, 9, 11, 13 and 15 Smithfield and Snow Lane, Sheffield</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-07-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.386505</td>
+                    <td>-1.474414</td>
+                    <td>0.43</td>
+                    <td>36</td>
+                    <td>36</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="S01801">S01801</td>
-                    <td data-sort-value="The Howard" class="data-table__cell--max-width">The Howard</td>
-                    
-                    <td>-1.465021</td>
-                    
-                    <td>53.378212</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S01801</td>
+                    <td class="data-table__cell--max-width">The Howard</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2011-06-10</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.378212</td>
+                    <td>-1.465021</td>
+                    <td>0.03</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="S02345">S02345</td>
-                    <td data-sort-value="Partco Autoparts Markham Works 20 Broadfield Road Sheffield S8 0XJ" class="data-table__cell--max-width">Partco Autoparts Markham Works 20 Broadfield Road Sheffield S8 0XJ</td>
-                    
-                    <td>-1.474262</td>
-                    
-                    <td>53.362566</td>
-                    
-                    <td data-sort-value="0.21">0.21</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S02345</td>
+                    <td class="data-table__cell--max-width">Partco Autoparts Markham Works 20 Broadfield Road Sheffield S8 0XJ</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-07-18</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.362566</td>
+                    <td>-1.474262</td>
+                    <td>0.21</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="S00009">S00009</td>
-                    <td data-sort-value="Land at Young Street and St Marys Gate, Sheffield" class="data-table__cell--max-width">Land at Young Street and St Marys Gate, Sheffield</td>
-                    
-                    <td>-1.477773</td>
-                    
-                    <td>53.373863</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="281">281</td>
-                    
-                    <td data-sort-value="281">281</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S00009</td>
+                    <td class="data-table__cell--max-width">Land at Young Street and St Marys Gate, Sheffield</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2009-09-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.373863</td>
+                    <td>-1.477773</td>
+                    <td>0.18</td>
+                    <td>281</td>
+                    <td>281</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="S00215">S00215</td>
-                    <td data-sort-value="Land adjoining 434-652 Grimesthorpe Road" class="data-table__cell--max-width">Land adjoining 434-652 Grimesthorpe Road</td>
-                    
-                    <td>-1.44864</td>
-                    
-                    <td>53.401962</td>
-                    
-                    <td data-sort-value="1.05">1.05</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S00215</td>
+                    <td class="data-table__cell--max-width">Land adjoining 434-652 Grimesthorpe Road</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2010-03-18</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.401962</td>
+                    <td>-1.44864</td>
+                    <td>1.05</td>
+                    <td>33</td>
+                    <td>33</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="S00202">S00202</td>
-                    <td data-sort-value="Scarsdale House, 136 Derbyshire Lane, Woodseats" class="data-table__cell--max-width">Scarsdale House, 136 Derbyshire Lane, Woodseats</td>
-                    
-                    <td>-1.477343</td>
-                    
-                    <td>53.348027</td>
-                    
-                    <td data-sort-value="0.19">0.19</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-05</td>
-                    
                     <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S00202</td>
+                    <td class="data-table__cell--max-width">Scarsdale House, 136 Derbyshire Lane, Woodseats</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2008-06-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.348027</td>
+                    <td>-1.477343</td>
+                    <td>0.19</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-05</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="S03352">S03352</td>
-                    <td data-sort-value="Old County Court House 56 Bank StreetSheffieldS1 2DS" class="data-table__cell--max-width">Old County Court House 56 Bank StreetSheffieldS1 2DS</td>
-                    
-                    <td>-1.468037</td>
-                    
-                    <td>53.384614</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="21">21</td>
-                    
-                    <td data-sort-value="21">21</td>
                     <td>2018-12-18</td>
-                    
-                    <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S03352</td>
+                    <td class="data-table__cell--max-width">Old County Court House 56 Bank StreetSheffieldS1 2DS</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-08-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.384614</td>
+                    <td>-1.468037</td>
+                    <td>0.06</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>2018-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="S03346">S03346</td>
-                    <td data-sort-value="Site Of 19 Haywood Lane And 8 Ash Lane Sheffield S36 2QE" class="data-table__cell--max-width">Site Of 19 Haywood Lane And 8 Ash Lane Sheffield S36 2QE</td>
-                    
-                    <td>-1.579461</td>
-                    
-                    <td>53.47987</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
                     <td>2018-12-18</td>
-                    
-                    <td>2018-12-18</td>
+                    <td>local-authority-eng:SHF</td>
+                    <td>S03346</td>
+                    <td class="data-table__cell--max-width">Site Of 19 Haywood Lane And 8 Ash Lane Sheffield S36 2QE</td>
+                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/sheffield" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/sheffield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-10-12</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html" class="govuk-link">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a></td>
-
+                    <td>53.47987</td>
+                    <td>-1.579461</td>
+                    <td>0.08</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2018-12-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670" class="govuk-link">0edf56e3...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

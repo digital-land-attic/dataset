@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BPNPH02">BPNPH02</td>
-                    <td data-sort-value="Churston Golf Club, Dartmouth Road, Brixham" class="data-table__cell--max-width">Churston Golf Club, Dartmouth Road, Brixham</td>
-                    
-                    <td>-3.55662</td>
-                    
-                    <td>50.3982</td>
-                    
-                    <td data-sort-value="4.53">4.53</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH02</td>
+                    <td class="data-table__cell--max-width">Churston Golf Club, Dartmouth Road, Brixham</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.3982</td>
+                    <td>-3.55662</td>
+                    <td>4.53</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,331 +203,232 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BPNPH03">BPNPH03</td>
-                    <td data-sort-value="Knapman's Builders Yard, off Stoke Gabriel Road, Galmpton, Brixham" class="data-table__cell--max-width">Knapman's Builders Yard, off Stoke Gabriel Road, Galmpton, Brixham</td>
-                    
-                    <td>-3.56542</td>
-                    
-                    <td>50.395</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH03</td>
+                    <td class="data-table__cell--max-width">Knapman's Builders Yard, off Stoke Gabriel Road, Galmpton, Brixham</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.395</td>
+                    <td>-3.56542</td>
+                    <td>0.14</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BPNPH05">BPNPH05</td>
-                    <td data-sort-value="Northcliff Hotel, North Furzeham Road, Brixham" class="data-table__cell--max-width">Northcliff Hotel, North Furzeham Road, Brixham</td>
-                    
-                    <td>-3.51716</td>
-                    
-                    <td>50.4003</td>
-                    
-                    <td data-sort-value="0.29">0.29</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH05</td>
+                    <td class="data-table__cell--max-width">Northcliff Hotel, North Furzeham Road, Brixham</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.4003</td>
+                    <td>-3.51716</td>
+                    <td>0.29</td>
+                    <td>8</td>
+                    <td>15</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BPNPH06">BPNPH06</td>
-                    <td data-sort-value="Torbay Industrial Estate, New Road, Brixham" class="data-table__cell--max-width">Torbay Industrial Estate, New Road, Brixham</td>
-                    
-                    <td>-3.51733</td>
-                    
-                    <td>50.3926</td>
-                    
-                    <td data-sort-value="0.32">0.32</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH06</td>
+                    <td class="data-table__cell--max-width">Torbay Industrial Estate, New Road, Brixham</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.3926</td>
+                    <td>-3.51733</td>
+                    <td>0.32</td>
+                    <td>8</td>
+                    <td>15</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BPNPH07">BPNPH07</td>
-                    <td data-sort-value="74 New Road, Brixham" class="data-table__cell--max-width">74 New Road, Brixham</td>
-                    
-                    <td>-3.51997</td>
-                    
-                    <td>50.3919</td>
-                    
-                    <td data-sort-value="0.19">0.19</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH07</td>
+                    <td class="data-table__cell--max-width">74 New Road, Brixham</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.3919</td>
+                    <td>-3.51997</td>
+                    <td>0.19</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BPNPH08H3-I7">BPNPH08H3-I7</td>
-                    <td data-sort-value="Brixham Police Station, Rea Barn Road, Brixham" class="data-table__cell--max-width">Brixham Police Station, Rea Barn Road, Brixham</td>
-                    
-                    <td>-3.50852</td>
-                    
-                    <td>50.3903</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH08H3-I7</td>
+                    <td class="data-table__cell--max-width">Brixham Police Station, Rea Barn Road, Brixham</td>
+                    <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>50.3903</td>
+                    <td>-3.50852</td>
+                    <td>0.15</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BPNPH09">BPNPH09</td>
-                    <td data-sort-value="King's Barton, Summer Lane, Brixham" class="data-table__cell--max-width">King's Barton, Summer Lane, Brixham</td>
-                    
-                    <td>-3.52697</td>
-                    
-                    <td>50.3839</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="4">4</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH09</td>
+                    <td class="data-table__cell--max-width">King's Barton, Summer Lane, Brixham</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.3839</td>
+                    <td>-3.52697</td>
+                    <td>0.2</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BPNPH10">BPNPH10</td>
-                    <td data-sort-value="Beverley Court, Upton Manor Road, Brixham" class="data-table__cell--max-width">Beverley Court, Upton Manor Road, Brixham</td>
-                    
-                    <td>-3.51482</td>
-                    
-                    <td>50.3836</td>
-                    
-                    <td data-sort-value="0.21">0.21</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH10</td>
+                    <td class="data-table__cell--max-width">Beverley Court, Upton Manor Road, Brixham</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.3836</td>
+                    <td>-3.51482</td>
+                    <td>0.21</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BPNPH11">BPNPH11</td>
-                    <td data-sort-value="St Mary's Industrial Estate, St Mary's Road, Brixham" class="data-table__cell--max-width">St Mary's Industrial Estate, St Mary's Road, Brixham</td>
-                    
-                    <td>-3.51356</td>
-                    
-                    <td>50.3831</td>
-                    
-                    <td data-sort-value="0.79">0.79</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>BPNPH11</td>
+                    <td class="data-table__cell--max-width">St Mary's Industrial Estate, St Mary's Road, Brixham</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.3831</td>
+                    <td>-3.51356</td>
+                    <td>0.79</td>
+                    <td>13</td>
+                    <td>25</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="PNPH03">PNPH03</td>
-                    <td data-sort-value="Vauxhall Garage, Torquay Road, Paignton" class="data-table__cell--max-width">Vauxhall Garage, Torquay Road, Paignton</td>
-                    
-                    <td>-3.55617</td>
-                    
-                    <td>50.447564</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2016-06-24</td>
-                    
                     <td>2017-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/torbay" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/torbay</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:TOB</td>
+                    <td>PNPH03</td>
+                    <td class="data-table__cell--max-width">Vauxhall Garage, Torquay Road, Paignton</td>
                     <td><a href="http://torbay.addresscafe.com/app/exploreit/default.aspx" class="govuk-link">http://torbay.addresscafe.com/app/exploreit/default.aspx</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.447564</td>
+                    <td>-3.55617</td>
+                    <td>0.17</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>2016-06-24</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/34240c200237cd3ba15eb0bd8feb8ac18a4c76afa82d08d6c88bc87f560a099b" class="govuk-link">34240c20...</a></td>
                 </tr>
                 
             </tbody>
@@ -548,6 +437,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

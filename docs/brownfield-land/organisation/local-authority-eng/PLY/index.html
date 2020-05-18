@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR0001a">BR0001a</td>
-                    <td data-sort-value="Colin Campbell Court" class="data-table__cell--max-width">Colin Campbell Court</td>
-                    
-                    <td>-4.147306</td>
-                    
-                    <td>50.370772</td>
-                    
-                    <td data-sort-value="2.27">2.27</td>
-                    
-                    <td data-sort-value="300">300</td>
-                    
-                    <td data-sort-value="330">330</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0001a</td>
+                    <td class="data-table__cell--max-width">Colin Campbell Court</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.370776%2C-4.1473&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.370776%2C-4.1473&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.370772</td>
+                    <td>-4.147306</td>
+                    <td>2.27</td>
+                    <td>300</td>
+                    <td>330</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR0002a">BR0002a</td>
-                    <td data-sort-value="Cornwall Street East, City Centre" class="data-table__cell--max-width">Cornwall Street East, City Centre</td>
-                    
-                    <td>-4.141354</td>
-                    
-                    <td>50.372888</td>
-                    
-                    <td data-sort-value="0.99">0.99</td>
-                    
-                    <td data-sort-value="92">92</td>
-                    
-                    <td data-sort-value="102">102</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0002a</td>
+                    <td class="data-table__cell--max-width">Cornwall Street East, City Centre</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.372891%2C-4.141361&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.372891%2C-4.141361&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.372888</td>
+                    <td>-4.141354</td>
+                    <td>0.99</td>
+                    <td>92</td>
+                    <td>102</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR0003a">BR0003a</td>
-                    <td data-sort-value="Cornwall Street West, City Centre" class="data-table__cell--max-width">Cornwall Street West, City Centre</td>
-                    
-                    <td>-4.145164</td>
-                    
-                    <td>50.372854</td>
-                    
-                    <td data-sort-value="0.8">0.8</td>
-                    
-                    <td data-sort-value="79">79</td>
-                    
-                    <td data-sort-value="87">87</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0003a</td>
+                    <td class="data-table__cell--max-width">Cornwall Street West, City Centre</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.372855%2C-4.145171&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.372855%2C-4.145171&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.372854</td>
+                    <td>-4.145164</td>
+                    <td>0.8</td>
+                    <td>79</td>
+                    <td>87</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR0004a">BR0004a</td>
-                    <td data-sort-value="Cornwall Street West, City Centre" class="data-table__cell--max-width">Cornwall Street West, City Centre</td>
-                    
-                    <td>-4.143151</td>
-                    
-                    <td>50.371892</td>
-                    
-                    <td data-sort-value="0.49">0.49</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    
-                    <td data-sort-value="33">33</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0004a</td>
+                    <td class="data-table__cell--max-width">Cornwall Street West, City Centre</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.371896%2C-4.143157&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.371896%2C-4.143157&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.371892</td>
+                    <td>-4.143151</td>
+                    <td>0.49</td>
+                    <td>30</td>
+                    <td>33</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR0005a">BR0005a</td>
-                    <td data-sort-value="Royal Assurance site, Armada Way, City Centre" class="data-table__cell--max-width">Royal Assurance site, Armada Way, City Centre</td>
-                    
-                    <td>-4.143106</td>
-                    
-                    <td>50.370886</td>
-                    
-                    <td data-sort-value="0.49">0.49</td>
-                    
-                    <td data-sort-value="110">110</td>
-                    
-                    <td data-sort-value="121">121</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0005a</td>
+                    <td class="data-table__cell--max-width">Royal Assurance site, Armada Way, City Centre</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.370885%2C-4.143105&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.370885%2C-4.143105&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.370886</td>
+                    <td>-4.143106</td>
+                    <td>0.49</td>
+                    <td>110</td>
+                    <td>121</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR0006a">BR0006a</td>
-                    <td data-sort-value="Land at 19 The Crescent, Derry's Cross, City Centre" class="data-table__cell--max-width">Land at 19 The Crescent, Derry's Cross, City Centre</td>
-                    
-                    <td>-4.146781</td>
-                    
-                    <td>50.368812</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="120">120</td>
-                    
-                    <td data-sort-value="132">132</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0006a</td>
+                    <td class="data-table__cell--max-width">Land at 19 The Crescent, Derry's Cross, City Centre</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.368814%2C-4.146787&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.368814%2C-4.146787&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.368812</td>
+                    <td>-4.146781</td>
+                    <td>0.6</td>
+                    <td>120</td>
+                    <td>132</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR0007a">BR0007a</td>
-                    <td data-sort-value="Civic Centre and Council House site" class="data-table__cell--max-width">Civic Centre and Council House site</td>
-                    
-                    <td>-4.143368</td>
-                    
-                    <td>50.369514</td>
-                    
-                    <td data-sort-value="1.19">1.19</td>
-                    
-                    <td data-sort-value="248">248</td>
-                    
-                    <td data-sort-value="273">273</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>mixed ownership</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0007a</td>
+                    <td class="data-table__cell--max-width">Civic Centre and Council House site</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.369516%2C-4.143367&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.369516%2C-4.143367&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.369514</td>
+                    <td>-4.143368</td>
+                    <td>1.19</td>
+                    <td>248</td>
+                    <td>273</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR0008a">BR0008a</td>
-                    <td data-sort-value="Plymouth Fruit Sales site, Sutton Road, Sutton Harbour" class="data-table__cell--max-width">Plymouth Fruit Sales site, Sutton Road, Sutton Harbour</td>
-                    
-                    <td>-4.129647</td>
-                    
-                    <td>50.368363</td>
-                    
-                    <td data-sort-value="0.63">0.63</td>
-                    
-                    <td data-sort-value="200">200</td>
-                    
-                    <td data-sort-value="220">220</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0008a</td>
+                    <td class="data-table__cell--max-width">Plymouth Fruit Sales site, Sutton Road, Sutton Harbour</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.36836%2C-4.129641&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.36836%2C-4.129641&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.368363</td>
+                    <td>-4.129647</td>
+                    <td>0.63</td>
+                    <td>200</td>
+                    <td>220</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR0009b">BR0009b</td>
-                    <td data-sort-value="Sutton Road west, Sutton Harbour" class="data-table__cell--max-width">Sutton Road west, Sutton Harbour</td>
-                    
-                    <td>-4.131135</td>
-                    
-                    <td>50.370494</td>
-                    
-                    <td data-sort-value="0.85">0.85</td>
-                    
-                    <td data-sort-value="180">180</td>
-                    
-                    <td data-sort-value="198">198</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0009b</td>
+                    <td class="data-table__cell--max-width">Sutton Road west, Sutton Harbour</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.370496%2C-4.131134&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.370496%2C-4.131134&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.370494</td>
+                    <td>-4.131135</td>
+                    <td>0.85</td>
+                    <td>180</td>
+                    <td>198</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR0010a">BR0010a</td>
-                    <td data-sort-value="Sugar House, Sutton Harbour" class="data-table__cell--max-width">Sugar House, Sutton Harbour</td>
-                    
-                    <td>-4.13077</td>
-                    
-                    <td>50.369584</td>
-                    
-                    <td data-sort-value="0.43">0.43</td>
-                    
-                    <td data-sort-value="170">170</td>
-                    
-                    <td data-sort-value="170">170</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2019-06-28</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/plymouth" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/plymouth</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>permissioned</td>
-                    
+                    <td>local-authority-eng:PLY</td>
+                    <td>BR0010a</td>
+                    <td class="data-table__cell--max-width">Sugar House, Sutton Harbour</td>
                     <td><a href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.369582%2C-4.130772&z=18" class="govuk-link">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.369582%2C-4.130772&z=18</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.369584</td>
+                    <td>-4.13077</td>
+                    <td>0.43</td>
+                    <td>170</td>
+                    <td>170</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/99c287b6e9f0b59b835722a9119ad12a1d9f50b9d169665f9c3d9f860dfb08df" class="govuk-link">99c287b6...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

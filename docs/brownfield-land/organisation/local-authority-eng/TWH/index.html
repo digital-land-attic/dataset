@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,388 +154,277 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR_LBTH_24">BR_LBTH_24</td>
-                    <td data-sort-value="Whitechapel Station & surrounding land/buildings" class="data-table__cell--max-width">Whitechapel Station & surrounding land/buildings</td>
-                    
-                    <td>-0.061001</td>
-                    
-                    <td>51.51947</td>
-                    
-                    <td data-sort-value="0.97">0.97</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_24</td>
+                    <td class="data-table__cell--max-width">Whitechapel Station & surrounding land/buildings</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/9134df58dd764bcdbe18ebd645b7584a/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/9134df58dd764bcdbe18ebd645b7584a/data</a></td>
                     <td></td>
                     <td></td>
                     <td>not permissioned</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/9134df58dd764bcdbe18ebd645b7584a/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/9134df58dd764bcdbe18ebd645b7584a/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.51947</td>
+                    <td>-0.061001</td>
+                    <td>0.97</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR_LBTH_08">BR_LBTH_08</td>
-                    <td data-sort-value="Aspen Way" class="data-table__cell--max-width">Aspen Way</td>
-                    
-                    <td>-0.015414</td>
-                    
-                    <td>51.508166</td>
-                    
-                    <td data-sort-value="4.61">4.61</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_08</td>
+                    <td class="data-table__cell--max-width">Aspen Way</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/fb1a62b3b5434eef97f67a0cdf34a818/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/fb1a62b3b5434eef97f67a0cdf34a818/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/fb1a62b3b5434eef97f67a0cdf34a818/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/fb1a62b3b5434eef97f67a0cdf34a818/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.508166</td>
+                    <td>-0.015414</td>
+                    <td>4.61</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR_LBTH_10">BR_LBTH_10</td>
-                    <td data-sort-value="Limeharbour" class="data-table__cell--max-width">Limeharbour</td>
-                    
-                    <td>-0.014019</td>
-                    
-                    <td>51.498961</td>
-                    
-                    <td data-sort-value="5.25">5.25</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_10</td>
+                    <td class="data-table__cell--max-width">Limeharbour</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/d7a5436c3368412a9ae851225b2593c9/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/d7a5436c3368412a9ae851225b2593c9/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/d7a5436c3368412a9ae851225b2593c9/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/d7a5436c3368412a9ae851225b2593c9/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.498961</td>
+                    <td>-0.014019</td>
+                    <td>5.25</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR_LBTH_11">BR_LBTH_11</td>
-                    <td data-sort-value="Marsh Wall East" class="data-table__cell--max-width">Marsh Wall East</td>
-                    
-                    <td>-0.013018</td>
-                    
-                    <td>51.500345</td>
-                    
-                    <td data-sort-value="3.61">3.61</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_11</td>
+                    <td class="data-table__cell--max-width">Marsh Wall East</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/f3530a792653414fb0839b2db2c99c67/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/f3530a792653414fb0839b2db2c99c67/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/f3530a792653414fb0839b2db2c99c67/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/f3530a792653414fb0839b2db2c99c67/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.500345</td>
+                    <td>-0.013018</td>
+                    <td>3.61</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR_LBTH_12">BR_LBTH_12</td>
-                    <td data-sort-value="Marsh Wall West" class="data-table__cell--max-width">Marsh Wall West</td>
-                    
-                    <td>-0.021605</td>
-                    
-                    <td>51.501191</td>
-                    
-                    <td data-sort-value="6.83">6.83</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_12</td>
+                    <td class="data-table__cell--max-width">Marsh Wall West</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/1884400783184544b57cf4b0ecf9f5ce/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/1884400783184544b57cf4b0ecf9f5ce/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/1884400783184544b57cf4b0ecf9f5ce/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/1884400783184544b57cf4b0ecf9f5ce/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.501191</td>
+                    <td>-0.021605</td>
+                    <td>6.83</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR_LBTH_14">BR_LBTH_14</td>
-                    <td data-sort-value="Millharbour" class="data-table__cell--max-width">Millharbour</td>
-                    
-                    <td>-0.019765</td>
-                    
-                    <td>51.499527</td>
-                    
-                    <td data-sort-value="5.05">5.05</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_14</td>
+                    <td class="data-table__cell--max-width">Millharbour</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/f09fce102d724a85a4990d0ad487ba87/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/f09fce102d724a85a4990d0ad487ba87/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/f09fce102d724a85a4990d0ad487ba87/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/f09fce102d724a85a4990d0ad487ba87/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.499527</td>
+                    <td>-0.019765</td>
+                    <td>5.05</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR_LBTH_09">BR_LBTH_09</td>
-                    <td data-sort-value="Crossharbour Town Centre" class="data-table__cell--max-width">Crossharbour Town Centre</td>
-                    
-                    <td>-0.01305</td>
-                    
-                    <td>51.494421</td>
-                    
-                    <td data-sort-value="6.16">6.16</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_09</td>
+                    <td class="data-table__cell--max-width">Crossharbour Town Centre</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/d0c760ece8434c3e80e996f1c68aba0b/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/d0c760ece8434c3e80e996f1c68aba0b/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/d0c760ece8434c3e80e996f1c68aba0b/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/d0c760ece8434c3e80e996f1c68aba0b/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.494421</td>
+                    <td>-0.01305</td>
+                    <td>6.16</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR_LBTH_16">BR_LBTH_16</td>
-                    <td data-sort-value="Westferry Printworks" class="data-table__cell--max-width">Westferry Printworks</td>
-                    
-                    <td>-0.022273</td>
-                    
-                    <td>51.4951</td>
-                    
-                    <td data-sort-value="6.4">6.4</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_16</td>
+                    <td class="data-table__cell--max-width">Westferry Printworks</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/47401c2194ab4f9cb69329f052634e06/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/47401c2194ab4f9cb69329f052634e06/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/47401c2194ab4f9cb69329f052634e06/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/47401c2194ab4f9cb69329f052634e06/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.4951</td>
+                    <td>-0.022273</td>
+                    <td>6.4</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR_LBTH_13">BR_LBTH_13</td>
-                    <td data-sort-value="Millharbour South" class="data-table__cell--max-width">Millharbour South</td>
-                    
-                    <td>-0.018614</td>
-                    
-                    <td>51.49585</td>
-                    
-                    <td data-sort-value="4.02">4.02</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_13</td>
+                    <td class="data-table__cell--max-width">Millharbour South</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/189ea61c9b5d44fca003722c64cf2c66/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/189ea61c9b5d44fca003722c64cf2c66/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/189ea61c9b5d44fca003722c64cf2c66/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/189ea61c9b5d44fca003722c64cf2c66/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.49585</td>
+                    <td>-0.018614</td>
+                    <td>4.02</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR_LBTH_06">BR_LBTH_06</td>
-                    <td data-sort-value="Ailsa Street" class="data-table__cell--max-width">Ailsa Street</td>
-                    
-                    <td>-0.007975</td>
-                    
-                    <td>51.51795</td>
-                    
-                    <td data-sort-value="5.76">5.76</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-11-27</td>
-                    
-                    <td>2017-11-27</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/tower-hamlets" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/tower-hamlets</a></td>
-                    <td></td>
-                    <td></td>
+                    <td>local-authority-eng:TWH</td>
+                    <td>BR_LBTH_06</td>
+                    <td class="data-table__cell--max-width">Ailsa Street</td>
+                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/9e9d5c85280e4eaeae7c0cae8f96a41f/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/9e9d5c85280e4eaeae7c0cae8f96a41f/data</a></td>
                     <td></td>
                     <td></td>
                     <td>pending decision</td>
-                    
-                    <td><a href="http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/9e9d5c85280e4eaeae7c0cae8f96a41f/data" class="govuk-link">http://towerhamlets.maps.arcgis.com/sharing/rest/content/items/9e9d5c85280e4eaeae7c0cae8f96a41f/data</a></td>
-
+                    <td></td>
+                    <td></td>
+                    <td>51.51795</td>
+                    <td>-0.007975</td>
+                    <td>5.76</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-11-27</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/7cd81f0744ba4e3fee37debb9dadcb35977753d127846515f3dbc1a6d0614374" class="govuk-link">7cd81f07...</a></td>
                 </tr>
                 
             </tbody>
@@ -544,6 +433,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

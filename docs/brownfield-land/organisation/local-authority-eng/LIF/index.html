@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="LDC-BLR-1">LDC-BLR-1</td>
-                    <td data-sort-value="Lichfield Highway Depot, Trent Valley Road, Lichfield" class="data-table__cell--max-width">Lichfield Highway Depot, Trent Valley Road, Lichfield</td>
-                    
-                    <td>-1.805846</td>
-                    
-                    <td>52.68113</td>
-                    
-                    <td data-sort-value="1.37">1.37</td>
-                    
-                    <td data-sort-value="52">52</td>
-                    
-                    <td data-sort-value="57">57</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-1</td>
+                    <td class="data-table__cell--max-width">Lichfield Highway Depot, Trent Valley Road, Lichfield</td>
                     <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.68113</td>
+                    <td>-1.805846</td>
+                    <td>1.37</td>
+                    <td>52</td>
+                    <td>57</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="LDC-BLR-2">LDC-BLR-2</td>
-                    <td data-sort-value="Land rear of Chase Terrace Primary School, Rugeley Road, Burntwood" class="data-table__cell--max-width">Land rear of Chase Terrace Primary School, Rugeley Road, Burntwood</td>
-                    
-                    <td>-1.931557</td>
-                    
-                    <td>52.683166</td>
-                    
-                    <td data-sort-value="1.56">1.56</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-2</td>
+                    <td class="data-table__cell--max-width">Land rear of Chase Terrace Primary School, Rugeley Road, Burntwood</td>
+                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-06-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>52.683166</td>
+                    <td>-1.931557</td>
+                    <td>1.56</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="LDC-BLR-3">LDC-BLR-3</td>
-                    <td data-sort-value="Land at Maple Close, Burntwood" class="data-table__cell--max-width">Land at Maple Close, Burntwood</td>
-                    
-                    <td>-1.927023</td>
-                    
-                    <td>52.679325</td>
-                    
-                    <td data-sort-value="1.33">1.33</td>
-                    
-                    <td data-sort-value="29">29</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-3</td>
+                    <td class="data-table__cell--max-width">Land at Maple Close, Burntwood</td>
                     <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.679325</td>
+                    <td>-1.927023</td>
+                    <td>1.33</td>
+                    <td>29</td>
+                    <td>35</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="LDC-BLR-4">LDC-BLR-4</td>
-                    <td data-sort-value="Whittington Youth Centre, Main Street, Whittington" class="data-table__cell--max-width">Whittington Youth Centre, Main Street, Whittington</td>
-                    
-                    <td>-1.763797</td>
-                    
-                    <td>52.67228</td>
-                    
-                    <td data-sort-value="0.32">0.32</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-4</td>
+                    <td class="data-table__cell--max-width">Whittington Youth Centre, Main Street, Whittington</td>
+                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
                     <td>owned by a public authority</td>
-                    <td>2018-02-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>52.67228</td>
+                    <td>-1.763797</td>
+                    <td>0.32</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="LDC-BLR-5">LDC-BLR-5</td>
-                    <td data-sort-value="Minster Hall Youth Centre, Bird Street, Lichfield" class="data-table__cell--max-width">Minster Hall Youth Centre, Bird Street, Lichfield</td>
-                    
-                    <td>-1.828436</td>
-                    
-                    <td>52.684105</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-5</td>
+                    <td class="data-table__cell--max-width">Minster Hall Youth Centre, Bird Street, Lichfield</td>
                     <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.684105</td>
+                    <td>-1.828436</td>
+                    <td>0.15</td>
+                    <td>13</td>
+                    <td>17</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="LDC-BLR-6">LDC-BLR-6</td>
-                    <td data-sort-value="Shenstone Business Park and Birchbrook Industrial Estate, Lynn Lane, Shenstone" class="data-table__cell--max-width">Shenstone Business Park and Birchbrook Industrial Estate, Lynn Lane, Shenstone</td>
-                    
-                    <td>-1.845608</td>
-                    
-                    <td>52.638748</td>
-                    
-                    <td data-sort-value="2.09">2.09</td>
-                    
-                    <td data-sort-value="45">45</td>
-                    
-                    <td data-sort-value="55">55</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-6</td>
+                    <td class="data-table__cell--max-width">Shenstone Business Park and Birchbrook Industrial Estate, Lynn Lane, Shenstone</td>
                     <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.638748</td>
+                    <td>-1.845608</td>
+                    <td>2.09</td>
+                    <td>45</td>
+                    <td>55</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="LDC-BLR-7">LDC-BLR-7</td>
-                    <td data-sort-value="Former Lichfield Tennis Club, St Johns Hospice, Birmingham Road, Lichfield" class="data-table__cell--max-width">Former Lichfield Tennis Club, St Johns Hospice, Birmingham Road, Lichfield</td>
-                    
-                    <td>-1.829182</td>
-                    
-                    <td>52.678892</td>
-                    
-                    <td data-sort-value="0.45">0.45</td>
-                    
-                    <td data-sort-value="16">16</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-7</td>
+                    <td class="data-table__cell--max-width">Former Lichfield Tennis Club, St Johns Hospice, Birmingham Road, Lichfield</td>
                     <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.678892</td>
+                    <td>-1.829182</td>
+                    <td>0.45</td>
+                    <td>16</td>
+                    <td>20</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="LDC-BLR-8">LDC-BLR-8</td>
-                    <td data-sort-value="Former Integra Works, Eastern Avenue, Lichfield" class="data-table__cell--max-width">Former Integra Works, Eastern Avenue, Lichfield</td>
-                    
-                    <td>-1.821444</td>
-                    
-                    <td>52.701238</td>
-                    
-                    <td data-sort-value="2.8">2.8</td>
-                    
-                    <td data-sort-value="99">99</td>
-                    
-                    <td data-sort-value="99">99</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-8</td>
+                    <td class="data-table__cell--max-width">Former Integra Works, Eastern Avenue, Lichfield</td>
+                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-12-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>52.701238</td>
+                    <td>-1.821444</td>
+                    <td>2.8</td>
+                    <td>99</td>
+                    <td>99</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="LDC-BLR-9">LDC-BLR-9</td>
-                    <td data-sort-value="St Chads House, Cross Keys, Lichfield" class="data-table__cell--max-width">St Chads House, Cross Keys, Lichfield</td>
-                    
-                    <td>-1.827797</td>
-                    
-                    <td>52.685003</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-9</td>
+                    <td class="data-table__cell--max-width">St Chads House, Cross Keys, Lichfield</td>
+                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>52.685003</td>
+                    <td>-1.827797</td>
+                    <td>0.15</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="LDC-BLR-11">LDC-BLR-11</td>
-                    <td data-sort-value="Packington Hall, Tamworth Road" class="data-table__cell--max-width">Packington Hall, Tamworth Road</td>
-                    
-                    <td>-1.759917</td>
-                    
-                    <td>52.65441</td>
-                    
-                    <td data-sort-value="2.31">2.31</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    <td>2017-07-17</td>
-                    
                     <td>2019-11-18</td>
+                    <td>local-authority-eng:LIF</td>
+                    <td>LDC-BLR-11</td>
+                    <td class="data-table__cell--max-width">Packington Hall, Tamworth Road</td>
+                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/lichfield" class="govuk-link">http://opendatacommunities.org/id/district-council/lichfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-11-05</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef" class="govuk-link">http://lichfielddc.maps.arcgis.com/home/webmap/viewer.html?webmap=f95b5e5ecb4d4a938a89f64a5344eaef</a></td>
-
+                    <td>52.65441</td>
+                    <td>-1.759917</td>
+                    <td>2.31</td>
+                    <td>28</td>
+                    <td>28</td>
+                    <td>2017-07-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/30f6d520678eea3f004091763bce629792a5851d6317061ce8c57c148c9c09eb" class="govuk-link">30f6d520...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

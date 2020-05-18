@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="207000430">207000430</td>
-                    <td data-sort-value="Lincoln House, Lincoln Road, N18 3HF" class="data-table__cell--max-width">Lincoln House, Lincoln Road, N18 3HF</td>
-                    
-                    <td>-0.046913</td>
-                    
-                    <td>51.643747</td>
-                    
-                    <td data-sort-value="0.028">0.028</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207000430</td>
+                    <td class="data-table__cell--max-width">Lincoln House, Lincoln Road, N18 3HF</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N99H3OJN02E00" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N99H3OJN02E00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-07-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N99H3OJN02E00" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N99H3OJN02E00</a></td>
-
+                    <td>51.643747</td>
+                    <td>-0.046913</td>
+                    <td>0.028</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="207143457">207143457</td>
-                    <td data-sort-value="55-57 Chase Side, N14 5DB" class="data-table__cell--max-width">55-57 Chase Side, N14 5DB</td>
-                    
-                    <td>-0.087842</td>
-                    
-                    <td>51.655839</td>
-                    
-                    <td data-sort-value="0.032">0.032</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207143457</td>
+                    <td class="data-table__cell--max-width">55-57 Chase Side, N14 5DB</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NEXGJUJN00600" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NEXGJUJN00600</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-01-20</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NEXGJUJN00600" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NEXGJUJN00600</a></td>
-
+                    <td>51.655839</td>
+                    <td>-0.087842</td>
+                    <td>0.032</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="207002010">207002010</td>
-                    <td data-sort-value="103 Chase Side, EN2 6NL" class="data-table__cell--max-width">103 Chase Side, EN2 6NL</td>
-                    
-                    <td>-0.087943</td>
-                    
-                    <td>51.658362</td>
-                    
-                    <td data-sort-value="0.085">0.085</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207002010</td>
+                    <td class="data-table__cell--max-width">103 Chase Side, EN2 6NL</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZLAJNXE008" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZLAJNXE008</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-11-25</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZLAJNXE008" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZLAJNXE008</a></td>
-
+                    <td>51.658362</td>
+                    <td>-0.087943</td>
+                    <td>0.085</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="207122148">207122148</td>
-                    <td data-sort-value="Wellington House, 3 Wellington Road, EN1 2PB" class="data-table__cell--max-width">Wellington House, 3 Wellington Road, EN1 2PB</td>
-                    
-                    <td>-0.07485</td>
-                    
-                    <td>51.647068</td>
-                    
-                    <td data-sort-value="0.086">0.086</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207122148</td>
+                    <td class="data-table__cell--max-width">Wellington House, 3 Wellington Road, EN1 2PB</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OHIBQ4JNLGA00" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OHIBQ4JNLGA00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OHIBQ4JNLGA00" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OHIBQ4JNLGA00</a></td>
-
+                    <td>51.647068</td>
+                    <td>-0.07485</td>
+                    <td>0.086</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="207007899">207007899</td>
-                    <td data-sort-value="10 Park Road, N18 2UQ" class="data-table__cell--max-width">10 Park Road, N18 2UQ</td>
-                    
-                    <td>-0.065801</td>
-                    
-                    <td>51.617519</td>
-                    
-                    <td data-sort-value="0.088">0.088</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207007899</td>
+                    <td class="data-table__cell--max-width">10 Park Road, N18 2UQ</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N7MCMHJN02E00" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N7MCMHJN02E00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-06-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N7MCMHJN02E00" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=N7MCMHJN02E00</a></td>
-
+                    <td>51.617519</td>
+                    <td>-0.065801</td>
+                    <td>0.088</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="207083627">207083627</td>
-                    <td data-sort-value="42 Station Road, N21 3RA" class="data-table__cell--max-width">42 Station Road, N21 3RA</td>
-                    
-                    <td>-0.098561</td>
-                    
-                    <td>51.633153</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207083627</td>
+                    <td class="data-table__cell--max-width">42 Station Road, N21 3RA</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZKRJNXE793" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZKRJNXE793</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-24</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZKRJNXE793" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZKRJNXE793</a></td>
-
+                    <td>51.633153</td>
+                    <td>-0.098561</td>
+                    <td>0.1</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="207143501">207143501</td>
-                    <td data-sort-value="70-72 Chase Side, N14 5PH" class="data-table__cell--max-width">70-72 Chase Side, N14 5PH</td>
-                    
-                    <td>-0.130024</td>
-                    
-                    <td>51.633462</td>
-                    
-                    <td data-sort-value="0.132">0.132</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207143501</td>
+                    <td class="data-table__cell--max-width">70-72 Chase Side, N14 5PH</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NHG5ODJN28000" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NHG5ODJN28000</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-03-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NHG5ODJN28000" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NHG5ODJN28000</a></td>
-
+                    <td>51.633462</td>
+                    <td>-0.130024</td>
+                    <td>0.132</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="207083997">207083997</td>
-                    <td data-sort-value="Capitol House, 794 Green Lanes, N21 2AW" class="data-table__cell--max-width">Capitol House, 794 Green Lanes, N21 2AW</td>
-                    
-                    <td>-0.094297</td>
-                    
-                    <td>51.632183</td>
-                    
-                    <td data-sort-value="0.245">0.245</td>
-                    
-                    <td data-sort-value="65">65</td>
-                    
-                    <td data-sort-value="65">65</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207083997</td>
+                    <td class="data-table__cell--max-width">Capitol House, 794 Green Lanes, N21 2AW</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OMK05CJN05300" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OMK05CJN05300</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-12</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OMK05CJN05300" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OMK05CJN05300</a></td>
-
+                    <td>51.632183</td>
+                    <td>-0.094297</td>
+                    <td>0.245</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="207158675">207158675</td>
-                    <td data-sort-value="391 Cockfosters Road, EN4 0JS" class="data-table__cell--max-width">391 Cockfosters Road, EN4 0JS</td>
-                    
-                    <td>-0.156218</td>
-                    
-                    <td>51.663464</td>
-                    
-                    <td data-sort-value="0.262">0.262</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207158675</td>
+                    <td class="data-table__cell--max-width">391 Cockfosters Road, EN4 0JS</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZL0JNXE455" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZL0JNXE455</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZL0JNXE455" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZL0JNXE455</a></td>
-
+                    <td>51.663464</td>
+                    <td>-0.156218</td>
+                    <td>0.262</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="207118764">207118764</td>
-                    <td data-sort-value="84 Camlet Way, EN4 0NX" class="data-table__cell--max-width">84 Camlet Way, EN4 0NX</td>
-                    
-                    <td>-0.182645</td>
-                    
-                    <td>51.663833</td>
-                    
-                    <td data-sort-value="0.279">0.279</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
                     <td>2017-12-31</td>
-                    
-                    <td>2017-12-31</td>
+                    <td>local-authority-eng:ENF</td>
+                    <td>207118764</td>
+                    <td class="data-table__cell--max-width">84 Camlet Way, EN4 0NX</td>
+                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OM8RXBJNFOM00" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OM8RXBJNFOM00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/enfield" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/enfield</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OM8RXBJNFOM00" class="govuk-link">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=OM8RXBJNFOM00</a></td>
-
+                    <td>51.663833</td>
+                    <td>-0.182645</td>
+                    <td>0.279</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253" class="govuk-link">3f600edb...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

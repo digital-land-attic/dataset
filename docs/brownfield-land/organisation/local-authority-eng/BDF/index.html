@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="99/01645/OUT">99/01645/OUT</td>
-                    <td data-sort-value="Wixams New Settlement LPH14 H31, Wixams (Land focused on the Elstow Storage Depot)" class="data-table__cell--max-width">Wixams New Settlement LPH14 H31, Wixams (Land focused on the Elstow Storage Depot)</td>
-                    
-                    <td>-4.397928</td>
-                    
-                    <td>54.416511</td>
-                    
-                    <td data-sort-value="189.72">189.72</td>
-                    
-                    <td data-sort-value="1198">1198</td>
-                    
-                    <td data-sort-value="1198">1198</td>
-                    <td>2017-09-30</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>99/01645/OUT</td>
+                    <td class="data-table__cell--max-width">Wixams New Settlement LPH14 H31, Wixams (Land focused on the Elstow Storage Depot)</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2006-06-02</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.416511</td>
+                    <td>-4.397928</td>
+                    <td>189.72</td>
+                    <td>1198</td>
+                    <td>1198</td>
+                    <td>2017-09-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="05/00598/FUL">05/00598/FUL</td>
-                    <td data-sort-value="Telecom House, 25-27 St John's Street, Bedford" class="data-table__cell--max-width">Telecom House, 25-27 St John's Street, Bedford</td>
-                    
-                    <td>-4.325063</td>
-                    
-                    <td>54.418871</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="44">44</td>
-                    
-                    <td data-sort-value="44">44</td>
                     <td>2017-09-30</td>
-                    
-                    <td>2017-09-30</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>05/00598/FUL</td>
+                    <td class="data-table__cell--max-width">Telecom House, 25-27 St John's Street, Bedford</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.418871</td>
+                    <td>-4.325063</td>
+                    <td>0.24</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>2017-09-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="11/02691/MAF">11/02691/MAF</td>
-                    <td data-sort-value="Britannia Iron Works, Kempston Road Phase E, Bedford" class="data-table__cell--max-width">Britannia Iron Works, Kempston Road Phase E, Bedford</td>
-                    
-                    <td>-4.329109</td>
-                    
-                    <td>54.412753</td>
-                    
-                    <td data-sort-value="3.73">3.73</td>
-                    
-                    <td data-sort-value="53">53</td>
-                    
-                    <td data-sort-value="53">53</td>
-                    <td>2017-09-30</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>11/02691/MAF</td>
+                    <td class="data-table__cell--max-width">Britannia Iron Works, Kempston Road Phase E, Bedford</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-12-20</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.412753</td>
+                    <td>-4.329109</td>
+                    <td>3.73</td>
+                    <td>53</td>
+                    <td>53</td>
+                    <td>2017-09-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="12/01253/FUL">12/01253/FUL</td>
-                    <td data-sort-value="Formerly Park Avenue, 25 High Street, Stagsden" class="data-table__cell--max-width">Formerly Park Avenue, 25 High Street, Stagsden</td>
-                    
-                    <td>-4.32474</td>
-                    
-                    <td>54.357893</td>
-                    
-                    <td data-sort-value="0.35">0.35</td>
-                    
-                    <td data-sort-value="0"></td>
-                    
-                    <td data-sort-value="0"></td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>12/01253/FUL</td>
+                    <td class="data-table__cell--max-width">Formerly Park Avenue, 25 High Street, Stagsden</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-01-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.357893</td>
+                    <td>-4.32474</td>
+                    <td>0.35</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2018-11-30</td>
+                    <td>2019-10-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td>2019-10-31</td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="12/01549/MAF">12/01549/MAF</td>
-                    <td data-sort-value="1-13 Greyfriars and 57-65 Midland Road, Bedford" class="data-table__cell--max-width">1-13 Greyfriars and 57-65 Midland Road, Bedford</td>
-                    
-                    <td>-4.316284</td>
-                    
-                    <td>54.415723</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
                     <td>2018-11-30</td>
-                    
-                    <td>2018-11-30</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>12/01549/MAF</td>
+                    <td class="data-table__cell--max-width">1-13 Greyfriars and 57-65 Midland Road, Bedford</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>mixed ownership</td>
-                    <td>2015-02-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.415723</td>
+                    <td>-4.316284</td>
+                    <td>0.2</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="13/00612/MAR">13/00612/MAR</td>
-                    <td data-sort-value="Land at RAF Cardington, Phase 2A, The Highway, Shortstown" class="data-table__cell--max-width">Land at RAF Cardington, Phase 2A, The Highway, Shortstown</td>
-                    
-                    <td>-4.356059</td>
-                    
-                    <td>54.442461</td>
-                    
-                    <td data-sort-value="4.01">4.01</td>
-                    
-                    <td data-sort-value="19">19</td>
-                    
-                    <td data-sort-value="19">19</td>
-                    <td>2017-09-30</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>13/00612/MAR</td>
+                    <td class="data-table__cell--max-width">Land at RAF Cardington, Phase 2A, The Highway, Shortstown</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-09-12</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.442461</td>
+                    <td>-4.356059</td>
+                    <td>4.01</td>
+                    <td>19</td>
+                    <td>19</td>
+                    <td>2017-09-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="13/00829/MAR">13/00829/MAR</td>
-                    <td data-sort-value="Land at RAF Cardington, Phase 2B, The Highway, Shortstown" class="data-table__cell--max-width">Land at RAF Cardington, Phase 2B, The Highway, Shortstown</td>
-                    
-                    <td>-4.360974</td>
-                    
-                    <td>54.442374</td>
-                    
-                    <td data-sort-value="4.55">4.55</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    <td>2017-09-30</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>13/00829/MAR</td>
+                    <td class="data-table__cell--max-width">Land at RAF Cardington, Phase 2B, The Highway, Shortstown</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-01-24</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.442374</td>
+                    <td>-4.360974</td>
+                    <td>4.55</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2017-09-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="13/01054/MAR">13/01054/MAR</td>
-                    <td data-sort-value="Land at RAF Cardington, Phase 2C, The Highway, Shortstown" class="data-table__cell--max-width">Land at RAF Cardington, Phase 2C, The Highway, Shortstown</td>
-                    
-                    <td>-4.360782</td>
-                    
-                    <td>54.443609</td>
-                    
-                    <td data-sort-value="5.43">5.43</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-09-30</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>13/01054/MAR</td>
+                    <td class="data-table__cell--max-width">Land at RAF Cardington, Phase 2C, The Highway, Shortstown</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-01-24</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.443609</td>
+                    <td>-4.360782</td>
+                    <td>5.43</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-09-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="13/01166/MAF">13/01166/MAF</td>
-                    <td data-sort-value="Land at junction of Alexandra Road and Midland Road, Bedford" class="data-table__cell--max-width">Land at junction of Alexandra Road and Midland Road, Bedford</td>
-                    
-                    <td>-4.317428</td>
-                    
-                    <td>54.413867</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    
-                    <td data-sort-value="3">3</td>
-                    <td>2017-09-30</td>
-                    
                     <td>2019-10-31</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>13/01166/MAF</td>
+                    <td class="data-table__cell--max-width">Land at junction of Alexandra Road and Midland Road, Bedford</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-03-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.413867</td>
+                    <td>-4.317428</td>
+                    <td>0.07</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2017-09-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="13/01217/CPNJ">13/01217/CPNJ</td>
-                    <td data-sort-value="14 St Cuthberts Street, Bedford" class="data-table__cell--max-width">14 St Cuthberts Street, Bedford</td>
-                    
-                    <td>-4.314374</td>
-                    
-                    <td>54.420668</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
                     <td>2018-11-30</td>
-                    
-                    <td>2018-11-30</td>
+                    <td>local-authority-eng:BDF</td>
+                    <td>13/01217/CPNJ</td>
+                    <td class="data-table__cell--max-width">14 St Cuthberts Street, Bedford</td>
+                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/bedford" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/bedford</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2013-08-01</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791" class="govuk-link">http://bedford-borough.maps.arcgis.com/apps/webappviewer/index.html?id=6979ef7d6dfa46199cd16490135fa791</a></td>
-
+                    <td>54.420668</td>
+                    <td>-4.314374</td>
+                    <td>0.03</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9a4dbc5dfea6d37441ff4c088bbcd83950753fbf8c44a509024c38795771bdea" class="govuk-link">9a4dbc5d...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

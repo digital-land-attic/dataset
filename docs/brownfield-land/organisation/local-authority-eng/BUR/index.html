@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="HL/1958/00">HL/1958/00</td>
-                    <td data-sort-value="Former Petrol Station, Parr Lane, Unsworth, Bury" class="data-table__cell--max-width">Former Petrol Station, Parr Lane, Unsworth, Bury</td>
-                    
-                    <td>-2.274338</td>
-                    
-                    <td>53.559692</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/1958/00</td>
+                    <td class="data-table__cell--max-width">Former Petrol Station, Parr Lane, Unsworth, Bury</td>
                     <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=381925&y=407043&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=381925&y=407043&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.559692</td>
+                    <td>-2.274338</td>
+                    <td>0.1</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="HL/1981/00">HL/1981/00</td>
-                    <td data-sort-value="Works opposite 101 Mather Road, Bury" class="data-table__cell--max-width">Works opposite 101 Mather Road, Bury</td>
-                    
-                    <td>-2.290475</td>
-                    
-                    <td>53.61672</td>
-                    
-                    <td data-sort-value="0.33">0.33</td>
-                    
-                    <td data-sort-value="24">24</td>
-                    
-                    <td data-sort-value="24">24</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2018-12-13</td>
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/1981/00</td>
+                    <td class="data-table__cell--max-width">Works opposite 101 Mather Road, Bury</td>
+                    <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=380882&y=413392&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=380882&y=413392&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-03-28</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=380882&y=413392&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=380882&y=413392&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td>53.61672</td>
+                    <td>-2.290475</td>
+                    <td>0.33</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="HL/2004/00">HL/2004/00</td>
-                    <td data-sort-value="Adj 13 Bury Road, Radcliffe" class="data-table__cell--max-width">Adj 13 Bury Road, Radcliffe</td>
-                    
-                    <td>-2.320686</td>
-                    
-                    <td>53.563998</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2018-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/2004/00</td>
+                    <td class="data-table__cell--max-width">Adj 13 Bury Road, Radcliffe</td>
                     <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=378857&y=407535&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=378857&y=407535&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.563998</td>
+                    <td>-2.320686</td>
+                    <td>0.26</td>
+                    <td>17</td>
+                    <td>17</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="HL/2057/00">HL/2057/00</td>
-                    <td data-sort-value="Fairfield Service Station, Rochdale Old Road, Bury" class="data-table__cell--max-width">Fairfield Service Station, Rochdale Old Road, Bury</td>
-                    
-                    <td>-2.261835</td>
-                    
-                    <td>53.600742</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/2057/00</td>
+                    <td class="data-table__cell--max-width">Fairfield Service Station, Rochdale Old Road, Bury</td>
                     <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=382770&y=411607&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=382770&y=411607&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.600742</td>
+                    <td>-2.261835</td>
+                    <td>0.1</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="HL/2127/00">HL/2127/00</td>
-                    <td data-sort-value="Wellington Garage, Deardens Street, Bury" class="data-table__cell--max-width">Wellington Garage, Deardens Street, Bury</td>
-                    
-                    <td>-2.316917</td>
-                    
-                    <td>53.588969</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/2127/00</td>
+                    <td class="data-table__cell--max-width">Wellington Garage, Deardens Street, Bury</td>
+                    <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=379119&y=410312&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=379119&y=410312&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-07-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=379119&y=410312&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=379119&y=410312&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td>53.588969</td>
+                    <td>-2.316917</td>
+                    <td>0.07</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="HL/2146/00">HL/2146/00</td>
-                    <td data-sort-value="East Lancs Paper Mill Site, Rectory Lane, Radcliffe" class="data-table__cell--max-width">East Lancs Paper Mill Site, Rectory Lane, Radcliffe</td>
-                    
-                    <td>-2.314554</td>
-                    
-                    <td>53.563646</td>
-                    
-                    <td data-sort-value="19.72">19.72</td>
-                    
-                    <td data-sort-value="400">400</td>
-                    
-                    <td data-sort-value="400">400</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2018-12-13</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/2146/00</td>
+                    <td class="data-table__cell--max-width">East Lancs Paper Mill Site, Rectory Lane, Radcliffe</td>
                     <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=379263&y=407494&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=379263&y=407494&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.563646</td>
+                    <td>-2.314554</td>
+                    <td>19.72</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="HL/2148/00">HL/2148/00</td>
-                    <td data-sort-value="Radcliffe High School, Abden Street, Radcliffe" class="data-table__cell--max-width">Radcliffe High School, Abden Street, Radcliffe</td>
-                    
-                    <td>-2.333826</td>
-                    
-                    <td>53.560781</td>
-                    
-                    <td data-sort-value="2.3">2.3</td>
-                    
-                    <td data-sort-value="90">90</td>
-                    
-                    <td data-sort-value="90">90</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/2148/00</td>
+                    <td class="data-table__cell--max-width">Radcliffe High School, Abden Street, Radcliffe</td>
                     <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=377985&y=407181&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=377985&y=407181&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.560781</td>
+                    <td>-2.333826</td>
+                    <td>2.3</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="HL/2149/00">HL/2149/00</td>
-                    <td data-sort-value="44-48 Stand Lane & 4-6 New Street, Radcliffe" class="data-table__cell--max-width">44-48 Stand Lane & 4-6 New Street, Radcliffe</td>
-                    
-                    <td>-2.323188</td>
-                    
-                    <td>53.55743</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/2149/00</td>
+                    <td class="data-table__cell--max-width">44-48 Stand Lane & 4-6 New Street, Radcliffe</td>
                     <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=378688&y=406805&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=378688&y=406805&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.55743</td>
+                    <td>-2.323188</td>
+                    <td>0.09</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="HL/2157/00">HL/2157/00</td>
-                    <td data-sort-value="Hutchinson Way/Hindle Street, Radcliffe" class="data-table__cell--max-width">Hutchinson Way/Hindle Street, Radcliffe</td>
-                    
-                    <td>-2.330602</td>
-                    
-                    <td>53.55963</td>
-                    
-                    <td data-sort-value="0.72">0.72</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    <td>2017-12-19</td>
-                    
                     <td>2018-12-13</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/2157/00</td>
+                    <td class="data-table__cell--max-width">Hutchinson Way/Hindle Street, Radcliffe</td>
                     <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=378198&y=407052&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=378198&y=407052&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.55963</td>
+                    <td>-2.330602</td>
+                    <td>0.72</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,43 +435,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="HL/2169/00">HL/2169/00</td>
-                    <td data-sort-value="Rear of Unsworth Methodist Church, Hollins Lane, Bury" class="data-table__cell--max-width">Rear of Unsworth Methodist Church, Hollins Lane, Bury</td>
-                    
-                    <td>-2.273856</td>
-                    
-                    <td>53.566964</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
                     <td>2017-12-19</td>
-                    
-                    <td>2017-12-19</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/bury" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/bury</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BUR</td>
+                    <td>HL/2169/00</td>
+                    <td class="data-table__cell--max-width">Rear of Unsworth Methodist Church, Hollins Lane, Bury</td>
                     <td><a href="http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=381960&y=407852&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container" class="govuk-link">http://maps.bury.gov.uk/webmaplayers8/Map.aspx?x=381960&y=407852&resolution=0.5&epsg=27700&mapname=bury_shlaa_external&baseLayer=GreyScaleBury&datalayers=Brownfield%20Land%20Register%20now%2CBury%20Council%2CselectFeaturesControl_container</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.566964</td>
+                    <td>-2.273856</td>
+                    <td>0.26</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-19</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/32bf55e218c91bb245054bd8f1a2b0193dca16a1af7a2217933baf2db515bef8" class="govuk-link">32bf55e2...</a></td>
                 </tr>
                 
             </tbody>
@@ -580,6 +469,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

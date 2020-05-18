@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,239 +154,172 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="15/00218/FUL">15/00218/FUL</td>
-                    <td data-sort-value="The Sportsman, New Bolsover, Bolsover, Chesterfield, S44 6QD" class="data-table__cell--max-width">The Sportsman, New Bolsover, Bolsover, Chesterfield, S44 6QD</td>
-                    
-                    <td>-1.305829</td>
-                    
-                    <td>53.228592</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
+                    <td>local-authority-eng:BOS</td>
+                    <td>15/00218/FUL</td>
+                    <td class="data-table__cell--max-width">The Sportsman, New Bolsover, Bolsover, Chesterfield, S44 6QD</td>
+                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/The-Sportsman-New-Bolsover.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/The-Sportsman-New-Bolsover.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-06-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/The-Sportsman-New-Bolsover.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/The-Sportsman-New-Bolsover.pdf</a></td>
-
+                    <td>53.228592</td>
+                    <td>-1.305829</td>
+                    <td>0.05</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="16/00504/FUL">16/00504/FUL</td>
-                    <td data-sort-value="Shirebrook Miners Welfare Institute, Central Drive, Shirebrook, Mansfield, NG20 8BA" class="data-table__cell--max-width">Shirebrook Miners Welfare Institute, Central Drive, Shirebrook, Mansfield, NG20 8BA</td>
-                    
-                    <td>-1.218465</td>
-                    
-                    <td>53.201516</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
+                    <td>local-authority-eng:BOS</td>
+                    <td>16/00504/FUL</td>
+                    <td class="data-table__cell--max-width">Shirebrook Miners Welfare Institute, Central Drive, Shirebrook, Mansfield, NG20 8BA</td>
+                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Shirebrook-Miners-Welfare.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Shirebrook-Miners-Welfare.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Shirebrook-Miners-Welfare.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Shirebrook-Miners-Welfare.pdf</a></td>
-
+                    <td>53.201516</td>
+                    <td>-1.218465</td>
+                    <td>0.2</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="17/00082/OUT">17/00082/OUT</td>
-                    <td data-sort-value="The White Swan, Market Place, Bolsover, Chesterfield, S44 6PH" class="data-table__cell--max-width">The White Swan, Market Place, Bolsover, Chesterfield, S44 6PH</td>
-                    
-                    <td>-1.291664</td>
-                    
-                    <td>53.2301</td>
-                    
-                    <td data-sort-value="0.2">0.2</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
+                    <td>local-authority-eng:BOS</td>
+                    <td>17/00082/OUT</td>
+                    <td class="data-table__cell--max-width">The White Swan, Market Place, Bolsover, Chesterfield, S44 6PH</td>
+                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/The-White-Swan-Bolsover.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/The-White-Swan-Bolsover.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-04</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/The-White-Swan-Bolsover.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/The-White-Swan-Bolsover.pdf</a></td>
-
+                    <td>53.2301</td>
+                    <td>-1.291664</td>
+                    <td>0.2</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="17/00104/FUL">17/00104/FUL</td>
-                    <td data-sort-value="Land along Railway, North East of Southfield Lane, Whitwell" class="data-table__cell--max-width">Land along Railway, North East of Southfield Lane, Whitwell</td>
-                    
-                    <td>-1.20208</td>
-                    
-                    <td>53.279279</td>
-                    
-                    <td data-sort-value="0.83">0.83</td>
-                    
-                    <td data-sort-value="19">19</td>
-                    
-                    <td data-sort-value="19">19</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
+                    <td>local-authority-eng:BOS</td>
+                    <td>17/00104/FUL</td>
+                    <td class="data-table__cell--max-width">Land along Railway, North East of Southfield Lane, Whitwell</td>
+                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Land-Along-Railway-Southfield-Lane-Whitwell.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Land-Along-Railway-Southfield-Lane-Whitwell.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Land-Along-Railway-Southfield-Lane-Whitwell.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Land-Along-Railway-Southfield-Lane-Whitwell.pdf</a></td>
-
+                    <td>53.279279</td>
+                    <td>-1.20208</td>
+                    <td>0.83</td>
+                    <td>19</td>
+                    <td>19</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="17/00114/FUL">17/00114/FUL</td>
-                    <td data-sort-value="Site of Bolsover District Council Depot, Meadow Lane, South Normanton" class="data-table__cell--max-width">Site of Bolsover District Council Depot, Meadow Lane, South Normanton</td>
-                    
-                    <td>-1.342484</td>
-                    
-                    <td>53.110234</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
+                    <td>local-authority-eng:BOS</td>
+                    <td>17/00114/FUL</td>
+                    <td class="data-table__cell--max-width">Site of Bolsover District Council Depot, Meadow Lane, South Normanton</td>
+                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-District-Council-Depot-Meadow-Lane-Bolsover.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-District-Council-Depot-Meadow-Lane-Bolsover.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-11-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-District-Council-Depot-Meadow-Lane-Bolsover.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-District-Council-Depot-Meadow-Lane-Bolsover.pdf</a></td>
-
+                    <td>53.110234</td>
+                    <td>-1.342484</td>
+                    <td>0.28</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="Bolsover-35">Bolsover-35</td>
-                    <td data-sort-value="Fourways Garage, Rotherham Road, Bolsover" class="data-table__cell--max-width">Fourways Garage, Rotherham Road, Bolsover</td>
-                    
-                    <td>-1.270216</td>
-                    
-                    <td>53.22366</td>
-                    
-                    <td data-sort-value="0.42">0.42</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BOS</td>
+                    <td>Bolsover-35</td>
+                    <td class="data-table__cell--max-width">Fourways Garage, Rotherham Road, Bolsover</td>
                     <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Fourways-Garage-Rotherham-Road-Bolsover.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Fourways-Garage-Rotherham-Road-Bolsover.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.22366</td>
+                    <td>-1.270216</td>
+                    <td>0.42</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -395,38 +328,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="Clowne-17">Clowne-17</td>
-                    <td data-sort-value="Land East of Station Road, Clowne" class="data-table__cell--max-width">Land East of Station Road, Clowne</td>
-                    
-                    <td>-1.258897</td>
-                    
-                    <td>53.276311</td>
-                    
-                    <td data-sort-value="1.75">1.75</td>
-                    
-                    <td data-sort-value="52">52</td>
-                    
-                    <td data-sort-value="52">52</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BOS</td>
+                    <td>Clowne-17</td>
+                    <td class="data-table__cell--max-width">Land East of Station Road, Clowne</td>
                     <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Land-East-of-Station-Road-Clowne.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Land-East-of-Station-Road-Clowne.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.276311</td>
+                    <td>-1.258897</td>
+                    <td>1.75</td>
+                    <td>52</td>
+                    <td>52</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -435,74 +357,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="16/00530/FUL">16/00530/FUL</td>
-                    <td data-sort-value="Land at former Shirebrook Station, Shirebrook" class="data-table__cell--max-width">Land at former Shirebrook Station, Shirebrook</td>
-                    
-                    <td>-1.212699</td>
-                    
-                    <td>53.213056</td>
-                    
-                    <td data-sort-value="2.2">2.2</td>
-                    
-                    <td data-sort-value="68">68</td>
-                    
-                    <td data-sort-value="68">68</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
+                    <td>local-authority-eng:BOS</td>
+                    <td>16/00530/FUL</td>
+                    <td class="data-table__cell--max-width">Land at former Shirebrook Station, Shirebrook</td>
+                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-Shirebrook-Station.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-Shirebrook-Station.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-Shirebrook-Station.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-Shirebrook-Station.pdf</a></td>
-
+                    <td>53.213056</td>
+                    <td>-1.212699</td>
+                    <td>2.2</td>
+                    <td>68</td>
+                    <td>68</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="18/00452/OUT">18/00452/OUT</td>
-                    <td data-sort-value="Former Whitwell Colliery, Whitwell" class="data-table__cell--max-width">Former Whitwell Colliery, Whitwell</td>
-                    
-                    <td>-1.19731</td>
-                    
-                    <td>53.279292</td>
-                    
-                    <td data-sort-value="9.68">9.68</td>
-                    
-                    <td data-sort-value="186">186</td>
-                    
-                    <td data-sort-value="186">186</td>
-                    <td>2017-10-31</td>
-                    
                     <td>2018-10-31</td>
+                    <td>local-authority-eng:BOS</td>
+                    <td>18/00452/OUT</td>
+                    <td class="data-table__cell--max-width">Former Whitwell Colliery, Whitwell</td>
+                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Whitwell-Tip--Surrounding-Land.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Whitwell-Tip--Surrounding-Land.pdf</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Whitwell-Tip--Surrounding-Land.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Whitwell-Tip--Surrounding-Land.pdf</a></td>
-
+                    <td>53.279292</td>
+                    <td>-1.19731</td>
+                    <td>9.68</td>
+                    <td>186</td>
+                    <td>186</td>
+                    <td>2017-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -511,43 +411,32 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="17/00314/FUL">17/00314/FUL</td>
-                    <td data-sort-value="Former Courtaulds PLC, Oxcroft Lane, Bolsover" class="data-table__cell--max-width">Former Courtaulds PLC, Oxcroft Lane, Bolsover</td>
-                    
-                    <td>-1.288946</td>
-                    
-                    <td>53.237706</td>
-                    
-                    <td data-sort-value="1.4">1.4</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    
-                    <td data-sort-value="35">35</td>
                     <td>2018-10-31</td>
-                    
-                    <td>2018-10-31</td>
+                    <td>local-authority-eng:BOS</td>
+                    <td>17/00314/FUL</td>
+                    <td class="data-table__cell--max-width">Former Courtaulds PLC, Oxcroft Lane, Bolsover</td>
+                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-Courtaulds-PLC-Oxcroft-Lane.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-Courtaulds-PLC-Oxcroft-Lane.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/bolsover" class="govuk-link">http://opendatacommunities.org/id/district-council/bolsover</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-Courtaulds-PLC-Oxcroft-Lane.pdf" class="govuk-link">https://www.bolsover.gov.uk/images/LIVE/Brownfield_Land_Register/Former-Courtaulds-PLC-Oxcroft-Lane.pdf</a></td>
-
+                    <td>53.237706</td>
+                    <td>-1.288946</td>
+                    <td>1.4</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>2018-10-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/254f9eac6d49b57c2c4e90f1b24fe10d0154a956ff24f72e3dfd9a8788d4641d" class="govuk-link">254f9eac...</a></td>
                 </tr>
                 
             </tbody>
@@ -556,6 +445,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

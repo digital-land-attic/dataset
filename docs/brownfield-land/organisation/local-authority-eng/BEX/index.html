@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR002">BLR002</td>
-                    <td data-sort-value="1st Floor, 234-236 Broadway, Bexleyheath" class="data-table__cell--max-width">1st Floor, 234-236 Broadway, Bexleyheath</td>
-                    
-                    <td>0.137412</td>
-                    
-                    <td>51.457821</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR002</td>
+                    <td class="data-table__cell--max-width">1st Floor, 234-236 Broadway, Bexleyheath</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-10-31</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.457821</td>
+                    <td>0.137412</td>
+                    <td>0.02</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR003">BLR003</td>
-                    <td data-sort-value="The Former Pop In Parlour, Cornelia Place, Erith" class="data-table__cell--max-width">The Former Pop In Parlour, Cornelia Place, Erith</td>
-                    
-                    <td>0.179809</td>
-                    
-                    <td>51.479028</td>
-                    
-                    <td data-sort-value="0.026">0.026</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR003</td>
+                    <td class="data-table__cell--max-width">The Former Pop In Parlour, Cornelia Place, Erith</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-10-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.479028</td>
+                    <td>0.179809</td>
+                    <td>0.026</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR004">BLR004</td>
-                    <td data-sort-value="Ground Floor, 76 & 78 Crayford High Street, Crayford" class="data-table__cell--max-width">Ground Floor, 76 & 78 Crayford High Street, Crayford</td>
-                    
-                    <td>0.177654</td>
-                    
-                    <td>51.453438</td>
-                    
-                    <td data-sort-value="0.028">0.028</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    
-                    <td data-sort-value="27">27</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR004</td>
+                    <td class="data-table__cell--max-width">Ground Floor, 76 & 78 Crayford High Street, Crayford</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-23</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.453438</td>
+                    <td>0.177654</td>
+                    <td>0.028</td>
+                    <td>27</td>
+                    <td>27</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR005">BLR005</td>
-                    <td data-sort-value="Land to the rear of, 89 Sidcup High Street, Sidcup" class="data-table__cell--max-width">Land to the rear of, 89 Sidcup High Street, Sidcup</td>
-                    
-                    <td>0.101389</td>
-                    
-                    <td>51.426664</td>
-                    
-                    <td data-sort-value="0.045">0.045</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR005</td>
+                    <td class="data-table__cell--max-width">Land to the rear of, 89 Sidcup High Street, Sidcup</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-06-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.426664</td>
+                    <td>0.101389</td>
+                    <td>0.045</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR006">BLR006</td>
-                    <td data-sort-value="61-63 Lion Road, Bexleyheath" class="data-table__cell--max-width">61-63 Lion Road, Bexleyheath</td>
-                    
-                    <td>0.136162</td>
-                    
-                    <td>51.456332</td>
-                    
-                    <td data-sort-value="0.047">0.047</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR006</td>
+                    <td class="data-table__cell--max-width">61-63 Lion Road, Bexleyheath</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-02-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.456332</td>
+                    <td>0.136162</td>
+                    <td>0.047</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR015">BLR015</td>
-                    <td data-sort-value="Rear of, 188d Halfway Street, Sidcup" class="data-table__cell--max-width">Rear of, 188d Halfway Street, Sidcup</td>
-                    
-                    <td>0.087023</td>
-                    
-                    <td>51.441579</td>
-                    
-                    <td data-sort-value="0.043">0.043</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR015</td>
+                    <td class="data-table__cell--max-width">Rear of, 188d Halfway Street, Sidcup</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-04-15</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.441579</td>
+                    <td>0.087023</td>
+                    <td>0.043</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR020">BLR020</td>
-                    <td data-sort-value="70-74 Sidcup High Street, Sidcup" class="data-table__cell--max-width">70-74 Sidcup High Street, Sidcup</td>
-                    
-                    <td>0.102774</td>
-                    
-                    <td>51.426126</td>
-                    
-                    <td data-sort-value="0.054">0.054</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR020</td>
+                    <td class="data-table__cell--max-width">70-74 Sidcup High Street, Sidcup</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-04-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.426126</td>
+                    <td>0.102774</td>
+                    <td>0.054</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR021">BLR021</td>
-                    <td data-sort-value="178 Park View Road, Welling" class="data-table__cell--max-width">178 Park View Road, Welling</td>
-                    
-                    <td>0.114202</td>
-                    
-                    <td>51.46174</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR021</td>
+                    <td class="data-table__cell--max-width">178 Park View Road, Welling</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-07-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.46174</td>
+                    <td>0.114202</td>
+                    <td>0.06</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR022">BLR022</td>
-                    <td data-sort-value="475, 475a and 475b Blackfen Road, Sidcup" class="data-table__cell--max-width">475, 475a and 475b Blackfen Road, Sidcup</td>
-                    
-                    <td>0.115888</td>
-                    
-                    <td>51.448418</td>
-                    
-                    <td data-sort-value="0.067">0.067</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR022</td>
+                    <td class="data-table__cell--max-width">475, 475a and 475b Blackfen Road, Sidcup</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-21</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.448418</td>
+                    <td>0.115888</td>
+                    <td>0.067</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR023">BLR023</td>
-                    <td data-sort-value="Garage site in, Kay Street, Welling" class="data-table__cell--max-width">Garage site in, Kay Street, Welling</td>
-                    
-                    <td>0.11118</td>
-                    
-                    <td>51.470185</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-12-07</td>
-                    
-                    <td>2017-12-07</td>
+                    <td>local-authority-eng:BEX</td>
+                    <td>BLR023</td>
+                    <td class="data-table__cell--max-width">Garage site in, Kay Street, Welling</td>
+                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/bexley" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/bexley</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-31</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register" class="govuk-link">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a></td>
-
+                    <td>51.470185</td>
+                    <td>0.11118</td>
+                    <td>0.22</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-07</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/e2c1332237a2337864b5b94616fd45217dccf26c640722129d7e3a2c6b7cc303" class="govuk-link">e2c13322...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

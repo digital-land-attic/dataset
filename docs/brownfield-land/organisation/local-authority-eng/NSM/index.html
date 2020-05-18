@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="NSBR0005">NSBR0005</td>
-                    <td data-sort-value="Marine View Harbour Road Portishead" class="data-table__cell--max-width">Marine View Harbour Road Portishead</td>
-                    
-                    <td>-2.761509</td>
-                    
-                    <td>51.486145</td>
-                    
-                    <td data-sort-value="0.97">0.97</td>
-                    
-                    <td data-sort-value="126">126</td>
-                    
-                    <td data-sort-value="126">126</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0005</td>
+                    <td class="data-table__cell--max-width">Marine View Harbour Road Portishead</td>
+                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=347254.622&y=176638.449&scale=2048" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=347254.622&y=176638.449&scale=2048</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=347254.622&y=176638.449&scale=2048" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=347254.622&y=176638.449&scale=2048</a></td>
-
+                    <td>51.486145</td>
+                    <td>-2.761509</td>
+                    <td>0.97</td>
+                    <td>126</td>
+                    <td>126</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="NSBR0006">NSBR0006</td>
-                    <td data-sort-value="South west of Severn Paper Mill site Portishead" class="data-table__cell--max-width">South west of Severn Paper Mill site Portishead</td>
-                    
-                    <td>-2.757758</td>
-                    
-                    <td>51.486619</td>
-                    
-                    <td data-sort-value="1.62">1.62</td>
-                    
-                    <td data-sort-value="69">69</td>
-                    
-                    <td data-sort-value="69">69</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0006</td>
+                    <td class="data-table__cell--max-width">South west of Severn Paper Mill site Portishead</td>
+                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=347498.462&y=176691.010&scale=2048" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=347498.462&y=176691.010&scale=2048</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=347498.462&y=176691.010&scale=2048" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=347498.462&y=176691.010&scale=2048</a></td>
-
+                    <td>51.486619</td>
+                    <td>-2.757758</td>
+                    <td>1.62</td>
+                    <td>69</td>
+                    <td>69</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="NSBR0007">NSBR0007</td>
-                    <td data-sort-value="Bayside Hotel Manilla Crescent Weston-super-Mare" class="data-table__cell--max-width">Bayside Hotel Manilla Crescent Weston-super-Mare</td>
-                    
-                    <td>-2.987194</td>
-                    
-                    <td>51.353495</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="24">24</td>
-                    
-                    <td data-sort-value="24">24</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0007</td>
+                    <td class="data-table__cell--max-width">Bayside Hotel Manilla Crescent Weston-super-Mare</td>
+                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=331388.324&y=162072.126&scale=2048" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=331388.324&y=162072.126&scale=2048</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=331388.324&y=162072.126&scale=2048" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=331388.324&y=162072.126&scale=2048</a></td>
-
+                    <td>51.353495</td>
+                    <td>-2.987194</td>
+                    <td>0.15</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="NSBR0009">NSBR0009</td>
-                    <td data-sort-value="Former Weston Library Boulevard Weston-super-Mare" class="data-table__cell--max-width">Former Weston Library Boulevard Weston-super-Mare</td>
-                    
-                    <td>-2.972718</td>
-                    
-                    <td>51.350082</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0009</td>
+                    <td class="data-table__cell--max-width">Former Weston Library Boulevard Weston-super-Mare</td>
+                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=332368.599&y=161680.410&scale=1024" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=332368.599&y=161680.410&scale=1024</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-02-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=332368.599&y=161680.410&scale=1024" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=332368.599&y=161680.410&scale=1024</a></td>
-
+                    <td>51.350082</td>
+                    <td>-2.972718</td>
+                    <td>0.1</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="NSBR0010">NSBR0010</td>
-                    <td data-sort-value="Oxford Plasma Technology North End Road Yatton" class="data-table__cell--max-width">Oxford Plasma Technology North End Road Yatton</td>
-                    
-                    <td>-2.829765</td>
-                    
-                    <td>51.39357</td>
-                    
-                    <td data-sort-value="1.41">1.41</td>
-                    
-                    <td data-sort-value="55">55</td>
-                    
-                    <td data-sort-value="55">55</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0010</td>
+                    <td class="data-table__cell--max-width">Oxford Plasma Technology North End Road Yatton</td>
+                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=342399.003&y=166408.261&scale=4096" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=342399.003&y=166408.261&scale=4096</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-15</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=342399.003&y=166408.261&scale=4096" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=342399.003&y=166408.261&scale=4096</a></td>
-
+                    <td>51.39357</td>
+                    <td>-2.829765</td>
+                    <td>1.41</td>
+                    <td>55</td>
+                    <td>55</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="NSBR0012">NSBR0012</td>
-                    <td data-sort-value="Winford Coach Station 10 High Street Winford" class="data-table__cell--max-width">Winford Coach Station 10 High Street Winford</td>
-                    
-                    <td>-2.662492</td>
-                    
-                    <td>51.382559</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0012</td>
+                    <td class="data-table__cell--max-width">Winford Coach Station 10 High Street Winford</td>
+                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=354021.187&y=165063.767&scale=4096" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=354021.187&y=165063.767&scale=4096</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-08-16</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=354021.187&y=165063.767&scale=4096" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=354021.187&y=165063.767&scale=4096</a></td>
-
+                    <td>51.382559</td>
+                    <td>-2.662492</td>
+                    <td>0.24</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="NSBR0014">NSBR0014</td>
-                    <td data-sort-value="Land at Western Trade Centre Knightcott Road Banwell" class="data-table__cell--max-width">Land at Western Trade Centre Knightcott Road Banwell</td>
-                    
-                    <td>-2.88462</td>
-                    
-                    <td>51.329083</td>
-                    
-                    <td data-sort-value="0.37">0.37</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0014</td>
+                    <td class="data-table__cell--max-width">Land at Western Trade Centre Knightcott Road Banwell</td>
+                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=338570.116&y=159224.142&scale=4096" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=338570.116&y=159224.142&scale=4096</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-06-04</td>
+                    <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=338570.116&y=159224.142&scale=4096" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=338570.116&y=159224.142&scale=4096</a></td>
-
+                    <td>51.329083</td>
+                    <td>-2.88462</td>
+                    <td>0.37</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="NSBR0015">NSBR0015</td>
-                    <td data-sort-value="Tickenham Garden Centre Clevedon Road Tickenham" class="data-table__cell--max-width">Tickenham Garden Centre Clevedon Road Tickenham</td>
-                    
-                    <td>-2.777544</td>
-                    
-                    <td>51.442457</td>
-                    
-                    <td data-sort-value="1.94">1.94</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    
-                    <td data-sort-value="32">32</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0015</td>
+                    <td class="data-table__cell--max-width">Tickenham Garden Centre Clevedon Road Tickenham</td>
+                    <td><a href="http://map.n-omerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=346136.073&y=171781.995&scale=4096" class="govuk-link">http://map.n-omerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=346136.073&y=171781.995&scale=4096</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-06-23</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-omerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=346136.073&y=171781.995&scale=4096" class="govuk-link">http://map.n-omerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=346136.073&y=171781.995&scale=4096</a></td>
-
+                    <td>51.442457</td>
+                    <td>-2.777544</td>
+                    <td>1.94</td>
+                    <td>32</td>
+                    <td>32</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="NSBR0016">NSBR0016</td>
-                    <td data-sort-value="Bleadon Quarry Bleadon" class="data-table__cell--max-width">Bleadon Quarry Bleadon</td>
-                    
-                    <td>-2.946448</td>
-                    
-                    <td>51.305194</td>
-                    
-                    <td data-sort-value="3.42">3.42</td>
-                    
-                    <td data-sort-value="42">42</td>
-                    
-                    <td data-sort-value="42">42</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0016</td>
+                    <td class="data-table__cell--max-width">Bleadon Quarry Bleadon</td>
+                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=334246.414&y=156585.034&scale=8192" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=334246.414&y=156585.034&scale=8192</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-08-08</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=334246.414&y=156585.034&scale=8192" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=334246.414&y=156585.034&scale=8192</a></td>
-
+                    <td>51.305194</td>
+                    <td>-2.946448</td>
+                    <td>3.42</td>
+                    <td>42</td>
+                    <td>42</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="NSBR0017">NSBR0017</td>
-                    <td data-sort-value="Royal Pier Hotel Birnbeck Road Weston-super-Mare" class="data-table__cell--max-width">Royal Pier Hotel Birnbeck Road Weston-super-Mare</td>
-                    
-                    <td>-2.994277</td>
-                    
-                    <td>51.354973</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="63">63</td>
-                    
-                    <td data-sort-value="63">63</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/north-somerset" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/north-somerset</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>pending decision</td>
-                    
+                    <td>local-authority-eng:NSM</td>
+                    <td>NSBR0017</td>
+                    <td class="data-table__cell--max-width">Royal Pier Hotel Birnbeck Road Weston-super-Mare</td>
                     <td><a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=330877.148&y=162235.210&scale=1024" class="govuk-link">http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&nocache=0.5788848812441214&script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&x=330877.148&y=162235.210&scale=1024</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.354973</td>
+                    <td>-2.994277</td>
+                    <td>0.17</td>
+                    <td>63</td>
+                    <td>63</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/da98a951d37e6a2fff10956c22c5fbbc0314e8304a002104a235db896b50fcec" class="govuk-link">da98a951...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

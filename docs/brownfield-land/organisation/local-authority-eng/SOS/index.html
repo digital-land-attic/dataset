@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR1">BR1</td>
-                    <td data-sort-value="48 Alexandra Street, Southend-On-Sea, Essex, SS1 1BJ" class="data-table__cell--max-width">48 Alexandra Street, Southend-On-Sea, Essex, SS1 1BJ</td>
-                    
-                    <td>0.710936</td>
-                    
-                    <td>51.535399</td>
-                    
-                    <td data-sort-value="0.053">0.053</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR1</td>
+                    <td class="data-table__cell--max-width">48 Alexandra Street, Southend-On-Sea, Essex, SS1 1BJ</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-03-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.535399</td>
+                    <td>0.710936</td>
+                    <td>0.053</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR4">BR4</td>
-                    <td data-sort-value="Car Park Centurion Close, Shoeburyness, Essex, SS3 9UT" class="data-table__cell--max-width">Car Park Centurion Close, Shoeburyness, Essex, SS3 9UT</td>
-                    
-                    <td>0.794553</td>
-                    
-                    <td>51.539237</td>
-                    
-                    <td data-sort-value="0.42">0.42</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR4</td>
+                    <td class="data-table__cell--max-width">Car Park Centurion Close, Shoeburyness, Essex, SS3 9UT</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-03-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.539237</td>
+                    <td>0.794553</td>
+                    <td>0.42</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR5">BR5</td>
-                    <td data-sort-value="Chartwell House Chartwell Square (Plaza Centre), Southend-On-Sea, Essex, SS2 5SP" class="data-table__cell--max-width">Chartwell House Chartwell Square (Plaza Centre), Southend-On-Sea, Essex, SS2 5SP</td>
-                    
-                    <td>0.712511</td>
-                    
-                    <td>51.540552</td>
-                    
-                    <td data-sort-value="0.189">0.189</td>
-                    
-                    <td data-sort-value="108">108</td>
-                    
-                    <td data-sort-value="108">108</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR5</td>
+                    <td class="data-table__cell--max-width">Chartwell House Chartwell Square (Plaza Centre), Southend-On-Sea, Essex, SS2 5SP</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-01-05</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.540552</td>
+                    <td>0.712511</td>
+                    <td>0.189</td>
+                    <td>108</td>
+                    <td>108</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR6">BR6</td>
-                    <td data-sort-value="Part Of Former Keddies Building And Maitland House Chichester Road, Southend-On-Sea, Essex, SS1 2JY" class="data-table__cell--max-width">Part Of Former Keddies Building And Maitland House Chichester Road, Southend-On-Sea, Essex, SS1 2JY</td>
-                    
-                    <td>0.713596</td>
-                    
-                    <td>51.53916</td>
-                    
-                    <td data-sort-value="0.276">0.276</td>
-                    
-                    <td data-sort-value="98">98</td>
-                    
-                    <td data-sort-value="98">98</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR6</td>
+                    <td class="data-table__cell--max-width">Part Of Former Keddies Building And Maitland House Chichester Road, Southend-On-Sea, Essex, SS1 2JY</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2011-06-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.53916</td>
+                    <td>0.713596</td>
+                    <td>0.276</td>
+                    <td>98</td>
+                    <td>98</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR7">BR7</td>
-                    <td data-sort-value="8 (Central House) Clifftown Road, Southend-On-Sea, Essex, SS1 1AB" class="data-table__cell--max-width">8 (Central House) Clifftown Road, Southend-On-Sea, Essex, SS1 1AB</td>
-                    
-                    <td>0.712727</td>
-                    
-                    <td>51.537148</td>
-                    
-                    <td data-sort-value="0.296">0.296</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    
-                    <td data-sort-value="28">28</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR7</td>
+                    <td class="data-table__cell--max-width">8 (Central House) Clifftown Road, Southend-On-Sea, Essex, SS1 1AB</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2014-09-05</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.537148</td>
+                    <td>0.712727</td>
+                    <td>0.296</td>
+                    <td>28</td>
+                    <td>28</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR8">BR8</td>
-                    <td data-sort-value="6 (The Britannia) Eastern Esplanade, Southend-On-Sea, Essex, SS1 2ER" class="data-table__cell--max-width">6 (The Britannia) Eastern Esplanade, Southend-On-Sea, Essex, SS1 2ER</td>
-                    
-                    <td>0.725024</td>
-                    
-                    <td>51.532483</td>
-                    
-                    <td data-sort-value="0.049">0.049</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR8</td>
+                    <td class="data-table__cell--max-width">6 (The Britannia) Eastern Esplanade, Southend-On-Sea, Essex, SS1 2ER</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.532483</td>
+                    <td>0.725024</td>
+                    <td>0.049</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR9">BR9</td>
-                    <td data-sort-value="57-59 (The Sarah Moore Public House) Elm Road, Leigh-on-Sea, Essex, SS9 1SP" class="data-table__cell--max-width">57-59 (The Sarah Moore Public House) Elm Road, Leigh-on-Sea, Essex, SS9 1SP</td>
-                    
-                    <td>0.654016</td>
-                    
-                    <td>51.544067</td>
-                    
-                    <td data-sort-value="0.066">0.066</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR9</td>
+                    <td class="data-table__cell--max-width">57-59 (The Sarah Moore Public House) Elm Road, Leigh-on-Sea, Essex, SS9 1SP</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.544067</td>
+                    <td>0.654016</td>
+                    <td>0.066</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR10">BR10</td>
-                    <td data-sort-value="9 Elmer Approach, Southend-On-Sea, Essex, SS1 1NE" class="data-table__cell--max-width">9 Elmer Approach, Southend-On-Sea, Essex, SS1 1NE</td>
-                    
-                    <td>0.712014</td>
-                    
-                    <td>51.538495</td>
-                    
-                    <td data-sort-value="0.197">0.197</td>
-                    
-                    <td data-sort-value="140">140</td>
-                    
-                    <td data-sort-value="140">140</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR10</td>
+                    <td class="data-table__cell--max-width">9 Elmer Approach, Southend-On-Sea, Essex, SS1 1NE</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-02-07</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.538495</td>
+                    <td>0.712014</td>
+                    <td>0.197</td>
+                    <td>140</td>
+                    <td>140</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR11">BR11</td>
-                    <td data-sort-value="Venture House (First Floor) Essex Street, Southend-On-Sea, Essex, SS1 2NY" class="data-table__cell--max-width">Venture House (First Floor) Essex Street, Southend-On-Sea, Essex, SS1 2NY</td>
-                    
-                    <td>0.715698</td>
-                    
-                    <td>51.540541</td>
-                    
-                    <td data-sort-value="0.009">0.009</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR11</td>
+                    <td class="data-table__cell--max-width">Venture House (First Floor) Essex Street, Southend-On-Sea, Essex, SS1 2NY</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-13</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.540541</td>
+                    <td>0.715698</td>
+                    <td>0.009</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR12">BR12</td>
-                    <td data-sort-value="Venture House (Ground Floor) Essex Street, Southend-On-Sea, Essex, SS1 2NY" class="data-table__cell--max-width">Venture House (Ground Floor) Essex Street, Southend-On-Sea, Essex, SS1 2NY</td>
-                    
-                    <td>0.715698</td>
-                    
-                    <td>51.540541</td>
-                    
-                    <td data-sort-value="0.009">0.009</td>
-                    
-                    <td data-sort-value="1">1</td>
-                    
-                    <td data-sort-value="1">1</td>
                     <td>2017-03-31</td>
-                    
-                    <td>2017-03-31</td>
+                    <td>local-authority-eng:SOS</td>
+                    <td>BR12</td>
+                    <td class="data-table__cell--max-width">Venture House (Ground Floor) Essex Street, Southend-On-Sea, Essex, SS1 2NY</td>
+                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/southend" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/southend</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-09-13</td>
+                    <td>permissioned</td>
                     <td>planning permission granted under an order</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.southend.gov.uk/downloads/200160/local_planning_framework" class="govuk-link">http://www.southend.gov.uk/downloads/200160/local_planning_framework</a></td>
-
+                    <td>51.540541</td>
+                    <td>0.715698</td>
+                    <td>0.009</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2017-03-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/479fd32eef77f621e785f0a0a86f676bb784b45c9258776122eca29d75f97266" class="govuk-link">479fd32e...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="16/04519/FUL">16/04519/FUL</td>
-                    <td data-sort-value="1-3 Bridge Brigade, Waddon Road" class="data-table__cell--max-width">1-3 Bridge Brigade, Waddon Road</td>
-                    
-                    <td>-0.111671</td>
-                    
-                    <td>51.371774</td>
-                    
-                    <td data-sort-value="0.04">0.04</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/04519/FUL</td>
+                    <td class="data-table__cell--max-width">1-3 Bridge Brigade, Waddon Road</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OCS5WNJLHDO00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OCS5WNJLHDO00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-11-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OCS5WNJLHDO00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OCS5WNJLHDO00</a></td>
-
+                    <td>51.371774</td>
+                    <td>-0.111671</td>
+                    <td>0.04</td>
+                    <td>9.0</td>
+                    <td>9.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="16/05198/FUL">16/05198/FUL</td>
-                    <td data-sort-value="2 Willis Court, Dunheved Road North" class="data-table__cell--max-width">2 Willis Court, Dunheved Road North</td>
-                    
-                    <td>-0.114041</td>
-                    
-                    <td>51.391021</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="7.0">7</td>
-                    
-                    <td data-sort-value="7.0">7</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/05198/FUL</td>
+                    <td class="data-table__cell--max-width">2 Willis Court, Dunheved Road North</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OEMHBAJLIQU00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OEMHBAJLIQU00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OEMHBAJLIQU00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OEMHBAJLIQU00</a></td>
-
+                    <td>51.391021</td>
+                    <td>-0.114041</td>
+                    <td>0.03</td>
+                    <td>7.0</td>
+                    <td>7.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="16/05397/FUL">16/05397/FUL</td>
-                    <td data-sort-value="759, London Road" class="data-table__cell--max-width">759, London Road</td>
-                    
-                    <td>-0.115298</td>
-                    
-                    <td>51.394018</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/05397/FUL</td>
+                    <td class="data-table__cell--max-width">759, London Road</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFALDTJLJ5J00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFALDTJLJ5J00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-09</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFALDTJLJ5J00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFALDTJLJ5J00</a></td>
-
+                    <td>51.394018</td>
+                    <td>-0.115298</td>
+                    <td>0.03</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="16/05498/FUL">16/05498/FUL</td>
-                    <td data-sort-value="37a, Smitham Bottoms Lane" class="data-table__cell--max-width">37a, Smitham Bottoms Lane</td>
-                    
-                    <td>-0.13934</td>
-                    
-                    <td>51.334267</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    
-                    <td data-sort-value="5.0">5</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/05498/FUL</td>
+                    <td class="data-table__cell--max-width">37a, Smitham Bottoms Lane</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFLQSCJLJCN00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFLQSCJLJCN00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-20</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFLQSCJLJCN00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFLQSCJLJCN00</a></td>
-
+                    <td>51.334267</td>
+                    <td>-0.13934</td>
+                    <td>0.03</td>
+                    <td>5.0</td>
+                    <td>5.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="16/05522/FUL">16/05522/FUL</td>
-                    <td data-sort-value="36, Beulah Road" class="data-table__cell--max-width">36, Beulah Road</td>
-                    
-                    <td>-0.101195</td>
-                    
-                    <td>51.400993</td>
-                    
-                    <td data-sort-value="0.1">0.1</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/05522/FUL</td>
+                    <td class="data-table__cell--max-width">36, Beulah Road</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFNWKZJLJEJ00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFNWKZJLJEJ00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-25</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFNWKZJLJEJ00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OFNWKZJLJEJ00</a></td>
-
+                    <td>51.400993</td>
+                    <td>-0.101195</td>
+                    <td>0.1</td>
+                    <td>9.0</td>
+                    <td>9.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="16/06000/FUL">16/06000/FUL</td>
-                    <td data-sort-value="485-487, King Henry's Drive" class="data-table__cell--max-width">485-487, King Henry's Drive</td>
-                    
-                    <td>2.3e-05</td>
-                    
-                    <td>51.334751</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="7.0">7</td>
-                    
-                    <td data-sort-value="7.0">7</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/06000/FUL</td>
+                    <td class="data-table__cell--max-width">485-487, King Henry's Drive</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OH7I3LJLKFK00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OH7I3LJLKFK00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-04-07</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OH7I3LJLKFK00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OH7I3LJLKFK00</a></td>
-
+                    <td>51.334751</td>
+                    <td>2.3e-05</td>
+                    <td>0.07</td>
+                    <td>7.0</td>
+                    <td>7.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="16/06030/FUL">16/06030/FUL</td>
-                    <td data-sort-value="94-96, Uvedale Crescent" class="data-table__cell--max-width">94-96, Uvedale Crescent</td>
-                    
-                    <td>-0.003363</td>
-                    
-                    <td>51.336787</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/06030/FUL</td>
+                    <td class="data-table__cell--max-width">94-96, Uvedale Crescent</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OHCWU2JLKIG00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OHCWU2JLKIG00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>owned by a public authority</td>
-                    <td>2017-04-13</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OHCWU2JLKIG00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OHCWU2JLKIG00</a></td>
-
+                    <td>51.336787</td>
+                    <td>-0.003363</td>
+                    <td>0.08</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="16/06276/FUL">16/06276/FUL</td>
-                    <td data-sort-value="25-39, Drovers Road" class="data-table__cell--max-width">25-39, Drovers Road</td>
-                    
-                    <td>-0.096691</td>
-                    
-                    <td>51.361244</td>
-                    
-                    <td data-sort-value="0.15">0.15</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    
-                    <td data-sort-value="9.0">9</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/06276/FUL</td>
+                    <td class="data-table__cell--max-width">25-39, Drovers Road</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OI327DJLL0G00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OI327DJLL0G00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-06-23</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OI327DJLL0G00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OI327DJLL0G00</a></td>
-
+                    <td>51.361244</td>
+                    <td>-0.096691</td>
+                    <td>0.15</td>
+                    <td>9.0</td>
+                    <td>9.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="16/06484/FUL">16/06484/FUL</td>
-                    <td data-sort-value="26, Fairfield Road" class="data-table__cell--max-width">26, Fairfield Road</td>
-                    
-                    <td>-0.088003</td>
-                    
-                    <td>51.372227</td>
-                    
-                    <td data-sort-value="0.09">0.09</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    
-                    <td data-sort-value="6.0">6</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>16/06484/FUL</td>
+                    <td class="data-table__cell--max-width">26, Fairfield Road</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OILF93JLLDM00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OILF93JLLDM00</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OILF93JLLDM00" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OILF93JLLDM00</a></td>
-
+                    <td>51.372227</td>
+                    <td>-0.088003</td>
+                    <td>0.09</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -536,38 +436,27 @@ associated cycle and refuse storage and landscaping. http://publicaccess2.croydo
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="17/00198/FUL">17/00198/FUL</td>
-                    <td data-sort-value="52, Bensham Grove" class="data-table__cell--max-width">52, Bensham Grove</td>
-                    
-                    <td>-0.100977</td>
-                    
-                    <td>51.406601</td>
-                    
-                    <td data-sort-value="0.05">0.05</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    
-                    <td data-sort-value="8.0">8</td>
-                    <td>2018-11-30</td>
-                    
                     <td>2019-12-23</td>
+                    <td>local-authority-eng:CRY</td>
+                    <td>17/00198/FUL</td>
+                    <td class="data-table__cell--max-width">52, Bensham Grove</td>
+                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OJTA8JJLM1500" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OJTA8JJLM1500</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/croydon" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/croydon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OJTA8JJLM1500" class="govuk-link">http://publicaccess2.croydon.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OJTA8JJLM1500</a></td>
-
+                    <td>51.406601</td>
+                    <td>-0.100977</td>
+                    <td>0.05</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>2018-11-30</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -576,7 +465,7 @@ associated cycle and refuse storage and landscaping. http://publicaccess2.croydo
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/d02d9bc0a0d825ba4c7677fe10d886d72895241d0f1953c877de3de7e04511c0" class="govuk-link">d02d9bc0...</a></td>
                 </tr>
                 
             </tbody>
@@ -585,6 +474,11 @@ associated cycle and refuse storage and landscaping. http://publicaccess2.croydo
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="LBCBLR052">LBCBLR052</td>
-                    <td data-sort-value="22 Tower Street London WC2H 9NS" class="data-table__cell--max-width">22 Tower Street London WC2H 9NS</td>
-                    
-                    <td>-0.127691</td>
-                    
-                    <td>51.513383</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR052</td>
+                    <td class="data-table__cell--max-width">22 Tower Street London WC2H 9NS</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
-                    <td></td>
-                    <td>2014-11-26</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.513383</td>
+                    <td>-0.127691</td>
+                    <td>0.08</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="LBCBLR076">LBCBLR076</td>
-                    <td data-sort-value="17 & 25-27 Ferdinand Street London NW1 8EU" class="data-table__cell--max-width">17 & 25-27 Ferdinand Street London NW1 8EU</td>
-                    
-                    <td>-0.150029</td>
-                    
-                    <td>51.543651</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR076</td>
+                    <td class="data-table__cell--max-width">17 & 25-27 Ferdinand Street London NW1 8EU</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
-                    <td></td>
-                    <td>2015-11-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.543651</td>
+                    <td>-0.150029</td>
+                    <td>0.02</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="LBCBLR049">LBCBLR049</td>
-                    <td data-sort-value="Hope & Anchor Public House 74 Crowndale Road London NW1 1TP" class="data-table__cell--max-width">Hope & Anchor Public House 74 Crowndale Road London NW1 1TP</td>
-                    
-                    <td>-0.137683</td>
-                    
-                    <td>51.534856</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR049</td>
+                    <td class="data-table__cell--max-width">Hope & Anchor Public House 74 Crowndale Road London NW1 1TP</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
-                    <td></td>
-                    <td>2015-01-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.534856</td>
+                    <td>-0.137683</td>
+                    <td>0.03</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="LBCBLR001">LBCBLR001</td>
-                    <td data-sort-value="EAP-Camden cutting" class="data-table__cell--max-width">EAP-Camden cutting</td>
-                    
-                    <td>-0.142951</td>
-                    
-                    <td>51.534069</td>
-                    
-                    <td data-sort-value="5.3">5.3</td>
-                    
-                    <td data-sort-value="1400">1400</td>
-                    
-                    <td data-sort-value="1400">1400</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR001</td>
+                    <td class="data-table__cell--max-width">EAP-Camden cutting</td>
                     <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.534069</td>
+                    <td>-0.142951</td>
+                    <td>5.3</td>
+                    <td>1400</td>
+                    <td>1400</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="LBCBLR096">LBCBLR096</td>
-                    <td data-sort-value="1A Highgate Road London NW5 1JY" class="data-table__cell--max-width">1A Highgate Road London NW5 1JY</td>
-                    
-                    <td>-0.141966</td>
-                    
-                    <td>51.551767</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    
-                    <td data-sort-value="13">13</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR096</td>
+                    <td class="data-table__cell--max-width">1A Highgate Road London NW5 1JY</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
-                    <td></td>
-                    <td>2016-11-17</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.551767</td>
+                    <td>-0.141966</td>
+                    <td>0.07</td>
+                    <td>13</td>
+                    <td>13</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="LBCBLR019">LBCBLR019</td>
-                    <td data-sort-value="Land Bounded by 50-57 High Holborn, (including Brownlow House High Holborn House & Caroline House) 18-25 Hand Court, 45-51 Bedford Row & Brownlow Street, London WC1V 6RL" class="data-table__cell--max-width">Land Bounded by 50-57 High Holborn, (including Brownlow House High Holborn House & Caroline House) 18-25 Hand Court, 45-51 Bedford Row & Brownlow Street, London WC1V 6RL</td>
-                    
-                    <td>-0.115263</td>
-                    
-                    <td>51.518605</td>
-                    
-                    <td data-sort-value="0.37">0.37</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR019</td>
+                    <td class="data-table__cell--max-width">Land Bounded by 50-57 High Holborn, (including Brownlow House High Holborn House & Caroline House) 18-25 Hand Court, 45-51 Bedford Row & Brownlow Street, London WC1V 6RL</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2011-10-27</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.518605</td>
+                    <td>-0.115263</td>
+                    <td>0.37</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="LBCBLR097">LBCBLR097</td>
-                    <td data-sort-value="Camden Goods Yard Chalk Farm Road NW1 8EH" class="data-table__cell--max-width">Camden Goods Yard Chalk Farm Road NW1 8EH</td>
-                    
-                    <td>-0.149468</td>
-                    
-                    <td>51.541716</td>
-                    
-                    <td data-sort-value="3.26">3.26</td>
-                    
-                    <td data-sort-value="573">573</td>
-                    
-                    <td data-sort-value="573">573</td>
-                    <td>2018-05-21</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR097</td>
+                    <td class="data-table__cell--max-width">Camden Goods Yard Chalk Farm Road NW1 8EH</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.541716</td>
+                    <td>-0.149468</td>
+                    <td>3.26</td>
+                    <td>573</td>
+                    <td>573</td>
+                    <td>2018-05-21</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="LBCBLR081">LBCBLR081</td>
-                    <td data-sort-value="61-65 Charlotte Street London W1T 4PF" class="data-table__cell--max-width">61-65 Charlotte Street London W1T 4PF</td>
-                    
-                    <td>-0.136483</td>
-                    
-                    <td>51.519758</td>
-                    
-                    <td data-sort-value="0.06">0.06</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR081</td>
+                    <td class="data-table__cell--max-width">61-65 Charlotte Street London W1T 4PF</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
-                    <td></td>
-                    <td>2016-01-08</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.519758</td>
+                    <td>-0.136483</td>
+                    <td>0.06</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="LBCBLR022">LBCBLR022</td>
-                    <td data-sort-value="Land Bound by New Oxford Street, Museum Street and West Central Street" class="data-table__cell--max-width">Land Bound by New Oxford Street, Museum Street and West Central Street</td>
-                    
-                    <td>-0.125311</td>
-                    
-                    <td>51.516874</td>
-                    
-                    <td data-sort-value="0.14">0.14</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR022</td>
+                    <td class="data-table__cell--max-width">Land Bound by New Oxford Street, Museum Street and West Central Street</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-05-16</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.516874</td>
+                    <td>-0.125311</td>
+                    <td>0.14</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="LBCBLR034">LBCBLR034</td>
-                    <td data-sort-value="17 Goldington Crescent London NW1 1UA" class="data-table__cell--max-width">17 Goldington Crescent London NW1 1UA</td>
-                    
-                    <td>-0.133356</td>
-                    
-                    <td>51.535172</td>
-                    
-                    <td data-sort-value="0.03">0.03</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-12-22</td>
-                    
                     <td>2020-05-10</td>
+                    <td>local-authority-eng:CMD</td>
+                    <td>LBCBLR034</td>
+                    <td class="data-table__cell--max-width">17 Goldington Crescent London NW1 1UA</td>
+                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
                     <td>yes</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/london-borough-council/camden" class="govuk-link">http://opendatacommunities.org/id/london-borough-council/camden</a></td>
-                    <td></td>
-                    <td>2015-03-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap" class="govuk-link">https://opendata.camden.gov.uk/Environment/Brownfield-Land-Register-Map/g8xk-ktap</a></td>
-
+                    <td>51.535172</td>
+                    <td>-0.133356</td>
+                    <td>0.03</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-12-22</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/be8dbbb7d87beeb751fa296ce21467a7dc9cc74935ea235531c8c5a377957f95" class="govuk-link">be8dbbb7...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

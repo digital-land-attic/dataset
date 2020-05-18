@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BR1">BR1</td>
-                    <td data-sort-value="Deans Yard, South Road, Baldock" class="data-table__cell--max-width">Deans Yard, South Road, Baldock</td>
-                    
-                    <td>-0.179567</td>
-                    
-                    <td>51.986317</td>
-                    
-                    <td data-sort-value="0.32">0.32</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    
-                    <td data-sort-value="20">20</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR1</td>
+                    <td class="data-table__cell--max-width">Deans Yard, South Road, Baldock</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.986317</td>
+                    <td>-0.179567</td>
+                    <td>0.32</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BR2">BR2</td>
-                    <td data-sort-value="Land at Icknield Way, Baldock" class="data-table__cell--max-width">Land at Icknield Way, Baldock</td>
-                    
-                    <td>-0.191748</td>
-                    
-                    <td>51.991793</td>
-                    
-                    <td data-sort-value="0.52">0.52</td>
-                    
-                    <td data-sort-value="26">26</td>
-                    
-                    <td data-sort-value="26">26</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR2</td>
+                    <td class="data-table__cell--max-width">Land at Icknield Way, Baldock</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.991793</td>
+                    <td>-0.191748</td>
+                    <td>0.52</td>
+                    <td>26</td>
+                    <td>26</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BR5">BR5</td>
-                    <td data-sort-value="Former B&Q, at junction of Nightingale and Walsworth Road, Hitchin" class="data-table__cell--max-width">Former B&Q, at junction of Nightingale and Walsworth Road, Hitchin</td>
-                    
-                    <td>-0.266051</td>
-                    
-                    <td>51.953582</td>
-                    
-                    <td data-sort-value="0.68">0.68</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    
-                    <td data-sort-value="60">60</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR5</td>
+                    <td class="data-table__cell--max-width">Former B&Q, at junction of Nightingale and Walsworth Road, Hitchin</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.953582</td>
+                    <td>-0.266051</td>
+                    <td>0.68</td>
+                    <td>60</td>
+                    <td>60</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BR9">BR9</td>
-                    <td data-sort-value="Pixmore Centre, Pixmore Avenue, Letchworth" class="data-table__cell--max-width">Pixmore Centre, Pixmore Avenue, Letchworth</td>
-                    
-                    <td>-0.218193</td>
-                    
-                    <td>51.981591</td>
-                    
-                    <td data-sort-value="0.39">0.39</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    
-                    <td data-sort-value="31">31</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR9</td>
+                    <td class="data-table__cell--max-width">Pixmore Centre, Pixmore Avenue, Letchworth</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.981591</td>
+                    <td>-0.218193</td>
+                    <td>0.39</td>
+                    <td>31</td>
+                    <td>31</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BR10">BR10</td>
-                    <td data-sort-value="Freeman House, Radburn Way, Letchworth" class="data-table__cell--max-width">Freeman House, Radburn Way, Letchworth</td>
-                    
-                    <td>-0.213363</td>
-                    
-                    <td>51.974225</td>
-                    
-                    <td data-sort-value="0.31">0.31</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
-                    <td>yes</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR10</td>
+                    <td class="data-table__cell--max-width">Freeman House, Radburn Way, Letchworth</td>
                     <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
+                    <td>yes</td>
                     <td>owned by a public authority</td>
-                    <td>2016-08-25</td>
+                    <td></td>
                     <td>outline planning permission</td>
                     <td></td>
+                    <td>51.974225</td>
+                    <td>-0.213363</td>
+                    <td>0.31</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-31</td>
                     <td></td>
-                    
-                    <td></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BR11">BR11</td>
-                    <td data-sort-value="Foundation House, Icknield Way, Letchworth" class="data-table__cell--max-width">Foundation House, Icknield Way, Letchworth</td>
-                    
-                    <td>-0.2177</td>
-                    
-                    <td>51.985465</td>
-                    
-                    <td data-sort-value="0.78">0.78</td>
-                    
-                    <td data-sort-value="16">16</td>
-                    
-                    <td data-sort-value="16">16</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR11</td>
+                    <td class="data-table__cell--max-width">Foundation House, Icknield Way, Letchworth</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.985465</td>
+                    <td>-0.2177</td>
+                    <td>0.78</td>
+                    <td>16</td>
+                    <td>16</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BR12">BR12</td>
-                    <td data-sort-value="Glebe Road industrial estate, Letchworth" class="data-table__cell--max-width">Glebe Road industrial estate, Letchworth</td>
-                    
-                    <td>-0.220563</td>
-                    
-                    <td>51.985351</td>
-                    
-                    <td data-sort-value="0.26">0.26</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR12</td>
+                    <td class="data-table__cell--max-width">Glebe Road industrial estate, Letchworth</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.985351</td>
+                    <td>-0.220563</td>
+                    <td>0.26</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BR14">BR14</td>
-                    <td data-sort-value="Nursery, Icknield Way, Letchwoth" class="data-table__cell--max-width">Nursery, Icknield Way, Letchwoth</td>
-                    
-                    <td>-0.233765</td>
-                    
-                    <td>51.980235</td>
-                    
-                    <td data-sort-value="0.43">0.43</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR14</td>
+                    <td class="data-table__cell--max-width">Nursery, Icknield Way, Letchwoth</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.980235</td>
+                    <td>-0.233765</td>
+                    <td>0.43</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BR15">BR15</td>
-                    <td data-sort-value="Site at Birds Hill, Letchworth" class="data-table__cell--max-width">Site at Birds Hill, Letchworth</td>
-                    
-                    <td>-0.219165</td>
-                    
-                    <td>51.981558</td>
-                    
-                    <td data-sort-value="0.6">0.6</td>
-                    
-                    <td data-sort-value="48">48</td>
-                    
-                    <td data-sort-value="48">48</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR15</td>
+                    <td class="data-table__cell--max-width">Site at Birds Hill, Letchworth</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.981558</td>
+                    <td>-0.219165</td>
+                    <td>0.6</td>
+                    <td>48</td>
+                    <td>48</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BR16">BR16</td>
-                    <td data-sort-value="Garages, Icknield Way, Letchworth" class="data-table__cell--max-width">Garages, Icknield Way, Letchworth</td>
-                    
-                    <td>-0.236274</td>
-                    
-                    <td>51.9793</td>
-                    
-                    <td data-sort-value="0.69">0.69</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    
-                    <td data-sort-value="25">25</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2019-12-31</td>
+                    <td>local-authority-eng:NHE</td>
+                    <td>BR16</td>
+                    <td class="data-table__cell--max-width">Garages, Icknield Way, Letchworth</td>
+                    <td></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/north-hertfordshire" class="govuk-link">http://opendatacommunities.org/id/district-council/north-hertfordshire</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>not permissioned</td>
-                    
                     <td></td>
-
+                    <td></td>
+                    <td>51.9793</td>
+                    <td>-0.236274</td>
+                    <td>0.69</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/ec43eb7f3d03d759e70506e9922d48f5bdabeda982f6fa7976bda9e963f8248b" class="govuk-link">ec43eb7f...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

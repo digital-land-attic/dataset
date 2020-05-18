@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR_001">BLR_001</td>
-                    <td data-sort-value="Land to the north of, Hall Lane, Thornhill, Dewsbury, WF12 0PL" class="data-table__cell--max-width">Land to the north of, Hall Lane, Thornhill, Dewsbury, WF12 0PL</td>
-                    
-                    <td>-1.6146</td>
-                    
-                    <td>53.66704</td>
-                    
-                    <td data-sort-value="0.78">0.78</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_001</td>
+                    <td class="data-table__cell--max-width">Land to the north of, Hall Lane, Thornhill, Dewsbury, WF12 0PL</td>
+                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
                     <td>owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>reserved matters approval</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td>53.66704</td>
+                    <td>-1.6146</td>
+                    <td>0.78</td>
+                    <td>28</td>
+                    <td>30</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BLR_002">BLR_002</td>
-                    <td data-sort-value="Land to the south of, Lock Street, Thornhill, Dewsbury, WF12 9BZ" class="data-table__cell--max-width">Land to the south of, Lock Street, Thornhill, Dewsbury, WF12 9BZ</td>
-                    
-                    <td>-1.62493</td>
-                    
-                    <td>53.67463</td>
-                    
-                    <td data-sort-value="1.99">1.99</td>
-                    
-                    <td data-sort-value="104">104</td>
-                    
-                    <td data-sort-value="104">104</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_002</td>
+                    <td class="data-table__cell--max-width">Land to the south of, Lock Street, Thornhill, Dewsbury, WF12 9BZ</td>
+                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-17</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td>53.67463</td>
+                    <td>-1.62493</td>
+                    <td>1.99</td>
+                    <td>104</td>
+                    <td>104</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,218 +232,152 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BLR_003">BLR_003</td>
-                    <td data-sort-value="Headfield Mills, Savile Road, Savile Town, Dewsbury, WF12 9NP" class="data-table__cell--max-width">Headfield Mills, Savile Road, Savile Town, Dewsbury, WF12 9NP</td>
-                    
-                    <td>-1.63594</td>
-                    
-                    <td>53.68222</td>
-                    
-                    <td data-sort-value="1.19">1.19</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    
-                    <td data-sort-value="35">35</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_003</td>
+                    <td class="data-table__cell--max-width">Headfield Mills, Savile Road, Savile Town, Dewsbury, WF12 9NP</td>
                     <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.68222</td>
+                    <td>-1.63594</td>
+                    <td>1.19</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BLR_004">BLR_004</td>
-                    <td data-sort-value="Land north west of, Forge Lane, Thornhill Lees, Dewsbury" class="data-table__cell--max-width">Land north west of, Forge Lane, Thornhill Lees, Dewsbury</td>
-                    
-                    <td>-1.64466</td>
-                    
-                    <td>53.67488</td>
-                    
-                    <td data-sort-value="2.68">2.68</td>
-                    
-                    <td data-sort-value="93">93</td>
-                    
-                    <td data-sort-value="93">93</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_004</td>
+                    <td class="data-table__cell--max-width">Land north west of, Forge Lane, Thornhill Lees, Dewsbury</td>
                     <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.67488</td>
+                    <td>-1.64466</td>
+                    <td>2.68</td>
+                    <td>93</td>
+                    <td>93</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BLR_005">BLR_005</td>
-                    <td data-sort-value="Land at, Carlton Road/Hirst Road, Dewsbury" class="data-table__cell--max-width">Land at, Carlton Road/Hirst Road, Dewsbury</td>
-                    
-                    <td>-1.63465</td>
-                    
-                    <td>53.69593</td>
-                    
-                    <td data-sort-value="0.49">0.49</td>
-                    
-                    <td data-sort-value="16">16</td>
-                    
-                    <td data-sort-value="16">16</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_005</td>
+                    <td class="data-table__cell--max-width">Land at, Carlton Road/Hirst Road, Dewsbury</td>
                     <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.69593</td>
+                    <td>-1.63465</td>
+                    <td>0.49</td>
+                    <td>16</td>
+                    <td>16</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BLR_006">BLR_006</td>
-                    <td data-sort-value="Site of former Woolpack Inn, 167, Heckmondwike Road, Dewsbury Moor, Dewsbury, WF13 3NS" class="data-table__cell--max-width">Site of former Woolpack Inn, 167, Heckmondwike Road, Dewsbury Moor, Dewsbury, WF13 3NS</td>
-                    
-                    <td>-1.65809</td>
-                    
-                    <td>53.69494</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="8">8</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_006</td>
+                    <td class="data-table__cell--max-width">Site of former Woolpack Inn, 167, Heckmondwike Road, Dewsbury Moor, Dewsbury, WF13 3NS</td>
+                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-10-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td>53.69494</td>
+                    <td>-1.65809</td>
+                    <td>0.17</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BLR_007">BLR_007</td>
-                    <td data-sort-value="Pepperoyd Mills, Pepper Royd Street, Dewsbury, WF13 1PA" class="data-table__cell--max-width">Pepperoyd Mills, Pepper Royd Street, Dewsbury, WF13 1PA</td>
-                    
-                    <td>-1.62362</td>
-                    
-                    <td>53.6948</td>
-                    
-                    <td data-sort-value="0.57">0.57</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_007</td>
+                    <td class="data-table__cell--max-width">Pepperoyd Mills, Pepper Royd Street, Dewsbury, WF13 1PA</td>
+                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>pending decision</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>pending decision</td>
-                    
-                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td>53.6948</td>
+                    <td>-1.62362</td>
+                    <td>0.57</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BLR_008">BLR_008</td>
-                    <td data-sort-value="Forge Lane, Dewsbury, WF12 9AA" class="data-table__cell--max-width">Forge Lane, Dewsbury, WF12 9AA</td>
-                    
-                    <td>-1.64347</td>
-                    
-                    <td>53.67435</td>
-                    
-                    <td data-sort-value="1.85">1.85</td>
-                    
-                    <td data-sort-value="64">64</td>
-                    
-                    <td data-sort-value="64">64</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_008</td>
+                    <td class="data-table__cell--max-width">Forge Lane, Dewsbury, WF12 9AA</td>
+                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-03-17</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td>53.67435</td>
+                    <td>-1.64347</td>
+                    <td>1.85</td>
+                    <td>64</td>
+                    <td>64</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -475,79 +386,57 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BLR_009">BLR_009</td>
-                    <td data-sort-value="Cliffe Street, Dewsbury" class="data-table__cell--max-width">Cliffe Street, Dewsbury</td>
-                    
-                    <td>-1.62703</td>
-                    
-                    <td>53.69478</td>
-                    
-                    <td data-sort-value="1.27">1.27</td>
-                    
-                    <td data-sort-value="47">47</td>
-                    
-                    <td data-sort-value="47">47</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_009</td>
+                    <td class="data-table__cell--max-width">Cliffe Street, Dewsbury</td>
                     <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.69478</td>
+                    <td>-1.62703</td>
+                    <td>1.27</td>
+                    <td>47</td>
+                    <td>47</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BLR_010">BLR_010</td>
-                    <td data-sort-value="Red Laithes Court, Red Laithes Lane, Ravensthorpe, Dewsbury, WF13 3DB" class="data-table__cell--max-width">Red Laithes Court, Red Laithes Lane, Ravensthorpe, Dewsbury, WF13 3DB</td>
-                    
-                    <td>-1.66397</td>
-                    
-                    <td>53.68207</td>
-                    
-                    <td data-sort-value="0.45">0.45</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    
-                    <td data-sort-value="15">15</td>
-                    <td>2017-12-20</td>
-                    
                     <td>2019-12-13</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/metropolitan-district-council/kirklees" class="govuk-link">http://opendatacommunities.org/id/metropolitan-district-council/kirklees</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:KIR</td>
+                    <td>BLR_010</td>
+                    <td class="data-table__cell--max-width">Red Laithes Court, Red Laithes Lane, Ravensthorpe, Dewsbury, WF13 3DB</td>
                     <td><a href="https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register" class="govuk-link">https://mapping.kirklees.gov.uk/connect/analyst/mobile/#/main?mapcfg=Kirklees%20Brownfield%20Land%20Register</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.68207</td>
+                    <td>-1.66397</td>
+                    <td>0.45</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>2017-12-20</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/9889f0273db6a79ccc162a6da6935788c27dd34b970875c51a204d1915da5cc3" class="govuk-link">9889f027...</a></td>
                 </tr>
                 
             </tbody>
@@ -556,6 +445,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

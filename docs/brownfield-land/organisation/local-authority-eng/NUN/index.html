@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BF001">BF001</td>
-                    <td data-sort-value="Land at Donnithorne Avenue, Nuneaton" class="data-table__cell--max-width">Land at Donnithorne Avenue, Nuneaton</td>
-                    
-                    <td>-1.46404</td>
-                    
-                    <td>52.508506</td>
-                    
-                    <td data-sort-value="0.48">0.48</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    
-                    <td data-sort-value="28">28</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF001</td>
+                    <td class="data-table__cell--max-width">Land at Donnithorne Avenue, Nuneaton</td>
                     <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.508506</td>
+                    <td>-1.46404</td>
+                    <td>0.48</td>
+                    <td>28</td>
+                    <td>28</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -217,38 +205,27 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN015)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="BF002">BF002</td>
-                    <td data-sort-value="Stockingford Sports and Social Club and Bungalow, Arbury Road, Nuneaton" class="data-table__cell--max-width">Stockingford Sports and Social Club and Bungalow, Arbury Road, Nuneaton</td>
-                    
-                    <td>-1.498978</td>
-                    
-                    <td>52.522449</td>
-                    
-                    <td data-sort-value="0.68">0.68</td>
-                    
-                    <td data-sort-value="67">67</td>
-                    
-                    <td data-sort-value="67">67</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF002</td>
+                    <td class="data-table__cell--max-width">Stockingford Sports and Social Club and Bungalow, Arbury Road, Nuneaton</td>
                     <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.522449</td>
+                    <td>-1.498978</td>
+                    <td>0.68</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -259,38 +236,27 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN043)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="BF003">BF003</td>
-                    <td data-sort-value="King Edward Road, Nuneaton" class="data-table__cell--max-width">King Edward Road, Nuneaton</td>
-                    
-                    <td>-1.459778</td>
-                    
-                    <td>52.522025</td>
-                    
-                    <td data-sort-value="0.45">0.45</td>
-                    
-                    <td data-sort-value="44">44</td>
-                    
-                    <td data-sort-value="44">44</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF003</td>
+                    <td class="data-table__cell--max-width">King Edward Road, Nuneaton</td>
                     <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.522025</td>
+                    <td>-1.459778</td>
+                    <td>0.45</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -301,38 +267,27 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN047)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="BF004">BF004</td>
-                    <td data-sort-value="Rear of 68 King Edward Road, Nuneaton" class="data-table__cell--max-width">Rear of 68 King Edward Road, Nuneaton</td>
-                    
-                    <td>-1.460221</td>
-                    
-                    <td>52.521964</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    
-                    <td data-sort-value="27">27</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF004</td>
+                    <td class="data-table__cell--max-width">Rear of 68 King Edward Road, Nuneaton</td>
                     <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2020" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2020</a></td>
-
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.521964</td>
+                    <td>-1.460221</td>
+                    <td>0.28</td>
+                    <td>27</td>
+                    <td>27</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -345,38 +300,27 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN051)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="BF005">BF005</td>
-                    <td data-sort-value="Pine Tree Road, Bedworth" class="data-table__cell--max-width">Pine Tree Road, Bedworth</td>
-                    
-                    <td>-1.463804</td>
-                    
-                    <td>52.485508</td>
-                    
-                    <td data-sort-value="0.22">0.22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF005</td>
+                    <td class="data-table__cell--max-width">Pine Tree Road, Bedworth</td>
                     <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2021" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2021</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.485508</td>
+                    <td>-1.463804</td>
+                    <td>0.22</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -387,38 +331,27 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN060)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="BF006">BF006</td>
-                    <td data-sort-value="Rear of 25-39 Whitburn Road, Bedworth" class="data-table__cell--max-width">Rear of 25-39 Whitburn Road, Bedworth</td>
-                    
-                    <td>-1.510773</td>
-                    
-                    <td>52.475606</td>
-                    
-                    <td data-sort-value="0.24">0.24</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF006</td>
+                    <td class="data-table__cell--max-width">Rear of 25-39 Whitburn Road, Bedworth</td>
+                    <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2022" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2022</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-11</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2022" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2022</a></td>
-
+                    <td>52.475606</td>
+                    <td>-1.510773</td>
+                    <td>0.24</td>
+                    <td>14</td>
+                    <td>14</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -431,38 +364,27 @@ Planning permission was granted on 11/04/2017 for 14 dwellings 033762"</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="BF007">BF007</td>
-                    <td data-sort-value="New Inn Public House, Bulkington" class="data-table__cell--max-width">New Inn Public House, Bulkington</td>
-                    
-                    <td>-1.417344</td>
-                    
-                    <td>52.476488</td>
-                    
-                    <td data-sort-value="0.31">0.31</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    
-                    <td data-sort-value="44">44</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF007</td>
+                    <td class="data-table__cell--max-width">New Inn Public House, Bulkington</td>
+                    <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2023" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2023</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-13</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2023" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2023</a></td>
-
+                    <td>52.476488</td>
+                    <td>-1.417344</td>
+                    <td>0.31</td>
+                    <td>14</td>
+                    <td>44</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -477,38 +399,27 @@ Planning permission granted 12/03/2019 for 44 dwellings Ref: 035641"</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="BF008">BF008</td>
-                    <td data-sort-value="Rear of Park Road flats, Bedworth" class="data-table__cell--max-width">Rear of Park Road flats, Bedworth</td>
-                    
-                    <td>-1.476526</td>
-                    
-                    <td>52.47947</td>
-                    
-                    <td data-sort-value="0.18">0.18</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    
-                    <td data-sort-value="17">17</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF008</td>
+                    <td class="data-table__cell--max-width">Rear of Park Road flats, Bedworth</td>
                     <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2024" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2024</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.47947</td>
+                    <td>-1.476526</td>
+                    <td>0.18</td>
+                    <td>17</td>
+                    <td>17</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -519,38 +430,27 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031 (NUN075)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="BF009">BF009</td>
-                    <td data-sort-value="Charity Docks, Land rear of Furnace Road/Beechwood Road, Bedworth" class="data-table__cell--max-width">Charity Docks, Land rear of Furnace Road/Beechwood Road, Bedworth</td>
-                    
-                    <td>-1.464398</td>
-                    
-                    <td>52.487561</td>
-                    
-                    <td data-sort-value="2.16">2.16</td>
-                    
-                    <td data-sort-value="66">66</td>
-                    
-                    <td data-sort-value="66">66</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF009</td>
+                    <td class="data-table__cell--max-width">Charity Docks, Land rear of Furnace Road/Beechwood Road, Bedworth</td>
                     <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2025" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2025</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.487561</td>
+                    <td>-1.464398</td>
+                    <td>2.16</td>
+                    <td>66</td>
+                    <td>66</td>
+                    <td></td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -561,38 +461,27 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031 (NUN174)</div>
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="BF010">BF010</td>
-                    <td data-sort-value="St Marys Road Council Depot, St Marys Road, Nuneaton" class="data-table__cell--max-width">St Marys Road Council Depot, St Marys Road, Nuneaton</td>
-                    
-                    <td>-1.469164</td>
-                    
-                    <td>52.528325</td>
-                    
-                    <td data-sort-value="2.34">2.34</td>
-                    
-                    <td data-sort-value="95">95</td>
-                    
-                    <td data-sort-value="143">143</td>
-                    <td></td>
-                    
                     <td>2020-03-10</td>
+                    <td>local-authority-eng:NUN</td>
+                    <td>BF010</td>
+                    <td class="data-table__cell--max-width">St Marys Road Council Depot, St Marys Road, Nuneaton</td>
+                    <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2026" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2026</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth" class="govuk-link">http://opendatacommunities.org/id/district-council/nuneaton-and-bedworth</a></td>
                     <td>owned by a public authority</td>
-                    <td>2018-07-06</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2026" class="govuk-link">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2026</a></td>
-
+                    <td>52.528325</td>
+                    <td>-1.469164</td>
+                    <td>2.34</td>
+                    <td>95</td>
+                    <td>143</td>
+                    <td></td>
+                    <td>2019-03-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -607,7 +496,7 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031 for 143 dwellin
                         </details>
                         
                     </td>
-                    <td>2019-03-31</td>
+                    <td><a href="https://digital-land.github.io/resource/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d" class="govuk-link">f71f167a...</a></td>
                 </tr>
                 
             </tbody>
@@ -616,6 +505,11 @@ Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031 for 143 dwellin
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

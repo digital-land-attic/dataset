@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="BLR0001">BLR0001</td>
-                    <td data-sort-value="Oakley House Leicester Street Brighton" class="data-table__cell--max-width">Oakley House Leicester Street Brighton</td>
-                    
-                    <td>-0.128851</td>
-                    
-                    <td>50.822008</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2018-12-17</td>
-                    
                     <td>2019-12-09</td>
-                    <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BNH</td>
+                    <td>BLR0001</td>
+                    <td class="data-table__cell--max-width">Oakley House Leicester Street Brighton</td>
                     <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/blr0001-oakley-house-leicester-street.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/blr0001-oakley-house-leicester-street.pdf</a></td>
-
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.822008</td>
+                    <td>-0.128851</td>
+                    <td>0.08</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2018-12-17</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="PP4588">PP4588</td>
-                    <td data-sort-value="17 Marmion Road Hove" class="data-table__cell--max-width">17 Marmion Road Hove</td>
-                    
-                    <td>-0.187844</td>
-                    
-                    <td>50.834469</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-10-03</td>
-                    
                     <td>2019-12-09</td>
+                    <td>local-authority-eng:BNH</td>
+                    <td>PP4588</td>
+                    <td class="data-table__cell--max-width">17 Marmion Road Hove</td>
+                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp4588-17-marmion-road-hove.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp4588-17-marmion-road-hove.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-11-03</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp4588-17-marmion-road-hove.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp4588-17-marmion-road-hove.pdf</a></td>
-
+                    <td>50.834469</td>
+                    <td>-0.187844</td>
+                    <td>0.07</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-10-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="PP4653">PP4653</td>
-                    <td data-sort-value="20 Sackville Road & 78 Pembroke Crescent Hove" class="data-table__cell--max-width">20 Sackville Road & 78 Pembroke Crescent Hove</td>
-                    
-                    <td>-0.178456</td>
-                    
-                    <td>50.830455</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2017-10-03</td>
-                    
                     <td>2019-12-09</td>
+                    <td>local-authority-eng:BNH</td>
+                    <td>PP4653</td>
+                    <td class="data-table__cell--max-width">20 Sackville Road & 78 Pembroke Crescent Hove</td>
+                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp4653-20-sackville-road-78-pembroke-crescent-hove.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp4653-20-sackville-road-78-pembroke-crescent-hove.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-03-01</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp4653-20-sackville-road-78-pembroke-crescent-hove.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp4653-20-sackville-road-78-pembroke-crescent-hove.pdf</a></td>
-
+                    <td>50.830455</td>
+                    <td>-0.178456</td>
+                    <td>0.07</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2017-10-03</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="PP5659">PP5659</td>
-                    <td data-sort-value="19 Oriental Place Brighton" class="data-table__cell--max-width">19 Oriental Place Brighton</td>
-                    
-                    <td>-0.153472</td>
-                    
-                    <td>50.823408</td>
-                    
-                    <td data-sort-value="0.01">0.01</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    <td>2018-11-06</td>
-                    
                     <td>2019-12-09</td>
+                    <td>local-authority-eng:BNH</td>
+                    <td>PP5659</td>
+                    <td class="data-table__cell--max-width">19 Oriental Place Brighton</td>
+                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp5659-19-oriental-place-brighton.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp5659-19-oriental-place-brighton.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-11-14</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp5659-19-oriental-place-brighton.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/pp5659-19-oriental-place-brighton.pdf</a></td>
-
+                    <td>50.823408</td>
+                    <td>-0.153472</td>
+                    <td>0.01</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2018-11-06</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="PP5771">PP5771</td>
-                    <td data-sort-value="2-4 Sackville Road Hove" class="data-table__cell--max-width">2-4 Sackville Road Hove</td>
-                    
-                    <td>-0.178882</td>
-                    
-                    <td>50.829383</td>
-                    
-                    <td data-sort-value="0.07">0.07</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2019-12-09</td>
-                    
-                    <td>2019-12-09</td>
+                    <td>local-authority-eng:BNH</td>
+                    <td>PP5771</td>
+                    <td class="data-table__cell--max-width">2-4 Sackville Road Hove</td>
+                    <td><a href="https://www.brighton-hove.gov.uk/sites/brighton-hove.gov.uk/files/PP5771%202%20to%204%20Sackville%20Road%20Hove.pdf" class="govuk-link">https://www.brighton-hove.gov.uk/sites/brighton-hove.gov.uk/files/PP5771%202%20to%204%20Sackville%20Road%20Hove.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-05-02</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.brighton-hove.gov.uk/sites/brighton-hove.gov.uk/files/PP5771%202%20to%204%20Sackville%20Road%20Hove.pdf" class="govuk-link">https://www.brighton-hove.gov.uk/sites/brighton-hove.gov.uk/files/PP5771%202%20to%204%20Sackville%20Road%20Hove.pdf</a></td>
-
+                    <td>50.829383</td>
+                    <td>-0.178882</td>
+                    <td>0.07</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2019-12-09</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="PP5925">PP5925</td>
-                    <td data-sort-value="45 Portland Road Hove" class="data-table__cell--max-width">45 Portland Road Hove</td>
-                    
-                    <td>-0.181022</td>
-                    
-                    <td>50.819622</td>
-                    
-                    <td data-sort-value="0.02">0.02</td>
-                    
-                    <td data-sort-value="5">5</td>
-                    
-                    <td data-sort-value="5">5</td>
                     <td>2019-12-09</td>
-                    
-                    <td>2019-12-09</td>
+                    <td>local-authority-eng:BNH</td>
+                    <td>PP5925</td>
+                    <td class="data-table__cell--max-width">45 Portland Road Hove</td>
+                    <td><a href="https://www.brighton-hove.gov.uk/sites/brighton-hove.gov.uk/files/PP5925%2045%20Portland%20Road%20Hove.pdf" class="govuk-link">https://www.brighton-hove.gov.uk/sites/brighton-hove.gov.uk/files/PP5925%2045%20Portland%20Road%20Hove.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2019-03-11</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.brighton-hove.gov.uk/sites/brighton-hove.gov.uk/files/PP5925%2045%20Portland%20Road%20Hove.pdf" class="govuk-link">https://www.brighton-hove.gov.uk/sites/brighton-hove.gov.uk/files/PP5925%2045%20Portland%20Road%20Hove.pdf</a></td>
-
+                    <td>50.819622</td>
+                    <td>-0.181022</td>
+                    <td>0.02</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>2019-12-09</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="SHLAA0001">SHLAA0001</td>
-                    <td data-sort-value="Gas Works Site Boundary Road Brighton" class="data-table__cell--max-width">Gas Works Site Boundary Road Brighton</td>
-                    
-                    <td>-0.105411</td>
-                    
-                    <td>50.816018</td>
-                    
-                    <td data-sort-value="2.34">2.34</td>
-                    
-                    <td data-sort-value="340">340</td>
-                    
-                    <td data-sort-value="340">340</td>
-                    <td>2017-09-18</td>
-                    
                     <td>2019-12-16</td>
+                    <td>local-authority-eng:BNH</td>
+                    <td>SHLAA0001</td>
+                    <td class="data-table__cell--max-width">Gas Works Site Boundary Road Brighton</td>
+                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0001-gas-works-site-boundary-road-brighton.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0001-gas-works-site-boundary-road-brighton.pdf</a></td>
+                    <td></td>
+                    <td>mixed ownership</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
-                    <td>mixed ownership</td>
+                    <td>50.816018</td>
+                    <td>-0.105411</td>
+                    <td>2.34</td>
+                    <td>340</td>
+                    <td>340</td>
+                    <td>2017-09-18</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0001-gas-works-site-boundary-road-brighton.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0001-gas-works-site-boundary-road-brighton.pdf</a></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -456,38 +378,27 @@ The northern part of site is owned by Southern Gas Network plc and use would req
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="SHLAA0003">SHLAA0003</td>
-                    <td data-sort-value="Land at Brighton Marina (Inner Harbour)" class="data-table__cell--max-width">Land at Brighton Marina (Inner Harbour)</td>
-                    
-                    <td>-0.104173</td>
-                    
-                    <td>50.812931</td>
-                    
-                    <td data-sort-value="11.52">11.52</td>
-                    
-                    <td data-sort-value="1000">1000</td>
-                    
-                    <td data-sort-value="1000">1000</td>
-                    <td>2017-09-26</td>
-                    
                     <td>2019-12-16</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:BNH</td>
+                    <td>SHLAA0003</td>
+                    <td class="data-table__cell--max-width">Land at Brighton Marina (Inner Harbour)</td>
                     <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0003-land-at-brighton-marina-inner-harbour.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0003-land-at-brighton-marina-inner-harbour.pdf</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.812931</td>
+                    <td>-0.104173</td>
+                    <td>11.52</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>2017-09-26</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -496,38 +407,27 @@ The northern part of site is owned by Southern Gas Network plc and use would req
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="SHLAA0004">SHLAA0004</td>
-                    <td data-sort-value="Land at Brighton Marina (Outer Harbour)" class="data-table__cell--max-width">Land at Brighton Marina (Outer Harbour)</td>
-                    
-                    <td>-0.105988</td>
-                    
-                    <td>50.810874</td>
-                    
-                    <td data-sort-value="5.33">5.33</td>
-                    
-                    <td data-sort-value="661">661</td>
-                    
-                    <td data-sort-value="661">661</td>
-                    <td>2017-09-18</td>
-                    
                     <td>2019-12-16</td>
+                    <td>local-authority-eng:BNH</td>
+                    <td>SHLAA0004</td>
+                    <td class="data-table__cell--max-width">Land at Brighton Marina (Outer Harbour)</td>
+                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0004-land-at-brighton-marina-outer-harbour.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0004-land-at-brighton-marina-outer-harbour.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2006-07-04</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0004-land-at-brighton-marina-outer-harbour.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0004-land-at-brighton-marina-outer-harbour.pdf</a></td>
-
+                    <td>50.810874</td>
+                    <td>-0.105988</td>
+                    <td>5.33</td>
+                    <td>661</td>
+                    <td>661</td>
+                    <td>2017-09-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -536,38 +436,27 @@ The northern part of site is owned by Southern Gas Network plc and use would req
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="SHLAA0014">SHLAA0014</td>
-                    <td data-sort-value="Preston Barracks Lewes Road Brighton" class="data-table__cell--max-width">Preston Barracks Lewes Road Brighton</td>
-                    
-                    <td>-0.121107</td>
-                    
-                    <td>50.842677</td>
-                    
-                    <td data-sort-value="1.96">1.96</td>
-                    
-                    <td data-sort-value="363">363</td>
-                    
-                    <td data-sort-value="363">363</td>
-                    <td>2017-09-18</td>
-                    
                     <td>2019-12-16</td>
+                    <td>local-authority-eng:BNH</td>
+                    <td>SHLAA0014</td>
+                    <td class="data-table__cell--max-width">Preston Barracks Lewes Road Brighton</td>
+                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0014-preston-barracks-lewes-road-brighton.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0014-preston-barracks-lewes-road-brighton.pdf</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/unitary-authority/brighton-and-hove" class="govuk-link">http://opendatacommunities.org/id/unitary-authority/brighton-and-hove</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-12-22</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0014-preston-barracks-lewes-road-brighton.pdf" class="govuk-link">https://new.brighton-hove.gov.uk/sites/default/files/planning_bc_regen/policy/brownfield-sites/shlaa0014-preston-barracks-lewes-road-brighton.pdf</a></td>
-
+                    <td>50.842677</td>
+                    <td>-0.121107</td>
+                    <td>1.96</td>
+                    <td>363</td>
+                    <td>363</td>
+                    <td>2017-09-18</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -576,7 +465,7 @@ The northern part of site is owned by Southern Gas Network plc and use would req
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/0abd8a357da3b458504a8e16969a1c7ede85e8b7ef2bdef274d382f1db4108fc" class="govuk-link">0abd8a35...</a></td>
                 </tr>
                 
             </tbody>
@@ -585,6 +474,11 @@ The northern part of site is owned by Southern Gas Network plc and use would req
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

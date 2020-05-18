@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,95 +154,72 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="CA51">CA51</td>
-                    <td data-sort-value="Former Goods Yard, London Road Carlisle" class="data-table__cell--max-width">Former Goods Yard, London Road Carlisle</td>
-                    
-                    <td>-2.918437</td>
-                    
-                    <td>54.886287</td>
-                    
-                    <td data-sort-value="1.99">1.99</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    
-                    <td data-sort-value="50">50</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:CAR</td>
+                    <td>CA51</td>
+                    <td class="data-table__cell--max-width">Former Goods Yard, London Road Carlisle</td>
+                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
-                    <td>not owned by a public authority</td>
+                    <td>54.886287</td>
+                    <td>-2.918437</td>
+                    <td>1.99</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2017-12-31</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="CA25">CA25</td>
-                    <td data-sort-value="South Western Terrace, Carlisle" class="data-table__cell--max-width">South Western Terrace, Carlisle</td>
-                    
-                    <td>-2.934552</td>
-                    
-                    <td>54.882067</td>
-                    
-                    <td data-sort-value="3.11">3.11</td>
-                    
-                    <td data-sort-value="90">90</td>
-                    
-                    <td data-sort-value="90">90</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:CAR</td>
+                    <td>CA25</td>
+                    <td class="data-table__cell--max-width">South Western Terrace, Carlisle</td>
+                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td>yes</td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
-                    <td>not owned by a public authority</td>
+                    <td>54.882067</td>
+                    <td>-2.934552</td>
+                    <td>3.11</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>2017-12-31</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
-                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -251,38 +228,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="CA49">CA49</td>
-                    <td data-sort-value="Nelson Street Carlisle" class="data-table__cell--max-width">Nelson Street Carlisle</td>
-                    
-                    <td>-2.944281</td>
-                    
-                    <td>54.888848</td>
-                    
-                    <td data-sort-value="2.84">2.84</td>
-                    
-                    <td data-sort-value="80">80</td>
-                    
-                    <td data-sort-value="80">80</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:CAR</td>
+                    <td>CA49</td>
+                    <td class="data-table__cell--max-width">Nelson Street Carlisle</td>
+                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
                     <td>not owned by a public authority</td>
-                    <td></td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
+                    <td>54.888848</td>
+                    <td>-2.944281</td>
+                    <td>2.84</td>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -291,74 +257,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="U21">U21</td>
-                    <td data-sort-value="Laings Site Dalston Rd" class="data-table__cell--max-width">Laings Site Dalston Rd</td>
-                    
-                    <td>-2.947993</td>
-                    
-                    <td>54.890886</td>
-                    
-                    <td data-sort-value="1.12">1.12</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    
-                    <td data-sort-value="30">30</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:CAR</td>
+                    <td>U21</td>
+                    <td class="data-table__cell--max-width">Laings Site Dalston Rd</td>
                     <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.890886</td>
+                    <td>-2.947993</td>
+                    <td>1.12</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="CA75">CA75</td>
-                    <td data-sort-value="Caxton Rd Carlisle" class="data-table__cell--max-width">Caxton Rd Carlisle</td>
-                    
-                    <td>-2.966951</td>
-                    
-                    <td>54.897396</td>
-                    
-                    <td data-sort-value="1.4">1.4</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    
-                    <td data-sort-value="40">40</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:CAR</td>
+                    <td>CA75</td>
+                    <td class="data-table__cell--max-width">Caxton Rd Carlisle</td>
+                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-08-11</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
+                    <td>54.897396</td>
+                    <td>-2.966951</td>
+                    <td>1.4</td>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -367,74 +311,52 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="R11">R11</td>
-                    <td data-sort-value="Harker Carlisle" class="data-table__cell--max-width">Harker Carlisle</td>
-                    
-                    <td>-2.954388</td>
-                    
-                    <td>54.937828</td>
-                    
-                    <td data-sort-value="10.59">10.59</td>
-                    
-                    <td data-sort-value="300">300</td>
-                    
-                    <td data-sort-value="300">300</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:CAR</td>
+                    <td>R11</td>
+                    <td class="data-table__cell--max-width">Harker Carlisle</td>
                     <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.937828</td>
+                    <td>-2.954388</td>
+                    <td>10.59</td>
+                    <td>300</td>
+                    <td>300</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="U3">U3</td>
-                    <td data-sort-value="Site of Pennine Way Primary School" class="data-table__cell--max-width">Site of Pennine Way Primary School</td>
-                    
-                    <td>-2.89453</td>
-                    
-                    <td>54.882323</td>
-                    
-                    <td data-sort-value="3.46">3.46</td>
-                    
-                    <td data-sort-value="103">103</td>
-                    
-                    <td data-sort-value="103">103</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:CAR</td>
+                    <td>U3</td>
+                    <td class="data-table__cell--max-width">Site of Pennine Way Primary School</td>
+                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2016-07-14</td>
+                    <td>permissioned</td>
                     <td>other</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
+                    <td>54.882323</td>
+                    <td>-2.89453</td>
+                    <td>3.46</td>
+                    <td>103</td>
+                    <td>103</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -443,110 +365,77 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="17/0429">17/0429</td>
-                    <td data-sort-value="The Grange Wood St Carlisle" class="data-table__cell--max-width">The Grange Wood St Carlisle</td>
-                    
-                    <td>-2.901627</td>
-                    
-                    <td>54.891608</td>
-                    
-                    <td data-sort-value="0.28">0.28</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    
-                    <td data-sort-value="7">7</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:CAR</td>
+                    <td>17/0429</td>
+                    <td class="data-table__cell--max-width">The Grange Wood St Carlisle</td>
+                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-10-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
+                    <td>54.891608</td>
+                    <td>-2.901627</td>
+                    <td>0.28</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="15/1003">15/1003</td>
-                    <td data-sort-value="St Ninians Road Carlisle" class="data-table__cell--max-width">St Ninians Road Carlisle</td>
-                    
-                    <td>-2.914201</td>
-                    
-                    <td>54.872004</td>
-                    
-                    <td data-sort-value="3.09">3.09</td>
-                    
-                    <td data-sort-value="132">132</td>
-                    
-                    <td data-sort-value="132">132</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:CAR</td>
+                    <td>15/1003</td>
+                    <td class="data-table__cell--max-width">St Ninians Road Carlisle</td>
+                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-01-31</td>
+                    <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
+                    <td>54.872004</td>
+                    <td>-2.914201</td>
+                    <td>3.09</td>
+                    <td>132</td>
+                    <td>132</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value=""></td>
-                    <td data-sort-value="Central Plaza Hotel Carlisle" class="data-table__cell--max-width">Central Plaza Hotel Carlisle</td>
-                    
-                    <td>-2.936055</td>
-                    
-                    <td>54.892453</td>
-                    
-                    <td data-sort-value="0.08">0.08</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    
-                    <td data-sort-value="10">10</td>
-                    <td>2017-12-31</td>
-                    
                     <td>2018-12-06</td>
+                    <td>local-authority-eng:CAR</td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/carlisle" class="govuk-link">http://opendatacommunities.org/id/district-council/carlisle</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td class="data-table__cell--max-width">Central Plaza Hotel Carlisle</td>
                     <td><a href="http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register" class="govuk-link">http://www.carlisle.gov.uk/planning-policy/Evidence-Base/Brownfield-Register</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>54.892453</td>
+                    <td>-2.936055</td>
+                    <td>0.08</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-12-31</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -555,7 +444,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/5c4f158e2121a8c87036e549925a79d730f9d5c81f224dd8f375d4350297845b" class="govuk-link">5c4f158e...</a></td>
                 </tr>
                 
             </tbody>
@@ -564,6 +453,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   

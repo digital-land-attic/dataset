@@ -131,7 +131,7 @@
 </div>
 
 <div class="govuk-grid-row">
-  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4.csv">
+  <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4.csv">
     <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
     <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest data in this register in CSV format.</p>
   </a>
@@ -154,59 +154,47 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
-                    <th scope="col" aria-sort="none">SiteReference</th>
-                    <th scope="col" aria-sort="none">SiteNameAddress</th>
-                    <th scope="col">GeoX</th>
-                    <th scope="col">GeoY</th>
-                    <th scope="col" aria-sort="none">Hectares</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeFrom</th>
-                    <th scope="col" aria-sort="none">NetDwellingsRangeTo</th>
-                    <th scope="col">FirstAddedDate</th>
-                    <th scope="col">LastUpdatedDate</th>
-                    <th scope="col">Deliverable</th>
-                    <th scope="col">HazardousSubstances</th>
-                    <th scope="col">OrganisationURI</th>
-                    <th scope="col">OwnershipStatus</th>
-                    <th scope="col">PermissionDate</th>
-                    <th scope="col">PermissionType</th>
-                    <th scope="col">PlanningHistory</th>
-                    <th scope="col">PlanningStatus</th>
-                    <th scope="col">SiteplanURL</th>
-                    <th scope="col">Notes</th>
-                    <th scope="col">EndDate</th>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
                 </tr>
             </thead>
             <tbody>
                 <tr id="row1">
-                    
-                    <td data-sort-value="WDCBLR/0001">WDCBLR/0001</td>
-                    <td data-sort-value="Garage, High Street, Pershore" class="data-table__cell--max-width">Garage, High Street, Pershore</td>
-                    
-                    <td>-2.07605</td>
-                    
-                    <td>52.112947</td>
-                    
-                    <td data-sort-value="0.47">0.47</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2018-01-02</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0001</td>
+                    <td class="data-table__cell--max-width">Garage, High Street, Pershore</td>
                     <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0001+Garage%2C+High+Street%2C+Pershore.pdf/9f85d54b-e638-fec0-a0ef-6c1203c8579b" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0001+Garage%2C+High+Street%2C+Pershore.pdf/9f85d54b-e638-fec0-a0ef-6c1203c8579b</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.112947</td>
+                    <td>-2.07605</td>
+                    <td>0.47</td>
+                    <td>18</td>
+                    <td>22</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -215,38 +203,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    
-                    <td data-sort-value="WDCBLR/0002">WDCBLR/0002</td>
-                    <td data-sort-value="Garage Court, Abbots Road, Pershore" class="data-table__cell--max-width">Garage Court, Abbots Road, Pershore</td>
-                    
-                    <td>-2.082875</td>
-                    
-                    <td>52.107935</td>
-                    
-                    <td data-sort-value="0.25">0.25</td>
-                    
-                    <td data-sort-value="12">12</td>
-                    
-                    <td data-sort-value="14">14</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2018-01-02</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0002</td>
+                    <td class="data-table__cell--max-width">Garage Court, Abbots Road, Pershore</td>
                     <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0002+Garage+Court%2C+Abbots+Road%2C+Pershore.pdf/85816cf7-879b-e28c-e570-4e3ff2582d21" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0002+Garage+Court%2C+Abbots+Road%2C+Pershore.pdf/85816cf7-879b-e28c-e570-4e3ff2582d21</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.107935</td>
+                    <td>-2.082875</td>
+                    <td>0.25</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -255,38 +232,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    
-                    <td data-sort-value="WDCBLR/0003">WDCBLR/0003</td>
-                    <td data-sort-value="Boxing Club, Kidderminster Road, Droitwich Spa" class="data-table__cell--max-width">Boxing Club, Kidderminster Road, Droitwich Spa</td>
-                    
-                    <td>-2.15418</td>
-                    
-                    <td>52.270481</td>
-                    
-                    <td data-sort-value="0.11">0.11</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2018-01-02</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0003</td>
+                    <td class="data-table__cell--max-width">Boxing Club, Kidderminster Road, Droitwich Spa</td>
                     <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0003+Boxing+Club%2C+Kidderminster+Road%2C+Droitwich+Spa.pdf/126e51a5-3345-2612-40d1-8969d57af592" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0003+Boxing+Club%2C+Kidderminster+Road%2C+Droitwich+Spa.pdf/126e51a5-3345-2612-40d1-8969d57af592</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.270481</td>
+                    <td>-2.15418</td>
+                    <td>0.11</td>
+                    <td>9</td>
+                    <td>11</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -295,38 +261,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    
-                    <td data-sort-value="WDCBLR/0004">WDCBLR/0004</td>
-                    <td data-sort-value="Acre Lane, Droitwich Spa" class="data-table__cell--max-width">Acre Lane, Droitwich Spa</td>
-                    
-                    <td>-2.157913</td>
-                    
-                    <td>52.269452</td>
-                    
-                    <td data-sort-value="0.38">0.38</td>
-                    
-                    <td data-sort-value="18">18</td>
-                    
-                    <td data-sort-value="22">22</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2018-01-02</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0004</td>
+                    <td class="data-table__cell--max-width">Acre Lane, Droitwich Spa</td>
                     <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0004+Acre+Lane%2C+Droitwich+Spa.pdf/3850a923-efc4-1b8e-0dd7-7c8d5a79a49c" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0004+Acre+Lane%2C+Droitwich+Spa.pdf/3850a923-efc4-1b8e-0dd7-7c8d5a79a49c</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.269452</td>
+                    <td>-2.157913</td>
+                    <td>0.38</td>
+                    <td>18</td>
+                    <td>22</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -335,38 +290,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    
-                    <td data-sort-value="WDCBLR/0005">WDCBLR/0005</td>
-                    <td data-sort-value="Willow Court, Westwood Road, Droitwich Spa" class="data-table__cell--max-width">Willow Court, Westwood Road, Droitwich Spa</td>
-                    
-                    <td>-2.168</td>
-                    
-                    <td>52.270795</td>
-                    
-                    <td data-sort-value="0.17">0.17</td>
-                    
-                    <td data-sort-value="9">9</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2018-01-02</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
-                    <td>owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0005</td>
+                    <td class="data-table__cell--max-width">Willow Court, Westwood Road, Droitwich Spa</td>
                     <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0005+Willow+Court%2C+Westwood+Road%2C+Droitwich+Spa.pdf/dd5daf96-46c6-a525-6cc3-12defdd76fef" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0005+Willow+Court%2C+Westwood+Road%2C+Droitwich+Spa.pdf/dd5daf96-46c6-a525-6cc3-12defdd76fef</a></td>
-
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.270795</td>
+                    <td>-2.168</td>
+                    <td>0.17</td>
+                    <td>9</td>
+                    <td>11</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -375,38 +319,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    
-                    <td data-sort-value="WDCBLR/0006">WDCBLR/0006</td>
-                    <td data-sort-value="Canal Basin (Netherwich), Droitwich Spa" class="data-table__cell--max-width">Canal Basin (Netherwich), Droitwich Spa</td>
-                    
-                    <td>-2.153402</td>
-                    
-                    <td>52.270222</td>
-                    
-                    <td data-sort-value="1.1">1.1</td>
-                    
-                    <td data-sort-value="72">72</td>
-                    
-                    <td data-sort-value="88">88</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2018-01-02</td>
-                    <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0006</td>
+                    <td class="data-table__cell--max-width">Canal Basin (Netherwich), Droitwich Spa</td>
                     <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0006+Canal+Basin+%28Netherwich%29%2C+Droitwich+Spa.pdf/c3fe50c2-362c-49c9-5aed-d86525deb9e4" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0006+Canal+Basin+%28Netherwich%29%2C+Droitwich+Spa.pdf/c3fe50c2-362c-49c9-5aed-d86525deb9e4</a></td>
-
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.270222</td>
+                    <td>-2.153402</td>
+                    <td>1.1</td>
+                    <td>72</td>
+                    <td>88</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -415,38 +348,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    
-                    <td data-sort-value="WDCBLR/0011">WDCBLR/0011</td>
-                    <td data-sort-value="Raven Hotel, St Andrews Street, Droitwich Spa" class="data-table__cell--max-width">Raven Hotel, St Andrews Street, Droitwich Spa</td>
-                    
-                    <td>-2.148747</td>
-                    
-                    <td>52.267306</td>
-                    
-                    <td data-sort-value="1.19">1.19</td>
-                    
-                    <td data-sort-value="51">51</td>
-                    
-                    <td data-sort-value="51">51</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2018-01-02</td>
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0011</td>
+                    <td class="data-table__cell--max-width">Raven Hotel, St Andrews Street, Droitwich Spa</td>
+                    <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0011+Raven+Hotel%2C+St+Andrews+Street%2C+Droitwich+Spa.pdf/0e8fc8d6-97fc-1ab6-b63f-2ec5573c0505" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0011+Raven+Hotel%2C+St+Andrews+Street%2C+Droitwich+Spa.pdf/0e8fc8d6-97fc-1ab6-b63f-2ec5573c0505</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2018-08-30</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0011+Raven+Hotel%2C+St+Andrews+Street%2C+Droitwich+Spa.pdf/0e8fc8d6-97fc-1ab6-b63f-2ec5573c0505" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0011+Raven+Hotel%2C+St+Andrews+Street%2C+Droitwich+Spa.pdf/0e8fc8d6-97fc-1ab6-b63f-2ec5573c0505</a></td>
-
+                    <td>52.267306</td>
+                    <td>-2.148747</td>
+                    <td>1.19</td>
+                    <td>51</td>
+                    <td>51</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -455,38 +377,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    
-                    <td data-sort-value="WDCBLR/0012">WDCBLR/0012</td>
-                    <td data-sort-value="Garage Blocks & Vacant Land, Drovers Way, Droitwich Spa" class="data-table__cell--max-width">Garage Blocks & Vacant Land, Drovers Way, Droitwich Spa</td>
-                    
-                    <td>-2.163408</td>
-                    
-                    <td>52.27723</td>
-                    
-                    <td data-sort-value="0.37">0.37</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    
-                    <td data-sort-value="6">6</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-02</td>
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0012</td>
+                    <td class="data-table__cell--max-width">Garage Blocks & Vacant Land, Drovers Way, Droitwich Spa</td>
+                    <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0012+Garage+Blocks+%26+Vacant+Land%2C+Drovers+Way%2C+Droitwich+Spa.pdf/ee8bbb03-0187-9322-a912-2ef9a994ea4d" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0012+Garage+Blocks+%26+Vacant+Land%2C+Drovers+Way%2C+Droitwich+Spa.pdf/ee8bbb03-0187-9322-a912-2ef9a994ea4d</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2017-04-05</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0012+Garage+Blocks+%26+Vacant+Land%2C+Drovers+Way%2C+Droitwich+Spa.pdf/ee8bbb03-0187-9322-a912-2ef9a994ea4d" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0012+Garage+Blocks+%26+Vacant+Land%2C+Drovers+Way%2C+Droitwich+Spa.pdf/ee8bbb03-0187-9322-a912-2ef9a994ea4d</a></td>
-
+                    <td>52.27723</td>
+                    <td>-2.163408</td>
+                    <td>0.37</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -495,38 +406,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    
-                    <td data-sort-value="WDCBLR/0017">WDCBLR/0017</td>
-                    <td data-sort-value="Land off Blake Avenue and, Long Sling, Droitwich Spa" class="data-table__cell--max-width">Land off Blake Avenue and, Long Sling, Droitwich Spa</td>
-                    
-                    <td>-2.16378</td>
-                    
-                    <td>52.259015</td>
-                    
-                    <td data-sort-value="0.25">0.25</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    
-                    <td data-sort-value="11">11</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-02</td>
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0017</td>
+                    <td class="data-table__cell--max-width">Land off Blake Avenue and, Long Sling, Droitwich Spa</td>
+                    <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0017+Land+off+Blake+Avenue+and%2C+Long+Sling%2C+Droitwich+Spa.pdf/c04b0037-16b3-a7c1-df41-d3491c817033" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0017+Land+off+Blake+Avenue+and%2C+Long+Sling%2C+Droitwich+Spa.pdf/c04b0037-16b3-a7c1-df41-d3491c817033</a></td>
                     <td>yes</td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
                     <td>owned by a public authority</td>
-                    <td>2016-10-24</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0017+Land+off+Blake+Avenue+and%2C+Long+Sling%2C+Droitwich+Spa.pdf/c04b0037-16b3-a7c1-df41-d3491c817033" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0017+Land+off+Blake+Avenue+and%2C+Long+Sling%2C+Droitwich+Spa.pdf/c04b0037-16b3-a7c1-df41-d3491c817033</a></td>
-
+                    <td>52.259015</td>
+                    <td>-2.16378</td>
+                    <td>0.25</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -535,38 +435,27 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    
-                    <td data-sort-value="WDCBLR/0007">WDCBLR/0007</td>
-                    <td data-sort-value="Employment site, top of Kings Road, Evesham" class="data-table__cell--max-width">Employment site, top of Kings Road, Evesham</td>
-                    
-                    <td>-1.933185</td>
-                    
-                    <td>52.09641</td>
-                    
-                    <td data-sort-value="3.8">3.8</td>
-                    
-                    <td data-sort-value="90">90</td>
-                    
-                    <td data-sort-value="110">110</td>
-                    <td>2017-12-28</td>
-                    
                     <td>2019-01-02</td>
+                    <td>local-authority-eng:WYC</td>
+                    <td>WDCBLR/0007</td>
+                    <td class="data-table__cell--max-width">Employment site, top of Kings Road, Evesham</td>
+                    <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0007+Employment+site%2C+top+of+Kings+Road%2C+Evesham.pdf/6bec6962-b82f-676e-7ed7-922b181fb357" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0007+Employment+site%2C+top+of+Kings+Road%2C+Evesham.pdf/6bec6962-b82f-676e-7ed7-922b181fb357</a></td>
                     <td></td>
-                    <td></td>
-                    
-                    <td><a href="http://opendatacommunities.org/id/district-council/wychavon" class="govuk-link">http://opendatacommunities.org/id/district-council/wychavon</a></td>
                     <td>not owned by a public authority</td>
-                    <td>2015-04-17</td>
+                    <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>permissioned</td>
-                    
-                    <td><a href="https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0007+Employment+site%2C+top+of+Kings+Road%2C+Evesham.pdf/6bec6962-b82f-676e-7ed7-922b181fb357" class="govuk-link">https://www.wychavon.gov.uk/documents/10586/8906182/WDCBLR0007+Employment+site%2C+top+of+Kings+Road%2C+Evesham.pdf/6bec6962-b82f-676e-7ed7-922b181fb357</a></td>
-
+                    <td>52.09641</td>
+                    <td>-1.933185</td>
+                    <td>3.8</td>
+                    <td>90</td>
+                    <td>110</td>
+                    <td>2017-12-28</td>
+                    <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
@@ -575,7 +464,7 @@
                         </details>
                         
                     </td>
-                    <td></td>
+                    <td><a href="https://digital-land.github.io/resource/46ebf7ab269ab18d204e5f9738bcc304c6dbfad29a27ffd2c87905237d1201f4" class="govuk-link">46ebf7ab...</a></td>
                 </tr>
                 
             </tbody>
@@ -584,6 +473,11 @@
     <div class="data-table-right-shadow"></div>
 </div>
 
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-inset-text">
+        We produce this data by <a herf="https://digital-land.github.io/guidance/pipeline/">processing the raw data</a> published by the organisation. This allows us to combine data from multiple organisations.
+      </p>
     </div>
   </div>
   
