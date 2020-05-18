@@ -39,6 +39,7 @@
 
 {% from 'dl-partials/brownfield-data-table.html' import makeLinkAnAnchor %}
 {% from 'dl-partials/brownfield-data-table.html' import brownfieldDataTable %}
+{% from 'dl-partials/brownfield-data-table.html' import brownfieldTransformedDataTable %}
 
 {% block content %}
 <div class="govuk-grid-row">
@@ -76,7 +77,7 @@
 
       <p class="govuk-body">There are {{ dorg['latest-resource']['summary']['total'] }} records from {{organisation["name"]}}.</p>
       <h4 class="govuk-heading-s">Preview of {{ dorg['latest-resource']['data_preview']|length }} records</h4>
-      {{ brownfieldDataTable(dorg['latest-resource']['data_preview']) }}
+      {{ brownfieldTransformedDataTable(dorg['latest-resource']['data_preview']) }}
     </div>
   </div>
   {% endif %}
