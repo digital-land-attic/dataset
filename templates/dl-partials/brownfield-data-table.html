@@ -100,7 +100,7 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
+                <tr class="no-wrap">
                     <th scope="col">entry-date</th>
                     <th scope="col">organisation</th>
                     <th scope="col">site</th>
@@ -156,7 +156,11 @@
                         </details>
                         {% endif %}
                     </td>
-                    <td>{{ "" if row["resource"] == None else row["resource"] }}</td>
+                    <td>
+                    {%- if not row["resource"] == None -%}
+                        <a href="https://digital-land.github.io/resource/{{ row['resource'] }}" class="govuk-link">{{ row['resource']|truncate(11,true) }}</a>
+                    {%- endif -%}
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
