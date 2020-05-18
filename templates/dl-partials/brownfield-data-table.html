@@ -12,7 +12,7 @@
     <div class="wide-table">
         <table class="data-table">
             <thead>
-                <tr>
+                <tr class="no-wrap">
                     <th scope="col" aria-sort="none">SiteReference</th>
                     <th scope="col" aria-sort="none">SiteNameAddress</th>
                     <th scope="col">GeoX</th>
@@ -85,6 +85,82 @@
                         {% endif %}
                     </td>
                     <td>{{ "" if row["EndDate"] == None else row["EndDate"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="data-table-right-shadow"></div>
+</div>
+{% endmacro %}
+
+{% macro brownfieldTransformedDataTable(data) %}
+<div class="data-table__wrapper" data-module="data-table data-linkable-table">
+    <div class="data-table-left-shadow"></div>
+    <div class="wide-table">
+        <table class="data-table">
+            <thead>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%- for row in data -%}
+                {% set row_num = loop.index %}
+                <tr id="row{{row_num}}">
+                    <td>{{ "" if row["entry-date"] == None else row["entry-date"] }}</td>
+                    <td>{{ "" if row["organisation"] == None else row["organisation"] }}</td>
+                    <td>{{ "" if row["site"] == None else row["site"] }}</td>
+                    <td class="data-table__cell--max-width">{{ "" if row["site-address"] == None else row["site-address"] }}</td>
+                    <td>
+                        {%- if not row["site-plan-url"] == None -%}
+                        {{ makeLinkAnAnchor(row["site-plan-url"]) }}
+                        {%- endif -%}
+                    </td>
+                    <td>{{ "" if row["deliverable"] == None else row["deliverable"] }}</td>
+                    <td>{{ "" if row["ownership"] == None else row["ownership"] }}</td>
+                    <td>{{ "" if row["planning-permission-status"] == None else row["planning-permission-status"] }}</td>
+                    <td>{{ "" if row["planning-permission-type"] == None else row["planning-permission-type"] }}</td>
+                    <td>{{ "" if row["hazardous-substances"] == None else row["hazardous-substances"] }}</td>
+                    <td>{{ "" if row["latitude"] == None else row["latitude"] }}</td>
+                    <td>{{ "" if row["longitude"] == None else row["longitude"] }}</td>
+                    <td>{{ "" if row["hectares"] == None else row["hectares"] }}</td>
+                    <td>{{ "" if row["minimum-net-dwellings"] == None else row["minimum-net-dwellings"] }}</td>
+                    <td>{{ "" if row["maximum-net-dwellings"] == None else row["maximum-net-dwellings"] }}</td>
+                    <td>{{ "" if row["start-date"] == None else row["start-date"] }}</td>
+                    <td>{{ "" if row["end-date"] == None else row["end-date"] }}</td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        {% if row["notes"] == None %}
+                        {% else %}
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">{{ row["notes"] }}</div>
+                        </details>
+                        {% endif %}
+                    </td>
+                    <td>
+                    {%- if not row["resource"] == None -%}
+                        <a href="https://digital-land.github.io/resource/{{ row['resource'] }}" class="govuk-link">{{ row['resource']|truncate(11,true) }}</a>
+                    {%- endif -%}
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>

@@ -21,6 +21,12 @@ def url_for_harmonised(resource_hash):
     return f'https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/harmonised/{resource_hash}.csv'
 
 
+# brownfield harmonised resources
+def url_for_transformed(resource_hash):
+    return f'https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/{resource_hash}.csv'
+
+
+
 def get(url):
     r = session.get(url)
     r.raise_for_status()
@@ -36,7 +42,7 @@ def remote_or_cached(path):
 
 
 def fetch_csv(url):
-    print(f"...... collecting harmonised data from {url}")
+    print(f"...... collecting data from {url}")
     try:
         data = remote_or_cached(url)
         # strip spaces introduced to values
@@ -55,12 +61,12 @@ def get_brownfield_resource_list(organisation):
 
 def get_latest_brownfield_resource(resource_list, data_preview=False):
     latest_resource = resource_list[-1]
-    raw_data_url = url_for_harmonised(latest_resource['resource'])
+    raw_data_url = url_for_transformed(latest_resource['resource'])
 
     data = fetch_csv(raw_data_url)
     json_data = json.loads(data.to_json(orient='records'))
 
-    analysed = DataAnalyser(json_data)
+    analysed = DataAnalyser(json_data, transformed=True)
     latest_resource['summary'] = analysed.summary()
     latest_resource['url'] = raw_data_url
     if data_preview:
