@@ -77,7 +77,10 @@
 
       <p class="govuk-body">There are {{ dorg['latest-resource']['summary']['total'] }} records from {{organisation["name"]}}.</p>
       <h4 class="govuk-heading-s">Preview of {{ dorg['latest-resource']['data_preview']|length }} records</h4>
-      {{ brownfieldTransformedDataTable(dorg['latest-resource']['data_preview']) }}
+      {{ brownfieldTransformedDataTable({
+        "data": dorg['latest-resource']['data_preview'],
+        "caption": "Table with a preview of the brownfield land data from " + organisation["name"]
+      }) }}
     </div>
     <div class="govuk-grid-column-two-thirds">
       <p class="govuk-inset-text">

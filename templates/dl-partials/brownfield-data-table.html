@@ -94,11 +94,14 @@
 </div>
 {% endmacro %}
 
-{% macro brownfieldTransformedDataTable(data) %}
+{% macro brownfieldTransformedDataTable(params) %}
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
     <div class="data-table-left-shadow"></div>
     <div class="wide-table">
         <table class="data-table">
+            {% if params.caption %}
+            
+            {% endif %}<caption class="data-table__caption">{{ params.caption }}</caption>
             <thead>
                 <tr class="no-wrap">
                     <th scope="col">entry-date</th>
@@ -123,7 +126,7 @@
                 </tr>
             </thead>
             <tbody>
-                {%- for row in data -%}
+                {%- for row in params.data -%}
                 {% set row_num = loop.index %}
                 <tr id="row{{row_num}}">
                     <td>{{ "" if row["entry-date"] == None else row["entry-date"] }}</td>
