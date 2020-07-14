@@ -38,8 +38,13 @@ def render(path, template, organisations, tags, dataset=None, organisation=None)
         f.write(template.render(organisations=organisations, tags=tags, dataset=dataset, organisation=organisation))
 
 
-loader = jinja2.FileSystemLoader(searchpath="./templates")
-env = jinja2.Environment(loader=loader)
+multi_loader = jinja2.ChoiceLoader([
+    jinja2.FileSystemLoader(searchpath="./templates"),
+    jinja2.PrefixLoader({
+        'govuk-jinja-components': jinja2.PackageLoader('govuk_jinja_components')
+    })
+])
+env = jinja2.Environment(loader=multi_loader)
 
 env.filters['commanum'] = lambda v: "{:,}".format(v)
 env.filters['is_valid_uri'] = is_valid_uri

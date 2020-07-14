@@ -1,25 +1,30 @@
 appdirs==1.4.3
 attrs==19.3.0
+autopep8==1.5
 black==19.10b0
+-e git+https://github.com/digital-land/brownfield-resources.git@dc78e09be8210539f116212f548576c318ea16bc#egg=Brownfield_resource_generator
 CacheControl==0.12.5
 certifi==2019.11.28
 chardet==3.0.4
-click==7.1.1
+click==7.1.2
 decorator==4.4.2
+-e git+https://github.com/digital-land/govuk-jinja-components.git@e8875b3adf6a2060f78d5a0bd34a8f6b93bdde54#egg=govuk_jinja_components
 idna==2.9
-Jinja2==2.10.3
+Jinja2==2.11.2
 lockfile==0.12.2
+Markdown==3.2.1
 MarkupSafe==1.1.1
 msgpack==0.6.2
-numpy==1.18.2
+numpy==1.18.4
 pandas==1.0.3
 pathspec==0.7.0
+pycodestyle==2.5.0
 python-dateutil==2.8.1
-pytz==2019.3
+pytz==2020.1
 regex==2020.2.20
 requests==2.23.0
 six==1.14.0
 toml==0.10.0
 typed-ast==1.4.1
 urllib3==1.25.8
-validators==0.15.0
+validators==0.14.3
