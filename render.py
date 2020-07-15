@@ -165,8 +165,6 @@ def brownfield_land_dataset(d):
         "rows": sum([r['row-count'] for r in idx["resource"].values()]),
         "errors": sum([r['error-count'] for r in idx["resource"].values()]),
     }
-
-    datasets[dataset] = d
     
     if dataset == "brownfield-land":
         da = BrownfieldDatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
@@ -194,12 +192,16 @@ def brownfield_land_dataset(d):
 datasets = OrderedDict()
 for d in csv.DictReader(get(dataset_csv).splitlines()):
     dataset = d["dataset"]
+    datasets[dataset] = {
+        "name": d["name"],
+        "url": d["resource-url"]
+    }
 
     if dataset == "brownfield-land":
         # generate pages for brownfield land dataset
         brownfield_land_dataset(d)
     else:
-        data = get(d["resource-url"])
+        data = get(datasets[dataset]["url"])
         print(data)
 
     
