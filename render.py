@@ -5,6 +5,7 @@ import os.path
 import jinja2
 import csv
 import json
+
 import requests
 from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
@@ -22,6 +23,15 @@ organisation_tag_csv = "https://raw.githubusercontent.com/digital-land/organisat
 docs = "docs/"
 
 
+# fetch from a local file
+def get_from_file(path):
+    file = open(path ,mode='r')
+    all_of_it = file.read()
+    file.close()
+    return all_of_it
+
+
+# fetch from a URL
 def get(url):
     r = session.get(url)
     r.raise_for_status()
@@ -76,13 +86,10 @@ for o in csv.DictReader(get(organisation_csv).splitlines()):
     organisations[o["organisation"]] = o
 
 
-datasets = OrderedDict()
-for d in csv.DictReader(get(dataset_csv).splitlines()):
-    dataset = d["dataset"]
-
+def brownfield_land_dataset(d):
     index_url = os.environ.get(dataset.replace("-", "_") + "_index", d["resource-url"])
-
     idx = json.loads(get(index_url))
+
     d["index"] = idx["key"]
     d["resource"] = idx["resource"]
     d["organisation"] = {}
@@ -181,6 +188,21 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
     render(dataset + "/organisation/log.html", dataset_organisations_status_template, organisations, tags, dataset=d)
     render(dataset + "/resource/index.html", dataset_resources_template, organisations, tags, dataset=d)
     render(dataset + "/link/index.html", dataset_links_template, organisations, tags, dataset=d)
+
+
+
+datasets = OrderedDict()
+for d in csv.DictReader(get(dataset_csv).splitlines()):
+    dataset = d["dataset"]
+
+    if dataset == "brownfield-land":
+        # generate pages for brownfield land dataset
+        brownfield_land_dataset(d)
+    else:
+        data = get(d["resource-url"])
+        print(data)
+
+    
 
 # datasets
 with open("docs/index.html", "w") as f:
