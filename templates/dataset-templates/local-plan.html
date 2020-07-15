@@ -1,0 +1,70 @@
+{% extends "leaflet-base.html" %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    "classes": "govuk-width-container",
+    "tag": {
+      "text": "prototype"
+    },
+    "html": 'This is a prototype. Please provide feedback to the Digital Land team.'
+  }) }}
+
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "../../"
+      },
+      {
+        "text": "Datasets",
+        "href": "../"
+      },
+      {
+        "text": dataset["name"],
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block pageTitle %}{{dataset["name"]}} | Datasets | Digital Land{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-full">
+     <span class="govuk-caption-xl">National dataset</span>
+     <h1 class="govuk-heading-xl">{{dataset["name"]}}</h1>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l" id="download">Download the data</h2>
+    <p class="govuk-body">After collecting the data, we run it through our pipeline process. This changes the original data published by local planning authorities so that it meets the <a href="{{ dataset['documentation'] }}">data standard</a>, as well as correcting some common errors.</p>
+    <p class="govuk-body">We recommend that you download the processed data. However, all original datasets published by local planning authorities are also available.</p>
+    <h3 class="govuk-heading-s">Download the processed data as:</h3>
+    <ul class="govuk-list">
+      <li><a href="{{ dataset['url'] }}" class="govuk-link">CSV file</a></li>
+    </ul>
+    <!--<p class="govuk-body">You can read about how the data is processed on the <a href="{{dataset["documentation-url"]}}">GitHub project</a>.</p>-->
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block bodyEnd %}
+{{ super() }}
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-127566551-1', 'auto');
+ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+{% endblock %}

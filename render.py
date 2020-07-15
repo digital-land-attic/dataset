@@ -194,15 +194,19 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
     dataset = d["dataset"]
     datasets[dataset] = {
         "name": d["name"],
-        "url": d["resource-url"]
+        "url": d["resource-url"],
+        "documentation": d["documentation-url"]
     }
 
     if dataset == "brownfield-land":
         # generate pages for brownfield land dataset
         brownfield_land_dataset(d)
     else:
-        data = get(datasets[dataset]["url"])
-        print(data)
+        dataset_template = env.get_template(f"dataset-templates/{dataset}.html")
+        reader = csv.DictReader(get(datasets[dataset]["url"]).splitlines())
+        # might be slow to add all data for each dataset
+        datasets[dataset]["data"] = [row for row in reader]
+        render(dataset + "/index.html", dataset_template, organisations, tags, dataset=datasets[dataset])
 
     
 
