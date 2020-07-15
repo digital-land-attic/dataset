@@ -11,7 +11,7 @@ from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
 from collections import OrderedDict
 
-from filters import is_valid_uri, float_to_int
+from filters import is_valid_uri, float_to_int, statistical_geography_code
 from analyse_dataset import BrownfieldDatasetAnalyser
 from latest_resource import get_latest_brownfield_resource, get_brownfield_resource_list
 
@@ -59,6 +59,7 @@ env = jinja2.Environment(loader=multi_loader)
 env.filters['commanum'] = lambda v: "{:,}".format(v)
 env.filters['is_valid_uri'] = is_valid_uri
 env.filters['float_to_int'] = float_to_int
+env.filters['statistical_geography_code'] = statistical_geography_code
 
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")

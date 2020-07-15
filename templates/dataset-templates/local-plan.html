@@ -58,7 +58,7 @@
           <td class="govuk-table__cell">
           {%- set geographies = row['geographies'].split(';') -%}
           {%- for geog in geographies -%}
-            {{ geog }}{% if not loop.last %}<br />{% endif %}
+            {{ geog|statistical_geography_code }}{% if not loop.last %}<br />{% endif %}
           {% endfor -%}</td>
           <td class="govuk-table__cell">
           {%- set organisations = row['organisations'].split(';') -%}

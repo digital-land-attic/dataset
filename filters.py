@@ -9,3 +9,8 @@ def float_to_int(v):
     if v:
         return int(float(v))
     return ""
+
+def statistical_geography_code(v):
+    if v:
+        return v.replace("statistical-geography:", "")
+    return v
