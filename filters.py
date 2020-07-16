@@ -1,5 +1,7 @@
 import validators
 
+from filter.organisation_mapper import map_organisation_id_filter
+
 def is_valid_uri(uri):
     if validators.url(uri):
         return True

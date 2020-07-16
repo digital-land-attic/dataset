@@ -11,7 +11,7 @@ from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
 from collections import OrderedDict
 
-from filters import is_valid_uri, float_to_int, statistical_geography_code
+from filters import is_valid_uri, float_to_int, statistical_geography_code, map_organisation_id_filter
 from analyse_dataset import BrownfieldDatasetAnalyser
 from latest_resource import get_latest_brownfield_resource, get_brownfield_resource_list
 
@@ -60,6 +60,7 @@ env.filters['commanum'] = lambda v: "{:,}".format(v)
 env.filters['is_valid_uri'] = is_valid_uri
 env.filters['float_to_int'] = float_to_int
 env.filters['statistical_geography_code'] = statistical_geography_code
+env.filters['map_organisation_by_id'] = map_organisation_id_filter
 
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")

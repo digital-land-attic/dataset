@@ -63,7 +63,8 @@
           <td class="govuk-table__cell">
           {%- set organisations = row['organisations'].split(';') -%}
           {%- for org in organisations -%}
-            {{ org }}{% if not loop.last %}<br />{% endif %}
+            <a href="https://digital-land.github.io/organisation/{{ org|replace(':', '/') }}" class="govuk-link">{{ org|map_organisation_by_id }}</a>
+            {% if not loop.last %}<br />{% endif %}
           {% endfor -%}</td>
         </tr>
         {% endfor %}
