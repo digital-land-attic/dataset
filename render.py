@@ -6,6 +6,8 @@ import jinja2
 import csv
 import json
 
+import pandas as pd
+
 import requests
 from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
@@ -14,6 +16,8 @@ from collections import OrderedDict
 from filters import is_valid_uri, float_to_int, statistical_geography_code, map_organisation_id_filter
 from analyse_dataset import BrownfieldDatasetAnalyser
 from latest_resource import get_latest_brownfield_resource, get_brownfield_resource_list
+
+from utils import get_csv_as_json
 
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
 
@@ -38,14 +42,14 @@ def get(url):
     return r.text
 
 
-def render(path, template, organisations, tags, dataset=None, organisation=None):
+def render(path, template, organisations, tags, dataset=None, organisation=None, **kwargs):
     path = os.path.join(docs, path)
     directory = os.path.dirname(path)
     if not os.path.exists(directory):
         os.makedirs(directory)
 
     with open(path, "w") as f:
-        f.write(template.render(organisations=organisations, tags=tags, dataset=dataset, organisation=organisation))
+        f.write(template.render(organisations=organisations, tags=tags, dataset=dataset, organisation=organisation, **kwargs))
 
 
 multi_loader = jinja2.ChoiceLoader([
@@ -193,6 +197,7 @@ def brownfield_land_dataset(d):
 
 datasets = OrderedDict()
 for d in csv.DictReader(get(dataset_csv).splitlines()):
+    
     dataset = d["dataset"]
     datasets[dataset] = {
         "name": d["name"],
@@ -208,6 +213,18 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         reader = csv.DictReader(get(datasets[dataset]["url"]).splitlines())
         # might be slow to add all data for each dataset
         datasets[dataset]["data"] = [row for row in reader]
+        if dataset == "local-plans":
+            local_plan_template = env.get_template(f"dataset-templates/local-plan.html")
+            dev_plan_docs = get_csv_as_json("https://raw.githubusercontent.com/digital-land/alpha-data/master/local-plans/development-plan-document.csv")
+            
+            for plan in datasets[dataset]["data"]:
+                plan['document'] = [doc for doc in dev_plan_docs if doc['development-plan'] == plan['development-plan']]
+            
+            for d in datasets[dataset]['data']:
+                    print(f"render page for local plan: {d['development-plan']}")
+                    render(f"{dataset}/{d['development-plan']}/index.html", local_plan_template, organisations, tags, plan=d)
+
+            print(datasets[dataset]["data"][30])
         render(dataset + "/index.html", dataset_template, organisations, tags, dataset=datasets[dataset])
 
     
