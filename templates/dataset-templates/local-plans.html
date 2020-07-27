@@ -52,8 +52,9 @@
         {% for row in dataset["data"] %}
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__cell">
-            <h4 class="govuk-heading-s govuk-!-margin-bottom-1">{{ row['name'] }}</h4>
-            <a href="{{ row['document-url'] }}" class="govuk-link govuk-body-s">See full plan</a>
+            <h4 class="govuk-heading-s govuk-!-margin-bottom-1">
+              <a href="{{row['development-plan']}}">{{ row['name'] }}</a>
+            </h4>
           </th>
           <td class="govuk-table__cell">
           {%- set geographies = row['geographies'].split(';') -%}
