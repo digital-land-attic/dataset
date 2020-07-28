@@ -35,12 +35,16 @@
      <span class="govuk-caption-xl">National dataset</span>
      <h1 class="govuk-heading-xl">{{ dataset["name"] }}</h1>
   </div>
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body-l">A list of {{ dataset["data"]|length }} local plans authored by the Digital Land team in MHCLG.</p>
+    <p class="govuk-body">Over time we will replace this data with data published by local authorities.</p>
+  </div>
 </div>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
     <table class="govuk-table">
-      <caption class="govuk-table__caption">{{ dataset["data"]|length }} local plan entries</caption>
+      <caption class="govuk-table__caption govuk-visually-hidden">{{ dataset["data"]|length }} local plan entries</caption>
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header">Name</th>
