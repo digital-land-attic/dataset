@@ -47,7 +47,7 @@
       <caption class="govuk-table__caption govuk-visually-hidden">{{ dataset["data"]|length }} local plan entries</caption>
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header">Name</th>
+          <th scope="col" class="govuk-table__header">Plan name</th>
           <th scope="col" class="govuk-table__header">Documents</th>
           <th scope="col" class="govuk-table__header">Geography</th>
           <th scope="col" class="govuk-table__header">Organisations</th>
@@ -58,7 +58,7 @@
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__cell">
             <h4 class="govuk-heading-s govuk-!-margin-bottom-1">
-              <a href="{{row['development-plan']}}">{{ row['name'] }}</a>
+              <a href="{{row['development-plan']}}">{{ row['name'] if row['name'] else "Unknown name" }}</a>
             </h4>
             <span class="secondary-text govuk-!-font-weight-regular govuk-!-font-size-16">Start date: {{ row['start-date'] if row['start-date'] else "unknown" }}</span>
           </th>

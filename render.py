@@ -213,6 +213,8 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         reader = csv.DictReader(get(datasets[dataset]["url"]).splitlines())
         # might be slow to add all data for each dataset
         datasets[dataset]["data"] = [row for row in reader]
+        # sort but put plans without name at the end
+        datasets[dataset]["data"].sort(key=lambda x: 'z' if x['name'] is "" else x['name'])
         if dataset == "local-plans":
             local_plan_template = env.get_template(f"dataset-templates/local-plan.html")
             dev_plan_docs = get_csv_as_json("https://raw.githubusercontent.com/digital-land/alpha-data/master/local-plans/development-plan-document.csv")
@@ -224,7 +226,6 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
                     print(f"render page for local plan: {d['development-plan']}")
                     render(f"{dataset}/{d['development-plan']}/index.html", local_plan_template, organisations, tags, plan=d)
 
-            print(datasets[dataset]["data"][30])
         render(dataset + "/index.html", dataset_template, organisations, tags, dataset=datasets[dataset])
 
     
