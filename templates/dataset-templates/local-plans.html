@@ -53,9 +53,10 @@
         {% for row in dataset["data"] %}
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__cell">
-            <h4 class="govuk-heading-s">
+            <h4 class="govuk-heading-s govuk-!-margin-bottom-1">
               <a href="{{row['development-plan']}}">{{ row['name'] }}</a>
             </h4>
+            <span class="secondary-text govuk-!-font-weight-regular govuk-!-font-size-16">Start date: {{ row['start-date'] if row['start-date'] else "unknown" }}</span>
           </th>
           <td class="govuk-table__cell">
             {{ row['document']|length }}
