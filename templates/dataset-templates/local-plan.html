@@ -128,6 +128,14 @@
       {% endif %}
 
     </dl>
+
+    <h2 class="govuk-heading-l" id="organisation">Documents</h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+      {% for doc in  plan["document"] %}
+        <li><a href="{{ doc['document-url'] }}" class="govuk-link">{{ doc['name'] if doc['name'] else "Title unknown" }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
 
