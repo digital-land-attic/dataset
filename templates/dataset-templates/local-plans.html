@@ -44,6 +44,7 @@
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header">Name</th>
+          <th scope="col" class="govuk-table__header">Documents</th>
           <th scope="col" class="govuk-table__header">Geography</th>
           <th scope="col" class="govuk-table__header">Organisations</th>
         </tr>
@@ -52,10 +53,13 @@
         {% for row in dataset["data"] %}
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__cell">
-            <h4 class="govuk-heading-s govuk-!-margin-bottom-1">
+            <h4 class="govuk-heading-s">
               <a href="{{row['development-plan']}}">{{ row['name'] }}</a>
             </h4>
           </th>
+          <td class="govuk-table__cell">
+            {{ row['document']|length }}
+          </td>
           <td class="govuk-table__cell">
           {%- set geographies = row['geographies'].split(';') -%}
           {%- for geog in geographies -%}
