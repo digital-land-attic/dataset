@@ -17,7 +17,16 @@
       <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
     
 
-    
+    <link rel="stylesheet" href="/map-templates/map.css" crossorigin="" />
+
+<!-- include css and js for LeafletJS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+  integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+  crossorigin=""></script>
 <link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 <style>
 .status-green {
@@ -27,6 +36,8 @@
     background-color: red;
 }
 </style>
+
+
 
     
     
@@ -113,12 +124,12 @@
   
     
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/dataset/local-plan">Local plans</a>
+      <a class="govuk-breadcrumbs__link" href="/dataset/local-plans">Local plans</a>
     </li>
     
   
     
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">f4c4af01-5d24-4b7a-8c79-7d77f3ce2812</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">f4c4af01...</li>
     
   
   </ol>
@@ -182,11 +193,11 @@
       
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Geographies
+          Organisations
         </dt>
         <dd class="govuk-summary-list__value">
-          <a href="http://statistics.data.gov.uk/id/statistical-geography/E07000067">statistical-geography:E07000067</a>
-          
+          <a href="https://digital-land.github.io/organisation/local-authority-eng/BRA" class="govuk-link">Braintree District Council</a>
+            
           
         </dd>
       </div>
@@ -195,11 +206,16 @@
       
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Organisations
+          Geographies
         </dt>
         <dd class="govuk-summary-list__value">
-          <a href="https://digital-land.github.io/organisation/local-authority-eng/BRA" class="govuk-link">Braintree District Council</a>
-            
+          <a href="http://statistics.data.gov.uk/id/statistical-geography/E07000067">statistical-geography:E07000067</a>
+          
+          
+          
+            <div class="govuk-!-margin-top-3" id="map" data-module="boundary-map" style="height: 350px;">
+              <noscript>To view this map, you need to enable JavaScript.</noscript>
+            </div>
           
         </dd>
       </div>
@@ -234,6 +250,12 @@
     
 
     
+<div class="dlf-pg-feedback">
+  <div class="dlf-pg-feedback__prompt">
+    <a href="mailto:digitalland@communities.gov.uk?subject=Feedback on local plan page (f4c4af01-5d24-4b7a-8c79-7d77f3ce2812)" class="dlf-pg-feedback__link">Spotted a problem with the data? Let us know.</a>
+  </div>
+</div>
+  
       <footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
@@ -275,9 +297,10 @@
 </footer>
     
 
+
     
 
-<script src="/static/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
+<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
 <script>
 	// initiate all GOVUK components
 	window.GOVUKFrontend.initAll();
@@ -309,6 +332,62 @@ ga('send', 'pageview');
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script>
+  const $mapElement = document.querySelector('[data-module="boundary-map"]');
+  const boundaryURLs = ['https://raw.githubusercontent.com/digital-land/boundary-collection/master/collection/local-authority/E07000067/index.geojson'];
+  if ($mapElement) {
+    // Tile layers
+    var tiles = L.tileLayer("https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+
+    // govuk consistent colours
+    var colours = {
+      lightBlue: "#1d70b8",
+      darkBlue: "#003078",
+      brown: "#594d00",
+      yellow_brown: "#a0964e"
+    };
+
+    var latLng = L.latLng(52.561928, -1.464854);
+    var map = L.map("map", {
+      center: latLng,
+      zoom: 5,
+      layers: [tiles]
+    });
+
+    // create layer to contain all boundaries
+    // needs to be featureGroup so that it has getBounds() func
+    var geoBoundaries = L.featureGroup().addTo(map);
+
+    count = 0;
+    boundaryURLs.forEach(function (url) {
+      fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        boundary = L.geoJSON(data, {
+          style: {
+            fillOpacity: 0.2,
+            weight: 2,
+            color: colours.darkBlue,
+            fillColor: colours.lightBlue
+          }
+        }).addTo(geoBoundaries);
+        count++;
+        // only pan map once all boundaries have loaded
+        if (count === boundaryURLs.length) {
+          map.fitBounds(geoBoundaries.getBounds());
+        }
+      });
+    });
+     
+  }
+</script>
 
 
 
