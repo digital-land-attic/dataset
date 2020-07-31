@@ -1,5 +1,10 @@
 {% extends "leaflet-base.html" %}
 
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="https://digital-land-design.herokuapp.com/static/stylesheets/vendor/govuk-accessible-autocomplete.min.css" />
+{% endblock head %}
+
 {% block beforeContent %}
   {{ govukPhaseBanner({
     "classes": "govuk-width-container",
@@ -38,12 +43,35 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body-l">A list of {{ dataset["data"]|length }} local plans authored by the Digital Land team in MHCLG.</p>
     <p class="govuk-body">Over time we will replace this data with data published by local authorities.</p>
+  
+    <form class="govuk-form dl-js-enhancement" id="plan-search-form">
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="plan-search">
+          Search for a Local plan
+        </label>
+        <span id="plan-search-error" class="govuk-error-message" role="alert">
+          <span class="govuk-visually-hidden">Error:</span> We don't recognise the value you entered, please try again
+        </span>
+        <select class="govuk-select" id="plan-search" name="plan-search">
+          <option value=""></option>
+          {% for plan in dataset["data"] %}
+          {% if plan['name'] %}
+          <option value="{{ plan['name'] }}">{{ plan['name'] }}</option>
+          {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+      <div class="govuk-form-group govuk-!-margin-bottom-1">
+        <button class="govuk-button dlf-filter-button">Find</button>
+      </div>
+    </form>
   </div>
 </div>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-    <table class="govuk-table">
+    <table class="govuk-table local-plans-list">
       <caption class="govuk-table__caption govuk-visually-hidden">{{ dataset["data"]|length }} local plan entries</caption>
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
@@ -55,7 +83,7 @@
       </thead>
       <tbody class="govuk-table__body">
         {% for row in dataset["data"] %}
-        <tr class="govuk-table__row">
+        <tr class="govuk-table__row" data-plan-name="{{ row['name'] if row['name'] else 'Unknown name' }}">
           <th scope="row" class="govuk-table__cell">
             <h4 class="govuk-heading-s govuk-!-margin-bottom-1">
               <a href="{{row['development-plan']}}">{{ row['name'] if row['name'] else "Unknown name" }}</a>
@@ -112,5 +140,60 @@ ga('send', 'pageview');
 }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script src="https://digital-land-design.herokuapp.com/static/javascripts/vendor/govuk-accessible-autocomplete.min.js"></script>
+<script>
+  const plans = document.querySelectorAll(".local-plans-list tbody tr");
+
+  // set up select input
+  // Fully controled by JS so needs to handle errors
+  let select_el = document.querySelector('#plan-search');
+  const select_options = select_el.querySelectorAll("option");
+  const select_options_list = [];
+  select_options.forEach(function(opt) {
+    if(opt.value !== "") {
+      select_options_list.push(opt.value);
+    }
+  })
+  const select_form_group = select_el.closest(".govuk-form-group");
+  const select_form = select_form_group.closest("form");
+  const select_button = select_form.querySelector("button");
+  const form_error_class = "govuk-form-group--error";
+  const input_error_class = "govuk-input--error";
+
+  function handlePlanSearch(v) {
+    console.log("handling selection")
+    if(select_options_list.indexOf(v) != -1) {
+      select_form_group.classList.remove(form_error_class);
+      select_el.classList.add(input_error_class);
+      var row = document.querySelector("[data-plan-name*='"+ v +"']");
+
+      //window.location.href = "#" + hubEl.id;
+      plans.forEach(function(la) {
+        la.classList.add('govuk-visually-hidden');
+      });
+      //const new_la = document.querySelector("[data-plan-name*='"+ v +"']");
+      row.classList.remove('govuk-visually-hidden');
+    } else {
+      select_form_group.classList.add(form_error_class);
+      select_el.classList.add(input_error_class);
+    }
+  }
+
+  select_button.addEventListener('click', function(e) {
+    e.preventDefault();
+    // need to select element here because autocomplete plugin changes it
+    select_el = document.getElementById("plan-search");
+    handlePlanSearch(select_el.value);
+  });
+
+
+  accessibleAutocomplete.enhanceSelectElement({
+    defaultValue: '',
+    confirmOnBlur: false,
+    selectElement: select_el,
+    onConfirm: handlePlanSearch
+  });
+</script>
 
 {% endblock %}
