@@ -172,6 +172,16 @@
 
 
 {% endblock %}
+
+{% block footer %}
+<div class="dlf-pg-feedback">
+  <div class="dlf-pg-feedback__prompt">
+    <a href="mailto:digitalland@communities.gov.uk?subject=Feedback on local plan page ({{plan['development-plan']}})" class="dlf-pg-feedback__link">Spotted a problem with the data? Let us know.</a>
+  </div>
+</div>
+  {{ super() }}
+{% endblock footer %}
+
 {% block bodyEnd %}
 {{ super() }}
 <script type="application/javascript">
