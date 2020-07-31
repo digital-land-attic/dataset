@@ -214,6 +214,7 @@ ga('send', 'pageview');
     // needs to be featureGroup so that it has getBounds() func
     var geoBoundaries = L.featureGroup().addTo(map);
 
+    count = 0;
     boundaryURLs.forEach(function (url) {
       fetch(url)
       .then((response) => {
@@ -228,8 +229,11 @@ ga('send', 'pageview');
             fillColor: colours.lightBlue
           }
         }).addTo(geoBoundaries);
-        // probably don't need to do this each time load a boundary
-        map.fitBounds(geoBoundaries.getBounds());
+        count++;
+        // only pan map once all boundaries have loaded
+        if (count === boundaryURLs.length) {
+          map.fitBounds(geoBoundaries.getBounds());
+        }
       });
     });
      
