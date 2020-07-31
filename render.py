@@ -18,6 +18,7 @@ from analyse_dataset import BrownfieldDatasetAnalyser
 from latest_resource import get_latest_brownfield_resource, get_brownfield_resource_list
 
 from utils import get_csv_as_json
+from organisation import get_boundaries
 
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
 
@@ -223,12 +224,19 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
                 plan['document'] = [doc for doc in dev_plan_docs if doc['development-plan'] == plan['development-plan']]
             
             for d in datasets[dataset]['data']:
-                    print(f"render page for local plan: {d['development-plan']}")
-                    render(f"{dataset}/{d['development-plan']}/index.html", local_plan_template, organisations, tags, plan=d)
+                print(f"render page for local plan: {d['development-plan']}")
+                plan_organisations = d['organisations'].split(';')
+                render(
+                    f"{dataset}/{d['development-plan']}/index.html",
+                    local_plan_template,
+                    organisations,
+                    tags,
+                    plan=d,
+                    boundaries=get_boundaries(organisations, plan_organisations)
+                )
 
         render(dataset + "/index.html", dataset_template, organisations, tags, dataset=datasets[dataset])
 
-    
 
 # datasets
 with open("docs/index.html", "w") as f:
