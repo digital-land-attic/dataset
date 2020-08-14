@@ -7,6 +7,7 @@ __pycache__/
 *.swp
 
 .cache
+.venv
 
 local
 var
