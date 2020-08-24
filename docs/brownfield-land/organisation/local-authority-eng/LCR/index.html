@@ -41,6 +41,33 @@
     
 
     
+<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
 <header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
@@ -152,7 +179,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -168,7 +195,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 29 records from Liverpool City Region.</p>
+      <p class="govuk-body">There are 34 records from Liverpool City Region.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -207,7 +234,7 @@
                     <td>local-authority-eng:HAL</td>
                     <td>H1032</td>
                     <td class="data-table__cell--max-width">Busway and Former Petrol Station, Bridge Street, Runcorn</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1032" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1032</a></td>
                     <td>yes</td>
                     <td>mixed ownership</td>
                     <td>not permissioned</td>
@@ -228,15 +255,44 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
                 <tr id="row2">
                     <td>2017-12-31</td>
                     <td>local-authority-eng:HAL</td>
+                    <td>H1077</td>
+                    <td class="data-table__cell--max-width">Highways Agency Depot, Chester Road, Preston Brook</td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1077" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1077</a></td>
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.319595</td>
+                    <td>-2.652483</td>
+                    <td>0.88</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>2017-12-31</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Site is currently in use. Minimum capacity to allow for other uses, whilst maximum capacity is based on a density multiplier at 35dph. The relocation of the existing depot would be a constraint to the development of the site.. "Potential for houses, along with potential for community uses and small scale retail to support the local centre"</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
+                </tr>
+                
+                <tr id="row3">
+                    <td>2017-12-31</td>
+                    <td>local-authority-eng:HAL</td>
                     <td>H1079</td>
                     <td class="data-table__cell--max-width">Land to the south of Old Quay Street and Mason Street, Runcorn</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1079" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1079</a></td>
                     <td></td>
                     <td>owned by a public authority</td>
                     <td>not permissioned</td>
@@ -257,15 +313,15 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
-                <tr id="row3">
+                <tr id="row4">
                     <td>2017-12-31</td>
                     <td>local-authority-eng:HAL</td>
                     <td>H1085</td>
                     <td class="data-table__cell--max-width">Paramount Foods, Halton Road, Runcorn</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1085" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1085</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
@@ -286,15 +342,15 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
-                <tr id="row4">
+                <tr id="row5">
                     <td>2017-12-31</td>
                     <td>local-authority-eng:HAL</td>
                     <td>H1104</td>
                     <td class="data-table__cell--max-width">Former Polar Ford and surrounds, Victoria Road, Runcorn</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1104" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1104</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -315,15 +371,15 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
-                <tr id="row5">
+                <tr id="row6">
                     <td>2017-12-31</td>
                     <td>local-authority-eng:HAL</td>
                     <td>H1109</td>
                     <td class="data-table__cell--max-width">East Lane House, East Lane, Runcorn</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1109" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1109</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
@@ -344,15 +400,15 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
-                <tr id="row6">
+                <tr id="row7">
                     <td>2017-12-31</td>
                     <td>local-authority-eng:HAL</td>
                     <td>H1118</td>
                     <td class="data-table__cell--max-width">Brosley House, Widnes Road, Widnes</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1118" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1118</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -373,15 +429,15 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
-                <tr id="row7">
-                    <td>2017-12-31</td>
+                <tr id="row8">
+                    <td>2018-10-26</td>
                     <td>local-authority-eng:HAL</td>
                     <td>H1120</td>
                     <td class="data-table__cell--max-width">The Foundry, Lugsdale Road, Widnes</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1120" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1120</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -390,8 +446,8 @@
                     <td>53.363545</td>
                     <td>-2.726502</td>
                     <td>0.39</td>
-                    <td>10</td>
-                    <td>14</td>
+                    <td>11</td>
+                    <td>15</td>
                     <td>2017-12-31</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
@@ -402,15 +458,15 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
-                <tr id="row8">
+                <tr id="row9">
                     <td>2017-12-31</td>
                     <td>local-authority-eng:HAL</td>
                     <td>H1155</td>
                     <td class="data-table__cell--max-width">Former Polar Ford Second Hand Cars Site, Victoria Road, Runcorn</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1155" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1155</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -431,15 +487,15 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
-                <tr id="row9">
+                <tr id="row10">
                     <td>2017-12-31</td>
                     <td>local-authority-eng:HAL</td>
                     <td>H1159</td>
                     <td class="data-table__cell--max-width">Former Express Dairies Site, Sewell Street, Runcorn</td>
-                    <td></td>
+                    <td><a href="http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1159" class="govuk-link">http://map.halton.gov.uk/WebMapLayers8External/map.aspx?MapName=Linked&overlayname=Brownfield%20Register&schemacolumn=Ref&resolution=1&UID=H1159</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -460,36 +516,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
-                </tr>
-                
-                <tr id="row10">
-                    <td>2017-12-31</td>
-                    <td>local-authority-eng:HAL</td>
-                    <td>H1177</td>
-                    <td class="data-table__cell--max-width">Site of former Rathbone Institute, Waterloo Road, Runcorn</td>
-                    <td></td>
-                    <td>yes</td>
-                    <td>mixed ownership</td>
-                    <td>not permissioned</td>
-                    <td></td>
-                    <td></td>
-                    <td>53.342284</td>
-                    <td>-2.737075</td>
-                    <td>0.65</td>
-                    <td>17</td>
-                    <td>29</td>
-                    <td>2017-12-31</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Potential capacity based on a density multiplier with the minimum based on 30dph and maximum at 50dph. Physical constraints identified include heritage assets and PADHI pipelines. 13/00429/DEM - permission for demolition of building, now demolished.. "Potential for houses and / or apartments"</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/d53b23ab2844c9a7584292196e6c6e6a39f8836ac80d547958e45d1f0aae386b" class="govuk-link">d53b23ab...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/1e676ab6544457f0c926c787f10159e952c78c3be221eb5cd94cc005791042c4" class="govuk-link">1e676ab6...</a></td>
                 </tr>
                 
             </tbody>
@@ -570,10 +597,11 @@
 	// initiate all GOVUK components
 	window.GOVUKFrontend.initAll();
 </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
+<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
 
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script> 
 <script>
 $(function () {
   $.tablesorter.addParser({
