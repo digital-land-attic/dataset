@@ -15,6 +15,7 @@
 {% endblock %}
 
 {% block header %}
+{% include 'dl-partials/cookie-banner.html' %}
 {% include 'dl-partials/dl-header.html' %}
 {% endblock %}
 
@@ -49,10 +50,11 @@
 	// initiate all GOVUK components
 	window.GOVUKFrontend.initAll();
 </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
+<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
 
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script> 
 <script>
 $(function () {
   $.tablesorter.addParser({
