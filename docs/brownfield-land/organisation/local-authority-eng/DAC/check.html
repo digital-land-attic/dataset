@@ -34,6 +34,34 @@
     
 
     
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
 <header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
     <div class="govuk-header__container govuk-width-container">
       <div class="header-proposition">
@@ -190,12 +218,12 @@
     
     <li>
         <a href="/resource/8afca3f4ae34571ef8d863e117980d9b3c6d034f125d0b13c32b24fff8c98f9f">Version collected between 2018-05-22 and
-            2020-08-27</a>
+            2020-08-28</a>
     </li>
     
     <li>
         <a href="/resource/67e6dd6b56e650f3a3d3dcf36fe15a179fedc2f9a587afadd4bfbc4b3d0a92ad">Version collected between 2019-11-24 and
-            2020-08-27</a>
+            2020-08-28</a>
     </li>
     
     <li>
@@ -251,16 +279,7 @@
 </footer>
     
 
-    <!-- google analytics -->
-	<script type="application/javascript">
-		var doNotTrack = false;
-		if (!doNotTrack) {
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', 'UA-127566551-1', 'auto');
-			
-			ga('send', 'pageview');
-		}
-	</script>
+    <script src="/static/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
 	<script src="https://digital-land-design.herokuapp.com/static/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
