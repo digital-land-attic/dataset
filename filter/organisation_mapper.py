@@ -26,6 +26,14 @@ class OrganisationMapper:
     def get_by_key(self, k):
         return self.mapping.get(k)
 
+    def get_mapping(self):
+        return self.mapping
+
+    def replace_key(self, current, replacement):
+        if current in self.mapping:
+            self.mapping[replacement] = self.mapping[current]
+            del self.mapping[current]
+
 
 organisation_mapper = OrganisationMapper(dataset)
 def map_organisation_id_filter(id):
