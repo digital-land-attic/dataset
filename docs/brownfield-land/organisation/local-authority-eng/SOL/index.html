@@ -41,6 +41,33 @@
     
 
     
+<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
 <header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
@@ -143,8 +170,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Solihull Metropolitan Borough Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2018-05-22</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2018-07-11</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-09-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-09-24</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.solihull.gov.uk/blr" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -152,7 +179,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -168,7 +195,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 51 records from Solihull Metropolitan Borough Council.</p>
+      <p class="govuk-body">There are 102 records from Solihull Metropolitan Borough Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -203,18 +230,18 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/010</td>
                     <td class="data-table__cell--max-width">Meriden Road Depot, Meriden Road, Hampton in Arden</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-010.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-010.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.42786</td>
-                    <td>-1.691732</td>
+                    <td>52.429101</td>
+                    <td>-1.691076</td>
                     <td>5.21</td>
                     <td>5</td>
                     <td>10</td>
@@ -224,22 +251,22 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/013</td>
                     <td class="data-table__cell--max-width">Widney Manor House, Widney Manor House, Bentley Heath</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-013.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-013.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.389309</td>
-                    <td>-1.765544</td>
+                    <td>52.389311</td>
+                    <td>-1.765529</td>
                     <td>1.0</td>
                     <td>1</td>
                     <td>2</td>
@@ -249,11 +276,11 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/014</td>
                     <td class="data-table__cell--max-width">The Glider Yard, Houndsfield Lane, Shirley</td>
@@ -263,37 +290,37 @@
                     <td>permissioned</td>
                     <td>outline planning permission</td>
                     <td></td>
-                    <td>52.387777</td>
-                    <td>-1.85239</td>
+                    <td>52.387779</td>
+                    <td>-1.852375</td>
                     <td>0.13</td>
                     <td>2</td>
                     <td>4</td>
                     <td>2018-03-23</td>
-                    <td></td>
+                    <td>2019-12-09</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Erection of a single dwelling and garage replacing existing storage and workshop buildings.</div>
+                            <div class="govuk-details__text">Planning permission granted. Now included as PR42</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/015</td>
                     <td class="data-table__cell--max-width">Land East of 106-118 Old Station Road, Old Station Road, Hampton in Arden</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-015.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-015.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.436305</td>
-                    <td>-1.703691</td>
+                    <td>52.436307</td>
+                    <td>-1.703676</td>
                     <td>0.5</td>
                     <td>1</td>
                     <td>2</td>
@@ -303,22 +330,22 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/016</td>
                     <td class="data-table__cell--max-width">Pheasant Oak Farm, Hob Lane Balsall Common</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-016.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-016.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.383457</td>
-                    <td>-1.631819</td>
+                    <td>52.383459</td>
+                    <td>-1.631804</td>
                     <td>1.37</td>
                     <td>10</td>
                     <td>20</td>
@@ -328,22 +355,22 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/017</td>
                     <td class="data-table__cell--max-width">National Motorcycle Museum, Coventry Road, Bickenhill</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-017.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-017.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.444016</td>
-                    <td>-1.70639</td>
+                    <td>52.444019</td>
+                    <td>-1.706375</td>
                     <td>3.6</td>
                     <td>50</td>
                     <td>125</td>
@@ -353,22 +380,22 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/018</td>
                     <td class="data-table__cell--max-width">Windmill House, Windmill Lane, Balsall Common</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-018.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-018.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.380648</td>
-                    <td>-1.636396</td>
+                    <td>52.380651</td>
+                    <td>-1.636381</td>
                     <td>0.3</td>
                     <td>2</td>
                     <td>3</td>
@@ -378,47 +405,51 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/020</td>
                     <td class="data-table__cell--max-width">Whitehouse Kennels, Back Lane, Meriden</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-020.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-020.pdf</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>not permissioned</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
                     <td></td>
-                    <td></td>
-                    <td>52.422052</td>
-                    <td>-1.632086</td>
+                    <td>52.422262</td>
+                    <td>-1.632172</td>
                     <td>0.83</td>
                     <td>2</td>
                     <td>4</td>
                     <td>2018-03-23</td>
-                    <td></td>
+                    <td>2019-12-09</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Planning permission granted. Now included as PR68</div>
+                        </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/021</td>
                     <td class="data-table__cell--max-width">Land at and to the rear of 146-152 Tilehouse Lane, Tidbury Green</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-021.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-021.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.390105</td>
-                    <td>-1.852</td>
+                    <td>52.390107</td>
+                    <td>-1.851985</td>
                     <td>0.87</td>
                     <td>5</td>
                     <td>10</td>
@@ -428,22 +459,22 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    <td>2018-03-23</td>
+                    <td>2018-12-03</td>
                     <td>local-authority-eng:SOL</td>
                     <td>BLR/024</td>
                     <td class="data-table__cell--max-width">1806 Warwick Road, Knowle</td>
                     <td><a href="http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-024.pdf" class="govuk-link">http://www.solihull.gov.uk/Portals/0/Planning/BLR/BLR-024.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.381704</td>
-                    <td>-1.736304</td>
+                    <td>52.381707</td>
+                    <td>-1.736289</td>
                     <td>3.01</td>
                     <td>1</td>
                     <td>3</td>
@@ -453,7 +484,7 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c4000e8a91246b858cb72b73c7987ba8c8cdb96a917ae6e8fce8c97c64e2196a" class="govuk-link">c4000e8a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/329e8e981a0e237cafbe34c140af86168062267bc70518d92d852dc7a4fd03e3" class="govuk-link">329e8e98...</a></td>
                 </tr>
                 
             </tbody>
@@ -534,10 +565,11 @@
 	// initiate all GOVUK components
 	window.GOVUKFrontend.initAll();
 </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
+<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
 
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script> 
 <script>
 $(function () {
   $.tablesorter.addParser({
