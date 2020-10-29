@@ -8,12 +8,13 @@ import json
 
 import pandas as pd
 
+from bin.jinja_setup import env
+
 import requests
 from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
 from collections import OrderedDict
 
-from filters import is_valid_uri, float_to_int, statistical_geography_code, map_organisation_id_filter
 from analyse_dataset import BrownfieldDatasetAnalyser
 from latest_resource import get_latest_brownfield_resource, get_brownfield_resource_list
 
@@ -23,6 +24,7 @@ from organisation import get_boundaries
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
 
 dataset_csv = "https://raw.githubusercontent.com/digital-land/dataset-collection/master/dataset/dataset.csv"
+#dataset_csv = "data/test.csv"
 organisation_csv = "https://raw.githubusercontent.com/digital-land/organisation-dataset/master/collection/organisation.csv"
 organisation_tag_csv = "https://raw.githubusercontent.com/digital-land/organisation-dataset/master/data/tag.csv"
 docs = "docs/"
@@ -52,20 +54,6 @@ def render(path, template, organisations, tags, dataset=None, organisation=None,
     with open(path, "w") as f:
         f.write(template.render(organisations=organisations, tags=tags, dataset=dataset, organisation=organisation, **kwargs))
 
-
-multi_loader = jinja2.ChoiceLoader([
-    jinja2.FileSystemLoader(searchpath="./templates"),
-    jinja2.PrefixLoader({
-        'govuk-jinja-components': jinja2.PackageLoader('govuk_jinja_components')
-    })
-])
-env = jinja2.Environment(loader=multi_loader)
-
-env.filters['commanum'] = lambda v: "{:,}".format(v)
-env.filters['is_valid_uri'] = is_valid_uri
-env.filters['float_to_int'] = float_to_int
-env.filters['statistical_geography_code'] = statistical_geography_code
-env.filters['map_organisation_by_id'] = map_organisation_id_filter
 
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")
@@ -198,6 +186,7 @@ def brownfield_land_dataset(d):
 
 datasets = OrderedDict()
 for d in csv.DictReader(get(dataset_csv).splitlines()):
+#for d in csv.DictReader(get_from_file(dataset_csv).splitlines()):
     
     dataset = d["dataset"]
     datasets[dataset] = {
@@ -236,6 +225,7 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
                 )
 
         render(dataset + "/index.html", dataset_template, organisations, tags, dataset=datasets[dataset])
+
 
 
 # datasets
