@@ -155,42 +155,23 @@
           
 <div class="govuk-grid-row">
 	<div class="govuk-grid-column-full">
-     <span class="govuk-caption-xl">Dataset</span>
+     <span class="govuk-caption-xl">National dataset</span>
      <h1 class="govuk-heading-xl">Brownfield Land</h1>
   </div>
 </div>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <p class="govuk-body">The <a href="https://digital-land.github.io/about/">Digital Land team</a> and policymakers at the Ministry of Housing, Communities and Local Government (MHCLG) have built a national dataset of brownfield land. We collect brownfield land data from local planning authorities and run it through our <a href="https://digital-land.github.io/guidance/pipeline/">pipeline process</a>, which updates the data to meet the standard and fixes common errors in the data.</p>
-    <p class="govuk-body">Whilst our process has significantly improved the data, we cannot guarantee its accuracy, since it relies on the data published by 345 organisations.</p>
-    <p class="govuk-body">After collecting and processing the data, we’re able to build a national map of brownfield land and calculate important numbers for housing and planning, such as the number of potential dwellings that could be built on this land.</p>
-    <p class="govuk-body">Our work builds on the <a href="https://www.housing.org.uk/resources/housing-sites-brownfield-land-map/">National Housing Federation’s</a> brownfield map and <a href="https://www.cpre.org.uk/resources/state-of-brownfield-2019/">CPRE’s</a> research into the state of brownfield land. We’re not aiming to duplicate this work, but want to contribute to this national picture by making the data easier to find, use and trust.</p>
-    <p class="govuk-body">Our relationship with local planning authorities means we’re able to improve the data by:</p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li>
-        improving and simplifying the <a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data">data standard</a>
-      </li>
-      <li>
-        working closely with many local planning authorities, in particular through research and feedback sessions
-      </li>
-      <li>
-        changing and improving policy, for example introducing financial incentives for publishing data that meets the standard
-      </li>
-    </ul>
-    <p class="govuk-body">Our map and calculations are just an example of how this data can be used. We hope that the data will support innovative research, the development of digital services in the <a href="https://digital-land.github.io/users/proptech/">PropTech</a> sector, and other projects that will improve planning and housing.</p>
+    <p class="govuk-body-l">Brownfield land sites collected from local planning authorities.</p>
+    <p class="govuk-body">The data is collected from the 343 organisations who publish brownfield land data. Once collected the data is <a href="https://digital-land.github.io/guidance/pipeline/">processed</a> to fix common issues and collated into a national dataset.</p>
   </div>
-  <div class="govuk-grid-column-one-third">
-    <aside class="app-related-items app-related-items--small" role="complementary">
-      <h2 class="govuk-heading-m" id="subsection-title">
-        Related content
-      </h2>
-      <nav role="navigation" aria-labelledby="subsection-title">
-        <ul class="govuk-list govuk-!-font-size-16">
-          <li><a href="https://www.legislation.gov.uk/uksi/2017/403/contents/made">The Town and Country Planning Regulations 2017</a></li>
-          <li><a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data">Publish your brownfield land data</a></li>
-        </ul>
-      </nav>
-    </aside>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/dataset.csv">
+      <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
+      <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the latest national dataset in CSV format.</p>
+    </a>
   </div>
 </div>
 
@@ -198,60 +179,227 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-    <h2 class="govuk-heading-l" id="national-dataset-map">National dataset</h2>
+    <h2 class="govuk-heading-m" id="national-dataset-map">About the data</h2>
   </div>
-</div>
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-third">
-    <p>
-      <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">26,746</span><br>
-      <span class="govuk-body-l">Total sites</span>
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">There are <span class="govuk-!-font-weight-bold">26,746 records</span> and <span class="govuk-!-font-weight-bold">20 fields</span> in this dataset.</p>
+    <p class="govuk-body">The total number of records is made up of <span class="govuk-!-font-weight-bold">26,530 active</span> and <span class="govuk-!-font-weight-bold">216 historical</span> records.</p>
+    
+    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What are active and historical records?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <p class="govuk-body">
+      Records with a data in the <code>end-date</code> field are considered to be historical. It is a principle of registers that records should not be removed from the dataset, instead an end-date should be added to indicating the day the record become historical.
     </p>
+    <p class="govuk-body">Active records are all the records without an <code>end-date</code>.</p>
+    
   </div>
-  <div class="govuk-grid-column-one-third">
-    <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">26,530</span><br>
-        <span class="govuk-body-l">Active sites</span>
-    </p>
+</details>
   </div>
-  <div class="govuk-grid-column-one-third">
-    <p>
-      <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">343</span><br>
-      <span class="govuk-body-l"><a href="organisation" class="govuk-link">Organisations</a></span>
-    </p>
-  </div>
-</div>
-<div class="govuk-grid-row govuk-!-margin-bottom-6">
-  <div class="govuk-grid-column-one-half">
-    <p>
-      <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">36,917.86</span><br>
-      <span class="govuk-body-l">Total hectares</span>
-    </p>
-  </div>
-  <div class="govuk-grid-column-one-half">
-    <p>
-      <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">1,343,859</span><br>
-      <span class="govuk-body-l">Potential dwellings</span>
-    </p>
-  </div>
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-s">Preview of 5 records</h2>
+    
+<div class="data-table__wrapper" data-module="data-table data-linkable-table">
+    <div class="data-table-left-shadow"></div>
+    <div class="wide-table">
+        <table class="data-table">
+            
+            
+            <caption class="data-table__caption">Table with a preview of 5 records from the national brownfield land dataset</caption>
+            <thead>
+                <tr class="no-wrap">
+                    <th scope="col">entry-date</th>
+                    <th scope="col">organisation</th>
+                    <th scope="col">site</th>
+                    <th scope="col">site-address</th>
+                    <th scope="col">site-plan-url</th>
+                    <th scope="col">deliverable</th>
+                    <th scope="col">ownership</th>
+                    <th scope="col">planning-permission-status</th>
+                    <th scope="col">planning-permission-type</th>
+                    <th scope="col">hazardous-substances</th>
+                    <th scope="col">latitude</th>
+                    <th scope="col">longitude</th>
+                    <th scope="col">hectares</th>
+                    <th scope="col">minimum-net-dwellings</th>
+                    <th scope="col">maximum-net-dwellings</th>
+                    <th scope="col">start-date</th>
+                    <th scope="col">end-date</th>
+                    <th scope="col">notes</th>
+                    <th scope="col">resource</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="row1">
+                    <td>2017-10-23</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>2014/221</td>
+                    <td class="data-table__cell--max-width">Hillbury Farm, Tithepit Shaw Lane, Warlingham, CR6 9AN</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.311041</td>
+                    <td>-0.067788</td>
+                    <td>0.7</td>
+                    <td>4.0</td>
+                    <td>4.0</td>
+                    <td>2017-10-23</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">. Demolition of existing buildings. change of use from car breakers yard to residential and erection of four detached dwellings with associated driveways and parking and attenuation pond.. http://www.cartogold.co.uk/tandridgelocalplan/</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/773b254a277d51a73d83ecd753e5c34ee2ae5b72b5ccfdf61c4cc7bd3e759e40" class="govuk-link">773b254a...</a></td>
+                </tr>
+                
+                <tr id="row2">
+                    <td>2017-10-23</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>2015/1047</td>
+                    <td class="data-table__cell--max-width">Rear of units 1-9, Former Whyteleafe Business Village, Whyteleafe CR3 0AT</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.310108</td>
+                    <td>-0.080539</td>
+                    <td>0.14</td>
+                    <td>12.0</td>
+                    <td>12.0</td>
+                    <td>2017-10-23</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">. Erection of 12 flats, parking and associated landscaping.. http://www.cartogold.co.uk/tandridgelocalplan/</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/773b254a277d51a73d83ecd753e5c34ee2ae5b72b5ccfdf61c4cc7bd3e759e40" class="govuk-link">773b254a...</a></td>
+                </tr>
+                
+                <tr id="row3">
+                    <td>2017-10-23</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>2015/1227</td>
+                    <td class="data-table__cell--max-width">Bronzeoak House, Stafford Road, Caterham</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.282803</td>
+                    <td>-0.079842</td>
+                    <td>0.24</td>
+                    <td>34.0</td>
+                    <td>34.0</td>
+                    <td>2017-10-23</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">. Demolition of existing office building. Erection of 34 flats with associated parking and landscaping.. http://www.cartogold.co.uk/tandridgelocalplan/</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/773b254a277d51a73d83ecd753e5c34ee2ae5b72b5ccfdf61c4cc7bd3e759e40" class="govuk-link">773b254a...</a></td>
+                </tr>
+                
+                <tr id="row4">
+                    <td>2017-10-23</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>2015/1419</td>
+                    <td class="data-table__cell--max-width">Beach Shaw, West Hill, Oxted RH8 9JD</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.253281</td>
+                    <td>-0.01101</td>
+                    <td>0.41</td>
+                    <td>2.0</td>
+                    <td>2.0</td>
+                    <td>2017-10-23</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">. Demolition of existing dwelling house and ancillary swimming pool and sheds, erection of 3 detached houses and landscaping works. (Amended plans). http://www.cartogold.co.uk/tandridgelocalplan/</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/773b254a277d51a73d83ecd753e5c34ee2ae5b72b5ccfdf61c4cc7bd3e759e40" class="govuk-link">773b254a...</a></td>
+                </tr>
+                
+                <tr id="row5">
+                    <td>2017-10-23</td>
+                    <td>local-authority-eng:TAN</td>
+                    <td>2015/1440</td>
+                    <td class="data-table__cell--max-width">Haxted Kennels, Dwelly Lane, Edenbridge TN8 6QA</td>
+                    <td><a href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register" class="govuk-link">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.192782</td>
+                    <td>0.028948</td>
+                    <td>0.38</td>
+                    <td>2.0</td>
+                    <td>2.0</td>
+                    <td>2017-10-23</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">. Demolition of existing buildings. Erection of 2 dwellings with integral garages, parking, landscaping and associated works.. http://www.cartogold.co.uk/tandridgelocalplan/</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/773b254a277d51a73d83ecd753e5c34ee2ae5b72b5ccfdf61c4cc7bd3e759e40" class="govuk-link">773b254a...</a></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="data-table-right-shadow"></div>
 </div>
 
-<div id="map" style="width: 100%; height: 640px;"></div>
+    <div class="govuk-warning-text govuk-!-margin-top-6"
+  >
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    This data may include duplicate records.
+  </strong>
+</div>
+    <h2 class="govuk-heading-m" id="national-dataset-map">Explore the data</h2>
+    <p class="govuk-body">You can <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/dataset.csv">view the complete dataset</a> (>12mb) or see the latest <a href="organisation">data published by each local planning authority</a>.</p>
+  </div>
+</div>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-l" id="download">Download the data</h2>
-    <p class="govuk-body">After collecting the data, we run it through our pipeline process. This changes the original data published by local planning authorities so that it meets the <a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data">data standard</a>, as well as correcting some common errors.</p>
-    <p class="govuk-body">We recommend that you download the processed data. However, all original datasets published by local planning authorities are also available.</p>
-    <h3 class="govuk-heading-s">Download the processed data as:</h3>
-    <ul class="govuk-list">
-      <li><a href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/index/dataset.csv" class="govuk-link">CSV file</a></li>
-    </ul>
-    <!--<p class="govuk-body">You can read about how the data is processed on the <a href="https://github.com/digital-land/brownfield-land-collection">GitHub project</a>.</p>-->
-  </div>
-</div>
 
 <div class="feedback-panel">
   <h3 class="feedback-panel__heading">Help improve this data</h3>
@@ -375,22 +523,6 @@ ga('send', 'pageview');
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-<script>
-  const bbox = [-10.855, 2.0215, 49.824, 59.479] // (min_lng, max_lng, min_lat, max_lat)
-
-  // grey-scale tiles
-  const base = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      id: 'base',
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      maxZoom: 18
-  });
-
-  const map = L.map('map', { preferCanvas: true, renderer: L.canvas({ padding: 0.5 }), layers: [base] })
-    .fitBounds([[bbox[2], bbox[0]], [bbox[3], bbox[1]]]);
-
-  var map_width = map._container.offsetWidth;
-  map._container.style.height = `${map_width * (2/3)}px`;
-</script>
 
   </body>
 </html>
