@@ -32,9 +32,9 @@ class DatasetAnalyser():
     def historical_records(self):
         return [x for x in self.json_data if x['end-date'] is not None]
 
-    def sample(self):
-        if len(self.json_data) > 4:
-            return self.json_data[:5]
+    def sample(self, count=5, start_from=0):
+        if len(self.json_data) >= count:
+            return self.json_data[start_from:(start_from+count)]
 
 
 # Keep Brownfield specific code separate 
@@ -78,3 +78,11 @@ class BrownfieldDatasetAnalyser(DatasetAnalyser):
             'fields': self.number_of_fields()
         }
 
+
+if __name__ == '__main__':
+    da = BrownfieldDatasetAnalyser("https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/index/dataset.csv")
+    da = BrownfieldDatasetAnalyser("https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/index/entries.csv")
+    sites = [2,234,2333,23333,123,12234,24829,888,998,4672,776,7877,10232,12134]
+    for s in sites:
+        print(s, ": ", da.json_data[s]['end-date'])
+    print(da.summary())
