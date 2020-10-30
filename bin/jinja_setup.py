@@ -13,6 +13,9 @@ multi_loader = jinja2.ChoiceLoader([
 ])
 env = jinja2.Environment(loader=multi_loader)
 
+# set variables to make available to all templates
+env.globals["staticPath"] = "https://digital-land.github.io"
+
 # register common filters
 env.filters['commanum'] = dlfilters.commanum
 env.filters['is_valid_uri'] = dlfilters.is_valid_uri
