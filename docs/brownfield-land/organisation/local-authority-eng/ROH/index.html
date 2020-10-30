@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Rother District Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Rother District Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-12-21</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-03-25</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="http://www.rother.gov.uk/BLR" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -234,7 +227,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0001</td>
                     <td class="data-table__cell--max-width">St George's Church, Cantelupe Road, Bexhill</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32745" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32745</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0001_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0001_011019.pdf</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -255,7 +248,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row2">
@@ -263,7 +256,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0002</td>
                     <td class="data-table__cell--max-width">Tower House, Hilders Cliff, Rye</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32746" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32746</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0002_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0002_011019.pdf</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -284,7 +277,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row3">
@@ -292,7 +285,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0004</td>
                     <td class="data-table__cell--max-width">30-34 Dorset Road, Bexhill</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32747" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32747</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0004_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0004_011019.pdf</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -313,7 +306,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row4">
@@ -321,7 +314,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0005</td>
                     <td class="data-table__cell--max-width">207 Cooden Drive, Bexhill</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32748" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32748</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0005_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0005_011019.pdf</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -342,7 +335,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row5">
@@ -350,7 +343,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0006</td>
                     <td class="data-table__cell--max-width">Lydd Road Garage, Lydd Road, Camber</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32749" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32749</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0006_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0006_011019.pdf</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -371,7 +364,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row6">
@@ -379,7 +372,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0007</td>
                     <td class="data-table__cell--max-width">Ruskin House, Bodiam Business Park, Junction Road, Bodiam</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32750" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32750</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0007_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0007_011019.pdf</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -400,7 +393,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row7">
@@ -408,7 +401,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0008</td>
                     <td class="data-table__cell--max-width">Former Countrycraft Site, George Hill, Robertsbridge</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32751" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32751</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0008_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0008_011019.pdf</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
@@ -429,7 +422,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row8">
@@ -437,7 +430,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0009</td>
                     <td class="data-table__cell--max-width">85 Ashdown Road, Bexhill</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32752" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32752</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0009_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0009_011019.pdf</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -458,7 +451,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row9">
@@ -466,7 +459,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0010</td>
                     <td class="data-table__cell--max-width">Chintings, Upper Sea Road, Bexhill</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32753" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32753</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0010_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0010_011019.pdf</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -487,7 +480,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
                 <tr id="row10">
@@ -495,7 +488,7 @@
                     <td>local-authority-eng:ROH</td>
                     <td>RDCBLR0011</td>
                     <td class="data-table__cell--max-width">2a Sackville Road, Bexhill</td>
-                    <td><a href="https://www.rother.gov.uk/CHttpHandler.ashx?id=32754" class="govuk-link">https://www.rother.gov.uk/CHttpHandler.ashx?id=32754</a></td>
+                    <td><a href="https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0011_011019.pdf" class="govuk-link">https://www.rother.gov.uk/wp-content/uploads/2020/07/brownfieldlandregister_siteplan_rdcblr0011_011019.pdf</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
@@ -516,7 +509,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/971945b888f0a1073af5a74b9226d865fa156e338ab1dc28c6a69bf9a2e79619" class="govuk-link">971945b8...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">41305fbf...</a></td>
                 </tr>
                 
             </tbody>
@@ -549,12 +542,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -588,33 +618,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

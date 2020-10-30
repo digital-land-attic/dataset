@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land Resources | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -166,25 +159,25 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">944</span><br>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">978</span><br>
         <span class="govuk-body-l">Resources</span>
     </p>
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">16</span><br>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">17</span><br>
         <span class="govuk-body-l">Valid</span>
     </p>
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">62,039</span><br>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">64,195</span><br>
         <span class="govuk-body-l">Rows</span>
     </p>
   </div>
   <div class="govuk-grid-column-one-quarter">
     <p>
-        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">174,556</span><br>
+        <span class="govuk-body govuk-!-font-size-48 govuk-!-font-weight-bold">182,915</span><br>
         <span class="govuk-body-l">Errors</span>
     </p>
   </div>
@@ -372,6 +365,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/SNR/" class="govuk-link govuk-body-l">South Northamptonshire Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/026dd247d90ccc76f9359364a2b20b08142e3b9e8c75f564f4659264df489a7e" class="govuk-link">…df489a7e</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            16
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">52</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/MEL/" class="govuk-link govuk-body-l">Melton Borough Council</a>
             
           </td>
@@ -506,6 +519,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">40</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/BBD/" class="govuk-link govuk-body-l">Blackburn with Darwen Borough Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">…7b101341</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            16
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">59</strong>
           </td>
         </tr>
     
@@ -1232,6 +1265,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">443</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/NSM/" class="govuk-link govuk-body-l">North Somerset  Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/0f2521abd23633c27eae03cc4e8ed3d8405e8ecd27e5c94beb9ed11fe9d288fa" class="govuk-link">…e9d288fa</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            54
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-green govuk-tag govuk-!-margin-bottom-2">0</strong>
           </td>
         </tr>
     
@@ -2778,6 +2831,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/SOX/" class="govuk-link govuk-body-l">South Oxfordshire District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/2626c62a6065e507ec3f93f60f4b138579f7b795b914c01deaef7f3f79a49bc7" class="govuk-link">…79a49bc7</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            44
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">120</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/CMD/" class="govuk-link govuk-body-l">London Borough of Camden</a>
             
           </td>
@@ -3052,6 +3125,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">71</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/MDB/" class="govuk-link govuk-body-l">Middlesbrough Borough Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/298f33c05b1a9077c4ef365e9c33167b1494f2419bdc74972abff08fe40e1ecf" class="govuk-link">…e40e1ecf</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            43
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">164</strong>
           </td>
         </tr>
     
@@ -3532,6 +3625,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">623</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/ELM/" class="govuk-link govuk-body-l">Elmbridge Borough Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/2ffa8bdce3fb10ddfd80b00819f925cb17d70342cd4db103c711e9a316f0ac87" class="govuk-link">…16f0ac87</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            54
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">235</strong>
           </td>
         </tr>
     
@@ -4480,6 +4593,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/MAV/" class="govuk-link govuk-body-l">Malvern Hills District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">…40114443</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            20
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">62</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/LAC/" class="govuk-link govuk-body-l">Lancaster City Council</a>
             
           </td>
@@ -5014,6 +5147,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">40</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/ROH/" class="govuk-link govuk-body-l">Rother District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/41305fbf719dd834f732759e7ce28756eb086e7cecfc6c974052ec539e02f6d9" class="govuk-link">…9e02f6d9</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            45
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">123</strong>
           </td>
         </tr>
     
@@ -5562,6 +5715,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/MRT/" class="govuk-link govuk-body-l">London Borough of Merton</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/4a652bd90b96de8059186979c3068d34c1cfdeb433fa3af8233fcd1ef25c998d" class="govuk-link">…f25c998d</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            94
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">531</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/TEI/" class="govuk-link govuk-body-l">Teignbridge District Council</a>
             
           </td>
@@ -5762,6 +5935,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/EDN/" class="govuk-link govuk-body-l">Eden District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">…acb9ad41</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            14
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">17</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/SEV/" class="govuk-link govuk-body-l">Sevenoaks District Council</a>
             
           </td>
@@ -5956,6 +6149,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">179</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/CMD/" class="govuk-link govuk-body-l">London Borough of Camden</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/515baac2f5fc91d4d93241376d1a42a831830864d1e3b0ef2b4caa3175e32d00" class="govuk-link">…75e32d00</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            97
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">442</strong>
           </td>
         </tr>
     
@@ -7294,6 +7507,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/SHA/" class="govuk-link govuk-body-l">South Hams District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/60f678353356da2c46b9390f1b64906ef8d284e4f6e937b9078238dbcddf2e39" class="govuk-link">…cddf2e39</a>
+          </td>
+          <td class="govuk-table__cell">
+            .pdf
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            0
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">20</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/BNS/" class="govuk-link govuk-body-l">Barnsley Metropolitan Borough Council</a>
             
           </td>
@@ -8114,6 +8347,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/NGM/" class="govuk-link govuk-body-l">Nottingham City Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/6b69fd3da198c6993fbe725db0f4e8d850ddeddffb446c29f8f72365e631287d" class="govuk-link">…e631287d</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            168
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">1000</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/CMD/" class="govuk-link govuk-body-l">London Borough of Camden</a>
             
           </td>
@@ -8168,6 +8421,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">100</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/BNS/" class="govuk-link govuk-body-l">Barnsley Metropolitan Borough Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/6bfc65623b6a2438956df7c7222b6e81d4445f9c881950211feffcf593aefce2" class="govuk-link">…93aefce2</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            49
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">129</strong>
           </td>
         </tr>
     
@@ -8814,6 +9087,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/BEN/" class="govuk-link govuk-body-l">London Borough of Brent</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">…a8350d58</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            137
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">663</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/BNS/" class="govuk-link govuk-body-l">Barnsley Metropolitan Borough Council</a>
             
           </td>
@@ -9214,6 +9507,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/RUS/" class="govuk-link govuk-body-l">Rushcliffe Borough Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">…e3cb173d</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            12
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">31</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/PRE/" class="govuk-link govuk-body-l">Preston City Council</a>
             
           </td>
@@ -9394,6 +9707,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/GRE/" class="govuk-link govuk-body-l">Royal Borough of Greenwich</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">…1681ab8f</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            123
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">252</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/SPE/" class="govuk-link govuk-body-l">Spelthorne Borough Council</a>
             
           </td>
@@ -9568,6 +9901,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">80</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/EPP/" class="govuk-link govuk-body-l">Epping Forest District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/7d2ac229b56b53ca0ab8961816fea553457bc4feebdd81efc8e2335396352ee2" class="govuk-link">…96352ee2</a>
+          </td>
+          <td class="govuk-table__cell">
+            .pdf
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            0
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">20</strong>
           </td>
         </tr>
     
@@ -10840,6 +11193,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/SRI/" class="govuk-link govuk-body-l">South Ribble Borough Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">…de1e154a</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            12
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">38</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/CMD/" class="govuk-link govuk-body-l">London Borough of Camden</a>
             
           </td>
@@ -11222,6 +11595,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/THR/" class="govuk-link govuk-body-l">Thurrock Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">…d7afcac0</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            24
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">75</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/KWL/" class="govuk-link govuk-body-l">Knowsley Metropolitan Borough Council</a>
             
           </td>
@@ -11256,6 +11649,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">182</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/FAR/" class="govuk-link govuk-body-l">Fareham Borough Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">…d309bc04</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            24
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">79</strong>
           </td>
         </tr>
     
@@ -12064,6 +12477,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">413</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/CMD/" class="govuk-link govuk-body-l">London Borough of Camden</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/9d98f0e38b387f9b6db5b8578baebfc7b19639a8b8bdad8804ba9ee4db3a9cba" class="govuk-link">…db3a9cba</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            97
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">442</strong>
           </td>
         </tr>
     
@@ -13050,6 +13483,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/CMD/" class="govuk-link govuk-body-l">London Borough of Camden</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/a9d6d5e56061a72ed21980605250a31c79f91fe16fe63dadd3d4a1e07fbdaf75" class="govuk-link">…7fbdaf75</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            97
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">442</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/RYE/" class="govuk-link govuk-body-l">Ryedale District Council</a>
             
           </td>
@@ -13584,6 +14037,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">40</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/MAN/" class="govuk-link govuk-body-l">Manchester City Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/b28889d5aebc18ccbd31a11b6acbe1e49392f27d6207cceda85946c3d577970a" class="govuk-link">…d577970a</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            229
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">917</strong>
           </td>
         </tr>
     
@@ -14472,6 +14945,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/POR/" class="govuk-link govuk-body-l">Portsmouth City Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/bf5d84a8e2a72b69ddbb62e92f6ee041071004a2923e4f315201d829cc1b48a3" class="govuk-link">…cc1b48a3</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            65
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">70</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/IPS/" class="govuk-link govuk-body-l">Ipswich Borough Council</a>
             
           </td>
@@ -15126,6 +15619,46 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">52</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/ISL/" class="govuk-link govuk-body-l">London Borough of Islington</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">…43eb8cbe</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            116
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">423</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/HRY/" class="govuk-link govuk-body-l">London Borough of Haringey</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/caa60d5ffae6d94a73fa94be2f5c02a5ab40172f4cc37d01fe8f4c4bed94b7c5" class="govuk-link">…ed94b7c5</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            243
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">1000</strong>
           </td>
         </tr>
     
@@ -16756,6 +17289,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/VAL/" class="govuk-link govuk-body-l">Vale of White Horse District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">…e1aa1dbc</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            19
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">20</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/CRW/" class="govuk-link govuk-body-l">Crawley Borough Council</a>
             
           </td>
@@ -17062,6 +17615,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/WIL/" class="govuk-link govuk-body-l">Wiltshire Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">…8bd92c88</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            97
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">447</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/YOR/" class="govuk-link govuk-body-l">City of York Council</a>
             
           </td>
@@ -17096,6 +17669,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">672</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/FOE/" class="govuk-link govuk-body-l">Forest of Dean District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/e65ce31fc120d5c8aef64e69a606f375abd2326a87a4f1a6a72b34a1495ba4b7" class="govuk-link">…495ba4b7</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            40
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">95</strong>
           </td>
         </tr>
     
@@ -17316,6 +17909,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">40</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/ROC/" class="govuk-link govuk-body-l">Rochford District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/e873ae8a12345dc4bc8dc89b4999b91a25c712cfd0ee55b0eaad46936e737d4b" class="govuk-link">…6e737d4b</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            27
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">125</strong>
           </td>
         </tr>
     
@@ -17916,6 +18529,26 @@
           </td>
           <td class="govuk-table__cell govuk-table__cell--numeric">
               <strong class="status-red govuk-tag govuk-!-margin-bottom-2">144</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
+                <a href="../organisation/local-authority-eng/MOL/" class="govuk-link govuk-body-l">Mole Valley District Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/ef3dfeea8a55d3ce506c345613041e42248ebcf92ab3771ff5366d2ab7cef8f0" class="govuk-link">…b7cef8f0</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            25
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">76</strong>
           </td>
         </tr>
     
@@ -18842,6 +19475,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/WSK/" class="govuk-link govuk-body-l">West Suffolk Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/fc71af874659648f478255d52c2649878862c7557dd47d9a5a0697875082f9f5" class="govuk-link">…5082f9f5</a>
+          </td>
+          <td class="govuk-table__cell">
+            .xlsx
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            27
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">43</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/STT/" class="govuk-link govuk-body-l">Stockton-on-Tees Borough Council</a>
             
           </td>
@@ -19082,6 +19735,26 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             
+                <a href="../organisation/local-authority-eng/WYR/" class="govuk-link govuk-body-l">Wyre Borough Council</a>
+            
+          </td>
+          <td class="govuk-table__cell">
+            <a href="/resource/ff1c53721c06a9cf7937c2a7fc15ef305e0df5fcdd595f568e152d94893e2174" class="govuk-link">…893e2174</a>
+          </td>
+          <td class="govuk-table__cell">
+            .csv
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+            28
+          </td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="status-red govuk-tag govuk-!-margin-bottom-2">147</strong>
+          </td>
+        </tr>
+    
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            
                 <a href="../organisation/local-authority-eng/OAD/" class="govuk-link govuk-body-l">Oadby and Wigston Borough Council</a>
             
           </td>
@@ -19160,12 +19833,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -19199,33 +19909,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

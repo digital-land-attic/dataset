@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Wiltshire Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Wiltshire Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-12-22</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-08-25</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="http://www.wiltshire.gov.uk/planning-brownfield-register" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 98 records from Wiltshire Council.</p>
+      <p class="govuk-body">There are 94 records from Wiltshire Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -232,37 +225,124 @@
                 <tr id="row1">
                     <td>2017-12-01</td>
                     <td>local-authority-eng:WIL</td>
-                    <td>S15.11698</td>
-                    <td class="data-table__cell--max-width">Skylark Motor Services Ltd, The Ridge, Woodfalls, Salisbury</td>
+                    <td>E10.0772</td>
+                    <td class="data-table__cell--max-width">Honey Street Mills, Honey Street, Pewsey</td>
                     <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>50.980197</td>
-                    <td>-1.719627</td>
-                    <td>0.28</td>
-                    <td>7</td>
-                    <td>7</td>
+                    <td>51.353337</td>
+                    <td>-1.8523</td>
+                    <td>0.36</td>
+                    <td>5</td>
+                    <td>5</td>
                     <td>2017-12-01</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Proposed demolition of existing buildings and construction of 7 dwellings including formation of access and parking and associated works.</div>
+                            <div class="govuk-details__text">Demolition of two dwellings and vacant former commercial buildings and replacement with five no. dwellings.</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
                 </tr>
                 
                 <tr id="row2">
+                    <td>2018-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>E17.11168</td>
+                    <td class="data-table__cell--max-width">28 St Margarets Mead, Marlborough</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.418503</td>
+                    <td>-1.720667</td>
+                    <td>0.12</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2018-12-01</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Demolition of building in use as a small HMO and erection of 6 dwellings and associated works</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
+                </tr>
+                
+                <tr id="row3">
+                    <td>2018-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>E17.1587</td>
+                    <td class="data-table__cell--max-width">Royal Oak Public House, 43 New Park Street, Devizes</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.353889</td>
+                    <td>-1.99412</td>
+                    <td>0.03</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2018-12-01</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Conversion of former public house into 8 residential apartments including conversion of rear single storey outbuilding</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
+                </tr>
+                
+                <tr id="row4">
+                    <td>2018-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>E17.2540</td>
+                    <td class="data-table__cell--max-width">Former Laurel Garage & New House, Back Lane, Ramsbury</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.442787</td>
+                    <td>-1.612291</td>
+                    <td>0.14</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2018-12-01</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Demolition of 'The New House' and redevelopment of former Laurel Garage site to provide 6 no. dwellings, associated access, parking, turning, landscaping and private amenity space (resubmission of 16/10596/FUL)</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
+                </tr>
+                
+                <tr id="row5">
                     <td>2017-12-01</td>
                     <td>local-authority-eng:WIL</td>
                     <td>N12.1442</td>
-                    <td class="data-table__cell--max-width">St Marys School, College Road, Purton (nr Swindon)</td>
+                    <td class="data-table__cell--max-width">St Marys School, College Road, Purton, nr Swindon</td>
                     <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
@@ -275,81 +355,81 @@
                     <td>8</td>
                     <td>8</td>
                     <td>2017-12-01</td>
+                    <td>2020-03-01</td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Part Demolition & Change of Use From Education to Residential</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
+                </tr>
+                
+                <tr id="row6">
+                    <td>2017-12-01</td>
+                    <td>local-authority-eng:WIL</td>
+                    <td>N13.0611</td>
+                    <td class="data-table__cell--max-width">Pew Hill House, Pew Hill, Chippenham</td>
+                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
+                    <td>yes</td>
+                    <td>mixed ownership</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.469639</td>
+                    <td>-2.11033</td>
+                    <td>0.47</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2017-12-01</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Part Demolition & Change of Use From Education to Residential</div>
+                            <div class="govuk-details__text">Convert offices to 9 flats - Renewal of 10/00449/FUL</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
                 </tr>
                 
-                <tr id="row3">
+                <tr id="row7">
                     <td>2017-12-01</td>
                     <td>local-authority-eng:WIL</td>
-                    <td>W16.7502</td>
-                    <td class="data-table__cell--max-width">Rear of Wesley Road Club, Wesley Road, Trowbridge</td>
+                    <td>N13.2173</td>
+                    <td class="data-table__cell--max-width">Old Glove Factory adj 25 Brockleaze, Neston, Corsham</td>
                     <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>51.316457</td>
-                    <td>-2.214749</td>
-                    <td>0.22</td>
-                    <td>6</td>
-                    <td>6</td>
+                    <td>51.41241</td>
+                    <td>-2.19238</td>
+                    <td>0.34</td>
+                    <td>10</td>
+                    <td>10</td>
                     <td>2017-12-01</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. 6 new dwellings</div>
+                            <div class="govuk-details__text">Conversion of 3 Factory Units to 10 Dwellings</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
                 </tr>
                 
-                <tr id="row4">
-                    <td>2017-12-01</td>
-                    <td>local-authority-eng:WIL</td>
-                    <td>W16.1078</td>
-                    <td class="data-table__cell--max-width">Victoria Garage [demolished] 36 Victoria Road, Warminster</td>
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.203635</td>
-                    <td>-2.19981</td>
-                    <td>0.39</td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Variation of conditions 2 and 12 attached to planning permission 14/10302/FUL (erection of 8 dwellings and 3 retail units) to facilitate the occupation of retail units 2 and 3 as a single unit by a D1 veterinary surgery; alternative shop front side window rear access and ramp details; and the provision of an electricity substation.</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
-                </tr>
-                
-                <tr id="row5">
+                <tr id="row8">
                     <td>2017-12-01</td>
                     <td>local-authority-eng:WIL</td>
                     <td>N14.10444</td>
-                    <td class="data-table__cell--max-width">81 The Green Lyneham, Chippenham</td>
+                    <td class="data-table__cell--max-width">81, The Green, Lyneham, Chippenham</td>
                     <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
@@ -362,161 +442,74 @@
                     <td>15</td>
                     <td>15</td>
                     <td>2017-12-01</td>
-                    <td></td>
+                    <td>2020-03-01</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Extra Care Facility with Guest Bedrooms</div>
+                            <div class="govuk-details__text">Extra Care Facility with Guest Bedrooms</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
-                </tr>
-                
-                <tr id="row6">
-                    <td>2017-12-01</td>
-                    <td>local-authority-eng:WIL</td>
-                    <td>N15.5255</td>
-                    <td class="data-table__cell--max-width">109 & Foxlea, Gloucester Road, Malmesbury</td>
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-                    <td>yes</td>
-                    <td>mixed ownership</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.588299</td>
-                    <td>-2.100889</td>
-                    <td>0.23</td>
-                    <td>26</td>
-                    <td>26</td>
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Demolition & Redevelopment to form 26 Sheltered Apartments for the Elderly including Communal Facilities Access Car Parking & Landscaping.</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
-                </tr>
-                
-                <tr id="row7">
-                    <td>2017-12-01</td>
-                    <td>local-authority-eng:WIL</td>
-                    <td>N14.11382</td>
-                    <td class="data-table__cell--max-width">Parklands, Malmesbury Road, Chippenham</td>
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.465162</td>
-                    <td>-2.119244</td>
-                    <td>0.4</td>
-                    <td>11</td>
-                    <td>11</td>
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Conv Listed Bldg into 4 flats Demolish Flat Roof Extensions to Rear and Sides of Building Erect 6 Houses & 1 Coach House incl Parking Access and retaining 4 Existing Bungalows.</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
-                </tr>
-                
-                <tr id="row8">
-                    <td>2017-12-01</td>
-                    <td>local-authority-eng:WIL</td>
-                    <td>W08.0539</td>
-                    <td class="data-table__cell--max-width">Pembroke House Edward Street, Westbury</td>
-                    <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.260652</td>
-                    <td>-2.183877</td>
-                    <td>0.03</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Side and roof extensions for 6 extra flats.  Extensions not built - as seen 23/06/10. No Change 29/07/2011.</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    <td>2017-12-01</td>
+                    <td>2018-12-01</td>
                     <td>local-authority-eng:WIL</td>
-                    <td>W10.2479</td>
-                    <td class="data-table__cell--max-width">North Junction, Station Road, Westbury</td>
+                    <td>N16.11758</td>
+                    <td class="data-table__cell--max-width">36 Market Place, Chippenham</td>
                     <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
-                    <td>mixed ownership</td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>51.268703</td>
-                    <td>-2.19853</td>
-                    <td>2.01</td>
-                    <td>102</td>
-                    <td>102</td>
-                    <td>2017-12-01</td>
+                    <td>51.458011</td>
+                    <td>-2.113065</td>
+                    <td>0.03</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2018-12-01</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Residential Development of 102 dwellings.</div>
+                            <div class="govuk-details__text">Change of Use from Offices/Storage into 6  Domestic Dwellings and Associated Works</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
                 </tr>
                 
                 <tr id="row10">
                     <td>2017-12-01</td>
                     <td>local-authority-eng:WIL</td>
-                    <td>N14.3748</td>
-                    <td class="data-table__cell--max-width">13-16 Market Place, Chippenham</td>
+                    <td>S13.7176</td>
+                    <td class="data-table__cell--max-width">Grove House Surgery, 18 Wilton Road, Salisbury</td>
                     <td><a href="https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8" class="govuk-link">https://wiltscouncil.maps.arcgis.com/apps/webappviewer/index.html?id=74a353612a934bd48fee1f2bc564cdd8</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>51.457471</td>
-                    <td>-2.113755</td>
-                    <td>0.05</td>
-                    <td>8</td>
-                    <td>8</td>
+                    <td>51.072949</td>
+                    <td>-1.806948</td>
+                    <td>0.1</td>
+                    <td>10</td>
+                    <td>10</td>
                     <td>2017-12-01</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Change of use of upper floors from A2 to C3 Residential to Create 8 Flats. Two New Shopfronts to No 13 & 16.</div>
+                            <div class="govuk-details__text">erection of a new 2.5 storey building containing 10x flats; parking and landscaping</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/cba797808f21e671a23f95cb446e37f08705b5de676b5dffc93cc9696516b854" class="govuk-link">cba79780...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/e5fb73bbb53a212cf3020e0fa5968c24f8304d65d8af0936a99b86568bd92c88" class="govuk-link">e5fb73bb...</a></td>
                 </tr>
                 
             </tbody>
@@ -549,12 +542,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -588,33 +618,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;
