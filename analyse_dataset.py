@@ -20,6 +20,9 @@ class DatasetAnalyser():
         data = pd.read_csv(self.dataset_path, sep=",")
         return data
 
+    def number_of_fields(self):
+        return len(self.json_data[0].keys())
+
     def number_of_records(self):
         return len(self.json_data)
 
@@ -28,6 +31,10 @@ class DatasetAnalyser():
 
     def historical_records(self):
         return [x for x in self.json_data if x['end-date'] is not None]
+
+    def sample(self):
+        if len(self.json_data) > 4:
+            return self.json_data[:5]
 
 
 # Keep Brownfield specific code separate 
@@ -66,5 +73,8 @@ class BrownfieldDatasetAnalyser(DatasetAnalyser):
             'active_records': len(self.active_records()),
             'hectares': self.total_hectares(),
             'dwellings': int(self.total_dwellings()),
-            'organisations': len(self.organisations())
+            'organisations': len(self.organisations()),
+            'historical_records': int(self.number_of_records() - len(self.active_records())),
+            'fields': self.number_of_fields()
         }
+
