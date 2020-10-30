@@ -164,6 +164,7 @@ def brownfield_land_dataset(d):
     if dataset == "brownfield-land":
         da = BrownfieldDatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
         d["summary"] = da.summary()
+        d['sample'] = da.sample(5, 2340)
 
     # page per-organisation
     for organisation in d["organisation"]:
