@@ -1,4 +1,5 @@
 {% extends "digital-land-frontend/dlf-base.html" %}
+{% from 'digital-land-frontend/components/feedback-panel/macro.html' import dlFeedbackPanel %}
 
 {% block pageTitle %}Datasets | Digital Land{% endblock %}
 
@@ -9,7 +10,7 @@
     </div>
 </div>
 
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<p class="govuk-body-l">National datasets collected and collated by Digital Land.</p>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
@@ -26,17 +27,13 @@
   </div>
 </div>
 
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+<p class="govuk-body">This list of national datasets will be added to as new datasets are collected. You can read more about the <a href="/project">datasets we intend to collect</a>.</p>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-l" id="download">Download the data</h2>
-    <p class="govuk-body">You can download the data on this page as:</p>
-    <ul class="govuk-list">
-      <li><a href="{{download_url}}">CSV</a></li>
-    </ul>
-  </div>
-</div>
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+{{ dlFeedbackPanel({
+    "title": "Help improve this page",
+    "html": 'If you’ve got a question, idea or suggestion share it with the digital land team on <a href="https://github.com/digital-land/design-system">github</a> or email us on <a href="mailto:DigitalLand@communities.gov.uk">digitalland@communities.gov.uk</a>'
+}) }}
 
 {% endblock %}
 
