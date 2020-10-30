@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Eden District Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Eden District Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-11-26</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-04-27</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.eden.gov.uk/planning-and-building/planning-policy/brownfield-land-register/" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 40 records from Eden District Council.</p>
+      <p class="govuk-body">There are 14 records from Eden District Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,36 +223,7 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2019-11-26</td>
-                    <td>local-authority-eng:EDN</td>
-                    <td>17/BOL/0031</td>
-                    <td class="data-table__cell--max-width">Eden Grove, Bolton</td>
-                    <td><a href="http://eforms.eden.gov.uk/fastweb_upload/2015%20Planning%20Applications/15-0633/0633-P-01_Existing_Site_and_Location_Plan%20%20A1.pdf" class="govuk-link">http://eforms.eden.gov.uk/fastweb_upload/2015%20Planning%20Applications/15-0633/0633-P-01_Existing_Site_and_Location_Plan%20%20A1.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>54.606033</td>
-                    <td>-2.56058</td>
-                    <td>0.295</td>
-                    <td>2.0</td>
-                    <td>2.0</td>
-                    <td></td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">planning permission was extant at 1/09/18</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
-                </tr>
-                
-                <tr id="row2">
-                    <td>2019-11-26</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:EDN</td>
                     <td>17/PEN/0133</td>
                     <td class="data-table__cell--max-width">Richardsons Timber Merchants, Scotland Road, Penrith</td>
@@ -280,11 +244,11 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
                 </tr>
                 
-                <tr id="row3">
-                    <td>2019-11-26</td>
+                <tr id="row2">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:EDN</td>
                     <td>17/PEN/0050</td>
                     <td class="data-table__cell--max-width">69 Gilwilly Road, Penrith</td>
@@ -305,11 +269,11 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
                 </tr>
                 
-                <tr id="row4">
-                    <td>2019-11-26</td>
+                <tr id="row3">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:EDN</td>
                     <td>17/EAM/0002</td>
                     <td class="data-table__cell--max-width">Park Holme, Eamont Bridge</td>
@@ -334,11 +298,11 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
                 </tr>
                 
-                <tr id="row5">
-                    <td>2019-11-26</td>
+                <tr id="row4">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:EDN</td>
                     <td>17/ALS/0049</td>
                     <td class="data-table__cell--max-width">Tyne Café and garage buildings, Alston</td>
@@ -359,11 +323,11 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
                 </tr>
                 
-                <tr id="row6">
-                    <td>2019-11-26</td>
+                <tr id="row5">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:EDN</td>
                     <td>17/PEN/0046</td>
                     <td class="data-table__cell--max-width">Armstrong and Fleming Garage, Roper Street, Penrith</td>
@@ -388,111 +352,136 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
+                </tr>
+                
+                <tr id="row6">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:EDN</td>
+                    <td>17/APP/0053</td>
+                    <td class="data-table__cell--max-width">Land at Westmorland Road, Appleby</td>
+                    <td><a href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/APP/0053" class="govuk-link">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/APP/0053</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>54.582281</td>
+                    <td>-2.488586</td>
+                    <td>0.504</td>
+                    <td>15.0</td>
+                    <td>15.0</td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    <td>2019-11-26</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:EDN</td>
-                    <td>17/GSA/0009</td>
-                    <td class="data-table__cell--max-width">Townhead Farm, Great Salkeld</td>
-                    <td><a href="http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-1079/1079-Site-Plan.pdf" class="govuk-link">http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-1079/1079-Site-Plan.pdf</a></td>
+                    <td>17/PEN/0132</td>
+                    <td class="data-table__cell--max-width">Old Fire Station, Bridge Lane, Penrith</td>
+                    <td><a href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/PEN/0132" class="govuk-link">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/PEN/0132</a></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>54.657472</td>
+                    <td>-2.744471</td>
+                    <td>0.575</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
+                </tr>
+                
+                <tr id="row8">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:EDN</td>
+                    <td>17/PEN/0048</td>
+                    <td class="data-table__cell--max-width">QEGS Annexe, Ullswater Road, Penrith</td>
+                    <td><a href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/PEN/0048" class="govuk-link">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/PEN/0048</a></td>
                     <td>yes</td>
-                    <td>owned by a public authority</td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>54.66059</td>
+                    <td>-2.757672</td>
+                    <td>0.579</td>
+                    <td>18.0</td>
+                    <td>18.0</td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
+                </tr>
+                
+                <tr id="row9">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:EDN</td>
+                    <td>17/NEN/0047</td>
+                    <td class="data-table__cell--max-width">Wright Bros Garage, Nenthead</td>
+                    <td><a href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/NEN/0047" class="govuk-link">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/NEN/0047</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>54.787945</td>
+                    <td>-2.343207</td>
+                    <td>0.586</td>
+                    <td>13.0</td>
+                    <td>13.0</td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
+                </tr>
+                
+                <tr id="row10">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:EDN</td>
+                    <td>17/SHA/0052</td>
+                    <td class="data-table__cell--max-width">Former Food Factory, Shap</td>
+                    <td><a href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/SHA/0052" class="govuk-link">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/SHA/0052</a></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td></td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>54.725092</td>
-                    <td>-2.698593</td>
-                    <td>0.4</td>
-                    <td>7.0</td>
-                    <td>7.0</td>
+                    <td>54.522539</td>
+                    <td>-2.674173</td>
+                    <td>0.631</td>
+                    <td>15.0</td>
+                    <td>15.0</td>
                     <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">site is currently under construction</div>
+                            <div class="govuk-details__text">Despite the site's allocation in the Local Plan for housing, planning permission was granted in May 2018 to redevelop the existing employment site for B2/B8 purposes</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
-                </tr>
-                
-                <tr id="row8">
-                    <td>2019-11-26</td>
-                    <td>local-authority-eng:EDN</td>
-                    <td>17/PEN/0128</td>
-                    <td class="data-table__cell--max-width">Land at NBM Travel, Cromwell Road, Penrith</td>
-                    <td><a href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/PEN/0128" class="govuk-link">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/PEN/0128</a></td>
-                    <td></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>54.662994</td>
-                    <td>-2.757868</td>
-                    <td>0.418</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
-                </tr>
-                
-                <tr id="row9">
-                    <td>2019-11-26</td>
-                    <td>local-authority-eng:EDN</td>
-                    <td>17/SOU/0045</td>
-                    <td class="data-table__cell--max-width">South Lodge, Southwaite</td>
-                    <td><a href="http://eforms.eden.gov.uk/fastweb_upload/2015%20Planning%20Applications/15-0708/Existing%20Site%20Plan%20-%20uses.pdf" class="govuk-link">http://eforms.eden.gov.uk/fastweb_upload/2015%20Planning%20Applications/15-0708/Existing%20Site%20Plan%20-%20uses.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>50.390501</td>
-                    <td>-2.788211</td>
-                    <td>0.45</td>
-                    <td>8.0</td>
-                    <td>8.0</td>
-                    <td></td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
-                </tr>
-                
-                <tr id="row10">
-                    <td>2019-11-26</td>
-                    <td>local-authority-eng:EDN</td>
-                    <td>17/CLK/0141</td>
-                    <td class="data-table__cell--max-width">Clickham Inn Units, Clickham, Blencow</td>
-                    <td><a href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/CLK/0141" class="govuk-link">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/CLK/0141</a></td>
-                    <td></td>
-                    <td>not owned by a public authority</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>54.670382</td>
-                    <td>-2.828166</td>
-                    <td>0.454</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/b5e9dd3666d454af94d390b2e44f92cdb58f9e66840f1e9163c8384ac99f6b45" class="govuk-link">b5e9dd36...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/4ed0d8fd2efd638c78aa0912a1ae52cba8ebdfef9051fb089466ffcbacb9ad41" class="govuk-link">4ed0d8fd...</a></td>
                 </tr>
                 
             </tbody>
@@ -525,12 +514,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -564,33 +590,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

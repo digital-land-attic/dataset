@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Fareham Borough Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Fareham Borough Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-12-20</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-09-24</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-24</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.fareham.gov.uk/planning/brownfieldlandregister.aspx" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 30 records from Fareham Borough Council.</p>
+      <p class="govuk-body">There are 24 records from Fareham Borough Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,11 +223,11 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2019-12-19</td>
+                    <td>2020-10-23</td>
                     <td>local-authority-eng:FAR</td>
                     <td>37</td>
                     <td class="data-table__cell--max-width">Sawmills Industrial Park, Wickham Road, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-37.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-37.jpg</a></td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-93.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-93.jpg</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>pending decision</td>
@@ -255,131 +248,44 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    <td>2019-12-19</td>
+                    <td>2020-10-23</td>
                     <td>local-authority-eng:FAR</td>
-                    <td>86</td>
-                    <td class="data-table__cell--max-width">1-2 The Avenue, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-86.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-86.jpg</a></td>
+                    <td>93</td>
+                    <td class="data-table__cell--max-width">Hammond Industrial Park</td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-37.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-37.jpg</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>50.852986</td>
-                    <td>-1.193378</td>
-                    <td>0.18</td>
-                    <td>9</td>
-                    <td>20</td>
-                    <td>2019-12-01</td>
+                    <td>50.815595</td>
+                    <td>-1.213089</td>
+                    <td>0.6</td>
+                    <td>36</td>
+                    <td>36</td>
+                    <td>2020-10-23</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is located in Fareham Town Centre and is currently occupied by vehicle repair garage. Site is identified as a proposed housing allocation in the 2019 supplement to the Draft Local Plan.</div>
+                            <div class="govuk-details__text">Site is not recommended for retention in the Employment Land Review. Suitable site for residential development. Consideration of noise impact required due to proximity of airport runway.. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    <td>2019-12-19</td>
-                    <td>local-authority-eng:FAR</td>
-                    <td>87</td>
-                    <td class="data-table__cell--max-width">280-282 (UTP) West Street, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-87.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-87.jpg</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>not permissioned</td>
-                    <td></td>
-                    <td></td>
-                    <td>50.851958</td>
-                    <td>-1.189876</td>
-                    <td>0.17</td>
-                    <td>34</td>
-                    <td>34</td>
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is identified as a proposed Fareham Town Centre housing allocation in the Draft Local Plan (2017). This identifies a capacity of 34 dwellings for the site. Access is provided from Station Roundabout and Western Way slip road.. http://www.fareham.gov.uk/PDF/planning/local_plan/DraftLocalPlanEvidenceBase/EV11-SHLAAOct2017.pdf</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
-                </tr>
-                
-                <tr id="row4">
-                    <td>2019-12-19</td>
-                    <td>local-authority-eng:FAR</td>
-                    <td>158</td>
-                    <td class="data-table__cell--max-width">Norgar House, 10 East Street, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-158.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-158.jpg</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>50.851858</td>
-                    <td>-1.173524</td>
-                    <td>0.08</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>2017-12-01</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is located in Fareham Town Centre. There are two vehicular accesses to 10 on-site car parking spaces. Building is listed and is located within Fareham High Street Conservation Area.. Conversion Of Offices Into 5No 2-Bedroom Flats, With Offices Retained On Part Of The Ground Floor. http://www.fareham.gov.uk/casetrackerplanning/ApplicationDetails.aspx?reference=P/17/1060/FP</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
-                </tr>
-                
-                <tr id="row5">
-                    <td>2019-12-19</td>
-                    <td>local-authority-eng:FAR</td>
-                    <td>198</td>
-                    <td class="data-table__cell--max-width">Civic Quarter, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-198.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-198.jpg</a></td>
-                    <td>yes</td>
-                    <td>mixed ownership</td>
-                    <td>not permissioned</td>
-                    <td></td>
-                    <td></td>
-                    <td>50.854319</td>
-                    <td>-1.176862</td>
-                    <td>3.35</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>2019-12-01</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is identified as a proposed Fareham Town Centre housing allocation in the Draft Local Plan (2017). This identifies a capacity of 100 dwellings for the site.. http://www.fareham.gov.uk/PDF/planning/local_plan/DraftLocalPlanEvidenceBase/EV11-SHLAAOct2017.pdf</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
-                </tr>
-                
-                <tr id="row6">
-                    <td>2019-12-19</td>
+                    <td>2020-10-23</td>
                     <td>local-authority-eng:FAR</td>
                     <td>203</td>
                     <td class="data-table__cell--max-width">3-33 West Street, Portchester</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-203.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-203.jpg</a></td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-203.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-203.jpg</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>pending decision</td>
@@ -396,19 +302,19 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is located in Portchester District Centre. Development proposed above existing retail and residential units.. Additional 1 and 2 storeys on the existing building to provide 26 apartments. http://www.fareham.gov.uk/casetrackerplanning/ApplicationDetails.aspx?reference=P%2F19%2F1040%2FOA</div>
+                            <div class="govuk-details__text">Site is located in Portchester District Centre. Development proposed above existing retail and residential units.. Additional 1 and 2 storeys on the existing building to provide 26 apartments. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
                 </tr>
                 
-                <tr id="row7">
-                    <td>2019-12-19</td>
+                <tr id="row4">
+                    <td>2020-10-23</td>
                     <td>local-authority-eng:FAR</td>
                     <td>211</td>
                     <td class="data-table__cell--max-width">Fareham Station East, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-211.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-211.jpg</a></td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-211.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-211.jpg</a></td>
                     <td>yes</td>
                     <td>mixed ownership</td>
                     <td>not permissioned</td>
@@ -425,19 +331,19 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is identified as a Development Opportunity Area in the adopted Fareham Local Plan Part 2 (2015) and identified as a proposed Fareham Town Centre housing allocation in the Draft Local Plan (2017).  This identifies a capacity of 120 dwellings for the site. Immediate and surrounding uses include a public transport hub and interchange, low-key industrial service industries, fire station and some residential. Relocation of existing fire station or incorporation into a redevelopment would be required.. http://www.fareham.gov.uk/PDF/planning/local_plan/DraftLocalPlanEvidenceBase/EV11-SHLAAOct2017.pdf</div>
+                            <div class="govuk-details__text">Site is identified as a Development Opportunity Area in the adopted Fareham Local Plan Part 2 (2015) and identified as a proposed Fareham Town Centre housing allocation in the Draft Local Plan (2017).  This identifies a capacity of 120 dwellings for the site. Immediate and surrounding uses include a public transport hub and interchange, low-key industrial service industries, fire station and some residential. Relocation of existing fire station or incorporation into a redevelopment would be required.. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
                 </tr>
                 
-                <tr id="row8">
-                    <td>2019-12-19</td>
+                <tr id="row5">
+                    <td>2020-10-23</td>
                     <td>local-authority-eng:FAR</td>
                     <td>212</td>
                     <td class="data-table__cell--max-width">Fareham Station West, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-212.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-212.jpg</a></td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-212.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-212.jpg</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -454,19 +360,19 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is an adopted housing allocation in the adopted Fareham Local Plan Part 2 (2015) and identified as a proposed Fareham Town Centre housing allocation in the Draft Local Plan (2017).  This identifies a capacity of 94 dwellings for the site. Industrial and service industries, car garage and residential are located to the west and train station to the east. Area with TPOs is also located adjacent to the west. Indicative capacity of 30 dwellings and a care home or 75 dwellings is also identified for Fareham Station East in the Local Plan Part 2 Sites and Policies document (adopted June 2015).. http://www.fareham.gov.uk/PDF/planning/local_plan/DraftLocalPlanEvidenceBase/EV11-SHLAAOct2017.pdf</div>
+                            <div class="govuk-details__text">Site is an adopted housing allocation in the adopted Fareham Local Plan Part 2 (2015) and identified as a proposed Fareham Town Centre housing allocation in the Draft Local Plan (2017).  This identifies a capacity of 94 dwellings for the site. Industrial and service industries, car garage and residential are located to the west and train station to the east. Area with TPOs is also located adjacent to the west. Indicative capacity of 30 dwellings and a care home or 75 dwellings is also identified for Fareham Station East in the Local Plan Part 2 Sites and Policies document (adopted June 2015).. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
                 </tr>
                 
-                <tr id="row9">
-                    <td>2019-12-19</td>
+                <tr id="row6">
+                    <td>2020-10-23</td>
                     <td>local-authority-eng:FAR</td>
                     <td>1058</td>
                     <td class="data-table__cell--max-width">Wynton Way, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1058.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1058.jpg</a></td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1058.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1058.jpg</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
@@ -483,19 +389,19 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is an adopted housing allocation in the adopted Fareham Local Plan Part 2 (2015) and proposed for retention in Draft Local Plan (2017).  Constitutes a D Class use and a garage block.. http://www.fareham.gov.uk/PDF/planning/local_plan/DraftLocalPlanEvidenceBase/EV11-SHLAAOct2017.pdf</div>
+                            <div class="govuk-details__text">Site is an adopted housing allocation in the adopted Fareham Local Plan Part 2 (2015) and proposed for retention in Draft Local Plan (2017).  Constitutes a D Class use and a garage block.. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
                 </tr>
                 
-                <tr id="row10">
-                    <td>2019-12-19</td>
+                <tr id="row7">
+                    <td>2020-10-23</td>
                     <td>local-authority-eng:FAR</td>
                     <td>1076</td>
                     <td class="data-table__cell--max-width">335-357 Gosport Road, Fareham</td>
-                    <td><a href="http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1076.jpg" class="govuk-link">http://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1076.jpg</a></td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1076.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1076.jpg</a></td>
                     <td>yes</td>
                     <td>owned by a public authority</td>
                     <td>not permissioned</td>
@@ -512,11 +418,98 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site is an adopted housing allocation in the adopted Fareham Local Plan Part 2 (2015) and proposed for retention in Draft Local Plan (2017).  Site is currently vacant and located adjacent to the Bus Rapid Transit (BRT) route along the former railway line. Site is owned by Hampshire County Council.. http://www.fareham.gov.uk/PDF/planning/local_plan/DraftLocalPlanEvidenceBase/EV11-SHLAAOct2017.pdf</div>
+                            <div class="govuk-details__text">Site is an adopted housing allocation in the adopted Fareham Local Plan Part 2 (2015) and proposed for retention in Draft Local Plan (2017).  Site is currently vacant and located adjacent to the Bus Rapid Transit (BRT) route along the former railway line. Site is owned by Hampshire County Council.. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/c9cc404f1e6297a2bd8d93a22d2c01eff0881a23b508b7ece061acc321fc2fdb" class="govuk-link">c9cc404f...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
+                </tr>
+                
+                <tr id="row8">
+                    <td>2020-10-23</td>
+                    <td>local-authority-eng:FAR</td>
+                    <td>1203</td>
+                    <td class="data-table__cell--max-width">Swanwick Marina, Bridge Road</td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1203.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1203.jpg</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>other</td>
+                    <td></td>
+                    <td>50.882614</td>
+                    <td>-1.299308</td>
+                    <td>4.66</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>2017-12-01</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Permission remains extant due to groundworks commencement having initially been granted in 2008 (P/07/0764/FP). South eastern portion of the site is located adjacent to Swanwick Shore Conservation Area and Listed Buildings. Latest consent (P/15/0424/VC) relates to a variation of condition for an additional affordable dwelling increasing the proposed total to 50. Majority of site located in Flood Zone 3.. Comprehensive Redevelopment Of Marina Comprising Retail, Bar, Restaurant, Offices, And Storage Revised Marina Layout & 49 Dwellings: Variation Of Planning Condition 2 Of P/07/0764/Fp - Minor Amendments To Block A Residential, To Create Additional Unit For Affordable Housing. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
+                </tr>
+                
+                <tr id="row9">
+                    <td>2020-10-23</td>
+                    <td>local-authority-eng:FAR</td>
+                    <td>1325</td>
+                    <td class="data-table__cell--max-width">Crofton Conservatories, Fareham</td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1325.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-1325.jpg</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.852425</td>
+                    <td>-1.188618</td>
+                    <td>0.24</td>
+                    <td>49</td>
+                    <td>49</td>
+                    <td>2017-12-01</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Site is an adopted housing allocation in the adopted Fareham Local Plan Part 2 (2015) and proposed for retention in the Draft Local Plan (2017).  This identifies a capacity of 49 dwellings for the site. Access is from Maytree Road. The site is currently under retail use.. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
+                </tr>
+                
+                <tr id="row10">
+                    <td>2020-10-23</td>
+                    <td>local-authority-eng:FAR</td>
+                    <td>1425</td>
+                    <td class="data-table__cell--max-width">Market Quay, Fareham</td>
+                    <td><a href="https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-3040.jpg" class="govuk-link">https://www.fareham.gov.uk/downloads/BLR_Plans/SitePlan-3040.jpg</a></td>
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>50.851458</td>
+                    <td>-1.177444</td>
+                    <td>1.48</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2017-12-01</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Site is identified as a Development Opportunity Area in the adopted Fareham Local Plan Part 2 (2015) and identified as a proposed Fareham Town Centre mixed use allocation in the Draft Local Plan (2017).  This identifies a capacity of 100 dwellings for the site (excluding potential hotel use on upper floors). A car park currently serves the commercial shopping and retail core forming the town centre. The A27 is located within proximity to the south.. https://www.fareham.gov.uk/planning/publicationplanevidence.aspx</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/93aeb882e6a3d09b21d76962d0df5ef47663eda40eb2072d5fa8d304d309bc04" class="govuk-link">93aeb882...</a></td>
                 </tr>
                 
             </tbody>
@@ -549,12 +542,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -588,33 +618,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Blackburn with Darwen Borough Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Blackburn with Darwen Borough Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2018-05-22</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-09-24</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-05</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.blackburn.gov.uk/planning/planning-policies-strategies-and-guides/brownfield-register" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 33 records from Blackburn with Darwen Borough Council.</p>
+      <p class="govuk-body">There are 16 records from Blackburn with Darwen Borough Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -233,150 +226,9 @@
                     <td>2017-09-07</td>
                     <td>local-authority-eng:BBD</td>
                     <td>1</td>
-                    <td class="data-table__cell--max-width">Site at Clarenden Road East, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/01%20Clarendon%20Road%20East.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/01%20Clarendon%20Road%20East.pdf</a></td>
-                    <td>yes</td>
-                    <td>owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>permission in principle</td>
-                    <td></td>
-                    <td>53.763707</td>
-                    <td>-2.468214</td>
-                    <td>1.69</td>
-                    <td>51</td>
-                    <td>101</td>
-                    <td>2017-09-07</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
-                </tr>
-                
-                <tr id="row2">
-                    <td>2017-09-07</td>
-                    <td>local-authority-eng:BBD</td>
-                    <td>2</td>
-                    <td class="data-table__cell--max-width">Queens Park Flats Site, Queens Road, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/02%20Queen's%20Park%20Flats%20Site.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/02%20Queen's%20Park%20Flats%20Site.pdf</a></td>
-                    <td>yes</td>
-                    <td>owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>permission in principle</td>
-                    <td></td>
-                    <td>53.739065</td>
-                    <td>-2.457903</td>
-                    <td>0.98</td>
-                    <td>29</td>
-                    <td>59</td>
-                    <td>2017-09-07</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">SPD prepared to guide development of the site for new housing</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
-                </tr>
-                
-                <tr id="row3">
-                    <td>2017-09-07</td>
-                    <td>local-authority-eng:BBD</td>
-                    <td>3</td>
-                    <td class="data-table__cell--max-width">Rockliffe Works, Paterson Street, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/03%20Rockcliffe%20Works,%20Paterson%20Street.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/03%20Rockcliffe%20Works,%20Paterson%20Street.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>permission in principle</td>
-                    <td></td>
-                    <td>53.739329</td>
-                    <td>-2.482315</td>
-                    <td>1.22</td>
-                    <td>36</td>
-                    <td>73</td>
-                    <td>2017-09-07</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Land allocated in Local Plan Part 2 for residential development. Canal & River Trust requires the following to be addressed at Technical Details Consent stage: structural integrity of the retaining wall to the canal, impact on lock nos.52&53 and by-wash, site layout to provide a positive waterside frontage, construction traffic over bridge no. 100 and need for a Construction Management Plan, ecologcial assessment, land contamination & pollution prevention to the canal, towpath improvements.</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
-                </tr>
-                
-                <tr id="row4">
-                    <td>2017-12-19</td>
-                    <td>local-authority-eng:BBD</td>
-                    <td>4</td>
-                    <td class="data-table__cell--max-width">Former East Lancs Coachbuilders, Whalley New Road, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/04%20East%20Lancs%20Coachbuilders,%20Whalley%20New%20Road.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/04%20East%20Lancs%20Coachbuilders,%20Whalley%20New%20Road.pdf</a></td>
-                    <td></td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>permission in principle</td>
-                    <td></td>
-                    <td>53.755457</td>
-                    <td>-2.474856</td>
-                    <td>1.29</td>
-                    <td>39</td>
-                    <td>77</td>
-                    <td>2017-09-07</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Land allocated as development opportunity site in Local Plan Part 2</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
-                </tr>
-                
-                <tr id="row5">
-                    <td>2017-12-19</td>
-                    <td>local-authority-eng:BBD</td>
-                    <td>5</td>
-                    <td class="data-table__cell--max-width">Land off Queen Victoria Street, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/05%20Land%20off%20Queen%20Victoria%20Street.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/05%20Land%20off%20Queen%20Victoria%20Street.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>permission in principle</td>
-                    <td></td>
-                    <td>53.736084</td>
-                    <td>-2.502167</td>
-                    <td>1.33</td>
-                    <td>40</td>
-                    <td>80</td>
-                    <td>2017-09-07</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Technical details application to include asset protection measures  to ensure safe operation and integrity of the railway. Has outline planning permission for up to 60 homes. Erection of 60 no. houses</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
-                </tr>
-                
-                <tr id="row6">
-                    <td>2017-09-07</td>
-                    <td>local-authority-eng:BBD</td>
-                    <td>6</td>
                     <td class="data-table__cell--max-width">Land at SAPPI, Preston Old Road, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/06%20Land%20at%20SAPPI.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/06%20Land%20at%20SAPPI.pdf</a></td>
-                    <td></td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/01%20Land%20at%20SAPPI.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/01%20Land%20at%20SAPPI.pdf</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>outline planning permission</td>
@@ -384,57 +236,28 @@
                     <td>53.718619</td>
                     <td>-2.539509</td>
                     <td>2.7</td>
-                    <td>81</td>
-                    <td>81</td>
-                    <td>2017-09-07</td>
+                    <td>81.0</td>
+                    <td>162.0</td>
+                    <td>2017-07-09</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Land allocated as development opportunity site in Local Plan Part 2.. Erection of up to 500 dwellings</div>
+                            <div class="govuk-details__text">Land allocated as development opportunity site in Local Plan Part 2.</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
                 </tr>
                 
-                <tr id="row7">
+                <tr id="row2">
                     <td>2017-12-19</td>
                     <td>local-authority-eng:BBD</td>
-                    <td>7</td>
-                    <td class="data-table__cell--max-width">Land to the south of Plane Street, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/07%20Land%20south%20of%20Plane%20Street.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/07%20Land%20south%20of%20Plane%20Street.pdf</a></td>
-                    <td></td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>permission in principle</td>
-                    <td></td>
-                    <td>53.757664</td>
-                    <td>-2.469011</td>
-                    <td>0.2</td>
-                    <td>6</td>
-                    <td>12</td>
-                    <td>2017-09-07</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Coal mining risk assessment required for technical details application</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
-                </tr>
-                
-                <tr id="row8">
-                    <td>2017-12-19</td>
-                    <td>local-authority-eng:BBD</td>
-                    <td>8</td>
+                    <td>2</td>
                     <td class="data-table__cell--max-width">Garage site, Harcourt Road, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/08%20Garage%20Site,%20Harcourt%20Road.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/08%20Garage%20Site,%20Harcourt%20Road.pdf</a></td>
-                    <td></td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/02%20Garage%20Site,%20Harcourt%20Road.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/02%20Garage%20Site,%20Harcourt%20Road.pdf</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>permission in principle</td>
@@ -442,33 +265,33 @@
                     <td>53.751744</td>
                     <td>-2.499306</td>
                     <td>0.31</td>
-                    <td>9</td>
-                    <td>19</td>
+                    <td>9.0</td>
+                    <td>19.0</td>
                     <td>2017-09-07</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
                 </tr>
                 
-                <tr id="row9">
-                    <td>2017-12-19</td>
+                <tr id="row3">
+                    <td>2020-06-30</td>
                     <td>local-authority-eng:BBD</td>
-                    <td>9</td>
+                    <td>3</td>
                     <td class="data-table__cell--max-width">Site off Shorrock Lane, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/09%20Site%20off%20Shorrock%20Lane.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/09%20Site%20off%20Shorrock%20Lane.pdf</a></td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/03%20Site%20off%20Shorrock%20Lane.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/03%20Site%20off%20Shorrock%20Lane.pdf</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
-                    <td>permission in principle</td>
+                    <td>full planning permission</td>
                     <td></td>
                     <td>53.733667</td>
                     <td>-2.506216</td>
                     <td>0.33</td>
-                    <td>10</td>
-                    <td>20</td>
+                    <td>10.0</td>
+                    <td>20.0</td>
                     <td>2017-09-07</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
@@ -479,36 +302,198 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
                 </tr>
                 
-                <tr id="row10">
+                <tr id="row4">
                     <td>2017-12-19</td>
                     <td>local-authority-eng:BBD</td>
-                    <td>10</td>
-                    <td class="data-table__cell--max-width">Alaska Street Housing Site, Alaska Street, Blackburn</td>
-                    <td><a href="http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/10%20Alaska%20Street%20Houisng%20Site.pdf" class="govuk-link">http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/10%20Alaska%20Street%20Houisng%20Site.pdf</a></td>
-                    <td>yes</td>
-                    <td>owned by a public authority</td>
+                    <td>4</td>
+                    <td class="data-table__cell--max-width">Mill at Scotland Bank Terrace, Blackburn</td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/04%20Mill,%20Scotland%20Bank%20Terrace.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/04%20Mill,%20Scotland%20Bank%20Terrace.pdf</a></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>permission in principle</td>
                     <td></td>
-                    <td>53.738041</td>
-                    <td>-2.480693</td>
-                    <td>1.29</td>
-                    <td>39</td>
-                    <td>77</td>
+                    <td>53.726096</td>
+                    <td>-2.500487</td>
+                    <td>0.62</td>
+                    <td>19.0</td>
+                    <td>37.0</td>
+                    <td>2017-09-07</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
+                </tr>
+                
+                <tr id="row5">
+                    <td>2020-06-30</td>
+                    <td>local-authority-eng:BBD</td>
+                    <td>5</td>
+                    <td class="data-table__cell--max-width">Former Darwen Moorland High School, Holden Fold, Darwen</td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/05%20Darwen%20Moorland%20High%20School%20Holden%20Fold.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/05%20Darwen%20Moorland%20High%20School%20Holden%20Fold.pdf</a></td>
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.704939</td>
+                    <td>-2.459714</td>
+                    <td>4.73</td>
+                    <td>142.0</td>
+                    <td>284.0</td>
+                    <td>2017-09-07</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
+                </tr>
+                
+                <tr id="row6">
+                    <td>2020-06-30</td>
+                    <td>local-authority-eng:BBD</td>
+                    <td>6</td>
+                    <td class="data-table__cell--max-width">Hoddlesden Mill, Johnson New Road, Hoddlesden</td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/06%20Hoddlesden%20Mill.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/06%20Hoddlesden%20Mill.pdf</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>permission in principle</td>
+                    <td></td>
+                    <td>53.704939</td>
+                    <td>-2.459714</td>
+                    <td>1.9</td>
+                    <td>57.0</td>
+                    <td>114.0</td>
                     <td>2017-09-07</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Land allocated in Local Plan Part 2 for residential development. Issues relating to construction traffic over bridge owned by Canal & River Trust and need for a Construction Management Plan need to be addressed at Technical Details Consent stage.</div>
+                            <div class="govuk-details__text">Pre determination assessment may be required at technical details stage due to potential issues with noise, odour and light. EA to be consulted at techical details stage due to potential contaminants. Planning permission for 87 homes now expired.</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c" class="govuk-link">049b0646...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
+                </tr>
+                
+                <tr id="row7">
+                    <td>2017-12-19</td>
+                    <td>local-authority-eng:BBD</td>
+                    <td>7</td>
+                    <td class="data-table__cell--max-width">Roe Lee Mill North, Campbell Street, Blackburn</td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/07%20Roe%20Lee%20Mill%20North.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/07%20Roe%20Lee%20Mill%20North.pdf</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>permission in principle</td>
+                    <td></td>
+                    <td>53.768206</td>
+                    <td>-2.478262</td>
+                    <td>0.62</td>
+                    <td>19.0</td>
+                    <td>37.0</td>
+                    <td>2017-09-07</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Land allocated in Local Plan Part 2 for residential development. Technical details application to include asset protection measures to ensure safe operation and integrity of railway</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
+                </tr>
+                
+                <tr id="row8">
+                    <td>2017-12-19</td>
+                    <td>local-authority-eng:BBD</td>
+                    <td>8</td>
+                    <td class="data-table__cell--max-width">Roe Lee site, off Rosewood Avenue, Blackburn</td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/08%20Roe%20Lee%20Site%20off%20Rosewood%20Avenue.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/08%20Roe%20Lee%20Site%20off%20Rosewood%20Avenue.pdf</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>permission in principle</td>
+                    <td></td>
+                    <td>53.766152</td>
+                    <td>-2.477313</td>
+                    <td>0.23</td>
+                    <td>7.0</td>
+                    <td>14.0</td>
+                    <td>2017-09-07</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Land allocated in Local Plan Part 2 for residential development</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
+                </tr>
+                
+                <tr id="row9">
+                    <td>2017-12-19</td>
+                    <td>local-authority-eng:BBD</td>
+                    <td>9</td>
+                    <td class="data-table__cell--max-width">Old Newfield School Site, Roman Road, Blackburn</td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/09%20Old%20Newfield%20School%20Site.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/09%20Old%20Newfield%20School%20Site.pdf</a></td>
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>permission in principle</td>
+                    <td></td>
+                    <td>53.727683</td>
+                    <td>-2.463388</td>
+                    <td>2.7</td>
+                    <td>81.0</td>
+                    <td>162.0</td>
+                    <td>2017-09-07</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Land allocated in Local Plan Part 2 for residential development</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
+                </tr>
+                
+                <tr id="row10">
+                    <td>2017-09-07</td>
+                    <td>local-authority-eng:BBD</td>
+                    <td>10</td>
+                    <td class="data-table__cell--max-width">Blakewater, Shadsworth Road, Blackburn</td>
+                    <td><a href="https://www.blackburn.gov.uk/sites/default/files/media/pdfs/10%20Blakewater,%20Shadsworth%20Road.pdf" class="govuk-link">https://www.blackburn.gov.uk/sites/default/files/media/pdfs/10%20Blakewater,%20Shadsworth%20Road.pdf</a></td>
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.736332</td>
+                    <td>-2.451173</td>
+                    <td>4.52</td>
+                    <td>135.0</td>
+                    <td>271.0</td>
+                    <td>2017-09-07</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341" class="govuk-link">03e51ed5...</a></td>
                 </tr>
                 
             </tbody>
@@ -541,12 +526,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -580,33 +602,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

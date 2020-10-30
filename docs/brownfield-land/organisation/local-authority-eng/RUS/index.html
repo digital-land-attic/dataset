@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Rushcliffe Borough Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Rushcliffe Borough Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-12-01</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-05-13</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.rushcliffe.gov.uk/planningpolicy/brownfieldregister/" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 14 records from Rushcliffe Borough Council.</p>
+      <p class="govuk-body">There are 12 records from Rushcliffe Borough Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,18 +223,76 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2017-12-11</td>
+                    <td>2020-03-31</td>
                     <td>local-authority-eng:RUS</td>
-                    <td>SHLAA127</td>
-                    <td class="data-table__cell--max-width">Flintham Islamic Institute, Flintham</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/127.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/127.pdf</a></td>
+                    <td>SHLAA/BIN/032</td>
+                    <td class="data-table__cell--max-width">Chesterfield Arms Church Street Bingham</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
-                    <td>outline planning permission</td>
+                    <td>full planning permission</td>
                     <td></td>
-                    <td>53.013663</td>
-                    <td>-0.902598</td>
+                    <td>52.9521</td>
+                    <td>0.9505</td>
+                    <td>0.32</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2020-03-31</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">"Planning permission 18/00298/FUL"</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
+                </tr>
+                
+                <tr id="row2">
+                    <td>2020-03-31</td>
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA/BUN/001</td>
+                    <td class="data-table__cell--max-width">Bunny Brickworks, Bunny</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.8534</td>
+                    <td>-1.1383</td>
+                    <td>2.4</td>
+                    <td>80</td>
+                    <td>100</td>
+                    <td>2020-03-31</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">"Part of mixed use allocation"</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
+                </tr>
+                
+                <tr id="row3">
+                    <td>2020-03-31</td>
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA/FLI/001</td>
+                    <td class="data-table__cell--max-width">Flintham Islamic Institute, Flintham</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>53.014</td>
+                    <td>-0.9025</td>
                     <td>3.45</td>
                     <td>95</td>
                     <td>95</td>
@@ -251,57 +302,57 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Permission 15/03060/OUT". 95 dwelling redevelopment of the Former Islamic Institute. https://planningon-line.rushcliffe.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=NE9IFMNL08H00</div>
+                            <div class="govuk-details__text">"Permission 15/03060/OUT expired"</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
                 </tr>
                 
-                <tr id="row2">
-                    <td>2018-08-28</td>
+                <tr id="row4">
+                    <td>2020-03-31</td>
                     <td>local-authority-eng:RUS</td>
-                    <td>SHLAA275</td>
-                    <td class="data-table__cell--max-width">West Bridgford Depot, West Bridgford</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/275.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/275.pdf</a></td>
+                    <td>SHLAA/NEW/002</td>
+                    <td class="data-table__cell--max-width">Former RAF Newton, Newton</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
                     <td>yes</td>
-                    <td>owned by a public authority</td>
-                    <td>not permissioned</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>outline planning permission</td>
                     <td></td>
-                    <td></td>
-                    <td>52.928349</td>
-                    <td>-1.119512</td>
-                    <td>1.7</td>
-                    <td>50</td>
-                    <td>60</td>
+                    <td>52.966</td>
+                    <td>-0.9813</td>
+                    <td>35.4</td>
+                    <td>500</td>
+                    <td>550</td>
                     <td>2017-12-11</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Suggested number of dwellings from SHLAA: 50". SHLAA assessment 50 dwellings</div>
+                            <div class="govuk-details__text">"Outline planning permission 10/02105/OUT granted in 2013. Number of dwellings in permisison: up to 550. Variation of conditions that required footbidge, 50 live work units and affordable housing provision approved Sept 2018."</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
                 </tr>
                 
-                <tr id="row3">
-                    <td>2018-08-28</td>
+                <tr id="row5">
+                    <td>2020-03-31</td>
                     <td>local-authority-eng:RUS</td>
-                    <td>SHLAA287</td>
-                    <td class="data-table__cell--max-width">Former Filling Station, Radcliffe Road, West Bridgford</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/287.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/287.pdf</a></td>
-                    <td>yes</td>
+                    <td>SHLAA/RAD/040</td>
+                    <td class="data-table__cell--max-width">Pedigree Wholesale, The Crescent, Radcliffe on Trent</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.937914</td>
-                    <td>-1.132962</td>
-                    <td>0.1</td>
-                    <td>6</td>
+                    <td>52.9488</td>
+                    <td>-1.0301</td>
+                    <td>0.5</td>
+                    <td>10</td>
                     <td>10</td>
                     <td>2017-12-11</td>
                     <td></td>
@@ -309,113 +360,26 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Planning permission 13/01936/FUL expired 2018". 6 self contained flats within a mixed use development. https://planningon-line.rushcliffe.gov.uk/online-applications/applicationDetails.do?keyVal=MTXV7MNL07T00&activeTab=summary</div>
+                            <div class="govuk-details__text">"Suggested number of dwellings from SHLAA: 15"</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
-                </tr>
-                
-                <tr id="row4">
-                    <td>2017-12-11</td>
-                    <td>local-authority-eng:RUS</td>
-                    <td>SHLAA319</td>
-                    <td class="data-table__cell--max-width">Land between Lady Bay Bridge and Radcliffe Road, West Bridgford</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/319.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/319.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>52.939057</td>
-                    <td>-1.129413</td>
-                    <td>0.15</td>
-                    <td>48</td>
-                    <td>48</td>
-                    <td>2017-12-11</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Planning permission 16/01118/FUL". 48 apartments within a four storey building. https://planningon-line.rushcliffe.gov.uk/online-applications/applicationDetails.do?keyVal=O6DPXLNLMSW00&activeTab=summary</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
-                </tr>
-                
-                <tr id="row5">
-                    <td>2018-08-28</td>
-                    <td>local-authority-eng:RUS</td>
-                    <td>SHLAA331</td>
-                    <td class="data-table__cell--max-width">1-27 Loughborough Road & 2-6 Bridgford Road, West Bridgford</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/331.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/331.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>not permissioned</td>
-                    <td></td>
-                    <td></td>
-                    <td>52.93642</td>
-                    <td>-1.133885</td>
-                    <td>0.7</td>
-                    <td>215</td>
-                    <td>230</td>
-                    <td>2017-12-11</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Extended planning permission expired however still potential for brownfield development". 215 residential apartments. https://planningon-line.rushcliffe.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=I8I0DWNL04000</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    <td>2019-01-16</td>
+                    <td>2020-03-31</td>
                     <td>local-authority-eng:RUS</td>
-                    <td>SHLAA502</td>
-                    <td class="data-table__cell--max-width">Former RAF Newton, Newton</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/502.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/502.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>outline planning permission</td>
-                    <td></td>
-                    <td>52.962571</td>
-                    <td>-0.975683</td>
-                    <td>35.4</td>
-                    <td>550</td>
-                    <td>550</td>
-                    <td>2017-12-11</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Outline planning permission 10/02105/OUT granted in 2013. Number of dwellings in permisison: up to 550. Variation of conditions that required footbidge, 50 live work units and affordable housing provision approved Sept 2018.". up to 500 dwellings and up to 50 live work units. https://planningon-line.rushcliffe.gov.uk/online-applications/applicationDetails.do?keyVal=LEHRQZNL01000&activeTab=summary</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
-                </tr>
-                
-                <tr id="row7">
-                    <td>2019-01-16</td>
-                    <td>local-authority-eng:RUS</td>
-                    <td>SHLAA802</td>
+                    <td>SHLAA/RUD/040</td>
                     <td class="data-table__cell--max-width">15 Parkyns Street, Ruddington</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/802.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/802.pdf</a></td>
-                    <td>yes</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
+                    <td></td>
                     <td>not owned by a public authority</td>
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.891186</td>
-                    <td>-1.150348</td>
+                    <td>52.8913</td>
+                    <td>-1.15</td>
                     <td>0.05</td>
                     <td>5</td>
                     <td>5</td>
@@ -425,84 +389,113 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Planning permission 14/01812/FUL Expired 2018 ". 5 terraced residential properties. https://planningon-line.rushcliffe.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=0097JGNLDT000</div>
+                            <div class="govuk-details__text">"Lapsed planning permission"</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
+                </tr>
+                
+                <tr id="row7">
+                    <td>2020-03-31</td>
+                    <td>local-authority-eng:RUS</td>
+                    <td>SHLAA/STA/014</td>
+                    <td class="data-table__cell--max-width">Hillcrest Workshops, Stanton in the Wolds</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.8739</td>
+                    <td>-1.0516</td>
+                    <td>0.49</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>2020-03-31</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">"Planning permission 18/02288/FUL"</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    <td>2017-12-12</td>
+                    <td>2020-03-31</td>
                     <td>local-authority-eng:RUS</td>
-                    <td>SHLAA860</td>
-                    <td class="data-table__cell--max-width">Pedigree Wholesale, The Crescent, Radcliffe on Trent</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/860.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/860.pdf</a></td>
+                    <td>SHLAA/WBR/001</td>
+                    <td class="data-table__cell--max-width">West Bridgford Depot, West Bridgford</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
                     <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>not permissioned</td>
+                    <td>owned by a public authority</td>
+                    <td>permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>52.948833</td>
-                    <td>-1.030153</td>
-                    <td>0.5</td>
-                    <td>10</td>
-                    <td>15</td>
+                    <td>52.9283</td>
+                    <td>-1.1195</td>
+                    <td>1.7</td>
+                    <td>50</td>
+                    <td>76</td>
                     <td>2017-12-11</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Suggested number of dwellings from SHLAA: 15". 10-15 residential dwellings as defined in a pre application for the site</div>
+                            <div class="govuk-details__text">"Suggested number of dwellings from SHLAA: 50"</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    <td>2019-01-16</td>
+                    <td>2020-03-31</td>
                     <td>local-authority-eng:RUS</td>
-                    <td>SHLAA916</td>
-                    <td class="data-table__cell--max-width">56-62 Radcliffe Road, West Bridgford</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/916.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/916.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
+                    <td>SHLAA/WBR/016</td>
+                    <td class="data-table__cell--max-width">Former Filling Station, Radcliffe Road, West Bridgford</td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
                     <td></td>
-                    <td>52.937815</td>
-                    <td>-1.125599</td>
-                    <td>0.09</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>52.938</td>
+                    <td>-1.1329</td>
+                    <td>0.1</td>
                     <td>6</td>
                     <td>6</td>
-                    <td>2017-12-12</td>
+                    <td>2017-12-11</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Extant Planning permission 16/01767/FUL. Application for 7 flats and 2 bungalows is pending determination". 6 apartments on land to side of existing office building. https://planningon-line.rushcliffe.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=0094KPNLDT000</div>
+                            <div class="govuk-details__text">"Planning permission 13/01936/FUL expired 2018"</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    <td>2017-12-12</td>
+                    <td>2020-03-31</td>
                     <td>local-authority-eng:RUS</td>
-                    <td>SHLAA919</td>
+                    <td>SHLAA/WBR/111</td>
                     <td class="data-table__cell--max-width">John Germans Drovers, 37 Gordon Road, West Bridgford</td>
-                    <td><a href="http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/919.pdf" class="govuk-link">http://www.rushcliffe.gov.uk/media/1rushcliffe/media/documents/pdf/planningandbuilding/planningpolicy/brownfieldregister/919.pdf</a></td>
+                    <td><a href="https://arcg.is/0PCSGT0" class="govuk-link">https://arcg.is/0PCSGT0</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>52.929388</td>
-                    <td>-1.125099</td>
+                    <td>52.9295</td>
+                    <td>-1.1251</td>
                     <td>0.02</td>
                     <td>9</td>
                     <td>9</td>
@@ -512,11 +505,11 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Planning permission 16/02908/FUL". 9 residential units. https://planningon-line.rushcliffe.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=000HEANLLI000</div>
+                            <div class="govuk-details__text">"Planning permission 16/02908/FUL"</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8472e39b8d37be6d9e6e809af24c5ebdb111d2110a53775664bb48f601f3a8be" class="govuk-link">8472e39b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/799e967d314e2c240209d1599e411d3ffd2cb64d32303b5b9eca4ae5e3cb173d" class="govuk-link">799e967d...</a></td>
                 </tr>
                 
             </tbody>
@@ -549,12 +542,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -588,33 +618,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

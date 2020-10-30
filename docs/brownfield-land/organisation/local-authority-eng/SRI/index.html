@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; South Ribble Borough Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">South Ribble Borough Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-11-25</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-07-17</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 29 records from South Ribble Borough Council.</p>
+      <p class="govuk-body">There are 12 records from South Ribble Borough Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,293 +223,297 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2016-06-03</td>
+                    <td>2020-06-25</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>BBN06</td>
-                    <td class="data-table__cell--max-width"></td>
-                    <td></td>
+                    <td>HO01</td>
+                    <td class="data-table__cell--max-width">Carver Hey Farm, Moss Lane, Little Hoole</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
-                    <td>permissioned</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>0.47</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>2016-06-03</td>
+                    <td>53.706547</td>
+                    <td>-2.778014</td>
+                    <td>1.36</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>2020-06-25</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">E2 - Protection of Employment Sites. S106 agreement.</div>
+                            <div class="govuk-details__text">Currently in use for industrial purposes</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    <td>2016-06-03</td>
+                    <td>2020-06-25</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>SS05</td>
-                    <td class="data-table__cell--max-width"></td>
-                    <td></td>
-                    <td></td>
+                    <td>1987</td>
+                    <td class="data-table__cell--max-width">Golden Ball Hotel, 150 Liverpool Road, Longton</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
+                    <td>full planning permission</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>0.67</td>
-                    <td>17</td>
-                    <td>17</td>
-                    <td>2016-06-03</td>
-                    <td></td>
+                    <td>53.7254</td>
+                    <td>-2.7921</td>
+                    <td>0.26</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2019-07-04</td>
+                    <td>2020-03-31</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">D1 - Housing Land.   May come forward with Rear of Dunkirk Mill.  S106.</div>
+                            <div class="govuk-details__text">Erection of two pairs of semi detached three bed dwellinghouses on part of car park and the erection of a single storey extension to the rear/side of the public house - Under Construction</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    <td>2016-06-03</td>
+                    <td>2019-07-04</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>FW12</td>
-                    <td class="data-table__cell--max-width"></td>
-                    <td></td>
-                    <td></td>
+                    <td>2017</td>
+                    <td class="data-table__cell--max-width">Earnshaw Business Centre, High Lane, Leyland</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
+                    <td>outline planning permission</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>1.88</td>
-                    <td>47</td>
-                    <td>47</td>
-                    <td>2016-06-03</td>
+                    <td>53.704156</td>
+                    <td>-2.723815</td>
+                    <td>0.28</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>2019-07-04</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">D1 - Housing Land.  S106.</div>
+                            <div class="govuk-details__text">Outline application for the erection of 7 houses following demolition of existing offices/workshops (all matters reserved)</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    <td>2016-06-03</td>
+                    <td>2020-06-25</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>MF02b</td>
-                    <td class="data-table__cell--max-width"></td>
-                    <td></td>
-                    <td></td>
+                    <td>NLH08b (NE part)</td>
+                    <td class="data-table__cell--max-width">Land at Orchard Avenue</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
+                    <td>full planning permission</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>9.45</td>
-                    <td>236</td>
-                    <td>236</td>
-                    <td>2016-06-03</td>
-                    <td></td>
+                    <td>53.7218</td>
+                    <td>-2.7405</td>
+                    <td>0.26</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2019-07-04</td>
+                    <td>2019-09-30</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">D1 - Housing Land.  Hybrid application.    Note - approximately 1 ha brownfield, remainder greenfield.  S106.</div>
+                            <div class="govuk-details__text">Erection of two pairs semi-detached dwellings including garages, following demolition of existing storage buildings - Under Construction</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    <td>2016-06-03</td>
+                    <td>2019-07-04</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>MF02c</td>
-                    <td class="data-table__cell--max-width"></td>
+                    <td>BBW02</td>
+                    <td class="data-table__cell--max-width">Land off Brownedge Road</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>1.17</td>
-                    <td>29</td>
-                    <td>29</td>
-                    <td>2016-06-03</td>
+                    <td>53.7279</td>
+                    <td>-2.6695</td>
+                    <td>2.7</td>
+                    <td>60</td>
+                    <td>60</td>
+                    <td>2017-09-20</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">D1 - Housing Land.  Hybrid application.</div>
+                            <div class="govuk-details__text">Planning permission does not currently exist for the residential development of the site but it could accommodate approximately 60 dwellings.  Any residential layout will have to take account of the proximity of the railway on the southern boundary of the site.  (Excerpt from Local Plan - adopted July 2015.)</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    <td>2016-06-03</td>
+                    <td>2017-09-20</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>LYC03</td>
-                    <td class="data-table__cell--max-width"></td>
+                    <td>HP01</td>
+                    <td class="data-table__cell--max-width">Pollard's Farm, Howick Cross Lane</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td></td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>0.455</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>2016-06-03</td>
+                    <td>53.74658</td>
+                    <td>-2.761513</td>
+                    <td>2.4</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2017-09-20</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">E3 - Leyland Town Centre.</div>
+                            <div class="govuk-details__text">Previously permissioned for 10 dwellings</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    <td>2016-06-03</td>
+                    <td>2017-09-20</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>LHU04</td>
-                    <td class="data-table__cell--max-width"></td>
-                    <td></td>
-                    <td></td>
+                    <td>MS02</td>
+                    <td class="data-table__cell--max-width">Moss Side Test Track, Aston Way/Titan Way (Phase 2)</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
+                    <td>full planning permission</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>0.68</td>
-                    <td>11</td>
-                    <td>11</td>
-                    <td>2016-06-03</td>
+                    <td>53.700627</td>
+                    <td>-2.727647</td>
+                    <td>15.44</td>
+                    <td>197</td>
+                    <td>197</td>
+                    <td>2017-09-20</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">G1 - Green Belt.  In partial use. S106.</div>
+                            <div class="govuk-details__text">Hybrid planning application comprising of Full and Outline development - Environmental Impact Assessment (EIA) development
+Part A FULL - Site enabling works, the development of highway and drainage infrastructure for the full application site (the proposed development site) and the provision of car park accessed off Titan Way (Phase 1) and 197 dwellings and associated internal access roads, public open space, green infrastructure, an acoustic barrier and highway infrastructure (Phase 2) 
+Part B OUTLINE - for the remainder of the proposed development site for the development of between 653 and 753 new homes, up to 5,000 sqm of Use Classes B1 accommodation; up to 15,000 sqm of Use Class B2 accommodation and up to 8,000 sqm of Use B8 accommodation, local centre comprising up to 3,000 sqm of accommodation for occuption within any combination of uses within Classes A1,A2,A3, A4,A5,B1 or D1 (including health centre/clinic) (which shall not exceed 2,500 sqm of main town centre uses), a primary school and associated public open space and green infrastructure (Phases 3-5)</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    <td>2016-06-03</td>
+                    <td>2017-09-20</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>NLH12</td>
-                    <td class="data-table__cell--max-width"></td>
-                    <td></td>
+                    <td>MS02</td>
+                    <td class="data-table__cell--max-width">Moss Side Test Track, Aston Way/Titan Way (Phases 3-5)</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
+                    <td>outline planning permission</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>1.67</td>
-                    <td>14</td>
-                    <td>14</td>
-                    <td>2016-06-03</td>
+                    <td>53.700627</td>
+                    <td>-2.727647</td>
+                    <td>29.36</td>
+                    <td>753</td>
+                    <td>753</td>
+                    <td>2017-09-20</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">G1 - Green Belt.  S106.</div>
+                            <div class="govuk-details__text">Hybrid planning application comprising of Full and Outline development - Environmental Impact Assessment (EIA) development
+Part A FULL - Site enabling works, the development of highway and drainage infrastructure for the full application site (the proposed development site) and the provision of car park accessed off Titan Way (Phase 1) and 197 dwellings and associated internal access roads, public open space, green infrastructure, an acoustic barrier and highway infrastructure (Phase 2) 
+Part B OUTLINE - for the remainder of the proposed development site for the development of between 653 and 753 new homes, up to 5,000 sqm of Use Classes B1 accommodation; up to 15,000 sqm of Use Class B2 accommodation and up to 8,000 sqm of Use B8 accommodation, local centre comprising up to 3,000 sqm of accommodation for occuption within any combination of uses within Classes A1,A2,A3, A4,A5,B1 or D1 (including health centre/clinic) (which shall not exceed 2,500 sqm of main town centre uses), a primary school and associated public open space and green infrastructure (Phases 3-5)</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    <td>2016-06-03</td>
+                    <td>2019-07-04</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>TG03</td>
-                    <td class="data-table__cell--max-width"></td>
-                    <td></td>
-                    <td></td>
+                    <td>SW13</td>
+                    <td class="data-table__cell--max-width">Shakespeare Foundry (previously Coupe's Foundry), Kittlingborne Brow, Higher Walton (aka Shakespeare Foundry)</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
-                    <td>permissioned</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>12.0</td>
-                    <td>281</td>
-                    <td>281</td>
-                    <td>2016-06-03</td>
+                    <td>53.742</td>
+                    <td>-2.6454</td>
+                    <td>2.3</td>
+                    <td>58</td>
+                    <td>58</td>
+                    <td>2017-09-20</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">D1 - Housing Land.  S106.</div>
+                            <div class="govuk-details__text">Coupe's Foundry remains operational and the site comprises buildings and extensive areas of open storage.  (Excerpt from Local Plan - adopted 2015.)</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    <td>2016-06-03</td>
+                    <td>2019-07-04</td>
                     <td>local-authority-eng:SRI</td>
-                    <td>SS11</td>
-                    <td class="data-table__cell--max-width"></td>
+                    <td>TG05</td>
+                    <td class="data-table__cell--max-width">Lostock Hall Primary School, Avondale Drive</td>
+                    <td><a href="https://www.southribble.gov.uk/content/housing-land-availability" class="govuk-link">https://www.southribble.gov.uk/content/housing-land-availability</a></td>
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>0.18</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>2016-06-03</td>
+                    <td>53.7255</td>
+                    <td>-2.688</td>
+                    <td>1.5</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>2017-09-20</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">B1 - Existing Built Up Area</div>
+                            <div class="govuk-details__text">Planning permission does not currently exist for the residential development of the site but it is estimated as being able to accommodate approximately 30 dwellings in the adopted Local Plan.  The development must provide for an appropriate area of on-site open space to mitigate against the loss of the school playing field.  (Excerpt from Local Plan - adopted July 2015.)</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf" class="govuk-link">a01c35d0...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/8c4dfed59e2778cac8c99fe7458607ce91d686e2d831870697581bdcde1e154a" class="govuk-link">8c4dfed5...</a></td>
                 </tr>
                 
             </tbody>
@@ -549,12 +546,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -588,33 +622,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

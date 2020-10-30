@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; London Borough of Islington | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">London Borough of Islington publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-10-24</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2019-11-02</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-27</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.islington.gov.uk/planning/brownfield-land-register" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 83 records from London Borough of Islington.</p>
+      <p class="govuk-body">There are 116 records from London Borough of Islington.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -240,8 +233,8 @@
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>51.565404</td>
-                    <td>-0.134764</td>
+                    <td>51.565406</td>
+                    <td>-0.134738</td>
                     <td>0.27</td>
                     <td>70</td>
                     <td>70</td>
@@ -255,7 +248,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row2">
@@ -269,8 +262,8 @@
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>51.566945</td>
-                    <td>-0.136115</td>
+                    <td>51.566948</td>
+                    <td>-0.136089</td>
                     <td>1.47</td>
                     <td>260</td>
                     <td>260</td>
@@ -284,7 +277,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row3">
@@ -298,8 +291,8 @@
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>51.52585</td>
-                    <td>-0.095267</td>
+                    <td>51.525851</td>
+                    <td>-0.09524</td>
                     <td>0.89</td>
                     <td>120</td>
                     <td>120</td>
@@ -313,7 +306,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row4">
@@ -321,14 +314,14 @@
                     <td>local-authority-eng:ISL</td>
                     <td>P2016/0488/FUL</td>
                     <td class="data-table__cell--max-width">Car Park at 11 Shire House, Whitbread Centre, Lamb's Passage</td>
-                    <td><a href="http://mapapp.islington.gov.uk/mapthatol/Login.aspx?user=public&utm_content=stcms2.islington.gov.uk" class="govuk-link">http://mapapp.islington.gov.uk/mapthatol/Login.aspx?user=public&utm_content=stcms2.islington.gov.uk</a></td>
+                    <td><a href="http://planning.islington.gov.uk/NorthgatePublicDocs/00379417.pdf" class="govuk-link">http://planning.islington.gov.uk/NorthgatePublicDocs/00379417.pdf</a></td>
                     <td>yes</td>
                     <td>mixed ownership</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>51.522085</td>
-                    <td>-0.09107</td>
+                    <td>51.522087</td>
+                    <td>-0.091044</td>
                     <td>0.26</td>
                     <td>35</td>
                     <td>35</td>
@@ -338,11 +331,11 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site plan is available on Islington interactive mapping website. Specific site is identifiable via SiteReference and SiteNameAddress attribute data. Entry updated to reflect permission reference P2016/0488/FUL. Demolition of existing works building and redevelopment of the existing surface level car park, along with the conversion of existing Grade II listed underground vaults, to provide a mixed use development comprising of a 4 to 7 storey building providing 35 residential units (15 affordable and 20 market rate) (Class C3)</div>
+                            <div class="govuk-details__text">Site plan is available on Islington interactive mapping website. Specific site is identifiable via SiteReference and SiteNameAddress attribute data. Entry updated to reflect permission reference P2016/0488/FUL</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row5">
@@ -356,8 +349,8 @@
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>51.523113</td>
-                    <td>-0.093997</td>
+                    <td>51.523115</td>
+                    <td>-0.093971</td>
                     <td>0.27</td>
                     <td>12</td>
                     <td>12</td>
@@ -371,7 +364,7 @@
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row6">
@@ -379,14 +372,14 @@
                     <td>local-authority-eng:ISL</td>
                     <td>P2017/2961/FUL</td>
                     <td class="data-table__cell--max-width">Richard Cloudesley School</td>
-                    <td><a href="http://mapapp.islington.gov.uk/mapthatol/Login.aspx?user=public&utm_content=stcms2.islington.gov.uk" class="govuk-link">http://mapapp.islington.gov.uk/mapthatol/Login.aspx?user=public&utm_content=stcms2.islington.gov.uk</a></td>
+                    <td><a href="http://planning.islington.gov.uk/NorthgatePublicDocs/00447310.pdf" class="govuk-link">http://planning.islington.gov.uk/NorthgatePublicDocs/00447310.pdf</a></td>
                     <td>yes</td>
                     <td>owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>51.521946</td>
+                    <td>-0.093443</td>
                     <td>0.36</td>
                     <td>66</td>
                     <td>66</td>
@@ -396,13 +389,11 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Site plan is available on Islington interactive mapping website. Specific site is identifiable via SiteReference and SiteNameAddress attribute data. Entry updated to reflect permission reference P2017/2961/FUL.. Demolition of the former Richard Cloudesley School, City of London Community Eductaion Centre; garages and substation; erection of a 14 storey (plus basement) building to provide 66 social rented units (Class C3) (6135 sqm GEA),
-Duplicate application submitted to the City of London, as part of the site falls within the City. 
-PLEASE NOTE: You are being reconsulted on the above application as revised drawings have been submitted.</div>
+                            <div class="govuk-details__text">Site plan is available on Islington interactive mapping website. Specific site is identifiable via SiteReference and SiteNameAddress attribute data. Entry updated to reflect permission reference P2017/2961/FUL.</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row7">
@@ -416,8 +407,8 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>51.524509</td>
-                    <td>-0.110257</td>
+                    <td>51.524511</td>
+                    <td>-0.110231</td>
                     <td>0.13</td>
                     <td>45</td>
                     <td>45</td>
@@ -431,7 +422,7 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row8">
@@ -445,8 +436,8 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>51.561532</td>
-                    <td>-0.115893</td>
+                    <td>51.561535</td>
+                    <td>-0.115867</td>
                     <td>0.13</td>
                     <td>27</td>
                     <td>27</td>
@@ -460,13 +451,13 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row9">
                     <td>2018-12-19</td>
                     <td>local-authority-eng:ISL</td>
-                    <td>NH5</td>
+                    <td>NH4</td>
                     <td class="data-table__cell--max-width">Territorial Army Centre, 65-69 Parkhurst Road</td>
                     <td><a href="http://mapapp.islington.gov.uk/mapthatol/Login.aspx?user=public&utm_content=stcms2.islington.gov.uk" class="govuk-link">http://mapapp.islington.gov.uk/mapthatol/Login.aspx?user=public&utm_content=stcms2.islington.gov.uk</a></td>
                     <td>yes</td>
@@ -474,8 +465,8 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>51.556741</td>
-                    <td>-0.121039</td>
+                    <td>51.556743</td>
+                    <td>-0.121013</td>
                     <td>0.69</td>
                     <td>96</td>
                     <td>96</td>
@@ -489,13 +480,13 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
                 <tr id="row10">
                     <td>2018-12-19</td>
                     <td>local-authority-eng:ISL</td>
-                    <td>NH9</td>
+                    <td>NH5</td>
                     <td class="data-table__cell--max-width">392a and 394 Camden Road</td>
                     <td><a href="http://mapapp.islington.gov.uk/mapthatol/Login.aspx?user=public&utm_content=stcms2.islington.gov.uk" class="govuk-link">http://mapapp.islington.gov.uk/mapthatol/Login.aspx?user=public&utm_content=stcms2.islington.gov.uk</a></td>
                     <td>yes</td>
@@ -503,8 +494,8 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
                     <td>not permissioned</td>
                     <td></td>
                     <td></td>
-                    <td>51.553335</td>
-                    <td>-0.122896</td>
+                    <td>51.553338</td>
+                    <td>-0.12287</td>
                     <td>0.25</td>
                     <td>14</td>
                     <td>14</td>
@@ -518,7 +509,7 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/06323d848513172ef08e6362d29f0476a2b53d57e2a432e2c7e1f6533f81d5b5" class="govuk-link">06323d84...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/ca6526e19b19d5b01f6e6eec253cfa9e16cf7249859b433603a35e0943eb8cbe" class="govuk-link">ca6526e1...</a></td>
                 </tr>
                 
             </tbody>
@@ -551,12 +542,49 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -590,33 +618,29 @@ PLEASE NOTE: You are being reconsulted on the above application as revised drawi
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

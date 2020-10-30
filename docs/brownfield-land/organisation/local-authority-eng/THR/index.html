@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Thurrock Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Thurrock Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-12-01</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-05-27</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.thurrock.gov.uk/brownfield-land/potential-sites-for-development" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 31 records from Thurrock Council.</p>
+      <p class="govuk-body">There are 24 records from Thurrock Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,32 +223,7 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2019-03-31</td>
-                    <td>local-authority-eng:THR</td>
-                    <td>AVE_14</td>
-                    <td class="data-table__cell--max-width">Springfield, Mill Road, Aveley</td>
-                    <td><a href="https://thurrock.gov.uk/brownfield-map" class="govuk-link">https://thurrock.gov.uk/brownfield-map</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.501906</td>
-                    <td>0.250214</td>
-                    <td>0.461</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>2016-06-30</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
-                </tr>
-                
-                <tr id="row2">
-                    <td>2019-03-31</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:THR</td>
                     <td>AVE_46</td>
                     <td class="data-table__cell--max-width">79 High Street, Aveley, RM15 4AX</td>
@@ -268,19 +236,19 @@
                     <td>51.49908</td>
                     <td>0.254019</td>
                     <td>0.142</td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>2016-06-30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
                 </tr>
                 
-                <tr id="row3">
-                    <td>2019-03-31</td>
+                <tr id="row2">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:THR</td>
                     <td>BEL_09</td>
                     <td class="data-table__cell--max-width">The Culver Centre, Daiglen Drive, South Ockendon</td>
@@ -293,19 +261,19 @@
                     <td>51.50718</td>
                     <td>0.284605</td>
                     <td>2.006</td>
-                    <td>220</td>
-                    <td>220</td>
-                    <td>2016-06-30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
                 </tr>
                 
-                <tr id="row4">
-                    <td>2019-03-31</td>
+                <tr id="row3">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:THR</td>
                     <td>COF_11</td>
                     <td class="data-table__cell--max-width">Petrol Station, Lampits Hill, Corringham</td>
@@ -318,19 +286,44 @@
                     <td>51.526431</td>
                     <td>0.459739</td>
                     <td>0.094</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>2016-06-30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
+                </tr>
+                
+                <tr id="row4">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:THR</td>
+                    <td>COF_47</td>
+                    <td class="data-table__cell--max-width">The Village Motel, Southend Road, Corringham</td>
+                    <td><a href="https://thurrock.gov.uk/brownfield-map" class="govuk-link">https://thurrock.gov.uk/brownfield-map</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.534233</td>
+                    <td>0.451763</td>
+                    <td>0.237</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    <td>2019-03-31</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:THR</td>
                     <td>CSM_02</td>
                     <td class="data-table__cell--max-width">Land Adjacent To Thatched Cottage Baker Street Orsett Essex</td>
@@ -343,19 +336,19 @@
                     <td>51.498956</td>
                     <td>0.357084</td>
                     <td>0.548</td>
-                    <td>14</td>
-                    <td>14</td>
-                    <td>2016-06-30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    <td>2019-03-31</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:THR</td>
                     <td>CSM_09</td>
                     <td class="data-table__cell--max-width">Chadwell Library, corner of Linford Road and Brentwood Road</td>
@@ -368,44 +361,19 @@
                     <td>51.482039</td>
                     <td>0.369327</td>
                     <td>0.256</td>
-                    <td>15</td>
-                    <td>15</td>
-                    <td>2017-12-30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    <td>2019-03-31</td>
-                    <td>local-authority-eng:THR</td>
-                    <td>CSM_25</td>
-                    <td class="data-table__cell--max-width">Church Hall, Rigby Gardens, Chadwell St Mary</td>
-                    <td><a href="https://thurrock.gov.uk/brownfield-map" class="govuk-link">https://thurrock.gov.uk/brownfield-map</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.484117</td>
-                    <td>0.368086</td>
-                    <td>0.123</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>2016-06-30</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
-                </tr>
-                
-                <tr id="row8">
-                    <td>2019-03-31</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:THR</td>
                     <td>EAT_01</td>
                     <td class="data-table__cell--max-width">Star Industrial Estate, Linford Road, Chadwell St Mary</td>
@@ -418,19 +386,19 @@
                     <td>51.478544</td>
                     <td>0.373503</td>
                     <td>3.343</td>
-                    <td>43</td>
-                    <td>43</td>
-                    <td>2016-06-30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
                 </tr>
                 
-                <tr id="row9">
-                    <td>2019-03-31</td>
+                <tr id="row8">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:THR</td>
                     <td>EAT_02</td>
                     <td class="data-table__cell--max-width">St Johns Road / West of Sandy Lane, East Tilbury (building footprint)</td>
@@ -443,40 +411,65 @@
                     <td>51.479145</td>
                     <td>0.374533</td>
                     <td>2.516</td>
-                    <td>203</td>
-                    <td>203</td>
-                    <td>2016-06-30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
                 </tr>
                 
-                <tr id="row10">
-                    <td>2019-03-31</td>
+                <tr id="row9">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:THR</td>
-                    <td>EAT_19</td>
-                    <td class="data-table__cell--max-width">Former Tennis Court Site, East Tilbury</td>
+                    <td>GRI_40</td>
+                    <td class="data-table__cell--max-width">Pumping Station site Manor Way, Grays</td>
                     <td><a href="https://thurrock.gov.uk/brownfield-map" class="govuk-link">https://thurrock.gov.uk/brownfield-map</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
-                    <td>51.4815</td>
-                    <td>0.417166</td>
-                    <td>0.98</td>
-                    <td>18</td>
-                    <td>18</td>
-                    <td>2017-12-30</td>
+                    <td>51.471463</td>
+                    <td>0.331334</td>
+                    <td>0.609</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/8bbef21bc5a47c130790460081bf4767d9a4626f066bc51e44a783c30471ae7e" class="govuk-link">8bbef21b...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
+                </tr>
+                
+                <tr id="row10">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:THR</td>
+                    <td>GTH_12</td>
+                    <td class="data-table__cell--max-width">Scout Hut & Function Hall, Grays Park, Bridge Road, Grays</td>
+                    <td><a href="https://thurrock.gov.uk/brownfield-map" class="govuk-link">https://thurrock.gov.uk/brownfield-map</a></td>
+                    <td>yes</td>
+                    <td>owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.478806</td>
+                    <td>0.331331</td>
+                    <td>0.365</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/923a27d13023860d8471468f77c02a4df7a1ffde0e877ccb587bb4b7d7afcac0" class="govuk-link">923a27d1...</a></td>
                 </tr>
                 
             </tbody>
@@ -509,12 +502,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -548,33 +578,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

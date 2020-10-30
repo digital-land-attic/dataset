@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Malvern Hills District Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Malvern Hills District Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-11-24</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2019-12-09</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.malvernhills.gov.uk/planning/planning-policy/brownfield-land-register" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 17 records from Malvern Hills District Council.</p>
+      <p class="govuk-body">There are 20 records from Malvern Hills District Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,10 +223,10 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2019-01-07</td>
+                    <td>2017-12-28</td>
                     <td>local-authority-eng:MAV</td>
                     <td>MHDCBLR/0001</td>
-                    <td class="data-table__cell--max-width">Walsh’s Yard, 190 Poolbrook Road, Malvern</td>
+                    <td class="data-table__cell--max-width">Walsh’s Yard, Common Road, Malvern</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0001+Walsh+Yard%2C+Common+Road%2C+Malvern.pdf/08bb8fea-b0b4-f7ef-a843-049da46459b8" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0001+Walsh+Yard%2C+Common+Road%2C+Malvern.pdf/08bb8fea-b0b4-f7ef-a843-049da46459b8</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
@@ -243,30 +236,30 @@
                     <td>52.094306</td>
                     <td>-2.309115</td>
                     <td>0.35</td>
-                    <td>6</td>
-                    <td>6</td>
+                    <td>5</td>
+                    <td>5</td>
                     <td>2017-12-28</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Variation of Condition 15 of Outline Planning Permission 15/01399/OUT, relating to approved housing mix, to allow the provision of two 3 bedroom dwellings, three 4 to 5 bedroom dwellings and one 5/6 bedroomed dwelling. https://plan.malvernhills.gov.uk/plandisp.aspx?recno=76234</div>
+                            <div class="govuk-details__text">. Outline application with all matters reserved for erection of up to 6 dwellings. https://plan.malvernhills.gov.uk/plandisp.aspx?recno=71846</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    <td>2019-01-07</td>
+                    <td>2017-12-28</td>
                     <td>local-authority-eng:MAV</td>
                     <td>MHDCBLR/0002</td>
-                    <td class="data-table__cell--max-width">Portland House, 129 Church Street, Malvern</td>
+                    <td class="data-table__cell--max-width">Portland House, Church Street, Malvern</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0002+Portland+House%2C+Church+Street%2C+Malvern.pdf/cadca1a1-9c5d-a34f-ac69-fcea24678a09" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0002+Portland+House%2C+Church+Street%2C+Malvern.pdf/cadca1a1-9c5d-a34f-ac69-fcea24678a09</a></td>
                     <td></td>
                     <td>owned by a public authority</td>
-                    <td>not permissioned</td>
+                    <td>pending decision</td>
                     <td></td>
                     <td></td>
                     <td>52.112002</td>
@@ -280,18 +273,18 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    <td>2019-01-07</td>
+                    <td>2017-12-28</td>
                     <td>local-authority-eng:MAV</td>
                     <td>MHDCBLR/0003</td>
                     <td class="data-table__cell--max-width">(Former Hospital) Landsdowne Crescent, Malvern</td>
                     <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0003+Former+Hospital%2C+Landsdowne+Crescent%2C+Malvern.pdf/3b819c33-fc15-d99c-eb75-53e0ef5713fd" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0003+Former+Hospital%2C+Landsdowne+Crescent%2C+Malvern.pdf/3b819c33-fc15-d99c-eb75-53e0ef5713fd</a></td>
                     <td></td>
                     <td>not owned by a public authority</td>
-                    <td>permissioned</td>
+                    <td>not permissioned</td>
                     <td></td>
                     <td></td>
                     <td>52.112608</td>
@@ -303,17 +296,13 @@
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Variation of condition 2 of Planning Permission 18/00432/FUL to allow the provision of an additional 5 bedrooms to provide a 51 bedroom care home through the re-formatting of the internal layout of the proposed building and associated external alterations to include additional external door openings.. https://plan.malvernhills.gov.uk/plandisp.aspx?recno=78409</div>
-                        </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    <td>2019-01-07</td>
+                    <td>2017-12-28</td>
                     <td>local-authority-eng:MAV</td>
                     <td>MHDCBLR/0004</td>
                     <td class="data-table__cell--max-width">Pickersleigh Grove, Malvern-part BF (buildings now demolished) and part GF</td>
@@ -326,23 +315,23 @@
                     <td>52.119476</td>
                     <td>-2.317205</td>
                     <td>3.29</td>
-                    <td>92</td>
-                    <td>92</td>
+                    <td>44</td>
+                    <td>44</td>
                     <td>2017-12-28</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Approval of Reserved Matters for appearance, landscaping and scale following approval of outline permission ref 13/00900/OUT for residential development of 92 residential units.. https://plan.malvernhills.gov.uk/plandisp.aspx?recno=78133</div>
+                            <div class="govuk-details__text">. Approval of Reserved Matters for appearance, landscaping and scale following approval of outline permission ref 13/00900/OUT for residential development of 92 residential units.. https://plan.malvernhills.gov.uk/plandisp.aspx?recno=74386</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    <td>2019-01-07</td>
+                    <td>2017-12-28</td>
                     <td>local-authority-eng:MAV</td>
                     <td>MHDCBLR/0005</td>
                     <td class="data-table__cell--max-width">former Railway Sidings, Peachfield Road</td>
@@ -363,11 +352,11 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
                 <tr id="row6">
-                    <td>2019-01-07</td>
+                    <td>2017-12-28</td>
                     <td>local-authority-eng:MAV</td>
                     <td>MHDCBLR/0006</td>
                     <td class="data-table__cell--max-width">Victoria Road Car Park, Malvern</td>
@@ -388,11 +377,11 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
                 <tr id="row7">
-                    <td>2019-01-07</td>
+                    <td>2017-12-28</td>
                     <td>local-authority-eng:MAV</td>
                     <td>MHDCBLR/0007</td>
                     <td class="data-table__cell--max-width">Barracks Store, Court Road, Malvern</td>
@@ -413,11 +402,11 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
                 <tr id="row8">
-                    <td>2019-01-08</td>
+                    <td>2017-12-28</td>
                     <td>local-authority-eng:MAV</td>
                     <td>MHDCBLR/0008</td>
                     <td class="data-table__cell--max-width">Malvern Technology Centre, Malvern</td>
@@ -438,61 +427,65 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    <td>2019-01-08</td>
-                    <td>local-authority-eng:MAV</td>
-                    <td>MHDCBLR/0011</td>
-                    <td class="data-table__cell--max-width">Land adj Henwick Mill House, Martley Road-part BF and part GF, Lower Broadheath</td>
-                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0011+Land+adj+Henwick+Mill+House%2C+Martley+Road%2C+Lower+Broadheath.pdf/37ed5b38-8dc0-331a-88c0-df8d06abb39b" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0011+Land+adj+Henwick+Mill+House%2C+Martley+Road%2C+Lower+Broadheath.pdf/37ed5b38-8dc0-331a-88c0-df8d06abb39b</a></td>
-                    <td></td>
-                    <td>not owned by a public authority</td>
-                    <td>not permissioned</td>
-                    <td></td>
-                    <td></td>
-                    <td>52.203737</td>
-                    <td>-2.249061</td>
-                    <td>1.54</td>
-                    <td>38</td>
-                    <td>46</td>
                     <td>2017-12-28</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
-                </tr>
-                
-                <tr id="row10">
-                    <td>2019-01-08</td>
                     <td>local-authority-eng:MAV</td>
-                    <td>MHDCBLR/0012</td>
-                    <td class="data-table__cell--max-width">Land adj. former Pheasant Inn-part BF and part GF, Welland</td>
-                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0012+Land+adj+former+Pheasant+Inn%2C+Welland.pdf/90ebf4a6-035d-2260-639f-adf302d1f99f" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0012+Land+adj+former+Pheasant+Inn%2C+Welland.pdf/90ebf4a6-035d-2260-639f-adf302d1f99f</a></td>
+                    <td>MHDCBLR/0009</td>
+                    <td class="data-table__cell--max-width">Land at Braithwaite’s Yard, Main Road, Hallow</td>
+                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0009+Land+at+Braithwaite+Yard%2C+Main+Road%2C+Hallow.pdf/f6b32bbd-b1be-4b03-05ca-5b7e2a09663a" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0009+Land+at+Braithwaite+Yard%2C+Main+Road%2C+Hallow.pdf/f6b32bbd-b1be-4b03-05ca-5b7e2a09663a</a></td>
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
-                    <td>outline planning permission</td>
+                    <td>full planning permission</td>
                     <td></td>
-                    <td>52.058287</td>
-                    <td>-2.296148</td>
+                    <td>52.217411</td>
+                    <td>-2.253367</td>
                     <td>0.67</td>
-                    <td>14</td>
-                    <td>14</td>
+                    <td>9</td>
+                    <td>9</td>
                     <td>2017-12-28</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Outline Application for the Erection of up to 14No. Dwellings and Retention of Existing Public House. All Matters Reserved Except Access.. https://plan.malvernhills.gov.uk/plandisp.aspx?recno=74076</div>
+                            <div class="govuk-details__text">. Development of 9 dwellings. https://plan.malvernhills.gov.uk/plandisp.aspx?recno=71498</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30" class="govuk-link">78a1ca9a...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
+                </tr>
+                
+                <tr id="row10">
+                    <td>2017-12-28</td>
+                    <td>local-authority-eng:MAV</td>
+                    <td>MHDCBLR/0010</td>
+                    <td class="data-table__cell--max-width">Former Royal Oak PH, Main Road, Hallow</td>
+                    <td><a href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0010+Former+Royal+Oak+PH%2C+Main+Road%2C+Hallow.pdf/0715a67f-f55b-625c-cc26-8f5db839d6e7" class="govuk-link">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0010+Former+Royal+Oak+PH%2C+Main+Road%2C+Hallow.pdf/0715a67f-f55b-625c-cc26-8f5db839d6e7</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>52.223818</td>
+                    <td>-2.254882</td>
+                    <td>0.18</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2017-12-28</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">. Residential development of 8 dwellings. https://plan.malvernhills.gov.uk/plandisp.aspx?recno=71487</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/395e15fa19cd0d0504ec4cc7bfd3a76a6470651473e6d11970d21d3740114443" class="govuk-link">395e15fa...</a></td>
                 </tr>
                 
             </tbody>
@@ -525,12 +518,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -564,33 +594,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

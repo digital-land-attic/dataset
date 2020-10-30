@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Vale of White Horse District Council | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,16 +163,16 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Vale of White Horse District Council publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-12-12</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-09-24</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="http://www.whitehorsedc.gov.uk/services-and-advice/planning-and-building/planning-policy/brownfield-land-register" class="govuk-link">documentation page</a>.</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.whitehorsedc.gov.uk/vale-of-white-horse-district-council/planning-and-development/local-plan-and-planning-policies/planning-registers/brownfield-land-register/" class="govuk-link">documentation page</a>.</p>
   </div>
 </div>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 32 records from Vale of White Horse District Council.</p>
+      <p class="govuk-body">There are 19 records from Vale of White Horse District Council.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,293 +223,265 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2018-12-21</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:VAL</td>
-                    <td>P17/V3275/FUL</td>
-                    <td class="data-table__cell--max-width">Gables, 6 Cumnor Hill, Botley, Oxford OX2 9HA</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3275_FUL-V3.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3275_FUL-V3.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
                     <td></td>
-                    <td>51.749908</td>
-                    <td>-1.302949</td>
-                    <td>0.1</td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>2018-12-21</td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>51.745678</td>
+                    <td>-1.285821</td>
+                    <td>0.27</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Demolition of existing guest house and garage. Erection of 9no. Apartments (8no. 2-bed and 1no. 1-bed), off-street car parking provision and covered bicycle and bin storage. (As amended by plans and letter (dated 18 January 2018) from agent received on 31 January 2018). http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P17/V3275/FUL</div>
-                        </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    <td>2018-12-21</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:VAL</td>
-                    <td>P17/V3417/PDO</td>
-                    <td class="data-table__cell--max-width">St Lawrence House, North Hinksey Lane, Botley OX2 0NB</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3417_PDO-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3417_PDO-V2.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
                     <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>other</td>
                     <td></td>
-                    <td>51.745776</td>
-                    <td>-1.285631</td>
-                    <td>0.48</td>
-                    <td>20</td>
-                    <td>20</td>
-                    <td>2018-12-21</td>
                     <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Change of use from Office (B1(a) to 20 residential flats (C3). http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P17/V3417/PDO</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
-                </tr>
-                
-                <tr id="row3">
-                    <td>2018-12-21</td>
-                    <td>local-authority-eng:VAL</td>
-                    <td>P17/V2427/PDO</td>
-                    <td class="data-table__cell--max-width">55-59 Stert Street, Abingdon, OX14 3JF</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V2427_PDO-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V2427_PDO-V2.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>other</td>
-                    <td></td>
-                    <td>51.671552</td>
-                    <td>-1.281145</td>
-                    <td>0.13</td>
-                    <td>32</td>
-                    <td>32</td>
-                    <td>2017-12-08</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Superseeded existing application. Change of use from B1(a) Offices to 32 Flats. http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P17/V2427/PDO</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
-                </tr>
-                
-                <tr id="row4">
-                    <td>2018-12-21</td>
-                    <td>local-authority-eng:VAL</td>
-                    <td>P17/V0569/FUL</td>
-                    <td class="data-table__cell--max-width">Land to the south of Challow Road and north of Naldertown, Wantage, OX12 9DJ</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V0569_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V0569_FUL-V2.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.590591</td>
-                    <td>-1.435391</td>
-                    <td>0.97</td>
-                    <td>29</td>
-                    <td>29</td>
-                    <td>2018-12-21</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Outline planning application with the means of access and layout only to be considered for the demolition of Aberclare, hall (St John Ambulance) and Cedarholme and construction of 31 homes.. http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P17/V0569/FUL</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
-                </tr>
-                
-                <tr id="row5">
-                    <td>2018-12-21</td>
-                    <td>local-authority-eng:VAL</td>
-                    <td>P17/V3039/FUL</td>
-                    <td class="data-table__cell--max-width">8 Elms Road, Botley, Oxford, OX2 9JZ</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3039_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3039_FUL-V2.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.753345</td>
-                    <td>-1.298753</td>
-                    <td>0.06</td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>2018-12-21</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Demolition of an existing two storey house and the creation of a two storey apartment block to accommodate seven 2 bedroom and one 1 bedroom apartments.  (As amended by plans received 30 June 2017_changes include bin stores, cycle stores, design amendments) (As clarified by plans received 20 July 2017_bin and cycle store details) (Additional Information received on ownership of access on 24 July 2017.). http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P17/V3039/FUL</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
-                </tr>
-                
-                <tr id="row6">
-                    <td>2018-12-21</td>
-                    <td>local-authority-eng:VAL</td>
-                    <td>P17/V1310/O</td>
-                    <td class="data-table__cell--max-width">5 Lechlade Road, Faringdon, SN7 8AL</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V1310_O.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V1310_O.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>outline planning permission</td>
                     <td></td>
                     <td>51.657768</td>
                     <td>-1.589744</td>
                     <td>0.36</td>
-                    <td>14</td>
-                    <td>14</td>
-                    <td>2017-12-08</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">Superseeded existing application. Erection of 14 dwellings with associated access (current permission ref. P13/V2301/O) (Amended planning statement received 23 November 2017). http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P17/V1310/O</div>
+                            <div class="govuk-details__text">This planning application supercedes a previous application</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
                 </tr>
                 
-                <tr id="row7">
-                    <td>2018-12-21</td>
+                <tr id="row3">
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:VAL</td>
-                    <td>P17/V3395/FUL</td>
-                    <td class="data-table__cell--max-width">Letcombe Bowers Farm, Letcombe Regis, Wantage, OX12 9NG</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3395_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P17_V3395_FUL-V2.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
                     <td></td>
-                    <td>51.542897</td>
-                    <td>-1.445902</td>
-                    <td>0.38</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>2018-12-21</td>
+                    <td class="data-table__cell--max-width"></td>
                     <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Change of use of agricultural land to residential garden, conversion of agricultural buildings to create 5 No. dwellings, erection of connecting link and one detached garage and creation of new access road. (additional plans received 26/02/18 to extend red line to include drainage and access and further amended plans received 14/03/2018 to extend red line to include drainage area, the omission of the garages except the garage between the barns and farmhouse, alteration to the north-west elevation of house 5, and additional landscaping between houses 4 and 5. Additional tree and bat mitigation received 29th March 2018).. http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P17/V3395/FUL</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
-                </tr>
-                
-                <tr id="row8">
-                    <td>2018-12-21</td>
-                    <td>local-authority-eng:VAL</td>
-                    <td>P18/V0585/PDO</td>
-                    <td class="data-table__cell--max-width">1 Stert Street, Abingdon, Oxon OX14 3JG</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0585_PDO.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0585_PDO.pdf</a></td>
-                    <td>yes</td>
+                    <td></td>
                     <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>other</td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td>51.670426</td>
                     <td>-1.280801</td>
                     <td>0.02</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>2018-12-21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
+                </tr>
+                
+                <tr id="row4">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td></td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>51.636459</td>
+                    <td>-1.6056</td>
+                    <td>1.03</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Prior approval for the change of Use Class (B1a) (offices) to Use Class C3 (residential) in the form of 6 no. residential units.(amended Plans received 22 March 2018 reducing number of flats from seven to six).. http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P18/V0585/PDO</div>
+                            <div class="govuk-details__text">Site has a Resolution to Grant permission subject to the signing of an S106.</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
+                </tr>
+                
+                <tr id="row5">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td></td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>51.718279</td>
+                    <td>-1.332777</td>
+                    <td>1.54</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
+                </tr>
+                
+                <tr id="row6">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td></td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>51.593936</td>
+                    <td>-1.378385</td>
+                    <td>0.51</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
+                </tr>
+                
+                <tr id="row7">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td></td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>51.619434</td>
+                    <td>-1.265906</td>
+                    <td>46.85</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">Cross boundary application between Vale of White Horse and South Oxfordshire.</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
+                </tr>
+                
+                <tr id="row8">
+                    <td>2020-10-19</td>
+                    <td>local-authority-eng:VAL</td>
+                    <td></td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>51.709418</td>
+                    <td>-1.321069</td>
+                    <td>2.01</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
                 </tr>
                 
                 <tr id="row9">
-                    <td>2018-12-21</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:VAL</td>
-                    <td>P18/V0695/FUL</td>
-                    <td class="data-table__cell--max-width">31 Eynsham Road, Botley, Oxford, OX2 9BS</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0695_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0695_FUL-V2.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
                     <td></td>
-                    <td>51.749718</td>
-                    <td>-1.305719</td>
-                    <td>0.11</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>2018-12-21</td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>51.569364</td>
+                    <td>-1.301947</td>
+                    <td>0.31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Demolition of existing dwelling. Erection of a replacement two and half storey building containing 4no. x 1 bedroom and 2no. x 2 bedroom flats with provision of revised access and parking for no.6 cars, covered cycle storage and enclosed bin store.. http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P18/V0695/FUL</div>
-                        </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
                 </tr>
                 
                 <tr id="row10">
-                    <td>2018-12-21</td>
+                    <td>2020-10-19</td>
                     <td>local-authority-eng:VAL</td>
-                    <td>P18/V0787/FUL</td>
-                    <td class="data-table__cell--max-width">96 West Way, Oxford, OX2 9JU</td>
-                    <td><a href="http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0787_FUL-V2.pdf" class="govuk-link">http://www.whitehorsedc.gov.uk/sites/default/files/P18_V0787_FUL-V2.pdf</a></td>
-                    <td>yes</td>
-                    <td>not owned by a public authority</td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
                     <td></td>
-                    <td>51.751189</td>
-                    <td>-1.300597</td>
+                    <td class="data-table__cell--max-width"></td>
+                    <td></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>51.587968</td>
+                    <td>-1.426561</td>
                     <td>0.08</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>2018-12-21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Erection of apartment block comprising 6 apartments (4 x 2 bedroom and 2 x 1 bedroom). http://maps.whitehorsedc.gov.uk/gis/?cat=PA&ref=P18/V0787/FUL</div>
-                        </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/21b4117d04dc7e708bd1577b5295e4cd1ec931929b17b1b574c6ad95b19c524d" class="govuk-link">21b4117d...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/dfa9be5a08fb6f8b3eb272ec4744d69740aaf51ab796c1ab0de67c6be1aa1dbc" class="govuk-link">dfa9be5a...</a></td>
                 </tr>
                 
             </tbody>
@@ -549,12 +514,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -588,33 +590,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; Royal Borough of Greenwich | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">Royal Borough of Greenwich publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-10-24</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2019-11-02</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.royalgreenwich.gov.uk/info/200191/planning_policy_and_strategy/1955/brownfield_land_register" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 101 records from Royal Borough of Greenwich.</p>
+      <p class="govuk-body">There are 123 records from Royal Borough of Greenwich.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,42 +223,42 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2018-12-17</td>
+                    <td>2019-12-17</td>
                     <td>local-authority-eng:GRE</td>
                     <td>RBG-01</td>
-                    <td class="data-table__cell--max-width">?Thomas St phases 3 & 4, Thomas St, Woolwich New Rd & Wellington St Woolwich?</td>
+                    <td class="data-table__cell--max-width">“Thomas St phases 3 & 4, Thomas St, Woolwich New Rd & Wellington St Woolwich“</td>
                     <td></td>
                     <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
                     <td></td>
-                    <td>permissioned</td>
-                    <td>outline planning permission</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>1.82</td>
-                    <td>701.0</td>
-                    <td>701.0</td>
+                    <td>488.0</td>
+                    <td>488.0</td>
                     <td>2017-12-22</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Of the 960 total dwellings permitted, 259 dwellings completed 14/03/2014 in Phase 1 (10/2440/R).". ?06/1751/O. Comprehensive mixed use development comprising up to 960 residential dwellings, civic offices, retail, food/drink use, office/community use, including police neighbourhood office, associated access, landscaping, and highway works."</div>
+                            <div class="govuk-details__text">"Previous permission 06/1751/O included in 2018 Brownfield Register. Dwellings range as per Woolwich Urban Design Strategy."</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    <td>2018-12-17</td>
+                    <td>2019-12-17</td>
                     <td>local-authority-eng:GRE</td>
                     <td>RBG-02</td>
                     <td class="data-table__cell--max-width">64 Plumstead High Street, Plumstead</td>
                     <td></td>
                     <td>yes</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
@@ -280,50 +273,79 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Started. Previous permission 07/2002/F included in 2017 Brownfield Register.". ?17/1285/F. Conversion and extension of the former Edwardian industrial building into a mixed-use building with commercial ground floor and 7 residential dwellings over upper floors (7x2-bed).?</div>
+                            <div class="govuk-details__text">"17/1285/F. Started. Previous permission 07/2002/F included in 2017 Brownfield Register."</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    <td>2018-12-17</td>
+                    <td>2019-12-17</td>
                     <td>local-authority-eng:GRE</td>
                     <td>RBG-03</td>
-                    <td class="data-table__cell--max-width">?Former Greenwich District Hospital site, Vanbrugh Hill Greenwich</td>
+                    <td class="data-table__cell--max-width">“Former Greenwich District Hospital site, Vanbrugh Hill Greenwich“</td>
                     <td></td>
                     <td>yes</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
                     <td>51.485358</td>
                     <td>0.009127</td>
                     <td>2.2</td>
-                    <td>645.0</td>
-                    <td>645.0</td>
+                    <td>686.0</td>
+                    <td>686.0</td>
                     <td>2017-12-22</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">?Started". ?08/0688/F. Redevelopment for mixed use purposes comprising 645 residential units, a community building (D1/D2) retail (A1/A2/A3), a flexible retail/microbrewery (A1/A2/A3/SG) and creative industry uses (B1) creation of new open spaces alteration and addition to existing highways arrangements and new pedestrain routes together with assoicated works including landscaping and the provision of parking serciving and plant areas.?</div>
+                            <div class="govuk-details__text">“Started. Permission 16/2591/F for 41 additional residential units increased total residential units on site to 686, up from the 645 units included in 2018 Brownfield Register and permitted by 08/0688/F."</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    <td>2017-12-22</td>
+                    <td>2018-12-17</td>
                     <td>local-authority-eng:GRE</td>
-                    <td>RBG-05</td>
-                    <td class="data-table__cell--max-width">?Kidbrooke Village Phase 2, Kidbrooke Park Rd Kidbrooke?</td>
+                    <td>RBG-04</td>
+                    <td class="data-table__cell--max-width">“The Academy (former Royal Military Academy), Academy Rd Woolwich“</td>
                     <td></td>
                     <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
                     <td></td>
+                    <td>51.475956</td>
+                    <td>0.058655</td>
+                    <td>4.41</td>
+                    <td>328.0</td>
+                    <td>328.0</td>
+                    <td>2017-12-22</td>
+                    <td>2018-12-17</td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">“08/1972/F. Completed 2018."</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
+                </tr>
+                
+                <tr id="row5">
+                    <td>2019-12-17</td>
+                    <td>local-authority-eng:GRE</td>
+                    <td>RBG-05</td>
+                    <td class="data-table__cell--max-width">“Kidbrooke Village Phase 2, Kidbrooke Park Rd Kidbrooke“</td>
+                    <td></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>reserved matters approval</td>
                     <td></td>
@@ -333,26 +355,26 @@
                     <td>595.0</td>
                     <td>595.0</td>
                     <td>2017-12-22</td>
-                    <td></td>
+                    <td>2019-12-17</td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">?Started". ?09/2269/R. Submission of Reserved Matters (Access, Appearance, Landscaping, Layout and Scale) pursuant to Condition 1 of Outline planning permission dated 24th June 2009 (Ref. 08/2782/O) for the erection of 595 residential units, including 170 extra care units, and 90.9 m� of community floorspace (Use Class D1),  associated car parking, cycle parking and servicing,  a children?s' play area, and creation of public open space to be provided as part of the approved Kidbrooke Masterplan."</div>
+                            <div class="govuk-details__text">“09/2269/R. Completed in 2019."</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
-                <tr id="row5">
-                    <td>2018-12-17</td>
+                <tr id="row6">
+                    <td>2019-12-17</td>
                     <td>local-authority-eng:GRE</td>
                     <td>RBG-06</td>
-                    <td class="data-table__cell--max-width">?92-94 Shooters Hill Rd Charlton?</td>
+                    <td class="data-table__cell--max-width">“92-94 Shooters Hill Rd Charlton“</td>
                     <td></td>
                     <td>yes</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
@@ -367,79 +389,79 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">?Started". ?10/0032/F. Demolition of existing building and construction of a new four storey block of 9 flats comprising ( 6 x 2- & 3 x 3-brm) flats.?</div>
+                            <div class="govuk-details__text">“10/0032/F. Started"</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
-                <tr id="row6">
-                    <td>2018-12-17</td>
+                <tr id="row7">
+                    <td>2019-12-17</td>
                     <td>local-authority-eng:GRE</td>
                     <td>RBG-07</td>
-                    <td class="data-table__cell--max-width">?Former Millers PH & newsagent, 83-87 Greenwich High Rd Greenwich?</td>
+                    <td class="data-table__cell--max-width">“83-87 Greenwich High Rd Greenwich“</td>
                     <td></td>
                     <td>yes</td>
-                    <td></td>
-                    <td>not permissioned</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
                     <td></td>
                     <td>51.476379</td>
                     <td>-0.018096</td>
                     <td>0.03</td>
-                    <td>3.0</td>
-                    <td>3.0</td>
+                    <td>14.0</td>
+                    <td>14.0</td>
                     <td>2017-12-22</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">"Previous permission 11/0848/F included in 2017 Brownfield Register lapsed.". ?Demolition of existing building with retail or commercial at ground floor level (A1/2/3/4 or B1) and esidential above."</div>
+                            <div class="govuk-details__text">"18/2389/F. Previous permission 11/0848/F included in 2017 Brownfield Register lapsed."</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
-                <tr id="row7">
-                    <td>2018-12-17</td>
+                <tr id="row8">
+                    <td>2019-12-17</td>
                     <td>local-authority-eng:GRE</td>
                     <td>RBG-08</td>
                     <td class="data-table__cell--max-width">Enderby Wharf (former Alcatel Site), Christchurch Way</td>
                     <td></td>
                     <td>yes</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
                     <td>51.490178</td>
                     <td>0.006515</td>
                     <td>3.6</td>
-                    <td>770.0</td>
-                    <td>770.0</td>
+                    <td>677.0</td>
+                    <td>677.0</td>
                     <td>2017-12-22</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">?Started". ?13/3025/MA. Redevelopment of the site comprising the provision of a new jetty in the River Thames to provide docking for cruise liners and the Thames Clipper, a Cruise Liner Terminal, a 251 room hotel with conference, restaurant ancillary facilities (Use Class C1); skills academy (Use Class D1); 770 residential units (Use Class C3); commercial (Use Class B1); a cr�che (Use Class D1) a gymnasium (Use Class D2); conversion and extension of Enderby House to provide tourist, community and retail facilities (Use Classes A1, A3, A4, B1, D1 and D2); the provision of vehicular access with associated servicing facilities; car, motorcycle and bicycle parking, provision of landscaping and public realm (including improvements to the Thames Walk); improvements to the river wall and other works within the river, including dredging, the provision of tidal gardens, piling, the provision of a pontoon and brow, and associated works."</div>
+                            <div class="govuk-details__text">“13/3025/MA. Started. Minimum net dwellings figure excludes the northern part of the site (Enderby Place) which has a separate residential permission."</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
-                <tr id="row8">
-                    <td>2018-12-17</td>
+                <tr id="row9">
+                    <td>2019-12-17</td>
                     <td>local-authority-eng:GRE</td>
                     <td>RBG-09</td>
-                    <td class="data-table__cell--max-width">?Hilton's Wharf, 30-52 Norman Rd Greenwich?</td>
+                    <td class="data-table__cell--max-width">“Hilton's Wharf, 30-52 Norman Rd Greenwich“</td>
                     <td></td>
                     <td>yes</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
@@ -454,21 +476,21 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">?Started". ?10/2354/F. Demolition of existing buildings and construction of 85 residential units, 1250 m� of commercial (B1) floorspace and 2 live/work units in a part 7-/part 8-/part 9-storey building, underground car parking and associated access, landscaping and open space.?</div>
+                            <div class="govuk-details__text">“10/2354/F. Started"</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
-                <tr id="row9">
-                    <td>2018-12-17</td>
+                <tr id="row10">
+                    <td>2019-12-17</td>
                     <td>local-authority-eng:GRE</td>
                     <td>RBG-10</td>
-                    <td class="data-table__cell--max-width">?Mast Quay Phase 2, Woolwich Church St Woolwich?</td>
+                    <td class="data-table__cell--max-width">“Mast Quay Phase 2, Woolwich Church St Woolwich“</td>
                     <td></td>
                     <td>yes</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
@@ -483,40 +505,11 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">?Not started.". ?10/0161/F. Mixed use development comprising of 218 residential units and 738 m� commercial floor space with associated car parking and landscaping and podium deck. (phase 2). (This site is adjacent to two Listed Buildings).?</div>
+                            <div class="govuk-details__text">“10/0161/F. Started."</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
-                </tr>
-                
-                <tr id="row10">
-                    <td>2018-12-17</td>
-                    <td>local-authority-eng:GRE</td>
-                    <td>RBG-11</td>
-                    <td class="data-table__cell--max-width">?Greenwich Millennium Village, Peartree Way & West Parkside Greenwich?</td>
-                    <td></td>
-                    <td>yes</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    <td>outline planning permission</td>
-                    <td></td>
-                    <td>51.492365</td>
-                    <td>0.016378</td>
-                    <td>8.01</td>
-                    <td>1746.0</td>
-                    <td>1746.0</td>
-                    <td>2017-12-22</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">?Started.". ?12/0022/O. A mixed use development comprising: up to a total of 1,746 Class C3 residential units; up to a total of 1,190 m� (GEA) Flexible Class A1 (shops) and/or A2 (financial and professional services) and/or A3 (restaurants and cafes) and/or A4 (drinking establishments); up to a total of 4,462 m� (GEA) business space for B1(a) (offices) and/or B1(b) (research and development) and/or B1(c) (light industry); up to 500 m� (GEA) Class D1 for a children's nursery; up to a total of 750 m� (GEA) Class D2 for community space and a management facility; up to a total of 992 m� (GEA) for two energy centres; associated open space, hard and soft landscaping, car parking and servicing, highways and transport works and ancillary works; with all matters reserved for future approval except for access (Outline Application). In addition to the matters set out above, full details (access, appearance, landscaping, layout, scale) in relation to the first sub-phase, being Parcel 1, located to the north and east of the site for 459 residential units,; a 365 m� energy centre, associated open space, hard and soft landscaping, car parking and servicing, highways and transport works and ancillary works.?</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/fae859c1bd1d64c533cc5b024ac6ed541370f89cb52d84e97c7ac6523039c3a2" class="govuk-link">fae859c1...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/7b913c52d8f27965df11035d969a9803fa35921c4a2d889867a9e6151681ab8f" class="govuk-link">7b913c52...</a></td>
                 </tr>
                 
             </tbody>
@@ -549,12 +542,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -588,33 +618,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;

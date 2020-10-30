@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Brownfield Land &mdash; London Borough of Brent | Datasets | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c" /> 
+    <meta name="theme-color" content="#0b0c0c"> 
     
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
       <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
       <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
@@ -18,15 +18,7 @@
     
 
     
-<link href="https://digital-land-design.herokuapp.com/static/stylesheets/dl-frontend.css" rel="stylesheet" />
-<style>
-.status-green {
-    background-color: green;
-}
-.status-red {
-    background-color: red;
-}
-</style>
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
     
     
@@ -37,11 +29,12 @@
     
 
     
-      <a href="#content" class="govuk-skip-link"></a>
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
     
 
     
-<div id="global-cookie-message" class="govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;">
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
   <div id="cookie-banner" class="govuk-width-container">
     <div class="govuk-grid-row">
@@ -52,10 +45,10 @@
         </div>
         <div class="cooke-banner__buttons govuk-grid-row">
           <div class="govuk-grid-column-one-half">
-            <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
           </div>
           <div class="govuk-grid-column-one-half">
-            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
           </div>
         </div>
       </div>
@@ -112,7 +105,7 @@
 
 
     
-      <div class="govuk-width-container">
+      <div class="govuk-width-container ">
         
   <div class="govuk-phase-banner govuk-width-container">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -170,8 +163,8 @@
   <div class="govuk-grid-column-two-thirds">
     <p class="govuk-body">London Borough of Brent publish brownfield land data that is included in the National Brownfield land dataset.</p>
     
-    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2019-12-01</p>
-    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2019-12-31</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">First published 2020-10-19</p>
+    <p class="govuk-body-s govuk-!-margin-bottom-1">Last collected 2020-10-30</p>
     
     <p class="govuk-body-s govuk-!-margin-bottom-1">View <a href="https://www.brent.gov.uk/services-for-residents/planning-and-building-control/planning-policy/the-brownfield-site-register/" class="govuk-link">documentation page</a>.</p>
   </div>
@@ -179,7 +172,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half">
-    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57.csv">
+    <a class="highlight-box govuk-!-margin-top-6" href="https://raw.githubusercontent.com/digital-land/brownfield-land-collection/master/var/transformed/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58.csv">
       <h3 class="govuk-heading-m highlight-box__title govuk-!-margin-top-0">Download the data</h3>
       <p class="govuk-body govuk-!-margin-bottom-0">Get a copy of the data in this register in CSV format.</p>
     </a>
@@ -195,7 +188,7 @@
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l" id="log">About the data</h2>
 
-      <p class="govuk-body">There are 101 records from London Borough of Brent.</p>
+      <p class="govuk-body">There are 137 records from London Borough of Brent.</p>
       <h4 class="govuk-heading-s">Preview of 10 records</h4>
       
 <div class="data-table__wrapper" data-module="data-table data-linkable-table">
@@ -230,7 +223,7 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>2018-12-14</td>
+                    <td>2019-12-13</td>
                     <td>local-authority-eng:BEN</td>
                     <td>BR00003</td>
                     <td class="data-table__cell--max-width">Ground, First and Second Floor, 328-330 High Road, Wembley, HA9 6AZ</td>
@@ -243,7 +236,7 @@
                     <td>51.55366</td>
                     <td>-0.287414</td>
                     <td>0.03</td>
-                    <td>227</td>
+                    <td>6</td>
                     <td>6</td>
                     <td>2017-12-15</td>
                     <td></td>
@@ -251,11 +244,11 @@
                         
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
                 </tr>
                 
                 <tr id="row2">
-                    <td>2018-12-14</td>
+                    <td>2019-12-13</td>
                     <td>local-authority-eng:BEN</td>
                     <td>BR00004</td>
                     <td class="data-table__cell--max-width">Heron House, 109-115 Wembley Hill Road, Wembley, HA9 8DA</td>
@@ -268,7 +261,7 @@
                     <td>51.557265</td>
                     <td>-0.287561</td>
                     <td>0.15</td>
-                    <td>5</td>
+                    <td>40</td>
                     <td>40</td>
                     <td>2017-12-15</td>
                     <td></td>
@@ -276,15 +269,15 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Demolition of the existing office building (Heron House) and the construction of a new four to seven storey mixed use building comprising 829sqm of commercial office space on the ground floor (Use class B1a), 40 self-contained flats (23 x 1bed, 7 x 2bed and 10 x 3bed) on the upper floors, a basement level for car and cycle parking, bin stores and associated landscaping and amenity space</div>
+                            <div class="govuk-details__text">16/4156</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
                 </tr>
                 
                 <tr id="row3">
-                    <td>2017-12-15</td>
+                    <td>2019-12-13</td>
                     <td>local-authority-eng:BEN</td>
                     <td>BR00005</td>
                     <td class="data-table__cell--max-width">Stonebridge Primary School Annexe, Twybridge Way, London, NW10 0ST</td>
@@ -297,36 +290,36 @@
                     <td>51.542723</td>
                     <td>-0.266283</td>
                     <td>0.6</td>
-                    <td>12</td>
-                    <td>55</td>
+                    <td>67</td>
+                    <td>67</td>
                     <td>2017-12-15</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Outline planning permission for the demolition of the Former Day Centre and erection of up to 55 units comprising of 15 x houses up to 3-storeys in height (use class C3), one apartment block comprising 5 x 1bed and 7x 2bed flats up to 5-storeys in height (use class C3) and one apartment block comprising 28x 1bed flats up to 5-storeys in height with an element of care (use class C3b) and a new one-way access loop road and on-street parking bays with all matters reserved (as amended)</div>
+                            <div class="govuk-details__text">Most recent permission: 18/4810</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
                 </tr>
                 
                 <tr id="row4">
-                    <td>2018-12-14</td>
+                    <td>2019-12-13</td>
                     <td>local-authority-eng:BEN</td>
                     <td>BR00006</td>
                     <td class="data-table__cell--max-width">1 Olympic Way, Wembley, HA9 0NP</td>
                     <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
-                    <td>planning permission granted under an order</td>
+                    <td>other</td>
                     <td></td>
                     <td>51.561992</td>
                     <td>-0.278971</td>
                     <td>0.54</td>
-                    <td>5</td>
+                    <td>227</td>
                     <td>227</td>
                     <td>2017-12-15</td>
                     <td></td>
@@ -334,74 +327,49 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Prior approval for change of use of floors 1-7 and 9-12 from offices (Use class B1) into residential (Use class C3) involving the creation of 68 one-bed flats and 159 studio flats</div>
+                            <div class="govuk-details__text">17/4538</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
                 </tr>
                 
                 <tr id="row5">
-                    <td>2018-12-14</td>
-                    <td>local-authority-eng:BEN</td>
-                    <td>BR00007</td>
-                    <td class="data-table__cell--max-width">13, Christchurch Avenue, NW6 7QP</td>
-                    <td></td>
-                    <td>yes</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.545938</td>
-                    <td>-0.206306</td>
-                    <td>0.041</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2018-12-14</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Conversion of 3 garages into a detached single storey family dwellinghouse in the rear garden</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
-                </tr>
-                
-                <tr id="row6">
-                    <td>2018-12-14</td>
+                    <td>2019-12-13</td>
                     <td>local-authority-eng:BEN</td>
                     <td>BR00008</td>
                     <td class="data-table__cell--max-width">Olympic Office Centre, 8 Fulton Road, Wembley, HA9 0NU</td>
                     <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-                    <td>yes</td>
                     <td></td>
-                    <td>not permissioned</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>pending decision</td>
+                    <td>full planning permission</td>
                     <td></td>
                     <td>51.55931</td>
                     <td>-0.279098</td>
-                    <td>0.75</td>
-                    <td>5</td>
+                    <td>0.49</td>
+                    <td>253</td>
                     <td>253</td>
                     <td>2017-12-15</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">17/5097</div>
+                        </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
                 </tr>
                 
-                <tr id="row7">
-                    <td>2017-12-15</td>
+                <tr id="row6">
+                    <td>2019-12-13</td>
                     <td>local-authority-eng:BEN</td>
                     <td>BR00009</td>
                     <td class="data-table__cell--max-width">205, 205A, 205B and Church Road car park and Building rear of 189-203 Church Road, London, NW10 9EP</td>
                     <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-                    <td></td>
+                    <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
@@ -409,7 +377,7 @@
                     <td>51.548262</td>
                     <td>-0.249061</td>
                     <td>0.3</td>
-                    <td>5</td>
+                    <td>34</td>
                     <td>34</td>
                     <td>2017-12-15</td>
                     <td></td>
@@ -417,15 +385,15 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Demolition of 205 Church Road and proposal of new market square to replace Eric Road. Demolition of 3 storey building to the rear of 203 Church Road and proposal of 34 residential dwellings and ground floor non-residential space (class A1/A3/B1/D1).</div>
+                            <div class="govuk-details__text">13/1098</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
                 </tr>
                 
-                <tr id="row8">
-                    <td>2018-12-12</td>
+                <tr id="row7">
+                    <td>2019-12-13</td>
                     <td>local-authority-eng:BEN</td>
                     <td>BR00010</td>
                     <td class="data-table__cell--max-width">Wembley Point, 1 Harrow Road, Wembley, HA9 6DE</td>
@@ -433,70 +401,41 @@
                     <td>yes</td>
                     <td>not owned by a public authority</td>
                     <td>permissioned</td>
-                    <td>planning permission granted under an order</td>
+                    <td>other</td>
                     <td></td>
                     <td>51.544644</td>
                     <td>-0.274157</td>
                     <td>0.92</td>
-                    <td>5</td>
-                    <td>382</td>
+                    <td>439</td>
+                    <td>439</td>
                     <td>2017-12-15</td>
                     <td></td>
                     <td class="data-table__notes-cell" style="min-width: 200px;">
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Change of use floors 2nd to 20th (excluding part of 6th and 8th floors) and part of 21st floor from office (Use class B1a) to residential (Use class C3) involving the creation of 382 x studios</div>
+                            <div class="govuk-details__text">18/3125</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
                 </tr>
                 
-                <tr id="row9">
-                    <td>2018-12-12</td>
-                    <td>local-authority-eng:BEN</td>
-                    <td>BR00011</td>
-                    <td class="data-table__cell--max-width">Land rear of 234-240, Princes Avenue, London, NW9 9QU</td>
-                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
-                    <td>yes</td>
-                    <td></td>
-                    <td>permissioned</td>
-                    <td>full planning permission</td>
-                    <td></td>
-                    <td>51.589295</td>
-                    <td>-0.280717</td>
-                    <td>0.11</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>2017-12-15</td>
-                    <td></td>
-                    <td class="data-table__notes-cell" style="min-width: 200px;">
-                        
-                        <details class="govuk-details" data-module="govuk-details">
-                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Erection of six family dwelling houses including the provision of new access from Princes Close, associated landscaping, car parking spaces, waste and cycle storage</div>
-                        </details>
-                        
-                    </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
-                </tr>
-                
-                <tr id="row10">
-                    <td>2017-12-15</td>
+                <tr id="row8">
+                    <td>2019-12-13</td>
                     <td>local-authority-eng:BEN</td>
                     <td>BR00012</td>
                     <td class="data-table__cell--max-width">Oman Avenue Garages, Oman Avenue, London</td>
                     <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
                     <td>yes</td>
-                    <td></td>
+                    <td>not owned by a public authority</td>
                     <td>permissioned</td>
                     <td>full planning permission</td>
                     <td></td>
                     <td>51.555848</td>
                     <td>-0.227657</td>
                     <td>0.42</td>
-                    <td>5</td>
+                    <td>7</td>
                     <td>7</td>
                     <td>2017-12-15</td>
                     <td></td>
@@ -504,11 +443,65 @@
                         
                         <details class="govuk-details" data-module="govuk-details">
                             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
-                            <div class="govuk-details__text">. Demolition of existing garages and redevelopment to provide 4 x 2 bedroom bungalows and a 3 storey building adjacent to Midlothian House comprising 3 x 2 bedroom flats, with associated car parking, cycle storage, refuse storage, amenity space and landscaping</div>
+                            <div class="govuk-details__text">17/0500</div>
                         </details>
                         
                     </td>
-                    <td><a href="https://digital-land.github.io/resource/5ca131311b14ad652e5d86358164f11e6b3a3728cebb6493d17aee5ca5482e57" class="govuk-link">5ca13131...</a></td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
+                </tr>
+                
+                <tr id="row9">
+                    <td>2019-12-13</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00013</td>
+                    <td class="data-table__cell--max-width">2 Atlip Road, Wembley, HA0 4LU</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
+                    <td>yes</td>
+                    <td>not owned by a public authority</td>
+                    <td>permissioned</td>
+                    <td>full planning permission</td>
+                    <td></td>
+                    <td>51.540084</td>
+                    <td>-0.297194</td>
+                    <td>2.58</td>
+                    <td>99</td>
+                    <td>99</td>
+                    <td>2017-12-15</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        <details class="govuk-details" data-module="govuk-details">
+                            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">See notes</span></summary>
+                            <div class="govuk-details__text">15/2061</div>
+                        </details>
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
+                </tr>
+                
+                <tr id="row10">
+                    <td>2019-12-13</td>
+                    <td>local-authority-eng:BEN</td>
+                    <td>BR00020</td>
+                    <td class="data-table__cell--max-width">Land R/O 37-41, High Street, London, NW10</td>
+                    <td><a href="https://maps.london.gov.uk/brownfield-site-register" class="govuk-link">https://maps.london.gov.uk/brownfield-site-register</a></td>
+                    <td></td>
+                    <td>not owned by a public authority</td>
+                    <td>not permissioned</td>
+                    <td></td>
+                    <td></td>
+                    <td>51.536409</td>
+                    <td>-0.247183</td>
+                    <td>0.1</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>2017-12-15</td>
+                    <td></td>
+                    <td class="data-table__notes-cell" style="min-width: 200px;">
+                        
+                        
+                    </td>
+                    <td><a href="https://digital-land.github.io/resource/74c7b0f00404598a9a822077017d74ac25cbbfdbce2166986d805e62a8350d58" class="govuk-link">74c7b0f0...</a></td>
                 </tr>
                 
             </tbody>
@@ -541,12 +534,49 @@
     
 
     
-      <footer class="govuk-footer " role="contentinfo"
+  
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
         >
   <div class="govuk-width-container ">
     
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
         
         <svg
           role="presentation"
@@ -580,33 +610,29 @@
     </div>
   </div>
 </footer>
-    
+
 
     
+<script src="/static/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
 
-<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
-<script>
-	// initiate all GOVUK components
-	window.GOVUKFrontend.initAll();
-</script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
-<script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
 
-<script>
-$(function () {
-  $.tablesorter.addParser({
-        id: 'when',
-        format: function d(s) {
-          a = s.split(" ");
-          return a[2] + pad(month(a[1])) + pad(a[0]);
-        },
-        type: 'text'
-  });
-  $("table").tablesorter();
-});
-</script>
+	
+	
+	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
 
 <script type="application/javascript">
 var doNotTrack = false;
