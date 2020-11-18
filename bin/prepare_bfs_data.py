@@ -28,7 +28,19 @@ def brownfield_map(orgs):
 
 organisations = fetch_organisations()
 da = BrownfieldDatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
-d = brownfield_map(da.organisations())
+orgs_with_bfs = da.organisations()
+# need to remove any pesky None organisation values
+orgs_with_bfs = [o for o in orgs_with_bfs if o is not None]
+d = brownfield_map(orgs_with_bfs)
 
 with open('data/org_boundaries.json', 'w') as file:
     file.write(json.dumps(d))
+
+
+for o in orgs_with_bfs:
+    curie_url = "/".join(organisations[o]["path-segments"])
+    sites = da.get_data_for_organisation(o)
+    with open(f'docs/brownfield-land/organisation/{curie_url}/sites.json', 'w') as file:
+        file.write(json.dumps(sites))
+
+
