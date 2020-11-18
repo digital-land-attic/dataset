@@ -47,6 +47,10 @@ class BrownfieldDatasetAnalyser(DatasetAnalyser):
     def organisations(self):
         orgs = [x['organisation'] for x in self.json_data]
         return set(orgs)
+    
+    def no_organisation(self):
+        sites = [x for x in self.json_data if x['organisation'] is None]
+        return sites
 
     # dwelling analysis
     # currently uses min dwelling figure
