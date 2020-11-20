@@ -71,6 +71,9 @@ class BrownfieldDatasetAnalyser(DatasetAnalyser):
                     for x in self.json_data if x['hectares'] is not None]
         return "{0:.2f}".format(sum(hectares))
 
+    def get_data_for_organisation(self, o):
+        return [site for site in self.json_data if site['organisation'] == o]
+
     def summary(self):
         return {
             'records': self.number_of_records(),

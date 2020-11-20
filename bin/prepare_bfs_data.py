@@ -7,6 +7,7 @@ sys.path.append(".")
 
 from analyse_dataset import BrownfieldDatasetAnalyser
 from organisation import fetch_organisations
+from bin.points_to_features import convert_json_to_geojson
 
 def process_org(org):
     return {
@@ -40,7 +41,8 @@ with open('data/org_boundaries.json', 'w') as file:
 for o in orgs_with_bfs:
     curie_url = "/".join(organisations[o]["path-segments"])
     sites = da.get_data_for_organisation(o)
-    with open(f'docs/brownfield-land/organisation/{curie_url}/sites.json', 'w') as file:
-        file.write(json.dumps(sites))
+    gjson = convert_json_to_geojson(sites)
+    with open(f'docs/brownfield-land/organisation/{curie_url}/sites.geojson', 'w') as file:
+        file.write(json.dumps(gjson))
 
 
