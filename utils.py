@@ -1,5 +1,17 @@
 import json
 import pandas as pd
+import requests
+
+from cachecontrol import CacheControl
+from cachecontrol.caches.file_cache import FileCache
+
+session = CacheControl(requests.session(), cache=FileCache(".cache"))
+
+def get(url):
+    r = session.get(url)
+    r.raise_for_status()
+    return r.text
+
 
 def get_csv_as_json(path_to_csv, cache=False):
     if cache:

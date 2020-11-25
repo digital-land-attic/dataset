@@ -47,6 +47,10 @@ class BrownfieldDatasetAnalyser(DatasetAnalyser):
     def organisations(self):
         orgs = [x['organisation'] for x in self.json_data]
         return set(orgs)
+    
+    def no_organisation(self):
+        sites = [x for x in self.json_data if x['organisation'] is None]
+        return sites
 
     # dwelling analysis
     # currently uses min dwelling figure
@@ -66,6 +70,9 @@ class BrownfieldDatasetAnalyser(DatasetAnalyser):
         hectares = [x['hectares']
                     for x in self.json_data if x['hectares'] is not None]
         return "{0:.2f}".format(sum(hectares))
+
+    def get_data_for_organisation(self, o):
+        return [site for site in self.json_data if site['organisation'] == o]
 
     def summary(self):
         return {
