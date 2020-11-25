@@ -19,6 +19,7 @@ render:	render.py $(DATASET_FILES) $(TEMPLATE_FILES)
 	cd brownfield-resources && python3 resource_generator/check_per_org.py --all # this is done in a subshell
 	rsync -a ./dataset/docs/ ./docs/
 	rm -rf dataset
+	python3 bin/prepare_bfs_data.py
 
 black:
 	black .
