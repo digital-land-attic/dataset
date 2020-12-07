@@ -31,3 +31,12 @@ init::
 
 clobber clean:
 	rm -rf docs .cache
+
+
+map:
+	python3 bin/create_bfs_map.py
+
+
+map/local:
+	python3 bin/create_bfs_map.py --local
+
