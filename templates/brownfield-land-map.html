@@ -19,7 +19,7 @@
 </div>
 <div class="dl-map__side-panel__section dl-map__side-panel__section--title js-hidden" data-module="dl-map-items">
   <p class="govuk-body govuk-!-margin-bottom-1"><span class="organisation-count"></span> organisation boundaries</p>
-  <p class="govuk-body govuk-!-margin-bottom-1 js-hidden">Active: <span class="active-organisation dl-map__highlight--yellow"></span></p>
+  <p class="govuk-body govuk-!-margin-top-3 govuk-!-margin-bottom-1 js-hidden">Active: <span class="active-organisation dl-map__highlight--yellow"></span></p>
 </div>
 <div class="dl-map__side-panel__section dl-map__side-panel__section--blue">
   {% include 'digital-land-frontend/partials/dl-organisation-autocomplete.html' %}
@@ -61,6 +61,13 @@
     }
   }
 
+  const organisationActiveStyle = {
+    fillOpacity: 0.2,
+    weight: 2,
+    color: '#FFDD00',
+    fillColor: '#FFEE80'
+  }
+
   // $elements needed for map functions
   const $mapElement = document.querySelector('[data-module="boundary-map"]')
   const $sidePanel = document.querySelector(".dl-map__side-panel")
@@ -86,6 +93,14 @@
     return feature
   }
 
+  function updateActiveOrgPanel(name) {
+    $activeOrganisation.textContent = name
+    const $container = $activeOrganisation.parentElement
+    if ($container.classList.contains("js-hidden")) {
+      $container.classList.remove("js-hidden")
+    }
+  }
+
   function LayerTracker(defaultProps) {
     this.items = {}
     this._defaultProps = defaultProps || {}
@@ -107,6 +122,61 @@
   var laTracker = new LayerTracker({"loadedBFS": false})
   console.log(laTracker)
 
+  function setActiveBoundaryLayer(layer) {
+    // track which layer is active
+    localAuthorityBoundaries.activeLayer = layer._leaflet_id
+    localAuthorityBoundaries.eachLayer(function (layer) {
+      layer.activeBoundary = false
+      layer.setStyle(bfsmap.styles.defaultBoundaryStyle)
+    })
+    if (hasParentLayer(layer)) {
+      layer.parentId["activeBoundary"] = true
+      layer.parentId.setStyle(organisationActiveStyle)
+    }
+
+    // should this be done another way? i.e. trigger an event on the side panel?
+    updateActiveOrgPanel(layer.feature.properties['organisation_name'])
+  }
+
+  function hasParentLayer(childLayer) {
+    return Object.prototype.hasOwnProperty.call(childLayer, "parentId")
+  }
+
+  function setParentLayer(parentLayer, layerName) {
+    parentLayer.activeBoundary = false
+    laTracker.addToItem(layerName, "layer", parentLayer)
+    for (var lId in parentLayer._layers) {
+      if (Object.prototype.hasOwnProperty.call(parentLayer._layers, lId)) {
+        const childLayer = parentLayer._layers[lId]
+        childLayer.parentId = localAuthorityBoundaries.getLayer(parentLayer._leaflet_id)
+        laTracker.addToItem(layerName, "boundaryLayer", childLayer)
+      }
+    }
+  }
+
+  function addHoverState (layer) {
+    bfsmap.addLayerHoverState(layer, {
+      check: function (layer) {
+        return !Object.prototype.hasOwnProperty.call(layer, "parentId") || !layer.parentId.activeBoundary
+      }
+    })
+  }
+
+
+  function addLayerClickEvent(feature, layer) {
+    layer.on('click', function(e) {
+      console.log("you clicked on a authority boundary")
+      setActiveBoundaryLayer(layer)
+      //handleBrownfieldSiteLoad(feature.properties.organisation, layer)
+    })
+  }
+
+  function setupAuthorityBoundaryLayer(feature, layer) {
+    // function is run for each boundary that is plotted
+    addHoverState(layer)
+    addLayerClickEvent(feature, layer)
+  }
+
   var failing = []
   Promise.allSettled(
     brownfieldPublishers.map(function(bP) {
@@ -119,20 +189,12 @@
           data.features[0] = addUsefulPropertiesToFeature(data.features[0], bP)
           // create geojson feature layer (parent)
           var boundary = L.geoJSON(data, {
-            style: bfsmap.styles.defaultBoundaryStyle
+            style: bfsmap.styles.defaultBoundaryStyle,
+            onEachFeature: setupAuthorityBoundaryLayer
           })
           .on("add", function(e) {
-            // layer just added
-            const parentLayer = e.target
-            parentLayer.activeBoundary = false
-            laTracker.addToItem(bP.name, "layer", parentLayer)
-            for (var lId in parentLayer._layers) {
-              if (Object.prototype.hasOwnProperty.call(parentLayer._layers, lId)) {
-                const childLayer = parentLayer._layers[lId]
-                childLayer.parentId = localAuthorityBoundaries.getLayer(parentLayer._leaflet_id)
-                laTracker.addToItem(bP.name, "boundaryLayer", childLayer)
-              }
-            }
+            // set currently added layer as parent for all children layers
+            setParentLayer(e.target, bP.name)
           })
           .addTo(localAuthorityBoundaries)
           return boundary
@@ -152,6 +214,7 @@
   })
 
 window.bfsmap = bfsmap
+window.laTracker = laTracker
 
 })(window.DLFrontend, window.accessibleAutocomplete)
 
