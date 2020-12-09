@@ -17,6 +17,7 @@ def read_in_json(path):
 
 
 env = setup_jinja()
+env.globals["includeAutocomplete"] = True
 map_template = env.get_template("brownfield-land-map.html")
 
 data = read_in_json("data/org_boundaries.json")
