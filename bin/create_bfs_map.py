@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 import json
 
@@ -7,7 +8,18 @@ import json
 sys.path.append(".")
 
 from digital_land_frontend.jinja import setup_jinja
-from digital_land_frontend.render import render
+
+# from digital_land_frontend.render import render
+
+
+def render(path, template, docs="docs", **kwargs):
+    path = os.path.join(docs, path)
+    directory = os.path.dirname(path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    with open(path, "w") as f:
+        print(f"creating {path}")
+        f.write(template.render(**kwargs))
 
 
 def read_in_json(path):
