@@ -37,6 +37,8 @@ jobs:
       run: make init
     - name: Run make
       run: make
+    - name: Generate brownfield land map
+      run: make map
     - name: Commit files
       run: |
         git add docs brownfield-land-collection organisation-dataset brownfield-resources
