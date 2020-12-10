@@ -15,11 +15,12 @@ da = BrownfieldDatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
 
 
 def process_org(org):
+    sites = da.get_data_for_organisation(org.get("organisation"))
     return {
         "id": org.get("organisation"),
         "statistical_geography": org.get("statistical-geography"),
         "name": org.get("name"),
-        "count": len(da.get_data_for_organisation(org.get("organisation"))),
+        "count": len(sites),
     }
 
 
@@ -39,7 +40,7 @@ orgs_with_bfs = da.organisations()
 orgs_with_bfs = [o for o in orgs_with_bfs if o is not None]
 d = brownfield_map(orgs_with_bfs)
 
-with open("data/org_boundaries.json", "w") as file:
+with open("data/organisation_boundary_data.json", "w") as file:
     file.write(json.dumps(d))
 
 

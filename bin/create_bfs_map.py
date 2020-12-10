@@ -32,7 +32,7 @@ env = setup_jinja()
 env.globals["includeAutocomplete"] = True
 map_template = env.get_template("brownfield-land-map.html")
 
-data = read_in_json("data/org_boundaries.json")
+data = read_in_json("data/organisation_boundary_data.json")
 
 
 if __name__ == "__main__":
