@@ -281,7 +281,7 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         datasets[dataset]["data"] = [row for row in reader]
         # sort but put plans without name at the end
         datasets[dataset]["data"].sort(
-            key=lambda x: "z" if x["name"] is "" else x["name"]
+            key=lambda x: "z" if x["name"] == "" else x["name"]
         )
         if dataset == "local-plans":
             local_plan_template = env.get_template(f"dataset-templates/local-plan.html")
