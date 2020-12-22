@@ -81,7 +81,7 @@ class BrownfieldDatasetAnalyser(DatasetAnalyser):
         return {
             "records": self.number_of_records(),
             "active_records": len(self.active_records()),
-            "hectares": self.total_hectares(),
+            # "hectares": self.total_hectares(),
             "dwellings": int(self.total_dwellings()),
             "organisations": len(self.organisations()),
             "historical_records": int(
