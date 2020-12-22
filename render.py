@@ -73,13 +73,7 @@ def render(
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")
 dataset_organisations_template = env.get_template("dataset-organisations.html")
-dataset_organisations_status_template = env.get_template(
-    "dataset-organisations-statuses.html"
-)
 dataset_organisation_template = env.get_template("dataset-organisation.html")
-dataset_organisation_log_template = env.get_template("dataset-organisation-log.html")
-dataset_resources_template = env.get_template("dataset-resources.html")
-dataset_links_template = env.get_template("dataset-links.html")
 
 
 tags = OrderedDict()
@@ -99,61 +93,8 @@ for o in csv.DictReader(get(organisation_csv).splitlines()):
 
 
 def brownfield_land_dataset(d):
-    index_url = os.environ.get(dataset.replace("-", "_") + "_index", d["resource-url"])
     bf_idx = resources_by_org()
-
-    # d["index"] = idx["key"]
-    # d["resource"] = idx["resource"]
     d["organisation"] = bf_idx
-    # d["data-govuk"] = {}
-
-    # expand index
-    # for key in d["index"]:
-    #     dates = list(d["index"][key]["log"].keys())
-
-    #     # index by resource
-    #     for date in dates:
-    #         if "resource" in d["index"][key]["log"][date]:
-    #             resource = d["index"][key]["log"][date]["resource"]
-    #             d["resource"][resource].setdefault("key", {})
-    #             d["resource"][resource]["key"].setdefault(key, [])
-    #             d["resource"][resource]["key"][key].append(date)
-
-    #     if dates:
-    #         date = list(d["index"][key]["log"].keys())[-1]
-    #         d["index"][key]["date"] = date
-    #         d["index"][key]["status"] = d["index"][key]["log"][date].get(
-    #             "status", d["index"][key]["log"][date].get("exception", "●")
-    #         )
-    #         d["index"][key]["colour"] = (
-    #             "green" if d["index"][key]["status"] in ["200", "●"] else "red"
-    #         )
-
-    #     for organisation in d["index"][key]["organisation"]:
-    #         d["organisation"].setdefault(organisation, {"key": []})
-    #         d["organisation"][organisation]["key"].append(key)
-
-    # for organisation in d["organisation"]:
-    #     d["organisation"][organisation]["key"] = sorted(
-    #         d["organisation"][organisation]["key"],
-    #         key=lambda key: d["index"][key]["log"][d["index"][key]["date"]]["datetime"]
-    #         if "date" in d["index"][key]
-    #         else "",
-    #     )
-
-    # for organisation in d["organisation"]:
-    #     for key in d["organisation"][organisation]["key"]:
-    #         if "documentation-url" in d["index"][key]["organisation"][organisation]:
-    #             d["organisation"][organisation]["landing-page"] = d["index"][key][
-    #                 "organisation"
-    #             ][organisation]["documentation-url"]
-    #         if "data-gov-uk" in d["index"][key]["organisation"][organisation]:
-    #             d["organisation"][organisation]["data-gov-uk"] = d["index"][key][
-    #                 "organisation"
-    #             ][organisation]["data-gov-uk"]
-    #     d["organisation"][organisation]["resource"] = get_brownfield_resource_list(
-    #         bf_idx, organisation
-    #     )
 
     for organisation in d["organisation"]:
         # check there are resource(s) associated with org
@@ -163,41 +104,6 @@ def brownfield_land_dataset(d):
             ] = get_latest_brownfield_resource(
                 d["organisation"][organisation]["resource"], data_preview=True
             )
-
-    # # colour resources
-    # for resource, r in d["resource"].items():
-    #     r["colour"] = "green" if r["valid"] else "red"
-    #     if r["suffix"] == ".htm":
-    #         r["suffix"] = ".html"
-
-    #     # add resource organisations
-    #     r.setdefault("organisation", [])
-    #     for key in r["key"]:
-    #         for organisation in d["index"][key]["organisation"]:
-    #             if organisation not in r["organisation"]:
-    #                 r["organisation"].append(organisation)
-
-    # stats
-    # d["stats"] = {
-    #     "organisations": len(d["organisation"]),
-    #     # "resources": len(d["resource"]),
-    #     # "urls": len(d["index"]),
-    #     "landing-pages": len(
-    #         [o for o in d["organisation"] if "landing-page" in d["organisation"][o]]
-    #     ),
-    #     "data-gov-uk": len(
-    #         [o for o in d["organisation"] if "data-gov-uk" in d["organisation"][o]]
-    #     ),
-    #     "valid": len(
-    #         [
-    #             resource
-    #             for resource in idx["resource"]
-    #             if idx["resource"][resource]["valid"]
-    #         ]
-    #     ),
-    #     "rows": sum([r["row-count"] for r in idx["resource"].values()]),
-    #     "errors": sum([r["error-count"] for r in idx["resource"].values()]),
-    # }
 
     if dataset == "brownfield-land":
         da = BrownfieldDatasetAnalyser(brownfield_dataset_path)
@@ -219,14 +125,6 @@ def brownfield_land_dataset(d):
             dataset=d,
             organisation=o,
         )
-        render(
-            p + "/log.html",
-            dataset_organisation_log_template,
-            organisations,
-            tags,
-            dataset=d,
-            organisation=o,
-        )
 
     # dataset indexes
     render(dataset + "/index.html", dataset_template, organisations, tags, dataset=d)
@@ -237,27 +135,6 @@ def brownfield_land_dataset(d):
         tags,
         dataset=d,
     )
-    # render(
-    #     dataset + "/organisation/log.html",
-    #     dataset_organisations_status_template,
-    #     organisations,
-    #     tags,
-    #     dataset=d,
-    # )
-    # render(
-    #     dataset + "/resource/index.html",
-    #     dataset_resources_template,
-    #     organisations,
-    #     tags,
-    #     dataset=d,
-    # )
-    # render(
-    #     dataset + "/link/index.html",
-    #     dataset_links_template,
-    #     organisations,
-    #     tags,
-    #     dataset=d,
-    # )
 
 
 datasets = OrderedDict()
