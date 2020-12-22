@@ -36,6 +36,8 @@ jobs:
         git checkout master
     - name: Install dependencies
       run: make init
+    - name: Collect resource.csv
+      run: make collect
     - name: Run make
       run: make
     - name: Generate brownfield land map
