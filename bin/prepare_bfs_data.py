@@ -8,10 +8,12 @@ sys.path.append(".")
 
 from analyse_dataset import BrownfieldDatasetAnalyser
 from organisation import fetch_organisations
-from bin.points_to_features import convert_json_to_geojson
+from points_to_features import convert_json_to_geojson
 
 
-da = BrownfieldDatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
+da = BrownfieldDatasetAnalyser(
+    "./brownfield-land-collection/dataset/brownfield-land.csv"
+)
 
 
 def process_org(org):
@@ -52,4 +54,3 @@ for o in orgs_with_bfs:
         f"docs/brownfield-land/organisation/{curie_url}/sites.geojson", "w"
     ) as file:
         file.write(json.dumps(gjson))
-
