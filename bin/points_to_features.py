@@ -7,6 +7,7 @@ import json
 sys.path.append(".")
 
 from utils import get
+from digital_land_frontend.render import wkt_to_json_geometry
 
 sample_file = "docs/brownfield-land/organisation/local-authority-eng/HAG/sites.json"
 
@@ -15,23 +16,18 @@ def create_feature_collection(features):
     return {"type": "FeatureCollection", "features": features}
 
 
-def create_feature_from_point(lng, lat, _properties):
-    return {
-        "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [lng, lat]},
-        "properties": _properties,
-    }
+def create_feature(row):
+    feature = {"type": "Feature"}
+    feature["properties"] = row
+    if row["point"] is not None:
+        feature["geometry"] = wkt_to_json_geometry(row["point"])
+    return feature
 
 
 def convert_json_to_geojson(data):
     features = []
     for row in data:
-        if "point" in row.keys():
-            features.append(row["point"])
-        else:
-            features.append(
-                create_feature_from_point(row["longitude"], row["latitude"], row)
-            )
+        features.append(create_feature(row))
 
     return create_feature_collection(features)
 
