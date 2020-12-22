@@ -26,9 +26,12 @@ def create_feature_from_point(lng, lat, _properties):
 def convert_json_to_geojson(data):
     features = []
     for row in data:
-        features.append(
-            create_feature_from_point(row["longitude"], row["latitude"], row)
-        )
+        if "point" in row.keys():
+            features.append(row["point"])
+        else:
+            features.append(
+                create_feature_from_point(row["longitude"], row["latitude"], row)
+            )
 
     return create_feature_collection(features)
 
