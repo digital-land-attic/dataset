@@ -4,6 +4,7 @@ from utils import get, read_csv
 from data_analyser import DataAnalyser
 
 brownfield_dataset_path = "./brownfield-land-collection/dataset/brownfield-land.csv"
+brownfield_deduped_dataset_path = "./brownfield-land-collection/dataset/deduped.csv"
 
 # brownfield harmonised resources
 def url_for_harmonised(resource_hash):

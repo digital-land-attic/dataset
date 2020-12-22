@@ -11,9 +11,7 @@ from organisation import fetch_organisations
 from points_to_features import convert_json_to_geojson
 
 
-da = BrownfieldDatasetAnalyser(
-    "./brownfield-land-collection/dataset/brownfield-land.csv"
-)
+da = BrownfieldDatasetAnalyser("./brownfield-land-collection/dataset/deduped.csv")
 
 
 def process_org(org):
