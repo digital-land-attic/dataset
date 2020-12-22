@@ -9,7 +9,6 @@ chardet==3.0.4
 click==7.1.2
 decorator==4.4.2
 -e git+https://github.com/digital-land/frontend.git#egg=digital_land_frontend
--e git+https://github.com/digital-land/govuk-jinja-components.git#egg=govuk_jinja_components
 idna==2.9
 Jinja2==2.11.2
 lockfile==0.12.2
