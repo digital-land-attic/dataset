@@ -1,3 +1,4 @@
+import csv
 import json
 import pandas as pd
 import requests
@@ -6,6 +7,7 @@ from cachecontrol import CacheControl
 from cachecontrol.caches.file_cache import FileCache
 
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
+
 
 def get(url):
     r = session.get(url)
@@ -24,11 +26,23 @@ def get_csv_as_json(path_to_csv, cache=False):
 
 def make_index(data, key):
     idx = {}
-    idx['with_key_missing'] = []
+    idx["with_key_missing"] = []
     for row in data:
         if key in row:
             idx.setdefault(row[key], [])
             idx[row[key]].append(row)
         else:
-            idx['with_key_missing'].append(row)
+            idx["with_key_missing"].append(row)
     return idx
+
+
+def read_csv(filename, url=False):
+    d = []
+    if url:
+        rows = get(filename).splitlines()
+        d = [line for line in csv.DictReader(rows)]
+    else:
+        with open(filename, "r") as data:
+            d = [line for line in csv.DictReader(data)]
+
+    return d

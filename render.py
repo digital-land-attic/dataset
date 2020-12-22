@@ -16,7 +16,12 @@ from cachecontrol.caches.file_cache import FileCache
 from collections import OrderedDict
 
 from analyse_dataset import BrownfieldDatasetAnalyser
-from latest_resource import get_latest_brownfield_resource, get_brownfield_resource_list
+from brownfield import (
+    brownfield_dataset_path,
+    resources_by_org,
+    get_latest_brownfield_resource,
+    get_brownfield_resource_list,
+)
 
 from utils import get_csv_as_json
 from organisation import get_boundaries
@@ -24,7 +29,7 @@ from organisation import get_boundaries
 session = CacheControl(requests.session(), cache=FileCache(".cache"))
 
 dataset_csv = "https://raw.githubusercontent.com/digital-land/dataset-collection/master/dataset/dataset.csv"
-#dataset_csv = "data/test.csv"
+# dataset_csv = "data/test.csv"
 organisation_csv = "https://raw.githubusercontent.com/digital-land/organisation-dataset/master/collection/organisation.csv"
 organisation_tag_csv = "https://raw.githubusercontent.com/digital-land/organisation-dataset/master/data/tag.csv"
 docs = "docs/"
@@ -32,7 +37,7 @@ docs = "docs/"
 
 # fetch from a local file
 def get_from_file(path):
-    file = open(path ,mode='r')
+    file = open(path, mode="r")
     all_of_it = file.read()
     file.close()
     return all_of_it
@@ -45,20 +50,32 @@ def get(url):
     return r.text
 
 
-def render(path, template, organisations, tags, dataset=None, organisation=None, **kwargs):
+def render(
+    path, template, organisations, tags, dataset=None, organisation=None, **kwargs
+):
     path = os.path.join(docs, path)
     directory = os.path.dirname(path)
     if not os.path.exists(directory):
         os.makedirs(directory)
 
     with open(path, "w") as f:
-        f.write(template.render(organisations=organisations, tags=tags, dataset=dataset, organisation=organisation, **kwargs))
+        f.write(
+            template.render(
+                organisations=organisations,
+                tags=tags,
+                dataset=dataset,
+                organisation=organisation,
+                **kwargs,
+            )
+        )
 
 
 datasets_template = env.get_template("datasets.html")
 dataset_template = env.get_template("dataset.html")
 dataset_organisations_template = env.get_template("dataset-organisations.html")
-dataset_organisations_status_template = env.get_template("dataset-organisations-statuses.html")
+dataset_organisations_status_template = env.get_template(
+    "dataset-organisations-statuses.html"
+)
 dataset_organisation_template = env.get_template("dataset-organisation.html")
 dataset_organisation_log_template = env.get_template("dataset-organisation-log.html")
 dataset_resources_template = env.get_template("dataset-resources.html")
@@ -83,88 +100,109 @@ for o in csv.DictReader(get(organisation_csv).splitlines()):
 
 def brownfield_land_dataset(d):
     index_url = os.environ.get(dataset.replace("-", "_") + "_index", d["resource-url"])
-    idx = json.loads(get(index_url))
+    bf_idx = resources_by_org()
 
-    d["index"] = idx["key"]
-    d["resource"] = idx["resource"]
-    d["organisation"] = {}
-    d["data-govuk"] = {}
+    # d["index"] = idx["key"]
+    # d["resource"] = idx["resource"]
+    d["organisation"] = bf_idx
+    # d["data-govuk"] = {}
 
     # expand index
-    for key in d["index"]:
-        dates = list(d["index"][key]["log"].keys())
+    # for key in d["index"]:
+    #     dates = list(d["index"][key]["log"].keys())
 
-        # index by resource
-        for date in dates: 
-            if "resource" in d["index"][key]["log"][date]:
-                resource = d["index"][key]["log"][date]["resource"]
-                d["resource"][resource].setdefault("key", {})
-                d["resource"][resource]["key"].setdefault(key, [])
-                d["resource"][resource]["key"][key].append(date)
+    #     # index by resource
+    #     for date in dates:
+    #         if "resource" in d["index"][key]["log"][date]:
+    #             resource = d["index"][key]["log"][date]["resource"]
+    #             d["resource"][resource].setdefault("key", {})
+    #             d["resource"][resource]["key"].setdefault(key, [])
+    #             d["resource"][resource]["key"][key].append(date)
 
-        if dates:
-            date = list(d["index"][key]["log"].keys())[-1]
-            d["index"][key]["date"] = date
-            d["index"][key]["status"] = d["index"][key]["log"][date].get(
-                "status", d["index"][key]["log"][date].get("exception", "●")
-            )
-            d["index"][key]["colour"] = (
-                "green" if d["index"][key]["status"] in ["200", "●"] else "red"
-            )
+    #     if dates:
+    #         date = list(d["index"][key]["log"].keys())[-1]
+    #         d["index"][key]["date"] = date
+    #         d["index"][key]["status"] = d["index"][key]["log"][date].get(
+    #             "status", d["index"][key]["log"][date].get("exception", "●")
+    #         )
+    #         d["index"][key]["colour"] = (
+    #             "green" if d["index"][key]["status"] in ["200", "●"] else "red"
+    #         )
 
-        for organisation in d["index"][key]["organisation"]:
-            d["organisation"].setdefault(organisation, {"key": []})
-            d["organisation"][organisation]["key"].append(key)
+    #     for organisation in d["index"][key]["organisation"]:
+    #         d["organisation"].setdefault(organisation, {"key": []})
+    #         d["organisation"][organisation]["key"].append(key)
+
+    # for organisation in d["organisation"]:
+    #     d["organisation"][organisation]["key"] = sorted(
+    #         d["organisation"][organisation]["key"],
+    #         key=lambda key: d["index"][key]["log"][d["index"][key]["date"]]["datetime"]
+    #         if "date" in d["index"][key]
+    #         else "",
+    #     )
+
+    # for organisation in d["organisation"]:
+    #     for key in d["organisation"][organisation]["key"]:
+    #         if "documentation-url" in d["index"][key]["organisation"][organisation]:
+    #             d["organisation"][organisation]["landing-page"] = d["index"][key][
+    #                 "organisation"
+    #             ][organisation]["documentation-url"]
+    #         if "data-gov-uk" in d["index"][key]["organisation"][organisation]:
+    #             d["organisation"][organisation]["data-gov-uk"] = d["index"][key][
+    #                 "organisation"
+    #             ][organisation]["data-gov-uk"]
+    #     d["organisation"][organisation]["resource"] = get_brownfield_resource_list(
+    #         bf_idx, organisation
+    #     )
 
     for organisation in d["organisation"]:
-        d["organisation"][organisation]["key"] = sorted(
-            d["organisation"][organisation]["key"],
-            key=lambda key: d["index"][key]["log"][d["index"][key]["date"]]["datetime"]
-            if "date" in d["index"][key]
-            else "",
-        )
-
-    for organisation in d["organisation"]:
-        for key in d["organisation"][organisation]["key"]:
-            if "documentation-url" in d["index"][key]["organisation"][organisation]:
-                d["organisation"][organisation]["landing-page"] = d["index"][key]["organisation"][organisation]["documentation-url"]
-            if "data-gov-uk" in d["index"][key]["organisation"][organisation]:
-                d["organisation"][organisation]["data-gov-uk"] = d["index"][key]["organisation"][organisation]["data-gov-uk"]
-        d["organisation"][organisation]["resource"] = get_brownfield_resource_list(organisation)
         # check there are resource(s) associated with org
         if len(d["organisation"][organisation]["resource"]):
-            d["organisation"][organisation]["latest-resource"] = get_latest_brownfield_resource(d["organisation"][organisation]["resource"], data_preview=True)
+            d["organisation"][organisation][
+                "latest-resource"
+            ] = get_latest_brownfield_resource(
+                d["organisation"][organisation]["resource"], data_preview=True
+            )
 
+    # # colour resources
+    # for resource, r in d["resource"].items():
+    #     r["colour"] = "green" if r["valid"] else "red"
+    #     if r["suffix"] == ".htm":
+    #         r["suffix"] = ".html"
 
-    # colour resources
-    for resource, r in d["resource"].items():
-        r["colour"] = "green" if r["valid"] else "red"
-        if r["suffix"] == ".htm":
-            r["suffix"] = ".html"
-
-        # add resource organisations
-        r.setdefault("organisation", [])
-        for key in r["key"]:
-            for organisation in d["index"][key]["organisation"]:
-                    if organisation not in r["organisation"]:
-                        r["organisation"].append(organisation)
+    #     # add resource organisations
+    #     r.setdefault("organisation", [])
+    #     for key in r["key"]:
+    #         for organisation in d["index"][key]["organisation"]:
+    #             if organisation not in r["organisation"]:
+    #                 r["organisation"].append(organisation)
 
     # stats
-    d["stats"] = {
-        "organisations": len(d["organisation"]),
-        "resources": len(d["resource"]),
-        "urls": len(d["index"]),
-        "landing-pages": len([o for o in d["organisation"] if "landing-page" in d["organisation"][o]]),
-        "data-gov-uk": len([o for o in d["organisation"] if "data-gov-uk" in d["organisation"][o]]),
-        "valid": len([resource for resource in idx["resource"] if idx["resource"][resource]['valid']]),
-        "rows": sum([r['row-count'] for r in idx["resource"].values()]),
-        "errors": sum([r['error-count'] for r in idx["resource"].values()]),
-    }
-    
+    # d["stats"] = {
+    #     "organisations": len(d["organisation"]),
+    #     # "resources": len(d["resource"]),
+    #     # "urls": len(d["index"]),
+    #     "landing-pages": len(
+    #         [o for o in d["organisation"] if "landing-page" in d["organisation"][o]]
+    #     ),
+    #     "data-gov-uk": len(
+    #         [o for o in d["organisation"] if "data-gov-uk" in d["organisation"][o]]
+    #     ),
+    #     "valid": len(
+    #         [
+    #             resource
+    #             for resource in idx["resource"]
+    #             if idx["resource"][resource]["valid"]
+    #         ]
+    #     ),
+    #     "rows": sum([r["row-count"] for r in idx["resource"].values()]),
+    #     "errors": sum([r["error-count"] for r in idx["resource"].values()]),
+    # }
+
     if dataset == "brownfield-land":
-        da = BrownfieldDatasetAnalyser("./brownfield-land-collection/index/dataset.csv")
+        da = BrownfieldDatasetAnalyser(brownfield_dataset_path)
         d["summary"] = da.summary()
-        d['sample'] = da.sample(5, 2340)
+        d["sample"] = da.sample(5, 2340)
 
     # page per-organisation
     for organisation in d["organisation"]:
@@ -173,27 +211,64 @@ def brownfield_land_dataset(d):
         o["path"] = "/".join(o["path-segments"])
         p = dataset + "/organisation/" + o["path"]
 
-        render(p + "/index.html", dataset_organisation_template, organisations, tags, dataset=d, organisation=o)
-        render(p + "/log.html", dataset_organisation_log_template, organisations, tags, dataset=d, organisation=o)
+        render(
+            p + "/index.html",
+            dataset_organisation_template,
+            organisations,
+            tags,
+            dataset=d,
+            organisation=o,
+        )
+        render(
+            p + "/log.html",
+            dataset_organisation_log_template,
+            organisations,
+            tags,
+            dataset=d,
+            organisation=o,
+        )
 
     # dataset indexes
     render(dataset + "/index.html", dataset_template, organisations, tags, dataset=d)
-    render(dataset + "/organisation/index.html", dataset_organisations_template, organisations, tags, dataset=d)
-    render(dataset + "/organisation/log.html", dataset_organisations_status_template, organisations, tags, dataset=d)
-    render(dataset + "/resource/index.html", dataset_resources_template, organisations, tags, dataset=d)
-    render(dataset + "/link/index.html", dataset_links_template, organisations, tags, dataset=d)
-
+    render(
+        dataset + "/organisation/index.html",
+        dataset_organisations_template,
+        organisations,
+        tags,
+        dataset=d,
+    )
+    # render(
+    #     dataset + "/organisation/log.html",
+    #     dataset_organisations_status_template,
+    #     organisations,
+    #     tags,
+    #     dataset=d,
+    # )
+    # render(
+    #     dataset + "/resource/index.html",
+    #     dataset_resources_template,
+    #     organisations,
+    #     tags,
+    #     dataset=d,
+    # )
+    # render(
+    #     dataset + "/link/index.html",
+    #     dataset_links_template,
+    #     organisations,
+    #     tags,
+    #     dataset=d,
+    # )
 
 
 datasets = OrderedDict()
 for d in csv.DictReader(get(dataset_csv).splitlines()):
-#for d in csv.DictReader(get_from_file(dataset_csv).splitlines()):
-    
+    # for d in csv.DictReader(get_from_file(dataset_csv).splitlines()):
+
     dataset = d["dataset"]
     datasets[dataset] = {
         "name": d["name"],
         "url": d["resource-url"],
-        "documentation": d["documentation-url"]
+        "documentation": d["documentation-url"],
     }
 
     if dataset == "brownfield-land":
@@ -205,28 +280,41 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
         # might be slow to add all data for each dataset
         datasets[dataset]["data"] = [row for row in reader]
         # sort but put plans without name at the end
-        datasets[dataset]["data"].sort(key=lambda x: 'z' if x['name'] is "" else x['name'])
+        datasets[dataset]["data"].sort(
+            key=lambda x: "z" if x["name"] is "" else x["name"]
+        )
         if dataset == "local-plans":
             local_plan_template = env.get_template(f"dataset-templates/local-plan.html")
-            dev_plan_docs = get_csv_as_json("https://raw.githubusercontent.com/digital-land/alpha-data/master/local-plans/development-plan-document.csv")
-            
+            dev_plan_docs = get_csv_as_json(
+                "https://raw.githubusercontent.com/digital-land/alpha-data/master/local-plans/development-plan-document.csv"
+            )
+
             for plan in datasets[dataset]["data"]:
-                plan['document'] = [doc for doc in dev_plan_docs if doc['development-plan'] == plan['development-plan']]
-            
-            for d in datasets[dataset]['data']:
+                plan["document"] = [
+                    doc
+                    for doc in dev_plan_docs
+                    if doc["development-plan"] == plan["development-plan"]
+                ]
+
+            for d in datasets[dataset]["data"]:
                 print(f"render page for local plan: {d['development-plan']}")
-                plan_organisations = d['organisations'].split(';')
+                plan_organisations = d["organisations"].split(";")
                 render(
                     f"{dataset}/{d['development-plan']}/index.html",
                     local_plan_template,
                     organisations,
                     tags,
                     plan=d,
-                    boundaries=get_boundaries(organisations, plan_organisations)
+                    boundaries=get_boundaries(organisations, plan_organisations),
                 )
 
-        render(dataset + "/index.html", dataset_template, organisations, tags, dataset=datasets[dataset])
-
+        render(
+            dataset + "/index.html",
+            dataset_template,
+            organisations,
+            tags,
+            dataset=datasets[dataset],
+        )
 
 
 # datasets

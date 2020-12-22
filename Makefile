@@ -33,6 +33,11 @@ clobber clean:
 	rm -rf docs .cache
 
 
+collect::
+	mkdir -p data/brownfield
+	wget -O data/brownfield/resource.csv https://raw.githubusercontent.com/digital-land/brownfield-land-collection/main/collection/resource.csv
+
+
 map:
 	python3 bin/create_bfs_map.py
 
