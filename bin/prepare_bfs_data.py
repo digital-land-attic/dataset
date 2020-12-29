@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 import json
 
@@ -11,7 +12,7 @@ from organisation import fetch_organisations
 from points_to_features import convert_json_to_geojson
 
 
-da = BrownfieldDatasetAnalyser("./brownfield-land-collection/dataset/deduped.csv")
+brownfield_dataset = "./brownfield-land-collection/dataset/deduped.csv"
 
 
 def process_org(org):
@@ -34,21 +35,32 @@ def brownfield_map(orgs):
     return orgs_data
 
 
-organisations = fetch_organisations()
-orgs_with_bfs = da.organisations()
-# need to remove any pesky None organisation values
-orgs_with_bfs = [o for o in orgs_with_bfs if o is not None]
-d = brownfield_map(orgs_with_bfs)
-
-with open("data/organisation_boundary_data.json", "w") as file:
-    file.write(json.dumps(d))
-
-
-for o in orgs_with_bfs:
-    curie_url = "/".join(organisations[o]["path-segments"])
-    sites = da.get_data_for_organisation(o)
+def create_site_geojson(organisation):
+    curie_url = "/".join(organisation["path-segments"])
+    sites = da.get_data_for_organisation(organisation["organisation"])
     gjson = convert_json_to_geojson(sites)
     with open(
         f"docs/brownfield-land/organisation/{curie_url}/sites.geojson", "w"
     ) as file:
         file.write(json.dumps(gjson))
+
+
+if os.path.exists(brownfield_dataset):
+    da = BrownfieldDatasetAnalyser(brownfield_dataset)
+
+    organisations = fetch_organisations()
+    orgs_with_bfs = da.organisations()
+    # need to remove any pesky None organisation values
+    orgs_with_bfs = [o for o in orgs_with_bfs if o is not None]
+    d = brownfield_map(orgs_with_bfs)
+
+    # save summary data needed by map
+    with open("data/organisation_boundary_data.json", "w") as file:
+        file.write(json.dumps(d))
+
+    # create geojson of sites for each organisation
+    for o in orgs_with_bfs:
+        create_site_geojson(organisations[o])
+
+else:
+    print(f"Error: {brownfield_dataset} does not exist! Unable to prepare data.")
