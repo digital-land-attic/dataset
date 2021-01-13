@@ -12,7 +12,7 @@ from organisation import fetch_organisations
 from points_to_features import convert_json_to_geojson
 
 
-brownfield_dataset = "./brownfield-land-collection/dataset/deduped.csv"
+brownfield_dataset = "./brownfield-land-collection/dataset/brownfield-land.csv"
 
 
 def process_org(org):
