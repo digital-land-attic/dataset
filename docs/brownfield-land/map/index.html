@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>BFS Map | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
+    
+
+    
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	<link href="https://digital-land.github.io/stylesheets/vendor/govuk-accessible-autocomplete.min.css" rel="stylesheet" media="all" />
+	<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
+    
+    
+    <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header dl-header--full" data-module="govuk-header">
+  <div class="govuk-header__container dl-full-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+<div class="dl-full-width-container ">
+    
+    
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div>
+    
+    
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-full">
+  	<h1 class="govuk-heading-xl">Map of brownfield land</h1>
+    </div>
+</div>
+
+<p class="govuk-body-l">National view of the brownfield land  collected and collated by Digital Land.</p>
+
+
+
+
+<div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-bottom-0"
+        id="aMap"
+        data-module="boundary-map"
+        style="height: 700px;"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+    <div class="dl-map__loader">
+        <div class="dl-map__loader-msg">
+            <div class="dl-map__spinning-loader"></div>
+            <span class="govuk-!-font-size-24 govuk-!-margin-top-6">Loading brownfield land data</span>
+        </div>
+    </div>
+    
+    <div class="dl-map__side-panel js-hidden">
+        
+<div class="dl-map__side-panel__section">
+<h3 class="govuk-heading-s govuk-!-margin-bottom-0">Displayed on map</h3>
+</div>
+<div class="dl-map__side-panel__section dl-map__side-panel__section--title js-hidden" data-module="dl-map-items">
+  <p class="govuk-body govuk-!-margin-bottom-1"><span class="organisation-count"></span> organisation boundaries</p>
+  <p class="govuk-body govuk-!-margin-top-3 govuk-!-margin-bottom-1 js-hidden">Active: <span class="active-organisation dl-map__highlight--yellow"></span></p>
+</div>
+<div class="dl-map__side-panel__section dl-map__side-panel__section--blue">
+  
+<div class="govuk-form-group govuk-!-margin-bottom-0">
+  <label class="govuk-label" for="dl-organisation-autocomplete">
+    Search for an organisation
+  </label>
+  <span id="dl-organisation-autocomplete-error" class="govuk-error-message" role="alert">
+    <span class="govuk-visually-hidden">Error:</span> Value entered not recognised, please try again
+  </span>
+  <select class="govuk-select" id="dl-organisation-autocomplete" name="dl-organisation-autocomplete">
+    <option value=""></option>
+    <option value="development-corporation:Q20648596">Old Oak and Park Royal Development Corporation</option>
+    <option value="development-corporation:Q4916714">Birmingham Heartlands Development Corporation</option>
+    <option value="development-corporation:Q6670544">London Legacy Development Corporation</option>
+    <option value="development-corporation:Q6670837">London Thames Gateway Development Corporation</option>
+    <option value="development-corporation:Q72456968">South Tees Development Corporation</option>
+    <option value="development-corporation:Q72463795">Ebbsfleet Development Corporation</option>
+    <option value="development-corporation:Q7799380">Thurrock Thames Gateway Development Corporation</option>
+    <option value="development-corporation:Q7860503">Tyne and Wear Development Corporation</option>
+    <option value="development-corporation:Q7986087">West Northamptonshire Development Corporation</option>
+    <option value="government-organisation:D303">Office for National Statistics</option>
+    <option value="government-organisation:D38">Ordnance Survey</option>
+    <option value="government-organisation:D4">Ministry of Housing, Communities and Local Government</option>
+    <option value="government-organisation:D69">HM Land Registry</option>
+    <option value="government-organisation:EA39">Planning Inspectorate</option>
+    <option value="government-organisation:EA87">Valuation Office Agency</option>
+    <option value="government-organisation:PB1164">Historic England</option>
+    <option value="government-organisation:PB1204">Valuation Tribunal for England</option>
+    <option value="government-organisation:PB1218">Regulator of Social Housing</option>
+    <option value="government-organisation:PB1232">Homes England</option>
+    <option value="government-organisation:PB160">Building Regulations Advisory Committee</option>
+    <option value="government-organisation:PB207">Health and Safety Executive</option>
+    <option value="government-organisation:PB372">Housing Ombudsman</option>
+    <option value="government-organisation:PB373">Leasehold Advisory Service</option>
+    <option value="government-organisation:PB375">Valuation Tribunal Service</option>
+    <option value="government-organisation:PC163">Architects Registration Board</option>
+    <option value="local-authority-eng:ADU">Adur District Council</option>
+    <option value="local-authority-eng:ALL">Allerdale Borough Council</option>
+    <option value="local-authority-eng:AMB">Amber Valley Borough Council</option>
+    <option value="local-authority-eng:ARU">Arun District Council</option>
+    <option value="local-authority-eng:ASF">Ashford Borough Council</option>
+    <option value="local-authority-eng:ASH">Ashfield District Council</option>
+    <option value="local-authority-eng:AYL">Aylesbury Vale District Council</option>
+    <option value="local-authority-eng:BAB">Babergh District Council</option>
+    <option value="local-authority-eng:BAE">Bassetlaw District Council</option>
+    <option value="local-authority-eng:BAI">Basildon Borough Council</option>
+    <option value="local-authority-eng:BAN">Basingstoke and Deane Borough Council</option>
+    <option value="local-authority-eng:BAR">Barrow-in-Furness Borough Council</option>
+    <option value="local-authority-eng:BAS">Bath and North East Somerset Council</option>
+    <option value="local-authority-eng:BBD">Blackburn with Darwen Borough Council</option>
+    <option value="local-authority-eng:BDF">Bedford Borough Council</option>
+    <option value="local-authority-eng:BDG">London Borough of Barking and Dagenham</option>
+    <option value="local-authority-eng:BEN">London Borough of Brent</option>
+    <option value="local-authority-eng:BEX">London Borough of Bexley</option>
+    <option value="local-authority-eng:BIR">Birmingham City Council</option>
+    <option value="local-authority-eng:BKM">Buckinghamshire County Council</option>
+    <option value="local-authority-eng:BLA">Blaby District Council</option>
+    <option value="local-authority-eng:BMH">Bournemouth Borough Council</option>
+    <option value="local-authority-eng:BNE">London Borough of Barnet</option>
+    <option value="local-authority-eng:BNH">Brighton and Hove City Council</option>
+    <option value="local-authority-eng:BNS">Barnsley Metropolitan Borough Council</option>
+    <option value="local-authority-eng:BOL">Bolton Metropolitan Borough Council</option>
+    <option value="local-authority-eng:BOS">Bolsover District Council</option>
+    <option value="local-authority-eng:BOT">Boston Borough Council</option>
+    <option value="local-authority-eng:BPC">Bournemouth, Christchurch and Poole Council</option>
+    <option value="local-authority-eng:BPL">Blackpool Borough Council</option>
+    <option value="local-authority-eng:BRA">Braintree District Council</option>
+    <option value="local-authority-eng:BRC">Bracknell Forest Council</option>
+    <option value="local-authority-eng:BRD">City of Bradford Metropolitan District Council</option>
+    <option value="local-authority-eng:BRE">Breckland District Council</option>
+    <option value="local-authority-eng:BRM">Bromsgrove District Council</option>
+    <option value="local-authority-eng:BRO">Broadland District Council</option>
+    <option value="local-authority-eng:BRT">Broxtowe Borough Council</option>
+    <option value="local-authority-eng:BRW">Brentwood Borough Council</option>
+    <option value="local-authority-eng:BRX">Broxbourne Borough Council</option>
+    <option value="local-authority-eng:BRY">London Borough of Bromley</option>
+    <option value="local-authority-eng:BST">Bristol City Council</option>
+    <option value="local-authority-eng:BUC">Buckinghamshire Council</option>
+    <option value="local-authority-eng:BUN">Burnley Borough Council</option>
+    <option value="local-authority-eng:BUR">Bury Metropolitan Borough Council</option>
+    <option value="local-authority-eng:CAB">Cambridge City Council</option>
+    <option value="local-authority-eng:CAM">Cambridgeshire County Council</option>
+    <option value="local-authority-eng:CAN">Cannock Chase District Council</option>
+    <option value="local-authority-eng:CAR">Carlisle City Council</option>
+    <option value="local-authority-eng:CAS">Castle Point Borough Council</option>
+    <option value="local-authority-eng:CAT">Canterbury City Council</option>
+    <option value="local-authority-eng:CBF">Central Bedfordshire Council</option>
+    <option value="local-authority-eng:CHA">Charnwood Borough Council</option>
+    <option value="local-authority-eng:CHC">Christchurch Borough Council</option>
+    <option value="local-authority-eng:CHE">Cheshire East Council</option>
+    <option value="local-authority-eng:CHI">Chichester District Council</option>
+    <option value="local-authority-eng:CHL">Chelmsford City Council</option>
+    <option value="local-authority-eng:CHN">Chiltern District Council</option>
+    <option value="local-authority-eng:CHO">Chorley Borough Council</option>
+    <option value="local-authority-eng:CHR">Cherwell District Council</option>
+    <option value="local-authority-eng:CHS">Chesterfield Borough Council</option>
+    <option value="local-authority-eng:CHT">Cheltenham Borough Council</option>
+    <option value="local-authority-eng:CHW">Cheshire West and Chester Council</option>
+    <option value="local-authority-eng:CLD">Calderdale Metropolitan Borough Council</option>
+    <option value="local-authority-eng:CMA">Cumbria County Council</option>
+    <option value="local-authority-eng:CMD">London Borough of Camden</option>
+    <option value="local-authority-eng:COL">Colchester Borough Council</option>
+    <option value="local-authority-eng:CON">Cornwall Council</option>
+    <option value="local-authority-eng:COP">Copeland Borough Council</option>
+    <option value="local-authority-eng:COR">Corby Borough Council</option>
+    <option value="local-authority-eng:COT">Cotswold District Council</option>
+    <option value="local-authority-eng:COV">Coventry City Council</option>
+    <option value="local-authority-eng:CPCA">Cambridgeshire and Peterborough Combined Authority</option>
+    <option value="local-authority-eng:CRA">Craven District Council</option>
+    <option value="local-authority-eng:CRW">Crawley Borough Council</option>
+    <option value="local-authority-eng:CRY">London Borough of Croydon</option>
+    <option value="local-authority-eng:DAC">Dacorum Borough Council</option>
+    <option value="local-authority-eng:DAL">Darlington Borough Council</option>
+    <option value="local-authority-eng:DAR">Dartford Borough Council</option>
+    <option value="local-authority-eng:DAV">Daventry District Council</option>
+    <option value="local-authority-eng:DBY">Derbyshire County Council</option>
+    <option value="local-authority-eng:DEB">Derbyshire Dales District Council</option>
+    <option value="local-authority-eng:DER">Derby City Council</option>
+    <option value="local-authority-eng:DEV">Devon County Council</option>
+    <option value="local-authority-eng:DNC">Doncaster Metropolitan Borough Council</option>
+    <option value="local-authority-eng:DOR">Dorset County Council</option>
+    <option value="local-authority-eng:DOV">Dover District Council</option>
+    <option value="local-authority-eng:DST">Dorset Council</option>
+    <option value="local-authority-eng:DUD">Dudley Metropolitan Borough Council</option>
+    <option value="local-authority-eng:DUR">Durham County Council</option>
+    <option value="local-authority-eng:EAL">London Borough of Ealing</option>
+    <option value="local-authority-eng:EAS">Eastbourne Borough Council</option>
+    <option value="local-authority-eng:EAT">Eastleigh Borough Council</option>
+    <option value="local-authority-eng:ECA">East Cambridgeshire District Council</option>
+    <option value="local-authority-eng:EDE">East Devon District Council</option>
+    <option value="local-authority-eng:EDN">Eden District Council</option>
+    <option value="local-authority-eng:EDO">East Dorset District Council</option>
+    <option value="local-authority-eng:EHA">East Hampshire District Council</option>
+    <option value="local-authority-eng:EHE">East Hertfordshire District Council</option>
+    <option value="local-authority-eng:ELI">East Lindsey District Council</option>
+    <option value="local-authority-eng:ELM">Elmbridge Borough Council</option>
+    <option value="local-authority-eng:ENF">London Borough of Enfield</option>
+    <option value="local-authority-eng:ENO">East Northamptonshire Council</option>
+    <option value="local-authority-eng:EPP">Epping Forest District Council</option>
+    <option value="local-authority-eng:EPS">Epsom and Ewell Borough Council</option>
+    <option value="local-authority-eng:ERE">Erewash Borough Council</option>
+    <option value="local-authority-eng:ERY">East Riding of Yorkshire Council</option>
+    <option value="local-authority-eng:ESK">East Suffolk Council</option>
+    <option value="local-authority-eng:ESS">Essex County Council</option>
+    <option value="local-authority-eng:EST">East Staffordshire Borough Council</option>
+    <option value="local-authority-eng:ESX">East Sussex County Council</option>
+    <option value="local-authority-eng:EXE">Exeter City Council</option>
+    <option value="local-authority-eng:FAR">Fareham Borough Council</option>
+    <option value="local-authority-eng:FEN">Fenland District Council</option>
+    <option value="local-authority-eng:FOE">Forest of Dean District Council</option>
+    <option value="local-authority-eng:FOR">Forest Heath District Council</option>
+    <option value="local-authority-eng:FYL">Fylde Borough Council</option>
+    <option value="local-authority-eng:GAT">Gateshead Metropolitan Borough Council</option>
+    <option value="local-authority-eng:GED">Gedling Borough Council</option>
+    <option value="local-authority-eng:GLA">Greater London Authority</option>
+    <option value="local-authority-eng:GLO">Gloucester City Council</option>
+    <option value="local-authority-eng:GLS">Gloucestershire County Council</option>
+    <option value="local-authority-eng:GMCA">Greater Manchester Combined Authority</option>
+    <option value="local-authority-eng:GOS">Gosport Borough Council</option>
+    <option value="local-authority-eng:GRA">Gravesham Borough Council</option>
+    <option value="local-authority-eng:GRE">Royal Borough of Greenwich</option>
+    <option value="local-authority-eng:GRT">Guildford Borough Council</option>
+    <option value="local-authority-eng:GRY">Great Yarmouth Borough Council</option>
+    <option value="local-authority-eng:HAA">Havant Borough Council</option>
+    <option value="local-authority-eng:HAE">Hambleton District Council</option>
+    <option value="local-authority-eng:HAG">Harrogate Borough Council</option>
+    <option value="local-authority-eng:HAL">Halton Borough Council</option>
+    <option value="local-authority-eng:HAM">Hampshire County Council</option>
+    <option value="local-authority-eng:HAO">Harborough District Council</option>
+    <option value="local-authority-eng:HAR">Harlow District Council</option>
+    <option value="local-authority-eng:HAS">Hastings Borough Council</option>
+    <option value="local-authority-eng:HAT">Hart District Council</option>
+    <option value="local-authority-eng:HAV">London Borough of Havering</option>
+    <option value="local-authority-eng:HCK">London Borough of Hackney</option>
+    <option value="local-authority-eng:HEF">Herefordshire Council</option>
+    <option value="local-authority-eng:HER">Hertsmere Borough Council</option>
+    <option value="local-authority-eng:HIG">High Peak Borough Council</option>
+    <option value="local-authority-eng:HIL">London Borough of Hillingdon</option>
+    <option value="local-authority-eng:HIN">Hinckley and Bosworth Borough Council</option>
+    <option value="local-authority-eng:HMF">London Borough of Hammersmith & Fulham</option>
+    <option value="local-authority-eng:HNS">London Borough of Hounslow</option>
+    <option value="local-authority-eng:HOR">Horsham District Council</option>
+    <option value="local-authority-eng:HPL">Hartlepool Borough Council</option>
+    <option value="local-authority-eng:HRT">Hertfordshire County Council</option>
+    <option value="local-authority-eng:HRW">London Borough of Harrow</option>
+    <option value="local-authority-eng:HRY">London Borough of Haringey</option>
+    <option value="local-authority-eng:HUN">Huntingdonshire District Council</option>
+    <option value="local-authority-eng:HYN">Hyndburn Borough Council</option>
+    <option value="local-authority-eng:IOS">Council of the Isles of Scilly</option>
+    <option value="local-authority-eng:IOW">Isle of Wight Council</option>
+    <option value="local-authority-eng:IPS">Ipswich Borough Council</option>
+    <option value="local-authority-eng:ISL">London Borough of Islington</option>
+    <option value="local-authority-eng:KEC">Royal Borough of Kensington and Chelsea</option>
+    <option value="local-authority-eng:KEN">Kent County Council</option>
+    <option value="local-authority-eng:KET">Kettering Borough Council</option>
+    <option value="local-authority-eng:KHL">Hull City Council</option>
+    <option value="local-authority-eng:KIN">Borough Council of King's Lynn and West Norfolk</option>
+    <option value="local-authority-eng:KIR">Kirklees Council</option>
+    <option value="local-authority-eng:KTT">Royal Borough of Kingston upon Thames</option>
+    <option value="local-authority-eng:KWL">Knowsley Metropolitan Borough Council</option>
+    <option value="local-authority-eng:LAC">Lancaster City Council</option>
+    <option value="local-authority-eng:LAN">Lancashire County Council</option>
+    <option value="local-authority-eng:LBH">London Borough of Lambeth</option>
+    <option value="local-authority-eng:LCE">Leicester City Council</option>
+    <option value="local-authority-eng:LCR">Liverpool City Region</option>
+    <option value="local-authority-eng:LDS">Leeds City Council</option>
+    <option value="local-authority-eng:LEC">Leicestershire County Council</option>
+    <option value="local-authority-eng:LEE">Lewes District Council</option>
+    <option value="local-authority-eng:LEW">London Borough of Lewisham</option>
+    <option value="local-authority-eng:LIC">City of Lincoln Council</option>
+    <option value="local-authority-eng:LIF">Lichfield District Council</option>
+    <option value="local-authority-eng:LIN">Lincolnshire County Council</option>
+    <option value="local-authority-eng:LIV">Liverpool City Council</option>
+    <option value="local-authority-eng:LND">City of London Corporation</option>
+    <option value="local-authority-eng:LUT">Luton Borough Council</option>
+    <option value="local-authority-eng:MAI">Maidstone Borough Council</option>
+    <option value="local-authority-eng:MAL">Maldon District Council</option>
+    <option value="local-authority-eng:MAN">Manchester City Council</option>
+    <option value="local-authority-eng:MAS">Mansfield District Council</option>
+    <option value="local-authority-eng:MAV">Malvern Hills District Council</option>
+    <option value="local-authority-eng:MDB">Middlesbrough Borough Council</option>
+    <option value="local-authority-eng:MDE">Mid Devon District Council</option>
+    <option value="local-authority-eng:MDW">Medway Council</option>
+    <option value="local-authority-eng:MEL">Melton Borough Council</option>
+    <option value="local-authority-eng:MEN">Mendip District Council</option>
+    <option value="local-authority-eng:MIK">Milton Keynes Council</option>
+    <option value="local-authority-eng:MOL">Mole Valley District Council</option>
+    <option value="local-authority-eng:MRT">London Borough of Merton</option>
+    <option value="local-authority-eng:MSS">Mid Sussex District Council</option>
+    <option value="local-authority-eng:MSU">Mid Suffolk District Council</option>
+    <option value="local-authority-eng:NBL">Northumberland County Council</option>
+    <option value="local-authority-eng:NDE">North Devon District Council</option>
+    <option value="local-authority-eng:NDO">North Dorset District Council</option>
+    <option value="local-authority-eng:NEA">Newark and Sherwood District Council</option>
+    <option value="local-authority-eng:NEC">Newcastle-under-Lyme Borough Council</option>
+    <option value="local-authority-eng:NECA">North East Combined Authority</option>
+    <option value="local-authority-eng:NED">North East Derbyshire District Council</option>
+    <option value="local-authority-eng:NEL">North East Lincolnshire Council</option>
+    <option value="local-authority-eng:NET">Newcastle City Council</option>
+    <option value="local-authority-eng:NEW">New Forest District Council</option>
+    <option value="local-authority-eng:NFK">Norfolk County Council</option>
+    <option value="local-authority-eng:NGM">Nottingham City Council</option>
+    <option value="local-authority-eng:NHE">North Hertfordshire District Council</option>
+    <option value="local-authority-eng:NKE">North Kesteven District Council</option>
+    <option value="local-authority-eng:NLN">North Lincolnshire Council</option>
+    <option value="local-authority-eng:NNO">North Norfolk District Council</option>
+    <option value="local-authority-eng:NOR">Northampton Borough Council</option>
+    <option value="local-authority-eng:NOW">Norwich City Council</option>
+    <option value="local-authority-eng:NSM">North Somerset  Council</option>
+    <option value="local-authority-eng:NTCA">North of Tyne Combined Authority</option>
+    <option value="local-authority-eng:NTH">Northamptonshire County Council</option>
+    <option value="local-authority-eng:NTT">Nottinghamshire County Council</option>
+    <option value="local-authority-eng:NTY">North Tyneside Council</option>
+    <option value="local-authority-eng:NUN">Nuneaton and Bedworth Borough Council</option>
+    <option value="local-authority-eng:NWA">North Warwickshire Borough Council</option>
+    <option value="local-authority-eng:NWL">North West Leicestershire District Council</option>
+    <option value="local-authority-eng:NWM">London Borough of Newham</option>
+    <option value="local-authority-eng:NYK">North Yorkshire County Council</option>
+    <option value="local-authority-eng:OAD">Oadby and Wigston Borough Council</option>
+    <option value="local-authority-eng:OLD">Oldham Metropolitan Borough Council</option>
+    <option value="local-authority-eng:OXF">Oxfordshire County Council</option>
+    <option value="local-authority-eng:OXO">Oxford City Council</option>
+    <option value="local-authority-eng:PEN">Pendle Borough Council</option>
+    <option value="local-authority-eng:PLY">Plymouth City Council</option>
+    <option value="local-authority-eng:POL">Borough of Poole</option>
+    <option value="local-authority-eng:POR">Portsmouth City Council</option>
+    <option value="local-authority-eng:PRE">Preston City Council</option>
+    <option value="local-authority-eng:PTE">Peterborough City Council</option>
+    <option value="local-authority-eng:PUR">Purbeck District Council</option>
+    <option value="local-authority-eng:RCC">Redcar and Cleveland Borough Council</option>
+    <option value="local-authority-eng:RCH">Rochdale Metropolitan Borough Council</option>
+    <option value="local-authority-eng:RDB">London Borough of Redbridge</option>
+    <option value="local-authority-eng:RDG">Reading Borough Council</option>
+    <option value="local-authority-eng:RED">Redditch Borough Council</option>
+    <option value="local-authority-eng:REI">Reigate and Banstead Borough Council</option>
+    <option value="local-authority-eng:RIB">Ribble Valley Borough Council</option>
+    <option value="local-authority-eng:RIC">London Borough of Richmond upon Thames</option>
+    <option value="local-authority-eng:RIH">Richmondshire District Council</option>
+    <option value="local-authority-eng:ROC">Rochford District Council</option>
+    <option value="local-authority-eng:ROH">Rother District Council</option>
+    <option value="local-authority-eng:ROS">Rossendale Borough Council</option>
+    <option value="local-authority-eng:ROT">Rotherham Metropolitan Borough Council</option>
+    <option value="local-authority-eng:RUG">Rugby Borough Council</option>
+    <option value="local-authority-eng:RUH">Rushmoor Borough Council</option>
+    <option value="local-authority-eng:RUN">Runnymede Borough Council</option>
+    <option value="local-authority-eng:RUS">Rushcliffe Borough Council</option>
+    <option value="local-authority-eng:RUT">Rutland County Council</option>
+    <option value="local-authority-eng:RYE">Ryedale District Council</option>
+    <option value="local-authority-eng:SAL">St Albans City and District Council</option>
+    <option value="local-authority-eng:SAW">Sandwell Metropolitan Borough Council</option>
+    <option value="local-authority-eng:SBU">South Bucks District Council</option>
+    <option value="local-authority-eng:SCA">South Cambridgeshire District Council</option>
+    <option value="local-authority-eng:SCE">Scarborough Borough Council</option>
+    <option value="local-authority-eng:SCR">Sheffield City Region</option>
+    <option value="local-authority-eng:SDE">South Derbyshire District Council</option>
+    <option value="local-authority-eng:SED">St Edmundsbury Borough Council</option>
+    <option value="local-authority-eng:SEG">Sedgemoor District Council</option>
+    <option value="local-authority-eng:SEL">Selby District Council</option>
+    <option value="local-authority-eng:SEV">Sevenoaks District Council</option>
+    <option value="local-authority-eng:SFK">Suffolk County Council</option>
+    <option value="local-authority-eng:SFT">Sefton Metropolitan Borough Council</option>
+    <option value="local-authority-eng:SGC">South Gloucestershire Council</option>
+    <option value="local-authority-eng:SHA">South Hams District Council</option>
+    <option value="local-authority-eng:SHE">Folkestone and Hythe Council</option>
+    <option value="local-authority-eng:SHF">Sheffield City Council</option>
+    <option value="local-authority-eng:SHN">St Helens Council</option>
+    <option value="local-authority-eng:SHO">South Holland District Council</option>
+    <option value="local-authority-eng:SHR">Shropshire Council</option>
+    <option value="local-authority-eng:SKE">South Kesteven District Council</option>
+    <option value="local-authority-eng:SKP">Stockport Metropolitan Borough Council</option>
+    <option value="local-authority-eng:SLA">South Lakeland District Council</option>
+    <option value="local-authority-eng:SLF">Salford City Council</option>
+    <option value="local-authority-eng:SLG">Slough Borough Council</option>
+    <option value="local-authority-eng:SND">Sunderland City Council</option>
+    <option value="local-authority-eng:SNO">South Norfolk District Council</option>
+    <option value="local-authority-eng:SNR">South Northamptonshire Council</option>
+    <option value="local-authority-eng:SOL">Solihull Metropolitan Borough Council</option>
+    <option value="local-authority-eng:SOM">Somerset County Council</option>
+    <option value="local-authority-eng:SOS">Southend-on-Sea Borough Council</option>
+    <option value="local-authority-eng:SOX">South Oxfordshire District Council</option>
+    <option value="local-authority-eng:SPE">Spelthorne Borough Council</option>
+    <option value="local-authority-eng:SRI">South Ribble Borough Council</option>
+    <option value="local-authority-eng:SRY">Surrey County Council</option>
+    <option value="local-authority-eng:SSO">South Somerset District Council</option>
+    <option value="local-authority-eng:SST">South Staffordshire Council</option>
+    <option value="local-authority-eng:STA">Stafford Borough Council</option>
+    <option value="local-authority-eng:STE">Stoke-on-Trent City Council</option>
+    <option value="local-authority-eng:STF">Staffordshire Moorlands District Council</option>
+    <option value="local-authority-eng:STH">Southampton City Council</option>
+    <option value="local-authority-eng:STN">London Borough of Sutton</option>
+    <option value="local-authority-eng:STO">Stroud District Council</option>
+    <option value="local-authority-eng:STR">Stratford-on-Avon District Council</option>
+    <option value="local-authority-eng:STS">Staffordshire County Council</option>
+    <option value="local-authority-eng:STT">Stockton-on-Tees Borough Council</option>
+    <option value="local-authority-eng:STV">Stevenage Borough Council</option>
+    <option value="local-authority-eng:STY">South Tyneside Council</option>
+    <option value="local-authority-eng:SUF">Suffolk Coastal District Council</option>
+    <option value="local-authority-eng:SUR">Surrey Heath Borough Council</option>
+    <option value="local-authority-eng:SWD">Swindon Borough Council</option>
+    <option value="local-authority-eng:SWK">London Borough of Southwark</option>
+    <option value="local-authority-eng:SWL">Swale Borough Council</option>
+    <option value="local-authority-eng:SWT">Somerset West and Taunton Council</option>
+    <option value="local-authority-eng:TAM">Tameside Metropolitan Borough Council</option>
+    <option value="local-authority-eng:TAN">Tandridge District Council</option>
+    <option value="local-authority-eng:TAU">Taunton Deane Borough Council</option>
+    <option value="local-authority-eng:TAW">Tamworth Borough Council</option>
+    <option value="local-authority-eng:TEI">Teignbridge District Council</option>
+    <option value="local-authority-eng:TEN">Tendring District Council</option>
+    <option value="local-authority-eng:TES">Test Valley Borough Council</option>
+    <option value="local-authority-eng:TEW">Tewkesbury Borough Council</option>
+    <option value="local-authority-eng:TFW">Telford & Wrekin Council</option>
+    <option value="local-authority-eng:THA">Thanet District Council</option>
+    <option value="local-authority-eng:THE">Three Rivers District Council</option>
+    <option value="local-authority-eng:THR">Thurrock Council</option>
+    <option value="local-authority-eng:TOB">Torbay Council</option>
+    <option value="local-authority-eng:TON">Tonbridge and Malling Borough Council</option>
+    <option value="local-authority-eng:TOR">Torridge District Council</option>
+    <option value="local-authority-eng:TRF">Trafford Metropolitan Borough Council</option>
+    <option value="local-authority-eng:TUN">Tunbridge Wells Borough Council</option>
+    <option value="local-authority-eng:TVCA">Tees Valley Combined Authority</option>
+    <option value="local-authority-eng:TWH">London Borough of Tower Hamlets</option>
+    <option value="local-authority-eng:UTT">Uttlesford District Council</option>
+    <option value="local-authority-eng:VAL">Vale of White Horse District Council</option>
+    <option value="local-authority-eng:WAE">Waverley Borough Council</option>
+    <option value="local-authority-eng:WAR">Warwickshire County Council</option>
+    <option value="local-authority-eng:WAT">Watford Borough Council</option>
+    <option value="local-authority-eng:WAV">Waveney District Council</option>
+    <option value="local-authority-eng:WAW">Warwick District Council</option>
+    <option value="local-authority-eng:WBK">West Berkshire Council</option>
+    <option value="local-authority-eng:WDE">West Devon Borough Council</option>
+    <option value="local-authority-eng:WDO">West Dorset District Council</option>
+    <option value="local-authority-eng:WEA">Wealden District Council</option>
+    <option value="local-authority-eng:WECA">West of England Combined Authority</option>
+    <option value="local-authority-eng:WEL">Wellingborough Borough Council</option>
+    <option value="local-authority-eng:WEW">Welwyn Hatfield Borough Council</option>
+    <option value="local-authority-eng:WEY">Weymouth and Portland Borough Council</option>
+    <option value="local-authority-eng:WFT">London Borough of Waltham Forest</option>
+    <option value="local-authority-eng:WGN">Wigan Metropolitan Borough Council</option>
+    <option value="local-authority-eng:WIL">Wiltshire Council</option>
+    <option value="local-authority-eng:WIN">Winchester City Council</option>
+    <option value="local-authority-eng:WKF">Wakefield Metropolitan District Council</option>
+    <option value="local-authority-eng:WLA">West Lancashire Borough Council</option>
+    <option value="local-authority-eng:WLI">West Lindsey District Council</option>
+    <option value="local-authority-eng:WLL">Walsall Metropolitan Borough Council</option>
+    <option value="local-authority-eng:WLV">City of Wolverhampton Council</option>
+    <option value="local-authority-eng:WMCA">West Midlands Combined Authority</option>
+    <option value="local-authority-eng:WND">London Borough of Wandsworth</option>
+    <option value="local-authority-eng:WNM">Royal Borough of Windsor and Maidenhead</option>
+    <option value="local-authority-eng:WOC">Worcester City Council</option>
+    <option value="local-authority-eng:WOI">Woking Borough Council</option>
+    <option value="local-authority-eng:WOK">Wokingham Borough Council</option>
+    <option value="local-authority-eng:WOR">Worcestershire County Council</option>
+    <option value="local-authority-eng:WOT">Worthing Borough Council</option>
+    <option value="local-authority-eng:WOX">West Oxfordshire District Council</option>
+    <option value="local-authority-eng:WRL">Wirral Borough Council</option>
+    <option value="local-authority-eng:WRT">Warrington Borough Council</option>
+    <option value="local-authority-eng:WSK">West Suffolk Council</option>
+    <option value="local-authority-eng:WSM">City of Westminster</option>
+    <option value="local-authority-eng:WSO">West Somerset District Council</option>
+    <option value="local-authority-eng:WSX">West Sussex County Council</option>
+    <option value="local-authority-eng:WYC">Wychavon District Council</option>
+    <option value="local-authority-eng:WYCA">West Yorkshire Combined Authority</option>
+    <option value="local-authority-eng:WYE">Wyre Forest District Council</option>
+    <option value="local-authority-eng:WYO">Wycombe District Council</option>
+    <option value="local-authority-eng:WYR">Wyre Borough Council</option>
+    <option value="local-authority-eng:YOR">City of York Council</option>
+    <option value="national-park-authority:Q20198711">South Downs National Park Authority</option>
+    <option value="national-park-authority:Q27159704">Lake District National Park Authority</option>
+    <option value="national-park-authority:Q27178932">Yorkshire Dales National Park Authority</option>
+    <option value="national-park-authority:Q4972284">Broads Authority</option>
+    <option value="national-park-authority:Q5225646">Dartmoor National Park Authority</option>
+    <option value="national-park-authority:Q72617158">New Forest National Park Authority</option>
+    <option value="national-park-authority:Q72617669">North York Moors National Park Authority</option>
+    <option value="national-park-authority:Q72617784">Exmoor National Park Authority</option>
+    <option value="national-park-authority:Q72617890">Northumberland National Park Authority</option>
+    <option value="national-park-authority:Q72617988">Peak District National Park Authority</option>
+    <option value="public-authority:Q5533909">GeoPlace</option>
+    <option value="regional-park-authority:Q6515400">Lee Valley Regional Park Authority</option>
+    <option value="transport-authority:Q25171369">West Midlands Passenger Transport Executive</option>
+    <option value="transport-authority:Q6820591">Merseytravel</option>
+    <option value="transport-authority:Q682520">Transport for London</option>
+    <option value="transport-authority:Q7569004">South Yorkshire Passenger Transport Executive</option>
+    <option value="transport-authority:Q7834921">Transport for Greater Manchester</option>
+    <option value="transport-authority:Q7860508">Tyne and Wear Passenger Transport Executive</option>
+    <option value="transport-authority:Q7985947">Transport for West Midlands</option>
+    <option value="transport-authority:Q7987043">West Yorkshire Passenger Transport Executive</option>
+    <option value="waste-authority:Q20711950">East London Waste Authority</option>
+    <option value="waste-authority:Q20713477">North London Waste Authority</option>
+    <option value="waste-authority:Q21921612">West London Waste Authority</option>
+    <option value="waste-authority:Q21935501">Western Riverside Waste Authority</option>
+    <option value="waste-authority:Q5600652">Greater Manchester Waste Disposal Authority</option>
+  </select>
+</div>
+  <p class="govuk-!-margin-bottom-0 govuk-!-margin-top-1 dl-map__error js-hidden" data-module="organisation-search-error">Boundary for organisation not found.</p>
+</div>
+
+
+    </div>
+    
+</div>
+
+
+    </main>
+</div>
+
+
+    
+  
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container dl-full-width-container">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+<script src="https://digital-land.github.io/javascripts/vendor/govuk-accessible-autocomplete.min.js"></script>
+<script>
+(function(dlf, accessibleAutocomplete) {
+  let organisationMapper = {}
+  const bfsHelpers = DLMaps.brownfieldSites
+
+  // create URL used to fetch boundaries
+  function laBoundaryURL(st_geo_code) {
+    return `https://raw.githubusercontent.com/digital-land/boundary-collection/master/collection/local-authority/${st_geo_code}/index.geojson`
+  }
+
+  // add a property to a feature
+  function addProperty(feature, name, value) {
+    if( feature.properties ) {
+      feature.properties[name] = value
+    }
+  }
+
+  const organisationActiveStyle = {
+    fillOpacity: 0.2,
+    weight: 2,
+    color: '#FFDD00',
+    fillColor: '#FFEE80'
+  }
+
+  // $elements needed for map functions
+  const $mapElement = document.querySelector('[data-module="boundary-map"]')
+  const $sidePanel = document.querySelector(".dl-map__side-panel")
+  const $mapItems = document.querySelector("[data-module='dl-map-items']")
+  const $boundaryCount = $mapItems.querySelector(".organisation-count")
+  const $activeOrganisation = $mapItems.querySelector(".active-organisation")
+
+  // needed for organisation search
+  const $picker = document.querySelector('#dl-organisation-autocomplete')
+  const $orgSearchError = document.querySelector("[data-module='organisation-search-error']")
+
+  // initiate the map component
+  const bfsmap = new DLMaps.Map($mapElement).init({})
+  var localAuthorityBoundaries = bfsmap.createFeatureGroup("localAuthorityBoundaries").addTo(bfsmap.map)
+  var brownfieldSiteGroups = bfsmap.createFeatureGroup('brownfieldSiteGroups').addTo(bfsmap.map)
+  bfsmap.setMapHeight()
+
+  function handleOrganisationSearch(val) {
+    const orgname = dlf.utils.toCamelCase(val)
+    if (laTracker.get(orgname)) {
+      $orgSearchError.classList.add("js-hidden")
+      const match = laTracker.get(orgname)
+      selectOrganisation(match.name, match.boundaryLayer)
+    } else {
+      $orgSearchError.classList.remove("js-hidden")
+    }
+  }
+
+  accessibleAutocomplete.enhanceSelectElement({
+    selectElement: $picker,
+    onConfirm: handleOrganisationSearch,
+    confirmOnBlur: false
+  })
+
+  var brownfieldPublishers = [{"count": 176, "id": "local-authority-eng:MSS", "name": "Mid Sussex District Council", "statistical_geography": "E07000228"}, {"count": 180, "id": "local-authority-eng:CHR", "name": "Cherwell District Council", "statistical_geography": "E07000177"}, {"count": 123, "id": "local-authority-eng:GRY", "name": "Great Yarmouth Borough Council", "statistical_geography": "E07000145"}, {"count": 82, "id": "local-authority-eng:SEG", "name": "Sedgemoor District Council", "statistical_geography": "E07000188"}, {"count": 54, "id": "local-authority-eng:SBU", "name": "South Bucks District Council", "statistical_geography": "E07000006"}, {"count": 252, "id": "local-authority-eng:BDG", "name": "London Borough of Barking and Dagenham", "statistical_geography": "E09000002"}, {"count": 37, "id": "local-authority-eng:BRM", "name": "Bromsgrove District Council", "statistical_geography": "E07000234"}, {"count": 167, "id": "local-authority-eng:NEW", "name": "New Forest District Council", "statistical_geography": "E07000091"}, {"count": 299, "id": "local-authority-eng:WKF", "name": "Wakefield Metropolitan District Council", "statistical_geography": "E08000036"}, {"count": 171, "id": "local-authority-eng:CHO", "name": "Chorley Borough Council", "statistical_geography": "E07000118"}, {"count": 64, "id": "local-authority-eng:MOL", "name": "Mole Valley District Council", "statistical_geography": "E07000210"}, {"count": 183, "id": "local-authority-eng:IPS", "name": "Ipswich Borough Council", "statistical_geography": "E07000202"}, {"count": 72, "id": "local-authority-eng:CBF", "name": "Central Bedfordshire Council", "statistical_geography": "E06000056"}, {"count": 111, "id": "national-park-authority:Q72617158", "name": "New Forest National Park Authority", "statistical_geography": "E26000009"}, {"count": 154, "id": "local-authority-eng:DAR", "name": "Dartford Borough Council", "statistical_geography": "E07000107"}, {"count": 16, "id": "local-authority-eng:NDO", "name": "North Dorset District Council", "statistical_geography": "E07000050"}, {"count": 125, "id": "local-authority-eng:CRW", "name": "Crawley Borough Council", "statistical_geography": "E07000226"}, {"count": 980, "id": "local-authority-eng:LEW", "name": "London Borough of Lewisham", "statistical_geography": "E09000023"}, {"count": 270, "id": "local-authority-eng:SND", "name": "Sunderland City Council", "statistical_geography": "E08000024"}, {"count": 245, "id": "local-authority-eng:POL", "name": "Borough of Poole", "statistical_geography": "E06000029"}, {"count": 17, "id": "local-authority-eng:HAE", "name": "Hambleton District Council", "statistical_geography": "E07000164"}, {"count": 161, "id": "local-authority-eng:MIK", "name": "Milton Keynes Council", "statistical_geography": "E06000042"}, {"count": 173, "id": "local-authority-eng:IOW", "name": "Isle of Wight Council", "statistical_geography": "E06000046"}, {"count": 79, "id": "local-authority-eng:CHI", "name": "Chichester District Council", "statistical_geography": "E07000225"}, {"count": 205, "id": "local-authority-eng:EDN", "name": "Eden District Council", "statistical_geography": "E07000030"}, {"count": 71, "id": "local-authority-eng:SNO", "name": "South Norfolk District Council", "statistical_geography": "E07000149"}, {"count": 140, "id": "local-authority-eng:SRI", "name": "South Ribble Borough Council", "statistical_geography": "E07000126"}, {"count": 62, "id": "local-authority-eng:SUF", "name": "Suffolk Coastal District Council", "statistical_geography": "E07000205"}, {"count": 40, "id": "local-authority-eng:BLA", "name": "Blaby District Council", "statistical_geography": "E07000129"}, {"count": 368, "id": "local-authority-eng:GRT", "name": "Guildford Borough Council", "statistical_geography": "E07000209"}, {"count": 218, "id": "local-authority-eng:FOE", "name": "Forest of Dean District Council", "statistical_geography": "E07000080"}, {"count": 80, "id": "local-authority-eng:BAR", "name": "Barrow-in-Furness Borough Council", "statistical_geography": "E07000027"}, {"count": 160, "id": "local-authority-eng:DUR", "name": "Durham County Council", "statistical_geography": "E06000047"}, {"count": 292, "id": "local-authority-eng:NSM", "name": "North Somerset  Council", "statistical_geography": "E06000024"}, {"count": 12, "id": "local-authority-eng:SKE", "name": "South Kesteven District Council", "statistical_geography": "E07000141"}, {"count": 127, "id": "local-authority-eng:WOK", "name": "Wokingham Borough Council", "statistical_geography": "E06000041"}, {"count": 166, "id": "local-authority-eng:WRL", "name": "Wirral Borough Council", "statistical_geography": "E08000015"}, {"count": 105, "id": "local-authority-eng:TWH", "name": "London Borough of Tower Hamlets", "statistical_geography": "E09000030"}, {"count": 414, "id": "local-authority-eng:RDG", "name": "Reading Borough Council", "statistical_geography": "E06000038"}, {"count": 263, "id": "local-authority-eng:WIL", "name": "Wiltshire Council", "statistical_geography": "E06000054"}, {"count": 81, "id": "local-authority-eng:CHC", "name": "Christchurch Borough Council", "statistical_geography": "E07000048"}, {"count": 6, "id": "local-authority-eng:RYE", "name": "Ryedale District Council", "statistical_geography": "E07000167"}, {"count": 142, "id": "local-authority-eng:GED", "name": "Gedling Borough Council", "statistical_geography": "E07000173"}, {"count": 200, "id": "local-authority-eng:SLG", "name": "Slough Borough Council", "statistical_geography": "E06000039"}, {"count": 18, "id": "local-authority-eng:CAB", "name": "Cambridge City Council", "statistical_geography": "E07000008"}, {"count": 41, "id": "local-authority-eng:WLA", "name": "West Lancashire Borough Council", "statistical_geography": "E07000127"}, {"count": 106, "id": "local-authority-eng:NWA", "name": "North Warwickshire Borough Council", "statistical_geography": "E07000218"}, {"count": 105, "id": "local-authority-eng:WYR", "name": "Wyre Borough Council", "statistical_geography": "E07000128"}, {"count": 80, "id": "local-authority-eng:TAW", "name": "Tamworth Borough Council", "statistical_geography": "E07000199"}, {"count": 106, "id": "local-authority-eng:WOC", "name": "Worcester City Council", "statistical_geography": "E07000237"}, {"count": 4, "id": "local-authority-eng:EHA", "name": "East Hampshire District Council", "statistical_geography": "E07000085"}, {"count": 161, "id": "local-authority-eng:ERE", "name": "Erewash Borough Council", "statistical_geography": "E07000036"}, {"count": 472, "id": "local-authority-eng:SGC", "name": "South Gloucestershire Council", "statistical_geography": "E06000025"}, {"count": 498, "id": "local-authority-eng:PLY", "name": "Plymouth City Council", "statistical_geography": "E06000026"}, {"count": 330, "id": "local-authority-eng:LCE", "name": "Leicester City Council", "statistical_geography": "E06000016"}, {"count": 173, "id": "local-authority-eng:BMH", "name": "Bournemouth Borough Council", "statistical_geography": "E06000028"}, {"count": 84, "id": "local-authority-eng:TEN", "name": "Tendring District Council", "statistical_geography": "E07000076"}, {"count": 67, "id": "local-authority-eng:ADU", "name": "Adur District Council", "statistical_geography": "E07000223"}, {"count": 190, "id": "local-authority-eng:CAT", "name": "Canterbury City Council", "statistical_geography": "E07000106"}, {"count": 305, "id": "local-authority-eng:BEX", "name": "London Borough of Bexley", "statistical_geography": "E09000004"}, {"count": 16, "id": "local-authority-eng:COR", "name": "Corby Borough Council", "statistical_geography": "E07000150"}, {"count": 37, "id": "local-authority-eng:BUN", "name": "Burnley Borough Council", "statistical_geography": "E07000117"}, {"count": 241, "id": "local-authority-eng:LIF", "name": "Lichfield District Council", "statistical_geography": "E07000194"}, {"count": 210, "id": "local-authority-eng:KHL", "name": "Hull City Council", "statistical_geography": "E06000010"}, {"count": 25, "id": "local-authority-eng:STY", "name": "South Tyneside Council", "statistical_geography": "E08000023"}, {"count": 86, "id": "local-authority-eng:DST", "name": "Dorset Council", "statistical_geography": "E06000059"}, {"count": 25, "id": "local-authority-eng:BRE", "name": "Breckland District Council", "statistical_geography": "E07000143"}, {"count": 20, "id": "local-authority-eng:TES", "name": "Test Valley Borough Council", "statistical_geography": "E07000093"}, {"count": 29, "id": "local-authority-eng:SWL", "name": "Swale Borough Council", "statistical_geography": "E07000113"}, {"count": 88, "id": "local-authority-eng:NHE", "name": "North Hertfordshire District Council", "statistical_geography": "E07000099"}, {"count": 127, "id": "local-authority-eng:DEB", "name": "Derbyshire Dales District Council", "statistical_geography": "E07000035"}, {"count": 2173, "id": "local-authority-eng:SWK", "name": "London Borough of Southwark", "statistical_geography": "E09000028"}, {"count": 172, "id": "local-authority-eng:SFT", "name": "Sefton Metropolitan Borough Council", "statistical_geography": "E08000014"}, {"count": 13, "id": "local-authority-eng:WSO", "name": "West Somerset District Council", "statistical_geography": "E07000191"}, {"count": 87, "id": "local-authority-eng:LAC", "name": "Lancaster City Council", "statistical_geography": "E07000121"}, {"count": 32, "id": "local-authority-eng:WNM", "name": "Royal Borough of Windsor and Maidenhead", "statistical_geography": "E06000040"}, {"count": 18, "id": "local-authority-eng:MAL", "name": "Maldon District Council", "statistical_geography": "E07000074"}, {"count": 126, "id": "local-authority-eng:HAL", "name": "Halton Borough Council", "statistical_geography": "E06000006"}, {"count": 313, "id": "local-authority-eng:WAE", "name": "Waverley Borough Council", "statistical_geography": "E07000216"}, {"count": 47, "id": "local-authority-eng:WDO", "name": "West Dorset District Council", "statistical_geography": "E07000052"}, {"count": 304, "id": "local-authority-eng:SHN", "name": "St Helens Council", "statistical_geography": "E08000013"}, {"count": 112, "id": "local-authority-eng:NED", "name": "North East Derbyshire District Council", "statistical_geography": "E07000038"}, {"count": 456, "id": "local-authority-eng:NET", "name": "Newcastle City Council", "statistical_geography": "E08000021"}, {"count": 41, "id": "local-authority-eng:BRT", "name": "Broxtowe Borough Council", "statistical_geography": "E07000172"}, {"count": 111, "id": "local-authority-eng:HER", "name": "Hertsmere Borough Council", "statistical_geography": "E07000098"}, {"count": 709, "id": "local-authority-eng:LDS", "name": "Leeds City Council", "statistical_geography": "E08000035"}, {"count": 239, "id": "local-authority-eng:RCH", "name": "Rochdale Metropolitan Borough Council", "statistical_geography": "E08000005"}, {"count": 95, "id": "local-authority-eng:WBK", "name": "West Berkshire Council", "statistical_geography": "E06000037"}, {"count": 194, "id": "local-authority-eng:CHS", "name": "Chesterfield Borough Council", "statistical_geography": "E07000034"}, {"count": 60, "id": "local-authority-eng:WEA", "name": "Wealden District Council", "statistical_geography": "E07000065"}, {"count": 58, "id": "local-authority-eng:OAD", "name": "Oadby and Wigston Borough Council", "statistical_geography": "E07000135"}, {"count": 86, "id": "local-authority-eng:CRA", "name": "Craven District Council", "statistical_geography": "E07000163"}, {"count": 162, "id": "local-authority-eng:NLN", "name": "North Lincolnshire Council", "statistical_geography": "E06000013"}, {"count": 156, "id": "local-authority-eng:POR", "name": "Portsmouth City Council", "statistical_geography": "E06000044"}, {"count": 759, "id": "local-authority-eng:CRY", "name": "London Borough of Croydon", "statistical_geography": "E09000008"}, {"count": 57, "id": "local-authority-eng:EDO", "name": "East Dorset District Council", "statistical_geography": "E07000049"}, {"count": 466, "id": "local-authority-eng:LIV", "name": "Liverpool City Council", "statistical_geography": "E08000012"}, {"count": 336, "id": "local-authority-eng:HIL", "name": "London Borough of Hillingdon", "statistical_geography": "E09000017"}, {"count": 219, "id": "local-authority-eng:WYO", "name": "Wycombe District Council", "statistical_geography": "E07000007"}, {"count": 130, "id": "local-authority-eng:ROS", "name": "Rossendale Borough Council", "statistical_geography": "E07000125"}, {"count": 11, "id": "local-authority-eng:LND", "name": "City of London Corporation", "statistical_geography": "E09000001"}, {"count": 85, "id": "local-authority-eng:SCA", "name": "South Cambridgeshire District Council", "statistical_geography": "E07000012"}, {"count": 103, "id": "local-authority-eng:FEN", "name": "Fenland District Council", "statistical_geography": "E07000010"}, {"count": 48, "id": "local-authority-eng:MEL", "name": "Melton Borough Council", "statistical_geography": "E07000133"}, {"count": 82, "id": "local-authority-eng:MEN", "name": "Mendip District Council", "statistical_geography": "E07000187"}, {"count": 130, "id": "local-authority-eng:SOX", "name": "South Oxfordshire District Council", "statistical_geography": "E07000179"}, {"count": 158, "id": "local-authority-eng:MAI", "name": "Maidstone Borough Council", "statistical_geography": "E07000110"}, {"count": 58, "id": "local-authority-eng:ASH", "name": "Ashfield District Council", "statistical_geography": "E07000170"}, {"count": 7, "id": "local-authority-eng:ENO", "name": "East Northamptonshire Council", "statistical_geography": "E07000152"}, {"count": 101, "id": "local-authority-eng:GLO", "name": "Gloucester City Council", "statistical_geography": "E07000081"}, {"count": 99, "id": "local-authority-eng:SAL", "name": "St Albans City and District Council", "statistical_geography": "E07000240"}, {"count": 47, "id": "local-authority-eng:FYL", "name": "Fylde Borough Council", "statistical_geography": "E07000119"}, {"count": 79, "id": "local-authority-eng:RUN", "name": "Runnymede Borough Council", "statistical_geography": "E07000212"}, {"count": 217, "id": "local-authority-eng:ERY", "name": "East Riding of Yorkshire Council", "statistical_geography": "E06000011"}, {"count": 33, "id": "local-authority-eng:STT", "name": "Stockton-on-Tees Borough Council", "statistical_geography": "E06000004"}, {"count": 15, "id": "local-authority-eng:TEW", "name": "Tewkesbury Borough Council", "statistical_geography": "E07000083"}, {"count": 95, "id": "local-authority-eng:EDE", "name": "East Devon District Council", "statistical_geography": "E07000040"}, {"count": 339, "id": "local-authority-eng:REI", "name": "Reigate and Banstead Borough Council", "statistical_geography": "E07000211"}, {"count": 82, "id": "local-authority-eng:ASF", "name": "Ashford Borough Council", "statistical_geography": "E07000105"}, {"count": 553, "id": "local-authority-eng:CHW", "name": "Cheshire West and Chester Council", "statistical_geography": "E06000050"}, {"count": 128, "id": "local-authority-eng:MDB", "name": "Middlesbrough Borough Council", "statistical_geography": "E06000002"}, {"count": 1368, "id": "local-authority-eng:HRY", "name": "London Borough of Haringey", "statistical_geography": "E09000014"}, {"count": 114, "id": "local-authority-eng:THR", "name": "Thurrock Council", "statistical_geography": "E06000034"}, {"count": 122, "id": "local-authority-eng:TRF", "name": "Trafford Metropolitan Borough Council", "statistical_geography": "E08000009"}, {"count": 156, "id": "local-authority-eng:TUN", "name": "Tunbridge Wells Borough Council", "statistical_geography": "E07000116"}, {"count": 379, "id": "local-authority-eng:SLF", "name": "Salford City Council", "statistical_geography": "E08000006"}, {"count": 60, "id": "local-authority-eng:AYL", "name": "Aylesbury Vale District Council", "statistical_geography": "E07000004"}, {"count": 154, "id": "local-authority-eng:KIN", "name": "Borough Council of King\u0027s Lynn and West Norfolk", "statistical_geography": "E07000146"}, {"count": 27, "id": "local-authority-eng:ENF", "name": "London Borough of Enfield", "statistical_geography": "E09000010"}, {"count": 18, "id": "local-authority-eng:WEL", "name": "Wellingborough Borough Council", "statistical_geography": "E07000156"}, {"count": 821, "id": "local-authority-eng:NGM", "name": "Nottingham City Council", "statistical_geography": "E06000018"}, {"count": 324, "id": "local-authority-eng:LEE", "name": "Lewes District Council", "statistical_geography": "E07000063"}, {"count": 102, "id": "local-authority-eng:WOT", "name": "Worthing Borough Council", "statistical_geography": "E07000229"}, {"count": 88, "id": "local-authority-eng:SEL", "name": "Selby District Council", "statistical_geography": "E07000169"}, {"count": 96, "id": "local-authority-eng:BRW", "name": "Brentwood Borough Council", "statistical_geography": "E07000068"}, {"count": 5, "id": "local-authority-eng:RUT", "name": "Rutland County Council", "statistical_geography": "E06000017"}, {"count": 434, "id": "local-authority-eng:NWM", "name": "London Borough of Newham", "statistical_geography": "E09000025"}, {"count": 11, "id": "national-park-authority:Q72617669", "name": "North York Moors National Park Authority", "statistical_geography": "E26000005"}, {"count": 140, "id": "local-authority-eng:HIG", "name": "High Peak Borough Council", "statistical_geography": "E07000037"}, {"count": 15, "id": "local-authority-eng:RIH", "name": "Richmondshire District Council", "statistical_geography": "E07000166"}, {"count": 121, "id": "local-authority-eng:SSO", "name": "South Somerset District Council", "statistical_geography": "E07000189"}, {"count": 137, "id": "local-authority-eng:DOV", "name": "Dover District Council", "statistical_geography": "E07000108"}, {"count": 61, "id": "local-authority-eng:CAS", "name": "Castle Point Borough Council", "statistical_geography": "E07000069"}, {"count": 400, "id": "local-authority-eng:KTT", "name": "Royal Borough of Kingston upon Thames", "statistical_geography": "E09000021"}, {"count": 8, "id": "local-authority-eng:WDE", "name": "West Devon Borough Council", "statistical_geography": "E07000047"}, {"count": 74, "id": "local-authority-eng:WIN", "name": "Winchester City Council", "statistical_geography": "E07000094"}, {"count": 20, "id": "local-authority-eng:PUR", "name": "Purbeck District Council", "statistical_geography": "E07000051"}, {"count": 465, "id": "local-authority-eng:LBH", "name": "London Borough of Lambeth", "statistical_geography": "E09000022"}, {"count": 106, "id": "local-authority-eng:PRE", "name": "Preston City Council", "statistical_geography": "E07000123"}, {"count": 137, "id": "local-authority-eng:GOS", "name": "Gosport Borough Council", "statistical_geography": "E07000088"}, {"count": 73, "id": "local-authority-eng:BRX", "name": "Broxbourne Borough Council", "statistical_geography": "E07000095"}, {"count": 138, "id": "local-authority-eng:RUH", "name": "Rushmoor Borough Council", "statistical_geography": "E07000092"}, {"count": 1363, "id": "local-authority-eng:BIR", "name": "Birmingham City Council", "statistical_geography": "E08000025"}, {"count": 116, "id": "local-authority-eng:BRA", "name": "Braintree District Council", "statistical_geography": "E07000067"}, {"count": 264, "id": "local-authority-eng:ROT", "name": "Rotherham Metropolitan Borough Council", "statistical_geography": "E08000018"}, {"count": 1184, "id": "local-authority-eng:SEV", "name": "Sevenoaks District Council", "statistical_geography": "E07000111"}, {"count": 267, "id": "local-authority-eng:HEF", "name": "Herefordshire Council", "statistical_geography": "E06000019"}, {"count": 371, "id": "local-authority-eng:YOR", "name": "City of York Council", "statistical_geography": "E06000014"}, {"count": 54, "id": "local-authority-eng:CAR", "name": "Carlisle City Council", "statistical_geography": "E07000028"}, {"count": 121, "id": "local-authority-eng:HPL", "name": "Hartlepool Borough Council", "statistical_geography": "E06000001"}, {"count": 310, "id": "local-authority-eng:BAN", "name": "Basingstoke and Deane Borough Council", "statistical_geography": "E07000084"}, {"count": 282, "id": "local-authority-eng:WFT", "name": "London Borough of Waltham Forest", "statistical_geography": "E09000031"}, {"count": 150, "id": "local-authority-eng:SCE", "name": "Scarborough Borough Council", "statistical_geography": "E07000168"}, {"count": 280, "id": "local-authority-eng:EAL", "name": "London Borough of Ealing", "statistical_geography": "E09000009"}, {"count": 7, "id": "local-authority-eng:BAB", "name": "Babergh District Council", "statistical_geography": "E07000200"}, {"count": 15, "id": "local-authority-eng:HIN", "name": "Hinckley and Bosworth Borough Council", "statistical_geography": "E07000132"}, {"count": 675, "id": "local-authority-eng:WSM", "name": "City of Westminster", "statistical_geography": "E09000033"}, {"count": 312, "id": "local-authority-eng:BRY", "name": "London Borough of Bromley", "statistical_geography": "E09000006"}, {"count": 71, "id": "local-authority-eng:BAE", "name": "Bassetlaw District Council", "statistical_geography": "E07000171"}, {"count": 186, "id": "local-authority-eng:WEW", "name": "Welwyn Hatfield Borough Council", "statistical_geography": "E07000241"}, {"count": 2, "id": "local-authority-eng:EHE", "name": "East Hertfordshire District Council", "statistical_geography": "E07000242"}, {"count": 895, "id": "local-authority-eng:BNE", "name": "London Borough of Barnet", "statistical_geography": "E09000003"}, {"count": 14, "id": "local-authority-eng:HAO", "name": "Harborough District Council", "statistical_geography": "E07000131"}, {"count": 90, "id": "local-authority-eng:HAA", "name": "Havant Borough Council", "statistical_geography": "E07000090"}, {"count": 51, "id": "local-authority-eng:EXE", "name": "Exeter City Council", "statistical_geography": "E07000041"}, {"count": 34, "id": "local-authority-eng:COL", "name": "Colchester Borough Council", "statistical_geography": "E07000071"}, {"count": 85, "id": "local-authority-eng:SHO", "name": "South Holland District Council", "statistical_geography": "E07000140"}, {"count": 149, "id": "local-authority-eng:BOL", "name": "Bolton Metropolitan Borough Council", "statistical_geography": "E08000001"}, {"count": 45, "id": "local-authority-eng:ROC", "name": "Rochford District Council", "statistical_geography": "E07000075"}, {"count": 113, "id": "local-authority-eng:OLD", "name": "Oldham Metropolitan Borough Council", "statistical_geography": "E08000004"}, {"count": 88, "id": "local-authority-eng:TAM", "name": "Tameside Metropolitan Borough Council", "statistical_geography": "E08000008"}, {"count": 13, "id": "local-authority-eng:DAL", "name": "Darlington Borough Council", "statistical_geography": "E06000005"}, {"count": 129, "id": "local-authority-eng:BUR", "name": "Bury Metropolitan Borough Council", "statistical_geography": "E08000002"}, {"count": 64, "id": "local-authority-eng:WYC", "name": "Wychavon District Council", "statistical_geography": "E07000238"}, {"count": 52, "id": "local-authority-eng:WAT", "name": "Watford Borough Council", "statistical_geography": "E07000103"}, {"count": 132, "id": "local-authority-eng:BOT", "name": "Boston Borough Council", "statistical_geography": "E07000136"}, {"count": 56, "id": "local-authority-eng:SOS", "name": "Southend-on-Sea Borough Council", "statistical_geography": "E06000033"}, {"count": 271, "id": "local-authority-eng:COV", "name": "Coventry City Council", "statistical_geography": "E08000026"}, {"count": 51, "id": "local-authority-eng:GRA", "name": "Gravesham Borough Council", "statistical_geography": "E07000109"}, {"count": 282, "id": "local-authority-eng:HAG", "name": "Harrogate Borough Council", "statistical_geography": "E07000165"}, {"count": 225, "id": "local-authority-eng:NEC", "name": "Newcastle-under-Lyme Borough Council", "statistical_geography": "E07000195"}, {"count": 23, "id": "local-authority-eng:FOR", "name": "Forest Heath District Council", "statistical_geography": "E07000201"}, {"count": 40, "id": "local-authority-eng:MAV", "name": "Malvern Hills District Council", "statistical_geography": "E07000235"}, {"count": 105, "id": "local-authority-eng:RCC", "name": "Redcar and Cleveland Borough Council", "statistical_geography": "E06000003"}, {"count": 43, "id": "local-authority-eng:TAU", "name": "Taunton Deane Borough Council", "statistical_geography": "E07000190"}, {"count": 7272, "id": "local-authority-eng:CMD", "name": "London Borough of Camden", "statistical_geography": "E09000007"}, {"count": 184, "id": "local-authority-eng:NDE", "name": "North Devon District Council", "statistical_geography": "E07000043"}, {"count": 86, "id": "local-authority-eng:HCK", "name": "London Borough of Hackney", "statistical_geography": "E09000012"}, {"count": 57, "id": "local-authority-eng:STA", "name": "Stafford Borough Council", "statistical_geography": "E07000197"}, {"count": 154, "id": "local-authority-eng:SOL", "name": "Solihull Metropolitan Borough Council", "statistical_geography": "E08000029"}, {"count": 197, "id": "local-authority-eng:BAI", "name": "Basildon Borough Council", "statistical_geography": "E07000066"}, {"count": 80, "id": "local-authority-eng:PEN", "name": "Pendle Borough Council", "statistical_geography": "E07000122"}, {"count": 601, "id": "local-authority-eng:CLD", "name": "Calderdale Metropolitan Borough Council", "statistical_geography": "E08000033"}, {"count": 287, "id": "local-authority-eng:NTY", "name": "North Tyneside Council", "statistical_geography": "E08000022"}, {"count": 19, "id": "local-authority-eng:RED", "name": "Redditch Borough Council", "statistical_geography": "E07000236"}, {"count": 221, "id": "local-authority-eng:CHL", "name": "Chelmsford City Council", "statistical_geography": "E07000070"}, {"count": 105, "id": "local-authority-eng:SLA", "name": "South Lakeland District Council", "statistical_geography": "E07000031"}, {"count": 63, "id": "local-authority-eng:HUN", "name": "Huntingdonshire District Council", "statistical_geography": "E07000011"}, {"count": 787, "id": "local-authority-eng:ISL", "name": "London Borough of Islington", "statistical_geography": "E09000019"}, {"count": 23, "id": "local-authority-eng:TON", "name": "Tonbridge and Malling Borough Council", "statistical_geography": "E07000115"}, {"count": 56, "id": "local-authority-eng:BRC", "name": "Bracknell Forest Council", "statistical_geography": "E06000036"}, {"count": 16, "id": "development-corporation:Q6670544", "name": "London Legacy Development Corporation", "statistical_geography": "E51000001"}, {"count": 80, "id": "local-authority-eng:VAL", "name": "Vale of White Horse District Council", "statistical_geography": "E07000180"}, {"count": 36, "id": "local-authority-eng:SDE", "name": "South Derbyshire District Council", "statistical_geography": "E07000039"}, {"count": 474, "id": "local-authority-eng:RIC", "name": "London Borough of Richmond upon Thames", "statistical_geography": "E09000027"}, {"count": 124, "id": "local-authority-eng:DUD", "name": "Dudley Metropolitan Borough Council", "statistical_geography": "E08000027"}, {"count": 12, "id": "national-park-authority:Q72617784", "name": "Exmoor National Park Authority", "statistical_geography": "E26000002"}, {"count": 4, "id": "national-park-authority:Q72617988", "name": "Peak District National Park Authority", "statistical_geography": "E26000006"}, {"count": 41, "id": "local-authority-eng:RUS", "name": "Rushcliffe Borough Council", "statistical_geography": "E07000176"}, {"count": 1242, "id": "local-authority-eng:BNH", "name": "Brighton and Hove City Council", "statistical_geography": "E06000043"}, {"count": 204, "id": "local-authority-eng:ROH", "name": "Rother District Council", "statistical_geography": "E07000064"}, {"count": 180, "id": "local-authority-eng:DNC", "name": "Doncaster Metropolitan Borough Council", "statistical_geography": "E08000017"}, {"count": 104, "id": "local-authority-eng:STN", "name": "London Borough of Sutton", "statistical_geography": "E09000029"}, {"count": 652, "id": "local-authority-eng:SAW", "name": "Sandwell Metropolitan Borough Council", "statistical_geography": "E08000028"}, {"count": 396, "id": "local-authority-eng:WGN", "name": "Wigan Metropolitan Borough Council", "statistical_geography": "E08000010"}, {"count": 95, "id": "local-authority-eng:SKP", "name": "Stockport Metropolitan Borough Council", "statistical_geography": "E08000007"}, {"count": 305, "id": "development-corporation:Q20648596", "name": "Old Oak and Park Royal Development Corporation", "statistical_geography": "E51000002"}, {"count": 5, "id": "local-authority-eng:IOS", "name": "Council of the Isles of Scilly", "statistical_geography": "E06000053"}, {"count": 24, "id": "local-authority-eng:SED", "name": "St Edmundsbury Borough Council", "statistical_geography": "E07000204"}, {"count": 350, "id": "local-authority-eng:LUT", "name": "Luton Borough Council", "statistical_geography": "E06000032"}, {"count": 705, "id": "local-authority-eng:GRE", "name": "Royal Borough of Greenwich", "statistical_geography": "E09000011"}, {"count": 49, "id": "local-authority-eng:BBD", "name": "Blackburn with Darwen Borough Council", "statistical_geography": "E06000008"}, {"count": 632, "id": "local-authority-eng:SHF", "name": "Sheffield City Council", "statistical_geography": "E08000019"}, {"count": 402, "id": "local-authority-eng:WRT", "name": "Warrington Borough Council", "statistical_geography": "E06000007"}, {"count": 743, "id": "local-authority-eng:RDB", "name": "London Borough of Redbridge", "statistical_geography": "E09000026"}, {"count": 230, "id": "local-authority-eng:STO", "name": "Stroud District Council", "statistical_geography": "E07000082"}, {"count": 13, "id": "national-park-authority:Q27159704", "name": "Lake District National Park Authority", "statistical_geography": "E26000003"}, {"count": 37, "id": "local-authority-eng:STH", "name": "Southampton City Council", "statistical_geography": "E06000045"}, {"count": 548, "id": "local-authority-eng:KIR", "name": "Kirklees Council", "statistical_geography": "E08000034"}, {"count": 77, "id": "local-authority-eng:THA", "name": "Thanet District Council", "statistical_geography": "E07000114"}, {"count": 411, "id": "local-authority-eng:NOW", "name": "Norwich City Council", "statistical_geography": "E07000148"}, {"count": 126, "id": "local-authority-eng:WAV", "name": "Waveney District Council", "statistical_geography": "E07000206"}, {"count": 392, "id": "local-authority-eng:ESK", "name": "East Suffolk Council", "statistical_geography": "E07000244"}, {"count": 42, "id": "local-authority-eng:UTT", "name": "Uttlesford District Council", "statistical_geography": "E07000077"}, {"count": 29, "id": "local-authority-eng:SST", "name": "South Staffordshire Council", "statistical_geography": "E07000196"}, {"count": 111, "id": "local-authority-eng:WYE", "name": "Wyre Forest District Council", "statistical_geography": "E07000239"}, {"count": 14, "id": "national-park-authority:Q5225646", "name": "Dartmoor National Park Authority", "statistical_geography": "E26000001"}, {"count": 33, "id": "local-authority-eng:NNO", "name": "North Norfolk District Council", "statistical_geography": "E07000147"}, {"count": 12, "id": "local-authority-eng:MSU", "name": "Mid Suffolk District Council", "statistical_geography": "E07000203"}, {"count": 382, "id": "local-authority-eng:CHA", "name": "Charnwood Borough Council", "statistical_geography": "E07000130"}, {"count": 31, "id": "local-authority-eng:MDE", "name": "Mid Devon District Council", "statistical_geography": "E07000042"}, {"count": 125, "id": "local-authority-eng:BAS", "name": "Bath and North East Somerset Council", "statistical_geography": "E06000022"}, {"count": 873, "id": "local-authority-eng:NBL", "name": "Northumberland County Council", "statistical_geography": "E06000057"}, {"count": 95, "id": "national-park-authority:Q4972284", "name": "Broads Authority", "statistical_geography": "E26000007"}, {"count": 49, "id": "local-authority-eng:EPS", "name": "Epsom and Ewell Borough Council", "statistical_geography": "E07000208"}, {"count": 426, "id": "local-authority-eng:GAT", "name": "Gateshead Metropolitan Borough Council", "statistical_geography": "E08000037"}, {"count": 51, "id": "local-authority-eng:WOX", "name": "West Oxfordshire District Council", "statistical_geography": "E07000181"}, {"count": 235, "id": "local-authority-eng:TOB", "name": "Torbay Council", "statistical_geography": "E06000027"}, {"count": 38, "id": "local-authority-eng:HYN", "name": "Hyndburn Borough Council", "statistical_geography": "E07000120"}, {"count": 405, "id": "local-authority-eng:BDF", "name": "Bedford Borough Council", "statistical_geography": "E06000055"}, {"count": 392, "id": "local-authority-eng:CON", "name": "Cornwall Council", "statistical_geography": "E06000052"}, {"count": 171, "id": "local-authority-eng:FAR", "name": "Fareham Borough Council", "statistical_geography": "E07000087"}, {"count": 20, "id": "local-authority-eng:ALL", "name": "Allerdale Borough Council", "statistical_geography": "E07000026"}, {"count": 245, "id": "local-authority-eng:NUN", "name": "Nuneaton and Bedworth Borough Council", "statistical_geography": "E07000219"}, {"count": 149, "id": "local-authority-eng:KWL", "name": "Knowsley Metropolitan Borough Council", "statistical_geography": "E08000011"}, {"count": 25, "id": "local-authority-eng:STV", "name": "Stevenage Borough Council", "statistical_geography": "E07000243"}, {"count": 72, "id": "local-authority-eng:PTE", "name": "Peterborough City Council", "statistical_geography": "E06000031"}, {"count": 62, "id": "local-authority-eng:BRO", "name": "Broadland District Council", "statistical_geography": "E07000144"}, {"count": 390, "id": "local-authority-eng:SWD", "name": "Swindon Borough Council", "statistical_geography": "E06000030"}, {"count": 55, "id": "local-authority-eng:WSK", "name": "West Suffolk Council", "statistical_geography": "E07000245"}, {"count": 86, "id": "local-authority-eng:ARU", "name": "Arun District Council", "statistical_geography": "E07000224"}, {"count": 18, "id": "local-authority-eng:MAS", "name": "Mansfield District Council", "statistical_geography": "E07000174"}, {"count": 2, "id": "local-authority-eng:RIB", "name": "Ribble Valley Borough Council", "statistical_geography": "E07000124"}, {"count": 421, "id": "local-authority-eng:WLL", "name": "Walsall Metropolitan Borough Council", "statistical_geography": "E08000030"}, {"count": 58, "id": "local-authority-eng:TOR", "name": "Torridge District Council", "statistical_geography": "E07000046"}, {"count": 907, "id": "local-authority-eng:BEN", "name": "London Borough of Brent", "statistical_geography": "E09000005"}, {"count": 1082, "id": "local-authority-eng:WLV", "name": "City of Wolverhampton Council", "statistical_geography": "E08000031"}, {"count": 55, "id": "local-authority-eng:WAW", "name": "Warwick District Council", "statistical_geography": "E07000222"}, {"count": 14, "id": "local-authority-eng:LIC", "name": "City of Lincoln Council", "statistical_geography": "E07000138"}, {"count": 86, "id": "local-authority-eng:ECA", "name": "East Cambridgeshire District Council", "statistical_geography": "E07000009"}, {"count": 162, "id": "local-authority-eng:HAV", "name": "London Borough of Havering", "statistical_geography": "E09000016"}, {"count": 460, "id": "local-authority-eng:KEC", "name": "Royal Borough of Kensington and Chelsea", "statistical_geography": "E09000020"}, {"count": 162, "id": "local-authority-eng:HAT", "name": "Hart District Council", "statistical_geography": "E07000089"}, {"count": 48, "id": "local-authority-eng:HMF", "name": "London Borough of Hammersmith \u0026 Fulham", "statistical_geography": "E09000013"}, {"count": 48, "id": "local-authority-eng:SHE", "name": "Folkestone and Hythe Council", "statistical_geography": "E07000112"}, {"count": 219, "id": "local-authority-eng:CAN", "name": "Cannock Chase District Council", "statistical_geography": "E07000192"}, {"count": 295, "id": "local-authority-eng:STR", "name": "Stratford-on-Avon District Council", "statistical_geography": "E07000221"}, {"count": 382, "id": "local-authority-eng:NOR", "name": "Northampton Borough Council", "statistical_geography": "E07000154"}, {"count": 131, "id": "local-authority-eng:CHT", "name": "Cheltenham Borough Council", "statistical_geography": "E07000078"}, {"count": 78, "id": "local-authority-eng:CHN", "name": "Chiltern District Council", "statistical_geography": "E07000005"}, {"count": 54, "id": "local-authority-eng:SPE", "name": "Spelthorne Borough Council", "statistical_geography": "E07000213"}, {"count": 1104, "id": "local-authority-eng:BST", "name": "Bristol City Council", "statistical_geography": "E06000023"}, {"count": 147, "id": "local-authority-eng:BNS", "name": "Barnsley Metropolitan Borough Council", "statistical_geography": "E08000016"}, {"count": 25, "id": "national-park-authority:Q27178932", "name": "Yorkshire Dales National Park Authority", "statistical_geography": "E26000008"}, {"count": 312, "id": "local-authority-eng:SUR", "name": "Surrey Heath Borough Council", "statistical_geography": "E07000214"}, {"count": 289, "id": "local-authority-eng:BPC", "name": "Bournemouth, Christchurch and Poole Council", "statistical_geography": "E06000058"}, {"count": 55, "id": "national-park-authority:Q20198711", "name": "South Downs National Park Authority", "statistical_geography": "E26000010"}, {"count": 148, "id": "local-authority-eng:HOR", "name": "Horsham District Council", "statistical_geography": "E07000227"}, {"count": 78, "id": "local-authority-eng:BPL", "name": "Blackpool Borough Council", "statistical_geography": "E06000009"}, {"count": 35, "id": "local-authority-eng:BOS", "name": "Bolsover District Council", "statistical_geography": "E07000033"}, {"count": 2, "id": "local-authority-eng:SWT", "name": "Somerset West and Taunton Council", "statistical_geography": "E07000246"}, {"count": 33, "id": "local-authority-eng:DAV", "name": "Daventry District Council", "statistical_geography": "E07000151"}, {"count": 1248, "id": "local-authority-eng:MAN", "name": "Manchester City Council", "statistical_geography": "E08000003"}, {"count": 150, "id": "local-authority-eng:TAN", "name": "Tandridge District Council", "statistical_geography": "E07000215"}, {"count": 173, "id": "local-authority-eng:DAC", "name": "Dacorum Borough Council", "statistical_geography": "E07000096"}, {"count": 14, "id": "local-authority-eng:KET", "name": "Kettering Borough Council", "statistical_geography": "E07000153"}, {"count": 130, "id": "local-authority-eng:COP", "name": "Copeland Borough Council", "statistical_geography": "E07000029"}, {"count": 343, "id": "local-authority-eng:CHE", "name": "Cheshire East Council", "statistical_geography": "E06000049"}, {"count": 194, "id": "local-authority-eng:SHR", "name": "Shropshire Council", "statistical_geography": "E06000051"}, {"count": 75, "id": "local-authority-eng:DER", "name": "Derby City Council", "statistical_geography": "E06000015"}, {"count": 50, "id": "local-authority-eng:WEY", "name": "Weymouth and Portland Borough Council", "statistical_geography": "E07000053"}, {"count": 50, "id": "local-authority-eng:COT", "name": "Cotswold District Council", "statistical_geography": "E07000079"}, {"count": 859, "id": "local-authority-eng:BRD", "name": "City of Bradford Metropolitan District Council", "statistical_geography": "E08000032"}, {"count": 57, "id": "local-authority-eng:ELI", "name": "East Lindsey District Council", "statistical_geography": "E07000137"}, {"count": 116, "id": "local-authority-eng:NEA", "name": "Newark and Sherwood District Council", "statistical_geography": "E07000175"}, {"count": 127, "id": "local-authority-eng:ELM", "name": "Elmbridge Borough Council", "statistical_geography": "E07000207"}, {"count": 1295, "id": "local-authority-eng:WND", "name": "London Borough of Wandsworth", "statistical_geography": "E09000032"}, {"count": 570, "id": "local-authority-eng:STE", "name": "Stoke-on-Trent City Council", "statistical_geography": "E06000021"}, {"count": 133, "id": "local-authority-eng:HAS", "name": "Hastings Borough Council", "statistical_geography": "E07000062"}, {"count": 426, "id": "local-authority-eng:WOI", "name": "Woking Borough Council", "statistical_geography": "E07000217"}, {"count": 128, "id": "local-authority-eng:THE", "name": "Three Rivers District Council", "statistical_geography": "E07000102"}, {"count": 91, "id": "local-authority-eng:EPP", "name": "Epping Forest District Council", "statistical_geography": "E07000072"}, {"count": 190, "id": "local-authority-eng:OXO", "name": "Oxford City Council", "statistical_geography": "E07000178"}, {"count": 350, "id": "local-authority-eng:MRT", "name": "London Borough of Merton", "statistical_geography": "E09000024"}, {"count": 122, "id": "local-authority-eng:TFW", "name": "Telford \u0026 Wrekin Council", "statistical_geography": "E06000020"}, {"count": 54, "id": "local-authority-eng:HNS", "name": "London Borough of Hounslow", "statistical_geography": "E09000018"}, {"count": 25, "id": "local-authority-eng:EAT", "name": "Eastleigh Borough Council", "statistical_geography": "E07000086"}, {"count": 510, "id": "local-authority-eng:HRW", "name": "London Borough of Harrow", "statistical_geography": "E09000015"}, {"count": 1, "id": "national-park-authority:Q72617890", "name": "Northumberland National Park Authority", "statistical_geography": "E26000004"}, {"count": 60, "id": "local-authority-eng:SNR", "name": "South Northamptonshire Council", "statistical_geography": "E07000155"}, {"count": 263, "id": "local-authority-eng:TEI", "name": "Teignbridge District Council", "statistical_geography": "E07000045"}, {"count": 28, "id": "local-authority-eng:RUG", "name": "Rugby Borough Council", "statistical_geography": "E07000220"}, {"count": 9, "id": "local-authority-eng:NKE", "name": "North Kesteven District Council", "statistical_geography": "E07000139"}, {"count": 116, "id": "local-authority-eng:WLI", "name": "West Lindsey District Council", "statistical_geography": "E07000142"}, {"count": 187, "id": "local-authority-eng:EST", "name": "East Staffordshire Borough Council", "statistical_geography": "E07000193"}, {"count": 39, "id": "local-authority-eng:NWL", "name": "North West Leicestershire District Council", "statistical_geography": "E07000134"}, {"count": 162, "id": "local-authority-eng:NEL", "name": "North East Lincolnshire Council", "statistical_geography": "E06000012"}, {"count": 116, "id": "local-authority-eng:AMB", "name": "Amber Valley Borough Council", "statistical_geography": "E07000032"}, {"count": 260, "id": "local-authority-eng:EAS", "name": "Eastbourne Borough Council", "statistical_geography": "E07000061"}, {"count": 39, "id": "local-authority-eng:SHA", "name": "South Hams District Council", "statistical_geography": "E07000044"}, {"count": 76, "id": "local-authority-eng:HAR", "name": "Harlow District Council", "statistical_geography": "E07000073"}, {"count": 161, "id": "local-authority-eng:STF", "name": "Staffordshire Moorlands District Council", "statistical_geography": "E07000198"}, {"count": 181, "id": "local-authority-eng:MDW", "name": "Medway Council", "statistical_geography": "E06000035"}]
+
+  organisationMapper = dlf.utils.createOrgMapper(brownfieldPublishers)
+  bfsHelpers.registerOrganisationMapper(organisationMapper)
+
+  function addUsefulPropertiesToFeature(feature, organisation) {
+    addProperty(feature, "organisation", organisation.id)
+    addProperty(feature, "organisation_name", organisation.name)
+    addProperty(feature, "bfs_count", organisation.count)
+    return feature
+  }
+
+  function updateActiveOrgPanel(name) {
+    $activeOrganisation.textContent = name
+    const $container = $activeOrganisation.parentElement
+    if ($container.classList.contains("js-hidden")) {
+      $container.classList.remove("js-hidden")
+    }
+  }
+
+  function LayerTracker(defaultProps) {
+    this.items = {}
+    this._defaultProps = defaultProps || {}
+  }
+  LayerTracker.prototype.add = function(name, props) {
+    const trackerId = dlf.utils.toCamelCase(name)
+    // can i use spread???
+    this.items[trackerId] = {...this._defaultProps, ...props}
+    this.items[trackerId]["name"] = name
+    return trackerId
+  }
+  LayerTracker.prototype.addToItem = function(name, k, v) {
+    const trackerId = dlf.utils.toCamelCase(name)
+    if (Object.prototype.hasOwnProperty.call(this.items, trackerId)) {
+      this.items[trackerId][k] = v
+    }
+  }
+  LayerTracker.prototype.get = function (name) {
+    return this.items[dlf.utils.toCamelCase(name)]
+  }
+
+  var laTracker = new LayerTracker({"loadedBFS": false})
+  console.log(laTracker)
+
+
+  function brownfieldDataUrl(organisation){
+    orgDir = dlf.utils.curie_to_url_part(organisation)
+    return `https://raw.githubusercontent.com/digital-land/dataset/master/docs/brownfield-land/organisation/${orgDir}/sites.geojson`
+  }
+
+  function setActiveBoundaryLayer(layer) {
+    // track which layer is active
+    localAuthorityBoundaries.activeLayer = layer._leaflet_id
+    localAuthorityBoundaries.eachLayer(function (layer) {
+      layer.activeBoundary = false
+      layer.setStyle(bfsmap.styles.defaultBoundaryStyle)
+    })
+    if (hasParentLayer(layer)) {
+      layer.parentId["activeBoundary"] = true
+      layer.parentId.setStyle(organisationActiveStyle)
+    }
+
+    // should this be done another way? i.e. trigger an event on the side panel?
+    updateActiveOrgPanel(layer.feature.properties['organisation_name'])
+  }
+
+  function hasParentLayer(childLayer) {
+    return Object.prototype.hasOwnProperty.call(childLayer, "parentId")
+  }
+
+  function setParentLayer(parentLayer, layerName) {
+    parentLayer.activeBoundary = false
+    laTracker.addToItem(layerName, "layer", parentLayer)
+    for (var lId in parentLayer._layers) {
+      if (Object.prototype.hasOwnProperty.call(parentLayer._layers, lId)) {
+        const childLayer = parentLayer._layers[lId]
+        childLayer.parentId = localAuthorityBoundaries.getLayer(parentLayer._leaflet_id)
+        laTracker.addToItem(layerName, "boundaryLayer", childLayer)
+      }
+    }
+  }
+
+  function addHoverState (layer) {
+    bfsmap.addLayerHoverState(layer, {
+      check: function (layer) {
+        return !Object.prototype.hasOwnProperty.call(layer, "parentId") || !layer.parentId.activeBoundary
+      }
+    })
+  }
+
+  function onSuccessfulBrownfieldLoad (layer, organisationName) {
+    if (laTracker.get(organisationName)) {
+      laTracker.get(organisationName).loadedBFS = true
+    }
+  }
+
+  /**
+   * Select the organisation -> highlights polygon and loads data if not loaded
+   * @param  {String} organisationName Name of organisation to select, e.g. Harrogate Borough Council
+   * @param  {Object} layer Leaflet layer. Should be the boundary polygon layer not the parent
+   */
+  // needs to be own function because called from multiple sources: click and organisation search
+  function selectOrganisation(organisationName, layer) {
+    setActiveBoundaryLayer(layer)
+    bfsmap.zoomToLayer(layer)
+    if (laTracker.get(organisationName)) {
+      const url = laTracker.get(organisationName).brownfield_data_url
+      bfsHelpers.loadSites(bfsmap, url, organisationName, {
+        layerGroup: brownfieldSiteGroups,
+        cb: onSuccessfulBrownfieldLoad
+      })
+    }
+  }
+
+
+  function addLayerClickEvent(feature, layer) {
+    const organisation = layer.feature.properties.organisation
+    const organisationName = organisationMapper[organisation]
+    laTracker.addToItem(organisationName, "brownfield_data_url", brownfieldDataUrl(organisation)) 
+    layer.on('click', function(e) {
+      selectOrganisation(organisationName, layer)
+    })
+  }
+
+  function setupAuthorityBoundaryLayer(feature, layer) {
+    // function is run for each boundary that is plotted
+    addHoverState(layer)
+    addLayerClickEvent(feature, layer)
+  }
+
+  var failing = []
+  Promise.allSettled(
+    brownfieldPublishers.map(function(bP) {
+      const url = laBoundaryURL(bP.statistical_geography)
+      // track the organisation layer on the map
+      const trackerId = laTracker.add(bP.name, {"id": bP.id})
+      return fetch(url)
+        .then(resp => resp.json())
+        .then((data) => {
+          data.features[0] = addUsefulPropertiesToFeature(data.features[0], bP)
+          // create geojson feature layer (parent)
+          var boundary = L.geoJSON(data, {
+            style: bfsmap.styles.defaultBoundaryStyle,
+            onEachFeature: setupAuthorityBoundaryLayer
+          })
+          .on("add", function(e) {
+            // set currently added layer as parent for all children layers
+            setParentLayer(e.target, bP.name)
+          })
+          .addTo(localAuthorityBoundaries)
+          return boundary
+        })
+        .catch(function(err) {
+          console.log(bP.id, 'error', err)
+          failing.push([bP.id, bP.statistical_geography])
+        })
+    }
+  )).then(boundaries => {
+    // after all boundaries collected then fitBounds of map
+    bfsmap.map.fitBounds(localAuthorityBoundaries.getBounds())
+    bfsmap.hideLoader()
+    $boundaryCount.textContent = brownfieldPublishers.length - failing.length
+    $mapItems.classList.remove("js-hidden")
+    $sidePanel.classList.remove("js-hidden")
+  })
+
+  // candidate for dl-maps.js?
+  bfsmap.map.on("zoom", function(e) {
+    const zoomLevel = bfsmap.map.getZoom()
+    if (zoomLevel > 7) {
+      brownfieldSiteGroups.addTo(bfsmap.map)
+    } else {
+      brownfieldSiteGroups.remove()
+    }
+  })
+
+window.bfsmap = bfsmap
+window.laTracker = laTracker
+
+})(window.DLFrontend, window.accessibleAutocomplete)
+
+</script>
+
+  </body>
+</html>
