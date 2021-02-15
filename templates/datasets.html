@@ -42,7 +42,7 @@
     {% for _list in mhclg_lists %}
       <li class="govuk-!-margin-bottom-6">
         <h4 class="govuk-heading-s govuk-!-margin-bottom-1">
-          <a href="/{{dataset}}" class="govuk-link govuk-body-l">{{mhclg_lists[_list]["name"]}}</a>
+          <a href="/{{_list}}" class="govuk-link govuk-body-l">{{mhclg_lists[_list]["name"]}}</a>
           {% if mhclg_lists[_list]["superceded-by"] %}
           <span class="govuk-tag govuk-tag--grey">Archived</span>
           {% endif %}</h4>
