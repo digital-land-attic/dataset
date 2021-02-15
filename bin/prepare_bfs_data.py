@@ -10,9 +10,7 @@ sys.path.append(".")
 from analyse_dataset import BrownfieldDatasetAnalyser
 from organisation import fetch_organisations
 from points_to_features import convert_json_to_geojson
-
-
-brownfield_dataset = "./brownfield-land-collection/dataset/brownfield-land.csv"
+from brownfield import brownfield_dataset_path
 
 
 def process_org(org):
@@ -45,22 +43,20 @@ def create_site_geojson(organisation):
         file.write(json.dumps(gjson))
 
 
-if os.path.exists(brownfield_dataset):
-    da = BrownfieldDatasetAnalyser(brownfield_dataset)
+print("preparing brownfield data")
 
-    organisations = fetch_organisations()
-    orgs_with_bfs = da.organisations()
-    # need to remove any pesky None organisation values
-    orgs_with_bfs = [o for o in orgs_with_bfs if o is not None]
-    d = brownfield_map(orgs_with_bfs)
+da = BrownfieldDatasetAnalyser(brownfield_dataset_path)
 
-    # save summary data needed by map
-    with open("data/organisation_boundary_data.json", "w") as file:
-        file.write(json.dumps(d))
+organisations = fetch_organisations()
+orgs_with_bfs = da.organisations()
+# need to remove any pesky None organisation values
+orgs_with_bfs = [o for o in orgs_with_bfs if o is not None]
+d = brownfield_map(orgs_with_bfs)
 
-    # create geojson of sites for each organisation
-    for o in orgs_with_bfs:
-        create_site_geojson(organisations[o])
+# save summary data needed by map
+with open("data/organisation_boundary_data.json", "w") as file:
+    file.write(json.dumps(d))
 
-else:
-    print(f"Error: {brownfield_dataset} does not exist! Unable to prepare data.")
+# create geojson of sites for each organisation
+for o in orgs_with_bfs:
+    create_site_geojson(organisations[o])
