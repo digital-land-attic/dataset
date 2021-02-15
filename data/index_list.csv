@@ -1,7 +1,7 @@
 dataset,name,dataset-url,data-url,publisher,superceded-by,description
 brownfield-land,Brownfield Land,/dataset/brownfield-land/,/brownfield-land,local-authorities,,A set of brownfield land records collected from 350+ local authorities.
 local-plan,Local plans,/dataset/local-plans/,/local-plan,local-authorities,development-plan-documents,A collection of data about each local authorities local plans.
-development-plan-document,Development plan documents,,/development-plan-documents,local-authorities,,"""A collection of all the development documents local authorities publish. We currently collect these for Buckinghamshire,  Lambeth and Southwark."""
+development-plan-document,Development plan documents,,/development-plan-documents,local-authorities,,"A collection of all the development documents local authorities publish. We currently collect these for Buckinghamshire,  Lambeth and Southwark."
 development-plan-type,Development plan types,,/development-plan-type,mhclg,,A list of the different types of development plans.
 brownfield-site,Brownfield sites,,/brownfield-site,local-authorities,,A collection of geographies that are Brownfield land sites. We currently have ~2500.
 development-policy,Development policies,,/development-policy,local-authorities,,A collection of the policies contained in the development plan documents we know about.
@@ -9,12 +9,12 @@ development-policy-category,Development policy categories,,/development-policy-c
 permitted-development-right,Permitted development right,,/permitted-development-right,mhclg,,Permitted development rights from the legislation.
 article-4-direction,Article 4 directions,,/article-4-direction,local-authorities,,The start of a collection of article 4 directions collected from publishing local authorities.
 conservation-area,Conservation areas,,/conservation-area,local-authorities,,A collection of conservation areas collected from local authorities.
-developer-agreement-type,Developer agreement type,,/developer-agreement-type,mhclg,,"""A list of the different developer agreement types, e.g. Section 106"""
+developer-agreement-type,Developer agreement type,,/developer-agreement-type,mhclg,,"A list of the different developer agreement types, e.g. Section 106"
 contribution-purpose,Contribution purpose,,/contribution-purpose,mhclg,,A list of allowable purposes for developer contributions.
 contribution-funding-status,Contribution funding status,,/contribution-funding-status,mhclg,,A list of statuses to mark developer contribution transactions with. E.g. received or spent
 planning-permission-type,Planning permission type,,/planning-permission-type,mhclg,,A list of permission types given to brownfield land sites.
 planning-permission-status,Planning permission status,,/planning-permission-status,mhclg,,A list of planning permissions statuses given to brownfield land sites.
 ownership-status,Ownership status,,/ownership-status,mhclg,,The list of ownership statuses given to brownfield land sites.
 local-authority-district,Local authority district,,/local-authority-district,local-authorities,,A collection of geogrpahies that represent the area each local authority covers.
-organisations,Organisations,,/organisation,local-authorities,,A collection of central and local government organisations who produce planning related data.
+organisation,Organisations,,/organisation,local-authorities,,A collection of central and local government organisations who produce planning related data.
 developer-agreement,Developer agreements,,/developer-agreement,local-authorities,,A collection of developer agreement data collect from the local authorities who publish the data.
