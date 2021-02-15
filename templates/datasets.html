@@ -10,24 +10,55 @@
     </div>
 </div>
 
-<p class="govuk-body-l">National datasets collected and collated by Digital Land.</p>
+<p class="govuk-body-l">A collection of planning related datasets.</p>
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-third">
-  </div>
 
   <div class="govuk-grid-column-two-thirds">
+    <h3 class="govuk-heading-l">National datasets</h3>
+    <p class="govuk-body">These datasets are made of data published by multiple organisations. The data is collected and collated by Digital Land.</p>
     <ul class="govuk-list">
     {% for dataset in datasets %}
-      <li>
-        <a href="{{dataset}}/" class="govuk-link govuk-body-l">{{datasets[dataset]["name"]}}</a>
+      <li class="govuk-!-margin-bottom-6">
+        <h4 class="govuk-heading-s govuk-!-margin-bottom-1">
+          <a href="/{{dataset}}" class="govuk-link govuk-body-l">{{datasets[dataset]["name"]}}</a>
+          {% if datasets[dataset]["superceded-by"] %}
+          <span class="govuk-tag govuk-tag--grey">Archived</span>
+          {% endif %}</h4>
+        {% if datasets[dataset]["description"] %}
+          <p class="govuk-body govuk-!-margin-bottom-2">{{ datasets[dataset]["description"] }}</p>
+        {% endif %}
+        {% if datasets[dataset]["dataset-url"] %}
+          <p class="govuk-body govuk-!-font-size-16 govuk-!-margin-bottom-0"><a href="{{ datasets[dataset]['dataset-url'] }}" class="govuk-link">Explore shape of dataset</a></p>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+
+
+    <h3 class="govuk-heading-l">MHCLG lists</h3>
+    <p class="govuk-body">These datasets are registers owned and maintained by MHCLG.</p>
+    <ul class="govuk-list">
+    {% for _list in mhclg_lists %}
+      <li class="govuk-!-margin-bottom-6">
+        <h4 class="govuk-heading-s govuk-!-margin-bottom-1">
+          <a href="/{{dataset}}" class="govuk-link govuk-body-l">{{mhclg_lists[_list]["name"]}}</a>
+          {% if mhclg_lists[_list]["superceded-by"] %}
+          <span class="govuk-tag govuk-tag--grey">Archived</span>
+          {% endif %}</h4>
+        {% if mhclg_lists[_list]["description"] %}
+          <p class="govuk-body govuk-!-margin-bottom-2">{{ mhclg_lists[_list]["description"] }}</p>
+        {% endif %}
+        {% if mhclg_lists[_list]["dataset-url"] %}
+          <p class="govuk-body govuk-!-font-size-16 govuk-!-margin-bottom-0"><a href="{{ mhclg_lists[_list]['dataset-url'] }}" class="govuk-link">Explore shape of dataset</a></p>
+        {% endif %}
       </li>
     {% endfor %}
     </ul>
   </div>
 </div>
 
-<p class="govuk-body">This list of national datasets will be added to as new datasets are collected. You can read more about the <a href="/project">datasets we intend to collect</a>.</p>
+<p class="govuk-body govuk-!-margin-top-6 govuk-!-margin-bottom-6">The list of datasets will be added to as new data is collected. You can read more about the <a href="/project">datasets we intend to collect</a>.</p>
 
 <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 {{ dlFeedbackPanel({

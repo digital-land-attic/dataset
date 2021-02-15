@@ -195,5 +195,23 @@ for d in csv.DictReader(get(dataset_csv).splitlines()):
 
 
 # datasets
+
+#  temporary solution for list of all data on site
+datasets_csv = "data/index_list.csv"
+datasets = {
+    d["dataset"]: d for d in csv.DictReader(get_from_file(datasets_csv).splitlines())
+}
+
+mhclg_lists = {k: v for k, v in datasets.items() if v["publisher"] == "mhclg"}
+non_mhclg_datasets = {
+    k: v for k, v in datasets.items() if not v["publisher"] == "mhclg"
+}
+
 with open("docs/index.html", "w") as f:
-    f.write(datasets_template.render(datasets=datasets, download_url=dataset_csv))
+    f.write(
+        datasets_template.render(
+            datasets=dict(sorted(non_mhclg_datasets.items())),
+            mhclg_lists=dict(sorted(mhclg_lists.items())),
+            download_url=dataset_csv,
+        )
+    )
