@@ -3,7 +3,7 @@ import json
 from utils import get, read_csv
 from data_analyser import DataAnalyser
 
-brownfield_dataset_path = "./brownfield-land-collection/dataset/brownfield-land.csv"
+brownfield_dataset_path = "https://media.githubusercontent.com/media/digital-land/brownfield-land-collection/main/dataset/brownfield-land.csv"
 
 # brownfield harmonised resources
 def url_for_harmonised(resource_hash):
