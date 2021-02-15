@@ -37,8 +37,8 @@ clobber clean:
 
 
 collect::
-	mkdir -p data/brownfield
-	wget -O data/brownfield/resource.csv https://raw.githubusercontent.com/digital-land/brownfield-land-collection/main/collection/resource.csv
+	mkdir -p data/brownfield 
+	curl -qsL 'https://raw.githubusercontent.com/digital-land/brownfield-land-collection/main/collection/resource.csv' > data/brownfield/resource.csv
 
 
 map:
