@@ -8,7 +8,7 @@ on:
       - 'brownfield-resources/**'
       - 'organisation-dataset/**'
     branches:
-      - master
+      - main
   schedule:
     - cron: '0 6 * * *'
   workflow_dispatch:
@@ -33,7 +33,7 @@ jobs:
         git config user.email "${DLB_BOT_EMAIL}"
         git config user.name "${DLB_BOT_USERNAME}"
         git remote set-url origin https://${DLB_BOT_USERNAME}:${DLB_BOT_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        git checkout master
+        git checkout main
     - name: Install dependencies
       run: make init
     - name: Collect resource.csv
@@ -43,6 +43,4 @@ jobs:
     - name: Generate brownfield land map
       run: make map
     - name: Commit files
-      run: |
-        git add docs brownfield-land-collection organisation-dataset brownfield-resources
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Build dataset pages on $(date +%F)"; git push origin master)
+      run: make commit-docs

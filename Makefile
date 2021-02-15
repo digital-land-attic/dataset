@@ -9,6 +9,9 @@ TEMPLATE_FILES=\
 	templates/dataset-resources.html\
 	templates/datasets.html
 
+# current git branch
+BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
+
 all:	render
 
 render:	render.py $(DATASET_FILES) $(TEMPLATE_FILES)
@@ -45,3 +48,7 @@ map:
 map/local:
 	python3 bin/create_bfs_map.py --local
 
+
+commit-docs::
+	git add docs
+	git diff --quiet && git diff --staged --quiet || (git commit -m "Rebuilt design system $(shell date +%F)"; git push origin $(BRANCH))
