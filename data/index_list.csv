@@ -18,3 +18,5 @@ ownership-status,Ownership status,,/ownership-status,mhclg,,The list of ownershi
 local-authority-district,Local authority district,,/local-authority-district,local-authorities,,A collection of geogrpahies that represent the area each local authority covers.
 organisation,Organisations,,/organisation,local-authorities,,A collection of central and local government organisations who produce planning related data.
 developer-agreement,Developer agreements,,/developer-agreement,local-authorities,,A collection of developer agreement data collect from the local authorities who publish the data.
+developer-agreement-contribution,Developer agreement contributions,,/developer-agreement-contribution,local-authorities,,A collection of developer agreement contributions. Contribution data is collected from local authorities. All contributions link back to agreements.
+developer-agreement-transaction,Developer agreement transactions,,/developer-agreement-transaction,local-authorities,,A collection of developer agreement transactions.Transaction data is collected from local authorities. Transactions are associated with a particular contribution.
