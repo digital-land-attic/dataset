@@ -24,13 +24,16 @@ render:	render.py $(DATASET_FILES) $(TEMPLATE_FILES)
 	rm -rf dataset
 	python3 bin/prepare_bfs_data.py
 
+render-check-pages:
+	cd brownfield-resources && make collect && python3 resource_generator/check_per_org.py --all # this is done in a subshell
+
 black:
 	black .
 
 init::
 	git submodule update --init --recursive --remote
 	python3 -m pip install -r requirements.txt
-	cd brownfield-resources && python3 -m pip install -r requirements.txt # this is done in a subshell
+	cd brownfield-resources && pip install . && python3 -m pip install -r requirements.txt # this is done in a subshell
 
 clobber clean:
 	rm -rf docs .cache
