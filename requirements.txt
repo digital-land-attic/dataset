@@ -9,7 +9,7 @@ chardet==3.0.4
 decorator==4.4.2
 -e git+https://github.com/digital-land/digital-land-python.git#egg=digital-land
 idna==2.9
-Jinja2==2.11.2
+Jinja2==2.11.3
 lockfile==0.12.2
 Markdown==3.2.1
 MarkupSafe==1.1.1
