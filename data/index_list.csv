@@ -20,3 +20,11 @@ organisation,Organisations,,/organisation,local-authorities,,A collection of cen
 developer-agreement,Developer agreements,,/developer-agreement,local-authorities,,A collection of developer agreement data collect from the local authorities who publish the data.
 developer-agreement-contribution,Developer agreement contributions,,/developer-agreement-contribution,local-authorities,,A collection of developer agreement contributions. Contribution data is collected from local authorities. All contributions link back to agreements.
 developer-agreement-transaction,Developer agreement transactions,,/developer-agreement-transaction,local-authorities,,A collection of developer agreement transactions.Transaction data is collected from local authorities. Transactions are associated with a particular contribution.
+area-of-outstanding-natural-beauty,Area of outstanding natural beauty,,/area-of-outstanding-natural-beauty,natural-england,,A collection of all the areas of ourstanding natural beauty published by Natural England.
+site-of-special-scientific-interest,Site of special scientific interest,,/site-of-special-scientific-interest,natural-england,,A collection of all the sites of special scientific interest published by Natural England.
+protected-wreck-site,Protected wreck site,,/protected-wreck-site,historic-england,,A collection of all the protected wreck sites published by Historic England.
+battlefield,Battlefield,,/battlefield,historic-england,,A collection of all the battlefield sites published by Historic England.
+heritage-at-risk,Heritage at risk,,/heritage-at-risk,historic-england,,A collection of all the heritage at risk sites published by Historic England.
+park-and-garden,Park and garden,,/park-and-garden,historic-england,,A collection of all the parks and gardens published by Historic England.
+scheduled-monument,Scheduled monunment,,/scheduled-monument,historic-england,,A collectin of all the scheduled monuments published by Historic England.
+world-heritage-site,World heritage site,,/world-heritage-site,historic-england,,A collection of all the world heritage sites published by Historic England.
