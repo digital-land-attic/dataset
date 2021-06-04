@@ -3,14 +3,11 @@ attrs==19.3.0
 autopep8==1.5
 black==19.10b0
 -e git+https://github.com/digital-land/brownfield-resources.git@dc78e09be8210539f116212f548576c318ea16bc#egg=Brownfield_resource_generator
-CacheControl==0.12.5
 certifi==2019.11.28
 chardet==3.0.4
 decorator==4.4.2
 -e git+https://github.com/digital-land/digital-land-python.git#egg=digital-land
 idna==2.9
-Jinja2==2.11.2
-lockfile==0.12.2
 Markdown==3.2.1
 MarkupSafe==1.1.1
 msgpack==0.6.2
@@ -21,9 +18,7 @@ pycodestyle==2.5.0
 python-dateutil==2.8.1
 pytz==2020.1
 regex==2020.2.20
-requests
 six==1.14.0
 toml==0.10.0
 typed-ast==1.4.1
 urllib3==1.25.8
-validators==0.14.3
