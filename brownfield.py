@@ -3,7 +3,7 @@ import json
 from utils import get, read_csv
 from data_analyser import DataAnalyser
 
-brownfield_dataset_path = "https://collection-dataset.s3.eu-west-2.amazonaws.com/brownfield-land-collection/dataset/brownfield-land.csv"
+brownfield_dataset_path = "https://digital-land-production-collection-dataset.s3.eu-west-2.amazonaws.com/brownfield-land-collection/dataset/brownfield-land.csv"
 
 # brownfield harmonised resources
 def url_for_harmonised(resource_hash):
@@ -12,7 +12,7 @@ def url_for_harmonised(resource_hash):
 
 # brownfield transformed resources
 def url_for_transformed(resource_hash):
-    return f"https://collection-dataset.s3.eu-west-2.amazonaws.com/brownfield-land-collection/transformed/brownfield-land/{resource_hash}.csv"
+    return f"https://digital-land-production-collection-dataset.s3.eu-west-2.amazonaws.com/brownfield-land-collection/transformed/brownfield-land/{resource_hash}.csv"
 
 
 def index_by_org(resources):
