@@ -3,7 +3,7 @@ attrs==19.3.0
 autopep8==1.5
 black==19.10b0
 -e git+https://github.com/digital-land/brownfield-resources.git@dc78e09be8210539f116212f548576c318ea16bc#egg=Brownfield_resource_generator
-certifi==2019.11.28
+certifi==2022.12.7
 chardet==3.0.4
 decorator==4.4.2
 -e git+https://github.com/digital-land/digital-land-python.git#egg=digital-land
